@@ -1,0 +1,55 @@
+{
+  "metadata": [
+    {
+      "src":[
+            {
+               "files":[
+                  "Runtime/**.cs"
+               ],
+               "src":"../../WinpeakClient/"
+            }
+         ],
+         "dest":"API"
+      }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "API/**.yml"
+        ]
+      },
+      {
+        "files": [
+          "API/**.md",              
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "favicon.ico"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "API/**.md"
+        ],
+        "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+        ]
+      }
+    ],
+    "dest":"../docs",
+    "template":[
+        "default",
+        "templates/unity"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+name: Build Documentation
+
+on:
+  repository_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+
+    # Checkout all repos
+    - name: Checkout docs.winpeak
+      uses: actions/checkout@v2
+      with:
+        path: docs.winpeak
+
+    - name: Checkout WinpeakClient
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.REPO_ACCESS_TOKEN }}
+        repository: WinpeakGIT/WinpeakClient
+        path: WinpeakClient
+        
+    - name: List work directory content
+      run: ls
+   
+    # Clear existing documentation
+    - name: Clear existing documentation
+      run: |
+        mv winpeakdocks.com/docs/CNAME winpeakdocks.com/
+        rm -rf winpeakdocks.com/docs/*
+        mv winpeakdocks.com/CNAME winpeakdocks.com/docs/
+    
+    # Setup software
+    - name: Get mono
+      run: |
+        echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+        sudo apt-get update
+        sudo apt-get install mono-complete --yes
+    
+    - name: Get docfx
+      run: |
+        curl -L https://github.com/dotnet/docfx/releases/latest/download/docfx.zip -o docfx.zip
+        unzip -d .docfx docfx.zip
+    
+    # Build docs
+    - name: Build docs
+      run:  mono .docfx/docfx.exe docs.winpeak/docfx-project/docfx.json
+    
+     # Commit and push
+    - name: Commit and push
+      run: |
+        cd docs.winpeak
+        git config --global user.email "noreply@winpeak.com"
+        git config --global user.name "Winpeak Automation"
+        git add -A
+        git status
+        git commit -m "Automated docs update"
+        git push
