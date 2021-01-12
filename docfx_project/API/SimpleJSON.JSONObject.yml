@@ -1,0 +1,1776 @@
+### YamlMime:ManagedReference
+items:
+- uid: SimpleJSON.JSONObject
+  commentId: T:SimpleJSON.JSONObject
+  id: JSONObject
+  parent: SimpleJSON
+  children:
+  - SimpleJSON.JSONObject.Add(System.String,SimpleJSON.JSONNode)
+  - SimpleJSON.JSONObject.Children
+  - SimpleJSON.JSONObject.Clone
+  - SimpleJSON.JSONObject.Count
+  - SimpleJSON.JSONObject.GetEnumerator
+  - SimpleJSON.JSONObject.GetValueOrDefault(System.String,SimpleJSON.JSONNode)
+  - SimpleJSON.JSONObject.HasKey(System.String)
+  - SimpleJSON.JSONObject.Inline
+  - SimpleJSON.JSONObject.IsObject
+  - SimpleJSON.JSONObject.Item(System.Int32)
+  - SimpleJSON.JSONObject.Item(System.String)
+  - SimpleJSON.JSONObject.Remove(SimpleJSON.JSONNode)
+  - SimpleJSON.JSONObject.Remove(System.Int32)
+  - SimpleJSON.JSONObject.Remove(System.String)
+  - SimpleJSON.JSONObject.Tag
+  langs:
+  - csharp
+  - vb
+  name: JSONObject
+  nameWithType: JSONObject
+  fullName: SimpleJSON.JSONObject
+  type: Class
+  source:
+    id: JSONObject
+    path: ''
+    startLine: 3127
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: 'public class JSONObject : JSONNode'
+    content.vb: >-
+      Public Class JSONObject
+          Inherits JSONNode
+  inheritance:
+  - System.Object
+  - SimpleJSON.JSONNode
+  inheritedMembers:
+  - SimpleJSON.JSONNode.forceASCII
+  - SimpleJSON.JSONNode.longAsString
+  - SimpleJSON.JSONNode.allowLineComments
+  - SimpleJSON.JSONNode.Value
+  - SimpleJSON.JSONNode.IsNumber
+  - SimpleJSON.JSONNode.IsString
+  - SimpleJSON.JSONNode.IsBoolean
+  - SimpleJSON.JSONNode.IsNull
+  - SimpleJSON.JSONNode.IsArray
+  - SimpleJSON.JSONNode.Add(SimpleJSON.JSONNode)
+  - SimpleJSON.JSONNode.DeepChildren
+  - SimpleJSON.JSONNode.ToString
+  - SimpleJSON.JSONNode.ToString(System.Int32)
+  - SimpleJSON.JSONNode.Linq
+  - SimpleJSON.JSONNode.Keys
+  - SimpleJSON.JSONNode.Values
+  - SimpleJSON.JSONNode.AsDouble
+  - SimpleJSON.JSONNode.AsInt
+  - SimpleJSON.JSONNode.AsFloat
+  - SimpleJSON.JSONNode.AsBool
+  - SimpleJSON.JSONNode.AsLong
+  - SimpleJSON.JSONNode.AsArray
+  - SimpleJSON.JSONNode.AsObject
+  - SimpleJSON.JSONNode.Equals(System.Object)
+  - SimpleJSON.JSONNode.GetHashCode
+  - SimpleJSON.JSONNode.Parse(System.Object)
+  - SimpleJSON.JSONNode.Parse(System.String)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SimpleJSON.JSONObject.Inline
+  commentId: P:SimpleJSON.JSONObject.Inline
+  id: Inline
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: Inline
+  nameWithType: JSONObject.Inline
+  fullName: SimpleJSON.JSONObject.Inline
+  type: Property
+  source:
+    id: Inline
+    path: ''
+    startLine: 3132
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override bool Inline { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Property Inline As Boolean
+  overridden: SimpleJSON.JSONNode.Inline
+  overload: SimpleJSON.JSONObject.Inline*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: SimpleJSON.JSONObject.Tag
+  commentId: P:SimpleJSON.JSONObject.Tag
+  id: Tag
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: Tag
+  nameWithType: JSONObject.Tag
+  fullName: SimpleJSON.JSONObject.Tag
+  type: Property
+  source:
+    id: Tag
+    path: ''
+    startLine: 3138
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override JSONNodeType Tag { get; }
+    parameters: []
+    return:
+      type: SimpleJSON.JSONNodeType
+    content.vb: Public Overrides ReadOnly Property Tag As JSONNodeType
+  overridden: SimpleJSON.JSONNode.Tag
+  overload: SimpleJSON.JSONObject.Tag*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: SimpleJSON.JSONObject.IsObject
+  commentId: P:SimpleJSON.JSONObject.IsObject
+  id: IsObject
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: IsObject
+  nameWithType: JSONObject.IsObject
+  fullName: SimpleJSON.JSONObject.IsObject
+  type: Property
+  source:
+    id: IsObject
+    path: ''
+    startLine: 3139
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override bool IsObject { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property IsObject As Boolean
+  overridden: SimpleJSON.JSONNode.IsObject
+  overload: SimpleJSON.JSONObject.IsObject*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: SimpleJSON.JSONObject.GetEnumerator
+  commentId: M:SimpleJSON.JSONObject.GetEnumerator
+  id: GetEnumerator
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: JSONObject.GetEnumerator()
+  fullName: SimpleJSON.JSONObject.GetEnumerator()
+  type: Method
+  source:
+    id: GetEnumerator
+    path: ''
+    startLine: 3141
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override JSONNode.Enumerator GetEnumerator()
+    return:
+      type: SimpleJSON.JSONNode.Enumerator
+    content.vb: Public Overrides Function GetEnumerator As JSONNode.Enumerator
+  overridden: SimpleJSON.JSONNode.GetEnumerator
+  overload: SimpleJSON.JSONObject.GetEnumerator*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: SimpleJSON.JSONObject.Item(System.String)
+  commentId: P:SimpleJSON.JSONObject.Item(System.String)
+  id: Item(System.String)
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: Item[String]
+  nameWithType: JSONObject.Item[String]
+  fullName: SimpleJSON.JSONObject.Item[System.String]
+  type: Property
+  source:
+    id: this[]
+    path: ''
+    startLine: 3144
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override JSONNode this[string aKey] { get; set; }
+    parameters:
+    - id: aKey
+      type: System.String
+    return:
+      type: SimpleJSON.JSONNode
+    content.vb: Public Overrides Property Item(aKey As String) As JSONNode
+  overridden: SimpleJSON.JSONNode.Item(System.String)
+  overload: SimpleJSON.JSONObject.Item*
+  nameWithType.vb: JSONObject.Item(String)
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: SimpleJSON.JSONObject.Item(System.String)
+  name.vb: Item(String)
+- uid: SimpleJSON.JSONObject.Item(System.Int32)
+  commentId: P:SimpleJSON.JSONObject.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: JSONObject.Item[Int32]
+  fullName: SimpleJSON.JSONObject.Item[System.Int32]
+  type: Property
+  source:
+    id: this[]
+    path: ''
+    startLine: 3164
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override JSONNode this[int aIndex] { get; set; }
+    parameters:
+    - id: aIndex
+      type: System.Int32
+    return:
+      type: SimpleJSON.JSONNode
+    content.vb: Public Overrides Property Item(aIndex As Integer) As JSONNode
+  overridden: SimpleJSON.JSONNode.Item(System.Int32)
+  overload: SimpleJSON.JSONObject.Item*
+  nameWithType.vb: JSONObject.Item(Int32)
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: SimpleJSON.JSONObject.Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: SimpleJSON.JSONObject.Count
+  commentId: P:SimpleJSON.JSONObject.Count
+  id: Count
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: JSONObject.Count
+  fullName: SimpleJSON.JSONObject.Count
+  type: Property
+  source:
+    id: Count
+    path: ''
+    startLine: 3183
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overrides ReadOnly Property Count As Integer
+  overridden: SimpleJSON.JSONNode.Count
+  overload: SimpleJSON.JSONObject.Count*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: SimpleJSON.JSONObject.Add(System.String,SimpleJSON.JSONNode)
+  commentId: M:SimpleJSON.JSONObject.Add(System.String,SimpleJSON.JSONNode)
+  id: Add(System.String,SimpleJSON.JSONNode)
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: Add(String, JSONNode)
+  nameWithType: JSONObject.Add(String, JSONNode)
+  fullName: SimpleJSON.JSONObject.Add(System.String, SimpleJSON.JSONNode)
+  type: Method
+  source:
+    id: Add
+    path: ''
+    startLine: 3188
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override void Add(string aKey, JSONNode aItem)
+    parameters:
+    - id: aKey
+      type: System.String
+    - id: aItem
+      type: SimpleJSON.JSONNode
+    content.vb: Public Overrides Sub Add(aKey As String, aItem As JSONNode)
+  overridden: SimpleJSON.JSONNode.Add(System.String,SimpleJSON.JSONNode)
+  overload: SimpleJSON.JSONObject.Add*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: SimpleJSON.JSONObject.Remove(System.String)
+  commentId: M:SimpleJSON.JSONObject.Remove(System.String)
+  id: Remove(System.String)
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: Remove(String)
+  nameWithType: JSONObject.Remove(String)
+  fullName: SimpleJSON.JSONObject.Remove(System.String)
+  type: Method
+  source:
+    id: Remove
+    path: ''
+    startLine: 3204
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override JSONNode Remove(string aKey)
+    parameters:
+    - id: aKey
+      type: System.String
+    return:
+      type: SimpleJSON.JSONNode
+    content.vb: Public Overrides Function Remove(aKey As String) As JSONNode
+  overridden: SimpleJSON.JSONNode.Remove(System.String)
+  overload: SimpleJSON.JSONObject.Remove*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: SimpleJSON.JSONObject.Remove(System.Int32)
+  commentId: M:SimpleJSON.JSONObject.Remove(System.Int32)
+  id: Remove(System.Int32)
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: Remove(Int32)
+  nameWithType: JSONObject.Remove(Int32)
+  fullName: SimpleJSON.JSONObject.Remove(System.Int32)
+  type: Method
+  source:
+    id: Remove
+    path: ''
+    startLine: 3213
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override JSONNode Remove(int aIndex)
+    parameters:
+    - id: aIndex
+      type: System.Int32
+    return:
+      type: SimpleJSON.JSONNode
+    content.vb: Public Overrides Function Remove(aIndex As Integer) As JSONNode
+  overridden: SimpleJSON.JSONNode.Remove(System.Int32)
+  overload: SimpleJSON.JSONObject.Remove*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: SimpleJSON.JSONObject.Remove(SimpleJSON.JSONNode)
+  commentId: M:SimpleJSON.JSONObject.Remove(SimpleJSON.JSONNode)
+  id: Remove(SimpleJSON.JSONNode)
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: Remove(JSONNode)
+  nameWithType: JSONObject.Remove(JSONNode)
+  fullName: SimpleJSON.JSONObject.Remove(SimpleJSON.JSONNode)
+  type: Method
+  source:
+    id: Remove
+    path: ''
+    startLine: 3222
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override JSONNode Remove(JSONNode aNode)
+    parameters:
+    - id: aNode
+      type: SimpleJSON.JSONNode
+    return:
+      type: SimpleJSON.JSONNode
+    content.vb: Public Overrides Function Remove(aNode As JSONNode) As JSONNode
+  overridden: SimpleJSON.JSONNode.Remove(SimpleJSON.JSONNode)
+  overload: SimpleJSON.JSONObject.Remove*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: SimpleJSON.JSONObject.Clone
+  commentId: M:SimpleJSON.JSONObject.Clone
+  id: Clone
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: JSONObject.Clone()
+  fullName: SimpleJSON.JSONObject.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: ''
+    startLine: 3236
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override JSONNode Clone()
+    return:
+      type: SimpleJSON.JSONNode
+    content.vb: Public Overrides Function Clone As JSONNode
+  overridden: SimpleJSON.JSONNode.Clone
+  overload: SimpleJSON.JSONObject.Clone*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: SimpleJSON.JSONObject.HasKey(System.String)
+  commentId: M:SimpleJSON.JSONObject.HasKey(System.String)
+  id: HasKey(System.String)
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: HasKey(String)
+  nameWithType: JSONObject.HasKey(String)
+  fullName: SimpleJSON.JSONObject.HasKey(System.String)
+  type: Method
+  source:
+    id: HasKey
+    path: ''
+    startLine: 3246
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override bool HasKey(string aKey)
+    parameters:
+    - id: aKey
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function HasKey(aKey As String) As Boolean
+  overridden: SimpleJSON.JSONNode.HasKey(System.String)
+  overload: SimpleJSON.JSONObject.HasKey*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: SimpleJSON.JSONObject.GetValueOrDefault(System.String,SimpleJSON.JSONNode)
+  commentId: M:SimpleJSON.JSONObject.GetValueOrDefault(System.String,SimpleJSON.JSONNode)
+  id: GetValueOrDefault(System.String,SimpleJSON.JSONNode)
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: GetValueOrDefault(String, JSONNode)
+  nameWithType: JSONObject.GetValueOrDefault(String, JSONNode)
+  fullName: SimpleJSON.JSONObject.GetValueOrDefault(System.String, SimpleJSON.JSONNode)
+  type: Method
+  source:
+    id: GetValueOrDefault
+    path: ''
+    startLine: 3251
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override JSONNode GetValueOrDefault(string aKey, JSONNode aDefault)
+    parameters:
+    - id: aKey
+      type: System.String
+    - id: aDefault
+      type: SimpleJSON.JSONNode
+    return:
+      type: SimpleJSON.JSONNode
+    content.vb: Public Overrides Function GetValueOrDefault(aKey As String, aDefault As JSONNode) As JSONNode
+  overridden: SimpleJSON.JSONNode.GetValueOrDefault(System.String,SimpleJSON.JSONNode)
+  overload: SimpleJSON.JSONObject.GetValueOrDefault*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: SimpleJSON.JSONObject.Children
+  commentId: P:SimpleJSON.JSONObject.Children
+  id: Children
+  parent: SimpleJSON.JSONObject
+  langs:
+  - csharp
+  - vb
+  name: Children
+  nameWithType: JSONObject.Children
+  fullName: SimpleJSON.JSONObject.Children
+  type: Property
+  source:
+    id: Children
+    path: ''
+    startLine: 3259
+  assemblies:
+  - cs.temp.dll
+  namespace: SimpleJSON
+  syntax:
+    content: public override IEnumerable<JSONNode> Children { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{SimpleJSON.JSONNode}
+    content.vb: Public Overrides ReadOnly Property Children As IEnumerable(Of JSONNode)
+  overridden: SimpleJSON.JSONNode.Children
+  overload: SimpleJSON.JSONObject.Children*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+references:
+- uid: SimpleJSON
+  commentId: N:SimpleJSON
+  name: SimpleJSON
+  nameWithType: SimpleJSON
+  fullName: SimpleJSON
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SimpleJSON.JSONNode
+  commentId: T:SimpleJSON.JSONNode
+  parent: SimpleJSON
+  name: JSONNode
+  nameWithType: JSONNode
+  fullName: SimpleJSON.JSONNode
+- uid: SimpleJSON.JSONNode.forceASCII
+  commentId: F:SimpleJSON.JSONNode.forceASCII
+  parent: SimpleJSON.JSONNode
+  name: forceASCII
+  nameWithType: JSONNode.forceASCII
+  fullName: SimpleJSON.JSONNode.forceASCII
+- uid: SimpleJSON.JSONNode.longAsString
+  commentId: F:SimpleJSON.JSONNode.longAsString
+  parent: SimpleJSON.JSONNode
+  name: longAsString
+  nameWithType: JSONNode.longAsString
+  fullName: SimpleJSON.JSONNode.longAsString
+- uid: SimpleJSON.JSONNode.allowLineComments
+  commentId: F:SimpleJSON.JSONNode.allowLineComments
+  parent: SimpleJSON.JSONNode
+  name: allowLineComments
+  nameWithType: JSONNode.allowLineComments
+  fullName: SimpleJSON.JSONNode.allowLineComments
+- uid: SimpleJSON.JSONNode.Value
+  commentId: P:SimpleJSON.JSONNode.Value
+  parent: SimpleJSON.JSONNode
+  name: Value
+  nameWithType: JSONNode.Value
+  fullName: SimpleJSON.JSONNode.Value
+- uid: SimpleJSON.JSONNode.IsNumber
+  commentId: P:SimpleJSON.JSONNode.IsNumber
+  parent: SimpleJSON.JSONNode
+  name: IsNumber
+  nameWithType: JSONNode.IsNumber
+  fullName: SimpleJSON.JSONNode.IsNumber
+- uid: SimpleJSON.JSONNode.IsString
+  commentId: P:SimpleJSON.JSONNode.IsString
+  parent: SimpleJSON.JSONNode
+  name: IsString
+  nameWithType: JSONNode.IsString
+  fullName: SimpleJSON.JSONNode.IsString
+- uid: SimpleJSON.JSONNode.IsBoolean
+  commentId: P:SimpleJSON.JSONNode.IsBoolean
+  parent: SimpleJSON.JSONNode
+  name: IsBoolean
+  nameWithType: JSONNode.IsBoolean
+  fullName: SimpleJSON.JSONNode.IsBoolean
+- uid: SimpleJSON.JSONNode.IsNull
+  commentId: P:SimpleJSON.JSONNode.IsNull
+  parent: SimpleJSON.JSONNode
+  name: IsNull
+  nameWithType: JSONNode.IsNull
+  fullName: SimpleJSON.JSONNode.IsNull
+- uid: SimpleJSON.JSONNode.IsArray
+  commentId: P:SimpleJSON.JSONNode.IsArray
+  parent: SimpleJSON.JSONNode
+  name: IsArray
+  nameWithType: JSONNode.IsArray
+  fullName: SimpleJSON.JSONNode.IsArray
+- uid: SimpleJSON.JSONNode.Add(SimpleJSON.JSONNode)
+  commentId: M:SimpleJSON.JSONNode.Add(SimpleJSON.JSONNode)
+  parent: SimpleJSON.JSONNode
+  name: Add(JSONNode)
+  nameWithType: JSONNode.Add(JSONNode)
+  fullName: SimpleJSON.JSONNode.Add(SimpleJSON.JSONNode)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.Add(SimpleJSON.JSONNode)
+    name: Add
+    nameWithType: JSONNode.Add
+    fullName: SimpleJSON.JSONNode.Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SimpleJSON.JSONNode
+    name: JSONNode
+    nameWithType: JSONNode
+    fullName: SimpleJSON.JSONNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.Add(SimpleJSON.JSONNode)
+    name: Add
+    nameWithType: JSONNode.Add
+    fullName: SimpleJSON.JSONNode.Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SimpleJSON.JSONNode
+    name: JSONNode
+    nameWithType: JSONNode
+    fullName: SimpleJSON.JSONNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONNode.DeepChildren
+  commentId: P:SimpleJSON.JSONNode.DeepChildren
+  parent: SimpleJSON.JSONNode
+  name: DeepChildren
+  nameWithType: JSONNode.DeepChildren
+  fullName: SimpleJSON.JSONNode.DeepChildren
+- uid: SimpleJSON.JSONNode.ToString
+  commentId: M:SimpleJSON.JSONNode.ToString
+  parent: SimpleJSON.JSONNode
+  name: ToString()
+  nameWithType: JSONNode.ToString()
+  fullName: SimpleJSON.JSONNode.ToString()
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.ToString
+    name: ToString
+    nameWithType: JSONNode.ToString
+    fullName: SimpleJSON.JSONNode.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.ToString
+    name: ToString
+    nameWithType: JSONNode.ToString
+    fullName: SimpleJSON.JSONNode.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONNode.ToString(System.Int32)
+  commentId: M:SimpleJSON.JSONNode.ToString(System.Int32)
+  parent: SimpleJSON.JSONNode
+  isExternal: true
+  name: ToString(Int32)
+  nameWithType: JSONNode.ToString(Int32)
+  fullName: SimpleJSON.JSONNode.ToString(System.Int32)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.ToString(System.Int32)
+    name: ToString
+    nameWithType: JSONNode.ToString
+    fullName: SimpleJSON.JSONNode.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.ToString(System.Int32)
+    name: ToString
+    nameWithType: JSONNode.ToString
+    fullName: SimpleJSON.JSONNode.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONNode.Linq
+  commentId: P:SimpleJSON.JSONNode.Linq
+  parent: SimpleJSON.JSONNode
+  name: Linq
+  nameWithType: JSONNode.Linq
+  fullName: SimpleJSON.JSONNode.Linq
+- uid: SimpleJSON.JSONNode.Keys
+  commentId: P:SimpleJSON.JSONNode.Keys
+  parent: SimpleJSON.JSONNode
+  name: Keys
+  nameWithType: JSONNode.Keys
+  fullName: SimpleJSON.JSONNode.Keys
+- uid: SimpleJSON.JSONNode.Values
+  commentId: P:SimpleJSON.JSONNode.Values
+  parent: SimpleJSON.JSONNode
+  name: Values
+  nameWithType: JSONNode.Values
+  fullName: SimpleJSON.JSONNode.Values
+- uid: SimpleJSON.JSONNode.AsDouble
+  commentId: P:SimpleJSON.JSONNode.AsDouble
+  parent: SimpleJSON.JSONNode
+  name: AsDouble
+  nameWithType: JSONNode.AsDouble
+  fullName: SimpleJSON.JSONNode.AsDouble
+- uid: SimpleJSON.JSONNode.AsInt
+  commentId: P:SimpleJSON.JSONNode.AsInt
+  parent: SimpleJSON.JSONNode
+  name: AsInt
+  nameWithType: JSONNode.AsInt
+  fullName: SimpleJSON.JSONNode.AsInt
+- uid: SimpleJSON.JSONNode.AsFloat
+  commentId: P:SimpleJSON.JSONNode.AsFloat
+  parent: SimpleJSON.JSONNode
+  name: AsFloat
+  nameWithType: JSONNode.AsFloat
+  fullName: SimpleJSON.JSONNode.AsFloat
+- uid: SimpleJSON.JSONNode.AsBool
+  commentId: P:SimpleJSON.JSONNode.AsBool
+  parent: SimpleJSON.JSONNode
+  name: AsBool
+  nameWithType: JSONNode.AsBool
+  fullName: SimpleJSON.JSONNode.AsBool
+- uid: SimpleJSON.JSONNode.AsLong
+  commentId: P:SimpleJSON.JSONNode.AsLong
+  parent: SimpleJSON.JSONNode
+  name: AsLong
+  nameWithType: JSONNode.AsLong
+  fullName: SimpleJSON.JSONNode.AsLong
+- uid: SimpleJSON.JSONNode.AsArray
+  commentId: P:SimpleJSON.JSONNode.AsArray
+  parent: SimpleJSON.JSONNode
+  name: AsArray
+  nameWithType: JSONNode.AsArray
+  fullName: SimpleJSON.JSONNode.AsArray
+- uid: SimpleJSON.JSONNode.AsObject
+  commentId: P:SimpleJSON.JSONNode.AsObject
+  parent: SimpleJSON.JSONNode
+  name: AsObject
+  nameWithType: JSONNode.AsObject
+  fullName: SimpleJSON.JSONNode.AsObject
+- uid: SimpleJSON.JSONNode.Equals(System.Object)
+  commentId: M:SimpleJSON.JSONNode.Equals(System.Object)
+  parent: SimpleJSON.JSONNode
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: JSONNode.Equals(Object)
+  fullName: SimpleJSON.JSONNode.Equals(System.Object)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.Equals(System.Object)
+    name: Equals
+    nameWithType: JSONNode.Equals
+    fullName: SimpleJSON.JSONNode.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.Equals(System.Object)
+    name: Equals
+    nameWithType: JSONNode.Equals
+    fullName: SimpleJSON.JSONNode.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONNode.GetHashCode
+  commentId: M:SimpleJSON.JSONNode.GetHashCode
+  parent: SimpleJSON.JSONNode
+  name: GetHashCode()
+  nameWithType: JSONNode.GetHashCode()
+  fullName: SimpleJSON.JSONNode.GetHashCode()
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.GetHashCode
+    name: GetHashCode
+    nameWithType: JSONNode.GetHashCode
+    fullName: SimpleJSON.JSONNode.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.GetHashCode
+    name: GetHashCode
+    nameWithType: JSONNode.GetHashCode
+    fullName: SimpleJSON.JSONNode.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONNode.Parse(System.Object)
+  commentId: M:SimpleJSON.JSONNode.Parse(System.Object)
+  parent: SimpleJSON.JSONNode
+  isExternal: true
+  name: Parse(Object)
+  nameWithType: JSONNode.Parse(Object)
+  fullName: SimpleJSON.JSONNode.Parse(System.Object)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.Parse(System.Object)
+    name: Parse
+    nameWithType: JSONNode.Parse
+    fullName: SimpleJSON.JSONNode.Parse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.Parse(System.Object)
+    name: Parse
+    nameWithType: JSONNode.Parse
+    fullName: SimpleJSON.JSONNode.Parse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONNode.Parse(System.String)
+  commentId: M:SimpleJSON.JSONNode.Parse(System.String)
+  parent: SimpleJSON.JSONNode
+  isExternal: true
+  name: Parse(String)
+  nameWithType: JSONNode.Parse(String)
+  fullName: SimpleJSON.JSONNode.Parse(System.String)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.Parse(System.String)
+    name: Parse
+    nameWithType: JSONNode.Parse
+    fullName: SimpleJSON.JSONNode.Parse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.Parse(System.String)
+    name: Parse
+    nameWithType: JSONNode.Parse
+    fullName: SimpleJSON.JSONNode.Parse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SimpleJSON.JSONNode.Inline
+  commentId: P:SimpleJSON.JSONNode.Inline
+  parent: SimpleJSON.JSONNode
+  name: Inline
+  nameWithType: JSONNode.Inline
+  fullName: SimpleJSON.JSONNode.Inline
+- uid: SimpleJSON.JSONObject.Inline*
+  commentId: Overload:SimpleJSON.JSONObject.Inline
+  name: Inline
+  nameWithType: JSONObject.Inline
+  fullName: SimpleJSON.JSONObject.Inline
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: SimpleJSON.JSONNode.Tag
+  commentId: P:SimpleJSON.JSONNode.Tag
+  parent: SimpleJSON.JSONNode
+  name: Tag
+  nameWithType: JSONNode.Tag
+  fullName: SimpleJSON.JSONNode.Tag
+- uid: SimpleJSON.JSONObject.Tag*
+  commentId: Overload:SimpleJSON.JSONObject.Tag
+  name: Tag
+  nameWithType: JSONObject.Tag
+  fullName: SimpleJSON.JSONObject.Tag
+- uid: SimpleJSON.JSONNodeType
+  commentId: T:SimpleJSON.JSONNodeType
+  parent: SimpleJSON
+  name: JSONNodeType
+  nameWithType: JSONNodeType
+  fullName: SimpleJSON.JSONNodeType
+- uid: SimpleJSON.JSONNode.IsObject
+  commentId: P:SimpleJSON.JSONNode.IsObject
+  parent: SimpleJSON.JSONNode
+  name: IsObject
+  nameWithType: JSONNode.IsObject
+  fullName: SimpleJSON.JSONNode.IsObject
+- uid: SimpleJSON.JSONObject.IsObject*
+  commentId: Overload:SimpleJSON.JSONObject.IsObject
+  name: IsObject
+  nameWithType: JSONObject.IsObject
+  fullName: SimpleJSON.JSONObject.IsObject
+- uid: SimpleJSON.JSONNode.GetEnumerator
+  commentId: M:SimpleJSON.JSONNode.GetEnumerator
+  parent: SimpleJSON.JSONNode
+  name: GetEnumerator()
+  nameWithType: JSONNode.GetEnumerator()
+  fullName: SimpleJSON.JSONNode.GetEnumerator()
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.GetEnumerator
+    name: GetEnumerator
+    nameWithType: JSONNode.GetEnumerator
+    fullName: SimpleJSON.JSONNode.GetEnumerator
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.GetEnumerator
+    name: GetEnumerator
+    nameWithType: JSONNode.GetEnumerator
+    fullName: SimpleJSON.JSONNode.GetEnumerator
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONObject.GetEnumerator*
+  commentId: Overload:SimpleJSON.JSONObject.GetEnumerator
+  name: GetEnumerator
+  nameWithType: JSONObject.GetEnumerator
+  fullName: SimpleJSON.JSONObject.GetEnumerator
+- uid: SimpleJSON.JSONNode.Enumerator
+  commentId: T:SimpleJSON.JSONNode.Enumerator
+  parent: SimpleJSON
+  name: JSONNode.Enumerator
+  nameWithType: JSONNode.Enumerator
+  fullName: SimpleJSON.JSONNode.Enumerator
+- uid: SimpleJSON.JSONNode.Item(System.String)
+  commentId: P:SimpleJSON.JSONNode.Item(System.String)
+  parent: SimpleJSON.JSONNode
+  isExternal: true
+  name: Item[String]
+  nameWithType: JSONNode.Item[String]
+  fullName: SimpleJSON.JSONNode.Item[System.String]
+  nameWithType.vb: JSONNode.Item(String)
+  fullName.vb: SimpleJSON.JSONNode.Item(System.String)
+  name.vb: Item(String)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.Item(System.String)
+    name: Item
+    nameWithType: JSONNode.Item
+    fullName: SimpleJSON.JSONNode.Item
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.Item(System.String)
+    name: Item
+    nameWithType: JSONNode.Item
+    fullName: SimpleJSON.JSONNode.Item
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONObject.Item*
+  commentId: Overload:SimpleJSON.JSONObject.Item
+  name: Item
+  nameWithType: JSONObject.Item
+  fullName: SimpleJSON.JSONObject.Item
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SimpleJSON.JSONNode.Item(System.Int32)
+  commentId: P:SimpleJSON.JSONNode.Item(System.Int32)
+  parent: SimpleJSON.JSONNode
+  isExternal: true
+  name: Item[Int32]
+  nameWithType: JSONNode.Item[Int32]
+  fullName: SimpleJSON.JSONNode.Item[System.Int32]
+  nameWithType.vb: JSONNode.Item(Int32)
+  fullName.vb: SimpleJSON.JSONNode.Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.Item(System.Int32)
+    name: Item
+    nameWithType: JSONNode.Item
+    fullName: SimpleJSON.JSONNode.Item
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.Item(System.Int32)
+    name: Item
+    nameWithType: JSONNode.Item
+    fullName: SimpleJSON.JSONNode.Item
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: SimpleJSON.JSONNode.Count
+  commentId: P:SimpleJSON.JSONNode.Count
+  parent: SimpleJSON.JSONNode
+  name: Count
+  nameWithType: JSONNode.Count
+  fullName: SimpleJSON.JSONNode.Count
+- uid: SimpleJSON.JSONObject.Count*
+  commentId: Overload:SimpleJSON.JSONObject.Count
+  name: Count
+  nameWithType: JSONObject.Count
+  fullName: SimpleJSON.JSONObject.Count
+- uid: SimpleJSON.JSONNode.Add(System.String,SimpleJSON.JSONNode)
+  commentId: M:SimpleJSON.JSONNode.Add(System.String,SimpleJSON.JSONNode)
+  parent: SimpleJSON.JSONNode
+  isExternal: true
+  name: Add(String, JSONNode)
+  nameWithType: JSONNode.Add(String, JSONNode)
+  fullName: SimpleJSON.JSONNode.Add(System.String, SimpleJSON.JSONNode)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.Add(System.String,SimpleJSON.JSONNode)
+    name: Add
+    nameWithType: JSONNode.Add
+    fullName: SimpleJSON.JSONNode.Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SimpleJSON.JSONNode
+    name: JSONNode
+    nameWithType: JSONNode
+    fullName: SimpleJSON.JSONNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.Add(System.String,SimpleJSON.JSONNode)
+    name: Add
+    nameWithType: JSONNode.Add
+    fullName: SimpleJSON.JSONNode.Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SimpleJSON.JSONNode
+    name: JSONNode
+    nameWithType: JSONNode
+    fullName: SimpleJSON.JSONNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONObject.Add*
+  commentId: Overload:SimpleJSON.JSONObject.Add
+  name: Add
+  nameWithType: JSONObject.Add
+  fullName: SimpleJSON.JSONObject.Add
+- uid: SimpleJSON.JSONNode.Remove(System.String)
+  commentId: M:SimpleJSON.JSONNode.Remove(System.String)
+  parent: SimpleJSON.JSONNode
+  isExternal: true
+  name: Remove(String)
+  nameWithType: JSONNode.Remove(String)
+  fullName: SimpleJSON.JSONNode.Remove(System.String)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.Remove(System.String)
+    name: Remove
+    nameWithType: JSONNode.Remove
+    fullName: SimpleJSON.JSONNode.Remove
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.Remove(System.String)
+    name: Remove
+    nameWithType: JSONNode.Remove
+    fullName: SimpleJSON.JSONNode.Remove
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONObject.Remove*
+  commentId: Overload:SimpleJSON.JSONObject.Remove
+  name: Remove
+  nameWithType: JSONObject.Remove
+  fullName: SimpleJSON.JSONObject.Remove
+- uid: SimpleJSON.JSONNode.Remove(System.Int32)
+  commentId: M:SimpleJSON.JSONNode.Remove(System.Int32)
+  parent: SimpleJSON.JSONNode
+  isExternal: true
+  name: Remove(Int32)
+  nameWithType: JSONNode.Remove(Int32)
+  fullName: SimpleJSON.JSONNode.Remove(System.Int32)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.Remove(System.Int32)
+    name: Remove
+    nameWithType: JSONNode.Remove
+    fullName: SimpleJSON.JSONNode.Remove
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.Remove(System.Int32)
+    name: Remove
+    nameWithType: JSONNode.Remove
+    fullName: SimpleJSON.JSONNode.Remove
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONNode.Remove(SimpleJSON.JSONNode)
+  commentId: M:SimpleJSON.JSONNode.Remove(SimpleJSON.JSONNode)
+  parent: SimpleJSON.JSONNode
+  name: Remove(JSONNode)
+  nameWithType: JSONNode.Remove(JSONNode)
+  fullName: SimpleJSON.JSONNode.Remove(SimpleJSON.JSONNode)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.Remove(SimpleJSON.JSONNode)
+    name: Remove
+    nameWithType: JSONNode.Remove
+    fullName: SimpleJSON.JSONNode.Remove
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SimpleJSON.JSONNode
+    name: JSONNode
+    nameWithType: JSONNode
+    fullName: SimpleJSON.JSONNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.Remove(SimpleJSON.JSONNode)
+    name: Remove
+    nameWithType: JSONNode.Remove
+    fullName: SimpleJSON.JSONNode.Remove
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SimpleJSON.JSONNode
+    name: JSONNode
+    nameWithType: JSONNode
+    fullName: SimpleJSON.JSONNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONNode.Clone
+  commentId: M:SimpleJSON.JSONNode.Clone
+  parent: SimpleJSON.JSONNode
+  name: Clone()
+  nameWithType: JSONNode.Clone()
+  fullName: SimpleJSON.JSONNode.Clone()
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.Clone
+    name: Clone
+    nameWithType: JSONNode.Clone
+    fullName: SimpleJSON.JSONNode.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.Clone
+    name: Clone
+    nameWithType: JSONNode.Clone
+    fullName: SimpleJSON.JSONNode.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONObject.Clone*
+  commentId: Overload:SimpleJSON.JSONObject.Clone
+  name: Clone
+  nameWithType: JSONObject.Clone
+  fullName: SimpleJSON.JSONObject.Clone
+- uid: SimpleJSON.JSONNode.HasKey(System.String)
+  commentId: M:SimpleJSON.JSONNode.HasKey(System.String)
+  parent: SimpleJSON.JSONNode
+  isExternal: true
+  name: HasKey(String)
+  nameWithType: JSONNode.HasKey(String)
+  fullName: SimpleJSON.JSONNode.HasKey(System.String)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.HasKey(System.String)
+    name: HasKey
+    nameWithType: JSONNode.HasKey
+    fullName: SimpleJSON.JSONNode.HasKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.HasKey(System.String)
+    name: HasKey
+    nameWithType: JSONNode.HasKey
+    fullName: SimpleJSON.JSONNode.HasKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONObject.HasKey*
+  commentId: Overload:SimpleJSON.JSONObject.HasKey
+  name: HasKey
+  nameWithType: JSONObject.HasKey
+  fullName: SimpleJSON.JSONObject.HasKey
+- uid: SimpleJSON.JSONNode.GetValueOrDefault(System.String,SimpleJSON.JSONNode)
+  commentId: M:SimpleJSON.JSONNode.GetValueOrDefault(System.String,SimpleJSON.JSONNode)
+  parent: SimpleJSON.JSONNode
+  isExternal: true
+  name: GetValueOrDefault(String, JSONNode)
+  nameWithType: JSONNode.GetValueOrDefault(String, JSONNode)
+  fullName: SimpleJSON.JSONNode.GetValueOrDefault(System.String, SimpleJSON.JSONNode)
+  spec.csharp:
+  - uid: SimpleJSON.JSONNode.GetValueOrDefault(System.String,SimpleJSON.JSONNode)
+    name: GetValueOrDefault
+    nameWithType: JSONNode.GetValueOrDefault
+    fullName: SimpleJSON.JSONNode.GetValueOrDefault
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SimpleJSON.JSONNode
+    name: JSONNode
+    nameWithType: JSONNode
+    fullName: SimpleJSON.JSONNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SimpleJSON.JSONNode.GetValueOrDefault(System.String,SimpleJSON.JSONNode)
+    name: GetValueOrDefault
+    nameWithType: JSONNode.GetValueOrDefault
+    fullName: SimpleJSON.JSONNode.GetValueOrDefault
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SimpleJSON.JSONNode
+    name: JSONNode
+    nameWithType: JSONNode
+    fullName: SimpleJSON.JSONNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleJSON.JSONObject.GetValueOrDefault*
+  commentId: Overload:SimpleJSON.JSONObject.GetValueOrDefault
+  name: GetValueOrDefault
+  nameWithType: JSONObject.GetValueOrDefault
+  fullName: SimpleJSON.JSONObject.GetValueOrDefault
+- uid: SimpleJSON.JSONNode.Children
+  commentId: P:SimpleJSON.JSONNode.Children
+  parent: SimpleJSON.JSONNode
+  name: Children
+  nameWithType: JSONNode.Children
+  fullName: SimpleJSON.JSONNode.Children
+- uid: SimpleJSON.JSONObject.Children*
+  commentId: Overload:SimpleJSON.JSONObject.Children
+  name: Children
+  nameWithType: JSONObject.Children
+  fullName: SimpleJSON.JSONObject.Children
+- uid: System.Collections.Generic.IEnumerable{SimpleJSON.JSONNode}
+  commentId: T:System.Collections.Generic.IEnumerable{SimpleJSON.JSONNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<JSONNode>
+  nameWithType: IEnumerable<JSONNode>
+  fullName: System.Collections.Generic.IEnumerable<SimpleJSON.JSONNode>
+  nameWithType.vb: IEnumerable(Of JSONNode)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SimpleJSON.JSONNode)
+  name.vb: IEnumerable(Of JSONNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SimpleJSON.JSONNode
+    name: JSONNode
+    nameWithType: JSONNode
+    fullName: SimpleJSON.JSONNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SimpleJSON.JSONNode
+    name: JSONNode
+    nameWithType: JSONNode
+    fullName: SimpleJSON.JSONNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
