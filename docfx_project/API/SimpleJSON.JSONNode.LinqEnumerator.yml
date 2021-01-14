@@ -10,8 +10,6 @@ items:
   - SimpleJSON.JSONNode.LinqEnumerator.GetEnumerator
   - SimpleJSON.JSONNode.LinqEnumerator.MoveNext
   - SimpleJSON.JSONNode.LinqEnumerator.Reset
-  - SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerable#GetEnumerator
-  - SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerator#Current
   langs:
   - csharp
   - vb
@@ -22,7 +20,7 @@ items:
   source:
     id: LinqEnumerator
     path: ''
-    startLine: 2445
+    startLine: 1947
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -67,7 +65,7 @@ items:
   source:
     id: Current
     path: ''
-    startLine: 2455
+    startLine: 1957
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -86,40 +84,6 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerator#Current
-  commentId: P:SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerator#Current
-  id: System#Collections#IEnumerator#Current
-  isEii: true
-  parent: SimpleJSON.JSONNode.LinqEnumerator
-  langs:
-  - csharp
-  - vb
-  name: IEnumerator.Current
-  nameWithType: JSONNode.LinqEnumerator.IEnumerator.Current
-  fullName: SimpleJSON.JSONNode.LinqEnumerator.System.Collections.IEnumerator.Current
-  type: Property
-  source:
-    id: System.Collections.IEnumerator.Current
-    path: ''
-    startLine: 2456
-  assemblies:
-  - cs.temp.dll
-  namespace: SimpleJSON
-  syntax:
-    content: object IEnumerator.Current { get; }
-    parameters: []
-    return:
-      type: System.Object
-    content.vb: ReadOnly WriteOnly Property System.Collections.IEnumerator.Current As Object Implements IEnumerator.Current
-  overload: SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerator#Current*
-  implements:
-  - System.Collections.IEnumerator.Current
-  nameWithType.vb: JSONNode.LinqEnumerator.System.Collections.IEnumerator.Current
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
-  name.vb: System.Collections.IEnumerator.Current
 - uid: SimpleJSON.JSONNode.LinqEnumerator.MoveNext
   commentId: M:SimpleJSON.JSONNode.LinqEnumerator.MoveNext
   id: MoveNext
@@ -134,7 +98,7 @@ items:
   source:
     id: MoveNext
     path: ''
-    startLine: 2457
+    startLine: 1959
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -164,7 +128,7 @@ items:
   source:
     id: Dispose
     path: ''
-    startLine: 2459
+    startLine: 1961
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -192,7 +156,7 @@ items:
   source:
     id: GetEnumerator
     path: ''
-    startLine: 2465
+    startLine: 1967
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -222,7 +186,7 @@ items:
   source:
     id: Reset
     path: ''
-    startLine: 2470
+    startLine: 1972
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -236,35 +200,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerable#GetEnumerator
-  commentId: M:SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerable#GetEnumerator
-  id: System#Collections#IEnumerable#GetEnumerator
-  isEii: true
-  parent: SimpleJSON.JSONNode.LinqEnumerator
-  langs:
-  - csharp
-  - vb
-  name: IEnumerable.GetEnumerator()
-  nameWithType: JSONNode.LinqEnumerator.IEnumerable.GetEnumerator()
-  fullName: SimpleJSON.JSONNode.LinqEnumerator.System.Collections.IEnumerable.GetEnumerator()
-  type: Method
-  source:
-    id: System.Collections.IEnumerable.GetEnumerator
-    path: ''
-    startLine: 2476
-  assemblies:
-  - cs.temp.dll
-  namespace: SimpleJSON
-  syntax:
-    content: IEnumerator IEnumerable.GetEnumerator()
-    return:
-      type: System.Collections.IEnumerator
-    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
-  overload: SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerable#GetEnumerator*
-  implements:
-  - System.Collections.IEnumerable.GetEnumerator
-  nameWithType.vb: JSONNode.LinqEnumerator.System.Collections.IEnumerable.GetEnumerator()
-  name.vb: System.Collections.IEnumerable.GetEnumerator()
 references:
 - uid: SimpleJSON
   commentId: N:SimpleJSON
@@ -965,20 +900,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerator#Current*
-  commentId: Overload:SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerator#Current
-  name: IEnumerator.Current
-  nameWithType: JSONNode.LinqEnumerator.IEnumerator.Current
-  fullName: SimpleJSON.JSONNode.LinqEnumerator.System.Collections.IEnumerator.Current
-  nameWithType.vb: JSONNode.LinqEnumerator.System.Collections.IEnumerator.Current
-  name.vb: System.Collections.IEnumerator.Current
-- uid: System.Collections.IEnumerator.Current
-  commentId: P:System.Collections.IEnumerator.Current
-  parent: System.Collections.IEnumerator
-  isExternal: true
-  name: Current
-  nameWithType: IEnumerator.Current
-  fullName: System.Collections.IEnumerator.Current
 - uid: SimpleJSON.JSONNode.LinqEnumerator.MoveNext*
   commentId: Overload:SimpleJSON.JSONNode.LinqEnumerator.MoveNext
   name: MoveNext
@@ -1157,44 +1078,6 @@ references:
     name: Reset
     nameWithType: IEnumerator.Reset
     fullName: System.Collections.IEnumerator.Reset
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerable#GetEnumerator*
-  commentId: Overload:SimpleJSON.JSONNode.LinqEnumerator.System#Collections#IEnumerable#GetEnumerator
-  name: IEnumerable.GetEnumerator
-  nameWithType: JSONNode.LinqEnumerator.IEnumerable.GetEnumerator
-  fullName: SimpleJSON.JSONNode.LinqEnumerator.System.Collections.IEnumerable.GetEnumerator
-  nameWithType.vb: JSONNode.LinqEnumerator.System.Collections.IEnumerable.GetEnumerator
-  name.vb: System.Collections.IEnumerable.GetEnumerator
-- uid: System.Collections.IEnumerable.GetEnumerator
-  commentId: M:System.Collections.IEnumerable.GetEnumerator
-  parent: System.Collections.IEnumerable
-  isExternal: true
-  name: GetEnumerator()
-  nameWithType: IEnumerable.GetEnumerator()
-  fullName: System.Collections.IEnumerable.GetEnumerator()
-  spec.csharp:
-  - uid: System.Collections.IEnumerable.GetEnumerator
-    name: GetEnumerator
-    nameWithType: IEnumerable.GetEnumerator
-    fullName: System.Collections.IEnumerable.GetEnumerator
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Collections.IEnumerable.GetEnumerator
-    name: GetEnumerator
-    nameWithType: IEnumerable.GetEnumerator
-    fullName: System.Collections.IEnumerable.GetEnumerator
     isExternal: true
   - name: (
     nameWithType: (
