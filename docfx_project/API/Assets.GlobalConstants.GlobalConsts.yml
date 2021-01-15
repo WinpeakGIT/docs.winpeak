@@ -17,7 +17,7 @@ items:
   source:
     id: GlobalConsts
     path: ''
-    startLine: 339
+    startLine: 1621
   assemblies:
   - cs.temp.dll
   namespace: Assets.GlobalConstants
@@ -55,15 +55,15 @@ items:
   source:
     id: UnixEpochStart
     path: ''
-    startLine: 341
+    startLine: 1623
   assemblies:
   - cs.temp.dll
   namespace: Assets.GlobalConstants
   syntax:
     content: public static readonly DateTime UnixEpochStart
     return:
-      type: DateTime
-    content.vb: Public Shared ReadOnly UnixEpochStart As DateTime
+      type: System.DateTime
+    content.vb: Public Shared ReadOnly UnixEpochStart As Date
   modifiers.csharp:
   - public
   - static
@@ -86,7 +86,7 @@ items:
   source:
     id: UnixNowMillis
     path: ''
-    startLine: 342
+    startLine: 1624
   assemblies:
   - cs.temp.dll
   namespace: Assets.GlobalConstants
@@ -403,12 +403,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: DateTime
-  commentId: '!:DateTime'
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
   isExternal: true
   name: DateTime
   nameWithType: DateTime
-  fullName: DateTime
+  fullName: System.DateTime
 - uid: Assets.GlobalConstants.GlobalConsts.UnixNowMillis*
   commentId: Overload:Assets.GlobalConstants.GlobalConsts.UnixNowMillis
   name: UnixNowMillis
