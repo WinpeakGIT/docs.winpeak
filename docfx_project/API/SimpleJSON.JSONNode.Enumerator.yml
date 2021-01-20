@@ -5,8 +5,8 @@ items:
   id: JSONNode.Enumerator
   parent: SimpleJSON
   children:
-  - SimpleJSON.JSONNode.Enumerator.#ctor(System.Collections.Generic.Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator)
-  - SimpleJSON.JSONNode.Enumerator.#ctor(System.Collections.Generic.List{SimpleJSON.JSONNode}.Enumerator)
+  - SimpleJSON.JSONNode.Enumerator.#ctor(Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator)
+  - SimpleJSON.JSONNode.Enumerator.#ctor(List{SimpleJSON.JSONNode}.Enumerator)
   - SimpleJSON.JSONNode.Enumerator.Current
   - SimpleJSON.JSONNode.Enumerator.IsValid
   - SimpleJSON.JSONNode.Enumerator.MoveNext
@@ -20,7 +20,7 @@ items:
   source:
     id: Enumerator
     path: ''
-    startLine: 1887
+    startLine: 2248
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -54,7 +54,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 1893
+    startLine: 2254
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -71,21 +71,21 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: SimpleJSON.JSONNode.Enumerator.#ctor(System.Collections.Generic.List{SimpleJSON.JSONNode}.Enumerator)
-  commentId: M:SimpleJSON.JSONNode.Enumerator.#ctor(System.Collections.Generic.List{SimpleJSON.JSONNode}.Enumerator)
-  id: '#ctor(System.Collections.Generic.List{SimpleJSON.JSONNode}.Enumerator)'
+- uid: SimpleJSON.JSONNode.Enumerator.#ctor(List{SimpleJSON.JSONNode}.Enumerator)
+  commentId: M:SimpleJSON.JSONNode.Enumerator.#ctor(List{SimpleJSON.JSONNode}.Enumerator)
+  id: '#ctor(List{SimpleJSON.JSONNode}.Enumerator)'
   parent: SimpleJSON.JSONNode.Enumerator
   langs:
   - csharp
   - vb
   name: Enumerator(List<JSONNode>.Enumerator)
   nameWithType: JSONNode.Enumerator.Enumerator(List<JSONNode>.Enumerator)
-  fullName: SimpleJSON.JSONNode.Enumerator.Enumerator(System.Collections.Generic.List<SimpleJSON.JSONNode>.Enumerator)
+  fullName: SimpleJSON.JSONNode.Enumerator.Enumerator(List<SimpleJSON.JSONNode>.Enumerator)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 1894
+    startLine: 2255
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -93,7 +93,7 @@ items:
     content: public Enumerator(List<JSONNode>.Enumerator aArrayEnum)
     parameters:
     - id: aArrayEnum
-      type: System.Collections.Generic.List{SimpleJSON.JSONNode}.Enumerator
+      type: List{SimpleJSON.JSONNode}.Enumerator
     content.vb: Public Sub New(aArrayEnum As List(Of JSONNode).Enumerator)
   overload: SimpleJSON.JSONNode.Enumerator.#ctor*
   nameWithType.vb: JSONNode.Enumerator.Enumerator(List(Of JSONNode).Enumerator)
@@ -101,23 +101,23 @@ items:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: SimpleJSON.JSONNode.Enumerator.Enumerator(System.Collections.Generic.List(Of SimpleJSON.JSONNode).Enumerator)
+  fullName.vb: SimpleJSON.JSONNode.Enumerator.Enumerator(List(Of SimpleJSON.JSONNode).Enumerator)
   name.vb: Enumerator(List(Of JSONNode).Enumerator)
-- uid: SimpleJSON.JSONNode.Enumerator.#ctor(System.Collections.Generic.Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator)
-  commentId: M:SimpleJSON.JSONNode.Enumerator.#ctor(System.Collections.Generic.Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator)
-  id: '#ctor(System.Collections.Generic.Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator)'
+- uid: SimpleJSON.JSONNode.Enumerator.#ctor(Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator)
+  commentId: M:SimpleJSON.JSONNode.Enumerator.#ctor(Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator)
+  id: '#ctor(Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator)'
   parent: SimpleJSON.JSONNode.Enumerator
   langs:
   - csharp
   - vb
   name: Enumerator(Dictionary<String, JSONNode>.Enumerator)
   nameWithType: JSONNode.Enumerator.Enumerator(Dictionary<String, JSONNode>.Enumerator)
-  fullName: SimpleJSON.JSONNode.Enumerator.Enumerator(System.Collections.Generic.Dictionary<System.String, SimpleJSON.JSONNode>.Enumerator)
+  fullName: SimpleJSON.JSONNode.Enumerator.Enumerator(Dictionary<System.String, SimpleJSON.JSONNode>.Enumerator)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 1900
+    startLine: 2261
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -125,7 +125,7 @@ items:
     content: public Enumerator(Dictionary<string, JSONNode>.Enumerator aDictEnum)
     parameters:
     - id: aDictEnum
-      type: System.Collections.Generic.Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator
+      type: Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator
     content.vb: Public Sub New(aDictEnum As Dictionary(Of String, JSONNode).Enumerator)
   overload: SimpleJSON.JSONNode.Enumerator.#ctor*
   nameWithType.vb: JSONNode.Enumerator.Enumerator(Dictionary(Of String, JSONNode).Enumerator)
@@ -133,7 +133,7 @@ items:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: SimpleJSON.JSONNode.Enumerator.Enumerator(System.Collections.Generic.Dictionary(Of System.String, SimpleJSON.JSONNode).Enumerator)
+  fullName.vb: SimpleJSON.JSONNode.Enumerator.Enumerator(Dictionary(Of System.String, SimpleJSON.JSONNode).Enumerator)
   name.vb: Enumerator(Dictionary(Of String, JSONNode).Enumerator)
 - uid: SimpleJSON.JSONNode.Enumerator.Current
   commentId: P:SimpleJSON.JSONNode.Enumerator.Current
@@ -149,7 +149,7 @@ items:
   source:
     id: Current
     path: ''
-    startLine: 1906
+    startLine: 2267
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -157,7 +157,7 @@ items:
     content: public KeyValuePair<string, JSONNode> Current { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode}
+      type: KeyValuePair{System.String,SimpleJSON.JSONNode}
     content.vb: Public ReadOnly Property Current As KeyValuePair(Of String, JSONNode)
   overload: SimpleJSON.JSONNode.Enumerator.Current*
   modifiers.csharp:
@@ -180,7 +180,7 @@ items:
   source:
     id: MoveNext
     path: ''
-    startLine: 1917
+    startLine: 2278
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -485,54 +485,19 @@ references:
   name: Enumerator
   nameWithType: JSONNode.Enumerator.Enumerator
   fullName: SimpleJSON.JSONNode.Enumerator.Enumerator
-- uid: System.Collections.Generic.List{SimpleJSON.JSONNode}.Enumerator
-  commentId: T:System.Collections.Generic.List{SimpleJSON.JSONNode}.Enumerator
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1.Enumerator
-  name: List.Enumerator<>
-  nameWithType: List.Enumerator<>
-  fullName: System.Collections.Generic.List.Enumerator<>
-  nameWithType.vb: List.Enumerator(Of )
-  fullName.vb: System.Collections.Generic.List.Enumerator(Of )
-  name.vb: List.Enumerator(Of )
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1.Enumerator
-    name: List.Enumerator
-    nameWithType: List.Enumerator
-    fullName: System.Collections.Generic.List.Enumerator
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1.Enumerator
-    name: List.Enumerator
-    nameWithType: List.Enumerator
-    fullName: System.Collections.Generic.List.Enumerator
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic.List`1.Enumerator
-  commentId: T:System.Collections.Generic.List`1.Enumerator
+- uid: List{SimpleJSON.JSONNode}.Enumerator
   isExternal: true
   name: List.Enumerator<>
   nameWithType: List.Enumerator<>
-  fullName: System.Collections.Generic.List.Enumerator<>
+  fullName: List.Enumerator<>
   nameWithType.vb: List.Enumerator(Of )
-  fullName.vb: System.Collections.Generic.List.Enumerator(Of )
+  fullName.vb: List.Enumerator(Of )
   name.vb: List.Enumerator(Of )
   spec.csharp:
-  - uid: System.Collections.Generic.List`1.Enumerator
+  - uid: List{SimpleJSON.JSONNode}.Enumerator
     name: List.Enumerator
     nameWithType: List.Enumerator
-    fullName: System.Collections.Generic.List.Enumerator
+    fullName: List.Enumerator
     isExternal: true
   - name: <
     nameWithType: <
@@ -541,10 +506,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.List`1.Enumerator
+  - uid: List{SimpleJSON.JSONNode}.Enumerator
     name: List.Enumerator
     nameWithType: List.Enumerator
-    fullName: System.Collections.Generic.List.Enumerator
+    fullName: List.Enumerator
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -552,27 +517,19 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
+- uid: Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator
   isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-- uid: System.Collections.Generic.Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator
-  commentId: T:System.Collections.Generic.Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.Dictionary`2.Enumerator
   name: Dictionary.Enumerator<>
   nameWithType: Dictionary.Enumerator<>
-  fullName: System.Collections.Generic.Dictionary.Enumerator<>
+  fullName: Dictionary.Enumerator<>
   nameWithType.vb: Dictionary.Enumerator(Of )
-  fullName.vb: System.Collections.Generic.Dictionary.Enumerator(Of )
+  fullName.vb: Dictionary.Enumerator(Of )
   name.vb: Dictionary.Enumerator(Of )
   spec.csharp:
-  - uid: System.Collections.Generic.Dictionary`2.Enumerator
+  - uid: Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator
     name: Dictionary.Enumerator
     nameWithType: Dictionary.Enumerator
-    fullName: System.Collections.Generic.Dictionary.Enumerator
+    fullName: Dictionary.Enumerator
     isExternal: true
   - name: <
     nameWithType: <
@@ -581,43 +538,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.Dictionary`2.Enumerator
+  - uid: Dictionary{System.String,SimpleJSON.JSONNode}.Enumerator
     name: Dictionary.Enumerator
     nameWithType: Dictionary.Enumerator
-    fullName: System.Collections.Generic.Dictionary.Enumerator
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic.Dictionary`2.Enumerator
-  commentId: T:System.Collections.Generic.Dictionary`2.Enumerator
-  isExternal: true
-  name: Dictionary.Enumerator<>
-  nameWithType: Dictionary.Enumerator<>
-  fullName: System.Collections.Generic.Dictionary.Enumerator<>
-  nameWithType.vb: Dictionary.Enumerator(Of )
-  fullName.vb: System.Collections.Generic.Dictionary.Enumerator(Of )
-  name.vb: Dictionary.Enumerator(Of )
-  spec.csharp:
-  - uid: System.Collections.Generic.Dictionary`2.Enumerator
-    name: Dictionary.Enumerator
-    nameWithType: Dictionary.Enumerator
-    fullName: System.Collections.Generic.Dictionary.Enumerator
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.Dictionary`2.Enumerator
-    name: Dictionary.Enumerator
-    nameWithType: Dictionary.Enumerator
-    fullName: System.Collections.Generic.Dictionary.Enumerator
+    fullName: Dictionary.Enumerator
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -630,21 +554,20 @@ references:
   name: Current
   nameWithType: JSONNode.Enumerator.Current
   fullName: SimpleJSON.JSONNode.Enumerator.Current
-- uid: System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode}
-  commentId: T:System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.KeyValuePair`2
+- uid: KeyValuePair{System.String,SimpleJSON.JSONNode}
+  commentId: '!:KeyValuePair{System.String,SimpleJSON.JSONNode}'
+  definition: KeyValuePair`2
   name: KeyValuePair<String, JSONNode>
   nameWithType: KeyValuePair<String, JSONNode>
-  fullName: System.Collections.Generic.KeyValuePair<System.String, SimpleJSON.JSONNode>
+  fullName: KeyValuePair<System.String, SimpleJSON.JSONNode>
   nameWithType.vb: KeyValuePair(Of String, JSONNode)
-  fullName.vb: System.Collections.Generic.KeyValuePair(Of System.String, SimpleJSON.JSONNode)
+  fullName.vb: KeyValuePair(Of System.String, SimpleJSON.JSONNode)
   name.vb: KeyValuePair(Of String, JSONNode)
   spec.csharp:
-  - uid: System.Collections.Generic.KeyValuePair`2
+  - uid: KeyValuePair`2
     name: KeyValuePair
     nameWithType: KeyValuePair
-    fullName: System.Collections.Generic.KeyValuePair
+    fullName: KeyValuePair
     isExternal: true
   - name: <
     nameWithType: <
@@ -665,10 +588,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.KeyValuePair`2
+  - uid: KeyValuePair`2
     name: KeyValuePair
     nameWithType: KeyValuePair
-    fullName: System.Collections.Generic.KeyValuePair
+    fullName: KeyValuePair
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -688,54 +611,53 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.KeyValuePair`2
-  commentId: T:System.Collections.Generic.KeyValuePair`2
+- uid: KeyValuePair`2
   isExternal: true
-  name: KeyValuePair<TKey, TValue>
-  nameWithType: KeyValuePair<TKey, TValue>
-  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
-  nameWithType.vb: KeyValuePair(Of TKey, TValue)
-  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
-  name.vb: KeyValuePair(Of TKey, TValue)
+  name: KeyValuePair<, >
+  nameWithType: KeyValuePair<, >
+  fullName: KeyValuePair<, >
+  nameWithType.vb: KeyValuePair(Of , )
+  fullName.vb: KeyValuePair(Of , )
+  name.vb: KeyValuePair(Of , )
   spec.csharp:
-  - uid: System.Collections.Generic.KeyValuePair`2
+  - uid: KeyValuePair`2
     name: KeyValuePair
     nameWithType: KeyValuePair
-    fullName: System.Collections.Generic.KeyValuePair
+    fullName: KeyValuePair
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: TKey
-    nameWithType: TKey
-    fullName: TKey
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - name: TValue
-    nameWithType: TValue
-    fullName: TValue
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.KeyValuePair`2
+  - uid: KeyValuePair`2
     name: KeyValuePair
     nameWithType: KeyValuePair
-    fullName: System.Collections.Generic.KeyValuePair
+    fullName: KeyValuePair
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: TKey
-    nameWithType: TKey
-    fullName: TKey
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - name: TValue
-    nameWithType: TValue
-    fullName: TValue
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )

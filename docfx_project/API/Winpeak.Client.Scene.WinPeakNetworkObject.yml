@@ -1,0 +1,1156 @@
+### YamlMime:ManagedReference
+items:
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject
+  commentId: T:Winpeak.Client.Scene.WinPeakNetworkObject
+  id: WinPeakNetworkObject
+  parent: Winpeak.Client.Scene
+  children:
+  - Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints(IEnumerable{Winpeak.Client.Scene.Waypoint})
+  - Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints(IEnumerable{Winpeak.Client.Scene.Waypoint},System.Int64)
+  - Winpeak.Client.Scene.WinPeakNetworkObject.colliderParams
+  - Winpeak.Client.Scene.WinPeakNetworkObject.colliderType
+  - Winpeak.Client.Scene.WinPeakNetworkObject.colliderTypeStr
+  - Winpeak.Client.Scene.WinPeakNetworkObject.destructible
+  - Winpeak.Client.Scene.WinPeakNetworkObject.fence
+  - Winpeak.Client.Scene.WinPeakNetworkObject.health
+  - Winpeak.Client.Scene.WinPeakNetworkObject.Init(Winpeak.Client.Networking.ServerConnectionStatusController)
+  - Winpeak.Client.Scene.WinPeakNetworkObject.isFromFile
+  - Winpeak.Client.Scene.WinPeakNetworkObject.LastNetworkPoints
+  - Winpeak.Client.Scene.WinPeakNetworkObject.Move(Winpeak.Client.Legacy.WaypointsResponse)
+  - Winpeak.Client.Scene.WinPeakNetworkObject.MoveCount
+  - Winpeak.Client.Scene.WinPeakNetworkObject.Name
+  - Winpeak.Client.Scene.WinPeakNetworkObject.OnCollide
+  - Winpeak.Client.Scene.WinPeakNetworkObject.OnDeath
+  - Winpeak.Client.Scene.WinPeakNetworkObject.OnDestroy
+  - Winpeak.Client.Scene.WinPeakNetworkObject.physicsType
+  - Winpeak.Client.Scene.WinPeakNetworkObject.physicsTypeStr
+  - Winpeak.Client.Scene.WinPeakNetworkObject.pos
+  - Winpeak.Client.Scene.WinPeakNetworkObject.rotation
+  - Winpeak.Client.Scene.WinPeakNetworkObject.scores
+  - Winpeak.Client.Scene.WinPeakNetworkObject.speed
+  - Winpeak.Client.Scene.WinPeakNetworkObject.velocity
+  - Winpeak.Client.Scene.WinPeakNetworkObject.Waypoints
+  langs:
+  - csharp
+  - vb
+  name: WinPeakNetworkObject
+  nameWithType: WinPeakNetworkObject
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject
+  type: Class
+  source:
+    id: WinPeakNetworkObject
+    path: ''
+    startLine: 1803
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: 'public class WinPeakNetworkObject : MonoBehaviour, IWinPeakSubscriber'
+    content.vb: >-
+      Public Class WinPeakNetworkObject
+          Inherits MonoBehaviour
+          Implements IWinPeakSubscriber
+  inheritance:
+  - System.Object
+  implements:
+  - Winpeak.Client.Scene.IWinPeakSubscriber
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.isFromFile
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.isFromFile
+  id: isFromFile
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: isFromFile
+  nameWithType: WinPeakNetworkObject.isFromFile
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.isFromFile
+  type: Field
+  source:
+    id: isFromFile
+    path: ''
+    startLine: 1818
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public bool isFromFile
+    return:
+      type: System.Boolean
+    content.vb: Public isFromFile As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.Name
+  commentId: P:Winpeak.Client.Scene.WinPeakNetworkObject.Name
+  id: Name
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: WinPeakNetworkObject.Name
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.Name
+  type: Property
+  source:
+    id: Name
+    path: ''
+    startLine: 1819
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Winpeak.Client.Scene.WinPeakNetworkObject.Name*
+  implements:
+  - Winpeak.Client.Scene.IWinPeakSubscriber.Name
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.Waypoints
+  commentId: P:Winpeak.Client.Scene.WinPeakNetworkObject.Waypoints
+  id: Waypoints
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: Waypoints
+  nameWithType: WinPeakNetworkObject.Waypoints
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.Waypoints
+  type: Property
+  source:
+    id: Waypoints
+    path: ''
+    startLine: 1820
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public List<Waypoint> Waypoints { get; set; }
+    parameters: []
+    return:
+      type: List{Winpeak.Client.Scene.Waypoint}
+    content.vb: Public Property Waypoints As List(Of Waypoint)
+  overload: Winpeak.Client.Scene.WinPeakNetworkObject.Waypoints*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.physicsType
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.physicsType
+  id: physicsType
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: physicsType
+  nameWithType: WinPeakNetworkObject.physicsType
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.physicsType
+  type: Field
+  source:
+    id: physicsType
+    path: ''
+    startLine: 1828
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public ObjPhysType physicsType
+    return:
+      type: Winpeak.Client.Scene.ObjPhysType
+    content.vb: Public physicsType As ObjPhysType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.colliderType
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.colliderType
+  id: colliderType
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: colliderType
+  nameWithType: WinPeakNetworkObject.colliderType
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.colliderType
+  type: Field
+  source:
+    id: colliderType
+    path: ''
+    startLine: 1829
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public ColliderTypes colliderType
+    return:
+      type: Winpeak.Client.Scene.ColliderTypes
+    content.vb: Public colliderType As ColliderTypes
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.OnDeath
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.OnDeath
+  id: OnDeath
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: OnDeath
+  nameWithType: WinPeakNetworkObject.OnDeath
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.OnDeath
+  type: Field
+  source:
+    id: OnDeath
+    path: ''
+    startLine: 1830
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public string OnDeath
+    return:
+      type: System.String
+    content.vb: Public OnDeath As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.OnCollide
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.OnCollide
+  id: OnCollide
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: OnCollide
+  nameWithType: WinPeakNetworkObject.OnCollide
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.OnCollide
+  type: Field
+  source:
+    id: OnCollide
+    path: ''
+    startLine: 1831
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public string OnCollide
+    return:
+      type: System.String
+    content.vb: Public OnCollide As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.physicsTypeStr
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.physicsTypeStr
+  id: physicsTypeStr
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: physicsTypeStr
+  nameWithType: WinPeakNetworkObject.physicsTypeStr
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.physicsTypeStr
+  type: Field
+  source:
+    id: physicsTypeStr
+    path: ''
+    startLine: 1832
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public string physicsTypeStr
+    return:
+      type: System.String
+    content.vb: Public physicsTypeStr As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.colliderTypeStr
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.colliderTypeStr
+  id: colliderTypeStr
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: colliderTypeStr
+  nameWithType: WinPeakNetworkObject.colliderTypeStr
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.colliderTypeStr
+  type: Field
+  source:
+    id: colliderTypeStr
+    path: ''
+    startLine: 1833
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public string colliderTypeStr
+    return:
+      type: System.String
+    content.vb: Public colliderTypeStr As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.scores
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.scores
+  id: scores
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: scores
+  nameWithType: WinPeakNetworkObject.scores
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.scores
+  type: Field
+  source:
+    id: scores
+    path: ''
+    startLine: 1834
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public int scores
+    return:
+      type: System.Int32
+    content.vb: Public scores As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.rotation
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.rotation
+  id: rotation
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: rotation
+  nameWithType: WinPeakNetworkObject.rotation
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.rotation
+  type: Field
+  source:
+    id: rotation
+    path: ''
+    startLine: 1835
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public float rotation
+    return:
+      type: System.Single
+    content.vb: Public rotation As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.health
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.health
+  id: health
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: health
+  nameWithType: WinPeakNetworkObject.health
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.health
+  type: Field
+  source:
+    id: health
+    path: ''
+    startLine: 1836
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public float health
+    return:
+      type: System.Single
+    content.vb: Public health As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.pos
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.pos
+  id: pos
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: pos
+  nameWithType: WinPeakNetworkObject.pos
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.pos
+  type: Field
+  source:
+    id: pos
+    path: ''
+    startLine: 1837
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public float[] pos
+    return:
+      type: System.Single[]
+    content.vb: Public pos As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.velocity
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.velocity
+  id: velocity
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: velocity
+  nameWithType: WinPeakNetworkObject.velocity
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.velocity
+  type: Field
+  source:
+    id: velocity
+    path: ''
+    startLine: 1838
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public float[] velocity
+    return:
+      type: System.Single[]
+    content.vb: Public velocity As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.colliderParams
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.colliderParams
+  id: colliderParams
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: colliderParams
+  nameWithType: WinPeakNetworkObject.colliderParams
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.colliderParams
+  type: Field
+  source:
+    id: colliderParams
+    path: ''
+    startLine: 1839
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public float[] colliderParams
+    return:
+      type: System.Single[]
+    content.vb: Public colliderParams As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.fence
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.fence
+  id: fence
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: fence
+  nameWithType: WinPeakNetworkObject.fence
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.fence
+  type: Field
+  source:
+    id: fence
+    path: ''
+    startLine: 1840
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public float[] fence
+    return:
+      type: System.Single[]
+    content.vb: Public fence As Single()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.speed
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.speed
+  id: speed
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: speed
+  nameWithType: WinPeakNetworkObject.speed
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.speed
+  type: Field
+  source:
+    id: speed
+    path: ''
+    startLine: 1841
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public float speed
+    return:
+      type: System.Single
+    content.vb: Public speed As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.destructible
+  commentId: F:Winpeak.Client.Scene.WinPeakNetworkObject.destructible
+  id: destructible
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: destructible
+  nameWithType: WinPeakNetworkObject.destructible
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.destructible
+  type: Field
+  source:
+    id: destructible
+    path: ''
+    startLine: 1842
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public bool destructible
+    return:
+      type: System.Boolean
+    content.vb: Public destructible As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.OnDestroy
+  commentId: M:Winpeak.Client.Scene.WinPeakNetworkObject.OnDestroy
+  id: OnDestroy
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: OnDestroy()
+  nameWithType: WinPeakNetworkObject.OnDestroy()
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.OnDestroy()
+  type: Method
+  source:
+    id: OnDestroy
+    path: ''
+    startLine: 1906
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public void OnDestroy()
+    content.vb: Public Sub OnDestroy
+  overload: Winpeak.Client.Scene.WinPeakNetworkObject.OnDestroy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.MoveCount
+  commentId: P:Winpeak.Client.Scene.WinPeakNetworkObject.MoveCount
+  id: MoveCount
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: MoveCount
+  nameWithType: WinPeakNetworkObject.MoveCount
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.MoveCount
+  type: Property
+  source:
+    id: MoveCount
+    path: ''
+    startLine: 1913
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public long MoveCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property MoveCount As Long
+  overload: Winpeak.Client.Scene.WinPeakNetworkObject.MoveCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.LastNetworkPoints
+  commentId: P:Winpeak.Client.Scene.WinPeakNetworkObject.LastNetworkPoints
+  id: LastNetworkPoints
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: LastNetworkPoints
+  nameWithType: WinPeakNetworkObject.LastNetworkPoints
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.LastNetworkPoints
+  type: Property
+  source:
+    id: LastNetworkPoints
+    path: ''
+    startLine: 1924
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public Waypoint[] LastNetworkPoints { get; }
+    parameters: []
+    return:
+      type: Winpeak.Client.Scene.Waypoint[]
+    content.vb: Public ReadOnly Property LastNetworkPoints As Waypoint()
+  overload: Winpeak.Client.Scene.WinPeakNetworkObject.LastNetworkPoints*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.Move(Winpeak.Client.Legacy.WaypointsResponse)
+  commentId: M:Winpeak.Client.Scene.WinPeakNetworkObject.Move(Winpeak.Client.Legacy.WaypointsResponse)
+  id: Move(Winpeak.Client.Legacy.WaypointsResponse)
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: Move(WaypointsResponse)
+  nameWithType: WinPeakNetworkObject.Move(WaypointsResponse)
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.Move(Winpeak.Client.Legacy.WaypointsResponse)
+  type: Method
+  source:
+    id: Move
+    path: ''
+    startLine: 1965
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public void Move(WaypointsResponse movement)
+    parameters:
+    - id: movement
+      type: Winpeak.Client.Legacy.WaypointsResponse
+    content.vb: Public Sub Move(movement As WaypointsResponse)
+  overload: Winpeak.Client.Scene.WinPeakNetworkObject.Move*
+  implements:
+  - Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Legacy.WaypointsResponse)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints(IEnumerable{Winpeak.Client.Scene.Waypoint},System.Int64)
+  commentId: M:Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints(IEnumerable{Winpeak.Client.Scene.Waypoint},System.Int64)
+  id: AddWaypoints(IEnumerable{Winpeak.Client.Scene.Waypoint},System.Int64)
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: AddWaypoints(IEnumerable<Waypoint>, Int64)
+  nameWithType: WinPeakNetworkObject.AddWaypoints(IEnumerable<Waypoint>, Int64)
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints(IEnumerable<Winpeak.Client.Scene.Waypoint>, System.Int64)
+  type: Method
+  source:
+    id: AddWaypoints
+    path: ''
+    startLine: 1969
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public void AddWaypoints(IEnumerable<Waypoint> newWaypoints, long moveCount)
+    parameters:
+    - id: newWaypoints
+      type: IEnumerable{Winpeak.Client.Scene.Waypoint}
+    - id: moveCount
+      type: System.Int64
+    content.vb: Public Sub AddWaypoints(newWaypoints As IEnumerable(Of Waypoint), moveCount As Long)
+  overload: Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints*
+  nameWithType.vb: WinPeakNetworkObject.AddWaypoints(IEnumerable(Of Waypoint), Int64)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints(IEnumerable(Of Winpeak.Client.Scene.Waypoint), System.Int64)
+  name.vb: AddWaypoints(IEnumerable(Of Waypoint), Int64)
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints(IEnumerable{Winpeak.Client.Scene.Waypoint})
+  commentId: M:Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints(IEnumerable{Winpeak.Client.Scene.Waypoint})
+  id: AddWaypoints(IEnumerable{Winpeak.Client.Scene.Waypoint})
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: AddWaypoints(IEnumerable<Waypoint>)
+  nameWithType: WinPeakNetworkObject.AddWaypoints(IEnumerable<Waypoint>)
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints(IEnumerable<Winpeak.Client.Scene.Waypoint>)
+  type: Method
+  source:
+    id: AddWaypoints
+    path: ''
+    startLine: 1978
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public void AddWaypoints(IEnumerable<Waypoint> newWaypoints)
+    parameters:
+    - id: newWaypoints
+      type: IEnumerable{Winpeak.Client.Scene.Waypoint}
+    content.vb: Public Sub AddWaypoints(newWaypoints As IEnumerable(Of Waypoint))
+  overload: Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints*
+  nameWithType.vb: WinPeakNetworkObject.AddWaypoints(IEnumerable(Of Waypoint))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints(IEnumerable(Of Winpeak.Client.Scene.Waypoint))
+  name.vb: AddWaypoints(IEnumerable(Of Waypoint))
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.Init(Winpeak.Client.Networking.ServerConnectionStatusController)
+  commentId: M:Winpeak.Client.Scene.WinPeakNetworkObject.Init(Winpeak.Client.Networking.ServerConnectionStatusController)
+  id: Init(Winpeak.Client.Networking.ServerConnectionStatusController)
+  parent: Winpeak.Client.Scene.WinPeakNetworkObject
+  langs:
+  - csharp
+  - vb
+  name: Init(ServerConnectionStatusController)
+  nameWithType: WinPeakNetworkObject.Init(ServerConnectionStatusController)
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.Init(Winpeak.Client.Networking.ServerConnectionStatusController)
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 2040
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: public void Init(ServerConnectionStatusController statusController)
+    parameters:
+    - id: statusController
+      type: Winpeak.Client.Networking.ServerConnectionStatusController
+    content.vb: Public Sub Init(statusController As ServerConnectionStatusController)
+  overload: Winpeak.Client.Scene.WinPeakNetworkObject.Init*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Winpeak.Client.Scene
+  commentId: N:Winpeak.Client.Scene
+  name: Winpeak.Client.Scene
+  nameWithType: Winpeak.Client.Scene
+  fullName: Winpeak.Client.Scene
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Winpeak.Client.Scene.IWinPeakSubscriber
+  commentId: T:Winpeak.Client.Scene.IWinPeakSubscriber
+  parent: Winpeak.Client.Scene
+  name: IWinPeakSubscriber
+  nameWithType: IWinPeakSubscriber
+  fullName: Winpeak.Client.Scene.IWinPeakSubscriber
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.Name*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakNetworkObject.Name
+  name: Name
+  nameWithType: WinPeakNetworkObject.Name
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.Name
+- uid: Winpeak.Client.Scene.IWinPeakSubscriber.Name
+  commentId: P:Winpeak.Client.Scene.IWinPeakSubscriber.Name
+  parent: Winpeak.Client.Scene.IWinPeakSubscriber
+  name: Name
+  nameWithType: IWinPeakSubscriber.Name
+  fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.Waypoints*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakNetworkObject.Waypoints
+  name: Waypoints
+  nameWithType: WinPeakNetworkObject.Waypoints
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.Waypoints
+- uid: List{Winpeak.Client.Scene.Waypoint}
+  commentId: '!:List{Winpeak.Client.Scene.Waypoint}'
+  definition: List`1
+  name: List<Waypoint>
+  nameWithType: List<Waypoint>
+  fullName: List<Winpeak.Client.Scene.Waypoint>
+  nameWithType.vb: List(Of Waypoint)
+  fullName.vb: List(Of Winpeak.Client.Scene.Waypoint)
+  name.vb: List(Of Waypoint)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Scene.ObjPhysType
+  commentId: T:Winpeak.Client.Scene.ObjPhysType
+  parent: Winpeak.Client.Scene
+  name: ObjPhysType
+  nameWithType: ObjPhysType
+  fullName: Winpeak.Client.Scene.ObjPhysType
+- uid: Winpeak.Client.Scene.ColliderTypes
+  commentId: T:Winpeak.Client.Scene.ColliderTypes
+  parent: Winpeak.Client.Scene
+  name: ColliderTypes
+  nameWithType: ColliderTypes
+  fullName: Winpeak.Client.Scene.ColliderTypes
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.OnDestroy*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakNetworkObject.OnDestroy
+  name: OnDestroy
+  nameWithType: WinPeakNetworkObject.OnDestroy
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.OnDestroy
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.MoveCount*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakNetworkObject.MoveCount
+  name: MoveCount
+  nameWithType: WinPeakNetworkObject.MoveCount
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.MoveCount
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.LastNetworkPoints*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakNetworkObject.LastNetworkPoints
+  name: LastNetworkPoints
+  nameWithType: WinPeakNetworkObject.LastNetworkPoints
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.LastNetworkPoints
+- uid: Winpeak.Client.Scene.Waypoint[]
+  isExternal: true
+  name: Waypoint[]
+  nameWithType: Waypoint[]
+  fullName: Winpeak.Client.Scene.Waypoint[]
+  nameWithType.vb: Waypoint()
+  fullName.vb: Winpeak.Client.Scene.Waypoint()
+  name.vb: Waypoint()
+  spec.csharp:
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.Move*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakNetworkObject.Move
+  name: Move
+  nameWithType: WinPeakNetworkObject.Move
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.Move
+- uid: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Legacy.WaypointsResponse)
+  commentId: M:Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Legacy.WaypointsResponse)
+  parent: Winpeak.Client.Scene.IWinPeakSubscriber
+  name: Move(WaypointsResponse)
+  nameWithType: IWinPeakSubscriber.Move(WaypointsResponse)
+  fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Legacy.WaypointsResponse)
+  spec.csharp:
+  - uid: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Legacy.WaypointsResponse)
+    name: Move
+    nameWithType: IWinPeakSubscriber.Move
+    fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Move
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Winpeak.Client.Legacy.WaypointsResponse
+    name: WaypointsResponse
+    nameWithType: WaypointsResponse
+    fullName: Winpeak.Client.Legacy.WaypointsResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Legacy.WaypointsResponse)
+    name: Move
+    nameWithType: IWinPeakSubscriber.Move
+    fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Move
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Winpeak.Client.Legacy.WaypointsResponse
+    name: WaypointsResponse
+    nameWithType: WaypointsResponse
+    fullName: Winpeak.Client.Legacy.WaypointsResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Legacy.WaypointsResponse
+  commentId: T:Winpeak.Client.Legacy.WaypointsResponse
+  parent: Winpeak.Client.Legacy
+  name: WaypointsResponse
+  nameWithType: WaypointsResponse
+  fullName: Winpeak.Client.Legacy.WaypointsResponse
+- uid: Winpeak.Client.Legacy
+  commentId: N:Winpeak.Client.Legacy
+  name: Winpeak.Client.Legacy
+  nameWithType: Winpeak.Client.Legacy
+  fullName: Winpeak.Client.Legacy
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints
+  name: AddWaypoints
+  nameWithType: WinPeakNetworkObject.AddWaypoints
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.AddWaypoints
+- uid: IEnumerable{Winpeak.Client.Scene.Waypoint}
+  commentId: '!:IEnumerable{Winpeak.Client.Scene.Waypoint}'
+  definition: IEnumerable`1
+  name: IEnumerable<Waypoint>
+  nameWithType: IEnumerable<Waypoint>
+  fullName: IEnumerable<Winpeak.Client.Scene.Waypoint>
+  nameWithType.vb: IEnumerable(Of Waypoint)
+  fullName.vb: IEnumerable(Of Winpeak.Client.Scene.Waypoint)
+  name.vb: IEnumerable(Of Waypoint)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Scene.WinPeakNetworkObject.Init*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakNetworkObject.Init
+  name: Init
+  nameWithType: WinPeakNetworkObject.Init
+  fullName: Winpeak.Client.Scene.WinPeakNetworkObject.Init
+- uid: Winpeak.Client.Networking.ServerConnectionStatusController
+  commentId: T:Winpeak.Client.Networking.ServerConnectionStatusController
+  parent: Winpeak.Client.Networking
+  name: ServerConnectionStatusController
+  nameWithType: ServerConnectionStatusController
+  fullName: Winpeak.Client.Networking.ServerConnectionStatusController
+- uid: Winpeak.Client.Networking
+  commentId: N:Winpeak.Client.Networking
+  name: Winpeak.Client.Networking
+  nameWithType: Winpeak.Client.Networking
+  fullName: Winpeak.Client.Networking

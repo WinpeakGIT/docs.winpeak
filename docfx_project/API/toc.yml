@@ -1,34 +1,4 @@
 ### YamlMime:TableOfContent
-- uid: Assets.GlobalConstants
-  name: Assets.GlobalConstants
-  items:
-  - uid: Assets.GlobalConstants.GlobalConsts
-    name: GlobalConsts
-- uid: Assets.Networking
-  name: Assets.Networking
-  items:
-  - uid: Assets.Networking.DevConfigs
-    name: DevConfigs
-- uid: Assets.Networking.Exceptions
-  name: Assets.Networking.Exceptions
-  items:
-  - uid: Assets.Networking.Exceptions.WinPeakAuthProceedException
-    name: WinPeakAuthProceedException
-  - uid: Assets.Networking.Exceptions.WinPeakClientAckProceedException
-    name: WinPeakClientAckProceedException
-  - uid: Assets.Networking.Exceptions.WinPeakException
-    name: WinPeakException
-  - uid: Assets.Networking.Exceptions.WinPeakSyncProceedException
-    name: WinPeakSyncProceedException
-  - uid: Assets.Networking.Exceptions.WinPeakWaypointProceedException
-    name: WinPeakWaypointProceedException
-- uid: DefaultNamespace
-  name: DefaultNamespace
-  items:
-  - uid: DefaultNamespace.Packet
-    name: Packet
-  - uid: DefaultNamespace.ReadPointsFromFile
-    name: ReadPointsFromFile
 - uid: SimpleJSON
   name: SimpleJSON
   items:
@@ -60,9 +30,101 @@
     name: JSONString
   - uid: SimpleJSON.JSONTextMode
     name: JSONTextMode
-- uid: structs
-  name: structs
+- uid: Winpeak.Client.API
+  name: Winpeak.Client.API
   items:
-  - uid: structs.LimitedQueue`1
+  - uid: Winpeak.Client.API.IInternalWinPeakClient
+    name: IInternalWinPeakClient
+  - uid: Winpeak.Client.API.IWinPeakClient
+    name: IWinPeakClient
+  - uid: Winpeak.Client.API.WinPeakAPI
+    name: WinPeakAPI
+- uid: Winpeak.Client.Legacy
+  name: Winpeak.Client.Legacy
+  items:
+  - uid: Winpeak.Client.Legacy.WaypointsResponse
+    name: WaypointsResponse
+- uid: Winpeak.Client.Models
+  name: Winpeak.Client.Models
+  items:
+  - uid: Winpeak.Client.Models.LimitedQueue`1
     name: LimitedQueue<T>
     name.vb: LimitedQueue(Of T)
+  - uid: Winpeak.Client.Models.ListQueue`1
+    name: ListQueue<T>
+    name.vb: ListQueue(Of T)
+- uid: Winpeak.Client.Networking
+  name: Winpeak.Client.Networking
+  items:
+  - uid: Winpeak.Client.Networking.DevConfigs
+    name: DevConfigs
+  - uid: Winpeak.Client.Networking.NetworkControllerImportantWrapper
+    name: NetworkControllerImportantWrapper
+  - uid: Winpeak.Client.Networking.Packet
+    name: Packet
+  - uid: Winpeak.Client.Networking.ResultProceeder
+    name: ResultProceeder
+  - uid: Winpeak.Client.Networking.ServerConnectionStatusController
+    name: ServerConnectionStatusController
+  - uid: Winpeak.Client.Networking.UdpAsyncReceiveState
+    name: UdpAsyncReceiveState
+  - uid: Winpeak.Client.Networking.UdpAsyncSendState
+    name: UdpAsyncSendState
+  - uid: Winpeak.Client.Networking.UdpAsyncStateController
+    name: UdpAsyncStateController
+  - uid: Winpeak.Client.Networking.WinPeakAuthProceedException
+    name: WinPeakAuthProceedException
+  - uid: Winpeak.Client.Networking.WinPeakClientAckProceedException
+    name: WinPeakClientAckProceedException
+  - uid: Winpeak.Client.Networking.WinPeakException
+    name: WinPeakException
+  - uid: Winpeak.Client.Networking.WinPeakSyncProceedException
+    name: WinPeakSyncProceedException
+  - uid: Winpeak.Client.Networking.WinPeakWaypointProceedException
+    name: WinPeakWaypointProceedException
+- uid: Winpeak.Client.Scene
+  name: Winpeak.Client.Scene
+  items:
+  - uid: Winpeak.Client.Scene.ColliderTypes
+    name: ColliderTypes
+  - uid: Winpeak.Client.Scene.DrawLineData
+    name: DrawLineData
+  - uid: Winpeak.Client.Scene.DrawPointData
+    name: DrawPointData
+  - uid: Winpeak.Client.Scene.IWinPeakSubscriber
+    name: IWinPeakSubscriber
+  - uid: Winpeak.Client.Scene.ObjCmds
+    name: ObjCmds
+  - uid: Winpeak.Client.Scene.ObjObey
+    name: ObjObey
+  - uid: Winpeak.Client.Scene.ObjPhysType
+    name: ObjPhysType
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+  - uid: Winpeak.Client.Scene.WinPeakNetworkObject
+    name: WinPeakNetworkObject
+  - uid: Winpeak.Client.Scene.WpCompare
+    name: WpCompare
+  - uid: Winpeak.Client.Scene.WpPointData
+    name: WpPointData
+- uid: Winpeak.Client.Utils
+  name: Winpeak.Client.Utils
+  items:
+  - uid: Winpeak.Client.Utils.BaseSelfDestroyingObject
+    name: BaseSelfDestroyingObject
+  - uid: Winpeak.Client.Utils.DateTimeHelper
+    name: DateTimeHelper
+  - uid: Winpeak.Client.Utils.GlobalConsts
+    name: GlobalConsts
+  - uid: Winpeak.Client.Utils.ReadPointsFromFile
+    name: ReadPointsFromFile
+  - uid: Winpeak.Client.Utils.SceneSettingsController
+    name: SceneSettingsController
+  - uid: Winpeak.Client.Utils.SelfDestroyingGameObject
+    name: SelfDestroyingGameObject
+  - uid: Winpeak.Client.Utils.SelfDestroyingLineRender
+    name: SelfDestroyingLineRender
+  - uid: Winpeak.Client.Utils.UnityMainThreadDispatcher
+    name: UnityMainThreadDispatcher
+  - uid: Winpeak.Client.Utils.WaypointsShowMode
+    name: WaypointsShowMode

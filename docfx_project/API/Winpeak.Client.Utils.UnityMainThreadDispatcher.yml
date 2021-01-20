@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: Winpeak.Client.Utils.UnityMainThreadDispatcher
+  commentId: T:Winpeak.Client.Utils.UnityMainThreadDispatcher
+  id: UnityMainThreadDispatcher
+  parent: Winpeak.Client.Utils
+  children:
+  - Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue(IEnumerator)
+  - Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue(System.Action)
+  - Winpeak.Client.Utils.UnityMainThreadDispatcher.Exists
+  - Winpeak.Client.Utils.UnityMainThreadDispatcher.Instance
+  - Winpeak.Client.Utils.UnityMainThreadDispatcher.Update
+  langs:
+  - csharp
+  - vb
+  name: UnityMainThreadDispatcher
+  nameWithType: UnityMainThreadDispatcher
+  fullName: Winpeak.Client.Utils.UnityMainThreadDispatcher
+  type: Class
+  source:
+    id: UnityMainThreadDispatcher
+    path: ''
+    startLine: 374
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Utils
+  summary: "\nКостыльный кусок гумуса из интернета, но как временное решение - ок.\n"
+  example: []
+  syntax:
+    content: 'public class UnityMainThreadDispatcher : MonoBehaviour'
+    content.vb: >-
+      Public Class UnityMainThreadDispatcher
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Winpeak.Client.Utils.UnityMainThreadDispatcher.Update
+  commentId: M:Winpeak.Client.Utils.UnityMainThreadDispatcher.Update
+  id: Update
+  parent: Winpeak.Client.Utils.UnityMainThreadDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: UnityMainThreadDispatcher.Update()
+  fullName: Winpeak.Client.Utils.UnityMainThreadDispatcher.Update()
+  type: Method
+  source:
+    id: Update
+    path: ''
+    startLine: 389
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Utils
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update
+  overload: Winpeak.Client.Utils.UnityMainThreadDispatcher.Update*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue(IEnumerator)
+  commentId: M:Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue(IEnumerator)
+  id: Enqueue(IEnumerator)
+  parent: Winpeak.Client.Utils.UnityMainThreadDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Enqueue(IEnumerator)
+  nameWithType: UnityMainThreadDispatcher.Enqueue(IEnumerator)
+  fullName: Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue(IEnumerator)
+  type: Method
+  source:
+    id: Enqueue
+    path: ''
+    startLine: 405
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Utils
+  summary: "\nLocks the queue and adds the IEnumerator to the queue\n"
+  example: []
+  syntax:
+    content: public void Enqueue(IEnumerator action)
+    parameters:
+    - id: action
+      type: IEnumerator
+      description: IEnumerator function that will be executed from the main thread.
+    content.vb: Public Sub Enqueue(action As IEnumerator)
+  overload: Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue(System.Action)
+  commentId: M:Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue(System.Action)
+  id: Enqueue(System.Action)
+  parent: Winpeak.Client.Utils.UnityMainThreadDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Enqueue(Action)
+  nameWithType: UnityMainThreadDispatcher.Enqueue(Action)
+  fullName: Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue(System.Action)
+  type: Method
+  source:
+    id: Enqueue
+    path: ''
+    startLine: 417
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Utils
+  summary: "\nLocks the queue and adds the Action to the queue\n"
+  example: []
+  syntax:
+    content: public void Enqueue(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+      description: function that will be executed from the main thread.
+    content.vb: Public Sub Enqueue(action As Action)
+  overload: Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Utils.UnityMainThreadDispatcher.Exists
+  commentId: M:Winpeak.Client.Utils.UnityMainThreadDispatcher.Exists
+  id: Exists
+  parent: Winpeak.Client.Utils.UnityMainThreadDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Exists()
+  nameWithType: UnityMainThreadDispatcher.Exists()
+  fullName: Winpeak.Client.Utils.UnityMainThreadDispatcher.Exists()
+  type: Method
+  source:
+    id: Exists
+    path: ''
+    startLine: 426
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Utils
+  syntax:
+    content: public static bool Exists()
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Exists As Boolean
+  overload: Winpeak.Client.Utils.UnityMainThreadDispatcher.Exists*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Winpeak.Client.Utils.UnityMainThreadDispatcher.Instance
+  commentId: M:Winpeak.Client.Utils.UnityMainThreadDispatcher.Instance
+  id: Instance
+  parent: Winpeak.Client.Utils.UnityMainThreadDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Instance()
+  nameWithType: UnityMainThreadDispatcher.Instance()
+  fullName: Winpeak.Client.Utils.UnityMainThreadDispatcher.Instance()
+  type: Method
+  source:
+    id: Instance
+    path: ''
+    startLine: 428
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Utils
+  syntax:
+    content: public static UnityMainThreadDispatcher Instance()
+    return:
+      type: Winpeak.Client.Utils.UnityMainThreadDispatcher
+    content.vb: Public Shared Function Instance As UnityMainThreadDispatcher
+  overload: Winpeak.Client.Utils.UnityMainThreadDispatcher.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Winpeak.Client.Utils
+  commentId: N:Winpeak.Client.Utils
+  name: Winpeak.Client.Utils
+  nameWithType: Winpeak.Client.Utils
+  fullName: Winpeak.Client.Utils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Winpeak.Client.Utils.UnityMainThreadDispatcher.Update*
+  commentId: Overload:Winpeak.Client.Utils.UnityMainThreadDispatcher.Update
+  name: Update
+  nameWithType: UnityMainThreadDispatcher.Update
+  fullName: Winpeak.Client.Utils.UnityMainThreadDispatcher.Update
+- uid: Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue*
+  commentId: Overload:Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue
+  name: Enqueue
+  nameWithType: UnityMainThreadDispatcher.Enqueue
+  fullName: Winpeak.Client.Utils.UnityMainThreadDispatcher.Enqueue
+- uid: IEnumerator
+  commentId: '!:IEnumerator'
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: IEnumerator
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Winpeak.Client.Utils.UnityMainThreadDispatcher.Exists*
+  commentId: Overload:Winpeak.Client.Utils.UnityMainThreadDispatcher.Exists
+  name: Exists
+  nameWithType: UnityMainThreadDispatcher.Exists
+  fullName: Winpeak.Client.Utils.UnityMainThreadDispatcher.Exists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Winpeak.Client.Utils.UnityMainThreadDispatcher.Instance*
+  commentId: Overload:Winpeak.Client.Utils.UnityMainThreadDispatcher.Instance
+  name: Instance
+  nameWithType: UnityMainThreadDispatcher.Instance
+  fullName: Winpeak.Client.Utils.UnityMainThreadDispatcher.Instance
+- uid: Winpeak.Client.Utils.UnityMainThreadDispatcher
+  commentId: T:Winpeak.Client.Utils.UnityMainThreadDispatcher
+  parent: Winpeak.Client.Utils
+  name: UnityMainThreadDispatcher
+  nameWithType: UnityMainThreadDispatcher
+  fullName: Winpeak.Client.Utils.UnityMainThreadDispatcher
