@@ -78,7 +78,37 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Auth">IWinPeakClient.Auth()</a>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_OnClientDisconnected">IWinPeakClient.OnClientDisconnected</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_OnAnyPacketReceived">IWinPeakClient.OnAnyPacketReceived</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Connect_Action_ServerConnectionStatusController__">IWinPeakClient.Connect(Action&lt;ServerConnectionStatusController&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_IsConnected">IWinPeakClient.IsConnected</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Auth_Action_">IWinPeakClient.Auth(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Die_Action_">IWinPeakClient.Die(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Confirm_System_Int64_">IWinPeakClient.Confirm(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_DrawLines">IWinPeakClient.DrawLines()</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Move_System_Int64_System_String_System_Single_System_Single_System_Single_System_Single_">IWinPeakClient.Move(Int64, String, Single, Single, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Utilize">IWinPeakClient.Utilize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_GetStatusController_System_Boolean_">IWinPeakClient.GetStatusController(Boolean)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Winpeak.Client.API.html">Winpeak.Client.API</a></h6>
@@ -91,8 +121,47 @@
   </h3>
   
   
+  <a id="Winpeak_Client_API_IInternalWinPeakClient_Disconnect_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.Disconnect*"></a>
+  <h4 id="Winpeak_Client_API_IInternalWinPeakClient_Disconnect" data-uid="Winpeak.Client.API.IInternalWinPeakClient.Disconnect">Disconnect()</h4>
+  <div class="markdown level1 summary"><p>Fire event that user has been disconnected from the server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Disconnect()</code></pre>
+  </div>
+  
+  
+  <a id="Winpeak_Client_API_IInternalWinPeakClient_HandlePacket_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.HandlePacket*"></a>
+  <h4 id="Winpeak_Client_API_IInternalWinPeakClient_HandlePacket_System_Int64_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.HandlePacket(System.Int64)">HandlePacket(Int64)</h4>
+  <div class="markdown level1 summary"><p>Fire when any packet has been received</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void HandlePacket(long packetId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">packetId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Winpeak_Client_API_IInternalWinPeakClient_RegisterPhysicsObject_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject*"></a>
-  <h4 id="Winpeak_Client_API_IInternalWinPeakClient_RegisterPhysicsObject_System_Object_System_Action_System_String__" data-uid="Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject(System.Object,System.Action{System.String})">RegisterPhysicsObject(Object, Action&lt;String&gt;)</h4>
+  <h4 id="Winpeak_Client_API_IInternalWinPeakClient_RegisterPhysicsObject_System_Object_Action_System_String__" data-uid="Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject(System.Object,Action{System.String})">RegisterPhysicsObject(Object, Action&lt;String&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -115,7 +184,40 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Winpeak_Client_API_IInternalWinPeakClient_Sync_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.Sync*"></a>
+  <h4 id="Winpeak_Client_API_IInternalWinPeakClient_Sync_System_Int64_Action_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64,Action)">Sync(Int64, Action)</h4>
+  <div class="markdown level1 summary"><p>Sync what?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Sync(long currentTime, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">currentTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
         <td><span class="parametername">callback</span></td>
         <td></td>
       </tr>

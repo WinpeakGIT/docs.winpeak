@@ -15,8 +15,8 @@ items:
   - Winpeak.Client.Models.ListQueue`1.Reverse
   - Winpeak.Client.Models.ListQueue`1.Reverse(System.Int32,System.Int32)
   - Winpeak.Client.Models.ListQueue`1.Sort
+  - Winpeak.Client.Models.ListQueue`1.Sort(Comparison{`0})
   - Winpeak.Client.Models.ListQueue`1.Sort(IComparer{`0})
-  - Winpeak.Client.Models.ListQueue`1.Sort(System.Comparison{`0})
   - Winpeak.Client.Models.ListQueue`1.Sort(System.Int32,System.Int32,IComparer{`0})
   langs:
   - csharp
@@ -28,7 +28,7 @@ items:
   source:
     id: ListQueue
     path: ''
-    startLine: 94
+    startLine: 3874
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -64,7 +64,7 @@ items:
   source:
     id: Add
     path: ''
-    startLine: 96
+    startLine: 3876
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -95,7 +95,7 @@ items:
   source:
     id: AddRange
     path: ''
-    startLine: 100
+    startLine: 3880
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -127,7 +127,7 @@ items:
   source:
     id: Insert
     path: ''
-    startLine: 104
+    startLine: 3884
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -160,7 +160,7 @@ items:
   source:
     id: InsertRange
     path: ''
-    startLine: 108
+    startLine: 3888
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -194,7 +194,7 @@ items:
   source:
     id: Reverse
     path: ''
-    startLine: 112
+    startLine: 3892
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -222,7 +222,7 @@ items:
   source:
     id: Reverse
     path: ''
-    startLine: 116
+    startLine: 3896
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -255,7 +255,7 @@ items:
   source:
     id: Sort
     path: ''
-    startLine: 120
+    startLine: 3900
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -269,21 +269,21 @@ items:
   modifiers.vb:
   - Public
   fullName.vb: Winpeak.Client.Models.ListQueue(Of T).Sort()
-- uid: Winpeak.Client.Models.ListQueue`1.Sort(System.Comparison{`0})
-  commentId: M:Winpeak.Client.Models.ListQueue`1.Sort(System.Comparison{`0})
-  id: Sort(System.Comparison{`0})
+- uid: Winpeak.Client.Models.ListQueue`1.Sort(Comparison{`0})
+  commentId: M:Winpeak.Client.Models.ListQueue`1.Sort(Comparison{`0})
+  id: Sort(Comparison{`0})
   parent: Winpeak.Client.Models.ListQueue`1
   langs:
   - csharp
   - vb
   name: Sort(Comparison<T>)
   nameWithType: ListQueue<T>.Sort(Comparison<T>)
-  fullName: Winpeak.Client.Models.ListQueue<T>.Sort(System.Comparison<T>)
+  fullName: Winpeak.Client.Models.ListQueue<T>.Sort(Comparison<T>)
   type: Method
   source:
     id: Sort
     path: ''
-    startLine: 124
+    startLine: 3904
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -291,7 +291,7 @@ items:
     content: public void Sort(Comparison<T> comparison)
     parameters:
     - id: comparison
-      type: System.Comparison{{T}}
+      type: Comparison{{T}}
     content.vb: Public Sub Sort(comparison As Comparison(Of T))
   overload: Winpeak.Client.Models.ListQueue`1.Sort*
   nameWithType.vb: ListQueue(Of T).Sort(Comparison(Of T))
@@ -299,7 +299,7 @@ items:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: Winpeak.Client.Models.ListQueue(Of T).Sort(System.Comparison(Of T))
+  fullName.vb: Winpeak.Client.Models.ListQueue(Of T).Sort(Comparison(Of T))
   name.vb: Sort(Comparison(Of T))
 - uid: Winpeak.Client.Models.ListQueue`1.Sort(IComparer{`0})
   commentId: M:Winpeak.Client.Models.ListQueue`1.Sort(IComparer{`0})
@@ -315,7 +315,7 @@ items:
   source:
     id: Sort
     path: ''
-    startLine: 128
+    startLine: 3908
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -347,7 +347,7 @@ items:
   source:
     id: Sort
     path: ''
-    startLine: 132
+    startLine: 3912
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -383,7 +383,7 @@ items:
   source:
     id: Enqueue
     path: ''
-    startLine: 136
+    startLine: 3916
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -414,7 +414,7 @@ items:
   source:
     id: Dequeue
     path: ''
-    startLine: 140
+    startLine: 3920
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -444,7 +444,7 @@ items:
   source:
     id: Peek
     path: ''
-    startLine: 146
+    startLine: 3926
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -615,21 +615,20 @@ references:
   fullName: Winpeak.Client.Models.ListQueue<T>.Sort
   nameWithType.vb: ListQueue(Of T).Sort
   fullName.vb: Winpeak.Client.Models.ListQueue(Of T).Sort
-- uid: System.Comparison{{T}}
-  commentId: T:System.Comparison{`0}
-  parent: System
-  definition: System.Comparison`1
+- uid: Comparison{{T}}
+  commentId: '!:Comparison{`0}'
+  definition: Comparison`1
   name: Comparison<T>
   nameWithType: Comparison<T>
-  fullName: System.Comparison<T>
+  fullName: Comparison<T>
   nameWithType.vb: Comparison(Of T)
-  fullName.vb: System.Comparison(Of T)
+  fullName.vb: Comparison(Of T)
   name.vb: Comparison(Of T)
   spec.csharp:
-  - uid: System.Comparison`1
+  - uid: Comparison`1
     name: Comparison
     nameWithType: Comparison
-    fullName: System.Comparison
+    fullName: Comparison
     isExternal: true
   - name: <
     nameWithType: <
@@ -641,10 +640,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Comparison`1
+  - uid: Comparison`1
     name: Comparison
     nameWithType: Comparison
-    fullName: System.Comparison
+    fullName: Comparison
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -655,42 +654,42 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Comparison`1
-  commentId: T:System.Comparison`1
+- uid: Comparison`1
+  commentId: '!:Comparison`1'
   isExternal: true
-  name: Comparison<T>
-  nameWithType: Comparison<T>
-  fullName: System.Comparison<T>
-  nameWithType.vb: Comparison(Of T)
-  fullName.vb: System.Comparison(Of T)
-  name.vb: Comparison(Of T)
+  name: Comparison<>
+  nameWithType: Comparison<>
+  fullName: Comparison<>
+  nameWithType.vb: Comparison(Of )
+  fullName.vb: Comparison(Of )
+  name.vb: Comparison(Of )
   spec.csharp:
-  - uid: System.Comparison`1
+  - uid: Comparison`1
     name: Comparison
     nameWithType: Comparison
-    fullName: System.Comparison
+    fullName: Comparison
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Comparison`1
+  - uid: Comparison`1
     name: Comparison
     nameWithType: Comparison
-    fullName: System.Comparison
+    fullName: Comparison
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )

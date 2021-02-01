@@ -17,7 +17,6 @@ items:
   - Winpeak.Client.Networking.ServerConnectionStatusController.ServerTimeDelta
   - Winpeak.Client.Networking.ServerConnectionStatusController.SetStatus(System.Int64)
   - Winpeak.Client.Networking.ServerConnectionStatusController.StartTimeReal
-  - Winpeak.Client.Networking.ServerConnectionStatusController.UpdateStatusOnSync(System.Single)
   langs:
   - csharp
   - vb
@@ -28,7 +27,7 @@ items:
   source:
     id: ServerConnectionStatusController
     path: ''
-    startLine: 1076
+    startLine: 2994
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -67,7 +66,7 @@ items:
   source:
     id: ServerTimeDelta
     path: ''
-    startLine: 1078
+    startLine: 2996
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -98,7 +97,7 @@ items:
   source:
     id: StartTimeReal
     path: ''
-    startLine: 1079
+    startLine: 2997
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -129,7 +128,7 @@ items:
   source:
     id: MinPing
     path: ''
-    startLine: 1080
+    startLine: 2998
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -160,7 +159,7 @@ items:
   source:
     id: MaxPing
     path: ''
-    startLine: 1081
+    startLine: 2999
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -191,7 +190,7 @@ items:
   source:
     id: LastPing
     path: ''
-    startLine: 1082
+    startLine: 3000
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -222,7 +221,7 @@ items:
   source:
     id: AveragePing
     path: ''
-    startLine: 1083
+    startLine: 3001
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -253,7 +252,7 @@ items:
   source:
     id: LastDiffWithServerTime
     path: ''
-    startLine: 1084
+    startLine: 3002
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -284,7 +283,7 @@ items:
   source:
     id: LastSyncTime
     path: ''
-    startLine: 1086
+    startLine: 3004
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -317,7 +316,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 1088
+    startLine: 3006
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -343,7 +342,7 @@ items:
   source:
     id: DeltaMinPing
     path: ''
-    startLine: 1093
+    startLine: 3011
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -374,7 +373,7 @@ items:
   source:
     id: GetEstimatedServerTime
     path: ''
-    startLine: 1097
+    startLine: 3013
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -402,7 +401,7 @@ items:
   source:
     id: SetStatus
     path: ''
-    startLine: 1101
+    startLine: 3017
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -413,35 +412,6 @@ items:
       type: System.Int64
     content.vb: Public Sub SetStatus(serverTime As Long)
   overload: Winpeak.Client.Networking.ServerConnectionStatusController.SetStatus*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Winpeak.Client.Networking.ServerConnectionStatusController.UpdateStatusOnSync(System.Single)
-  commentId: M:Winpeak.Client.Networking.ServerConnectionStatusController.UpdateStatusOnSync(System.Single)
-  id: UpdateStatusOnSync(System.Single)
-  parent: Winpeak.Client.Networking.ServerConnectionStatusController
-  langs:
-  - csharp
-  - vb
-  name: UpdateStatusOnSync(Single)
-  nameWithType: ServerConnectionStatusController.UpdateStatusOnSync(Single)
-  fullName: Winpeak.Client.Networking.ServerConnectionStatusController.UpdateStatusOnSync(System.Single)
-  type: Method
-  source:
-    id: UpdateStatusOnSync
-    path: ''
-    startLine: 1111
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public void UpdateStatusOnSync(float diffWithServerTime)
-    parameters:
-    - id: diffWithServerTime
-      type: System.Single
-    content.vb: Public Sub UpdateStatusOnSync(diffWithServerTime As Single)
-  overload: Winpeak.Client.Networking.ServerConnectionStatusController.UpdateStatusOnSync*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -818,8 +788,3 @@ references:
   name: SetStatus
   nameWithType: ServerConnectionStatusController.SetStatus
   fullName: Winpeak.Client.Networking.ServerConnectionStatusController.SetStatus
-- uid: Winpeak.Client.Networking.ServerConnectionStatusController.UpdateStatusOnSync*
-  commentId: Overload:Winpeak.Client.Networking.ServerConnectionStatusController.UpdateStatusOnSync
-  name: UpdateStatusOnSync
-  nameWithType: ServerConnectionStatusController.UpdateStatusOnSync
-  fullName: Winpeak.Client.Networking.ServerConnectionStatusController.UpdateStatusOnSync

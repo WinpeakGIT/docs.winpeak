@@ -6,7 +6,7 @@ items:
   parent: Winpeak.Client.Networking
   children:
   - Winpeak.Client.Networking.UdpAsyncReceiveState.#ctor(UdpClient,IPEndPoint)
-  - Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult(System.IAsyncResult@)
+  - Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult(IAsyncResult@)
   langs:
   - csharp
   - vb
@@ -17,7 +17,7 @@ items:
   source:
     id: UdpAsyncReceiveState
     path: ''
-    startLine: 1043
+    startLine: 3728
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -62,7 +62,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 1045
+    startLine: 3730
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -79,21 +79,21 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult(System.IAsyncResult@)
-  commentId: M:Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult(System.IAsyncResult@)
-  id: GetResult(System.IAsyncResult@)
+- uid: Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult(IAsyncResult@)
+  commentId: M:Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult(IAsyncResult@)
+  id: GetResult(IAsyncResult@)
   parent: Winpeak.Client.Networking.UdpAsyncReceiveState
   langs:
   - csharp
   - vb
   name: GetResult(ref IAsyncResult)
   nameWithType: UdpAsyncReceiveState.GetResult(ref IAsyncResult)
-  fullName: Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult(ref System.IAsyncResult)
+  fullName: Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult(ref IAsyncResult)
   type: Method
   source:
     id: GetResult
     path: ''
-    startLine: 1055
+    startLine: 3740
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -103,13 +103,13 @@ items:
     content: public override string GetResult(ref IAsyncResult result)
     parameters:
     - id: result
-      type: System.IAsyncResult
+      type: IAsyncResult
       description: ''
     return:
       type: System.String
       description: ''
     content.vb: Public Overrides Function GetResult(ByRef result As IAsyncResult) As String
-  overridden: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(System.IAsyncResult@)
+  overridden: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(IAsyncResult@)
   overload: Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult*
   nameWithType.vb: UdpAsyncReceiveState.GetResult(ByRef IAsyncResult)
   modifiers.csharp:
@@ -118,7 +118,7 @@ items:
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult(ByRef System.IAsyncResult)
+  fullName.vb: Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult(ByRef IAsyncResult)
   name.vb: GetResult(ByRef IAsyncResult)
 references:
 - uid: Winpeak.Client.Networking
@@ -469,41 +469,41 @@ references:
   name: IPEndPoint
   nameWithType: IPEndPoint
   fullName: IPEndPoint
-- uid: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(System.IAsyncResult@)
-  commentId: M:Winpeak.Client.Networking.UdpAsyncStateController.GetResult(System.IAsyncResult@)
+- uid: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(IAsyncResult@)
+  commentId: M:Winpeak.Client.Networking.UdpAsyncStateController.GetResult(IAsyncResult@)
   parent: Winpeak.Client.Networking.UdpAsyncStateController
   isExternal: true
   name: GetResult(IAsyncResult)
   nameWithType: UdpAsyncStateController.GetResult(IAsyncResult)
-  fullName: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(System.IAsyncResult)
+  fullName: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(IAsyncResult)
   spec.csharp:
-  - uid: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(System.IAsyncResult@)
+  - uid: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(IAsyncResult@)
     name: GetResult
     nameWithType: UdpAsyncStateController.GetResult
     fullName: Winpeak.Client.Networking.UdpAsyncStateController.GetResult
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.IAsyncResult
+  - uid: IAsyncResult
     name: IAsyncResult
     nameWithType: IAsyncResult
-    fullName: System.IAsyncResult
+    fullName: IAsyncResult
     isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(System.IAsyncResult@)
+  - uid: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(IAsyncResult@)
     name: GetResult
     nameWithType: UdpAsyncStateController.GetResult
     fullName: Winpeak.Client.Networking.UdpAsyncStateController.GetResult
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.IAsyncResult
+  - uid: IAsyncResult
     name: IAsyncResult
     nameWithType: IAsyncResult
-    fullName: System.IAsyncResult
+    fullName: IAsyncResult
     isExternal: true
   - name: )
     nameWithType: )
@@ -513,13 +513,11 @@ references:
   name: GetResult
   nameWithType: UdpAsyncReceiveState.GetResult
   fullName: Winpeak.Client.Networking.UdpAsyncReceiveState.GetResult
-- uid: System.IAsyncResult
-  commentId: T:System.IAsyncResult
-  parent: System
+- uid: IAsyncResult
   isExternal: true
   name: IAsyncResult
   nameWithType: IAsyncResult
-  fullName: System.IAsyncResult
+  fullName: IAsyncResult
 - uid: System.String
   commentId: T:System.String
   parent: System

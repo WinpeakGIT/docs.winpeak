@@ -5,7 +5,17 @@ items:
   id: IWinPeakClient
   parent: Winpeak.Client.API
   children:
-  - Winpeak.Client.API.IWinPeakClient.Auth
+  - Winpeak.Client.API.IWinPeakClient.Auth(Action)
+  - Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
+  - Winpeak.Client.API.IWinPeakClient.Connect(Action{ServerConnectionStatusController})
+  - Winpeak.Client.API.IWinPeakClient.Die(Action)
+  - Winpeak.Client.API.IWinPeakClient.DrawLines
+  - Winpeak.Client.API.IWinPeakClient.GetStatusController(System.Boolean)
+  - Winpeak.Client.API.IWinPeakClient.IsConnected
+  - Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
+  - Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
+  - Winpeak.Client.API.IWinPeakClient.OnClientDisconnected
+  - Winpeak.Client.API.IWinPeakClient.Utilize
   langs:
   - csharp
   - vb
@@ -16,7 +26,7 @@ items:
   source:
     id: IWinPeakClient
     path: ''
-    startLine: 27
+    startLine: 993
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -29,38 +39,533 @@ items:
   modifiers.vb:
   - Public
   - Interface
-- uid: Winpeak.Client.API.IWinPeakClient.Auth
-  commentId: M:Winpeak.Client.API.IWinPeakClient.Auth
-  id: Auth
+- uid: Winpeak.Client.API.IWinPeakClient.OnClientDisconnected
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnClientDisconnected
+  id: OnClientDisconnected
   parent: Winpeak.Client.API.IWinPeakClient
   langs:
   - csharp
   - vb
-  name: Auth()
-  nameWithType: IWinPeakClient.Auth()
-  fullName: Winpeak.Client.API.IWinPeakClient.Auth()
+  name: OnClientDisconnected
+  nameWithType: IWinPeakClient.OnClientDisconnected
+  fullName: Winpeak.Client.API.IWinPeakClient.OnClientDisconnected
+  type: Event
+  source:
+    id: OnClientDisconnected
+    path: ''
+    startLine: 995
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  syntax:
+    content: event Action OnClientDisconnected
+    return:
+      type: Action
+    content.vb: Event OnClientDisconnected As Action
+- uid: Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
+  id: OnAnyPacketReceived
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: OnAnyPacketReceived
+  nameWithType: IWinPeakClient.OnAnyPacketReceived
+  fullName: Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
+  type: Event
+  source:
+    id: OnAnyPacketReceived
+    path: ''
+    startLine: 996
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  syntax:
+    content: event Action<long> OnAnyPacketReceived
+    return:
+      type: Action{System.Int64}
+    content.vb: Event OnAnyPacketReceived As Action(Of Long)
+- uid: Winpeak.Client.API.IWinPeakClient.Connect(Action{ServerConnectionStatusController})
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Connect(Action{ServerConnectionStatusController})
+  id: Connect(Action{ServerConnectionStatusController})
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: Connect(Action<ServerConnectionStatusController>)
+  nameWithType: IWinPeakClient.Connect(Action<ServerConnectionStatusController>)
+  fullName: Winpeak.Client.API.IWinPeakClient.Connect(Action<ServerConnectionStatusController>)
+  type: Method
+  source:
+    id: Connect
+    path: ''
+    startLine: 1001
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nConnect user to a server\n"
+  example: []
+  syntax:
+    content: void Connect(Action<ServerConnectionStatusController> callback)
+    parameters:
+    - id: callback
+      type: Action{ServerConnectionStatusController}
+    content.vb: Sub Connect(callback As Action(Of ServerConnectionStatusController))
+  overload: Winpeak.Client.API.IWinPeakClient.Connect*
+  nameWithType.vb: IWinPeakClient.Connect(Action(Of ServerConnectionStatusController))
+  fullName.vb: Winpeak.Client.API.IWinPeakClient.Connect(Action(Of ServerConnectionStatusController))
+  name.vb: Connect(Action(Of ServerConnectionStatusController))
+- uid: Winpeak.Client.API.IWinPeakClient.IsConnected
+  commentId: P:Winpeak.Client.API.IWinPeakClient.IsConnected
+  id: IsConnected
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: IWinPeakClient.IsConnected
+  fullName: Winpeak.Client.API.IWinPeakClient.IsConnected
+  type: Property
+  source:
+    id: IsConnected
+    path: ''
+    startLine: 1007
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nCheck if user connected to a server\n"
+  example: []
+  syntax:
+    content: bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: ReadOnly Property IsConnected As Boolean
+  overload: Winpeak.Client.API.IWinPeakClient.IsConnected*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Winpeak.Client.API.IWinPeakClient.Auth(Action)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Auth(Action)
+  id: Auth(Action)
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: Auth(Action)
+  nameWithType: IWinPeakClient.Auth(Action)
+  fullName: Winpeak.Client.API.IWinPeakClient.Auth(Action)
   type: Method
   source:
     id: Auth
     path: ''
-    startLine: 32
+    startLine: 1012
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   summary: "\nAuthentication user in the system\n"
   example: []
   syntax:
-    content: void Auth()
-    content.vb: Sub Auth
+    content: void Auth(Action callback)
+    parameters:
+    - id: callback
+      type: Action
+    content.vb: Sub Auth(callback As Action)
   overload: Winpeak.Client.API.IWinPeakClient.Auth*
+- uid: Winpeak.Client.API.IWinPeakClient.Die(Action)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Die(Action)
+  id: Die(Action)
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: Die(Action)
+  nameWithType: IWinPeakClient.Die(Action)
+  fullName: Winpeak.Client.API.IWinPeakClient.Die(Action)
+  type: Method
+  source:
+    id: Die
+    path: ''
+    startLine: 1017
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nNotify the server that actor is dead\n"
+  example: []
+  syntax:
+    content: void Die(Action callback)
+    parameters:
+    - id: callback
+      type: Action
+    content.vb: Sub Die(callback As Action)
+  overload: Winpeak.Client.API.IWinPeakClient.Die*
+- uid: Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
+  id: Confirm(System.Int64)
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: Confirm(Int64)
+  nameWithType: IWinPeakClient.Confirm(Int64)
+  fullName: Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
+  type: Method
+  source:
+    id: Confirm
+    path: ''
+    startLine: 1023
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nNotify the server to receive any packet\n"
+  example: []
+  syntax:
+    content: void Confirm(long packetId)
+    parameters:
+    - id: packetId
+      type: System.Int64
+      description: ''
+    content.vb: Sub Confirm(packetId As Long)
+  overload: Winpeak.Client.API.IWinPeakClient.Confirm*
+- uid: Winpeak.Client.API.IWinPeakClient.DrawLines
+  commentId: M:Winpeak.Client.API.IWinPeakClient.DrawLines
+  id: DrawLines
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: DrawLines()
+  nameWithType: IWinPeakClient.DrawLines()
+  fullName: Winpeak.Client.API.IWinPeakClient.DrawLines()
+  type: Method
+  source:
+    id: DrawLines
+    path: ''
+    startLine: 1028
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nDraw lines\n"
+  example: []
+  syntax:
+    content: void DrawLines()
+    content.vb: Sub DrawLines
+  overload: Winpeak.Client.API.IWinPeakClient.DrawLines*
+- uid: Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
+  id: Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: Move(Int64, String, Single, Single, Single, Single)
+  nameWithType: IWinPeakClient.Move(Int64, String, Single, Single, Single, Single)
+  fullName: Winpeak.Client.API.IWinPeakClient.Move(System.Int64, System.String, System.Single, System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: Move
+    path: ''
+    startLine: 1039
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nNotify server that actor moves\n"
+  example: []
+  syntax:
+    content: void Move(long time, string objectId, float xDest, float yDest, float xPos, float zPos)
+    parameters:
+    - id: time
+      type: System.Int64
+      description: Method started time
+    - id: objectId
+      type: System.String
+      description: object name
+    - id: xDest
+      type: System.Single
+      description: Destination x
+    - id: yDest
+      type: System.Single
+      description: Destination y
+    - id: xPos
+      type: System.Single
+      description: position x
+    - id: zPos
+      type: System.Single
+      description: position z
+    content.vb: Sub Move(time As Long, objectId As String, xDest As Single, yDest As Single, xPos As Single, zPos As Single)
+  overload: Winpeak.Client.API.IWinPeakClient.Move*
+- uid: Winpeak.Client.API.IWinPeakClient.Utilize
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Utilize
+  id: Utilize
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: Utilize()
+  nameWithType: IWinPeakClient.Utilize()
+  fullName: Winpeak.Client.API.IWinPeakClient.Utilize()
+  type: Method
+  source:
+    id: Utilize
+    path: ''
+    startLine: 1044
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nUtilize working threads\n"
+  example: []
+  syntax:
+    content: void Utilize()
+    content.vb: Sub Utilize
+  overload: Winpeak.Client.API.IWinPeakClient.Utilize*
+- uid: Winpeak.Client.API.IWinPeakClient.GetStatusController(System.Boolean)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.GetStatusController(System.Boolean)
+  id: GetStatusController(System.Boolean)
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: GetStatusController(Boolean)
+  nameWithType: IWinPeakClient.GetStatusController(Boolean)
+  fullName: Winpeak.Client.API.IWinPeakClient.GetStatusController(System.Boolean)
+  type: Method
+  source:
+    id: GetStatusController
+    path: ''
+    startLine: 1050
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nGet current connection status controller. Perhaps only for test\n"
+  example: []
+  syntax:
+    content: ServerConnectionStatusController GetStatusController(bool useImportantPackages)
+    parameters:
+    - id: useImportantPackages
+      type: System.Boolean
+      description: ''
+    return:
+      type: ServerConnectionStatusController
+    content.vb: Function GetStatusController(useImportantPackages As Boolean) As ServerConnectionStatusController
+  overload: Winpeak.Client.API.IWinPeakClient.GetStatusController*
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
   name: Winpeak.Client.API
   nameWithType: Winpeak.Client.API
   fullName: Winpeak.Client.API
+- uid: Action
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: Action
+- uid: Action{System.Int64}
+  commentId: '!:Action{System.Int64}'
+  definition: Action`1
+  name: Action<Int64>
+  nameWithType: Action<Int64>
+  fullName: Action<System.Int64>
+  nameWithType.vb: Action(Of Int64)
+  fullName.vb: Action(Of System.Int64)
+  name.vb: Action(Of Int64)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.Connect*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.Connect
+  name: Connect
+  nameWithType: IWinPeakClient.Connect
+  fullName: Winpeak.Client.API.IWinPeakClient.Connect
+- uid: Action{ServerConnectionStatusController}
+  commentId: '!:Action{ServerConnectionStatusController}'
+  definition: Action`1
+  name: Action<ServerConnectionStatusController>
+  nameWithType: Action<ServerConnectionStatusController>
+  fullName: Action<ServerConnectionStatusController>
+  nameWithType.vb: Action(Of ServerConnectionStatusController)
+  fullName.vb: Action(Of ServerConnectionStatusController)
+  name.vb: Action(Of ServerConnectionStatusController)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ServerConnectionStatusController
+    name: ServerConnectionStatusController
+    nameWithType: ServerConnectionStatusController
+    fullName: ServerConnectionStatusController
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ServerConnectionStatusController
+    name: ServerConnectionStatusController
+    nameWithType: ServerConnectionStatusController
+    fullName: ServerConnectionStatusController
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.IsConnected*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.IsConnected
+  name: IsConnected
+  nameWithType: IWinPeakClient.IsConnected
+  fullName: Winpeak.Client.API.IWinPeakClient.IsConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: Winpeak.Client.API.IWinPeakClient.Auth*
   commentId: Overload:Winpeak.Client.API.IWinPeakClient.Auth
   name: Auth
   nameWithType: IWinPeakClient.Auth
   fullName: Winpeak.Client.API.IWinPeakClient.Auth
+- uid: Winpeak.Client.API.IWinPeakClient.Die*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.Die
+  name: Die
+  nameWithType: IWinPeakClient.Die
+  fullName: Winpeak.Client.API.IWinPeakClient.Die
+- uid: Winpeak.Client.API.IWinPeakClient.Confirm*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.Confirm
+  name: Confirm
+  nameWithType: IWinPeakClient.Confirm
+  fullName: Winpeak.Client.API.IWinPeakClient.Confirm
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Winpeak.Client.API.IWinPeakClient.DrawLines*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.DrawLines
+  name: DrawLines
+  nameWithType: IWinPeakClient.DrawLines
+  fullName: Winpeak.Client.API.IWinPeakClient.DrawLines
+- uid: Winpeak.Client.API.IWinPeakClient.Move*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.Move
+  name: Move
+  nameWithType: IWinPeakClient.Move
+  fullName: Winpeak.Client.API.IWinPeakClient.Move
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Winpeak.Client.API.IWinPeakClient.Utilize*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.Utilize
+  name: Utilize
+  nameWithType: IWinPeakClient.Utilize
+  fullName: Winpeak.Client.API.IWinPeakClient.Utilize
+- uid: Winpeak.Client.API.IWinPeakClient.GetStatusController*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.GetStatusController
+  name: GetStatusController
+  nameWithType: IWinPeakClient.GetStatusController
+  fullName: Winpeak.Client.API.IWinPeakClient.GetStatusController
+- uid: ServerConnectionStatusController
+  isExternal: true
+  name: ServerConnectionStatusController
+  nameWithType: ServerConnectionStatusController
+  fullName: ServerConnectionStatusController

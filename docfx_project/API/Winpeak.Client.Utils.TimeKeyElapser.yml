@@ -1,34 +1,29 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Scene.Waypoint
-  commentId: T:Winpeak.Client.Scene.Waypoint
-  id: Waypoint
-  parent: Winpeak.Client.Scene
+- uid: Winpeak.Client.Utils.TimeKeyElapser
+  commentId: T:Winpeak.Client.Utils.TimeKeyElapser
+  id: TimeKeyElapser
+  parent: Winpeak.Client.Utils
   children:
-  - Winpeak.Client.Scene.Waypoint.#ctor
-  - Winpeak.Client.Scene.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
-  - Winpeak.Client.Scene.Waypoint.R
-  - Winpeak.Client.Scene.Waypoint.Time
-  - Winpeak.Client.Scene.Waypoint.ToString
-  - Winpeak.Client.Scene.Waypoint.X
-  - Winpeak.Client.Scene.Waypoint.Y
+  - Winpeak.Client.Utils.TimeKeyElapser.Start(System.String)
+  - Winpeak.Client.Utils.TimeKeyElapser.Stop(System.String,System.String)
   langs:
   - csharp
   - vb
-  name: Waypoint
-  nameWithType: Waypoint
-  fullName: Winpeak.Client.Scene.Waypoint
+  name: TimeKeyElapser
+  nameWithType: TimeKeyElapser
+  fullName: Winpeak.Client.Utils.TimeKeyElapser
   type: Class
   source:
-    id: Waypoint
+    id: TimeKeyElapser
     path: ''
-    startLine: 3796
+    startLine: 4045
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Scene
+  namespace: Winpeak.Client.Utils
   syntax:
-    content: public class Waypoint
-    content.vb: Public Class Waypoint
+    content: public static class TimeKeyElapser
+    content.vb: Public Module TimeKeyElapser
   inheritance:
   - System.Object
   inheritedMembers:
@@ -37,227 +32,85 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ToString
   - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
+  - static
   - class
   modifiers.vb:
   - Public
-  - Class
-- uid: Winpeak.Client.Scene.Waypoint.Time
-  commentId: F:Winpeak.Client.Scene.Waypoint.Time
-  id: Time
-  parent: Winpeak.Client.Scene.Waypoint
+  - Module
+- uid: Winpeak.Client.Utils.TimeKeyElapser.Start(System.String)
+  commentId: M:Winpeak.Client.Utils.TimeKeyElapser.Start(System.String)
+  id: Start(System.String)
+  parent: Winpeak.Client.Utils.TimeKeyElapser
   langs:
   - csharp
   - vb
-  name: Time
-  nameWithType: Waypoint.Time
-  fullName: Winpeak.Client.Scene.Waypoint.Time
-  type: Field
-  source:
-    id: Time
-    path: ''
-    startLine: 3799
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public readonly long Time
-    return:
-      type: System.Int64
-    content.vb: Public ReadOnly Time As Long
-  modifiers.csharp:
-  - public
-  - readonly
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Scene.Waypoint.X
-  commentId: F:Winpeak.Client.Scene.Waypoint.X
-  id: X
-  parent: Winpeak.Client.Scene.Waypoint
-  langs:
-  - csharp
-  - vb
-  name: X
-  nameWithType: Waypoint.X
-  fullName: Winpeak.Client.Scene.Waypoint.X
-  type: Field
-  source:
-    id: X
-    path: ''
-    startLine: 3800
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public readonly float X
-    return:
-      type: System.Single
-    content.vb: Public ReadOnly X As Single
-  modifiers.csharp:
-  - public
-  - readonly
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Scene.Waypoint.Y
-  commentId: F:Winpeak.Client.Scene.Waypoint.Y
-  id: Y
-  parent: Winpeak.Client.Scene.Waypoint
-  langs:
-  - csharp
-  - vb
-  name: Y
-  nameWithType: Waypoint.Y
-  fullName: Winpeak.Client.Scene.Waypoint.Y
-  type: Field
-  source:
-    id: Y
-    path: ''
-    startLine: 3801
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public readonly float Y
-    return:
-      type: System.Single
-    content.vb: Public ReadOnly Y As Single
-  modifiers.csharp:
-  - public
-  - readonly
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Scene.Waypoint.R
-  commentId: F:Winpeak.Client.Scene.Waypoint.R
-  id: R
-  parent: Winpeak.Client.Scene.Waypoint
-  langs:
-  - csharp
-  - vb
-  name: R
-  nameWithType: Waypoint.R
-  fullName: Winpeak.Client.Scene.Waypoint.R
-  type: Field
-  source:
-    id: R
-    path: ''
-    startLine: 3802
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public readonly float R
-    return:
-      type: System.Single
-    content.vb: Public ReadOnly R As Single
-  modifiers.csharp:
-  - public
-  - readonly
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Scene.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
-  commentId: M:Winpeak.Client.Scene.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
-  id: '#ctor(System.Int64,System.Single,System.Single,System.Single)'
-  parent: Winpeak.Client.Scene.Waypoint
-  langs:
-  - csharp
-  - vb
-  name: Waypoint(Int64, Single, Single, Single)
-  nameWithType: Waypoint.Waypoint(Int64, Single, Single, Single)
-  fullName: Winpeak.Client.Scene.Waypoint.Waypoint(System.Int64, System.Single, System.Single, System.Single)
-  type: Constructor
-  source:
-    id: .ctor
-    path: ''
-    startLine: 3804
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public Waypoint(long time, float x, float y, float r)
-    parameters:
-    - id: time
-      type: System.Int64
-    - id: x
-      type: System.Single
-    - id: y
-      type: System.Single
-    - id: r
-      type: System.Single
-    content.vb: Public Sub New(time As Long, x As Single, y As Single, r As Single)
-  overload: Winpeak.Client.Scene.Waypoint.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Winpeak.Client.Scene.Waypoint.#ctor
-  commentId: M:Winpeak.Client.Scene.Waypoint.#ctor
-  id: '#ctor'
-  parent: Winpeak.Client.Scene.Waypoint
-  langs:
-  - csharp
-  - vb
-  name: Waypoint()
-  nameWithType: Waypoint.Waypoint()
-  fullName: Winpeak.Client.Scene.Waypoint.Waypoint()
-  type: Constructor
-  source:
-    id: .ctor
-    path: ''
-    startLine: 3811
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public Waypoint()
-    content.vb: Public Sub New
-  overload: Winpeak.Client.Scene.Waypoint.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Winpeak.Client.Scene.Waypoint.ToString
-  commentId: M:Winpeak.Client.Scene.Waypoint.ToString
-  id: ToString
-  parent: Winpeak.Client.Scene.Waypoint
-  langs:
-  - csharp
-  - vb
-  name: ToString()
-  nameWithType: Waypoint.ToString()
-  fullName: Winpeak.Client.Scene.Waypoint.ToString()
+  name: Start(String)
+  nameWithType: TimeKeyElapser.Start(String)
+  fullName: Winpeak.Client.Utils.TimeKeyElapser.Start(System.String)
   type: Method
   source:
-    id: ToString
+    id: Start
     path: ''
-    startLine: 3813
+    startLine: 4054
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Scene
+  namespace: Winpeak.Client.Utils
   syntax:
-    content: public override string ToString()
-    return:
+    content: public static void Start(string name)
+    parameters:
+    - id: name
       type: System.String
-    content.vb: Public Overrides Function ToString As String
-  overridden: System.Object.ToString
-  overload: Winpeak.Client.Scene.Waypoint.ToString*
+    content.vb: Public Shared Sub Start(name As String)
+  overload: Winpeak.Client.Utils.TimeKeyElapser.Start*
   modifiers.csharp:
   - public
-  - override
+  - static
   modifiers.vb:
   - Public
-  - Overrides
+  - Shared
+- uid: Winpeak.Client.Utils.TimeKeyElapser.Stop(System.String,System.String)
+  commentId: M:Winpeak.Client.Utils.TimeKeyElapser.Stop(System.String,System.String)
+  id: Stop(System.String,System.String)
+  parent: Winpeak.Client.Utils.TimeKeyElapser
+  langs:
+  - csharp
+  - vb
+  name: Stop(String, String)
+  nameWithType: TimeKeyElapser.Stop(String, String)
+  fullName: Winpeak.Client.Utils.TimeKeyElapser.Stop(System.String, System.String)
+  type: Method
+  source:
+    id: Stop
+    path: ''
+    startLine: 4065
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Utils
+  syntax:
+    content: public static void Stop(string name, string text = "")
+    parameters:
+    - id: name
+      type: System.String
+    - id: text
+      type: System.String
+    content.vb: Public Shared Sub Stop(name As String, text As String = "")
+  overload: Winpeak.Client.Utils.TimeKeyElapser.Stop*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 references:
-- uid: Winpeak.Client.Scene
-  commentId: N:Winpeak.Client.Scene
-  name: Winpeak.Client.Scene
-  nameWithType: Winpeak.Client.Scene
-  fullName: Winpeak.Client.Scene
+- uid: Winpeak.Client.Utils
+  commentId: N:Winpeak.Client.Utils
+  name: Winpeak.Client.Utils
+  nameWithType: Winpeak.Client.Utils
+  fullName: Winpeak.Client.Utils
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -456,6 +309,37 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -519,61 +403,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
-  isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  name: Single
-  nameWithType: Single
-  fullName: System.Single
-- uid: Winpeak.Client.Scene.Waypoint.#ctor*
-  commentId: Overload:Winpeak.Client.Scene.Waypoint.#ctor
-  name: Waypoint
-  nameWithType: Waypoint.Waypoint
-  fullName: Winpeak.Client.Scene.Waypoint.Waypoint
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.Scene.Waypoint.ToString*
-  commentId: Overload:Winpeak.Client.Scene.Waypoint.ToString
-  name: ToString
-  nameWithType: Waypoint.ToString
-  fullName: Winpeak.Client.Scene.Waypoint.ToString
+- uid: Winpeak.Client.Utils.TimeKeyElapser.Start*
+  commentId: Overload:Winpeak.Client.Utils.TimeKeyElapser.Start
+  name: Start
+  nameWithType: TimeKeyElapser.Start
+  fullName: Winpeak.Client.Utils.TimeKeyElapser.Start
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -581,3 +415,8 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: Winpeak.Client.Utils.TimeKeyElapser.Stop*
+  commentId: Overload:Winpeak.Client.Utils.TimeKeyElapser.Stop
+  name: Stop
+  nameWithType: TimeKeyElapser.Stop
+  fullName: Winpeak.Client.Utils.TimeKeyElapser.Stop

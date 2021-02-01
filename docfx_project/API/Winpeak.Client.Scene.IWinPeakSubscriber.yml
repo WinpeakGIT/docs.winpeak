@@ -5,7 +5,7 @@ items:
   id: IWinPeakSubscriber
   parent: Winpeak.Client.Scene
   children:
-  - Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Legacy.WaypointsResponse)
+  - Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Scene.Waypoint[],System.Int64)
   - Winpeak.Client.Scene.IWinPeakSubscriber.Name
   langs:
   - csharp
@@ -17,7 +17,7 @@ items:
   source:
     id: IWinPeakSubscriber
     path: ''
-    startLine: 1748
+    startLine: 2
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -44,7 +44,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 1750
+    startLine: 4
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -59,31 +59,36 @@ items:
   - get
   modifiers.vb:
   - ReadOnly
-- uid: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Legacy.WaypointsResponse)
-  commentId: M:Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Legacy.WaypointsResponse)
-  id: Move(Winpeak.Client.Legacy.WaypointsResponse)
+- uid: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Scene.Waypoint[],System.Int64)
+  commentId: M:Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Scene.Waypoint[],System.Int64)
+  id: Move(Winpeak.Client.Scene.Waypoint[],System.Int64)
   parent: Winpeak.Client.Scene.IWinPeakSubscriber
   langs:
   - csharp
   - vb
-  name: Move(WaypointsResponse)
-  nameWithType: IWinPeakSubscriber.Move(WaypointsResponse)
-  fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Legacy.WaypointsResponse)
+  name: Move(Waypoint[], Int64)
+  nameWithType: IWinPeakSubscriber.Move(Waypoint[], Int64)
+  fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Scene.Waypoint[], System.Int64)
   type: Method
   source:
     id: Move
     path: ''
-    startLine: 1751
+    startLine: 5
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
   syntax:
-    content: void Move(WaypointsResponse movement)
+    content: void Move(Waypoint[] waypoints, long moveCount)
     parameters:
-    - id: movement
-      type: Winpeak.Client.Legacy.WaypointsResponse
-    content.vb: Sub Move(movement As WaypointsResponse)
+    - id: waypoints
+      type: Winpeak.Client.Scene.Waypoint[]
+    - id: moveCount
+      type: System.Int64
+    content.vb: Sub Move(waypoints As Waypoint(), moveCount As Long)
   overload: Winpeak.Client.Scene.IWinPeakSubscriber.Move*
+  nameWithType.vb: IWinPeakSubscriber.Move(Waypoint(), Int64)
+  fullName.vb: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Scene.Waypoint(), System.Int64)
+  name.vb: Move(Waypoint(), Int64)
 references:
 - uid: Winpeak.Client.Scene
   commentId: N:Winpeak.Client.Scene
@@ -113,14 +118,34 @@ references:
   name: Move
   nameWithType: IWinPeakSubscriber.Move
   fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Move
-- uid: Winpeak.Client.Legacy.WaypointsResponse
-  commentId: T:Winpeak.Client.Legacy.WaypointsResponse
-  parent: Winpeak.Client.Legacy
-  name: WaypointsResponse
-  nameWithType: WaypointsResponse
-  fullName: Winpeak.Client.Legacy.WaypointsResponse
-- uid: Winpeak.Client.Legacy
-  commentId: N:Winpeak.Client.Legacy
-  name: Winpeak.Client.Legacy
-  nameWithType: Winpeak.Client.Legacy
-  fullName: Winpeak.Client.Legacy
+- uid: Winpeak.Client.Scene.Waypoint[]
+  isExternal: true
+  name: Waypoint[]
+  nameWithType: Waypoint[]
+  fullName: Winpeak.Client.Scene.Waypoint[]
+  nameWithType.vb: Waypoint()
+  fullName.vb: Winpeak.Client.Scene.Waypoint()
+  name.vb: Waypoint()
+  spec.csharp:
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
