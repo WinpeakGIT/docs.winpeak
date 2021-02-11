@@ -19,7 +19,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 3546
+    startLine: 3556
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -31,7 +31,7 @@ items:
   inheritedMembers:
   - Winpeak.Client.API.IWinPeakClient.OnClientDisconnected
   - Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
-  - Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action{ServerConnectionStatusController})
+  - Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean,System.String,System.Action{ServerConnectionStatusController})
   - Winpeak.Client.API.IWinPeakClient.IsConnected
   - Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
   - Winpeak.Client.API.IWinPeakClient.Die(System.Action)
@@ -60,7 +60,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 3554
+    startLine: 3564
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -91,7 +91,7 @@ items:
   source:
     id: RegisterPhysicsObject
     path: ''
-    startLine: 3556
+    startLine: 3566
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -121,7 +121,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 3561
+    startLine: 3571
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -145,7 +145,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 3567
+    startLine: 3577
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -177,24 +177,32 @@ references:
   name: OnAnyPacketReceived
   nameWithType: IWinPeakClient.OnAnyPacketReceived
   fullName: Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
-- uid: Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action{ServerConnectionStatusController})
-  commentId: M:Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action{ServerConnectionStatusController})
+- uid: Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean,System.String,System.Action{ServerConnectionStatusController})
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean,System.String,System.Action{ServerConnectionStatusController})
   parent: Winpeak.Client.API.IWinPeakClient
   isExternal: true
-  name: Connect(String, Action<ServerConnectionStatusController>)
-  nameWithType: IWinPeakClient.Connect(String, Action<ServerConnectionStatusController>)
-  fullName: Winpeak.Client.API.IWinPeakClient.Connect(System.String, System.Action<ServerConnectionStatusController>)
-  nameWithType.vb: IWinPeakClient.Connect(String, Action(Of ServerConnectionStatusController))
-  fullName.vb: Winpeak.Client.API.IWinPeakClient.Connect(System.String, System.Action(Of ServerConnectionStatusController))
-  name.vb: Connect(String, Action(Of ServerConnectionStatusController))
+  name: Connect(Boolean, String, Action<ServerConnectionStatusController>)
+  nameWithType: IWinPeakClient.Connect(Boolean, String, Action<ServerConnectionStatusController>)
+  fullName: Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean, System.String, System.Action<ServerConnectionStatusController>)
+  nameWithType.vb: IWinPeakClient.Connect(Boolean, String, Action(Of ServerConnectionStatusController))
+  fullName.vb: Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean, System.String, System.Action(Of ServerConnectionStatusController))
+  name.vb: Connect(Boolean, String, Action(Of ServerConnectionStatusController))
   spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action{ServerConnectionStatusController})
+  - uid: Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean,System.String,System.Action{ServerConnectionStatusController})
     name: Connect
     nameWithType: IWinPeakClient.Connect
     fullName: Winpeak.Client.API.IWinPeakClient.Connect
   - name: (
     nameWithType: (
     fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.String
     name: String
     nameWithType: String
@@ -223,13 +231,21 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action{ServerConnectionStatusController})
+  - uid: Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean,System.String,System.Action{ServerConnectionStatusController})
     name: Connect
     nameWithType: IWinPeakClient.Connect
     fullName: Winpeak.Client.API.IWinPeakClient.Connect
   - name: (
     nameWithType: (
     fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.String
     name: String
     nameWithType: String
