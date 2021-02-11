@@ -16,7 +16,7 @@ items:
   source:
     id: DateTimeHelper
     path: ''
-    startLine: 3766
+    startLine: 3740
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Utils
@@ -54,7 +54,7 @@ items:
   source:
     id: FromUnixTimeMs
     path: ''
-    startLine: 3768
+    startLine: 3742
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Utils
@@ -64,8 +64,8 @@ items:
     - id: ms
       type: System.Int64
     return:
-      type: DateTime
-    content.vb: Public Shared Function FromUnixTimeMs(ms As Long) As DateTime
+      type: System.DateTime
+    content.vb: Public Shared Function FromUnixTimeMs(ms As Long) As Date
   overload: Winpeak.Client.Utils.DateTimeHelper.FromUnixTimeMs*
   modifiers.csharp:
   - public
@@ -383,8 +383,10 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
-- uid: DateTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
   isExternal: true
   name: DateTime
   nameWithType: DateTime
-  fullName: DateTime
+  fullName: System.DateTime

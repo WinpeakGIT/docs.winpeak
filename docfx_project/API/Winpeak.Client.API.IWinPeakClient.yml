@@ -5,10 +5,10 @@ items:
   id: IWinPeakClient
   parent: Winpeak.Client.API
   children:
-  - Winpeak.Client.API.IWinPeakClient.Auth(Action)
+  - Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
   - Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
-  - Winpeak.Client.API.IWinPeakClient.Connect(Action{ServerConnectionStatusController})
-  - Winpeak.Client.API.IWinPeakClient.Die(Action)
+  - Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action{ServerConnectionStatusController})
+  - Winpeak.Client.API.IWinPeakClient.Die(System.Action)
   - Winpeak.Client.API.IWinPeakClient.DrawLines
   - Winpeak.Client.API.IWinPeakClient.GetStatusController(System.Boolean)
   - Winpeak.Client.API.IWinPeakClient.IsConnected
@@ -26,7 +26,7 @@ items:
   source:
     id: IWinPeakClient
     path: ''
-    startLine: 992
+    startLine: 3676
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -53,14 +53,14 @@ items:
   source:
     id: OnClientDisconnected
     path: ''
-    startLine: 994
+    startLine: 3678
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   syntax:
     content: event Action OnClientDisconnected
     return:
-      type: Action
+      type: System.Action
     content.vb: Event OnClientDisconnected As Action
 - uid: Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
   commentId: E:Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
@@ -76,45 +76,47 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 995
+    startLine: 3679
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   syntax:
     content: event Action<long> OnAnyPacketReceived
     return:
-      type: Action{System.Int64}
+      type: System.Action{System.Int64}
     content.vb: Event OnAnyPacketReceived As Action(Of Long)
-- uid: Winpeak.Client.API.IWinPeakClient.Connect(Action{ServerConnectionStatusController})
-  commentId: M:Winpeak.Client.API.IWinPeakClient.Connect(Action{ServerConnectionStatusController})
-  id: Connect(Action{ServerConnectionStatusController})
+- uid: Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action{ServerConnectionStatusController})
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action{ServerConnectionStatusController})
+  id: Connect(System.String,System.Action{ServerConnectionStatusController})
   parent: Winpeak.Client.API.IWinPeakClient
   langs:
   - csharp
   - vb
-  name: Connect(Action<ServerConnectionStatusController>)
-  nameWithType: IWinPeakClient.Connect(Action<ServerConnectionStatusController>)
-  fullName: Winpeak.Client.API.IWinPeakClient.Connect(Action<ServerConnectionStatusController>)
+  name: Connect(String, Action<ServerConnectionStatusController>)
+  nameWithType: IWinPeakClient.Connect(String, Action<ServerConnectionStatusController>)
+  fullName: Winpeak.Client.API.IWinPeakClient.Connect(System.String, System.Action<ServerConnectionStatusController>)
   type: Method
   source:
     id: Connect
     path: ''
-    startLine: 1000
+    startLine: 3684
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   summary: "\nConnect user to a server\n"
   example: []
   syntax:
-    content: void Connect(Action<ServerConnectionStatusController> callback)
+    content: void Connect(string port, Action<ServerConnectionStatusController> callback)
     parameters:
+    - id: port
+      type: System.String
     - id: callback
-      type: Action{ServerConnectionStatusController}
-    content.vb: Sub Connect(callback As Action(Of ServerConnectionStatusController))
+      type: System.Action{ServerConnectionStatusController}
+    content.vb: Sub Connect(port As String, callback As Action(Of ServerConnectionStatusController))
   overload: Winpeak.Client.API.IWinPeakClient.Connect*
-  nameWithType.vb: IWinPeakClient.Connect(Action(Of ServerConnectionStatusController))
-  fullName.vb: Winpeak.Client.API.IWinPeakClient.Connect(Action(Of ServerConnectionStatusController))
-  name.vb: Connect(Action(Of ServerConnectionStatusController))
+  nameWithType.vb: IWinPeakClient.Connect(String, Action(Of ServerConnectionStatusController))
+  fullName.vb: Winpeak.Client.API.IWinPeakClient.Connect(System.String, System.Action(Of ServerConnectionStatusController))
+  name.vb: Connect(String, Action(Of ServerConnectionStatusController))
 - uid: Winpeak.Client.API.IWinPeakClient.IsConnected
   commentId: P:Winpeak.Client.API.IWinPeakClient.IsConnected
   id: IsConnected
@@ -129,7 +131,7 @@ items:
   source:
     id: IsConnected
     path: ''
-    startLine: 1006
+    startLine: 3690
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -147,21 +149,21 @@ items:
   - get
   modifiers.vb:
   - ReadOnly
-- uid: Winpeak.Client.API.IWinPeakClient.Auth(Action)
-  commentId: M:Winpeak.Client.API.IWinPeakClient.Auth(Action)
-  id: Auth(Action)
+- uid: Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
+  id: Auth(System.Action)
   parent: Winpeak.Client.API.IWinPeakClient
   langs:
   - csharp
   - vb
   name: Auth(Action)
   nameWithType: IWinPeakClient.Auth(Action)
-  fullName: Winpeak.Client.API.IWinPeakClient.Auth(Action)
+  fullName: Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
   type: Method
   source:
     id: Auth
     path: ''
-    startLine: 1011
+    startLine: 3695
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -171,24 +173,24 @@ items:
     content: void Auth(Action callback)
     parameters:
     - id: callback
-      type: Action
+      type: System.Action
     content.vb: Sub Auth(callback As Action)
   overload: Winpeak.Client.API.IWinPeakClient.Auth*
-- uid: Winpeak.Client.API.IWinPeakClient.Die(Action)
-  commentId: M:Winpeak.Client.API.IWinPeakClient.Die(Action)
-  id: Die(Action)
+- uid: Winpeak.Client.API.IWinPeakClient.Die(System.Action)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Die(System.Action)
+  id: Die(System.Action)
   parent: Winpeak.Client.API.IWinPeakClient
   langs:
   - csharp
   - vb
   name: Die(Action)
   nameWithType: IWinPeakClient.Die(Action)
-  fullName: Winpeak.Client.API.IWinPeakClient.Die(Action)
+  fullName: Winpeak.Client.API.IWinPeakClient.Die(System.Action)
   type: Method
   source:
     id: Die
     path: ''
-    startLine: 1016
+    startLine: 3700
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -198,7 +200,7 @@ items:
     content: void Die(Action callback)
     parameters:
     - id: callback
-      type: Action
+      type: System.Action
     content.vb: Sub Die(callback As Action)
   overload: Winpeak.Client.API.IWinPeakClient.Die*
 - uid: Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
@@ -215,7 +217,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 1022
+    startLine: 3706
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -243,7 +245,7 @@ items:
   source:
     id: DrawLines
     path: ''
-    startLine: 1027
+    startLine: 3711
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -267,7 +269,7 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 1038
+    startLine: 3722
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -310,7 +312,7 @@ items:
   source:
     id: Utilize
     path: ''
-    startLine: 1043
+    startLine: 3727
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -334,7 +336,7 @@ items:
   source:
     id: GetStatusController
     path: ''
-    startLine: 1049
+    startLine: 3733
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -356,25 +358,34 @@ references:
   name: Winpeak.Client.API
   nameWithType: Winpeak.Client.API
   fullName: Winpeak.Client.API
-- uid: Action
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
   isExternal: true
   name: Action
   nameWithType: Action
-  fullName: Action
-- uid: Action{System.Int64}
-  commentId: '!:Action{System.Int64}'
-  definition: Action`1
+  fullName: System.Action
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action{System.Int64}
+  commentId: T:System.Action{System.Int64}
+  parent: System
+  definition: System.Action`1
   name: Action<Int64>
   nameWithType: Action<Int64>
-  fullName: Action<System.Int64>
+  fullName: System.Action<System.Int64>
   nameWithType.vb: Action(Of Int64)
-  fullName.vb: Action(Of System.Int64)
+  fullName.vb: System.Action(Of System.Int64)
   name.vb: Action(Of Int64)
   spec.csharp:
-  - uid: Action`1
+  - uid: System.Action`1
     name: Action
     nameWithType: Action
-    fullName: Action
+    fullName: System.Action
     isExternal: true
   - name: <
     nameWithType: <
@@ -388,10 +399,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: Action`1
+  - uid: System.Action`1
     name: Action
     nameWithType: Action
-    fullName: Action
+    fullName: System.Action
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -404,41 +415,42 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Action`1
+- uid: System.Action`1
+  commentId: T:System.Action`1
   isExternal: true
-  name: Action<>
-  nameWithType: Action<>
-  fullName: Action<>
-  nameWithType.vb: Action(Of )
-  fullName.vb: Action(Of )
-  name.vb: Action(Of )
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
   spec.csharp:
-  - uid: Action`1
+  - uid: System.Action`1
     name: Action
     nameWithType: Action
-    fullName: Action
+    fullName: System.Action
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: Action`1
+  - uid: System.Action`1
     name: Action
     nameWithType: Action
-    fullName: Action
+    fullName: System.Action
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: )
     nameWithType: )
     fullName: )
@@ -447,20 +459,28 @@ references:
   name: Connect
   nameWithType: IWinPeakClient.Connect
   fullName: Winpeak.Client.API.IWinPeakClient.Connect
-- uid: Action{ServerConnectionStatusController}
-  commentId: '!:Action{ServerConnectionStatusController}'
-  definition: Action`1
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Action{ServerConnectionStatusController}
+  commentId: T:System.Action{ServerConnectionStatusController}
+  parent: System
+  definition: System.Action`1
   name: Action<ServerConnectionStatusController>
   nameWithType: Action<ServerConnectionStatusController>
-  fullName: Action<ServerConnectionStatusController>
+  fullName: System.Action<ServerConnectionStatusController>
   nameWithType.vb: Action(Of ServerConnectionStatusController)
-  fullName.vb: Action(Of ServerConnectionStatusController)
+  fullName.vb: System.Action(Of ServerConnectionStatusController)
   name.vb: Action(Of ServerConnectionStatusController)
   spec.csharp:
-  - uid: Action`1
+  - uid: System.Action`1
     name: Action
     nameWithType: Action
-    fullName: Action
+    fullName: System.Action
     isExternal: true
   - name: <
     nameWithType: <
@@ -474,10 +494,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: Action`1
+  - uid: System.Action`1
     name: Action
     nameWithType: Action
-    fullName: Action
+    fullName: System.Action
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -502,12 +522,6 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Winpeak.Client.API.IWinPeakClient.Auth*
   commentId: Overload:Winpeak.Client.API.IWinPeakClient.Auth
   name: Auth
@@ -540,13 +554,6 @@ references:
   name: Move
   nameWithType: IWinPeakClient.Move
   fullName: Winpeak.Client.API.IWinPeakClient.Move
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
 - uid: System.Single
   commentId: T:System.Single
   parent: System

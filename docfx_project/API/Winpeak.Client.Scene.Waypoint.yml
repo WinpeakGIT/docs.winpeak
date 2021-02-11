@@ -22,13 +22,19 @@ items:
   source:
     id: Waypoint
     path: ''
-    startLine: 3587
+    startLine: 3923
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
   syntax:
-    content: public class Waypoint
-    content.vb: Public Class Waypoint
+    content: >-
+      [Serializable]
+
+      public class Waypoint
+    content.vb: >-
+      <Serializable>
+
+      Public Class Waypoint
   inheritance:
   - System.Object
   inheritedMembers:
@@ -38,6 +44,10 @@ items:
   - System.Object.GetType
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -58,7 +68,7 @@ items:
   source:
     id: Time
     path: ''
-    startLine: 3590
+    startLine: 3926
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -87,7 +97,7 @@ items:
   source:
     id: X
     path: ''
-    startLine: 3591
+    startLine: 3927
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -116,7 +126,7 @@ items:
   source:
     id: Y
     path: ''
-    startLine: 3592
+    startLine: 3928
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -145,7 +155,7 @@ items:
   source:
     id: R
     path: ''
-    startLine: 3593
+    startLine: 3929
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -174,7 +184,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3595
+    startLine: 3931
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -209,7 +219,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3602
+    startLine: 3938
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -235,7 +245,7 @@ items:
   source:
     id: ToString
     path: ''
-    startLine: 3604
+    startLine: 3940
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene

@@ -38,7 +38,6 @@ items:
   - SimpleJSON.JSONNode.Linq
   - SimpleJSON.JSONNode.longAsString
   - SimpleJSON.JSONNode.op_Equality(SimpleJSON.JSONNode,System.Object)
-  - SimpleJSON.JSONNode.op_Implicit(KeyValuePair{System.String,SimpleJSON.JSONNode})~SimpleJSON.JSONNode
   - SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Boolean
   - SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Double
   - SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Int32
@@ -46,6 +45,7 @@ items:
   - SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Single
   - SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.String
   - SimpleJSON.JSONNode.op_Implicit(System.Boolean)~SimpleJSON.JSONNode
+  - SimpleJSON.JSONNode.op_Implicit(System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode})~SimpleJSON.JSONNode
   - SimpleJSON.JSONNode.op_Implicit(System.Double)~SimpleJSON.JSONNode
   - SimpleJSON.JSONNode.op_Implicit(System.Int32)~SimpleJSON.JSONNode
   - SimpleJSON.JSONNode.op_Implicit(System.Int64)~SimpleJSON.JSONNode
@@ -72,7 +72,7 @@ items:
   source:
     id: JSONNode
     path: ''
-    startLine: 1243
+    startLine: 1177
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -115,7 +115,7 @@ items:
   source:
     id: forceASCII
     path: ''
-    startLine: 1347
+    startLine: 1281
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -144,7 +144,7 @@ items:
   source:
     id: longAsString
     path: ''
-    startLine: 1348
+    startLine: 1282
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -173,7 +173,7 @@ items:
   source:
     id: allowLineComments
     path: ''
-    startLine: 1349
+    startLine: 1283
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -202,7 +202,7 @@ items:
   source:
     id: Tag
     path: ''
-    startLine: 1351
+    startLine: 1285
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -235,7 +235,7 @@ items:
   source:
     id: this[]
     path: ''
-    startLine: 1353
+    startLine: 1287
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -273,7 +273,7 @@ items:
   source:
     id: this[]
     path: ''
-    startLine: 1355
+    startLine: 1289
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -311,7 +311,7 @@ items:
   source:
     id: Value
     path: ''
-    startLine: 1357
+    startLine: 1291
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -344,7 +344,7 @@ items:
   source:
     id: Count
     path: ''
-    startLine: 1359
+    startLine: 1293
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -377,7 +377,7 @@ items:
   source:
     id: IsNumber
     path: ''
-    startLine: 1361
+    startLine: 1295
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -410,7 +410,7 @@ items:
   source:
     id: IsString
     path: ''
-    startLine: 1362
+    startLine: 1296
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -443,7 +443,7 @@ items:
   source:
     id: IsBoolean
     path: ''
-    startLine: 1363
+    startLine: 1297
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -476,7 +476,7 @@ items:
   source:
     id: IsNull
     path: ''
-    startLine: 1364
+    startLine: 1298
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -509,7 +509,7 @@ items:
   source:
     id: IsArray
     path: ''
-    startLine: 1365
+    startLine: 1299
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -542,7 +542,7 @@ items:
   source:
     id: IsObject
     path: ''
-    startLine: 1366
+    startLine: 1300
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -575,7 +575,7 @@ items:
   source:
     id: Inline
     path: ''
-    startLine: 1368
+    startLine: 1302
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -608,7 +608,7 @@ items:
   source:
     id: Add
     path: ''
-    startLine: 1370
+    startLine: 1304
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -641,7 +641,7 @@ items:
   source:
     id: Add
     path: ''
-    startLine: 1373
+    startLine: 1307
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -672,7 +672,7 @@ items:
   source:
     id: Remove
     path: ''
-    startLine: 1378
+    startLine: 1312
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -705,7 +705,7 @@ items:
   source:
     id: Remove
     path: ''
-    startLine: 1383
+    startLine: 1317
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -738,7 +738,7 @@ items:
   source:
     id: Remove
     path: ''
-    startLine: 1388
+    startLine: 1322
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -771,7 +771,7 @@ items:
   source:
     id: Clone
     path: ''
-    startLine: 1393
+    startLine: 1327
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -801,7 +801,7 @@ items:
   source:
     id: Children
     path: ''
-    startLine: 1398
+    startLine: 1332
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -809,7 +809,7 @@ items:
     content: public virtual IEnumerable<JSONNode> Children { get; }
     parameters: []
     return:
-      type: IEnumerable{SimpleJSON.JSONNode}
+      type: System.Collections.Generic.IEnumerable{SimpleJSON.JSONNode}
     content.vb: Public Overridable ReadOnly Property Children As IEnumerable(Of JSONNode)
   overload: SimpleJSON.JSONNode.Children*
   modifiers.csharp:
@@ -834,7 +834,7 @@ items:
   source:
     id: DeepChildren
     path: ''
-    startLine: 1406
+    startLine: 1340
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -842,7 +842,7 @@ items:
     content: public IEnumerable<JSONNode> DeepChildren { get; }
     parameters: []
     return:
-      type: IEnumerable{SimpleJSON.JSONNode}
+      type: System.Collections.Generic.IEnumerable{SimpleJSON.JSONNode}
     content.vb: Public ReadOnly Property DeepChildren As IEnumerable(Of JSONNode)
   overload: SimpleJSON.JSONNode.DeepChildren*
   modifiers.csharp:
@@ -865,7 +865,7 @@ items:
   source:
     id: HasKey
     path: ''
-    startLine: 1416
+    startLine: 1350
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -898,7 +898,7 @@ items:
   source:
     id: GetValueOrDefault
     path: ''
-    startLine: 1421
+    startLine: 1355
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -933,7 +933,7 @@ items:
   source:
     id: ToString
     path: ''
-    startLine: 1426
+    startLine: 1360
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -964,7 +964,7 @@ items:
   source:
     id: ToString
     path: ''
-    startLine: 1433
+    startLine: 1367
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -997,7 +997,7 @@ items:
   source:
     id: GetEnumerator
     path: ''
-    startLine: 1441
+    startLine: 1375
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1027,7 +1027,7 @@ items:
   source:
     id: Linq
     path: ''
-    startLine: 1442
+    startLine: 1376
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1035,7 +1035,7 @@ items:
     content: public IEnumerable<KeyValuePair<string, JSONNode>> Linq { get; }
     parameters: []
     return:
-      type: IEnumerable{KeyValuePair{System.String,SimpleJSON.JSONNode}}
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode}}
     content.vb: Public ReadOnly Property Linq As IEnumerable(Of KeyValuePair(Of String, JSONNode))
   overload: SimpleJSON.JSONNode.Linq*
   modifiers.csharp:
@@ -1058,7 +1058,7 @@ items:
   source:
     id: Keys
     path: ''
-    startLine: 1443
+    startLine: 1377
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1089,7 +1089,7 @@ items:
   source:
     id: Values
     path: ''
-    startLine: 1444
+    startLine: 1378
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1120,7 +1120,7 @@ items:
   source:
     id: AsDouble
     path: ''
-    startLine: 1451
+    startLine: 1385
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1153,7 +1153,7 @@ items:
   source:
     id: AsInt
     path: ''
-    startLine: 1466
+    startLine: 1400
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1186,7 +1186,7 @@ items:
   source:
     id: AsFloat
     path: ''
-    startLine: 1472
+    startLine: 1406
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1219,7 +1219,7 @@ items:
   source:
     id: AsBool
     path: ''
-    startLine: 1478
+    startLine: 1412
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1252,7 +1252,7 @@ items:
   source:
     id: AsLong
     path: ''
-    startLine: 1493
+    startLine: 1427
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1285,7 +1285,7 @@ items:
   source:
     id: AsArray
     path: ''
-    startLine: 1508
+    startLine: 1442
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1318,7 +1318,7 @@ items:
   source:
     id: AsObject
     path: ''
-    startLine: 1516
+    startLine: 1450
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1351,7 +1351,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1529
+    startLine: 1463
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1387,7 +1387,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1533
+    startLine: 1467
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1423,7 +1423,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1538
+    startLine: 1472
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1459,7 +1459,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1542
+    startLine: 1476
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1495,7 +1495,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1547
+    startLine: 1481
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1531,7 +1531,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1551
+    startLine: 1485
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1567,7 +1567,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1556
+    startLine: 1490
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1603,7 +1603,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1560
+    startLine: 1494
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1639,7 +1639,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1565
+    startLine: 1499
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1675,7 +1675,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1571
+    startLine: 1505
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1711,7 +1711,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1576
+    startLine: 1510
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1747,7 +1747,7 @@ items:
   source:
     id: op_Implicit
     path: ''
-    startLine: 1580
+    startLine: 1514
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1769,21 +1769,21 @@ items:
   - Shared
   fullName.vb: SimpleJSON.JSONNode.Widening(SimpleJSON.JSONNode to System.Boolean)
   name.vb: Widening(JSONNode to Boolean)
-- uid: SimpleJSON.JSONNode.op_Implicit(KeyValuePair{System.String,SimpleJSON.JSONNode})~SimpleJSON.JSONNode
-  commentId: M:SimpleJSON.JSONNode.op_Implicit(KeyValuePair{System.String,SimpleJSON.JSONNode})~SimpleJSON.JSONNode
-  id: op_Implicit(KeyValuePair{System.String,SimpleJSON.JSONNode})~SimpleJSON.JSONNode
+- uid: SimpleJSON.JSONNode.op_Implicit(System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode})~SimpleJSON.JSONNode
+  commentId: M:SimpleJSON.JSONNode.op_Implicit(System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode})~SimpleJSON.JSONNode
+  id: op_Implicit(System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode})~SimpleJSON.JSONNode
   parent: SimpleJSON.JSONNode
   langs:
   - csharp
   - vb
   name: Implicit(KeyValuePair<String, JSONNode> to JSONNode)
   nameWithType: JSONNode.Implicit(KeyValuePair<String, JSONNode> to JSONNode)
-  fullName: SimpleJSON.JSONNode.Implicit(KeyValuePair<System.String, SimpleJSON.JSONNode> to SimpleJSON.JSONNode)
+  fullName: SimpleJSON.JSONNode.Implicit(System.Collections.Generic.KeyValuePair<System.String, SimpleJSON.JSONNode> to SimpleJSON.JSONNode)
   type: Operator
   source:
     id: op_Implicit
     path: ''
-    startLine: 1585
+    startLine: 1519
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1791,7 +1791,7 @@ items:
     content: public static implicit operator JSONNode(KeyValuePair<string, JSONNode> aKeyValue)
     parameters:
     - id: aKeyValue
-      type: KeyValuePair{System.String,SimpleJSON.JSONNode}
+      type: System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode}
     return:
       type: SimpleJSON.JSONNode
     content.vb: Public Shared Widening Operator CType(aKeyValue As KeyValuePair(Of String, JSONNode)) As JSONNode
@@ -1803,7 +1803,7 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: SimpleJSON.JSONNode.Widening(KeyValuePair(Of System.String, SimpleJSON.JSONNode) to SimpleJSON.JSONNode)
+  fullName.vb: SimpleJSON.JSONNode.Widening(System.Collections.Generic.KeyValuePair(Of System.String, SimpleJSON.JSONNode) to SimpleJSON.JSONNode)
   name.vb: Widening(KeyValuePair(Of String, JSONNode) to JSONNode)
 - uid: SimpleJSON.JSONNode.op_Equality(SimpleJSON.JSONNode,System.Object)
   commentId: M:SimpleJSON.JSONNode.op_Equality(SimpleJSON.JSONNode,System.Object)
@@ -1819,7 +1819,7 @@ items:
   source:
     id: op_Equality
     path: ''
-    startLine: 1590
+    startLine: 1524
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1854,7 +1854,7 @@ items:
   source:
     id: op_Inequality
     path: ''
-    startLine: 1601
+    startLine: 1535
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1889,7 +1889,7 @@ items:
   source:
     id: Equals
     path: ''
-    startLine: 1606
+    startLine: 1540
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1923,7 +1923,7 @@ items:
   source:
     id: GetHashCode
     path: ''
-    startLine: 1611
+    startLine: 1545
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1954,7 +1954,7 @@ items:
   source:
     id: Parse
     path: ''
-    startLine: 1691
+    startLine: 1625
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -1987,7 +1987,7 @@ items:
   source:
     id: Parse
     path: ''
-    startLine: 1696
+    startLine: 1630
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -2309,20 +2309,21 @@ references:
   name: Children
   nameWithType: JSONNode.Children
   fullName: SimpleJSON.JSONNode.Children
-- uid: IEnumerable{SimpleJSON.JSONNode}
-  commentId: '!:IEnumerable{SimpleJSON.JSONNode}'
-  definition: IEnumerable`1
+- uid: System.Collections.Generic.IEnumerable{SimpleJSON.JSONNode}
+  commentId: T:System.Collections.Generic.IEnumerable{SimpleJSON.JSONNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
   name: IEnumerable<JSONNode>
   nameWithType: IEnumerable<JSONNode>
-  fullName: IEnumerable<SimpleJSON.JSONNode>
+  fullName: System.Collections.Generic.IEnumerable<SimpleJSON.JSONNode>
   nameWithType.vb: IEnumerable(Of JSONNode)
-  fullName.vb: IEnumerable(Of SimpleJSON.JSONNode)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SimpleJSON.JSONNode)
   name.vb: IEnumerable(Of JSONNode)
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
@@ -2335,10 +2336,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -2350,44 +2351,51 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: IEnumerable`1
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
-  name: IEnumerable<>
-  nameWithType: IEnumerable<>
-  fullName: IEnumerable<>
-  nameWithType.vb: IEnumerable(Of )
-  fullName.vb: IEnumerable(Of )
-  name.vb: IEnumerable(Of )
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
 - uid: SimpleJSON.JSONNode.DeepChildren*
   commentId: Overload:SimpleJSON.JSONNode.DeepChildren
   name: DeepChildren
@@ -2455,28 +2463,29 @@ references:
   name: Linq
   nameWithType: JSONNode.Linq
   fullName: SimpleJSON.JSONNode.Linq
-- uid: IEnumerable{KeyValuePair{System.String,SimpleJSON.JSONNode}}
-  commentId: '!:IEnumerable{KeyValuePair{System.String,SimpleJSON.JSONNode}}'
-  definition: IEnumerable`1
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
   name: IEnumerable<KeyValuePair<String, JSONNode>>
   nameWithType: IEnumerable<KeyValuePair<String, JSONNode>>
-  fullName: IEnumerable<KeyValuePair<System.String, SimpleJSON.JSONNode>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, SimpleJSON.JSONNode>>
   nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, JSONNode))
-  fullName.vb: IEnumerable(Of KeyValuePair(Of System.String, SimpleJSON.JSONNode))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, SimpleJSON.JSONNode))
   name.vb: IEnumerable(Of KeyValuePair(Of String, JSONNode))
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - uid: KeyValuePair`2
+  - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     nameWithType: KeyValuePair
-    fullName: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
     isExternal: true
   - name: <
     nameWithType: <
@@ -2500,18 +2509,18 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: KeyValuePair`2
+  - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     nameWithType: KeyValuePair
-    fullName: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -2632,20 +2641,21 @@ references:
   nameWithType.vb: JSONNode.Widening
   fullName.vb: SimpleJSON.JSONNode.Widening
   name.vb: Widening
-- uid: KeyValuePair{System.String,SimpleJSON.JSONNode}
-  commentId: '!:KeyValuePair{System.String,SimpleJSON.JSONNode}'
-  definition: KeyValuePair`2
+- uid: System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode}
+  commentId: T:System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.KeyValuePair`2
   name: KeyValuePair<String, JSONNode>
   nameWithType: KeyValuePair<String, JSONNode>
-  fullName: KeyValuePair<System.String, SimpleJSON.JSONNode>
+  fullName: System.Collections.Generic.KeyValuePair<System.String, SimpleJSON.JSONNode>
   nameWithType.vb: KeyValuePair(Of String, JSONNode)
-  fullName.vb: KeyValuePair(Of System.String, SimpleJSON.JSONNode)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of System.String, SimpleJSON.JSONNode)
   name.vb: KeyValuePair(Of String, JSONNode)
   spec.csharp:
-  - uid: KeyValuePair`2
+  - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     nameWithType: KeyValuePair
-    fullName: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
     isExternal: true
   - name: <
     nameWithType: <
@@ -2666,10 +2676,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: KeyValuePair`2
+  - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     nameWithType: KeyValuePair
-    fullName: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -2689,53 +2699,54 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: KeyValuePair`2
+- uid: System.Collections.Generic.KeyValuePair`2
+  commentId: T:System.Collections.Generic.KeyValuePair`2
   isExternal: true
-  name: KeyValuePair<, >
-  nameWithType: KeyValuePair<, >
-  fullName: KeyValuePair<, >
-  nameWithType.vb: KeyValuePair(Of , )
-  fullName.vb: KeyValuePair(Of , )
-  name.vb: KeyValuePair(Of , )
+  name: KeyValuePair<TKey, TValue>
+  nameWithType: KeyValuePair<TKey, TValue>
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  nameWithType.vb: KeyValuePair(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  name.vb: KeyValuePair(Of TKey, TValue)
   spec.csharp:
-  - uid: KeyValuePair`2
+  - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     nameWithType: KeyValuePair
-    fullName: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: KeyValuePair`2
+  - uid: System.Collections.Generic.KeyValuePair`2
     name: KeyValuePair
     nameWithType: KeyValuePair
-    fullName: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
   - name: )
     nameWithType: )
     fullName: )

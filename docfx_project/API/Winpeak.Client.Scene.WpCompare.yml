@@ -16,7 +16,7 @@ items:
   source:
     id: WpCompare
     path: ''
-    startLine: 3610
+    startLine: 3946
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -24,9 +24,19 @@ items:
     content: 'public class WpCompare : IComparer<Waypoint>'
     content.vb: >-
       Public Class WpCompare
-          Inherits IComparer(Of Waypoint)
+          Implements IComparer(Of Waypoint)
   inheritance:
   - System.Object
+  implements:
+  - System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
   - class
@@ -47,7 +57,7 @@ items:
   source:
     id: Compare
     path: ''
-    startLine: 3612
+    startLine: 3948
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -62,6 +72,8 @@ items:
       type: System.Int32
     content.vb: Public Function Compare(x As Waypoint, y As Waypoint) As Integer
   overload: Winpeak.Client.Scene.WpCompare.Compare*
+  implements:
+  - System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}.Compare(Winpeak.Client.Scene.Waypoint,Winpeak.Client.Scene.Waypoint)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -79,17 +91,438 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
+- uid: System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}
+  commentId: T:System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IComparer`1
+  name: IComparer<Waypoint>
+  nameWithType: IComparer<Waypoint>
+  fullName: System.Collections.Generic.IComparer<Winpeak.Client.Scene.Waypoint>
+  nameWithType.vb: IComparer(Of Waypoint)
+  fullName.vb: System.Collections.Generic.IComparer(Of Winpeak.Client.Scene.Waypoint)
+  name.vb: IComparer(Of Waypoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Collections.Generic.IComparer`1
+  commentId: T:System.Collections.Generic.IComparer`1
+  isExternal: true
+  name: IComparer<T>
+  nameWithType: IComparer<T>
+  fullName: System.Collections.Generic.IComparer<T>
+  nameWithType.vb: IComparer(Of T)
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  name.vb: IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
 - uid: Winpeak.Client.Scene.WpCompare.Compare*
   commentId: Overload:Winpeak.Client.Scene.WpCompare.Compare
   name: Compare
   nameWithType: WpCompare.Compare
   fullName: Winpeak.Client.Scene.WpCompare.Compare
+- uid: System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}.Compare(Winpeak.Client.Scene.Waypoint,Winpeak.Client.Scene.Waypoint)
+  commentId: M:System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}.Compare(Winpeak.Client.Scene.Waypoint,Winpeak.Client.Scene.Waypoint)
+  parent: System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}
+  definition: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+  name: Compare(Waypoint, Waypoint)
+  nameWithType: IComparer<Waypoint>.Compare(Waypoint, Waypoint)
+  fullName: System.Collections.Generic.IComparer<Winpeak.Client.Scene.Waypoint>.Compare(Winpeak.Client.Scene.Waypoint, Winpeak.Client.Scene.Waypoint)
+  nameWithType.vb: IComparer(Of Waypoint).Compare(Waypoint, Waypoint)
+  fullName.vb: System.Collections.Generic.IComparer(Of Winpeak.Client.Scene.Waypoint).Compare(Winpeak.Client.Scene.Waypoint, Winpeak.Client.Scene.Waypoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+    name: Compare
+    nameWithType: IComparer<Waypoint>.Compare
+    fullName: System.Collections.Generic.IComparer<Winpeak.Client.Scene.Waypoint>.Compare
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+    name: Compare
+    nameWithType: IComparer(Of Waypoint).Compare
+    fullName: System.Collections.Generic.IComparer(Of Winpeak.Client.Scene.Waypoint).Compare
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Winpeak.Client.Scene.Waypoint
+    name: Waypoint
+    nameWithType: Waypoint
+    fullName: Winpeak.Client.Scene.Waypoint
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Winpeak.Client.Scene.Waypoint
   commentId: T:Winpeak.Client.Scene.Waypoint
   parent: Winpeak.Client.Scene
@@ -103,3 +536,53 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
+- uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+  commentId: M:System.Collections.Generic.IComparer`1.Compare(`0,`0)
+  isExternal: true
+  name: Compare(T, T)
+  nameWithType: IComparer<T>.Compare(T, T)
+  fullName: System.Collections.Generic.IComparer<T>.Compare(T, T)
+  nameWithType.vb: IComparer(Of T).Compare(T, T)
+  fullName.vb: System.Collections.Generic.IComparer(Of T).Compare(T, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+    name: Compare
+    nameWithType: IComparer<T>.Compare
+    fullName: System.Collections.Generic.IComparer<T>.Compare
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+    name: Compare
+    nameWithType: IComparer(Of T).Compare
+    fullName: System.Collections.Generic.IComparer(Of T).Compare
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

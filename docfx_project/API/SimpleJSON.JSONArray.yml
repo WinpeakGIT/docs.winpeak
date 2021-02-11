@@ -27,7 +27,7 @@ items:
   source:
     id: JSONArray
     path: ''
-    startLine: 1869
+    startLine: 1803
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -94,7 +94,7 @@ items:
   source:
     id: Inline
     path: ''
-    startLine: 1873
+    startLine: 1807
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -128,7 +128,7 @@ items:
   source:
     id: Tag
     path: ''
-    startLine: 1879
+    startLine: 1813
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -162,7 +162,7 @@ items:
   source:
     id: IsArray
     path: ''
-    startLine: 1880
+    startLine: 1814
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -196,7 +196,7 @@ items:
   source:
     id: GetEnumerator
     path: ''
-    startLine: 1881
+    startLine: 1815
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -227,7 +227,7 @@ items:
   source:
     id: this[]
     path: ''
-    startLine: 1883
+    startLine: 1817
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -266,7 +266,7 @@ items:
   source:
     id: this[]
     path: ''
-    startLine: 1902
+    startLine: 1836
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -305,7 +305,7 @@ items:
   source:
     id: Count
     path: ''
-    startLine: 1913
+    startLine: 1847
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -339,7 +339,7 @@ items:
   source:
     id: Add
     path: ''
-    startLine: 1918
+    startLine: 1852
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -373,7 +373,7 @@ items:
   source:
     id: Remove
     path: ''
-    startLine: 1925
+    startLine: 1859
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -407,7 +407,7 @@ items:
   source:
     id: Remove
     path: ''
-    startLine: 1934
+    startLine: 1868
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -441,7 +441,7 @@ items:
   source:
     id: Clone
     path: ''
-    startLine: 1940
+    startLine: 1874
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -472,7 +472,7 @@ items:
   source:
     id: Children
     path: ''
-    startLine: 1954
+    startLine: 1888
   assemblies:
   - cs.temp.dll
   namespace: SimpleJSON
@@ -480,7 +480,7 @@ items:
     content: public override IEnumerable<JSONNode> Children { get; }
     parameters: []
     return:
-      type: IEnumerable{SimpleJSON.JSONNode}
+      type: System.Collections.Generic.IEnumerable{SimpleJSON.JSONNode}
     content.vb: Public Overrides ReadOnly Property Children As IEnumerable(Of JSONNode)
   overridden: SimpleJSON.JSONNode.Children
   overload: SimpleJSON.JSONArray.Children*
@@ -1573,20 +1573,21 @@ references:
   name: Children
   nameWithType: JSONArray.Children
   fullName: SimpleJSON.JSONArray.Children
-- uid: IEnumerable{SimpleJSON.JSONNode}
-  commentId: '!:IEnumerable{SimpleJSON.JSONNode}'
-  definition: IEnumerable`1
+- uid: System.Collections.Generic.IEnumerable{SimpleJSON.JSONNode}
+  commentId: T:System.Collections.Generic.IEnumerable{SimpleJSON.JSONNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
   name: IEnumerable<JSONNode>
   nameWithType: IEnumerable<JSONNode>
-  fullName: IEnumerable<SimpleJSON.JSONNode>
+  fullName: System.Collections.Generic.IEnumerable<SimpleJSON.JSONNode>
   nameWithType.vb: IEnumerable(Of JSONNode)
-  fullName.vb: IEnumerable(Of SimpleJSON.JSONNode)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SimpleJSON.JSONNode)
   name.vb: IEnumerable(Of JSONNode)
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
@@ -1599,10 +1600,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -1614,41 +1615,48 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: IEnumerable`1
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
-  name: IEnumerable<>
-  nameWithType: IEnumerable<>
-  fullName: IEnumerable<>
-  nameWithType.vb: IEnumerable(Of )
-  fullName.vb: IEnumerable(Of )
-  name.vb: IEnumerable(Of )
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

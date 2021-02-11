@@ -7,7 +7,7 @@ items:
   children:
   - Winpeak.Client.Networking.UdpAsyncStateController.#ctor(UdpClient,IPEndPoint)
   - Winpeak.Client.Networking.UdpAsyncStateController._controlIpEndPoint
-  - Winpeak.Client.Networking.UdpAsyncStateController.GetResult(IAsyncResult@)
+  - Winpeak.Client.Networking.UdpAsyncStateController.GetResult(System.IAsyncResult@)
   - Winpeak.Client.Networking.UdpAsyncStateController.IsOperationDone
   - Winpeak.Client.Networking.UdpAsyncStateController.IsOperationProceedBytes
   - Winpeak.Client.Networking.UdpAsyncStateController.operationResult
@@ -22,7 +22,7 @@ items:
   source:
     id: UdpAsyncStateController
     path: ''
-    startLine: 3548
+    startLine: 3512
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -64,7 +64,7 @@ items:
   source:
     id: UdpClient
     path: ''
-    startLine: 3550
+    startLine: 3514
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -93,7 +93,7 @@ items:
   source:
     id: _controlIpEndPoint
     path: ''
-    startLine: 3551
+    startLine: 3515
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -120,7 +120,7 @@ items:
   source:
     id: IsOperationDone
     path: ''
-    startLine: 3552
+    startLine: 3516
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -153,7 +153,7 @@ items:
   source:
     id: operationResult
     path: ''
-    startLine: 3553
+    startLine: 3517
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -180,7 +180,7 @@ items:
   source:
     id: IsOperationProceedBytes
     path: ''
-    startLine: 3558
+    startLine: 3522
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -215,7 +215,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3560
+    startLine: 3524
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -232,21 +232,21 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(IAsyncResult@)
-  commentId: M:Winpeak.Client.Networking.UdpAsyncStateController.GetResult(IAsyncResult@)
-  id: GetResult(IAsyncResult@)
+- uid: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(System.IAsyncResult@)
+  commentId: M:Winpeak.Client.Networking.UdpAsyncStateController.GetResult(System.IAsyncResult@)
+  id: GetResult(System.IAsyncResult@)
   parent: Winpeak.Client.Networking.UdpAsyncStateController
   langs:
   - csharp
   - vb
   name: GetResult(ref IAsyncResult)
   nameWithType: UdpAsyncStateController.GetResult(ref IAsyncResult)
-  fullName: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(ref IAsyncResult)
+  fullName: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(ref System.IAsyncResult)
   type: Method
   source:
     id: GetResult
     path: ''
-    startLine: 3575
+    startLine: 3539
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -256,7 +256,7 @@ items:
     content: public abstract string GetResult(ref IAsyncResult result)
     parameters:
     - id: result
-      type: IAsyncResult
+      type: System.IAsyncResult
       description: ''
     return:
       type: System.String
@@ -270,7 +270,7 @@ items:
   modifiers.vb:
   - Public
   - MustOverride
-  fullName.vb: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(ByRef IAsyncResult)
+  fullName.vb: Winpeak.Client.Networking.UdpAsyncStateController.GetResult(ByRef System.IAsyncResult)
   name.vb: GetResult(ByRef IAsyncResult)
 references:
 - uid: Winpeak.Client.Networking
@@ -614,8 +614,10 @@ references:
   name: GetResult
   nameWithType: UdpAsyncStateController.GetResult
   fullName: Winpeak.Client.Networking.UdpAsyncStateController.GetResult
-- uid: IAsyncResult
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
   isExternal: true
   name: IAsyncResult
   nameWithType: IAsyncResult
-  fullName: IAsyncResult
+  fullName: System.IAsyncResult

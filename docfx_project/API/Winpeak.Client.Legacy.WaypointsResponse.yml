@@ -20,13 +20,19 @@ items:
   source:
     id: WaypointsResponse
     path: ''
-    startLine: 3420
+    startLine: 2596
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Legacy
   syntax:
-    content: public class WaypointsResponse
-    content.vb: Public Class WaypointsResponse
+    content: >-
+      [Serializable]
+
+      public class WaypointsResponse
+    content.vb: >-
+      <Serializable>
+
+      Public Class WaypointsResponse
   inheritance:
   - System.Object
   inheritedMembers:
@@ -37,6 +43,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ToString
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -57,7 +67,7 @@ items:
   source:
     id: Waypoints
     path: ''
-    startLine: 3423
+    startLine: 2599
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Legacy
@@ -88,7 +98,7 @@ items:
   source:
     id: ObjectId
     path: ''
-    startLine: 3425
+    startLine: 2601
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Legacy
@@ -119,7 +129,7 @@ items:
   source:
     id: MoveCount
     path: ''
-    startLine: 3427
+    startLine: 2603
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Legacy
@@ -150,7 +160,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3430
+    startLine: 2606
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Legacy
@@ -186,7 +196,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 3436
+    startLine: 2612
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Legacy

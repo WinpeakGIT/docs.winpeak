@@ -17,7 +17,7 @@ items:
   source:
     id: GlobalConsts
     path: ''
-    startLine: 3876
+    startLine: 3850
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Utils
@@ -55,15 +55,15 @@ items:
   source:
     id: UnixEpochStart
     path: ''
-    startLine: 3878
+    startLine: 3852
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Utils
   syntax:
     content: public static readonly DateTime UnixEpochStart
     return:
-      type: DateTime
-    content.vb: Public Shared ReadOnly UnixEpochStart As DateTime
+      type: System.DateTime
+    content.vb: Public Shared ReadOnly UnixEpochStart As Date
   modifiers.csharp:
   - public
   - static
@@ -86,7 +86,7 @@ items:
   source:
     id: UnixNowMillis
     path: ''
-    startLine: 3880
+    startLine: 3854
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Utils
@@ -403,11 +403,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: DateTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
   isExternal: true
   name: DateTime
   nameWithType: DateTime
-  fullName: DateTime
+  fullName: System.DateTime
 - uid: Winpeak.Client.Utils.GlobalConsts.UnixNowMillis*
   commentId: Overload:Winpeak.Client.Utils.GlobalConsts.UnixNowMillis
   name: UnixNowMillis

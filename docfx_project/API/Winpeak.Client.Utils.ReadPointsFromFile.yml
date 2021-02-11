@@ -17,7 +17,7 @@ items:
   source:
     id: ReadPointsFromFile
     path: ''
-    startLine: 3779
+    startLine: 3753
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Utils
@@ -55,14 +55,14 @@ items:
   source:
     id: ReadPoints
     path: ''
-    startLine: 3783
+    startLine: 3757
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Utils
   syntax:
     content: public static List<Waypoint> ReadPoints()
     return:
-      type: List{Waypoint}
+      type: System.Collections.Generic.List{Waypoint}
     content.vb: Public Shared Function ReadPoints As List(Of Waypoint)
   overload: Winpeak.Client.Utils.ReadPointsFromFile.ReadPoints*
   modifiers.csharp:
@@ -85,14 +85,14 @@ items:
   source:
     id: ReadPointsInLine
     path: ''
-    startLine: 3800
+    startLine: 3774
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Utils
   syntax:
     content: public static List<List<Waypoint>> ReadPointsInLine()
     return:
-      type: List{List{Waypoint}}
+      type: System.Collections.Generic.List{System.Collections.Generic.List{Waypoint}}
     content.vb: Public Shared Function ReadPointsInLine As List(Of List(Of Waypoint))
   overload: Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine*
   modifiers.csharp:
@@ -404,20 +404,21 @@ references:
   name: ReadPoints
   nameWithType: ReadPointsFromFile.ReadPoints
   fullName: Winpeak.Client.Utils.ReadPointsFromFile.ReadPoints
-- uid: List{Waypoint}
-  commentId: '!:List{Waypoint}'
-  definition: List`1
+- uid: System.Collections.Generic.List{Waypoint}
+  commentId: T:System.Collections.Generic.List{Waypoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
   name: List<Waypoint>
   nameWithType: List<Waypoint>
-  fullName: List<Waypoint>
+  fullName: System.Collections.Generic.List<Waypoint>
   nameWithType.vb: List(Of Waypoint)
-  fullName.vb: List(Of Waypoint)
+  fullName.vb: System.Collections.Generic.List(Of Waypoint)
   name.vb: List(Of Waypoint)
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: <
     nameWithType: <
@@ -431,10 +432,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -447,71 +448,79 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: List`1
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
   isExternal: true
-  name: List<>
-  nameWithType: List<>
-  fullName: List<>
-  nameWithType.vb: List(Of )
-  fullName.vb: List(Of )
-  name.vb: List(Of )
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
 - uid: Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine*
   commentId: Overload:Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine
   name: ReadPointsInLine
   nameWithType: ReadPointsFromFile.ReadPointsInLine
   fullName: Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine
-- uid: List{List{Waypoint}}
-  commentId: '!:List{List{Waypoint}}'
-  definition: List`1
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{Waypoint}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{Waypoint}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
   name: List<List<Waypoint>>
   nameWithType: List<List<Waypoint>>
-  fullName: List<List<Waypoint>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<Waypoint>>
   nameWithType.vb: List(Of List(Of Waypoint))
-  fullName.vb: List(Of List(Of Waypoint))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of Waypoint))
   name.vb: List(Of List(Of Waypoint))
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: <
     nameWithType: <
@@ -528,18 +537,18 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
     nameWithType: List
-    fullName: List
+    fullName: System.Collections.Generic.List
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
