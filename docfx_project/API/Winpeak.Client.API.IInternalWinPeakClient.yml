@@ -5,9 +5,10 @@ items:
   id: IInternalWinPeakClient
   parent: Winpeak.Client.API
   children:
+  - Winpeak.Client.API.IInternalWinPeakClient.Confirm(System.Int64)
   - Winpeak.Client.API.IInternalWinPeakClient.Disconnect
   - Winpeak.Client.API.IInternalWinPeakClient.HandlePacket(System.Int64)
-  - Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject(System.Object,System.Action{System.String})
+  - Winpeak.Client.API.IInternalWinPeakClient.OnAnyPacketReceived
   - Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64,System.Action)
   langs:
   - csharp
@@ -19,7 +20,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 3556
+    startLine: 3562
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -30,22 +31,47 @@ items:
           Inherits IWinPeakClient
   inheritedMembers:
   - Winpeak.Client.API.IWinPeakClient.OnClientDisconnected
-  - Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
-  - Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean,System.String,System.Action{ServerConnectionStatusController})
+  - Winpeak.Client.API.IWinPeakClient.GetServerConnectionStatusController
+  - Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)
+  - Winpeak.Client.API.IWinPeakClient.SubscribeObject(WpSceneObject)
+  - Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action)
   - Winpeak.Client.API.IWinPeakClient.IsConnected
   - Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
   - Winpeak.Client.API.IWinPeakClient.Die(System.Action)
-  - Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
   - Winpeak.Client.API.IWinPeakClient.DrawLines
   - Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
   - Winpeak.Client.API.IWinPeakClient.Utilize
-  - Winpeak.Client.API.IWinPeakClient.GetStatusController(System.Boolean)
   modifiers.csharp:
   - public
   - interface
   modifiers.vb:
   - Public
   - Interface
+- uid: Winpeak.Client.API.IInternalWinPeakClient.OnAnyPacketReceived
+  commentId: E:Winpeak.Client.API.IInternalWinPeakClient.OnAnyPacketReceived
+  id: OnAnyPacketReceived
+  parent: Winpeak.Client.API.IInternalWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: OnAnyPacketReceived
+  nameWithType: IInternalWinPeakClient.OnAnyPacketReceived
+  fullName: Winpeak.Client.API.IInternalWinPeakClient.OnAnyPacketReceived
+  type: Event
+  source:
+    id: OnAnyPacketReceived
+    path: ''
+    startLine: 3567
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nFire event when any package is received\n"
+  example: []
+  syntax:
+    content: event Action<long> OnAnyPacketReceived
+    return:
+      type: System.Action{System.Int64}
+    content.vb: Event OnAnyPacketReceived As Action(Of Long)
 - uid: Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64,System.Action)
   commentId: M:Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64,System.Action)
   id: Sync(System.Int64,System.Action)
@@ -60,7 +86,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 3564
+    startLine: 3574
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -77,36 +103,6 @@ items:
       description: ''
     content.vb: Sub Sync(currentTime As Long, callback As Action)
   overload: Winpeak.Client.API.IInternalWinPeakClient.Sync*
-- uid: Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject(System.Object,System.Action{System.String})
-  commentId: M:Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject(System.Object,System.Action{System.String})
-  id: RegisterPhysicsObject(System.Object,System.Action{System.String})
-  parent: Winpeak.Client.API.IInternalWinPeakClient
-  langs:
-  - csharp
-  - vb
-  name: RegisterPhysicsObject(Object, Action<String>)
-  nameWithType: IInternalWinPeakClient.RegisterPhysicsObject(Object, Action<String>)
-  fullName: Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject(System.Object, System.Action<System.String>)
-  type: Method
-  source:
-    id: RegisterPhysicsObject
-    path: ''
-    startLine: 3566
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.API
-  syntax:
-    content: void RegisterPhysicsObject(object data, Action<string> callback)
-    parameters:
-    - id: data
-      type: System.Object
-    - id: callback
-      type: System.Action{System.String}
-    content.vb: Sub RegisterPhysicsObject(data As Object, callback As Action(Of String))
-  overload: Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject*
-  nameWithType.vb: IInternalWinPeakClient.RegisterPhysicsObject(Object, Action(Of String))
-  fullName.vb: Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject(System.Object, System.Action(Of System.String))
-  name.vb: RegisterPhysicsObject(Object, Action(Of String))
 - uid: Winpeak.Client.API.IInternalWinPeakClient.Disconnect
   commentId: M:Winpeak.Client.API.IInternalWinPeakClient.Disconnect
   id: Disconnect
@@ -121,7 +117,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 3571
+    startLine: 3579
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -145,7 +141,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 3577
+    startLine: 3585
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -159,6 +155,34 @@ items:
       description: ''
     content.vb: Sub HandlePacket(packetId As Long)
   overload: Winpeak.Client.API.IInternalWinPeakClient.HandlePacket*
+- uid: Winpeak.Client.API.IInternalWinPeakClient.Confirm(System.Int64)
+  commentId: M:Winpeak.Client.API.IInternalWinPeakClient.Confirm(System.Int64)
+  id: Confirm(System.Int64)
+  parent: Winpeak.Client.API.IInternalWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: Confirm(Int64)
+  nameWithType: IInternalWinPeakClient.Confirm(Int64)
+  fullName: Winpeak.Client.API.IInternalWinPeakClient.Confirm(System.Int64)
+  type: Method
+  source:
+    id: Confirm
+    path: ''
+    startLine: 3591
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nNotify the server to receive any packet\n"
+  example: []
+  syntax:
+    content: void Confirm(long packetId)
+    parameters:
+    - id: packetId
+      type: System.Int64
+      description: ''
+    content.vb: Sub Confirm(packetId As Long)
+  overload: Winpeak.Client.API.IInternalWinPeakClient.Confirm*
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -171,81 +195,105 @@ references:
   name: OnClientDisconnected
   nameWithType: IWinPeakClient.OnClientDisconnected
   fullName: Winpeak.Client.API.IWinPeakClient.OnClientDisconnected
-- uid: Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
-  commentId: E:Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
+- uid: Winpeak.Client.API.IWinPeakClient.GetServerConnectionStatusController
+  commentId: P:Winpeak.Client.API.IWinPeakClient.GetServerConnectionStatusController
   parent: Winpeak.Client.API.IWinPeakClient
-  name: OnAnyPacketReceived
-  nameWithType: IWinPeakClient.OnAnyPacketReceived
-  fullName: Winpeak.Client.API.IWinPeakClient.OnAnyPacketReceived
-- uid: Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean,System.String,System.Action{ServerConnectionStatusController})
-  commentId: M:Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean,System.String,System.Action{ServerConnectionStatusController})
+  name: GetServerConnectionStatusController
+  nameWithType: IWinPeakClient.GetServerConnectionStatusController
+  fullName: Winpeak.Client.API.IWinPeakClient.GetServerConnectionStatusController
+- uid: Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)
   parent: Winpeak.Client.API.IWinPeakClient
   isExternal: true
-  name: Connect(Boolean, String, Action<ServerConnectionStatusController>)
-  nameWithType: IWinPeakClient.Connect(Boolean, String, Action<ServerConnectionStatusController>)
-  fullName: Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean, System.String, System.Action<ServerConnectionStatusController>)
-  nameWithType.vb: IWinPeakClient.Connect(Boolean, String, Action(Of ServerConnectionStatusController))
-  fullName.vb: Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean, System.String, System.Action(Of ServerConnectionStatusController))
-  name.vb: Connect(Boolean, String, Action(Of ServerConnectionStatusController))
+  name: SubscribeRigidbody(WinPeakRigidbody)
+  nameWithType: IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)
+  fullName: Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)
   spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean,System.String,System.Action{ServerConnectionStatusController})
-    name: Connect
-    nameWithType: IWinPeakClient.Connect
-    fullName: Winpeak.Client.API.IWinPeakClient.Connect
+  - uid: Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)
+    name: SubscribeRigidbody
+    nameWithType: IWinPeakClient.SubscribeRigidbody
+    fullName: Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
+  - uid: WinPeakRigidbody
+    name: WinPeakRigidbody
+    nameWithType: WinPeakRigidbody
+    fullName: WinPeakRigidbody
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Action`1
-    name: Action
-    nameWithType: Action
-    fullName: System.Action
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: ServerConnectionStatusController
-    name: ServerConnectionStatusController
-    nameWithType: ServerConnectionStatusController
-    fullName: ServerConnectionStatusController
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakClient.Connect(System.Boolean,System.String,System.Action{ServerConnectionStatusController})
+  - uid: Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)
+    name: SubscribeRigidbody
+    nameWithType: IWinPeakClient.SubscribeRigidbody
+    fullName: Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WinPeakRigidbody
+    name: WinPeakRigidbody
+    nameWithType: WinPeakRigidbody
+    fullName: WinPeakRigidbody
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.SubscribeObject(WpSceneObject)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.SubscribeObject(WpSceneObject)
+  parent: Winpeak.Client.API.IWinPeakClient
+  isExternal: true
+  name: SubscribeObject(WpSceneObject)
+  nameWithType: IWinPeakClient.SubscribeObject(WpSceneObject)
+  fullName: Winpeak.Client.API.IWinPeakClient.SubscribeObject(WpSceneObject)
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakClient.SubscribeObject(WpSceneObject)
+    name: SubscribeObject
+    nameWithType: IWinPeakClient.SubscribeObject
+    fullName: Winpeak.Client.API.IWinPeakClient.SubscribeObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WpSceneObject
+    name: WpSceneObject
+    nameWithType: WpSceneObject
+    fullName: WpSceneObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakClient.SubscribeObject(WpSceneObject)
+    name: SubscribeObject
+    nameWithType: IWinPeakClient.SubscribeObject
+    fullName: Winpeak.Client.API.IWinPeakClient.SubscribeObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WpSceneObject
+    name: WpSceneObject
+    nameWithType: WpSceneObject
+    fullName: WpSceneObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action)
+  parent: Winpeak.Client.API.IWinPeakClient
+  isExternal: true
+  name: Connect(String, Action)
+  nameWithType: IWinPeakClient.Connect(String, Action)
+  fullName: Winpeak.Client.API.IWinPeakClient.Connect(System.String, System.Action)
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action)
     name: Connect
     nameWithType: IWinPeakClient.Connect
     fullName: Winpeak.Client.API.IWinPeakClient.Connect
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
   - uid: System.String
     name: String
     nameWithType: String
@@ -254,22 +302,35 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Action`1
+  - uid: System.Action
     name: Action
     nameWithType: Action
     fullName: System.Action
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: ServerConnectionStatusController
-    name: ServerConnectionStatusController
-    nameWithType: ServerConnectionStatusController
-    fullName: ServerConnectionStatusController
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action)
+    name: Connect
+    nameWithType: IWinPeakClient.Connect
+    fullName: Winpeak.Client.API.IWinPeakClient.Connect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
@@ -353,45 +414,6 @@ references:
     name: Action
     nameWithType: Action
     fullName: System.Action
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
-  commentId: M:Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
-  parent: Winpeak.Client.API.IWinPeakClient
-  isExternal: true
-  name: Confirm(Int64)
-  nameWithType: IWinPeakClient.Confirm(Int64)
-  fullName: Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
-  spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
-    name: Confirm
-    nameWithType: IWinPeakClient.Confirm
-    fullName: Winpeak.Client.API.IWinPeakClient.Confirm
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakClient.Confirm(System.Int64)
-    name: Confirm
-    nameWithType: IWinPeakClient.Confirm
-    fullName: Winpeak.Client.API.IWinPeakClient.Confirm
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
     isExternal: true
   - name: )
     nameWithType: )
@@ -571,98 +593,22 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.API.IWinPeakClient.GetStatusController(System.Boolean)
-  commentId: M:Winpeak.Client.API.IWinPeakClient.GetStatusController(System.Boolean)
-  parent: Winpeak.Client.API.IWinPeakClient
-  isExternal: true
-  name: GetStatusController(Boolean)
-  nameWithType: IWinPeakClient.GetStatusController(Boolean)
-  fullName: Winpeak.Client.API.IWinPeakClient.GetStatusController(System.Boolean)
-  spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakClient.GetStatusController(System.Boolean)
-    name: GetStatusController
-    nameWithType: IWinPeakClient.GetStatusController
-    fullName: Winpeak.Client.API.IWinPeakClient.GetStatusController
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakClient.GetStatusController(System.Boolean)
-    name: GetStatusController
-    nameWithType: IWinPeakClient.GetStatusController
-    fullName: Winpeak.Client.API.IWinPeakClient.GetStatusController
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: Winpeak.Client.API.IWinPeakClient
   commentId: T:Winpeak.Client.API.IWinPeakClient
   parent: Winpeak.Client.API
   name: IWinPeakClient
   nameWithType: IWinPeakClient
   fullName: Winpeak.Client.API.IWinPeakClient
-- uid: Winpeak.Client.API.IInternalWinPeakClient.Sync*
-  commentId: Overload:Winpeak.Client.API.IInternalWinPeakClient.Sync
-  name: Sync
-  nameWithType: IInternalWinPeakClient.Sync
-  fullName: Winpeak.Client.API.IInternalWinPeakClient.Sync
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
-  isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64
-- uid: System.Action
-  commentId: T:System.Action
-  parent: System
-  isExternal: true
-  name: Action
-  nameWithType: Action
-  fullName: System.Action
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject*
-  commentId: Overload:Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject
-  name: RegisterPhysicsObject
-  nameWithType: IInternalWinPeakClient.RegisterPhysicsObject
-  fullName: Winpeak.Client.API.IInternalWinPeakClient.RegisterPhysicsObject
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
-- uid: System.Action{System.String}
-  commentId: T:System.Action{System.String}
+- uid: System.Action{System.Int64}
+  commentId: T:System.Action{System.Int64}
   parent: System
   definition: System.Action`1
-  name: Action<String>
-  nameWithType: Action<String>
-  fullName: System.Action<System.String>
-  nameWithType.vb: Action(Of String)
-  fullName.vb: System.Action(Of System.String)
-  name.vb: Action(Of String)
+  name: Action<Int64>
+  nameWithType: Action<Int64>
+  fullName: System.Action<System.Int64>
+  nameWithType.vb: Action(Of Int64)
+  fullName.vb: System.Action(Of System.Int64)
+  name.vb: Action(Of Int64)
   spec.csharp:
   - uid: System.Action`1
     name: Action
@@ -672,10 +618,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
     isExternal: true
   - name: '>'
     nameWithType: '>'
@@ -689,10 +635,10 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
     isExternal: true
   - name: )
     nameWithType: )
@@ -736,6 +682,31 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Winpeak.Client.API.IInternalWinPeakClient.Sync*
+  commentId: Overload:Winpeak.Client.API.IInternalWinPeakClient.Sync
+  name: Sync
+  nameWithType: IInternalWinPeakClient.Sync
+  fullName: Winpeak.Client.API.IInternalWinPeakClient.Sync
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
 - uid: Winpeak.Client.API.IInternalWinPeakClient.Disconnect*
   commentId: Overload:Winpeak.Client.API.IInternalWinPeakClient.Disconnect
   name: Disconnect
@@ -746,3 +717,8 @@ references:
   name: HandlePacket
   nameWithType: IInternalWinPeakClient.HandlePacket
   fullName: Winpeak.Client.API.IInternalWinPeakClient.HandlePacket
+- uid: Winpeak.Client.API.IInternalWinPeakClient.Confirm*
+  commentId: Overload:Winpeak.Client.API.IInternalWinPeakClient.Confirm
+  name: Confirm
+  nameWithType: IInternalWinPeakClient.Confirm
+  fullName: Winpeak.Client.API.IInternalWinPeakClient.Confirm
