@@ -13,7 +13,6 @@ items:
   - Winpeak.Client.API.IWinPeakClient.IsConnected
   - Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
   - Winpeak.Client.API.IWinPeakClient.OnClientDisconnected
-  - Winpeak.Client.API.IWinPeakClient.SubscribeObject(WpSceneObject)
   - Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)
   - Winpeak.Client.API.IWinPeakClient.Utilize
   langs:
@@ -26,7 +25,7 @@ items:
   source:
     id: IWinPeakClient
     path: ''
-    startLine: 3703
+    startLine: 3749
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -53,7 +52,7 @@ items:
   source:
     id: OnClientDisconnected
     path: ''
-    startLine: 3706
+    startLine: 3752
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -76,7 +75,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 3711
+    startLine: 3757
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -107,7 +106,7 @@ items:
   source:
     id: SubscribeRigidbody
     path: ''
-    startLine: 3716
+    startLine: 3762
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -120,34 +119,6 @@ items:
       type: WinPeakRigidbody
     content.vb: Sub SubscribeRigidbody(rigidbody As WinPeakRigidbody)
   overload: Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody*
-- uid: Winpeak.Client.API.IWinPeakClient.SubscribeObject(WpSceneObject)
-  commentId: M:Winpeak.Client.API.IWinPeakClient.SubscribeObject(WpSceneObject)
-  id: SubscribeObject(WpSceneObject)
-  parent: Winpeak.Client.API.IWinPeakClient
-  langs:
-  - csharp
-  - vb
-  name: SubscribeObject(WpSceneObject)
-  nameWithType: IWinPeakClient.SubscribeObject(WpSceneObject)
-  fullName: Winpeak.Client.API.IWinPeakClient.SubscribeObject(WpSceneObject)
-  type: Method
-  source:
-    id: SubscribeObject
-    path: ''
-    startLine: 3723
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.API
-  summary: "\nSubscribe scene object to WinPeak network. Allow control scene object\n"
-  example: []
-  syntax:
-    content: void SubscribeObject(WpSceneObject sceneObject)
-    parameters:
-    - id: sceneObject
-      type: WpSceneObject
-      description: ''
-    content.vb: Sub SubscribeObject(sceneObject As WpSceneObject)
-  overload: Winpeak.Client.API.IWinPeakClient.SubscribeObject*
 - uid: Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action)
   commentId: M:Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action)
   id: Connect(System.String,System.Action)
@@ -162,7 +133,7 @@ items:
   source:
     id: Connect
     path: ''
-    startLine: 3728
+    startLine: 3767
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -191,7 +162,7 @@ items:
   source:
     id: IsConnected
     path: ''
-    startLine: 3734
+    startLine: 3773
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -223,7 +194,7 @@ items:
   source:
     id: Auth
     path: ''
-    startLine: 3739
+    startLine: 3778
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -250,7 +221,7 @@ items:
   source:
     id: Die
     path: ''
-    startLine: 3744
+    startLine: 3783
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -277,7 +248,7 @@ items:
   source:
     id: DrawLines
     path: ''
-    startLine: 3749
+    startLine: 3788
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -301,7 +272,7 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 3760
+    startLine: 3799
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -344,7 +315,7 @@ items:
   source:
     id: Utilize
     path: ''
-    startLine: 3765
+    startLine: 3804
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -394,17 +365,6 @@ references:
   name: WinPeakRigidbody
   nameWithType: WinPeakRigidbody
   fullName: WinPeakRigidbody
-- uid: Winpeak.Client.API.IWinPeakClient.SubscribeObject*
-  commentId: Overload:Winpeak.Client.API.IWinPeakClient.SubscribeObject
-  name: SubscribeObject
-  nameWithType: IWinPeakClient.SubscribeObject
-  fullName: Winpeak.Client.API.IWinPeakClient.SubscribeObject
-- uid: WpSceneObject
-  commentId: '!:WpSceneObject'
-  isExternal: true
-  name: WpSceneObject
-  nameWithType: WpSceneObject
-  fullName: WpSceneObject
 - uid: Winpeak.Client.API.IWinPeakClient.Connect*
   commentId: Overload:Winpeak.Client.API.IWinPeakClient.Connect
   name: Connect
