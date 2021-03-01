@@ -5,7 +5,7 @@ items:
   id: DrawLineData
   parent: Winpeak.Client.Scene
   children:
-  - Winpeak.Client.Scene.DrawLineData.#ctor(System.Int64,System.Single,Winpeak.Client.Scene.WpPointData,Winpeak.Client.Scene.WpPointData)
+  - Winpeak.Client.Scene.DrawLineData.#ctor(System.Int64,System.Single,WpPointData,WpPointData)
   - Winpeak.Client.Scene.DrawLineData.EndPoint
   - Winpeak.Client.Scene.DrawLineData.StartPoint
   - Winpeak.Client.Scene.DrawLineData.TimeMs
@@ -20,7 +20,7 @@ items:
   source:
     id: DrawLineData
     path: ''
-    startLine: 4124
+    startLine: 4150
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -54,14 +54,14 @@ items:
   source:
     id: StartPoint
     path: ''
-    startLine: 4126
+    startLine: 4152
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
   syntax:
     content: public readonly WpPointData StartPoint
     return:
-      type: Winpeak.Client.Scene.WpPointData
+      type: WpPointData
     content.vb: Public ReadOnly StartPoint As WpPointData
   modifiers.csharp:
   - public
@@ -83,14 +83,14 @@ items:
   source:
     id: EndPoint
     path: ''
-    startLine: 4127
+    startLine: 4153
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
   syntax:
     content: public readonly WpPointData EndPoint
     return:
-      type: Winpeak.Client.Scene.WpPointData
+      type: WpPointData
     content.vb: Public ReadOnly EndPoint As WpPointData
   modifiers.csharp:
   - public
@@ -112,7 +112,7 @@ items:
   source:
     id: TimeMs
     path: ''
-    startLine: 4128
+    startLine: 4154
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -141,7 +141,7 @@ items:
   source:
     id: Width
     path: ''
-    startLine: 4129
+    startLine: 4155
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -156,21 +156,21 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Scene.DrawLineData.#ctor(System.Int64,System.Single,Winpeak.Client.Scene.WpPointData,Winpeak.Client.Scene.WpPointData)
-  commentId: M:Winpeak.Client.Scene.DrawLineData.#ctor(System.Int64,System.Single,Winpeak.Client.Scene.WpPointData,Winpeak.Client.Scene.WpPointData)
-  id: '#ctor(System.Int64,System.Single,Winpeak.Client.Scene.WpPointData,Winpeak.Client.Scene.WpPointData)'
+- uid: Winpeak.Client.Scene.DrawLineData.#ctor(System.Int64,System.Single,WpPointData,WpPointData)
+  commentId: M:Winpeak.Client.Scene.DrawLineData.#ctor(System.Int64,System.Single,WpPointData,WpPointData)
+  id: '#ctor(System.Int64,System.Single,WpPointData,WpPointData)'
   parent: Winpeak.Client.Scene.DrawLineData
   langs:
   - csharp
   - vb
   name: DrawLineData(Int64, Single, WpPointData, WpPointData)
   nameWithType: DrawLineData.DrawLineData(Int64, Single, WpPointData, WpPointData)
-  fullName: Winpeak.Client.Scene.DrawLineData.DrawLineData(System.Int64, System.Single, Winpeak.Client.Scene.WpPointData, Winpeak.Client.Scene.WpPointData)
+  fullName: Winpeak.Client.Scene.DrawLineData.DrawLineData(System.Int64, System.Single, WpPointData, WpPointData)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 4131
+    startLine: 4157
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -182,9 +182,9 @@ items:
     - id: width
       type: System.Single
     - id: endPoint
-      type: Winpeak.Client.Scene.WpPointData
+      type: WpPointData
     - id: startPoint
-      type: Winpeak.Client.Scene.WpPointData
+      type: WpPointData
     content.vb: Public Sub New(timeMs As Long, width As Single, endPoint As WpPointData, startPoint As WpPointData)
   overload: Winpeak.Client.Scene.DrawLineData.#ctor*
   modifiers.csharp:
@@ -465,12 +465,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Scene.WpPointData
-  commentId: T:Winpeak.Client.Scene.WpPointData
-  parent: Winpeak.Client.Scene
+- uid: WpPointData
+  isExternal: true
   name: WpPointData
   nameWithType: WpPointData
-  fullName: Winpeak.Client.Scene.WpPointData
+  fullName: WpPointData
 - uid: System.Int64
   commentId: T:System.Int64
   parent: System

@@ -4,7 +4,9 @@ items:
   commentId: N:Winpeak.Client.Networking
   id: Winpeak.Client.Networking
   children:
-  - Winpeak.Client.Networking.DevConfigs
+  - Winpeak.Client.Networking.MatchResult
+  - Winpeak.Client.Networking.PlayersStats
+  - Winpeak.Client.Networking.RoundResult
   - Winpeak.Client.Networking.ServerConnectionImportantWrapper
   - Winpeak.Client.Networking.ServerConnectionStatusController
   - Winpeak.Client.Networking.UdpAsyncReceiveState
@@ -62,11 +64,6 @@ references:
   name: ServerConnectionStatusController
   nameWithType: ServerConnectionStatusController
   fullName: Winpeak.Client.Networking.ServerConnectionStatusController
-- uid: Winpeak.Client.Networking.DevConfigs
-  commentId: T:Winpeak.Client.Networking.DevConfigs
-  name: DevConfigs
-  nameWithType: DevConfigs
-  fullName: Winpeak.Client.Networking.DevConfigs
 - uid: Winpeak.Client.Networking.UdpAsyncReceiveState
   commentId: T:Winpeak.Client.Networking.UdpAsyncReceiveState
   name: UdpAsyncReceiveState
@@ -83,6 +80,22 @@ references:
   name: UdpAsyncStateController
   nameWithType: UdpAsyncStateController
   fullName: Winpeak.Client.Networking.UdpAsyncStateController
+- uid: Winpeak.Client.Networking.PlayersStats
+  commentId: T:Winpeak.Client.Networking.PlayersStats
+  parent: Winpeak.Client.Networking
+  name: PlayersStats
+  nameWithType: PlayersStats
+  fullName: Winpeak.Client.Networking.PlayersStats
+- uid: Winpeak.Client.Networking.MatchResult
+  commentId: T:Winpeak.Client.Networking.MatchResult
+  name: MatchResult
+  nameWithType: MatchResult
+  fullName: Winpeak.Client.Networking.MatchResult
+- uid: Winpeak.Client.Networking.RoundResult
+  commentId: T:Winpeak.Client.Networking.RoundResult
+  name: RoundResult
+  nameWithType: RoundResult
+  fullName: Winpeak.Client.Networking.RoundResult
 - uid: Winpeak.Client.Networking
   commentId: N:Winpeak.Client.Networking
   name: Winpeak.Client.Networking

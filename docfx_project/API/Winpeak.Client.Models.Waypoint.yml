@@ -1,36 +1,40 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Networking.DevConfigs
-  commentId: T:Winpeak.Client.Networking.DevConfigs
-  id: DevConfigs
-  parent: Winpeak.Client.Networking
+- uid: Winpeak.Client.Models.Waypoint
+  commentId: T:Winpeak.Client.Models.Waypoint
+  id: Waypoint
+  parent: Winpeak.Client.Models
   children:
-  - Winpeak.Client.Networking.DevConfigs.devIP
-  - Winpeak.Client.Networking.DevConfigs.DevIpAddress
-  - Winpeak.Client.Networking.DevConfigs.DevIpEndPoint
-  - Winpeak.Client.Networking.DevConfigs.devPort
-  - Winpeak.Client.Networking.DevConfigs.localIP
-  - Winpeak.Client.Networking.DevConfigs.LocalIpAddress
-  - Winpeak.Client.Networking.DevConfigs.LocalIpEndPoint
-  - Winpeak.Client.Networking.DevConfigs.localPort
-  - Winpeak.Client.Networking.DevConfigs.SyncSendPeriodMS
+  - Winpeak.Client.Models.Waypoint.#ctor
+  - Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
+  - Winpeak.Client.Models.Waypoint.R
+  - Winpeak.Client.Models.Waypoint.Time
+  - Winpeak.Client.Models.Waypoint.ToString
+  - Winpeak.Client.Models.Waypoint.X
+  - Winpeak.Client.Models.Waypoint.Y
   langs:
   - csharp
   - vb
-  name: DevConfigs
-  nameWithType: DevConfigs
-  fullName: Winpeak.Client.Networking.DevConfigs
+  name: Waypoint
+  nameWithType: Waypoint
+  fullName: Winpeak.Client.Models.Waypoint
   type: Class
   source:
-    id: DevConfigs
+    id: Waypoint
     path: ''
-    startLine: 2986
+    startLine: 4053
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Networking
+  namespace: Winpeak.Client.Models
   syntax:
-    content: public static class DevConfigs
-    content.vb: Public Module DevConfigs
+    content: >-
+      [Serializable]
+
+      public class Waypoint
+    content.vb: >-
+      <Serializable>
+
+      Public Class Waypoint
   inheritance:
   - System.Object
   inheritedMembers:
@@ -39,290 +43,231 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.ToString
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
-  - static
   - class
   modifiers.vb:
   - Public
-  - Module
-- uid: Winpeak.Client.Networking.DevConfigs.SyncSendPeriodMS
-  commentId: F:Winpeak.Client.Networking.DevConfigs.SyncSendPeriodMS
-  id: SyncSendPeriodMS
-  parent: Winpeak.Client.Networking.DevConfigs
+  - Class
+- uid: Winpeak.Client.Models.Waypoint.Time
+  commentId: F:Winpeak.Client.Models.Waypoint.Time
+  id: Time
+  parent: Winpeak.Client.Models.Waypoint
   langs:
   - csharp
   - vb
-  name: SyncSendPeriodMS
-  nameWithType: DevConfigs.SyncSendPeriodMS
-  fullName: Winpeak.Client.Networking.DevConfigs.SyncSendPeriodMS
+  name: Time
+  nameWithType: Waypoint.Time
+  fullName: Winpeak.Client.Models.Waypoint.Time
   type: Field
   source:
-    id: SyncSendPeriodMS
+    id: Time
     path: ''
-    startLine: 2988
+    startLine: 4056
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Networking
+  namespace: Winpeak.Client.Models
   syntax:
-    content: public const float SyncSendPeriodMS = 250F
+    content: public readonly long Time
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Time As Long
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Models.Waypoint.X
+  commentId: F:Winpeak.Client.Models.Waypoint.X
+  id: X
+  parent: Winpeak.Client.Models.Waypoint
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Waypoint.X
+  fullName: Winpeak.Client.Models.Waypoint.X
+  type: Field
+  source:
+    id: X
+    path: ''
+    startLine: 4057
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Models
+  syntax:
+    content: public readonly float X
     return:
       type: System.Single
-    content.vb: Public Const SyncSendPeriodMS As Single = 250F
+    content.vb: Public ReadOnly X As Single
   modifiers.csharp:
   - public
-  - const
+  - readonly
   modifiers.vb:
   - Public
-  - Const
-- uid: Winpeak.Client.Networking.DevConfigs.localIP
-  commentId: F:Winpeak.Client.Networking.DevConfigs.localIP
-  id: localIP
-  parent: Winpeak.Client.Networking.DevConfigs
+  - ReadOnly
+- uid: Winpeak.Client.Models.Waypoint.Y
+  commentId: F:Winpeak.Client.Models.Waypoint.Y
+  id: Y
+  parent: Winpeak.Client.Models.Waypoint
   langs:
   - csharp
   - vb
-  name: localIP
-  nameWithType: DevConfigs.localIP
-  fullName: Winpeak.Client.Networking.DevConfigs.localIP
+  name: Y
+  nameWithType: Waypoint.Y
+  fullName: Winpeak.Client.Models.Waypoint.Y
   type: Field
   source:
-    id: localIP
+    id: Y
     path: ''
-    startLine: 2989
+    startLine: 4058
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Networking
+  namespace: Winpeak.Client.Models
   syntax:
-    content: public const string localIP = "127.0.0.1"
+    content: public readonly float Y
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Y As Single
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Models.Waypoint.R
+  commentId: F:Winpeak.Client.Models.Waypoint.R
+  id: R
+  parent: Winpeak.Client.Models.Waypoint
+  langs:
+  - csharp
+  - vb
+  name: R
+  nameWithType: Waypoint.R
+  fullName: Winpeak.Client.Models.Waypoint.R
+  type: Field
+  source:
+    id: R
+    path: ''
+    startLine: 4059
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Models
+  syntax:
+    content: public readonly float R
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly R As Single
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
+  commentId: M:Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Int64,System.Single,System.Single,System.Single)'
+  parent: Winpeak.Client.Models.Waypoint
+  langs:
+  - csharp
+  - vb
+  name: Waypoint(Int64, Single, Single, Single)
+  nameWithType: Waypoint.Waypoint(Int64, Single, Single, Single)
+  fullName: Winpeak.Client.Models.Waypoint.Waypoint(System.Int64, System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4061
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Models
+  syntax:
+    content: public Waypoint(long time, float x, float y, float r)
+    parameters:
+    - id: time
+      type: System.Int64
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: r
+      type: System.Single
+    content.vb: Public Sub New(time As Long, x As Single, y As Single, r As Single)
+  overload: Winpeak.Client.Models.Waypoint.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Models.Waypoint.#ctor
+  commentId: M:Winpeak.Client.Models.Waypoint.#ctor
+  id: '#ctor'
+  parent: Winpeak.Client.Models.Waypoint
+  langs:
+  - csharp
+  - vb
+  name: Waypoint()
+  nameWithType: Waypoint.Waypoint()
+  fullName: Winpeak.Client.Models.Waypoint.Waypoint()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4068
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Models
+  syntax:
+    content: public Waypoint()
+    content.vb: Public Sub New
+  overload: Winpeak.Client.Models.Waypoint.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Models.Waypoint.ToString
+  commentId: M:Winpeak.Client.Models.Waypoint.ToString
+  id: ToString
+  parent: Winpeak.Client.Models.Waypoint
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Waypoint.ToString()
+  fullName: Winpeak.Client.Models.Waypoint.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 4070
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Models
+  syntax:
+    content: public override string ToString()
     return:
       type: System.String
-    content.vb: Public Const localIP As String = "127.0.0.1"
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Winpeak.Client.Models.Waypoint.ToString*
   modifiers.csharp:
   - public
-  - const
+  - override
   modifiers.vb:
   - Public
-  - Const
-- uid: Winpeak.Client.Networking.DevConfigs.devIP
-  commentId: F:Winpeak.Client.Networking.DevConfigs.devIP
-  id: devIP
-  parent: Winpeak.Client.Networking.DevConfigs
-  langs:
-  - csharp
-  - vb
-  name: devIP
-  nameWithType: DevConfigs.devIP
-  fullName: Winpeak.Client.Networking.DevConfigs.devIP
-  type: Field
-  source:
-    id: devIP
-    path: ''
-    startLine: 2990
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public const string devIP = "62.138.14.222"
-    return:
-      type: System.String
-    content.vb: Public Const devIP As String = "62.138.14.222"
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
-- uid: Winpeak.Client.Networking.DevConfigs.localPort
-  commentId: F:Winpeak.Client.Networking.DevConfigs.localPort
-  id: localPort
-  parent: Winpeak.Client.Networking.DevConfigs
-  langs:
-  - csharp
-  - vb
-  name: localPort
-  nameWithType: DevConfigs.localPort
-  fullName: Winpeak.Client.Networking.DevConfigs.localPort
-  type: Field
-  source:
-    id: localPort
-    path: ''
-    startLine: 2991
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public const int localPort = 9000
-    return:
-      type: System.Int32
-    content.vb: Public Const localPort As Integer = 9000
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
-- uid: Winpeak.Client.Networking.DevConfigs.devPort
-  commentId: F:Winpeak.Client.Networking.DevConfigs.devPort
-  id: devPort
-  parent: Winpeak.Client.Networking.DevConfigs
-  langs:
-  - csharp
-  - vb
-  name: devPort
-  nameWithType: DevConfigs.devPort
-  fullName: Winpeak.Client.Networking.DevConfigs.devPort
-  type: Field
-  source:
-    id: devPort
-    path: ''
-    startLine: 2992
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public const int devPort = 9000
-    return:
-      type: System.Int32
-    content.vb: Public Const devPort As Integer = 9000
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
-- uid: Winpeak.Client.Networking.DevConfigs.LocalIpAddress
-  commentId: F:Winpeak.Client.Networking.DevConfigs.LocalIpAddress
-  id: LocalIpAddress
-  parent: Winpeak.Client.Networking.DevConfigs
-  langs:
-  - csharp
-  - vb
-  name: LocalIpAddress
-  nameWithType: DevConfigs.LocalIpAddress
-  fullName: Winpeak.Client.Networking.DevConfigs.LocalIpAddress
-  type: Field
-  source:
-    id: LocalIpAddress
-    path: ''
-    startLine: 2993
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public static readonly IPAddress LocalIpAddress
-    return:
-      type: IPAddress
-    content.vb: Public Shared ReadOnly LocalIpAddress As IPAddress
-  modifiers.csharp:
-  - public
-  - static
-  - readonly
-  modifiers.vb:
-  - Public
-  - Shared
-  - ReadOnly
-- uid: Winpeak.Client.Networking.DevConfigs.DevIpAddress
-  commentId: F:Winpeak.Client.Networking.DevConfigs.DevIpAddress
-  id: DevIpAddress
-  parent: Winpeak.Client.Networking.DevConfigs
-  langs:
-  - csharp
-  - vb
-  name: DevIpAddress
-  nameWithType: DevConfigs.DevIpAddress
-  fullName: Winpeak.Client.Networking.DevConfigs.DevIpAddress
-  type: Field
-  source:
-    id: DevIpAddress
-    path: ''
-    startLine: 2994
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public static readonly IPAddress DevIpAddress
-    return:
-      type: IPAddress
-    content.vb: Public Shared ReadOnly DevIpAddress As IPAddress
-  modifiers.csharp:
-  - public
-  - static
-  - readonly
-  modifiers.vb:
-  - Public
-  - Shared
-  - ReadOnly
-- uid: Winpeak.Client.Networking.DevConfigs.LocalIpEndPoint
-  commentId: F:Winpeak.Client.Networking.DevConfigs.LocalIpEndPoint
-  id: LocalIpEndPoint
-  parent: Winpeak.Client.Networking.DevConfigs
-  langs:
-  - csharp
-  - vb
-  name: LocalIpEndPoint
-  nameWithType: DevConfigs.LocalIpEndPoint
-  fullName: Winpeak.Client.Networking.DevConfigs.LocalIpEndPoint
-  type: Field
-  source:
-    id: LocalIpEndPoint
-    path: ''
-    startLine: 2995
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public static readonly IPEndPoint LocalIpEndPoint
-    return:
-      type: IPEndPoint
-    content.vb: Public Shared ReadOnly LocalIpEndPoint As IPEndPoint
-  modifiers.csharp:
-  - public
-  - static
-  - readonly
-  modifiers.vb:
-  - Public
-  - Shared
-  - ReadOnly
-- uid: Winpeak.Client.Networking.DevConfigs.DevIpEndPoint
-  commentId: F:Winpeak.Client.Networking.DevConfigs.DevIpEndPoint
-  id: DevIpEndPoint
-  parent: Winpeak.Client.Networking.DevConfigs
-  langs:
-  - csharp
-  - vb
-  name: DevIpEndPoint
-  nameWithType: DevConfigs.DevIpEndPoint
-  fullName: Winpeak.Client.Networking.DevConfigs.DevIpEndPoint
-  type: Field
-  source:
-    id: DevIpEndPoint
-    path: ''
-    startLine: 2996
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public static readonly IPEndPoint DevIpEndPoint
-    return:
-      type: IPEndPoint
-    content.vb: Public Shared ReadOnly DevIpEndPoint As IPEndPoint
-  modifiers.csharp:
-  - public
-  - static
-  - readonly
-  modifiers.vb:
-  - Public
-  - Shared
-  - ReadOnly
+  - Overrides
 references:
-- uid: Winpeak.Client.Networking
-  commentId: N:Winpeak.Client.Networking
-  name: Winpeak.Client.Networking
-  nameWithType: Winpeak.Client.Networking
-  fullName: Winpeak.Client.Networking
+- uid: Winpeak.Client.Models
+  commentId: N:Winpeak.Client.Models
+  name: Winpeak.Client.Models
+  nameWithType: Winpeak.Client.Models
+  fullName: Winpeak.Client.Models
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -521,37 +466,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -615,6 +529,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System.Single
   commentId: T:System.Single
   parent: System
@@ -622,6 +543,47 @@ references:
   name: Single
   nameWithType: Single
   fullName: System.Single
+- uid: Winpeak.Client.Models.Waypoint.#ctor*
+  commentId: Overload:Winpeak.Client.Models.Waypoint.#ctor
+  name: Waypoint
+  nameWithType: Waypoint.Waypoint
+  fullName: Winpeak.Client.Models.Waypoint.Waypoint
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Models.Waypoint.ToString*
+  commentId: Overload:Winpeak.Client.Models.Waypoint.ToString
+  name: ToString
+  nameWithType: Waypoint.ToString
+  fullName: Winpeak.Client.Models.Waypoint.ToString
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -629,20 +591,3 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
-- uid: IPAddress
-  isExternal: true
-  name: IPAddress
-  nameWithType: IPAddress
-  fullName: IPAddress
-- uid: IPEndPoint
-  isExternal: true
-  name: IPEndPoint
-  nameWithType: IPEndPoint
-  fullName: IPEndPoint

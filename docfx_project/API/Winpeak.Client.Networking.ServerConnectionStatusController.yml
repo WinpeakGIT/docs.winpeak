@@ -11,7 +11,6 @@ items:
   - Winpeak.Client.Networking.ServerConnectionStatusController.GetEstimatedServerTime
   - Winpeak.Client.Networking.ServerConnectionStatusController.LastDiffWithServerTime
   - Winpeak.Client.Networking.ServerConnectionStatusController.LastPing
-  - Winpeak.Client.Networking.ServerConnectionStatusController.LastSyncTime
   - Winpeak.Client.Networking.ServerConnectionStatusController.MaxPing
   - Winpeak.Client.Networking.ServerConnectionStatusController.MinPing
   - Winpeak.Client.Networking.ServerConnectionStatusController.ServerTimeDelta
@@ -27,7 +26,7 @@ items:
   source:
     id: ServerConnectionStatusController
     path: ''
-    startLine: 2861
+    startLine: 2606
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -66,7 +65,7 @@ items:
   source:
     id: ServerTimeDelta
     path: ''
-    startLine: 2863
+    startLine: 2609
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -97,7 +96,7 @@ items:
   source:
     id: StartTimeReal
     path: ''
-    startLine: 2864
+    startLine: 2610
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -128,7 +127,7 @@ items:
   source:
     id: MinPing
     path: ''
-    startLine: 2865
+    startLine: 2611
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -159,7 +158,7 @@ items:
   source:
     id: MaxPing
     path: ''
-    startLine: 2866
+    startLine: 2612
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -190,7 +189,7 @@ items:
   source:
     id: LastPing
     path: ''
-    startLine: 2867
+    startLine: 2613
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -221,7 +220,7 @@ items:
   source:
     id: AveragePing
     path: ''
-    startLine: 2868
+    startLine: 2614
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -252,7 +251,7 @@ items:
   source:
     id: LastDiffWithServerTime
     path: ''
-    startLine: 2869
+    startLine: 2615
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -269,39 +268,6 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Networking.ServerConnectionStatusController.LastSyncTime
-  commentId: P:Winpeak.Client.Networking.ServerConnectionStatusController.LastSyncTime
-  id: LastSyncTime
-  parent: Winpeak.Client.Networking.ServerConnectionStatusController
-  langs:
-  - csharp
-  - vb
-  name: LastSyncTime
-  nameWithType: ServerConnectionStatusController.LastSyncTime
-  fullName: Winpeak.Client.Networking.ServerConnectionStatusController.LastSyncTime
-  type: Property
-  source:
-    id: LastSyncTime
-    path: ''
-    startLine: 2871
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public long LastSyncTime { get; protected set; }
-    parameters: []
-    return:
-      type: System.Int64
-    content.vb: Public Property LastSyncTime As Long
-  overload: Winpeak.Client.Networking.ServerConnectionStatusController.LastSyncTime*
-  modifiers.csharp:
-  - public
-  - get
-  - protected set
-  modifiers.vb:
-  - Public
-  - Get
-  - Protected Set
 - uid: Winpeak.Client.Networking.ServerConnectionStatusController.#ctor
   commentId: M:Winpeak.Client.Networking.ServerConnectionStatusController.#ctor
   id: '#ctor'
@@ -316,7 +282,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 2873
+    startLine: 2618
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -342,7 +308,7 @@ items:
   source:
     id: DeltaMinPing
     path: ''
-    startLine: 2878
+    startLine: 2623
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -373,7 +339,7 @@ items:
   source:
     id: GetEstimatedServerTime
     path: ''
-    startLine: 2880
+    startLine: 2625
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -401,7 +367,7 @@ items:
   source:
     id: SetStatus
     path: ''
-    startLine: 2884
+    startLine: 2629
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking
@@ -763,11 +729,6 @@ references:
   name: LastDiffWithServerTime
   nameWithType: ServerConnectionStatusController.LastDiffWithServerTime
   fullName: Winpeak.Client.Networking.ServerConnectionStatusController.LastDiffWithServerTime
-- uid: Winpeak.Client.Networking.ServerConnectionStatusController.LastSyncTime*
-  commentId: Overload:Winpeak.Client.Networking.ServerConnectionStatusController.LastSyncTime
-  name: LastSyncTime
-  nameWithType: ServerConnectionStatusController.LastSyncTime
-  fullName: Winpeak.Client.Networking.ServerConnectionStatusController.LastSyncTime
 - uid: Winpeak.Client.Networking.ServerConnectionStatusController.#ctor*
   commentId: Overload:Winpeak.Client.Networking.ServerConnectionStatusController.#ctor
   name: ServerConnectionStatusController

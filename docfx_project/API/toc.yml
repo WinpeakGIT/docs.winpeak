@@ -39,11 +39,6 @@
     name: IWinPeakClient
   - uid: Winpeak.Client.API.WinPeakAPI
     name: WinPeakAPI
-- uid: Winpeak.Client.Legacy
-  name: Winpeak.Client.Legacy
-  items:
-  - uid: Winpeak.Client.Legacy.WaypointsResponse
-    name: WaypointsResponse
 - uid: Winpeak.Client.Models
   name: Winpeak.Client.Models
   items:
@@ -53,11 +48,21 @@
   - uid: Winpeak.Client.Models.ListQueue`1
     name: ListQueue<T>
     name.vb: ListQueue(Of T)
+  - uid: Winpeak.Client.Models.Waypoint
+    name: Waypoint
+  - uid: Winpeak.Client.Models.WpCompare
+    name: WpCompare
+  - uid: Winpeak.Client.Models.WpPointData
+    name: WpPointData
 - uid: Winpeak.Client.Networking
   name: Winpeak.Client.Networking
   items:
-  - uid: Winpeak.Client.Networking.DevConfigs
-    name: DevConfigs
+  - uid: Winpeak.Client.Networking.MatchResult
+    name: MatchResult
+  - uid: Winpeak.Client.Networking.PlayersStats
+    name: PlayersStats
+  - uid: Winpeak.Client.Networking.RoundResult
+    name: RoundResult
   - uid: Winpeak.Client.Networking.ServerConnectionImportantWrapper
     name: ServerConnectionImportantWrapper
   - uid: Winpeak.Client.Networking.ServerConnectionStatusController
@@ -87,24 +92,14 @@
     name: DrawLineData
   - uid: Winpeak.Client.Scene.DrawPointData
     name: DrawPointData
-  - uid: Winpeak.Client.Scene.HighlightController
-    name: HighlightController
   - uid: Winpeak.Client.Scene.IWinPeakSubscriber
     name: IWinPeakSubscriber
-  - uid: Winpeak.Client.Scene.ObjCmds
-    name: ObjCmds
-  - uid: Winpeak.Client.Scene.ObjObey
-    name: ObjObey
   - uid: Winpeak.Client.Scene.ObjPhysType
     name: ObjPhysType
-  - uid: Winpeak.Client.Scene.Waypoint
-    name: Waypoint
   - uid: Winpeak.Client.Scene.WinPeakRigidbody
     name: WinPeakRigidbody
-  - uid: Winpeak.Client.Scene.WpCompare
-    name: WpCompare
-  - uid: Winpeak.Client.Scene.WpPointData
-    name: WpPointData
+  - uid: Winpeak.Client.Scene.WpGameState
+    name: WpGameState
   - uid: Winpeak.Client.Scene.WpSceneObjectController
     name: WpSceneObjectController
 - uid: Winpeak.Client.Utils
@@ -112,16 +107,14 @@
   items:
   - uid: Winpeak.Client.Utils.BaseSelfDestroyingObject
     name: BaseSelfDestroyingObject
+  - uid: Winpeak.Client.Utils.ConnectionWatcher
+    name: ConnectionWatcher
   - uid: Winpeak.Client.Utils.DateTimeHelper
     name: DateTimeHelper
   - uid: Winpeak.Client.Utils.DebugPointRenderer
     name: DebugPointRenderer
   - uid: Winpeak.Client.Utils.GlobalConsts
     name: GlobalConsts
-  - uid: Winpeak.Client.Utils.ReadPointsFromFile
-    name: ReadPointsFromFile
-  - uid: Winpeak.Client.Utils.SceneSettingsController
-    name: SceneSettingsController
   - uid: Winpeak.Client.Utils.SelfDestroyingGameObject
     name: SelfDestroyingGameObject
   - uid: Winpeak.Client.Utils.SelfDestroyingLineRender
@@ -130,5 +123,3 @@
     name: TimeElapser
   - uid: Winpeak.Client.Utils.TimeKeyElapser
     name: TimeKeyElapser
-  - uid: Winpeak.Client.Utils.WaypointsShowMode
-    name: WaypointsShowMode

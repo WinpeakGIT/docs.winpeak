@@ -1,38 +1,31 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Legacy.WaypointsResponse
-  commentId: T:Winpeak.Client.Legacy.WaypointsResponse
-  id: WaypointsResponse
-  parent: Winpeak.Client.Legacy
+- uid: Winpeak.Client.Models.WpPointData
+  commentId: T:Winpeak.Client.Models.WpPointData
+  id: WpPointData
+  parent: Winpeak.Client.Models
   children:
-  - Winpeak.Client.Legacy.WaypointsResponse.#ctor
-  - Winpeak.Client.Legacy.WaypointsResponse.#ctor(Waypoint[],System.String,System.Int64)
-  - Winpeak.Client.Legacy.WaypointsResponse.MoveCount
-  - Winpeak.Client.Legacy.WaypointsResponse.ObjectId
-  - Winpeak.Client.Legacy.WaypointsResponse.Waypoints
+  - Winpeak.Client.Models.WpPointData.#ctor(System.Single,System.Single,System.Single)
+  - Winpeak.Client.Models.WpPointData.#ctor(Vector3)
+  - Winpeak.Client.Models.WpPointData.ServerCoordinate
+  - Winpeak.Client.Models.WpPointData.UnityCoordinate
   langs:
   - csharp
   - vb
-  name: WaypointsResponse
-  nameWithType: WaypointsResponse
-  fullName: Winpeak.Client.Legacy.WaypointsResponse
+  name: WpPointData
+  nameWithType: WpPointData
+  fullName: Winpeak.Client.Models.WpPointData
   type: Class
   source:
-    id: WaypointsResponse
+    id: WpPointData
     path: ''
-    startLine: 2662
+    startLine: 3993
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Legacy
+  namespace: Winpeak.Client.Models
   syntax:
-    content: >-
-      [Serializable]
-
-      public class WaypointsResponse
-    content.vb: >-
-      <Serializable>
-
-      Public Class WaypointsResponse
+    content: public class WpPointData
+    content.vb: Public Class WpPointData
   inheritance:
   - System.Object
   inheritedMembers:
@@ -43,177 +36,138 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ToString
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  attributes:
-  - type: System.SerializableAttribute
-    ctor: System.SerializableAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - class
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Legacy.WaypointsResponse.Waypoints
-  commentId: P:Winpeak.Client.Legacy.WaypointsResponse.Waypoints
-  id: Waypoints
-  parent: Winpeak.Client.Legacy.WaypointsResponse
+- uid: Winpeak.Client.Models.WpPointData.ServerCoordinate
+  commentId: F:Winpeak.Client.Models.WpPointData.ServerCoordinate
+  id: ServerCoordinate
+  parent: Winpeak.Client.Models.WpPointData
   langs:
   - csharp
   - vb
-  name: Waypoints
-  nameWithType: WaypointsResponse.Waypoints
-  fullName: Winpeak.Client.Legacy.WaypointsResponse.Waypoints
-  type: Property
+  name: ServerCoordinate
+  nameWithType: WpPointData.ServerCoordinate
+  fullName: Winpeak.Client.Models.WpPointData.ServerCoordinate
+  type: Field
   source:
-    id: Waypoints
+    id: ServerCoordinate
     path: ''
-    startLine: 2665
+    startLine: 3995
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Legacy
+  namespace: Winpeak.Client.Models
   syntax:
-    content: public Waypoint[] Waypoints { get; }
-    parameters: []
+    content: public readonly Vector3 ServerCoordinate
     return:
-      type: Waypoint[]
-    content.vb: Public ReadOnly Property Waypoints As Waypoint()
-  overload: Winpeak.Client.Legacy.WaypointsResponse.Waypoints*
+      type: Vector3
+    content.vb: Public ReadOnly ServerCoordinate As Vector3
   modifiers.csharp:
   - public
-  - get
+  - readonly
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Legacy.WaypointsResponse.ObjectId
-  commentId: P:Winpeak.Client.Legacy.WaypointsResponse.ObjectId
-  id: ObjectId
-  parent: Winpeak.Client.Legacy.WaypointsResponse
+- uid: Winpeak.Client.Models.WpPointData.UnityCoordinate
+  commentId: F:Winpeak.Client.Models.WpPointData.UnityCoordinate
+  id: UnityCoordinate
+  parent: Winpeak.Client.Models.WpPointData
   langs:
   - csharp
   - vb
-  name: ObjectId
-  nameWithType: WaypointsResponse.ObjectId
-  fullName: Winpeak.Client.Legacy.WaypointsResponse.ObjectId
-  type: Property
+  name: UnityCoordinate
+  nameWithType: WpPointData.UnityCoordinate
+  fullName: Winpeak.Client.Models.WpPointData.UnityCoordinate
+  type: Field
   source:
-    id: ObjectId
+    id: UnityCoordinate
     path: ''
-    startLine: 2667
+    startLine: 3996
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Legacy
+  namespace: Winpeak.Client.Models
   syntax:
-    content: public string ObjectId { get; }
-    parameters: []
+    content: public readonly Vector3 UnityCoordinate
     return:
-      type: System.String
-    content.vb: Public ReadOnly Property ObjectId As String
-  overload: Winpeak.Client.Legacy.WaypointsResponse.ObjectId*
+      type: Vector3
+    content.vb: Public ReadOnly UnityCoordinate As Vector3
   modifiers.csharp:
   - public
-  - get
+  - readonly
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Legacy.WaypointsResponse.MoveCount
-  commentId: P:Winpeak.Client.Legacy.WaypointsResponse.MoveCount
-  id: MoveCount
-  parent: Winpeak.Client.Legacy.WaypointsResponse
+- uid: Winpeak.Client.Models.WpPointData.#ctor(Vector3)
+  commentId: M:Winpeak.Client.Models.WpPointData.#ctor(Vector3)
+  id: '#ctor(Vector3)'
+  parent: Winpeak.Client.Models.WpPointData
   langs:
   - csharp
   - vb
-  name: MoveCount
-  nameWithType: WaypointsResponse.MoveCount
-  fullName: Winpeak.Client.Legacy.WaypointsResponse.MoveCount
-  type: Property
-  source:
-    id: MoveCount
-    path: ''
-    startLine: 2669
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Legacy
-  syntax:
-    content: public long MoveCount { get; }
-    parameters: []
-    return:
-      type: System.Int64
-    content.vb: Public ReadOnly Property MoveCount As Long
-  overload: Winpeak.Client.Legacy.WaypointsResponse.MoveCount*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Legacy.WaypointsResponse.#ctor(Waypoint[],System.String,System.Int64)
-  commentId: M:Winpeak.Client.Legacy.WaypointsResponse.#ctor(Waypoint[],System.String,System.Int64)
-  id: '#ctor(Waypoint[],System.String,System.Int64)'
-  parent: Winpeak.Client.Legacy.WaypointsResponse
-  langs:
-  - csharp
-  - vb
-  name: WaypointsResponse(Waypoint[], String, Int64)
-  nameWithType: WaypointsResponse.WaypointsResponse(Waypoint[], String, Int64)
-  fullName: Winpeak.Client.Legacy.WaypointsResponse.WaypointsResponse(Waypoint[], System.String, System.Int64)
+  name: WpPointData(Vector3)
+  nameWithType: WpPointData.WpPointData(Vector3)
+  fullName: Winpeak.Client.Models.WpPointData.WpPointData(Vector3)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 2672
+    startLine: 3998
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Legacy
+  namespace: Winpeak.Client.Models
   syntax:
-    content: public WaypointsResponse(Waypoint[] waypoints, string objectId, long moveCount)
+    content: public WpPointData(Vector3 serverCoordinate)
     parameters:
-    - id: waypoints
-      type: Waypoint[]
-    - id: objectId
-      type: System.String
-    - id: moveCount
-      type: System.Int64
-    content.vb: Public Sub New(waypoints As Waypoint(), objectId As String, moveCount As Long)
-  overload: Winpeak.Client.Legacy.WaypointsResponse.#ctor*
-  nameWithType.vb: WaypointsResponse.WaypointsResponse(Waypoint(), String, Int64)
+    - id: serverCoordinate
+      type: Vector3
+    content.vb: Public Sub New(serverCoordinate As Vector3)
+  overload: Winpeak.Client.Models.WpPointData.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: Winpeak.Client.Legacy.WaypointsResponse.WaypointsResponse(Waypoint(), System.String, System.Int64)
-  name.vb: WaypointsResponse(Waypoint(), String, Int64)
-- uid: Winpeak.Client.Legacy.WaypointsResponse.#ctor
-  commentId: M:Winpeak.Client.Legacy.WaypointsResponse.#ctor
-  id: '#ctor'
-  parent: Winpeak.Client.Legacy.WaypointsResponse
+- uid: Winpeak.Client.Models.WpPointData.#ctor(System.Single,System.Single,System.Single)
+  commentId: M:Winpeak.Client.Models.WpPointData.#ctor(System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single)'
+  parent: Winpeak.Client.Models.WpPointData
   langs:
   - csharp
   - vb
-  name: WaypointsResponse()
-  nameWithType: WaypointsResponse.WaypointsResponse()
-  fullName: Winpeak.Client.Legacy.WaypointsResponse.WaypointsResponse()
+  name: WpPointData(Single, Single, Single)
+  nameWithType: WpPointData.WpPointData(Single, Single, Single)
+  fullName: Winpeak.Client.Models.WpPointData.WpPointData(System.Single, System.Single, System.Single)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 2678
+    startLine: 4003
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Legacy
+  namespace: Winpeak.Client.Models
   syntax:
-    content: public WaypointsResponse()
-    content.vb: Public Sub New
-  overload: Winpeak.Client.Legacy.WaypointsResponse.#ctor*
+    content: public WpPointData(float serverX, float serverY, float serverZ)
+    parameters:
+    - id: serverX
+      type: System.Single
+    - id: serverY
+      type: System.Single
+    - id: serverZ
+      type: System.Single
+    content.vb: Public Sub New(serverX As Single, serverY As Single, serverZ As Single)
+  overload: Winpeak.Client.Models.WpPointData.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
 references:
-- uid: Winpeak.Client.Legacy
-  commentId: N:Winpeak.Client.Legacy
-  name: Winpeak.Client.Legacy
-  nameWithType: Winpeak.Client.Legacy
-  fullName: Winpeak.Client.Legacy
+- uid: Winpeak.Client.Models
+  commentId: N:Winpeak.Client.Models
+  name: Winpeak.Client.Models
+  nameWithType: Winpeak.Client.Models
+  fullName: Winpeak.Client.Models
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -506,63 +460,20 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Legacy.WaypointsResponse.Waypoints*
-  commentId: Overload:Winpeak.Client.Legacy.WaypointsResponse.Waypoints
-  name: Waypoints
-  nameWithType: WaypointsResponse.Waypoints
-  fullName: Winpeak.Client.Legacy.WaypointsResponse.Waypoints
-- uid: Waypoint[]
+- uid: Vector3
   isExternal: true
-  name: Waypoint[]
-  nameWithType: Waypoint[]
-  fullName: Waypoint[]
-  nameWithType.vb: Waypoint()
-  fullName.vb: Waypoint()
-  name.vb: Waypoint()
-  spec.csharp:
-  - uid: Waypoint
-    name: Waypoint
-    nameWithType: Waypoint
-    fullName: Waypoint
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: Waypoint
-    name: Waypoint
-    nameWithType: Waypoint
-    fullName: Waypoint
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
-- uid: Winpeak.Client.Legacy.WaypointsResponse.ObjectId*
-  commentId: Overload:Winpeak.Client.Legacy.WaypointsResponse.ObjectId
-  name: ObjectId
-  nameWithType: WaypointsResponse.ObjectId
-  fullName: Winpeak.Client.Legacy.WaypointsResponse.ObjectId
-- uid: System.String
-  commentId: T:System.String
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: Winpeak.Client.Models.WpPointData.#ctor*
+  commentId: Overload:Winpeak.Client.Models.WpPointData.#ctor
+  name: WpPointData
+  nameWithType: WpPointData.WpPointData
+  fullName: Winpeak.Client.Models.WpPointData.WpPointData
+- uid: System.Single
+  commentId: T:System.Single
   parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: Winpeak.Client.Legacy.WaypointsResponse.MoveCount*
-  commentId: Overload:Winpeak.Client.Legacy.WaypointsResponse.MoveCount
-  name: MoveCount
-  nameWithType: WaypointsResponse.MoveCount
-  fullName: Winpeak.Client.Legacy.WaypointsResponse.MoveCount
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
-  isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64
-- uid: Winpeak.Client.Legacy.WaypointsResponse.#ctor*
-  commentId: Overload:Winpeak.Client.Legacy.WaypointsResponse.#ctor
-  name: WaypointsResponse
-  nameWithType: WaypointsResponse.WaypointsResponse
-  fullName: Winpeak.Client.Legacy.WaypointsResponse.WaypointsResponse
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

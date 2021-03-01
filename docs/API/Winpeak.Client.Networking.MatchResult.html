@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Waypoint
+    <title>Class MatchResult
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Waypoint
+    <meta name="title" content="Class MatchResult
    ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -68,17 +68,17 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Winpeak.Client.Scene.Waypoint">
+            <article class="content wrap" id="_content" data-uid="Winpeak.Client.Networking.MatchResult">
   
   
-  <h1 id="Winpeak_Client_Scene_Waypoint" data-uid="Winpeak.Client.Scene.Waypoint" class="text-break">Class Waypoint
+  <h1 id="Winpeak_Client_Networking_MatchResult" data-uid="Winpeak.Client.Networking.MatchResult" class="text-break">Class MatchResult
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Waypoint</span></div>
+    <div class="level1"><span class="xref">MatchResult</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -98,82 +98,31 @@
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
       <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Winpeak.Client.Scene.html">Winpeak.Client.Scene</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Winpeak.Client.Networking.html">Winpeak.Client.Networking</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Winpeak_Client_Scene_Waypoint_syntax">Syntax</h5>
+  <h5 id="Winpeak_Client_Networking_MatchResult_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class Waypoint</code></pre>
+    <pre><code class="lang-csharp hljs">public class MatchResult</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="properties">Properties
   </h3>
   
   
-  <a id="Winpeak_Client_Scene_Waypoint__ctor_" data-uid="Winpeak.Client.Scene.Waypoint.#ctor*"></a>
-  <h4 id="Winpeak_Client_Scene_Waypoint__ctor" data-uid="Winpeak.Client.Scene.Waypoint.#ctor">Waypoint()</h4>
+  <a id="Winpeak_Client_Networking_MatchResult_Stats_" data-uid="Winpeak.Client.Networking.MatchResult.Stats*"></a>
+  <h4 id="Winpeak_Client_Networking_MatchResult_Stats" data-uid="Winpeak.Client.Networking.MatchResult.Stats">Stats</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Waypoint()</code></pre>
+    <pre><code class="lang-csharp hljs">public PlayersStats Stats { get; }</code></pre>
   </div>
-  
-  
-  <a id="Winpeak_Client_Scene_Waypoint__ctor_" data-uid="Winpeak.Client.Scene.Waypoint.#ctor*"></a>
-  <h4 id="Winpeak_Client_Scene_Waypoint__ctor_System_Int64_System_Single_System_Single_System_Single_" data-uid="Winpeak.Client.Scene.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)">Waypoint(Int64, Single, Single, Single)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Waypoint(long time, float x, float y, float r)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">time</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">x</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">y</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">r</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="Winpeak_Client_Scene_Waypoint_R" data-uid="Winpeak.Client.Scene.Waypoint.R">R</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly float R</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -183,96 +132,22 @@ public class Waypoint</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><a class="xref" href="Winpeak.Client.Networking.PlayersStats.html">PlayersStats</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Winpeak_Client_Scene_Waypoint_Time" data-uid="Winpeak.Client.Scene.Waypoint.Time">Time</h4>
+  <a id="Winpeak_Client_Networking_MatchResult_Winner_" data-uid="Winpeak.Client.Networking.MatchResult.Winner*"></a>
+  <h4 id="Winpeak_Client_Networking_MatchResult_Winner" data-uid="Winpeak.Client.Networking.MatchResult.Winner">Winner</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly long Time</code></pre>
+    <pre><code class="lang-csharp hljs">public string Winner { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Winpeak_Client_Scene_Waypoint_X" data-uid="Winpeak.Client.Scene.Waypoint.X">X</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly float X</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Winpeak_Client_Scene_Waypoint_Y" data-uid="Winpeak.Client.Scene.Waypoint.Y">Y</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly float Y</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="Winpeak_Client_Scene_Waypoint_ToString_" data-uid="Winpeak.Client.Scene.Waypoint.ToString*"></a>
-  <h4 id="Winpeak_Client_Scene_Waypoint_ToString" data-uid="Winpeak.Client.Scene.Waypoint.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -287,8 +162,6 @@ public class Waypoint</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           

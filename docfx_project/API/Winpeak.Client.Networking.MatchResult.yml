@@ -1,31 +1,29 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Scene.WpPointData
-  commentId: T:Winpeak.Client.Scene.WpPointData
-  id: WpPointData
-  parent: Winpeak.Client.Scene
+- uid: Winpeak.Client.Networking.MatchResult
+  commentId: T:Winpeak.Client.Networking.MatchResult
+  id: MatchResult
+  parent: Winpeak.Client.Networking
   children:
-  - Winpeak.Client.Scene.WpPointData.#ctor(System.Single,System.Single,System.Single)
-  - Winpeak.Client.Scene.WpPointData.#ctor(Vector3)
-  - Winpeak.Client.Scene.WpPointData.ServerCoordinate
-  - Winpeak.Client.Scene.WpPointData.UnityCoordinate
+  - Winpeak.Client.Networking.MatchResult.Stats
+  - Winpeak.Client.Networking.MatchResult.Winner
   langs:
   - csharp
   - vb
-  name: WpPointData
-  nameWithType: WpPointData
-  fullName: Winpeak.Client.Scene.WpPointData
+  name: MatchResult
+  nameWithType: MatchResult
+  fullName: Winpeak.Client.Networking.MatchResult
   type: Class
   source:
-    id: WpPointData
+    id: MatchResult
     path: ''
-    startLine: 4004
+    startLine: 3420
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Scene
+  namespace: Winpeak.Client.Networking
   syntax:
-    content: public class WpPointData
-    content.vb: Public Class WpPointData
+    content: public class MatchResult
+    content.vb: Public Class MatchResult
   inheritance:
   - System.Object
   inheritedMembers:
@@ -42,132 +40,74 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Scene.WpPointData.ServerCoordinate
-  commentId: F:Winpeak.Client.Scene.WpPointData.ServerCoordinate
-  id: ServerCoordinate
-  parent: Winpeak.Client.Scene.WpPointData
+- uid: Winpeak.Client.Networking.MatchResult.Winner
+  commentId: P:Winpeak.Client.Networking.MatchResult.Winner
+  id: Winner
+  parent: Winpeak.Client.Networking.MatchResult
   langs:
   - csharp
   - vb
-  name: ServerCoordinate
-  nameWithType: WpPointData.ServerCoordinate
-  fullName: Winpeak.Client.Scene.WpPointData.ServerCoordinate
-  type: Field
+  name: Winner
+  nameWithType: MatchResult.Winner
+  fullName: Winpeak.Client.Networking.MatchResult.Winner
+  type: Property
   source:
-    id: ServerCoordinate
+    id: Winner
     path: ''
-    startLine: 4006
+    startLine: 3422
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Scene
+  namespace: Winpeak.Client.Networking
   syntax:
-    content: public readonly Vector3 ServerCoordinate
+    content: public string Winner { get; }
+    parameters: []
     return:
-      type: Vector3
-    content.vb: Public ReadOnly ServerCoordinate As Vector3
+      type: System.String
+    content.vb: Public ReadOnly Property Winner As String
+  overload: Winpeak.Client.Networking.MatchResult.Winner*
   modifiers.csharp:
   - public
-  - readonly
+  - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Scene.WpPointData.UnityCoordinate
-  commentId: F:Winpeak.Client.Scene.WpPointData.UnityCoordinate
-  id: UnityCoordinate
-  parent: Winpeak.Client.Scene.WpPointData
+- uid: Winpeak.Client.Networking.MatchResult.Stats
+  commentId: P:Winpeak.Client.Networking.MatchResult.Stats
+  id: Stats
+  parent: Winpeak.Client.Networking.MatchResult
   langs:
   - csharp
   - vb
-  name: UnityCoordinate
-  nameWithType: WpPointData.UnityCoordinate
-  fullName: Winpeak.Client.Scene.WpPointData.UnityCoordinate
-  type: Field
+  name: Stats
+  nameWithType: MatchResult.Stats
+  fullName: Winpeak.Client.Networking.MatchResult.Stats
+  type: Property
   source:
-    id: UnityCoordinate
+    id: Stats
     path: ''
-    startLine: 4007
+    startLine: 3425
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Scene
+  namespace: Winpeak.Client.Networking
   syntax:
-    content: public readonly Vector3 UnityCoordinate
+    content: public PlayersStats Stats { get; }
+    parameters: []
     return:
-      type: Vector3
-    content.vb: Public ReadOnly UnityCoordinate As Vector3
+      type: Winpeak.Client.Networking.PlayersStats
+    content.vb: Public ReadOnly Property Stats As PlayersStats
+  overload: Winpeak.Client.Networking.MatchResult.Stats*
   modifiers.csharp:
   - public
-  - readonly
+  - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Scene.WpPointData.#ctor(Vector3)
-  commentId: M:Winpeak.Client.Scene.WpPointData.#ctor(Vector3)
-  id: '#ctor(Vector3)'
-  parent: Winpeak.Client.Scene.WpPointData
-  langs:
-  - csharp
-  - vb
-  name: WpPointData(Vector3)
-  nameWithType: WpPointData.WpPointData(Vector3)
-  fullName: Winpeak.Client.Scene.WpPointData.WpPointData(Vector3)
-  type: Constructor
-  source:
-    id: .ctor
-    path: ''
-    startLine: 4009
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public WpPointData(Vector3 serverCoordinate)
-    parameters:
-    - id: serverCoordinate
-      type: Vector3
-    content.vb: Public Sub New(serverCoordinate As Vector3)
-  overload: Winpeak.Client.Scene.WpPointData.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Winpeak.Client.Scene.WpPointData.#ctor(System.Single,System.Single,System.Single)
-  commentId: M:Winpeak.Client.Scene.WpPointData.#ctor(System.Single,System.Single,System.Single)
-  id: '#ctor(System.Single,System.Single,System.Single)'
-  parent: Winpeak.Client.Scene.WpPointData
-  langs:
-  - csharp
-  - vb
-  name: WpPointData(Single, Single, Single)
-  nameWithType: WpPointData.WpPointData(Single, Single, Single)
-  fullName: Winpeak.Client.Scene.WpPointData.WpPointData(System.Single, System.Single, System.Single)
-  type: Constructor
-  source:
-    id: .ctor
-    path: ''
-    startLine: 4014
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public WpPointData(float serverX, float serverY, float serverZ)
-    parameters:
-    - id: serverX
-      type: System.Single
-    - id: serverY
-      type: System.Single
-    - id: serverZ
-      type: System.Single
-    content.vb: Public Sub New(serverX As Single, serverY As Single, serverZ As Single)
-  overload: Winpeak.Client.Scene.WpPointData.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 references:
-- uid: Winpeak.Client.Scene
-  commentId: N:Winpeak.Client.Scene
-  name: Winpeak.Client.Scene
-  nameWithType: Winpeak.Client.Scene
-  fullName: Winpeak.Client.Scene
+- uid: Winpeak.Client.Networking
+  commentId: N:Winpeak.Client.Networking
+  name: Winpeak.Client.Networking
+  nameWithType: Winpeak.Client.Networking
+  fullName: Winpeak.Client.Networking
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -460,20 +400,26 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Vector3
-  isExternal: true
-  name: Vector3
-  nameWithType: Vector3
-  fullName: Vector3
-- uid: Winpeak.Client.Scene.WpPointData.#ctor*
-  commentId: Overload:Winpeak.Client.Scene.WpPointData.#ctor
-  name: WpPointData
-  nameWithType: WpPointData.WpPointData
-  fullName: Winpeak.Client.Scene.WpPointData.WpPointData
-- uid: System.Single
-  commentId: T:System.Single
+- uid: Winpeak.Client.Networking.MatchResult.Winner*
+  commentId: Overload:Winpeak.Client.Networking.MatchResult.Winner
+  name: Winner
+  nameWithType: MatchResult.Winner
+  fullName: Winpeak.Client.Networking.MatchResult.Winner
+- uid: System.String
+  commentId: T:System.String
   parent: System
   isExternal: true
-  name: Single
-  nameWithType: Single
-  fullName: System.Single
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Winpeak.Client.Networking.MatchResult.Stats*
+  commentId: Overload:Winpeak.Client.Networking.MatchResult.Stats
+  name: Stats
+  nameWithType: MatchResult.Stats
+  fullName: Winpeak.Client.Networking.MatchResult.Stats
+- uid: Winpeak.Client.Networking.PlayersStats
+  commentId: T:Winpeak.Client.Networking.PlayersStats
+  parent: Winpeak.Client.Networking
+  name: PlayersStats
+  nameWithType: PlayersStats
+  fullName: Winpeak.Client.Networking.PlayersStats

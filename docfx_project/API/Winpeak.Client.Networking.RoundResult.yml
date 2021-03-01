@@ -1,29 +1,29 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Utils.ReadPointsFromFile
-  commentId: T:Winpeak.Client.Utils.ReadPointsFromFile
-  id: ReadPointsFromFile
-  parent: Winpeak.Client.Utils
+- uid: Winpeak.Client.Networking.RoundResult
+  commentId: T:Winpeak.Client.Networking.RoundResult
+  id: RoundResult
+  parent: Winpeak.Client.Networking
   children:
-  - Winpeak.Client.Utils.ReadPointsFromFile.ReadPoints
-  - Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine
+  - Winpeak.Client.Networking.RoundResult.CurrentRound
+  - Winpeak.Client.Networking.RoundResult.Stats
   langs:
   - csharp
   - vb
-  name: ReadPointsFromFile
-  nameWithType: ReadPointsFromFile
-  fullName: Winpeak.Client.Utils.ReadPointsFromFile
+  name: RoundResult
+  nameWithType: RoundResult
+  fullName: Winpeak.Client.Networking.RoundResult
   type: Class
   source:
-    id: ReadPointsFromFile
+    id: RoundResult
     path: ''
-    startLine: 3824
+    startLine: 3433
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Utils
+  namespace: Winpeak.Client.Networking
   syntax:
-    content: public static class ReadPointsFromFile
-    content.vb: Public Module ReadPointsFromFile
+    content: public class RoundResult
+    content.vb: Public Class RoundResult
   inheritance:
   - System.Object
   inheritedMembers:
@@ -36,77 +36,78 @@ items:
   - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
-  - static
   - class
   modifiers.vb:
   - Public
-  - Module
-- uid: Winpeak.Client.Utils.ReadPointsFromFile.ReadPoints
-  commentId: M:Winpeak.Client.Utils.ReadPointsFromFile.ReadPoints
-  id: ReadPoints
-  parent: Winpeak.Client.Utils.ReadPointsFromFile
+  - Class
+- uid: Winpeak.Client.Networking.RoundResult.CurrentRound
+  commentId: P:Winpeak.Client.Networking.RoundResult.CurrentRound
+  id: CurrentRound
+  parent: Winpeak.Client.Networking.RoundResult
   langs:
   - csharp
   - vb
-  name: ReadPoints()
-  nameWithType: ReadPointsFromFile.ReadPoints()
-  fullName: Winpeak.Client.Utils.ReadPointsFromFile.ReadPoints()
-  type: Method
+  name: CurrentRound
+  nameWithType: RoundResult.CurrentRound
+  fullName: Winpeak.Client.Networking.RoundResult.CurrentRound
+  type: Property
   source:
-    id: ReadPoints
+    id: CurrentRound
     path: ''
-    startLine: 3828
+    startLine: 3435
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Utils
+  namespace: Winpeak.Client.Networking
   syntax:
-    content: public static List<Waypoint> ReadPoints()
+    content: public int CurrentRound { get; }
+    parameters: []
     return:
-      type: System.Collections.Generic.List{Waypoint}
-    content.vb: Public Shared Function ReadPoints As List(Of Waypoint)
-  overload: Winpeak.Client.Utils.ReadPointsFromFile.ReadPoints*
+      type: System.Int32
+    content.vb: Public ReadOnly Property CurrentRound As Integer
+  overload: Winpeak.Client.Networking.RoundResult.CurrentRound*
   modifiers.csharp:
   - public
-  - static
+  - get
   modifiers.vb:
   - Public
-  - Shared
-- uid: Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine
-  commentId: M:Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine
-  id: ReadPointsInLine
-  parent: Winpeak.Client.Utils.ReadPointsFromFile
+  - ReadOnly
+- uid: Winpeak.Client.Networking.RoundResult.Stats
+  commentId: P:Winpeak.Client.Networking.RoundResult.Stats
+  id: Stats
+  parent: Winpeak.Client.Networking.RoundResult
   langs:
   - csharp
   - vb
-  name: ReadPointsInLine()
-  nameWithType: ReadPointsFromFile.ReadPointsInLine()
-  fullName: Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine()
-  type: Method
+  name: Stats
+  nameWithType: RoundResult.Stats
+  fullName: Winpeak.Client.Networking.RoundResult.Stats
+  type: Property
   source:
-    id: ReadPointsInLine
+    id: Stats
     path: ''
-    startLine: 3845
+    startLine: 3438
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Utils
+  namespace: Winpeak.Client.Networking
   syntax:
-    content: public static List<List<Waypoint>> ReadPointsInLine()
+    content: public PlayersStats Stats { get; }
+    parameters: []
     return:
-      type: System.Collections.Generic.List{System.Collections.Generic.List{Waypoint}}
-    content.vb: Public Shared Function ReadPointsInLine As List(Of List(Of Waypoint))
-  overload: Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine*
+      type: Winpeak.Client.Networking.PlayersStats
+    content.vb: Public ReadOnly Property Stats As PlayersStats
+  overload: Winpeak.Client.Networking.RoundResult.Stats*
   modifiers.csharp:
   - public
-  - static
+  - get
   modifiers.vb:
   - Public
-  - Shared
+  - ReadOnly
 references:
-- uid: Winpeak.Client.Utils
-  commentId: N:Winpeak.Client.Utils
-  name: Winpeak.Client.Utils
-  nameWithType: Winpeak.Client.Utils
-  fullName: Winpeak.Client.Utils
+- uid: Winpeak.Client.Networking
+  commentId: N:Winpeak.Client.Networking
+  name: Winpeak.Client.Networking
+  nameWithType: Winpeak.Client.Networking
+  fullName: Winpeak.Client.Networking
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -399,168 +400,26 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Utils.ReadPointsFromFile.ReadPoints*
-  commentId: Overload:Winpeak.Client.Utils.ReadPointsFromFile.ReadPoints
-  name: ReadPoints
-  nameWithType: ReadPointsFromFile.ReadPoints
-  fullName: Winpeak.Client.Utils.ReadPointsFromFile.ReadPoints
-- uid: System.Collections.Generic.List{Waypoint}
-  commentId: T:System.Collections.Generic.List{Waypoint}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  name: List<Waypoint>
-  nameWithType: List<Waypoint>
-  fullName: System.Collections.Generic.List<Waypoint>
-  nameWithType.vb: List(Of Waypoint)
-  fullName.vb: System.Collections.Generic.List(Of Waypoint)
-  name.vb: List(Of Waypoint)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: Waypoint
-    name: Waypoint
-    nameWithType: Waypoint
-    fullName: Waypoint
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: Waypoint
-    name: Waypoint
-    nameWithType: Waypoint
-    fullName: Waypoint
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
+- uid: Winpeak.Client.Networking.RoundResult.CurrentRound*
+  commentId: Overload:Winpeak.Client.Networking.RoundResult.CurrentRound
+  name: CurrentRound
+  nameWithType: RoundResult.CurrentRound
+  fullName: Winpeak.Client.Networking.RoundResult.CurrentRound
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
   isExternal: true
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-- uid: Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine*
-  commentId: Overload:Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine
-  name: ReadPointsInLine
-  nameWithType: ReadPointsFromFile.ReadPointsInLine
-  fullName: Winpeak.Client.Utils.ReadPointsFromFile.ReadPointsInLine
-- uid: System.Collections.Generic.List{System.Collections.Generic.List{Waypoint}}
-  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{Waypoint}}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  name: List<List<Waypoint>>
-  nameWithType: List<List<Waypoint>>
-  fullName: System.Collections.Generic.List<System.Collections.Generic.List<Waypoint>>
-  nameWithType.vb: List(Of List(Of Waypoint))
-  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of Waypoint))
-  name.vb: List(Of List(Of Waypoint))
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: Waypoint
-    name: Waypoint
-    nameWithType: Waypoint
-    fullName: Waypoint
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: Waypoint
-    name: Waypoint
-    nameWithType: Waypoint
-    fullName: Waypoint
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Winpeak.Client.Networking.RoundResult.Stats*
+  commentId: Overload:Winpeak.Client.Networking.RoundResult.Stats
+  name: Stats
+  nameWithType: RoundResult.Stats
+  fullName: Winpeak.Client.Networking.RoundResult.Stats
+- uid: Winpeak.Client.Networking.PlayersStats
+  commentId: T:Winpeak.Client.Networking.PlayersStats
+  parent: Winpeak.Client.Networking
+  name: PlayersStats
+  nameWithType: PlayersStats
+  fullName: Winpeak.Client.Networking.PlayersStats

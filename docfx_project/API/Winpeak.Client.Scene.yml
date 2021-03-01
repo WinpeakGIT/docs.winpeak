@@ -7,15 +7,10 @@ items:
   - Winpeak.Client.Scene.ColliderTypes
   - Winpeak.Client.Scene.DrawLineData
   - Winpeak.Client.Scene.DrawPointData
-  - Winpeak.Client.Scene.HighlightController
   - Winpeak.Client.Scene.IWinPeakSubscriber
-  - Winpeak.Client.Scene.ObjCmds
-  - Winpeak.Client.Scene.ObjObey
   - Winpeak.Client.Scene.ObjPhysType
-  - Winpeak.Client.Scene.Waypoint
   - Winpeak.Client.Scene.WinPeakRigidbody
-  - Winpeak.Client.Scene.WpCompare
-  - Winpeak.Client.Scene.WpPointData
+  - Winpeak.Client.Scene.WpGameState
   - Winpeak.Client.Scene.WpSceneObjectController
   langs:
   - csharp
@@ -27,35 +22,24 @@ items:
   assemblies:
   - cs.temp.dll
 references:
-- uid: Winpeak.Client.Scene.HighlightController
-  commentId: T:Winpeak.Client.Scene.HighlightController
-  name: HighlightController
-  nameWithType: HighlightController
-  fullName: Winpeak.Client.Scene.HighlightController
 - uid: Winpeak.Client.Scene.IWinPeakSubscriber
   commentId: T:Winpeak.Client.Scene.IWinPeakSubscriber
   parent: Winpeak.Client.Scene
   name: IWinPeakSubscriber
   nameWithType: IWinPeakSubscriber
   fullName: Winpeak.Client.Scene.IWinPeakSubscriber
+- uid: Winpeak.Client.Scene.WpGameState
+  commentId: T:Winpeak.Client.Scene.WpGameState
+  parent: Winpeak.Client.Scene
+  name: WpGameState
+  nameWithType: WpGameState
+  fullName: Winpeak.Client.Scene.WpGameState
 - uid: Winpeak.Client.Scene.ObjPhysType
   commentId: T:Winpeak.Client.Scene.ObjPhysType
   parent: Winpeak.Client.Scene
   name: ObjPhysType
   nameWithType: ObjPhysType
   fullName: Winpeak.Client.Scene.ObjPhysType
-- uid: Winpeak.Client.Scene.ObjCmds
-  commentId: T:Winpeak.Client.Scene.ObjCmds
-  parent: Winpeak.Client.Scene
-  name: ObjCmds
-  nameWithType: ObjCmds
-  fullName: Winpeak.Client.Scene.ObjCmds
-- uid: Winpeak.Client.Scene.ObjObey
-  commentId: T:Winpeak.Client.Scene.ObjObey
-  parent: Winpeak.Client.Scene
-  name: ObjObey
-  nameWithType: ObjObey
-  fullName: Winpeak.Client.Scene.ObjObey
 - uid: Winpeak.Client.Scene.ColliderTypes
   commentId: T:Winpeak.Client.Scene.ColliderTypes
   parent: Winpeak.Client.Scene
@@ -64,6 +48,7 @@ references:
   fullName: Winpeak.Client.Scene.ColliderTypes
 - uid: Winpeak.Client.Scene.WinPeakRigidbody
   commentId: T:Winpeak.Client.Scene.WinPeakRigidbody
+  parent: Winpeak.Client.Scene
   name: WinPeakRigidbody
   nameWithType: WinPeakRigidbody
   fullName: Winpeak.Client.Scene.WinPeakRigidbody
@@ -72,23 +57,6 @@ references:
   name: WpSceneObjectController
   nameWithType: WpSceneObjectController
   fullName: Winpeak.Client.Scene.WpSceneObjectController
-- uid: Winpeak.Client.Scene.WpPointData
-  commentId: T:Winpeak.Client.Scene.WpPointData
-  parent: Winpeak.Client.Scene
-  name: WpPointData
-  nameWithType: WpPointData
-  fullName: Winpeak.Client.Scene.WpPointData
-- uid: Winpeak.Client.Scene.Waypoint
-  commentId: T:Winpeak.Client.Scene.Waypoint
-  parent: Winpeak.Client.Scene
-  name: Waypoint
-  nameWithType: Waypoint
-  fullName: Winpeak.Client.Scene.Waypoint
-- uid: Winpeak.Client.Scene.WpCompare
-  commentId: T:Winpeak.Client.Scene.WpCompare
-  name: WpCompare
-  nameWithType: WpCompare
-  fullName: Winpeak.Client.Scene.WpCompare
 - uid: Winpeak.Client.Scene.DrawLineData
   commentId: T:Winpeak.Client.Scene.DrawLineData
   name: DrawLineData

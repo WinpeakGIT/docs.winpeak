@@ -85,14 +85,14 @@
   </h3>
   
   
-  <a id="Winpeak_Client_API_IWinPeakClient_GetServerConnectionStatusController_" data-uid="Winpeak.Client.API.IWinPeakClient.GetServerConnectionStatusController*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakClient_GetServerConnectionStatusController" data-uid="Winpeak.Client.API.IWinPeakClient.GetServerConnectionStatusController">GetServerConnectionStatusController</h4>
-  <div class="markdown level1 summary"><p>Debug feature. Get current server connection status controller</p>
+  <a id="Winpeak_Client_API_IWinPeakClient_IsActiveNetwork_" data-uid="Winpeak.Client.API.IWinPeakClient.IsActiveNetwork*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakClient_IsActiveNetwork" data-uid="Winpeak.Client.API.IWinPeakClient.IsActiveNetwork">IsActiveNetwork</h4>
+  <div class="markdown level1 summary"><p>Check if network connection is active</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ServerConnectionStatusController GetServerConnectionStatusController { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">bool IsActiveNetwork { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -104,7 +104,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ServerConnectionStatusController</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -167,14 +167,14 @@
   </table>
   
   
-  <a id="Winpeak_Client_API_IWinPeakClient_Connect_" data-uid="Winpeak.Client.API.IWinPeakClient.Connect*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakClient_Connect_System_String_System_Action_" data-uid="Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.Action)">Connect(String, Action)</h4>
-  <div class="markdown level1 summary"><p>Connect user to a server</p>
+  <a id="Winpeak_Client_API_IWinPeakClient_BlockInGameInput_" data-uid="Winpeak.Client.API.IWinPeakClient.BlockInGameInput*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakClient_BlockInGameInput_System_Boolean_" data-uid="Winpeak.Client.API.IWinPeakClient.BlockInGameInput(System.Boolean)">BlockInGameInput(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Block inGame input</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Connect(string port, Action callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void BlockInGameInput(bool value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -186,6 +186,39 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Winpeak_Client_API_IWinPeakClient_Connect_" data-uid="Winpeak.Client.API.IWinPeakClient.Connect*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakClient_Connect_System_String_System_String_System_Action_" data-uid="Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.String,System.Action)">Connect(String, String, Action)</h4>
+  <div class="markdown level1 summary"><p>Connect user to a server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Connect(string server, string port, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">server</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">port</span></td>
@@ -202,7 +235,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakClient_Die_" data-uid="Winpeak.Client.API.IWinPeakClient.Die*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakClient_Die_System_Action_" data-uid="Winpeak.Client.API.IWinPeakClient.Die(System.Action)">Die(Action)</h4>
-  <div class="markdown level1 summary"><p>Notify the server that actor is dead</p>
+  <div class="markdown level1 summary"><p>Notify the server that actor is dead. Fake restart(isn&apos;t stable feature. Sometimes need to be used a couple times)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -226,17 +259,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="Winpeak_Client_API_IWinPeakClient_DrawLines_" data-uid="Winpeak.Client.API.IWinPeakClient.DrawLines*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakClient_DrawLines" data-uid="Winpeak.Client.API.IWinPeakClient.DrawLines">DrawLines()</h4>
-  <div class="markdown level1 summary"><p>Draw lines</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void DrawLines()</code></pre>
-  </div>
   
   
   <a id="Winpeak_Client_API_IWinPeakClient_Move_" data-uid="Winpeak.Client.API.IWinPeakClient.Move*"></a>
@@ -298,6 +320,34 @@
   </table>
   
   
+  <a id="Winpeak_Client_API_IWinPeakClient_RequestServers_" data-uid="Winpeak.Client.API.IWinPeakClient.RequestServers*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakClient_RequestServers_System_Action_System_Collections_Generic_List_System_String___" data-uid="Winpeak.Client.API.IWinPeakClient.RequestServers(System.Action{System.Collections.Generic.List{System.String}})">RequestServers(Action&lt;List&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Request available servers list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RequestServers(Action&lt;List&lt;string&gt;&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Winpeak_Client_API_IWinPeakClient_SubscribeRigidbody_" data-uid="Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakClient_SubscribeRigidbody_WinPeakRigidbody_" data-uid="Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)">SubscribeRigidbody(WinPeakRigidbody)</h4>
   <div class="markdown level1 summary"><p>Subscribe rigidbody object to WinPeak network</p>
@@ -340,7 +390,8 @@
   
   
   <h4 id="Winpeak_Client_API_IWinPeakClient_OnClientDisconnected" data-uid="Winpeak.Client.API.IWinPeakClient.OnClientDisconnected">OnClientDisconnected</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Fire when </p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -357,6 +408,231 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Winpeak_Client_API_IWinPeakClient_OnGameObjectsReady" data-uid="Winpeak.Client.API.IWinPeakClient.OnGameObjectsReady">OnGameObjectsReady</h4>
+  <div class="markdown level1 summary"><p>Fire when scene gameObjects are ready</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;List&lt;WinPeakRigidbody&gt;&gt; OnGameObjectsReady</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">WinPeakRigidbody</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Winpeak_Client_API_IWinPeakClient_OnGameOver" data-uid="Winpeak.Client.API.IWinPeakClient.OnGameOver">OnGameOver</h4>
+  <div class="markdown level1 summary"><p>Fire when game is over</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;MatchResult&gt; OnGameOver</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">MatchResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Winpeak_Client_API_IWinPeakClient_OnGameStateChanged" data-uid="Winpeak.Client.API.IWinPeakClient.OnGameStateChanged">OnGameStateChanged</h4>
+  <div class="markdown level1 summary"><p>Fire when game state is changed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;WpGameState&gt; OnGameStateChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">WpGameState</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Winpeak_Client_API_IWinPeakClient_OnOccurConnectionProblem" data-uid="Winpeak.Client.API.IWinPeakClient.OnOccurConnectionProblem">OnOccurConnectionProblem</h4>
+  <div class="markdown level1 summary"><p>Fire that internet connection is not stable. Fires when delay between sync packages &gt; 500 ms</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action OnOccurConnectionProblem</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Winpeak_Client_API_IWinPeakClient_OnPingUpdated" data-uid="Winpeak.Client.API.IWinPeakClient.OnPingUpdated">OnPingUpdated</h4>
+  <div class="markdown level1 summary"><p>Provide current user ping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;long&gt; OnPingUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Winpeak_Client_API_IWinPeakClient_OnPlayWallHitSound" data-uid="Winpeak.Client.API.IWinPeakClient.OnPlayWallHitSound">OnPlayWallHitSound</h4>
+  <div class="markdown level1 summary"><p>Debug feature</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action OnPlayWallHitSound</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Winpeak_Client_API_IWinPeakClient_OnRoundScoreUpdated" data-uid="Winpeak.Client.API.IWinPeakClient.OnRoundScoreUpdated">OnRoundScoreUpdated</h4>
+  <div class="markdown level1 summary"><p>Fire when game score was updated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;RoundResult&gt; OnRoundScoreUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">RoundResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Winpeak_Client_API_IWinPeakClient_OnStartGameCountdown" data-uid="Winpeak.Client.API.IWinPeakClient.OnStartGameCountdown">OnStartGameCountdown</h4>
+  <div class="markdown level1 summary"><p>Fire when start game count is ready</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;int&gt; OnStartGameCountdown</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Winpeak_Client_API_IWinPeakClient_OnUserInfoUpdated" data-uid="Winpeak.Client.API.IWinPeakClient.OnUserInfoUpdated">OnUserInfoUpdated</h4>
+  <div class="markdown level1 summary"><p>Fire after user authorization</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;string, Dictionary&lt;string, string[]&gt;&gt; OnUserInfoUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>[]&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>

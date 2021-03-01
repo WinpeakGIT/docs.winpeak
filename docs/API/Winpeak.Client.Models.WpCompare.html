@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum WaypointsShowMode
+    <title>Class WpCompare
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum WaypointsShowMode
+    <meta name="title" content="Class WpCompare
    ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -68,43 +68,105 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Winpeak.Client.Utils.WaypointsShowMode">
+            <article class="content wrap" id="_content" data-uid="Winpeak.Client.Models.WpCompare">
   
   
-  <h1 id="Winpeak_Client_Utils_WaypointsShowMode" data-uid="Winpeak.Client.Utils.WaypointsShowMode" class="text-break">Enum WaypointsShowMode
+  <h1 id="Winpeak_Client_Models_WpCompare" data-uid="Winpeak.Client.Models.WpCompare" class="text-break">Class WpCompare
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Winpeak.Client.Utils.html">Winpeak.Client.Utils</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Winpeak_Client_Utils_WaypointsShowMode_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum WaypointsShowMode</code></pre>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">WpCompare</span></div>
   </div>
-  <h3 id="fields">Fields
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IComparer</span>&lt;<a class="xref" href="Winpeak.Client.Models.Waypoint.html">Waypoint</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Winpeak.Client.Models.html">Winpeak.Client.Models</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Winpeak_Client_Models_WpCompare_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WpCompare : IComparer&lt;Waypoint&gt;</code></pre>
+  </div>
+  <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="Winpeak_Client_Models_WpCompare_Compare_" data-uid="Winpeak.Client.Models.WpCompare.Compare*"></a>
+  <h4 id="Winpeak_Client_Models_WpCompare_Compare_Winpeak_Client_Models_Waypoint_Winpeak_Client_Models_Waypoint_" data-uid="Winpeak.Client.Models.WpCompare.Compare(Winpeak.Client.Models.Waypoint,Winpeak.Client.Models.Waypoint)">Compare(Waypoint, Waypoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Compare(Waypoint x, Waypoint y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
+        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
-    <thead>
+    </thead>
     <tbody>
       <tr>
-        <td id="Winpeak_Client_Utils_WaypointsShowMode_ShowLocalPointsEveryFrame">ShowLocalPointsEveryFrame</td>
+        <td><a class="xref" href="Winpeak.Client.Models.Waypoint.html">Waypoint</a></td>
+        <td><span class="parametername">x</span></td>
         <td></td>
       </tr>
       <tr>
-        <td id="Winpeak_Client_Utils_WaypointsShowMode_ShowNetworkPointsEveryFrame">ShowNetworkPointsEveryFrame</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Winpeak_Client_Utils_WaypointsShowMode_ShowNetworkPointsSelfDestroy">ShowNetworkPointsSelfDestroy</td>
+        <td><a class="xref" href="Winpeak.Client.Models.Waypoint.html">Waypoint</a></td>
+        <td><span class="parametername">y</span></td>
         <td></td>
       </tr>
     </tbody>
-  </thead></thead></table>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IComparer&lt;T&gt;</span>
+  </div>
 </article>
           </div>
           

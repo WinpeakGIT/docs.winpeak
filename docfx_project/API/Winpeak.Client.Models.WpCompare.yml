@@ -1,25 +1,25 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Scene.WpCompare
-  commentId: T:Winpeak.Client.Scene.WpCompare
+- uid: Winpeak.Client.Models.WpCompare
+  commentId: T:Winpeak.Client.Models.WpCompare
   id: WpCompare
-  parent: Winpeak.Client.Scene
+  parent: Winpeak.Client.Models
   children:
-  - Winpeak.Client.Scene.WpCompare.Compare(Winpeak.Client.Scene.Waypoint,Winpeak.Client.Scene.Waypoint)
+  - Winpeak.Client.Models.WpCompare.Compare(Winpeak.Client.Models.Waypoint,Winpeak.Client.Models.Waypoint)
   langs:
   - csharp
   - vb
   name: WpCompare
   nameWithType: WpCompare
-  fullName: Winpeak.Client.Scene.WpCompare
+  fullName: Winpeak.Client.Models.WpCompare
   type: Class
   source:
     id: WpCompare
     path: ''
-    startLine: 4052
+    startLine: 4076
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Scene
+  namespace: Winpeak.Client.Models
   syntax:
     content: 'public class WpCompare : IComparer<Waypoint>'
     content.vb: >-
@@ -28,7 +28,7 @@ items:
   inheritance:
   - System.Object
   implements:
-  - System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}
+  - System.Collections.Generic.IComparer{Winpeak.Client.Models.Waypoint}
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -43,47 +43,47 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Scene.WpCompare.Compare(Winpeak.Client.Scene.Waypoint,Winpeak.Client.Scene.Waypoint)
-  commentId: M:Winpeak.Client.Scene.WpCompare.Compare(Winpeak.Client.Scene.Waypoint,Winpeak.Client.Scene.Waypoint)
-  id: Compare(Winpeak.Client.Scene.Waypoint,Winpeak.Client.Scene.Waypoint)
-  parent: Winpeak.Client.Scene.WpCompare
+- uid: Winpeak.Client.Models.WpCompare.Compare(Winpeak.Client.Models.Waypoint,Winpeak.Client.Models.Waypoint)
+  commentId: M:Winpeak.Client.Models.WpCompare.Compare(Winpeak.Client.Models.Waypoint,Winpeak.Client.Models.Waypoint)
+  id: Compare(Winpeak.Client.Models.Waypoint,Winpeak.Client.Models.Waypoint)
+  parent: Winpeak.Client.Models.WpCompare
   langs:
   - csharp
   - vb
   name: Compare(Waypoint, Waypoint)
   nameWithType: WpCompare.Compare(Waypoint, Waypoint)
-  fullName: Winpeak.Client.Scene.WpCompare.Compare(Winpeak.Client.Scene.Waypoint, Winpeak.Client.Scene.Waypoint)
+  fullName: Winpeak.Client.Models.WpCompare.Compare(Winpeak.Client.Models.Waypoint, Winpeak.Client.Models.Waypoint)
   type: Method
   source:
     id: Compare
     path: ''
-    startLine: 4054
+    startLine: 4078
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Scene
+  namespace: Winpeak.Client.Models
   syntax:
     content: public int Compare(Waypoint x, Waypoint y)
     parameters:
     - id: x
-      type: Winpeak.Client.Scene.Waypoint
+      type: Winpeak.Client.Models.Waypoint
     - id: y
-      type: Winpeak.Client.Scene.Waypoint
+      type: Winpeak.Client.Models.Waypoint
     return:
       type: System.Int32
     content.vb: Public Function Compare(x As Waypoint, y As Waypoint) As Integer
-  overload: Winpeak.Client.Scene.WpCompare.Compare*
+  overload: Winpeak.Client.Models.WpCompare.Compare*
   implements:
-  - System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}.Compare(Winpeak.Client.Scene.Waypoint,Winpeak.Client.Scene.Waypoint)
+  - System.Collections.Generic.IComparer{Winpeak.Client.Models.Waypoint}.Compare(Winpeak.Client.Models.Waypoint,Winpeak.Client.Models.Waypoint)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
 references:
-- uid: Winpeak.Client.Scene
-  commentId: N:Winpeak.Client.Scene
-  name: Winpeak.Client.Scene
-  nameWithType: Winpeak.Client.Scene
-  fullName: Winpeak.Client.Scene
+- uid: Winpeak.Client.Models
+  commentId: N:Winpeak.Client.Models
+  name: Winpeak.Client.Models
+  nameWithType: Winpeak.Client.Models
+  fullName: Winpeak.Client.Models
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -91,15 +91,15 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}
-  commentId: T:System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}
+- uid: System.Collections.Generic.IComparer{Winpeak.Client.Models.Waypoint}
+  commentId: T:System.Collections.Generic.IComparer{Winpeak.Client.Models.Waypoint}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IComparer`1
   name: IComparer<Waypoint>
   nameWithType: IComparer<Waypoint>
-  fullName: System.Collections.Generic.IComparer<Winpeak.Client.Scene.Waypoint>
+  fullName: System.Collections.Generic.IComparer<Winpeak.Client.Models.Waypoint>
   nameWithType.vb: IComparer(Of Waypoint)
-  fullName.vb: System.Collections.Generic.IComparer(Of Winpeak.Client.Scene.Waypoint)
+  fullName.vb: System.Collections.Generic.IComparer(Of Winpeak.Client.Models.Waypoint)
   name.vb: IComparer(Of Waypoint)
   spec.csharp:
   - uid: System.Collections.Generic.IComparer`1
@@ -110,10 +110,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: Winpeak.Client.Scene.Waypoint
+  - uid: Winpeak.Client.Models.Waypoint
     name: Waypoint
     nameWithType: Waypoint
-    fullName: Winpeak.Client.Scene.Waypoint
+    fullName: Winpeak.Client.Models.Waypoint
   - name: '>'
     nameWithType: '>'
     fullName: '>'
@@ -126,10 +126,10 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: Winpeak.Client.Scene.Waypoint
+  - uid: Winpeak.Client.Models.Waypoint
     name: Waypoint
     nameWithType: Waypoint
-    fullName: Winpeak.Client.Scene.Waypoint
+    fullName: Winpeak.Client.Models.Waypoint
   - name: )
     nameWithType: )
     fullName: )
@@ -463,40 +463,40 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: Winpeak.Client.Scene.WpCompare.Compare*
-  commentId: Overload:Winpeak.Client.Scene.WpCompare.Compare
+- uid: Winpeak.Client.Models.WpCompare.Compare*
+  commentId: Overload:Winpeak.Client.Models.WpCompare.Compare
   name: Compare
   nameWithType: WpCompare.Compare
-  fullName: Winpeak.Client.Scene.WpCompare.Compare
-- uid: System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}.Compare(Winpeak.Client.Scene.Waypoint,Winpeak.Client.Scene.Waypoint)
-  commentId: M:System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}.Compare(Winpeak.Client.Scene.Waypoint,Winpeak.Client.Scene.Waypoint)
-  parent: System.Collections.Generic.IComparer{Winpeak.Client.Scene.Waypoint}
+  fullName: Winpeak.Client.Models.WpCompare.Compare
+- uid: System.Collections.Generic.IComparer{Winpeak.Client.Models.Waypoint}.Compare(Winpeak.Client.Models.Waypoint,Winpeak.Client.Models.Waypoint)
+  commentId: M:System.Collections.Generic.IComparer{Winpeak.Client.Models.Waypoint}.Compare(Winpeak.Client.Models.Waypoint,Winpeak.Client.Models.Waypoint)
+  parent: System.Collections.Generic.IComparer{Winpeak.Client.Models.Waypoint}
   definition: System.Collections.Generic.IComparer`1.Compare(`0,`0)
   name: Compare(Waypoint, Waypoint)
   nameWithType: IComparer<Waypoint>.Compare(Waypoint, Waypoint)
-  fullName: System.Collections.Generic.IComparer<Winpeak.Client.Scene.Waypoint>.Compare(Winpeak.Client.Scene.Waypoint, Winpeak.Client.Scene.Waypoint)
+  fullName: System.Collections.Generic.IComparer<Winpeak.Client.Models.Waypoint>.Compare(Winpeak.Client.Models.Waypoint, Winpeak.Client.Models.Waypoint)
   nameWithType.vb: IComparer(Of Waypoint).Compare(Waypoint, Waypoint)
-  fullName.vb: System.Collections.Generic.IComparer(Of Winpeak.Client.Scene.Waypoint).Compare(Winpeak.Client.Scene.Waypoint, Winpeak.Client.Scene.Waypoint)
+  fullName.vb: System.Collections.Generic.IComparer(Of Winpeak.Client.Models.Waypoint).Compare(Winpeak.Client.Models.Waypoint, Winpeak.Client.Models.Waypoint)
   spec.csharp:
   - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
     name: Compare
     nameWithType: IComparer<Waypoint>.Compare
-    fullName: System.Collections.Generic.IComparer<Winpeak.Client.Scene.Waypoint>.Compare
+    fullName: System.Collections.Generic.IComparer<Winpeak.Client.Models.Waypoint>.Compare
     isExternal: true
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Winpeak.Client.Scene.Waypoint
+  - uid: Winpeak.Client.Models.Waypoint
     name: Waypoint
     nameWithType: Waypoint
-    fullName: Winpeak.Client.Scene.Waypoint
+    fullName: Winpeak.Client.Models.Waypoint
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: Winpeak.Client.Scene.Waypoint
+  - uid: Winpeak.Client.Models.Waypoint
     name: Waypoint
     nameWithType: Waypoint
-    fullName: Winpeak.Client.Scene.Waypoint
+    fullName: Winpeak.Client.Models.Waypoint
   - name: )
     nameWithType: )
     fullName: )
@@ -504,31 +504,31 @@ references:
   - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
     name: Compare
     nameWithType: IComparer(Of Waypoint).Compare
-    fullName: System.Collections.Generic.IComparer(Of Winpeak.Client.Scene.Waypoint).Compare
+    fullName: System.Collections.Generic.IComparer(Of Winpeak.Client.Models.Waypoint).Compare
     isExternal: true
   - name: (
     nameWithType: (
     fullName: (
-  - uid: Winpeak.Client.Scene.Waypoint
+  - uid: Winpeak.Client.Models.Waypoint
     name: Waypoint
     nameWithType: Waypoint
-    fullName: Winpeak.Client.Scene.Waypoint
+    fullName: Winpeak.Client.Models.Waypoint
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: Winpeak.Client.Scene.Waypoint
+  - uid: Winpeak.Client.Models.Waypoint
     name: Waypoint
     nameWithType: Waypoint
-    fullName: Winpeak.Client.Scene.Waypoint
+    fullName: Winpeak.Client.Models.Waypoint
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Scene.Waypoint
-  commentId: T:Winpeak.Client.Scene.Waypoint
-  parent: Winpeak.Client.Scene
+- uid: Winpeak.Client.Models.Waypoint
+  commentId: T:Winpeak.Client.Models.Waypoint
+  parent: Winpeak.Client.Models
   name: Waypoint
   nameWithType: Waypoint
-  fullName: Winpeak.Client.Scene.Waypoint
+  fullName: Winpeak.Client.Models.Waypoint
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

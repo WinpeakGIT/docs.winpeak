@@ -5,8 +5,7 @@ items:
   id: WpSceneObjectController
   parent: Winpeak.Client.Scene
   children:
-  - Winpeak.Client.Scene.WpSceneObjectController.IsDoubleTap
-  - Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},GameObject)
+  - Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},Winpeak.Client.Scene.WinPeakRigidbody)
   langs:
   - csharp
   - vb
@@ -17,7 +16,7 @@ items:
   source:
     id: WpSceneObjectController
     path: ''
-    startLine: 2556
+    startLine: 2295
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -34,70 +33,40 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},GameObject)
-  commentId: M:Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},GameObject)
-  id: UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},GameObject)
+- uid: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},Winpeak.Client.Scene.WinPeakRigidbody)
+  commentId: M:Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},Winpeak.Client.Scene.WinPeakRigidbody)
+  id: UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},Winpeak.Client.Scene.WinPeakRigidbody)
   parent: Winpeak.Client.Scene.WpSceneObjectController
   langs:
   - csharp
   - vb
-  name: UpdateSceneObjects(Dictionary<String, String[]>, GameObject)
-  nameWithType: WpSceneObjectController.UpdateSceneObjects(Dictionary<String, String[]>, GameObject)
-  fullName: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary<System.String, System.String[]>, GameObject)
+  name: UpdateSceneObjects(Dictionary<String, String[]>, WinPeakRigidbody)
+  nameWithType: WpSceneObjectController.UpdateSceneObjects(Dictionary<String, String[]>, WinPeakRigidbody)
+  fullName: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary<System.String, System.String[]>, Winpeak.Client.Scene.WinPeakRigidbody)
   type: Method
   source:
     id: UpdateSceneObjects
     path: ''
-    startLine: 2635
+    startLine: 2394
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
   syntax:
-    content: public void UpdateSceneObjects(Dictionary<string, string[]> actorFunctions, GameObject go)
+    content: public void UpdateSceneObjects(Dictionary<string, string[]> actorFunctions, WinPeakRigidbody rigidbody)
     parameters:
     - id: actorFunctions
       type: System.Collections.Generic.Dictionary{System.String,System.String[]}
-    - id: go
-      type: GameObject
-    content.vb: Public Sub UpdateSceneObjects(actorFunctions As Dictionary(Of String, String()), go As GameObject)
+    - id: rigidbody
+      type: Winpeak.Client.Scene.WinPeakRigidbody
+    content.vb: Public Sub UpdateSceneObjects(actorFunctions As Dictionary(Of String, String()), rigidbody As WinPeakRigidbody)
   overload: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects*
-  nameWithType.vb: WpSceneObjectController.UpdateSceneObjects(Dictionary(Of String, String()), GameObject)
+  nameWithType.vb: WpSceneObjectController.UpdateSceneObjects(Dictionary(Of String, String()), WinPeakRigidbody)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary(Of System.String, System.String()), GameObject)
-  name.vb: UpdateSceneObjects(Dictionary(Of String, String()), GameObject)
-- uid: Winpeak.Client.Scene.WpSceneObjectController.IsDoubleTap
-  commentId: M:Winpeak.Client.Scene.WpSceneObjectController.IsDoubleTap
-  id: IsDoubleTap
-  parent: Winpeak.Client.Scene.WpSceneObjectController
-  langs:
-  - csharp
-  - vb
-  name: IsDoubleTap()
-  nameWithType: WpSceneObjectController.IsDoubleTap()
-  fullName: Winpeak.Client.Scene.WpSceneObjectController.IsDoubleTap()
-  type: Method
-  source:
-    id: IsDoubleTap
-    path: ''
-    startLine: 2640
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public static bool IsDoubleTap()
-    return:
-      type: System.Boolean
-    content.vb: Public Shared Function IsDoubleTap As Boolean
-  overload: Winpeak.Client.Scene.WpSceneObjectController.IsDoubleTap*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
+  fullName.vb: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary(Of System.String, System.String()), Winpeak.Client.Scene.WinPeakRigidbody)
+  name.vb: UpdateSceneObjects(Dictionary(Of String, String()), WinPeakRigidbody)
 references:
 - uid: Winpeak.Client.Scene
   commentId: N:Winpeak.Client.Scene
@@ -188,11 +157,12 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: GameObject
-  isExternal: true
-  name: GameObject
-  nameWithType: GameObject
-  fullName: GameObject
+- uid: Winpeak.Client.Scene.WinPeakRigidbody
+  commentId: T:Winpeak.Client.Scene.WinPeakRigidbody
+  parent: Winpeak.Client.Scene
+  name: WinPeakRigidbody
+  nameWithType: WinPeakRigidbody
+  fullName: Winpeak.Client.Scene.WinPeakRigidbody
 - uid: System.Collections.Generic.Dictionary`2
   commentId: T:System.Collections.Generic.Dictionary`2
   isExternal: true
@@ -250,15 +220,3 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: Winpeak.Client.Scene.WpSceneObjectController.IsDoubleTap*
-  commentId: Overload:Winpeak.Client.Scene.WpSceneObjectController.IsDoubleTap
-  name: IsDoubleTap
-  nameWithType: WpSceneObjectController.IsDoubleTap
-  fullName: Winpeak.Client.Scene.WpSceneObjectController.IsDoubleTap
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean

@@ -1,40 +1,29 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Scene.Waypoint
-  commentId: T:Winpeak.Client.Scene.Waypoint
-  id: Waypoint
-  parent: Winpeak.Client.Scene
+- uid: Winpeak.Client.Networking.PlayersStats
+  commentId: T:Winpeak.Client.Networking.PlayersStats
+  id: PlayersStats
+  parent: Winpeak.Client.Networking
   children:
-  - Winpeak.Client.Scene.Waypoint.#ctor
-  - Winpeak.Client.Scene.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
-  - Winpeak.Client.Scene.Waypoint.R
-  - Winpeak.Client.Scene.Waypoint.Time
-  - Winpeak.Client.Scene.Waypoint.ToString
-  - Winpeak.Client.Scene.Waypoint.X
-  - Winpeak.Client.Scene.Waypoint.Y
+  - Winpeak.Client.Networking.PlayersStats.Player1Score
+  - Winpeak.Client.Networking.PlayersStats.Player2Score
   langs:
   - csharp
   - vb
-  name: Waypoint
-  nameWithType: Waypoint
-  fullName: Winpeak.Client.Scene.Waypoint
+  name: PlayersStats
+  nameWithType: PlayersStats
+  fullName: Winpeak.Client.Networking.PlayersStats
   type: Class
   source:
-    id: Waypoint
+    id: PlayersStats
     path: ''
-    startLine: 4029
+    startLine: 3407
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Scene
+  namespace: Winpeak.Client.Networking
   syntax:
-    content: >-
-      [Serializable]
-
-      public class Waypoint
-    content.vb: >-
-      <Serializable>
-
-      Public Class Waypoint
+    content: public class PlayersStats
+    content.vb: Public Class PlayersStats
   inheritance:
   - System.Object
   inheritedMembers:
@@ -43,231 +32,82 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+  - System.Object.ToString
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  attributes:
-  - type: System.SerializableAttribute
-    ctor: System.SerializableAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - class
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Scene.Waypoint.Time
-  commentId: F:Winpeak.Client.Scene.Waypoint.Time
-  id: Time
-  parent: Winpeak.Client.Scene.Waypoint
+- uid: Winpeak.Client.Networking.PlayersStats.Player1Score
+  commentId: P:Winpeak.Client.Networking.PlayersStats.Player1Score
+  id: Player1Score
+  parent: Winpeak.Client.Networking.PlayersStats
   langs:
   - csharp
   - vb
-  name: Time
-  nameWithType: Waypoint.Time
-  fullName: Winpeak.Client.Scene.Waypoint.Time
-  type: Field
+  name: Player1Score
+  nameWithType: PlayersStats.Player1Score
+  fullName: Winpeak.Client.Networking.PlayersStats.Player1Score
+  type: Property
   source:
-    id: Time
+    id: Player1Score
     path: ''
-    startLine: 4032
+    startLine: 3409
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Scene
+  namespace: Winpeak.Client.Networking
   syntax:
-    content: public readonly long Time
+    content: public int Player1Score { get; }
+    parameters: []
     return:
-      type: System.Int64
-    content.vb: Public ReadOnly Time As Long
+      type: System.Int32
+    content.vb: Public ReadOnly Property Player1Score As Integer
+  overload: Winpeak.Client.Networking.PlayersStats.Player1Score*
   modifiers.csharp:
   - public
-  - readonly
+  - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Scene.Waypoint.X
-  commentId: F:Winpeak.Client.Scene.Waypoint.X
-  id: X
-  parent: Winpeak.Client.Scene.Waypoint
+- uid: Winpeak.Client.Networking.PlayersStats.Player2Score
+  commentId: P:Winpeak.Client.Networking.PlayersStats.Player2Score
+  id: Player2Score
+  parent: Winpeak.Client.Networking.PlayersStats
   langs:
   - csharp
   - vb
-  name: X
-  nameWithType: Waypoint.X
-  fullName: Winpeak.Client.Scene.Waypoint.X
-  type: Field
+  name: Player2Score
+  nameWithType: PlayersStats.Player2Score
+  fullName: Winpeak.Client.Networking.PlayersStats.Player2Score
+  type: Property
   source:
-    id: X
+    id: Player2Score
     path: ''
-    startLine: 4033
+    startLine: 3412
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Scene
+  namespace: Winpeak.Client.Networking
   syntax:
-    content: public readonly float X
+    content: public int Player2Score { get; }
+    parameters: []
     return:
-      type: System.Single
-    content.vb: Public ReadOnly X As Single
+      type: System.Int32
+    content.vb: Public ReadOnly Property Player2Score As Integer
+  overload: Winpeak.Client.Networking.PlayersStats.Player2Score*
   modifiers.csharp:
   - public
-  - readonly
+  - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Scene.Waypoint.Y
-  commentId: F:Winpeak.Client.Scene.Waypoint.Y
-  id: Y
-  parent: Winpeak.Client.Scene.Waypoint
-  langs:
-  - csharp
-  - vb
-  name: Y
-  nameWithType: Waypoint.Y
-  fullName: Winpeak.Client.Scene.Waypoint.Y
-  type: Field
-  source:
-    id: Y
-    path: ''
-    startLine: 4034
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public readonly float Y
-    return:
-      type: System.Single
-    content.vb: Public ReadOnly Y As Single
-  modifiers.csharp:
-  - public
-  - readonly
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Scene.Waypoint.R
-  commentId: F:Winpeak.Client.Scene.Waypoint.R
-  id: R
-  parent: Winpeak.Client.Scene.Waypoint
-  langs:
-  - csharp
-  - vb
-  name: R
-  nameWithType: Waypoint.R
-  fullName: Winpeak.Client.Scene.Waypoint.R
-  type: Field
-  source:
-    id: R
-    path: ''
-    startLine: 4035
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public readonly float R
-    return:
-      type: System.Single
-    content.vb: Public ReadOnly R As Single
-  modifiers.csharp:
-  - public
-  - readonly
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Scene.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
-  commentId: M:Winpeak.Client.Scene.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
-  id: '#ctor(System.Int64,System.Single,System.Single,System.Single)'
-  parent: Winpeak.Client.Scene.Waypoint
-  langs:
-  - csharp
-  - vb
-  name: Waypoint(Int64, Single, Single, Single)
-  nameWithType: Waypoint.Waypoint(Int64, Single, Single, Single)
-  fullName: Winpeak.Client.Scene.Waypoint.Waypoint(System.Int64, System.Single, System.Single, System.Single)
-  type: Constructor
-  source:
-    id: .ctor
-    path: ''
-    startLine: 4037
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public Waypoint(long time, float x, float y, float r)
-    parameters:
-    - id: time
-      type: System.Int64
-    - id: x
-      type: System.Single
-    - id: y
-      type: System.Single
-    - id: r
-      type: System.Single
-    content.vb: Public Sub New(time As Long, x As Single, y As Single, r As Single)
-  overload: Winpeak.Client.Scene.Waypoint.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Winpeak.Client.Scene.Waypoint.#ctor
-  commentId: M:Winpeak.Client.Scene.Waypoint.#ctor
-  id: '#ctor'
-  parent: Winpeak.Client.Scene.Waypoint
-  langs:
-  - csharp
-  - vb
-  name: Waypoint()
-  nameWithType: Waypoint.Waypoint()
-  fullName: Winpeak.Client.Scene.Waypoint.Waypoint()
-  type: Constructor
-  source:
-    id: .ctor
-    path: ''
-    startLine: 4044
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public Waypoint()
-    content.vb: Public Sub New
-  overload: Winpeak.Client.Scene.Waypoint.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Winpeak.Client.Scene.Waypoint.ToString
-  commentId: M:Winpeak.Client.Scene.Waypoint.ToString
-  id: ToString
-  parent: Winpeak.Client.Scene.Waypoint
-  langs:
-  - csharp
-  - vb
-  name: ToString()
-  nameWithType: Waypoint.ToString()
-  fullName: Winpeak.Client.Scene.Waypoint.ToString()
-  type: Method
-  source:
-    id: ToString
-    path: ''
-    startLine: 4046
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public override string ToString()
-    return:
-      type: System.String
-    content.vb: Public Overrides Function ToString As String
-  overridden: System.Object.ToString
-  overload: Winpeak.Client.Scene.Waypoint.ToString*
-  modifiers.csharp:
-  - public
-  - override
-  modifiers.vb:
-  - Public
-  - Overrides
 references:
-- uid: Winpeak.Client.Scene
-  commentId: N:Winpeak.Client.Scene
-  name: Winpeak.Client.Scene
-  nameWithType: Winpeak.Client.Scene
-  fullName: Winpeak.Client.Scene
+- uid: Winpeak.Client.Networking
+  commentId: N:Winpeak.Client.Networking
+  name: Winpeak.Client.Networking
+  nameWithType: Winpeak.Client.Networking
+  fullName: Winpeak.Client.Networking
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -466,6 +306,37 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -529,65 +400,20 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Int64
-  commentId: T:System.Int64
+- uid: Winpeak.Client.Networking.PlayersStats.Player1Score*
+  commentId: Overload:Winpeak.Client.Networking.PlayersStats.Player1Score
+  name: Player1Score
+  nameWithType: PlayersStats.Player1Score
+  fullName: Winpeak.Client.Networking.PlayersStats.Player1Score
+- uid: System.Int32
+  commentId: T:System.Int32
   parent: System
   isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  name: Single
-  nameWithType: Single
-  fullName: System.Single
-- uid: Winpeak.Client.Scene.Waypoint.#ctor*
-  commentId: Overload:Winpeak.Client.Scene.Waypoint.#ctor
-  name: Waypoint
-  nameWithType: Waypoint.Waypoint
-  fullName: Winpeak.Client.Scene.Waypoint.Waypoint
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.Scene.Waypoint.ToString*
-  commentId: Overload:Winpeak.Client.Scene.Waypoint.ToString
-  name: ToString
-  nameWithType: Waypoint.ToString
-  fullName: Winpeak.Client.Scene.Waypoint.ToString
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Winpeak.Client.Networking.PlayersStats.Player2Score*
+  commentId: Overload:Winpeak.Client.Networking.PlayersStats.Player2Score
+  name: Player2Score
+  nameWithType: PlayersStats.Player2Score
+  fullName: Winpeak.Client.Networking.PlayersStats.Player2Score

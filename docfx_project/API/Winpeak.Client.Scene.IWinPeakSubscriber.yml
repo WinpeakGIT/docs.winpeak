@@ -5,8 +5,7 @@ items:
   id: IWinPeakSubscriber
   parent: Winpeak.Client.Scene
   children:
-  - Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Scene.Waypoint[],System.Int64)
-  - Winpeak.Client.Scene.IWinPeakSubscriber.Name
+  - Winpeak.Client.Scene.IWinPeakSubscriber.Move(Waypoint[],System.Int64)
   langs:
   - csharp
   - vb
@@ -17,7 +16,7 @@ items:
   source:
     id: IWinPeakSubscriber
     path: ''
-    startLine: 125
+    startLine: 136
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -30,50 +29,21 @@ items:
   modifiers.vb:
   - Public
   - Interface
-- uid: Winpeak.Client.Scene.IWinPeakSubscriber.Name
-  commentId: P:Winpeak.Client.Scene.IWinPeakSubscriber.Name
-  id: Name
-  parent: Winpeak.Client.Scene.IWinPeakSubscriber
-  langs:
-  - csharp
-  - vb
-  name: Name
-  nameWithType: IWinPeakSubscriber.Name
-  fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Name
-  type: Property
-  source:
-    id: Name
-    path: ''
-    startLine: 127
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: string Name { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: ReadOnly Property Name As String
-  overload: Winpeak.Client.Scene.IWinPeakSubscriber.Name*
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
-- uid: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Scene.Waypoint[],System.Int64)
-  commentId: M:Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Scene.Waypoint[],System.Int64)
-  id: Move(Winpeak.Client.Scene.Waypoint[],System.Int64)
+- uid: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Waypoint[],System.Int64)
+  commentId: M:Winpeak.Client.Scene.IWinPeakSubscriber.Move(Waypoint[],System.Int64)
+  id: Move(Waypoint[],System.Int64)
   parent: Winpeak.Client.Scene.IWinPeakSubscriber
   langs:
   - csharp
   - vb
   name: Move(Waypoint[], Int64)
   nameWithType: IWinPeakSubscriber.Move(Waypoint[], Int64)
-  fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Scene.Waypoint[], System.Int64)
+  fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Waypoint[], System.Int64)
   type: Method
   source:
     id: Move
     path: ''
-    startLine: 128
+    startLine: 138
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -81,13 +51,13 @@ items:
     content: void Move(Waypoint[] waypoints, long moveCount)
     parameters:
     - id: waypoints
-      type: Winpeak.Client.Scene.Waypoint[]
+      type: Waypoint[]
     - id: moveCount
       type: System.Int64
     content.vb: Sub Move(waypoints As Waypoint(), moveCount As Long)
   overload: Winpeak.Client.Scene.IWinPeakSubscriber.Move*
   nameWithType.vb: IWinPeakSubscriber.Move(Waypoint(), Int64)
-  fullName.vb: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Winpeak.Client.Scene.Waypoint(), System.Int64)
+  fullName.vb: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Waypoint(), System.Int64)
   name.vb: Move(Waypoint(), Int64)
 references:
 - uid: Winpeak.Client.Scene
@@ -95,50 +65,34 @@ references:
   name: Winpeak.Client.Scene
   nameWithType: Winpeak.Client.Scene
   fullName: Winpeak.Client.Scene
-- uid: Winpeak.Client.Scene.IWinPeakSubscriber.Name*
-  commentId: Overload:Winpeak.Client.Scene.IWinPeakSubscriber.Name
-  name: Name
-  nameWithType: IWinPeakSubscriber.Name
-  fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Name
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Winpeak.Client.Scene.IWinPeakSubscriber.Move*
   commentId: Overload:Winpeak.Client.Scene.IWinPeakSubscriber.Move
   name: Move
   nameWithType: IWinPeakSubscriber.Move
   fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Move
-- uid: Winpeak.Client.Scene.Waypoint[]
+- uid: Waypoint[]
   isExternal: true
   name: Waypoint[]
   nameWithType: Waypoint[]
-  fullName: Winpeak.Client.Scene.Waypoint[]
+  fullName: Waypoint[]
   nameWithType.vb: Waypoint()
-  fullName.vb: Winpeak.Client.Scene.Waypoint()
+  fullName.vb: Waypoint()
   name.vb: Waypoint()
   spec.csharp:
-  - uid: Winpeak.Client.Scene.Waypoint
+  - uid: Waypoint
     name: Waypoint
     nameWithType: Waypoint
-    fullName: Winpeak.Client.Scene.Waypoint
+    fullName: Waypoint
+    isExternal: true
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
   spec.vb:
-  - uid: Winpeak.Client.Scene.Waypoint
+  - uid: Waypoint
     name: Waypoint
     nameWithType: Waypoint
-    fullName: Winpeak.Client.Scene.Waypoint
+    fullName: Waypoint
+    isExternal: true
   - name: ()
     nameWithType: ()
     fullName: ()
@@ -149,3 +103,9 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
