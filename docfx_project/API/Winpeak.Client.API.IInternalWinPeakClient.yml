@@ -9,7 +9,6 @@ items:
   - Winpeak.Client.API.IInternalWinPeakClient.Confirm(System.Int64)
   - Winpeak.Client.API.IInternalWinPeakClient.Disconnect
   - Winpeak.Client.API.IInternalWinPeakClient.DisplayPing(System.Int64)
-  - Winpeak.Client.API.IInternalWinPeakClient.DrawLines
   - Winpeak.Client.API.IInternalWinPeakClient.GameOver(MatchResult)
   - Winpeak.Client.API.IInternalWinPeakClient.GetServerConnectionStatusController
   - Winpeak.Client.API.IInternalWinPeakClient.HandlePacket(System.Int64)
@@ -32,7 +31,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 3450
+    startLine: 3464
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -62,6 +61,9 @@ items:
   - Winpeak.Client.API.IWinPeakClient.Utilize
   - Winpeak.Client.API.IWinPeakClient.BlockInGameInput(System.Boolean)
   - Winpeak.Client.API.IWinPeakClient.RequestServers(System.Action{System.Collections.Generic.List{System.String}})
+  - Winpeak.Client.API.IWinPeakClient.DrawLines
+  - Winpeak.Client.API.IWinPeakClient.DrawSingleLine
+  - Winpeak.Client.API.IWinPeakClient.DrawPoint
   modifiers.csharp:
   - public
   - interface
@@ -82,7 +84,7 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 3455
+    startLine: 3469
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -107,7 +109,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 3460
+    startLine: 3474
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -132,7 +134,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 3467
+    startLine: 3481
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -163,7 +165,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 3472
+    startLine: 3486
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -187,7 +189,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 3478
+    startLine: 3492
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -215,7 +217,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 3484
+    startLine: 3498
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -243,7 +245,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 3489
+    startLine: 3503
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -273,7 +275,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 3497
+    startLine: 3511
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -307,7 +309,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 3503
+    startLine: 3517
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -335,7 +337,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 3509
+    startLine: 3523
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -363,7 +365,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 3515
+    startLine: 3529
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -391,7 +393,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 3520
+    startLine: 3534
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -418,7 +420,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 3525
+    startLine: 3539
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -442,7 +444,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 3531
+    startLine: 3545
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -470,7 +472,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 3536
+    startLine: 3550
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -494,7 +496,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 3541
+    startLine: 3555
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -511,30 +513,6 @@ items:
   - get
   modifiers.vb:
   - ReadOnly
-- uid: Winpeak.Client.API.IInternalWinPeakClient.DrawLines
-  commentId: M:Winpeak.Client.API.IInternalWinPeakClient.DrawLines
-  id: DrawLines
-  parent: Winpeak.Client.API.IInternalWinPeakClient
-  langs:
-  - csharp
-  - vb
-  name: DrawLines()
-  nameWithType: IInternalWinPeakClient.DrawLines()
-  fullName: Winpeak.Client.API.IInternalWinPeakClient.DrawLines()
-  type: Method
-  source:
-    id: DrawLines
-    path: ''
-    startLine: 3546
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.API
-  summary: "\nDebug feature. Draw lines\n"
-  example: []
-  syntax:
-    content: void DrawLines()
-    content.vb: Sub DrawLines
-  overload: Winpeak.Client.API.IInternalWinPeakClient.DrawLines*
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -1073,6 +1051,90 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.DrawLines
+  commentId: M:Winpeak.Client.API.IWinPeakClient.DrawLines
+  parent: Winpeak.Client.API.IWinPeakClient
+  name: DrawLines()
+  nameWithType: IWinPeakClient.DrawLines()
+  fullName: Winpeak.Client.API.IWinPeakClient.DrawLines()
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakClient.DrawLines
+    name: DrawLines
+    nameWithType: IWinPeakClient.DrawLines
+    fullName: Winpeak.Client.API.IWinPeakClient.DrawLines
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakClient.DrawLines
+    name: DrawLines
+    nameWithType: IWinPeakClient.DrawLines
+    fullName: Winpeak.Client.API.IWinPeakClient.DrawLines
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.DrawSingleLine
+  commentId: M:Winpeak.Client.API.IWinPeakClient.DrawSingleLine
+  parent: Winpeak.Client.API.IWinPeakClient
+  name: DrawSingleLine()
+  nameWithType: IWinPeakClient.DrawSingleLine()
+  fullName: Winpeak.Client.API.IWinPeakClient.DrawSingleLine()
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakClient.DrawSingleLine
+    name: DrawSingleLine
+    nameWithType: IWinPeakClient.DrawSingleLine
+    fullName: Winpeak.Client.API.IWinPeakClient.DrawSingleLine
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakClient.DrawSingleLine
+    name: DrawSingleLine
+    nameWithType: IWinPeakClient.DrawSingleLine
+    fullName: Winpeak.Client.API.IWinPeakClient.DrawSingleLine
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.DrawPoint
+  commentId: M:Winpeak.Client.API.IWinPeakClient.DrawPoint
+  parent: Winpeak.Client.API.IWinPeakClient
+  name: DrawPoint()
+  nameWithType: IWinPeakClient.DrawPoint()
+  fullName: Winpeak.Client.API.IWinPeakClient.DrawPoint()
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakClient.DrawPoint
+    name: DrawPoint
+    nameWithType: IWinPeakClient.DrawPoint
+    fullName: Winpeak.Client.API.IWinPeakClient.DrawPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakClient.DrawPoint
+    name: DrawPoint
+    nameWithType: IWinPeakClient.DrawPoint
+    fullName: Winpeak.Client.API.IWinPeakClient.DrawPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Winpeak.Client.API.IWinPeakClient
   commentId: T:Winpeak.Client.API.IWinPeakClient
   parent: Winpeak.Client.API
@@ -1539,8 +1601,3 @@ references:
   name: ServerConnectionStatusController
   nameWithType: ServerConnectionStatusController
   fullName: ServerConnectionStatusController
-- uid: Winpeak.Client.API.IInternalWinPeakClient.DrawLines*
-  commentId: Overload:Winpeak.Client.API.IInternalWinPeakClient.DrawLines
-  name: DrawLines
-  nameWithType: IInternalWinPeakClient.DrawLines
-  fullName: Winpeak.Client.API.IInternalWinPeakClient.DrawLines
