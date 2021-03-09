@@ -12,10 +12,14 @@ items:
   - Winpeak.Client.API.IWinPeakClient.DrawLines
   - Winpeak.Client.API.IWinPeakClient.DrawPoint
   - Winpeak.Client.API.IWinPeakClient.DrawSingleLine
+  - Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64)
+  - Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
   - Winpeak.Client.API.IWinPeakClient.IsActiveNetwork
   - Winpeak.Client.API.IWinPeakClient.IsConnected
   - Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
   - Winpeak.Client.API.IWinPeakClient.OnClientDisconnected
+  - Winpeak.Client.API.IWinPeakClient.OnDrawLine
+  - Winpeak.Client.API.IWinPeakClient.OnDrawPoint
   - Winpeak.Client.API.IWinPeakClient.OnGameObjectsReady
   - Winpeak.Client.API.IWinPeakClient.OnGameOver
   - Winpeak.Client.API.IWinPeakClient.OnGameStateChanged
@@ -38,7 +42,7 @@ items:
   source:
     id: IWinPeakClient
     path: ''
-    startLine: 3731
+    startLine: 3785
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -65,7 +69,7 @@ items:
   source:
     id: OnClientDisconnected
     path: ''
-    startLine: 3736
+    startLine: 3790
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -90,7 +94,7 @@ items:
   source:
     id: OnRoundScoreUpdated
     path: ''
-    startLine: 3741
+    startLine: 3795
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -115,7 +119,7 @@ items:
   source:
     id: OnGameOver
     path: ''
-    startLine: 3746
+    startLine: 3800
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -140,7 +144,7 @@ items:
   source:
     id: OnStartGameCountdown
     path: ''
-    startLine: 3751
+    startLine: 3805
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -165,7 +169,7 @@ items:
   source:
     id: OnUserInfoUpdated
     path: ''
-    startLine: 3756
+    startLine: 3810
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -190,7 +194,7 @@ items:
   source:
     id: OnGameObjectsReady
     path: ''
-    startLine: 3761
+    startLine: 3815
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -215,7 +219,7 @@ items:
   source:
     id: OnOccurConnectionProblem
     path: ''
-    startLine: 3766
+    startLine: 3820
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -240,7 +244,7 @@ items:
   source:
     id: OnPingUpdated
     path: ''
-    startLine: 3771
+    startLine: 3825
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -265,7 +269,7 @@ items:
   source:
     id: OnPlayWallHitSound
     path: ''
-    startLine: 3776
+    startLine: 3830
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -290,7 +294,7 @@ items:
   source:
     id: OnGameStateChanged
     path: ''
-    startLine: 3781
+    startLine: 3835
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -315,7 +319,7 @@ items:
   source:
     id: IsConnected
     path: ''
-    startLine: 3786
+    startLine: 3840
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -346,7 +350,7 @@ items:
   source:
     id: IsActiveNetwork
     path: ''
-    startLine: 3791
+    startLine: 3845
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -377,7 +381,7 @@ items:
   source:
     id: SubscribeRigidbody
     path: ''
-    startLine: 3796
+    startLine: 3850
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -404,7 +408,7 @@ items:
   source:
     id: Connect
     path: ''
-    startLine: 3801
+    startLine: 3855
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -435,7 +439,7 @@ items:
   source:
     id: Auth
     path: ''
-    startLine: 3806
+    startLine: 3860
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -462,7 +466,7 @@ items:
   source:
     id: Die
     path: ''
-    startLine: 3811
+    startLine: 3865
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -489,7 +493,7 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 3822
+    startLine: 3876
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -532,7 +536,7 @@ items:
   source:
     id: Utilize
     path: ''
-    startLine: 3827
+    startLine: 3881
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -556,7 +560,7 @@ items:
   source:
     id: BlockInGameInput
     path: ''
-    startLine: 3833
+    startLine: 3887
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -584,7 +588,7 @@ items:
   source:
     id: RequestServers
     path: ''
-    startLine: 3839
+    startLine: 3893
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -615,7 +619,7 @@ items:
   source:
     id: DrawLines
     path: ''
-    startLine: 3844
+    startLine: 3898
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -639,7 +643,7 @@ items:
   source:
     id: DrawSingleLine
     path: ''
-    startLine: 3850
+    startLine: 3904
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -663,7 +667,7 @@ items:
   source:
     id: DrawPoint
     path: ''
-    startLine: 3855
+    startLine: 3909
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -673,6 +677,118 @@ items:
     content: void DrawPoint()
     content.vb: Sub DrawPoint
   overload: Winpeak.Client.API.IWinPeakClient.DrawPoint*
+- uid: Winpeak.Client.API.IWinPeakClient.OnDrawPoint
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnDrawPoint
+  id: OnDrawPoint
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: OnDrawPoint
+  nameWithType: IWinPeakClient.OnDrawPoint
+  fullName: Winpeak.Client.API.IWinPeakClient.OnDrawPoint
+  type: Event
+  source:
+    id: OnDrawPoint
+    path: ''
+    startLine: 3912
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  syntax:
+    content: event Action<float, float, float, long> OnDrawPoint
+    return:
+      type: System.Action{System.Single,System.Single,System.Single,System.Int64}
+    content.vb: Event OnDrawPoint As Action(Of Single, Single, Single, Long)
+- uid: Winpeak.Client.API.IWinPeakClient.OnDrawLine
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnDrawLine
+  id: OnDrawLine
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: OnDrawLine
+  nameWithType: IWinPeakClient.OnDrawLine
+  fullName: Winpeak.Client.API.IWinPeakClient.OnDrawLine
+  type: Event
+  source:
+    id: OnDrawLine
+    path: ''
+    startLine: 3913
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  syntax:
+    content: event Action<float, float, float, float, float, long> OnDrawLine
+    return:
+      type: System.Action{System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64}
+    content.vb: Event OnDrawLine As Action(Of Single, Single, Single, Single, Single, Long)
+- uid: Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
+  id: InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: InvokeDrawPoint(Single, Single, Single, Int64)
+  nameWithType: IWinPeakClient.InvokeDrawPoint(Single, Single, Single, Int64)
+  fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single, System.Single, System.Single, System.Int64)
+  type: Method
+  source:
+    id: InvokeDrawPoint
+    path: ''
+    startLine: 3914
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  syntax:
+    content: void InvokeDrawPoint(float x, float y, float width, long time)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: width
+      type: System.Single
+    - id: time
+      type: System.Int64
+    content.vb: Sub InvokeDrawPoint(x As Single, y As Single, width As Single, time As Long)
+  overload: Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint*
+- uid: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64)
+  id: InvokeDrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64)
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: InvokeDrawLine(Single, Single, Single, Single, Single, Int64)
+  nameWithType: IWinPeakClient.InvokeDrawLine(Single, Single, Single, Single, Single, Int64)
+  fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single, System.Single, System.Single, System.Single, System.Single, System.Int64)
+  type: Method
+  source:
+    id: InvokeDrawLine
+    path: ''
+    startLine: 3915
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  syntax:
+    content: void InvokeDrawLine(float x1, float y1, float x2, float y2, float width, long time)
+    parameters:
+    - id: x1
+      type: System.Single
+    - id: y1
+      type: System.Single
+    - id: x2
+      type: System.Single
+    - id: y2
+      type: System.Single
+    - id: width
+      type: System.Single
+    - id: time
+      type: System.Int64
+    content.vb: Sub InvokeDrawLine(x1 As Single, y1 As Single, x2 As Single, y2 As Single, width As Single, time As Long)
+  overload: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine*
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -1337,3 +1453,403 @@ references:
   name: DrawPoint
   nameWithType: IWinPeakClient.DrawPoint
   fullName: Winpeak.Client.API.IWinPeakClient.DrawPoint
+- uid: System.Action{System.Single,System.Single,System.Single,System.Int64}
+  commentId: T:System.Action{System.Single,System.Single,System.Single,System.Int64}
+  parent: System
+  definition: System.Action`4
+  name: Action<Single, Single, Single, Int64>
+  nameWithType: Action<Single, Single, Single, Int64>
+  fullName: System.Action<System.Single, System.Single, System.Single, System.Int64>
+  nameWithType.vb: Action(Of Single, Single, Single, Int64)
+  fullName.vb: System.Action(Of System.Single, System.Single, System.Single, System.Int64)
+  name.vb: Action(Of Single, Single, Single, Int64)
+  spec.csharp:
+  - uid: System.Action`4
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`4
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`4
+  commentId: T:System.Action`4
+  isExternal: true
+  name: Action<T1, T2, T3, T4>
+  nameWithType: Action<T1, T2, T3, T4>
+  fullName: System.Action<T1, T2, T3, T4>
+  nameWithType.vb: Action(Of T1, T2, T3, T4)
+  fullName.vb: System.Action(Of T1, T2, T3, T4)
+  name.vb: Action(Of T1, T2, T3, T4)
+  spec.csharp:
+  - uid: System.Action`4
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`4
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64}
+  commentId: T:System.Action{System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64}
+  parent: System
+  definition: System.Action`6
+  name: Action<Single, Single, Single, Single, Single, Int64>
+  nameWithType: Action<Single, Single, Single, Single, Single, Int64>
+  fullName: System.Action<System.Single, System.Single, System.Single, System.Single, System.Single, System.Int64>
+  nameWithType.vb: Action(Of Single, Single, Single, Single, Single, Int64)
+  fullName.vb: System.Action(Of System.Single, System.Single, System.Single, System.Single, System.Single, System.Int64)
+  name.vb: Action(Of Single, Single, Single, Single, Single, Int64)
+  spec.csharp:
+  - uid: System.Action`6
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`6
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`6
+  commentId: T:System.Action`6
+  isExternal: true
+  name: Action<T1, T2, T3, T4, T5, T6>
+  nameWithType: Action<T1, T2, T3, T4, T5, T6>
+  fullName: System.Action<T1, T2, T3, T4, T5, T6>
+  nameWithType.vb: Action(Of T1, T2, T3, T4, T5, T6)
+  fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6)
+  name.vb: Action(Of T1, T2, T3, T4, T5, T6)
+  spec.csharp:
+  - uid: System.Action`6
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T5
+    nameWithType: T5
+    fullName: T5
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T6
+    nameWithType: T6
+    fullName: T6
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`6
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T5
+    nameWithType: T5
+    fullName: T5
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T6
+    nameWithType: T6
+    fullName: T6
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint
+  name: InvokeDrawPoint
+  nameWithType: IWinPeakClient.InvokeDrawPoint
+  fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint
+- uid: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.InvokeDrawLine
+  name: InvokeDrawLine
+  nameWithType: IWinPeakClient.InvokeDrawLine
+  fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine

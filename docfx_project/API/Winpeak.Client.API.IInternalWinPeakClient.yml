@@ -31,7 +31,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 3464
+    startLine: 3508
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -64,6 +64,10 @@ items:
   - Winpeak.Client.API.IWinPeakClient.DrawLines
   - Winpeak.Client.API.IWinPeakClient.DrawSingleLine
   - Winpeak.Client.API.IWinPeakClient.DrawPoint
+  - Winpeak.Client.API.IWinPeakClient.OnDrawPoint
+  - Winpeak.Client.API.IWinPeakClient.OnDrawLine
+  - Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
+  - Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64)
   modifiers.csharp:
   - public
   - interface
@@ -84,7 +88,7 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 3469
+    startLine: 3513
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -109,7 +113,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 3474
+    startLine: 3518
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -134,7 +138,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 3481
+    startLine: 3525
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -165,7 +169,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 3486
+    startLine: 3530
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -189,7 +193,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 3492
+    startLine: 3536
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -217,7 +221,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 3498
+    startLine: 3542
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -245,7 +249,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 3503
+    startLine: 3547
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -275,7 +279,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 3511
+    startLine: 3555
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -309,7 +313,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 3517
+    startLine: 3561
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -337,7 +341,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 3523
+    startLine: 3567
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -365,7 +369,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 3529
+    startLine: 3573
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -393,7 +397,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 3534
+    startLine: 3578
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -420,7 +424,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 3539
+    startLine: 3583
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -444,7 +448,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 3545
+    startLine: 3589
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -472,7 +476,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 3550
+    startLine: 3594
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -496,7 +500,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 3555
+    startLine: 3599
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -1132,6 +1136,224 @@ references:
   - name: (
     nameWithType: (
     fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.OnDrawPoint
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnDrawPoint
+  parent: Winpeak.Client.API.IWinPeakClient
+  name: OnDrawPoint
+  nameWithType: IWinPeakClient.OnDrawPoint
+  fullName: Winpeak.Client.API.IWinPeakClient.OnDrawPoint
+- uid: Winpeak.Client.API.IWinPeakClient.OnDrawLine
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnDrawLine
+  parent: Winpeak.Client.API.IWinPeakClient
+  name: OnDrawLine
+  nameWithType: IWinPeakClient.OnDrawLine
+  fullName: Winpeak.Client.API.IWinPeakClient.OnDrawLine
+- uid: Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
+  parent: Winpeak.Client.API.IWinPeakClient
+  isExternal: true
+  name: InvokeDrawPoint(Single, Single, Single, Int64)
+  nameWithType: IWinPeakClient.InvokeDrawPoint(Single, Single, Single, Int64)
+  fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single, System.Single, System.Single, System.Int64)
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
+    name: InvokeDrawPoint
+    nameWithType: IWinPeakClient.InvokeDrawPoint
+    fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
+    name: InvokeDrawPoint
+    nameWithType: IWinPeakClient.InvokeDrawPoint
+    fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64)
+  parent: Winpeak.Client.API.IWinPeakClient
+  isExternal: true
+  name: InvokeDrawLine(Single, Single, Single, Single, Single, Int64)
+  nameWithType: IWinPeakClient.InvokeDrawLine(Single, Single, Single, Single, Single, Int64)
+  fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single, System.Single, System.Single, System.Single, System.Single, System.Int64)
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64)
+    name: InvokeDrawLine
+    nameWithType: IWinPeakClient.InvokeDrawLine
+    fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64)
+    name: InvokeDrawLine
+    nameWithType: IWinPeakClient.InvokeDrawLine
+    fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
