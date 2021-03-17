@@ -1,0 +1,545 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom
+  id: ParametersWithRandom
+  parent: Org.BouncyCastle.Crypto.Parameters
+  children:
+  - Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.#ctor(Org.BouncyCastle.Crypto.ICipherParameters)
+  - Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.#ctor(Org.BouncyCastle.Crypto.ICipherParameters,SecureRandom)
+  - Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.GetRandom
+  - Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Parameters
+  - Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Random
+  langs:
+  - csharp
+  - vb
+  name: ParametersWithRandom
+  nameWithType: ParametersWithRandom
+  fullName: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom
+  type: Class
+  source:
+    id: ParametersWithRandom
+    path: ''
+    startLine: 110998
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: 'public class ParametersWithRandom : ICipherParameters'
+    content.vb: >-
+      Public Class ParametersWithRandom
+          Implements ICipherParameters
+  inheritance:
+  - System.Object
+  implements:
+  - Org.BouncyCastle.Crypto.ICipherParameters
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.#ctor(Org.BouncyCastle.Crypto.ICipherParameters,SecureRandom)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.#ctor(Org.BouncyCastle.Crypto.ICipherParameters,SecureRandom)
+  id: '#ctor(Org.BouncyCastle.Crypto.ICipherParameters,SecureRandom)'
+  parent: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom
+  langs:
+  - csharp
+  - vb
+  name: ParametersWithRandom(ICipherParameters, SecureRandom)
+  nameWithType: ParametersWithRandom.ParametersWithRandom(ICipherParameters, SecureRandom)
+  fullName: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.ParametersWithRandom(Org.BouncyCastle.Crypto.ICipherParameters, SecureRandom)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 111004
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public ParametersWithRandom(ICipherParameters parameters, SecureRandom random)
+    parameters:
+    - id: parameters
+      type: Org.BouncyCastle.Crypto.ICipherParameters
+    - id: random
+      type: SecureRandom
+    content.vb: Public Sub New(parameters As ICipherParameters, random As SecureRandom)
+  overload: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.#ctor(Org.BouncyCastle.Crypto.ICipherParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.#ctor(Org.BouncyCastle.Crypto.ICipherParameters)
+  id: '#ctor(Org.BouncyCastle.Crypto.ICipherParameters)'
+  parent: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom
+  langs:
+  - csharp
+  - vb
+  name: ParametersWithRandom(ICipherParameters)
+  nameWithType: ParametersWithRandom.ParametersWithRandom(ICipherParameters)
+  fullName: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.ParametersWithRandom(Org.BouncyCastle.Crypto.ICipherParameters)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 111017
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public ParametersWithRandom(ICipherParameters parameters)
+    parameters:
+    - id: parameters
+      type: Org.BouncyCastle.Crypto.ICipherParameters
+    content.vb: Public Sub New(parameters As ICipherParameters)
+  overload: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.GetRandom
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.GetRandom
+  id: GetRandom
+  parent: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom
+  langs:
+  - csharp
+  - vb
+  name: GetRandom()
+  nameWithType: ParametersWithRandom.GetRandom()
+  fullName: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.GetRandom()
+  type: Method
+  source:
+    id: GetRandom
+    path: ''
+    startLine: 111023
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: >-
+      [Obsolete("Use Random property instead")]
+
+      public SecureRandom GetRandom()
+    return:
+      type: SecureRandom
+    content.vb: >-
+      <Obsolete("Use Random property instead")>
+
+      Public Function GetRandom As SecureRandom
+  overload: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.GetRandom*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use Random property instead
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Random
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Random
+  id: Random
+  parent: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom
+  langs:
+  - csharp
+  - vb
+  name: Random
+  nameWithType: ParametersWithRandom.Random
+  fullName: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Random
+  type: Property
+  source:
+    id: Random
+    path: ''
+    startLine: 111029
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public SecureRandom Random { get; }
+    parameters: []
+    return:
+      type: SecureRandom
+    content.vb: Public ReadOnly Property Random As SecureRandom
+  overload: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Random*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Parameters
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Parameters
+  id: Parameters
+  parent: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom
+  langs:
+  - csharp
+  - vb
+  name: Parameters
+  nameWithType: ParametersWithRandom.Parameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Parameters
+  type: Property
+  source:
+    id: Parameters
+    path: ''
+    startLine: 111034
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public ICipherParameters Parameters { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Crypto.ICipherParameters
+    content.vb: Public ReadOnly Property Parameters As ICipherParameters
+  overload: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Parameters*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Org.BouncyCastle.Crypto.Parameters
+  commentId: N:Org.BouncyCastle.Crypto.Parameters
+  name: Org.BouncyCastle.Crypto.Parameters
+  nameWithType: Org.BouncyCastle.Crypto.Parameters
+  fullName: Org.BouncyCastle.Crypto.Parameters
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.ICipherParameters
+  commentId: T:Org.BouncyCastle.Crypto.ICipherParameters
+  parent: Org.BouncyCastle.Crypto
+  name: ICipherParameters
+  nameWithType: ICipherParameters
+  fullName: Org.BouncyCastle.Crypto.ICipherParameters
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.#ctor
+  name: ParametersWithRandom
+  nameWithType: ParametersWithRandom.ParametersWithRandom
+  fullName: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.ParametersWithRandom
+- uid: SecureRandom
+  isExternal: true
+  name: SecureRandom
+  nameWithType: SecureRandom
+  fullName: SecureRandom
+- uid: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.GetRandom*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.GetRandom
+  name: GetRandom
+  nameWithType: ParametersWithRandom.GetRandom
+  fullName: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.GetRandom
+- uid: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Random*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Random
+  name: Random
+  nameWithType: ParametersWithRandom.Random
+  fullName: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Random
+- uid: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Parameters*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Parameters
+  name: Parameters
+  nameWithType: ParametersWithRandom.Parameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.ParametersWithRandom.Parameters

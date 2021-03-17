@@ -1,0 +1,580 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters
+  id: RsaKeyGenerationParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  children:
+  - Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.#ctor(BigInteger,SecureRandom,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Certainty
+  - Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Equals(System.Object)
+  - Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.GetHashCode
+  - Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.PublicExponent
+  langs:
+  - csharp
+  - vb
+  name: RsaKeyGenerationParameters
+  nameWithType: RsaKeyGenerationParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters
+  type: Class
+  source:
+    id: RsaKeyGenerationParameters
+    path: ''
+    startLine: 113772
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: 'public class RsaKeyGenerationParameters : KeyGenerationParameters'
+    content.vb: >-
+      Public Class RsaKeyGenerationParameters
+          Inherits KeyGenerationParameters
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Crypto.KeyGenerationParameters
+  inheritedMembers:
+  - Org.BouncyCastle.Crypto.KeyGenerationParameters.Random
+  - Org.BouncyCastle.Crypto.KeyGenerationParameters.Strength
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.#ctor(BigInteger,SecureRandom,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.#ctor(BigInteger,SecureRandom,System.Int32,System.Int32)
+  id: '#ctor(BigInteger,SecureRandom,System.Int32,System.Int32)'
+  parent: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters
+  langs:
+  - csharp
+  - vb
+  name: RsaKeyGenerationParameters(BigInteger, SecureRandom, Int32, Int32)
+  nameWithType: RsaKeyGenerationParameters.RsaKeyGenerationParameters(BigInteger, SecureRandom, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.RsaKeyGenerationParameters(BigInteger, SecureRandom, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 113778
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public RsaKeyGenerationParameters(BigInteger publicExponent, SecureRandom random, int strength, int certainty)
+    parameters:
+    - id: publicExponent
+      type: BigInteger
+    - id: random
+      type: SecureRandom
+    - id: strength
+      type: System.Int32
+    - id: certainty
+      type: System.Int32
+    content.vb: Public Sub New(publicExponent As BigInteger, random As SecureRandom, strength As Integer, certainty As Integer)
+  overload: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.PublicExponent
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.PublicExponent
+  id: PublicExponent
+  parent: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters
+  langs:
+  - csharp
+  - vb
+  name: PublicExponent
+  nameWithType: RsaKeyGenerationParameters.PublicExponent
+  fullName: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.PublicExponent
+  type: Property
+  source:
+    id: PublicExponent
+    path: ''
+    startLine: 113789
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public BigInteger PublicExponent { get; }
+    parameters: []
+    return:
+      type: BigInteger
+    content.vb: Public ReadOnly Property PublicExponent As BigInteger
+  overload: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.PublicExponent*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Certainty
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Certainty
+  id: Certainty
+  parent: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters
+  langs:
+  - csharp
+  - vb
+  name: Certainty
+  nameWithType: RsaKeyGenerationParameters.Certainty
+  fullName: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Certainty
+  type: Property
+  source:
+    id: Certainty
+    path: ''
+    startLine: 113794
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public int Certainty { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Certainty As Integer
+  overload: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Certainty*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Equals(System.Object)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: RsaKeyGenerationParameters.Equals(Object)
+  fullName: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 113799
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.GetHashCode
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.GetHashCode
+  id: GetHashCode
+  parent: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: RsaKeyGenerationParameters.GetHashCode()
+  fullName: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: ''
+    startLine: 113813
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Org.BouncyCastle.Crypto.Parameters
+  commentId: N:Org.BouncyCastle.Crypto.Parameters
+  name: Org.BouncyCastle.Crypto.Parameters
+  nameWithType: Org.BouncyCastle.Crypto.Parameters
+  fullName: Org.BouncyCastle.Crypto.Parameters
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.KeyGenerationParameters
+  commentId: T:Org.BouncyCastle.Crypto.KeyGenerationParameters
+  parent: Org.BouncyCastle.Crypto
+  name: KeyGenerationParameters
+  nameWithType: KeyGenerationParameters
+  fullName: Org.BouncyCastle.Crypto.KeyGenerationParameters
+- uid: Org.BouncyCastle.Crypto.KeyGenerationParameters.Random
+  commentId: P:Org.BouncyCastle.Crypto.KeyGenerationParameters.Random
+  parent: Org.BouncyCastle.Crypto.KeyGenerationParameters
+  name: Random
+  nameWithType: KeyGenerationParameters.Random
+  fullName: Org.BouncyCastle.Crypto.KeyGenerationParameters.Random
+- uid: Org.BouncyCastle.Crypto.KeyGenerationParameters.Strength
+  commentId: P:Org.BouncyCastle.Crypto.KeyGenerationParameters.Strength
+  parent: Org.BouncyCastle.Crypto.KeyGenerationParameters
+  name: Strength
+  nameWithType: KeyGenerationParameters.Strength
+  fullName: Org.BouncyCastle.Crypto.KeyGenerationParameters.Strength
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.#ctor
+  name: RsaKeyGenerationParameters
+  nameWithType: RsaKeyGenerationParameters.RsaKeyGenerationParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.RsaKeyGenerationParameters
+- uid: BigInteger
+  isExternal: true
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: BigInteger
+- uid: SecureRandom
+  isExternal: true
+  name: SecureRandom
+  nameWithType: SecureRandom
+  fullName: SecureRandom
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.PublicExponent*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.PublicExponent
+  name: PublicExponent
+  nameWithType: RsaKeyGenerationParameters.PublicExponent
+  fullName: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.PublicExponent
+- uid: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Certainty*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Certainty
+  name: Certainty
+  nameWithType: RsaKeyGenerationParameters.Certainty
+  fullName: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Certainty
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Equals*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Equals
+  name: Equals
+  nameWithType: RsaKeyGenerationParameters.Equals
+  fullName: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.GetHashCode*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.GetHashCode
+  name: GetHashCode
+  nameWithType: RsaKeyGenerationParameters.GetHashCode
+  fullName: Org.BouncyCastle.Crypto.Parameters.RsaKeyGenerationParameters.GetHashCode

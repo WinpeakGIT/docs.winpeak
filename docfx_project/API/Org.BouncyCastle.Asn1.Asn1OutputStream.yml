@@ -1,0 +1,293 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Asn1.Asn1OutputStream
+  commentId: T:Org.BouncyCastle.Asn1.Asn1OutputStream
+  id: Asn1OutputStream
+  parent: Org.BouncyCastle.Asn1
+  children:
+  - Org.BouncyCastle.Asn1.Asn1OutputStream.#ctor(Stream)
+  - Org.BouncyCastle.Asn1.Asn1OutputStream.WriteObject(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: Asn1OutputStream
+  nameWithType: Asn1OutputStream
+  fullName: Org.BouncyCastle.Asn1.Asn1OutputStream
+  type: Class
+  source:
+    id: Asn1OutputStream
+    path: ''
+    startLine: 63844
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: 'public class Asn1OutputStream : DerOutputStream'
+    content.vb: >-
+      Public Class Asn1OutputStream
+          Inherits DerOutputStream
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Asn1.DerOutputStream
+  inheritedMembers:
+  - Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+  - Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  - Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Asn1.Asn1OutputStream.#ctor(Stream)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1OutputStream.#ctor(Stream)
+  id: '#ctor(Stream)'
+  parent: Org.BouncyCastle.Asn1.Asn1OutputStream
+  langs:
+  - csharp
+  - vb
+  name: Asn1OutputStream(Stream)
+  nameWithType: Asn1OutputStream.Asn1OutputStream(Stream)
+  fullName: Org.BouncyCastle.Asn1.Asn1OutputStream.Asn1OutputStream(Stream)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 63847
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public Asn1OutputStream(Stream os)
+    parameters:
+    - id: os
+      type: Stream
+    content.vb: Public Sub New(os As Stream)
+  overload: Org.BouncyCastle.Asn1.Asn1OutputStream.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Asn1.Asn1OutputStream.WriteObject(System.Object)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1OutputStream.WriteObject(System.Object)
+  id: WriteObject(System.Object)
+  parent: Org.BouncyCastle.Asn1.Asn1OutputStream
+  langs:
+  - csharp
+  - vb
+  name: WriteObject(Object)
+  nameWithType: Asn1OutputStream.WriteObject(Object)
+  fullName: Org.BouncyCastle.Asn1.Asn1OutputStream.WriteObject(System.Object)
+  type: Method
+  source:
+    id: WriteObject
+    path: ''
+    startLine: 63851
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: >-
+      [Obsolete("Use version taking an Asn1Encodable arg instead")]
+
+      public override void WriteObject(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    content.vb: >-
+      <Obsolete("Use version taking an Asn1Encodable arg instead")>
+
+      Public Overrides Sub WriteObject(obj As Object)
+  overridden: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(System.Object)
+  overload: Org.BouncyCastle.Asn1.Asn1OutputStream.WriteObject*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use version taking an Asn1Encodable arg instead
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Org.BouncyCastle.Asn1
+  commentId: N:Org.BouncyCastle.Asn1
+  name: Org.BouncyCastle.Asn1
+  nameWithType: Org.BouncyCastle.Asn1
+  fullName: Org.BouncyCastle.Asn1
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Asn1.DerOutputStream
+  commentId: T:Org.BouncyCastle.Asn1.DerOutputStream
+  parent: Org.BouncyCastle.Asn1
+  name: DerOutputStream
+  nameWithType: DerOutputStream
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+  commentId: M:Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+  parent: Org.BouncyCastle.Asn1.DerOutputStream
+  name: WriteNull()
+  nameWithType: DerOutputStream.WriteNull()
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteNull()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+    name: WriteNull
+    nameWithType: DerOutputStream.WriteNull
+    fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+    name: WriteNull
+    nameWithType: DerOutputStream.WriteNull
+    fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  commentId: M:Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  parent: Org.BouncyCastle.Asn1.DerOutputStream
+  name: WriteObject(Asn1Encodable)
+  nameWithType: DerOutputStream.WriteObject(Asn1Encodable)
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+    name: WriteObject
+    nameWithType: DerOutputStream.WriteObject
+    fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable
+    name: Asn1Encodable
+    nameWithType: Asn1Encodable
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+    name: WriteObject
+    nameWithType: DerOutputStream.WriteObject
+    fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable
+    name: Asn1Encodable
+    nameWithType: Asn1Encodable
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Object)
+  commentId: M:Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Object)
+  parent: Org.BouncyCastle.Asn1.DerOutputStream
+  name: WriteObject(Asn1Object)
+  nameWithType: DerOutputStream.WriteObject(Asn1Object)
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Object)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Object)
+    name: WriteObject
+    nameWithType: DerOutputStream.WriteObject
+    fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Asn1.Asn1Object
+    name: Asn1Object
+    nameWithType: Asn1Object
+    fullName: Org.BouncyCastle.Asn1.Asn1Object
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Object)
+    name: WriteObject
+    nameWithType: DerOutputStream.WriteObject
+    fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Asn1.Asn1Object
+    name: Asn1Object
+    nameWithType: Asn1Object
+    fullName: Org.BouncyCastle.Asn1.Asn1Object
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Asn1.Asn1OutputStream.#ctor*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1OutputStream.#ctor
+  name: Asn1OutputStream
+  nameWithType: Asn1OutputStream.Asn1OutputStream
+  fullName: Org.BouncyCastle.Asn1.Asn1OutputStream.Asn1OutputStream
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(System.Object)
+  commentId: M:Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(System.Object)
+  parent: Org.BouncyCastle.Asn1.DerOutputStream
+  isExternal: true
+  name: WriteObject(Object)
+  nameWithType: DerOutputStream.WriteObject(Object)
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(System.Object)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(System.Object)
+    name: WriteObject
+    nameWithType: DerOutputStream.WriteObject
+    fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(System.Object)
+    name: WriteObject
+    nameWithType: DerOutputStream.WriteObject
+    fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1OutputStream.WriteObject*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1OutputStream.WriteObject
+  name: WriteObject
+  nameWithType: Asn1OutputStream.WriteObject
+  fullName: Org.BouncyCastle.Asn1.Asn1OutputStream.WriteObject

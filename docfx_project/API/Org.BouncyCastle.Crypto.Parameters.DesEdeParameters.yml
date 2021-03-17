@@ -1,0 +1,978 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  id: DesEdeParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  children:
+  - Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.#ctor(System.Byte[])
+  - Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.#ctor(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.DesEdeKeyLength
+  - Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal2Key(System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal3Key(System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsRealEdeKey(System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[])
+  - Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[],System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: DesEdeParameters
+  nameWithType: DesEdeParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  type: Class
+  source:
+    id: DesEdeParameters
+    path: ''
+    startLine: 112874
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: 'public class DesEdeParameters : DesParameters, ICipherParameters'
+    content.vb: >-
+      Public Class DesEdeParameters
+          Inherits DesParameters
+          Implements ICipherParameters
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Crypto.Parameters.KeyParameter
+  - Org.BouncyCastle.Crypto.Parameters.DesParameters
+  implements:
+  - Org.BouncyCastle.Crypto.ICipherParameters
+  inheritedMembers:
+  - Org.BouncyCastle.Crypto.Parameters.DesParameters.DesKeyLength
+  - Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte)
+  - Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[])
+  - Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Parameters.KeyParameter.GetKey
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.DesEdeKeyLength
+  commentId: F:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.DesEdeKeyLength
+  id: DesEdeKeyLength
+  parent: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  langs:
+  - csharp
+  - vb
+  name: DesEdeKeyLength
+  nameWithType: DesEdeParameters.DesEdeKeyLength
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.DesEdeKeyLength
+  type: Field
+  source:
+    id: DesEdeKeyLength
+    path: ''
+    startLine: 112880
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public const int DesEdeKeyLength = 24
+    return:
+      type: System.Int32
+    content.vb: Public Const DesEdeKeyLength As Integer = 24
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.#ctor(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.#ctor(System.Byte[])
+  id: '#ctor(System.Byte[])'
+  parent: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  langs:
+  - csharp
+  - vb
+  name: DesEdeParameters(Byte[])
+  nameWithType: DesEdeParameters.DesEdeParameters(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.DesEdeParameters(System.Byte[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 112908
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public DesEdeParameters(byte[] key)
+    parameters:
+    - id: key
+      type: System.Byte[]
+    content.vb: Public Sub New(key As Byte())
+  overload: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.#ctor*
+  nameWithType.vb: DesEdeParameters.DesEdeParameters(Byte())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.DesEdeParameters(System.Byte())
+  name.vb: DesEdeParameters(Byte())
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.#ctor(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.#ctor(System.Byte[],System.Int32,System.Int32)
+  id: '#ctor(System.Byte[],System.Int32,System.Int32)'
+  parent: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  langs:
+  - csharp
+  - vb
+  name: DesEdeParameters(Byte[], Int32, Int32)
+  nameWithType: DesEdeParameters.DesEdeParameters(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.DesEdeParameters(System.Byte[], System.Int32, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 112914
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public DesEdeParameters(byte[] key, int keyOff, int keyLen)
+    parameters:
+    - id: key
+      type: System.Byte[]
+    - id: keyOff
+      type: System.Int32
+    - id: keyLen
+      type: System.Int32
+    content.vb: Public Sub New(key As Byte(), keyOff As Integer, keyLen As Integer)
+  overload: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.#ctor*
+  nameWithType.vb: DesEdeParameters.DesEdeParameters(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.DesEdeParameters(System.Byte(), System.Int32, System.Int32)
+  name.vb: DesEdeParameters(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[],System.Int32,System.Int32)
+  id: IsWeakKey(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  langs:
+  - csharp
+  - vb
+  name: IsWeakKey(Byte[], Int32, Int32)
+  nameWithType: DesEdeParameters.IsWeakKey(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: IsWeakKey
+    path: ''
+    startLine: 112929
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  example: []
+  syntax:
+    content: public static bool IsWeakKey(byte[] key, int offset, int length)
+    parameters:
+    - id: key
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: length
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsWeakKey(key As Byte(), offset As Integer, length As Integer) As Boolean
+  overload: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey*
+  nameWithType.vb: DesEdeParameters.IsWeakKey(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte(), System.Int32, System.Int32)
+  name.vb: IsWeakKey(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[],System.Int32)
+  id: IsWeakKey(System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  langs:
+  - csharp
+  - vb
+  name: IsWeakKey(Byte[], Int32)
+  nameWithType: DesEdeParameters.IsWeakKey(Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: IsWeakKey
+    path: ''
+    startLine: 112951
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  example: []
+  syntax:
+    content: public static bool IsWeakKey(byte[] key, int offset)
+    parameters:
+    - id: key
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsWeakKey(key As Byte(), offset As Integer) As Boolean
+  overload: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey*
+  nameWithType.vb: DesEdeParameters.IsWeakKey(Byte(), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte(), System.Int32)
+  name.vb: IsWeakKey(Byte(), Int32)
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[])
+  id: IsWeakKey(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  langs:
+  - csharp
+  - vb
+  name: IsWeakKey(Byte[])
+  nameWithType: DesEdeParameters.IsWeakKey(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte[])
+  type: Method
+  source:
+    id: IsWeakKey
+    path: ''
+    startLine: 112958
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public static bool IsWeakKey(byte[] key)
+    parameters:
+    - id: key
+      type: System.Byte[]
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsWeakKey(key As Byte()) As Boolean
+  overload: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey*
+  nameWithType.vb: DesEdeParameters.IsWeakKey(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey(System.Byte())
+  name.vb: IsWeakKey(Byte())
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsRealEdeKey(System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsRealEdeKey(System.Byte[],System.Int32)
+  id: IsRealEdeKey(System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  langs:
+  - csharp
+  - vb
+  name: IsRealEdeKey(Byte[], Int32)
+  nameWithType: DesEdeParameters.IsRealEdeKey(Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsRealEdeKey(System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: IsRealEdeKey
+    path: ''
+    startLine: 112970
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  example: []
+  syntax:
+    content: public static bool IsRealEdeKey(byte[] key, int offset)
+    parameters:
+    - id: key
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsRealEdeKey(key As Byte(), offset As Integer) As Boolean
+  overload: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsRealEdeKey*
+  nameWithType.vb: DesEdeParameters.IsRealEdeKey(Byte(), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsRealEdeKey(System.Byte(), System.Int32)
+  name.vb: IsRealEdeKey(Byte(), Int32)
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal2Key(System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal2Key(System.Byte[],System.Int32)
+  id: IsReal2Key(System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  langs:
+  - csharp
+  - vb
+  name: IsReal2Key(Byte[], Int32)
+  nameWithType: DesEdeParameters.IsReal2Key(Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal2Key(System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: IsReal2Key
+    path: ''
+    startLine: 112981
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  example: []
+  syntax:
+    content: public static bool IsReal2Key(byte[] key, int offset)
+    parameters:
+    - id: key
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsReal2Key(key As Byte(), offset As Integer) As Boolean
+  overload: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal2Key*
+  nameWithType.vb: DesEdeParameters.IsReal2Key(Byte(), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal2Key(System.Byte(), System.Int32)
+  name.vb: IsReal2Key(Byte(), Int32)
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal3Key(System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal3Key(System.Byte[],System.Int32)
+  id: IsReal3Key(System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters
+  langs:
+  - csharp
+  - vb
+  name: IsReal3Key(Byte[], Int32)
+  nameWithType: DesEdeParameters.IsReal3Key(Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal3Key(System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: IsReal3Key
+    path: ''
+    startLine: 112997
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  example: []
+  syntax:
+    content: public static bool IsReal3Key(byte[] key, int offset)
+    parameters:
+    - id: key
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsReal3Key(key As Byte(), offset As Integer) As Boolean
+  overload: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal3Key*
+  nameWithType.vb: DesEdeParameters.IsReal3Key(Byte(), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal3Key(System.Byte(), System.Int32)
+  name.vb: IsReal3Key(Byte(), Int32)
+references:
+- uid: Org.BouncyCastle.Crypto.Parameters
+  commentId: N:Org.BouncyCastle.Crypto.Parameters
+  name: Org.BouncyCastle.Crypto.Parameters
+  nameWithType: Org.BouncyCastle.Crypto.Parameters
+  fullName: Org.BouncyCastle.Crypto.Parameters
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.Parameters.KeyParameter
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.KeyParameter
+  parent: Org.BouncyCastle.Crypto.Parameters
+  name: KeyParameter
+  nameWithType: KeyParameter
+  fullName: Org.BouncyCastle.Crypto.Parameters.KeyParameter
+- uid: Org.BouncyCastle.Crypto.Parameters.DesParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.DesParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  name: DesParameters
+  nameWithType: DesParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesParameters
+- uid: Org.BouncyCastle.Crypto.ICipherParameters
+  commentId: T:Org.BouncyCastle.Crypto.ICipherParameters
+  parent: Org.BouncyCastle.Crypto
+  name: ICipherParameters
+  nameWithType: ICipherParameters
+  fullName: Org.BouncyCastle.Crypto.ICipherParameters
+- uid: Org.BouncyCastle.Crypto.Parameters.DesParameters.DesKeyLength
+  commentId: F:Org.BouncyCastle.Crypto.Parameters.DesParameters.DesKeyLength
+  parent: Org.BouncyCastle.Crypto.Parameters.DesParameters
+  name: DesKeyLength
+  nameWithType: DesParameters.DesKeyLength
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesParameters.DesKeyLength
+- uid: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte)
+  parent: Org.BouncyCastle.Crypto.Parameters.DesParameters
+  isExternal: true
+  name: SetOddParity(Byte)
+  nameWithType: DesParameters.SetOddParity(Byte)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte)
+    name: SetOddParity
+    nameWithType: DesParameters.SetOddParity
+    fullName: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte)
+    name: SetOddParity
+    nameWithType: DesParameters.SetOddParity
+    fullName: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Parameters.DesParameters
+  isExternal: true
+  name: SetOddParity(Byte[])
+  nameWithType: DesParameters.SetOddParity(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[])
+  nameWithType.vb: DesParameters.SetOddParity(Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte())
+  name.vb: SetOddParity(Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[])
+    name: SetOddParity
+    nameWithType: DesParameters.SetOddParity
+    fullName: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[])
+    name: SetOddParity
+    nameWithType: DesParameters.SetOddParity
+    fullName: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Parameters.DesParameters
+  isExternal: true
+  name: SetOddParity(Byte[], Int32, Int32)
+  nameWithType: DesParameters.SetOddParity(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: DesParameters.SetOddParity(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte(), System.Int32, System.Int32)
+  name.vb: SetOddParity(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[],System.Int32,System.Int32)
+    name: SetOddParity
+    nameWithType: DesParameters.SetOddParity
+    fullName: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity(System.Byte[],System.Int32,System.Int32)
+    name: SetOddParity
+    nameWithType: DesParameters.SetOddParity
+    fullName: Org.BouncyCastle.Crypto.Parameters.DesParameters.SetOddParity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Parameters.KeyParameter.GetKey
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.KeyParameter.GetKey
+  parent: Org.BouncyCastle.Crypto.Parameters.KeyParameter
+  name: GetKey()
+  nameWithType: KeyParameter.GetKey()
+  fullName: Org.BouncyCastle.Crypto.Parameters.KeyParameter.GetKey()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Parameters.KeyParameter.GetKey
+    name: GetKey
+    nameWithType: KeyParameter.GetKey
+    fullName: Org.BouncyCastle.Crypto.Parameters.KeyParameter.GetKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Parameters.KeyParameter.GetKey
+    name: GetKey
+    nameWithType: KeyParameter.GetKey
+    fullName: Org.BouncyCastle.Crypto.Parameters.KeyParameter.GetKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.#ctor
+  name: DesEdeParameters
+  nameWithType: DesEdeParameters.DesEdeParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.DesEdeParameters
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey
+  name: IsWeakKey
+  nameWithType: DesEdeParameters.IsWeakKey
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsWeakKey
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsRealEdeKey*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsRealEdeKey
+  name: IsRealEdeKey
+  nameWithType: DesEdeParameters.IsRealEdeKey
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsRealEdeKey
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal2Key*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal2Key
+  name: IsReal2Key
+  nameWithType: DesEdeParameters.IsReal2Key
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal2Key
+- uid: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal3Key*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal3Key
+  name: IsReal3Key
+  nameWithType: DesEdeParameters.IsReal3Key
+  fullName: Org.BouncyCastle.Crypto.Parameters.DesEdeParameters.IsReal3Key

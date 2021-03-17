@@ -1,0 +1,529 @@
+### YamlMime:ManagedReference
+items:
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
+  commentId: T:Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
+  id: UdpAsyncReceiveState
+  parent: Winpeak.Client.Networking.SocketServer
+  children:
+  - Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor(UdpClient,IPEndPoint)
+  - Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult(System.IAsyncResult@)
+  langs:
+  - csharp
+  - vb
+  name: UdpAsyncReceiveState
+  nameWithType: UdpAsyncReceiveState
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
+  type: Class
+  source:
+    id: UdpAsyncReceiveState
+    path: ''
+    startLine: 168221
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: 'public class UdpAsyncReceiveState : UdpAsyncStateController'
+    content.vb: >-
+      Public Class UdpAsyncReceiveState
+          Inherits UdpAsyncStateController
+  inheritance:
+  - System.Object
+  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  inheritedMembers:
+  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
+  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController._controlIpEndPoint
+  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.IsOperationDone
+  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.operationResult
+  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.IsOperationProceedBytes
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor(UdpClient,IPEndPoint)
+  commentId: M:Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor(UdpClient,IPEndPoint)
+  id: '#ctor(UdpClient,IPEndPoint)'
+  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
+  langs:
+  - csharp
+  - vb
+  name: UdpAsyncReceiveState(UdpClient, IPEndPoint)
+  nameWithType: UdpAsyncReceiveState.UdpAsyncReceiveState(UdpClient, IPEndPoint)
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.UdpAsyncReceiveState(UdpClient, IPEndPoint)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 168223
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public UdpAsyncReceiveState(UdpClient sender, IPEndPoint controlEndPoint)
+    parameters:
+    - id: sender
+      type: UdpClient
+    - id: controlEndPoint
+      type: IPEndPoint
+    content.vb: Public Sub New(sender As UdpClient, controlEndPoint As IPEndPoint)
+  overload: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult(System.IAsyncResult@)
+  commentId: M:Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult(System.IAsyncResult@)
+  id: GetResult(System.IAsyncResult@)
+  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
+  langs:
+  - csharp
+  - vb
+  name: GetResult(ref IAsyncResult)
+  nameWithType: UdpAsyncReceiveState.GetResult(ref IAsyncResult)
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult(ref System.IAsyncResult)
+  type: Method
+  source:
+    id: GetResult
+    path: ''
+    startLine: 168233
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  summary: "\n<p>Аргумент резалт требуется для имплементации интерфейса, но структура инкапсулирует в себе те данные,</p>\n<p>которые в нём передаются ссылочно, чтобы избежать боксинга-анбоксинга, т.к операций будет много - </p>\n<p>оверхет нафиг не нужен.</p>\n<p>EndReceive вызывается внутри</p>\n"
+  example: []
+  syntax:
+    content: public override string GetResult(ref IAsyncResult result)
+    parameters:
+    - id: result
+      type: System.IAsyncResult
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Overrides Function GetResult(ByRef result As IAsyncResult) As String
+  overridden: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.GetResult(System.IAsyncResult@)
+  overload: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult*
+  nameWithType.vb: UdpAsyncReceiveState.GetResult(ByRef IAsyncResult)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult(ByRef System.IAsyncResult)
+  name.vb: GetResult(ByRef IAsyncResult)
+references:
+- uid: Winpeak.Client.Networking.SocketServer
+  commentId: N:Winpeak.Client.Networking.SocketServer
+  name: Winpeak.Client.Networking.SocketServer
+  nameWithType: Winpeak.Client.Networking.SocketServer
+  fullName: Winpeak.Client.Networking.SocketServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  commentId: T:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  parent: Winpeak.Client.Networking.SocketServer
+  name: UdpAsyncStateController
+  nameWithType: UdpAsyncStateController
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
+  commentId: F:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
+  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  name: UdpClient
+  nameWithType: UdpAsyncStateController.UdpClient
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController._controlIpEndPoint
+  commentId: F:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController._controlIpEndPoint
+  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  name: _controlIpEndPoint
+  nameWithType: UdpAsyncStateController._controlIpEndPoint
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController._controlIpEndPoint
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.IsOperationDone
+  commentId: P:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.IsOperationDone
+  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  name: IsOperationDone
+  nameWithType: UdpAsyncStateController.IsOperationDone
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.IsOperationDone
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.operationResult
+  commentId: F:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.operationResult
+  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  name: operationResult
+  nameWithType: UdpAsyncStateController.operationResult
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.operationResult
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.IsOperationProceedBytes
+  commentId: P:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.IsOperationProceedBytes
+  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  name: IsOperationProceedBytes
+  nameWithType: UdpAsyncStateController.IsOperationProceedBytes
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.IsOperationProceedBytes
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor
+  name: UdpAsyncReceiveState
+  nameWithType: UdpAsyncReceiveState.UdpAsyncReceiveState
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.UdpAsyncReceiveState
+- uid: UdpClient
+  isExternal: true
+  name: UdpClient
+  nameWithType: UdpClient
+  fullName: UdpClient
+- uid: IPEndPoint
+  isExternal: true
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: IPEndPoint
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.GetResult(System.IAsyncResult@)
+  commentId: M:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.GetResult(System.IAsyncResult@)
+  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  isExternal: true
+  name: GetResult(IAsyncResult)
+  nameWithType: UdpAsyncStateController.GetResult(IAsyncResult)
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.GetResult(System.IAsyncResult)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.GetResult(System.IAsyncResult@)
+    name: GetResult
+    nameWithType: UdpAsyncStateController.GetResult
+    fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.GetResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    nameWithType: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.GetResult(System.IAsyncResult@)
+    name: GetResult
+    nameWithType: UdpAsyncStateController.GetResult
+    fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.GetResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IAsyncResult
+    name: IAsyncResult
+    nameWithType: IAsyncResult
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult
+  name: GetResult
+  nameWithType: UdpAsyncReceiveState.GetResult
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

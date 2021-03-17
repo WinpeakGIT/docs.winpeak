@@ -1,0 +1,1036 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner
+  commentId: T:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner
+  id: DsaDigestSigner
+  parent: Org.BouncyCastle.Crypto.Signers
+  children:
+  - Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.#ctor(Org.BouncyCastle.Crypto.IDsa,Org.BouncyCastle.Crypto.IDigest)
+  - Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.AlgorithmName
+  - Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.GenerateSignature
+  - Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  - Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Reset
+  - Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Update(System.Byte)
+  - Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.VerifySignature(System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: DsaDigestSigner
+  nameWithType: DsaDigestSigner
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner
+  type: Class
+  source:
+    id: DsaDigestSigner
+    path: ''
+    startLine: 121695
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  syntax:
+    content: 'public class DsaDigestSigner : ISigner'
+    content.vb: >-
+      Public Class DsaDigestSigner
+          Implements ISigner
+  inheritance:
+  - System.Object
+  implements:
+  - Org.BouncyCastle.Crypto.ISigner
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.#ctor(Org.BouncyCastle.Crypto.IDsa,Org.BouncyCastle.Crypto.IDigest)
+  commentId: M:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.#ctor(Org.BouncyCastle.Crypto.IDsa,Org.BouncyCastle.Crypto.IDigest)
+  id: '#ctor(Org.BouncyCastle.Crypto.IDsa,Org.BouncyCastle.Crypto.IDigest)'
+  parent: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner
+  langs:
+  - csharp
+  - vb
+  name: DsaDigestSigner(IDsa, IDigest)
+  nameWithType: DsaDigestSigner.DsaDigestSigner(IDsa, IDigest)
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.DsaDigestSigner(Org.BouncyCastle.Crypto.IDsa, Org.BouncyCastle.Crypto.IDigest)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 121702
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  syntax:
+    content: public DsaDigestSigner(IDsa signer, IDigest digest)
+    parameters:
+    - id: signer
+      type: Org.BouncyCastle.Crypto.IDsa
+    - id: digest
+      type: Org.BouncyCastle.Crypto.IDigest
+    content.vb: Public Sub New(signer As IDsa, digest As IDigest)
+  overload: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.AlgorithmName
+  id: AlgorithmName
+  parent: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner
+  langs:
+  - csharp
+  - vb
+  name: AlgorithmName
+  nameWithType: DsaDigestSigner.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.AlgorithmName
+  type: Property
+  source:
+    id: AlgorithmName
+    path: ''
+    startLine: 121710
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  syntax:
+    content: public virtual string AlgorithmName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property AlgorithmName As String
+  overload: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.AlgorithmName*
+  implements:
+  - Org.BouncyCastle.Crypto.ISigner.AlgorithmName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  id: Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  parent: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner
+  langs:
+  - csharp
+  - vb
+  name: Init(Boolean, ICipherParameters)
+  nameWithType: DsaDigestSigner.Init(Boolean, ICipherParameters)
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Init(System.Boolean, Org.BouncyCastle.Crypto.ICipherParameters)
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 121715
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  syntax:
+    content: public virtual void Init(bool forSigning, ICipherParameters parameters)
+    parameters:
+    - id: forSigning
+      type: System.Boolean
+    - id: parameters
+      type: Org.BouncyCastle.Crypto.ICipherParameters
+    content.vb: Public Overridable Sub Init(forSigning As Boolean, parameters As ICipherParameters)
+  overload: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Init*
+  implements:
+  - Org.BouncyCastle.Crypto.ISigner.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Update(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Update(System.Byte)
+  id: Update(System.Byte)
+  parent: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner
+  langs:
+  - csharp
+  - vb
+  name: Update(Byte)
+  nameWithType: DsaDigestSigner.Update(Byte)
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Update(System.Byte)
+  type: Method
+  source:
+    id: Update
+    path: ''
+    startLine: 121746
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  example: []
+  syntax:
+    content: public virtual void Update(byte input)
+    parameters:
+    - id: input
+      type: System.Byte
+    content.vb: Public Overridable Sub Update(input As Byte)
+  overload: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Update*
+  implements:
+  - Org.BouncyCastle.Crypto.ISigner.Update(System.Byte)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  id: BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner
+  langs:
+  - csharp
+  - vb
+  name: BlockUpdate(Byte[], Int32, Int32)
+  nameWithType: DsaDigestSigner.BlockUpdate(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.BlockUpdate(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: BlockUpdate
+    path: ''
+    startLine: 121755
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  example: []
+  syntax:
+    content: public virtual void BlockUpdate(byte[] input, int inOff, int length)
+    parameters:
+    - id: input
+      type: System.Byte[]
+    - id: inOff
+      type: System.Int32
+    - id: length
+      type: System.Int32
+    content.vb: Public Overridable Sub BlockUpdate(input As Byte(), inOff As Integer, length As Integer)
+  overload: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.BlockUpdate*
+  implements:
+  - Org.BouncyCastle.Crypto.ISigner.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  nameWithType.vb: DsaDigestSigner.BlockUpdate(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.BlockUpdate(System.Byte(), System.Int32, System.Int32)
+  name.vb: BlockUpdate(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.GenerateSignature
+  commentId: M:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.GenerateSignature
+  id: GenerateSignature
+  parent: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner
+  langs:
+  - csharp
+  - vb
+  name: GenerateSignature()
+  nameWithType: DsaDigestSigner.GenerateSignature()
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.GenerateSignature()
+  type: Method
+  source:
+    id: GenerateSignature
+    path: ''
+    startLine: 121767
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  example: []
+  syntax:
+    content: public virtual byte[] GenerateSignature()
+    return:
+      type: System.Byte[]
+    content.vb: Public Overridable Function GenerateSignature As Byte()
+  overload: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.GenerateSignature*
+  implements:
+  - Org.BouncyCastle.Crypto.ISigner.GenerateSignature
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.VerifySignature(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.VerifySignature(System.Byte[])
+  id: VerifySignature(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner
+  langs:
+  - csharp
+  - vb
+  name: VerifySignature(Byte[])
+  nameWithType: DsaDigestSigner.VerifySignature(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.VerifySignature(System.Byte[])
+  type: Method
+  source:
+    id: VerifySignature
+    path: ''
+    startLine: 121781
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  example: []
+  syntax:
+    content: public virtual bool VerifySignature(byte[] signature)
+    parameters:
+    - id: signature
+      type: System.Byte[]
+    return:
+      type: System.Boolean
+      description: true if the internal state represents the signature described in the passed in array.
+    content.vb: Public Overridable Function VerifySignature(signature As Byte()) As Boolean
+  overload: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.VerifySignature*
+  implements:
+  - Org.BouncyCastle.Crypto.ISigner.VerifySignature(System.Byte[])
+  nameWithType.vb: DsaDigestSigner.VerifySignature(Byte())
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.VerifySignature(System.Byte())
+  name.vb: VerifySignature(Byte())
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Reset
+  commentId: M:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Reset
+  id: Reset
+  parent: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: DsaDigestSigner.Reset()
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Reset()
+  type: Method
+  source:
+    id: Reset
+    path: ''
+    startLine: 121802
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  summary: Reset the internal state
+  example: []
+  syntax:
+    content: public virtual void Reset()
+    content.vb: Public Overridable Sub Reset
+  overload: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Reset*
+  implements:
+  - Org.BouncyCastle.Crypto.ISigner.Reset
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Org.BouncyCastle.Crypto.Signers
+  commentId: N:Org.BouncyCastle.Crypto.Signers
+  name: Org.BouncyCastle.Crypto.Signers
+  nameWithType: Org.BouncyCastle.Crypto.Signers
+  fullName: Org.BouncyCastle.Crypto.Signers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.ISigner
+  commentId: T:Org.BouncyCastle.Crypto.ISigner
+  parent: Org.BouncyCastle.Crypto
+  name: ISigner
+  nameWithType: ISigner
+  fullName: Org.BouncyCastle.Crypto.ISigner
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.#ctor
+  name: DsaDigestSigner
+  nameWithType: DsaDigestSigner.DsaDigestSigner
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.DsaDigestSigner
+- uid: Org.BouncyCastle.Crypto.IDsa
+  commentId: T:Org.BouncyCastle.Crypto.IDsa
+  parent: Org.BouncyCastle.Crypto
+  name: IDsa
+  nameWithType: IDsa
+  fullName: Org.BouncyCastle.Crypto.IDsa
+- uid: Org.BouncyCastle.Crypto.IDigest
+  commentId: T:Org.BouncyCastle.Crypto.IDigest
+  parent: Org.BouncyCastle.Crypto
+  name: IDigest
+  nameWithType: IDigest
+  fullName: Org.BouncyCastle.Crypto.IDigest
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.AlgorithmName*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.AlgorithmName
+  name: AlgorithmName
+  nameWithType: DsaDigestSigner.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.AlgorithmName
+- uid: Org.BouncyCastle.Crypto.ISigner.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.ISigner.AlgorithmName
+  parent: Org.BouncyCastle.Crypto.ISigner
+  name: AlgorithmName
+  nameWithType: ISigner.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.ISigner.AlgorithmName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Init*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Init
+  name: Init
+  nameWithType: DsaDigestSigner.Init
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Init
+- uid: Org.BouncyCastle.Crypto.ISigner.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  commentId: M:Org.BouncyCastle.Crypto.ISigner.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  parent: Org.BouncyCastle.Crypto.ISigner
+  isExternal: true
+  name: Init(Boolean, ICipherParameters)
+  nameWithType: ISigner.Init(Boolean, ICipherParameters)
+  fullName: Org.BouncyCastle.Crypto.ISigner.Init(System.Boolean, Org.BouncyCastle.Crypto.ICipherParameters)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.ISigner.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+    name: Init
+    nameWithType: ISigner.Init
+    fullName: Org.BouncyCastle.Crypto.ISigner.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.ICipherParameters
+    name: ICipherParameters
+    nameWithType: ICipherParameters
+    fullName: Org.BouncyCastle.Crypto.ICipherParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.ISigner.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+    name: Init
+    nameWithType: ISigner.Init
+    fullName: Org.BouncyCastle.Crypto.ISigner.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.ICipherParameters
+    name: ICipherParameters
+    nameWithType: ICipherParameters
+    fullName: Org.BouncyCastle.Crypto.ICipherParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.ICipherParameters
+  commentId: T:Org.BouncyCastle.Crypto.ICipherParameters
+  parent: Org.BouncyCastle.Crypto
+  name: ICipherParameters
+  nameWithType: ICipherParameters
+  fullName: Org.BouncyCastle.Crypto.ICipherParameters
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Update*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Update
+  name: Update
+  nameWithType: DsaDigestSigner.Update
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Update
+- uid: Org.BouncyCastle.Crypto.ISigner.Update(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.ISigner.Update(System.Byte)
+  parent: Org.BouncyCastle.Crypto.ISigner
+  isExternal: true
+  name: Update(Byte)
+  nameWithType: ISigner.Update(Byte)
+  fullName: Org.BouncyCastle.Crypto.ISigner.Update(System.Byte)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.ISigner.Update(System.Byte)
+    name: Update
+    nameWithType: ISigner.Update
+    fullName: Org.BouncyCastle.Crypto.ISigner.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.ISigner.Update(System.Byte)
+    name: Update
+    nameWithType: ISigner.Update
+    fullName: Org.BouncyCastle.Crypto.ISigner.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.BlockUpdate*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.BlockUpdate
+  name: BlockUpdate
+  nameWithType: DsaDigestSigner.BlockUpdate
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.BlockUpdate
+- uid: Org.BouncyCastle.Crypto.ISigner.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.ISigner.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.ISigner
+  isExternal: true
+  name: BlockUpdate(Byte[], Int32, Int32)
+  nameWithType: ISigner.BlockUpdate(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.ISigner.BlockUpdate(System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: ISigner.BlockUpdate(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.ISigner.BlockUpdate(System.Byte(), System.Int32, System.Int32)
+  name.vb: BlockUpdate(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.ISigner.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+    name: BlockUpdate
+    nameWithType: ISigner.BlockUpdate
+    fullName: Org.BouncyCastle.Crypto.ISigner.BlockUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.ISigner.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+    name: BlockUpdate
+    nameWithType: ISigner.BlockUpdate
+    fullName: Org.BouncyCastle.Crypto.ISigner.BlockUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.GenerateSignature*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.GenerateSignature
+  name: GenerateSignature
+  nameWithType: DsaDigestSigner.GenerateSignature
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.GenerateSignature
+- uid: Org.BouncyCastle.Crypto.ISigner.GenerateSignature
+  commentId: M:Org.BouncyCastle.Crypto.ISigner.GenerateSignature
+  parent: Org.BouncyCastle.Crypto.ISigner
+  name: GenerateSignature()
+  nameWithType: ISigner.GenerateSignature()
+  fullName: Org.BouncyCastle.Crypto.ISigner.GenerateSignature()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.ISigner.GenerateSignature
+    name: GenerateSignature
+    nameWithType: ISigner.GenerateSignature
+    fullName: Org.BouncyCastle.Crypto.ISigner.GenerateSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.ISigner.GenerateSignature
+    name: GenerateSignature
+    nameWithType: ISigner.GenerateSignature
+    fullName: Org.BouncyCastle.Crypto.ISigner.GenerateSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.VerifySignature*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.VerifySignature
+  name: VerifySignature
+  nameWithType: DsaDigestSigner.VerifySignature
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.VerifySignature
+- uid: Org.BouncyCastle.Crypto.ISigner.VerifySignature(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.ISigner.VerifySignature(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.ISigner
+  isExternal: true
+  name: VerifySignature(Byte[])
+  nameWithType: ISigner.VerifySignature(Byte[])
+  fullName: Org.BouncyCastle.Crypto.ISigner.VerifySignature(System.Byte[])
+  nameWithType.vb: ISigner.VerifySignature(Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.ISigner.VerifySignature(System.Byte())
+  name.vb: VerifySignature(Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.ISigner.VerifySignature(System.Byte[])
+    name: VerifySignature
+    nameWithType: ISigner.VerifySignature
+    fullName: Org.BouncyCastle.Crypto.ISigner.VerifySignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.ISigner.VerifySignature(System.Byte[])
+    name: VerifySignature
+    nameWithType: ISigner.VerifySignature
+    fullName: Org.BouncyCastle.Crypto.ISigner.VerifySignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Reset*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Reset
+  name: Reset
+  nameWithType: DsaDigestSigner.Reset
+  fullName: Org.BouncyCastle.Crypto.Signers.DsaDigestSigner.Reset
+- uid: Org.BouncyCastle.Crypto.ISigner.Reset
+  commentId: M:Org.BouncyCastle.Crypto.ISigner.Reset
+  parent: Org.BouncyCastle.Crypto.ISigner
+  name: Reset()
+  nameWithType: ISigner.Reset()
+  fullName: Org.BouncyCastle.Crypto.ISigner.Reset()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.ISigner.Reset
+    name: Reset
+    nameWithType: ISigner.Reset
+    fullName: Org.BouncyCastle.Crypto.ISigner.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.ISigner.Reset
+    name: Reset
+    nameWithType: ISigner.Reset
+    fullName: Org.BouncyCastle.Crypto.ISigner.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,709 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+  id: DHPublicKeyParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  children:
+  - Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.#ctor(BigInteger,Org.BouncyCastle.Crypto.Parameters.DHParameters)
+  - Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.#ctor(BigInteger,Org.BouncyCastle.Crypto.Parameters.DHParameters,DerObjectIdentifier)
+  - Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals(Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters)
+  - Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals(System.Object)
+  - Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.GetHashCode
+  - Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Y
+  langs:
+  - csharp
+  - vb
+  name: DHPublicKeyParameters
+  nameWithType: DHPublicKeyParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+  type: Class
+  source:
+    id: DHPublicKeyParameters
+    path: ''
+    startLine: 112569
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: 'public class DHPublicKeyParameters : DHKeyParameters, ICipherParameters'
+    content.vb: >-
+      Public Class DHPublicKeyParameters
+          Inherits DHKeyParameters
+          Implements ICipherParameters
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+  implements:
+  - Org.BouncyCastle.Crypto.ICipherParameters
+  inheritedMembers:
+  - Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Parameters
+  - Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.AlgorithmOid
+  - Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(Org.BouncyCastle.Crypto.Parameters.DHKeyParameters)
+  - Org.BouncyCastle.Crypto.AsymmetricKeyParameter.IsPrivate
+  - Org.BouncyCastle.Crypto.AsymmetricKeyParameter.Equals(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.#ctor(BigInteger,Org.BouncyCastle.Crypto.Parameters.DHParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.#ctor(BigInteger,Org.BouncyCastle.Crypto.Parameters.DHParameters)
+  id: '#ctor(BigInteger,Org.BouncyCastle.Crypto.Parameters.DHParameters)'
+  parent: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+  langs:
+  - csharp
+  - vb
+  name: DHPublicKeyParameters(BigInteger, DHParameters)
+  nameWithType: DHPublicKeyParameters.DHPublicKeyParameters(BigInteger, DHParameters)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.DHPublicKeyParameters(BigInteger, Org.BouncyCastle.Crypto.Parameters.DHParameters)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 112574
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public DHPublicKeyParameters(BigInteger y, DHParameters parameters)
+    parameters:
+    - id: y
+      type: BigInteger
+    - id: parameters
+      type: Org.BouncyCastle.Crypto.Parameters.DHParameters
+    content.vb: Public Sub New(y As BigInteger, parameters As DHParameters)
+  overload: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.#ctor(BigInteger,Org.BouncyCastle.Crypto.Parameters.DHParameters,DerObjectIdentifier)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.#ctor(BigInteger,Org.BouncyCastle.Crypto.Parameters.DHParameters,DerObjectIdentifier)
+  id: '#ctor(BigInteger,Org.BouncyCastle.Crypto.Parameters.DHParameters,DerObjectIdentifier)'
+  parent: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+  langs:
+  - csharp
+  - vb
+  name: DHPublicKeyParameters(BigInteger, DHParameters, DerObjectIdentifier)
+  nameWithType: DHPublicKeyParameters.DHPublicKeyParameters(BigInteger, DHParameters, DerObjectIdentifier)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.DHPublicKeyParameters(BigInteger, Org.BouncyCastle.Crypto.Parameters.DHParameters, DerObjectIdentifier)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 112585
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public DHPublicKeyParameters(BigInteger y, DHParameters parameters, DerObjectIdentifier algorithmOid)
+    parameters:
+    - id: y
+      type: BigInteger
+    - id: parameters
+      type: Org.BouncyCastle.Crypto.Parameters.DHParameters
+    - id: algorithmOid
+      type: DerObjectIdentifier
+    content.vb: Public Sub New(y As BigInteger, parameters As DHParameters, algorithmOid As DerObjectIdentifier)
+  overload: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Y
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Y
+  id: Y
+  parent: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: DHPublicKeyParameters.Y
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Y
+  type: Property
+  source:
+    id: Y
+    path: ''
+    startLine: 112597
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public BigInteger Y { get; }
+    parameters: []
+    return:
+      type: BigInteger
+    content.vb: Public ReadOnly Property Y As BigInteger
+  overload: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Y*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals(System.Object)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: DHPublicKeyParameters.Equals(Object)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 112602
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(System.Object)
+  overload: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals(Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals(Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters)
+  id: Equals(Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters)
+  parent: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+  langs:
+  - csharp
+  - vb
+  name: Equals(DHPublicKeyParameters)
+  nameWithType: DHPublicKeyParameters.Equals(DHPublicKeyParameters)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals(Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 112616
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: protected bool Equals(DHPublicKeyParameters other)
+    parameters:
+    - id: other
+      type: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+    return:
+      type: System.Boolean
+    content.vb: Protected Function Equals(other As DHPublicKeyParameters) As Boolean
+  overload: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.GetHashCode
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.GetHashCode
+  id: GetHashCode
+  parent: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: DHPublicKeyParameters.GetHashCode()
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: ''
+    startLine: 112622
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.GetHashCode
+  overload: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Org.BouncyCastle.Crypto.Parameters
+  commentId: N:Org.BouncyCastle.Crypto.Parameters
+  name: Org.BouncyCastle.Crypto.Parameters
+  nameWithType: Org.BouncyCastle.Crypto.Parameters
+  fullName: Org.BouncyCastle.Crypto.Parameters
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  commentId: T:Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  parent: Org.BouncyCastle.Crypto
+  name: AsymmetricKeyParameter
+  nameWithType: AsymmetricKeyParameter
+  fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+- uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  name: DHKeyParameters
+  nameWithType: DHKeyParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+- uid: Org.BouncyCastle.Crypto.ICipherParameters
+  commentId: T:Org.BouncyCastle.Crypto.ICipherParameters
+  parent: Org.BouncyCastle.Crypto
+  name: ICipherParameters
+  nameWithType: ICipherParameters
+  fullName: Org.BouncyCastle.Crypto.ICipherParameters
+- uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Parameters
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Parameters
+  parent: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+  name: Parameters
+  nameWithType: DHKeyParameters.Parameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Parameters
+- uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.AlgorithmOid
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.AlgorithmOid
+  parent: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+  name: AlgorithmOid
+  nameWithType: DHKeyParameters.AlgorithmOid
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.AlgorithmOid
+- uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(Org.BouncyCastle.Crypto.Parameters.DHKeyParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(Org.BouncyCastle.Crypto.Parameters.DHKeyParameters)
+  parent: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+  name: Equals(DHKeyParameters)
+  nameWithType: DHKeyParameters.Equals(DHKeyParameters)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(Org.BouncyCastle.Crypto.Parameters.DHKeyParameters)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(Org.BouncyCastle.Crypto.Parameters.DHKeyParameters)
+    name: Equals
+    nameWithType: DHKeyParameters.Equals
+    fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+    name: DHKeyParameters
+    nameWithType: DHKeyParameters
+    fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(Org.BouncyCastle.Crypto.Parameters.DHKeyParameters)
+    name: Equals
+    nameWithType: DHKeyParameters.Equals
+    fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+    name: DHKeyParameters
+    nameWithType: DHKeyParameters
+    fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter.IsPrivate
+  commentId: P:Org.BouncyCastle.Crypto.AsymmetricKeyParameter.IsPrivate
+  parent: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  name: IsPrivate
+  nameWithType: AsymmetricKeyParameter.IsPrivate
+  fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter.IsPrivate
+- uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter.Equals(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  commentId: M:Org.BouncyCastle.Crypto.AsymmetricKeyParameter.Equals(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  parent: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  name: Equals(AsymmetricKeyParameter)
+  nameWithType: AsymmetricKeyParameter.Equals(AsymmetricKeyParameter)
+  fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter.Equals(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter.Equals(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: Equals
+    nameWithType: AsymmetricKeyParameter.Equals
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter.Equals(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: Equals
+    nameWithType: AsymmetricKeyParameter.Equals
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.#ctor
+  name: DHPublicKeyParameters
+  nameWithType: DHPublicKeyParameters.DHPublicKeyParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.DHPublicKeyParameters
+- uid: BigInteger
+  isExternal: true
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: BigInteger
+- uid: Org.BouncyCastle.Crypto.Parameters.DHParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.DHParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  name: DHParameters
+  nameWithType: DHParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHParameters
+- uid: DerObjectIdentifier
+  isExternal: true
+  name: DerObjectIdentifier
+  nameWithType: DerObjectIdentifier
+  fullName: DerObjectIdentifier
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Y*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Y
+  name: Y
+  nameWithType: DHPublicKeyParameters.Y
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Y
+- uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(System.Object)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(System.Object)
+  parent: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: DHKeyParameters.Equals(Object)
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(System.Object)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(System.Object)
+    name: Equals
+    nameWithType: DHKeyParameters.Equals
+    fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals(System.Object)
+    name: Equals
+    nameWithType: DHKeyParameters.Equals
+    fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals
+  name: Equals
+  nameWithType: DHPublicKeyParameters.Equals
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  name: DHPublicKeyParameters
+  nameWithType: DHPublicKeyParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters
+- uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.GetHashCode
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.GetHashCode
+  parent: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters
+  name: GetHashCode()
+  nameWithType: DHKeyParameters.GetHashCode()
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.GetHashCode()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.GetHashCode
+    name: GetHashCode
+    nameWithType: DHKeyParameters.GetHashCode
+    fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.GetHashCode
+    name: GetHashCode
+    nameWithType: DHKeyParameters.GetHashCode
+    fullName: Org.BouncyCastle.Crypto.Parameters.DHKeyParameters.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.GetHashCode*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.GetHashCode
+  name: GetHashCode
+  nameWithType: DHPublicKeyParameters.GetHashCode
+  fullName: Org.BouncyCastle.Crypto.Parameters.DHPublicKeyParameters.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

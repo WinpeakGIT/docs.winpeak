@@ -1,0 +1,1081 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsServer
+  id: TlsServer
+  parent: Org.BouncyCastle.Crypto.Tls
+  children:
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateRequest
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateStatus
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.GetCredentials
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.GetKeyExchange
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.GetNewSessionTicket
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCipherSuite
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCompressionMethod
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerExtensions
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerSupplementalData
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerVersion
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.Init(Org.BouncyCastle.Crypto.Tls.TlsServerContext)
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientVersion(Org.BouncyCastle.Crypto.Tls.ProtocolVersion)
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyFallback(System.Boolean)
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCipherSuites(System.Int32[])
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCompressionMethods(System.Byte[])
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientExtensions(System.Collections.IDictionary)
+  - Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientSupplementalData(System.Collections.IList)
+  langs:
+  - csharp
+  - vb
+  name: TlsServer
+  nameWithType: TlsServer
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer
+  type: Interface
+  source:
+    id: TlsServer
+    path: ''
+    startLine: 136111
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: 'public interface TlsServer : TlsPeer'
+    content.vb: >-
+      Public Interface TlsServer
+          Inherits TlsPeer
+  inheritedMembers:
+  - Org.BouncyCastle.Crypto.Tls.TlsPeer.ShouldUseGmtUnixTime
+  - Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifySecureRenegotiation(System.Boolean)
+  - Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCompression
+  - Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCipher
+  - Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertRaised(System.Byte,System.Byte,System.String,System.Exception)
+  - Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertReceived(System.Byte,System.Byte)
+  - Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyHandshakeComplete
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.Init(Org.BouncyCastle.Crypto.Tls.TlsServerContext)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.Init(Org.BouncyCastle.Crypto.Tls.TlsServerContext)
+  id: Init(Org.BouncyCastle.Crypto.Tls.TlsServerContext)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: Init(TlsServerContext)
+  nameWithType: TlsServer.Init(TlsServerContext)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.Init(Org.BouncyCastle.Crypto.Tls.TlsServerContext)
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 136114
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: void Init(TlsServerContext context)
+    parameters:
+    - id: context
+      type: Org.BouncyCastle.Crypto.Tls.TlsServerContext
+    content.vb: Sub Init(context As TlsServerContext)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.Init*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientVersion(Org.BouncyCastle.Crypto.Tls.ProtocolVersion)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientVersion(Org.BouncyCastle.Crypto.Tls.ProtocolVersion)
+  id: NotifyClientVersion(Org.BouncyCastle.Crypto.Tls.ProtocolVersion)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: NotifyClientVersion(ProtocolVersion)
+  nameWithType: TlsServer.NotifyClientVersion(ProtocolVersion)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientVersion(Org.BouncyCastle.Crypto.Tls.ProtocolVersion)
+  type: Method
+  source:
+    id: NotifyClientVersion
+    path: ''
+    startLine: 136117
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: void NotifyClientVersion(ProtocolVersion clientVersion)
+    parameters:
+    - id: clientVersion
+      type: Org.BouncyCastle.Crypto.Tls.ProtocolVersion
+    content.vb: Sub NotifyClientVersion(clientVersion As ProtocolVersion)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientVersion*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyFallback(System.Boolean)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyFallback(System.Boolean)
+  id: NotifyFallback(System.Boolean)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: NotifyFallback(Boolean)
+  nameWithType: TlsServer.NotifyFallback(Boolean)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyFallback(System.Boolean)
+  type: Method
+  source:
+    id: NotifyFallback
+    path: ''
+    startLine: 136120
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: void NotifyFallback(bool isFallback)
+    parameters:
+    - id: isFallback
+      type: System.Boolean
+    content.vb: Sub NotifyFallback(isFallback As Boolean)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyFallback*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCipherSuites(System.Int32[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCipherSuites(System.Int32[])
+  id: NotifyOfferedCipherSuites(System.Int32[])
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: NotifyOfferedCipherSuites(Int32[])
+  nameWithType: TlsServer.NotifyOfferedCipherSuites(Int32[])
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCipherSuites(System.Int32[])
+  type: Method
+  source:
+    id: NotifyOfferedCipherSuites
+    path: ''
+    startLine: 136123
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: void NotifyOfferedCipherSuites(int[] offeredCipherSuites)
+    parameters:
+    - id: offeredCipherSuites
+      type: System.Int32[]
+    content.vb: Sub NotifyOfferedCipherSuites(offeredCipherSuites As Integer())
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCipherSuites*
+  nameWithType.vb: TlsServer.NotifyOfferedCipherSuites(Int32())
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCipherSuites(System.Int32())
+  name.vb: NotifyOfferedCipherSuites(Int32())
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCompressionMethods(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCompressionMethods(System.Byte[])
+  id: NotifyOfferedCompressionMethods(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: NotifyOfferedCompressionMethods(Byte[])
+  nameWithType: TlsServer.NotifyOfferedCompressionMethods(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCompressionMethods(System.Byte[])
+  type: Method
+  source:
+    id: NotifyOfferedCompressionMethods
+    path: ''
+    startLine: 136126
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: void NotifyOfferedCompressionMethods(byte[] offeredCompressionMethods)
+    parameters:
+    - id: offeredCompressionMethods
+      type: System.Byte[]
+    content.vb: Sub NotifyOfferedCompressionMethods(offeredCompressionMethods As Byte())
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCompressionMethods*
+  nameWithType.vb: TlsServer.NotifyOfferedCompressionMethods(Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCompressionMethods(System.Byte())
+  name.vb: NotifyOfferedCompressionMethods(Byte())
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientExtensions(System.Collections.IDictionary)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientExtensions(System.Collections.IDictionary)
+  id: ProcessClientExtensions(System.Collections.IDictionary)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: ProcessClientExtensions(IDictionary)
+  nameWithType: TlsServer.ProcessClientExtensions(IDictionary)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientExtensions(System.Collections.IDictionary)
+  type: Method
+  source:
+    id: ProcessClientExtensions
+    path: ''
+    startLine: 136130
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: void ProcessClientExtensions(IDictionary clientExtensions)
+    parameters:
+    - id: clientExtensions
+      type: System.Collections.IDictionary
+      description: A <xref href="System.Collections.IDictionary" data-throw-if-not-resolved="false"></xref> (Int32 -> byte[]). Will never be null.
+    content.vb: Sub ProcessClientExtensions(clientExtensions As IDictionary)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientExtensions*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerVersion
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerVersion
+  id: GetServerVersion
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: GetServerVersion()
+  nameWithType: TlsServer.GetServerVersion()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerVersion()
+  type: Method
+  source:
+    id: GetServerVersion
+    path: ''
+    startLine: 136133
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: ProtocolVersion GetServerVersion()
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.ProtocolVersion
+    content.vb: Function GetServerVersion As ProtocolVersion
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerVersion*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCipherSuite
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCipherSuite
+  id: GetSelectedCipherSuite
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: GetSelectedCipherSuite()
+  nameWithType: TlsServer.GetSelectedCipherSuite()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCipherSuite()
+  type: Method
+  source:
+    id: GetSelectedCipherSuite
+    path: ''
+    startLine: 136136
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: int GetSelectedCipherSuite()
+    return:
+      type: System.Int32
+    content.vb: Function GetSelectedCipherSuite As Integer
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCipherSuite*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCompressionMethod
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCompressionMethod
+  id: GetSelectedCompressionMethod
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: GetSelectedCompressionMethod()
+  nameWithType: TlsServer.GetSelectedCompressionMethod()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCompressionMethod()
+  type: Method
+  source:
+    id: GetSelectedCompressionMethod
+    path: ''
+    startLine: 136139
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: byte GetSelectedCompressionMethod()
+    return:
+      type: System.Byte
+    content.vb: Function GetSelectedCompressionMethod As Byte
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCompressionMethod*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerExtensions
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerExtensions
+  id: GetServerExtensions
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: GetServerExtensions()
+  nameWithType: TlsServer.GetServerExtensions()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerExtensions()
+  type: Method
+  source:
+    id: GetServerExtensions
+    path: ''
+    startLine: 136148
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  summary: "\nGet the (optional) table of server extensions to be included in (extended) server hello.\n"
+  example: []
+  syntax:
+    content: IDictionary GetServerExtensions()
+    return:
+      type: System.Collections.IDictionary
+      description: "\nA <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> (Int32 -> byte[]). May be null.\n"
+    content.vb: Function GetServerExtensions As IDictionary
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerExtensions*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerSupplementalData
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerSupplementalData
+  id: GetServerSupplementalData
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: GetServerSupplementalData()
+  nameWithType: TlsServer.GetServerSupplementalData()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerSupplementalData()
+  type: Method
+  source:
+    id: GetServerSupplementalData
+    path: ''
+    startLine: 136154
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: IList GetServerSupplementalData()
+    return:
+      type: System.Collections.IList
+      description: "\nA <xref href=\"System.Collections.IList\" data-throw-if-not-resolved=\"false\"></xref> (<xref href=\"Org.BouncyCastle.Crypto.Tls.SupplementalDataEntry\" data-throw-if-not-resolved=\"false\"></xref>). May be null.\n"
+    content.vb: Function GetServerSupplementalData As IList
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerSupplementalData*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCredentials
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.GetCredentials
+  id: GetCredentials
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: GetCredentials()
+  nameWithType: TlsServer.GetCredentials()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCredentials()
+  type: Method
+  source:
+    id: GetCredentials
+    path: ''
+    startLine: 136157
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: TlsCredentials GetCredentials()
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+    content.vb: Function GetCredentials As TlsCredentials
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCredentials*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateStatus
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateStatus
+  id: GetCertificateStatus
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: GetCertificateStatus()
+  nameWithType: TlsServer.GetCertificateStatus()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateStatus()
+  type: Method
+  source:
+    id: GetCertificateStatus
+    path: ''
+    startLine: 136167
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  remarks: "\nThis method will be called (only) if the server included an extension of type\n&quot;status_request&quot; with empty &quot;extension_data&quot; in the extended server hello. See <em>RFC 3546\n3.6. Certificate Status Request</em>. If a non-null <xref href=\"Org.BouncyCastle.Crypto.Tls.CertificateStatus\" data-throw-if-not-resolved=\"false\"></xref> is returned, it\nis sent to the client as a handshake message of type &quot;certificate_status&quot;.\n"
+  example: []
+  syntax:
+    content: CertificateStatus GetCertificateStatus()
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.CertificateStatus
+      description: A <xref href="Org.BouncyCastle.Crypto.Tls.CertificateStatus" data-throw-if-not-resolved="false"></xref> to be sent to the client (or null for none).
+    content.vb: Function GetCertificateStatus As CertificateStatus
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateStatus*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetKeyExchange
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.GetKeyExchange
+  id: GetKeyExchange
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: GetKeyExchange()
+  nameWithType: TlsServer.GetKeyExchange()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetKeyExchange()
+  type: Method
+  source:
+    id: GetKeyExchange
+    path: ''
+    startLine: 136170
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: TlsKeyExchange GetKeyExchange()
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.TlsKeyExchange
+    content.vb: Function GetKeyExchange As TlsKeyExchange
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.GetKeyExchange*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateRequest
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateRequest
+  id: GetCertificateRequest
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: GetCertificateRequest()
+  nameWithType: TlsServer.GetCertificateRequest()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateRequest()
+  type: Method
+  source:
+    id: GetCertificateRequest
+    path: ''
+    startLine: 136173
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: CertificateRequest GetCertificateRequest()
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+    content.vb: Function GetCertificateRequest As CertificateRequest
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateRequest*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientSupplementalData(System.Collections.IList)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientSupplementalData(System.Collections.IList)
+  id: ProcessClientSupplementalData(System.Collections.IList)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: ProcessClientSupplementalData(IList)
+  nameWithType: TlsServer.ProcessClientSupplementalData(IList)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientSupplementalData(System.Collections.IList)
+  type: Method
+  source:
+    id: ProcessClientSupplementalData
+    path: ''
+    startLine: 136177
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: void ProcessClientSupplementalData(IList clientSupplementalData)
+    parameters:
+    - id: clientSupplementalData
+      type: System.Collections.IList
+      description: <xref href="System.Collections.IList" data-throw-if-not-resolved="false"></xref> (<xref href="Org.BouncyCastle.Crypto.Tls.SupplementalDataEntry" data-throw-if-not-resolved="false"></xref>)
+    content.vb: Sub ProcessClientSupplementalData(clientSupplementalData As IList)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientSupplementalData*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  id: NotifyClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: NotifyClientCertificate(Certificate)
+  nameWithType: TlsServer.NotifyClientCertificate(Certificate)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  type: Method
+  source:
+    id: NotifyClientCertificate
+    path: ''
+    startLine: 136186
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  summary: "\nCalled by the protocol handler to report the client certificate, only if <code>GetCertificateRequest</code>\nreturned non-null.\n"
+  remarks: 'Note: this method is responsible for certificate verification and validation.'
+  example: []
+  syntax:
+    content: void NotifyClientCertificate(Certificate clientCertificate)
+    parameters:
+    - id: clientCertificate
+      type: Org.BouncyCastle.Crypto.Tls.Certificate
+      description: the effective client certificate (may be an empty chain).
+    content.vb: Sub NotifyClientCertificate(clientCertificate As Certificate)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientCertificate*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetNewSessionTicket
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsServer.GetNewSessionTicket
+  id: GetNewSessionTicket
+  parent: Org.BouncyCastle.Crypto.Tls.TlsServer
+  langs:
+  - csharp
+  - vb
+  name: GetNewSessionTicket()
+  nameWithType: TlsServer.GetNewSessionTicket()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetNewSessionTicket()
+  type: Method
+  source:
+    id: GetNewSessionTicket
+    path: ''
+    startLine: 136195
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  summary: RFC 5077 3.3. NewSessionTicket Handshake Message.
+  remarks: "\nThis method will be called (only) if a NewSessionTicket extension was sent by the server. See\n<em>RFC 5077 4. Recommended Ticket Construction</em> for recommended format and protection.\n"
+  example: []
+  syntax:
+    content: NewSessionTicket GetNewSessionTicket()
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.NewSessionTicket
+      description: The <xref href="Org.BouncyCastle.Crypto.Tls.NewSessionTicket" data-throw-if-not-resolved="false"></xref>)
+    content.vb: Function GetNewSessionTicket As NewSessionTicket
+  overload: Org.BouncyCastle.Crypto.Tls.TlsServer.GetNewSessionTicket*
+references:
+- uid: Org.BouncyCastle.Crypto.Tls
+  commentId: N:Org.BouncyCastle.Crypto.Tls
+  name: Org.BouncyCastle.Crypto.Tls
+  nameWithType: Org.BouncyCastle.Crypto.Tls
+  fullName: Org.BouncyCastle.Crypto.Tls
+- uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.ShouldUseGmtUnixTime
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsPeer.ShouldUseGmtUnixTime
+  parent: Org.BouncyCastle.Crypto.Tls.TlsPeer
+  name: ShouldUseGmtUnixTime()
+  nameWithType: TlsPeer.ShouldUseGmtUnixTime()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.ShouldUseGmtUnixTime()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.ShouldUseGmtUnixTime
+    name: ShouldUseGmtUnixTime
+    nameWithType: TlsPeer.ShouldUseGmtUnixTime
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.ShouldUseGmtUnixTime
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.ShouldUseGmtUnixTime
+    name: ShouldUseGmtUnixTime
+    nameWithType: TlsPeer.ShouldUseGmtUnixTime
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.ShouldUseGmtUnixTime
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifySecureRenegotiation(System.Boolean)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifySecureRenegotiation(System.Boolean)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsPeer
+  isExternal: true
+  name: NotifySecureRenegotiation(Boolean)
+  nameWithType: TlsPeer.NotifySecureRenegotiation(Boolean)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifySecureRenegotiation(System.Boolean)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifySecureRenegotiation(System.Boolean)
+    name: NotifySecureRenegotiation
+    nameWithType: TlsPeer.NotifySecureRenegotiation
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifySecureRenegotiation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifySecureRenegotiation(System.Boolean)
+    name: NotifySecureRenegotiation
+    nameWithType: TlsPeer.NotifySecureRenegotiation
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifySecureRenegotiation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCompression
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCompression
+  parent: Org.BouncyCastle.Crypto.Tls.TlsPeer
+  name: GetCompression()
+  nameWithType: TlsPeer.GetCompression()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCompression()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCompression
+    name: GetCompression
+    nameWithType: TlsPeer.GetCompression
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCompression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCompression
+    name: GetCompression
+    nameWithType: TlsPeer.GetCompression
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCompression
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCipher
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCipher
+  parent: Org.BouncyCastle.Crypto.Tls.TlsPeer
+  name: GetCipher()
+  nameWithType: TlsPeer.GetCipher()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCipher()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCipher
+    name: GetCipher
+    nameWithType: TlsPeer.GetCipher
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCipher
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCipher
+    name: GetCipher
+    nameWithType: TlsPeer.GetCipher
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.GetCipher
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertRaised(System.Byte,System.Byte,System.String,System.Exception)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertRaised(System.Byte,System.Byte,System.String,System.Exception)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsPeer
+  isExternal: true
+  name: NotifyAlertRaised(Byte, Byte, String, Exception)
+  nameWithType: TlsPeer.NotifyAlertRaised(Byte, Byte, String, Exception)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertRaised(System.Byte, System.Byte, System.String, System.Exception)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertRaised(System.Byte,System.Byte,System.String,System.Exception)
+    name: NotifyAlertRaised
+    nameWithType: TlsPeer.NotifyAlertRaised
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertRaised
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertRaised(System.Byte,System.Byte,System.String,System.Exception)
+    name: NotifyAlertRaised
+    nameWithType: TlsPeer.NotifyAlertRaised
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertRaised
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertReceived(System.Byte,System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertReceived(System.Byte,System.Byte)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsPeer
+  isExternal: true
+  name: NotifyAlertReceived(Byte, Byte)
+  nameWithType: TlsPeer.NotifyAlertReceived(Byte, Byte)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertReceived(System.Byte, System.Byte)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertReceived(System.Byte,System.Byte)
+    name: NotifyAlertReceived
+    nameWithType: TlsPeer.NotifyAlertReceived
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertReceived
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertReceived(System.Byte,System.Byte)
+    name: NotifyAlertReceived
+    nameWithType: TlsPeer.NotifyAlertReceived
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyAlertReceived
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyHandshakeComplete
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyHandshakeComplete
+  parent: Org.BouncyCastle.Crypto.Tls.TlsPeer
+  name: NotifyHandshakeComplete()
+  nameWithType: TlsPeer.NotifyHandshakeComplete()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyHandshakeComplete()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyHandshakeComplete
+    name: NotifyHandshakeComplete
+    nameWithType: TlsPeer.NotifyHandshakeComplete
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyHandshakeComplete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyHandshakeComplete
+    name: NotifyHandshakeComplete
+    nameWithType: TlsPeer.NotifyHandshakeComplete
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer.NotifyHandshakeComplete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsPeer
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsPeer
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsPeer
+  nameWithType: TlsPeer
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsPeer
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.Init*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.Init
+  name: Init
+  nameWithType: TlsServer.Init
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.Init
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServerContext
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsServerContext
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsServerContext
+  nameWithType: TlsServerContext
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServerContext
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientVersion*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientVersion
+  name: NotifyClientVersion
+  nameWithType: TlsServer.NotifyClientVersion
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientVersion
+- uid: Org.BouncyCastle.Crypto.Tls.ProtocolVersion
+  commentId: T:Org.BouncyCastle.Crypto.Tls.ProtocolVersion
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: ProtocolVersion
+  nameWithType: ProtocolVersion
+  fullName: Org.BouncyCastle.Crypto.Tls.ProtocolVersion
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyFallback*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyFallback
+  name: NotifyFallback
+  nameWithType: TlsServer.NotifyFallback
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyFallback
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCipherSuites*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCipherSuites
+  name: NotifyOfferedCipherSuites
+  nameWithType: TlsServer.NotifyOfferedCipherSuites
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCipherSuites
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCompressionMethods*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCompressionMethods
+  name: NotifyOfferedCompressionMethods
+  nameWithType: TlsServer.NotifyOfferedCompressionMethods
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyOfferedCompressionMethods
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.IDictionary
+  commentId: T:System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientExtensions*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientExtensions
+  name: ProcessClientExtensions
+  nameWithType: TlsServer.ProcessClientExtensions
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientExtensions
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerVersion*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerVersion
+  name: GetServerVersion
+  nameWithType: TlsServer.GetServerVersion
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerVersion
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCipherSuite*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCipherSuite
+  name: GetSelectedCipherSuite
+  nameWithType: TlsServer.GetSelectedCipherSuite
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCipherSuite
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCompressionMethod*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCompressionMethod
+  name: GetSelectedCompressionMethod
+  nameWithType: TlsServer.GetSelectedCompressionMethod
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetSelectedCompressionMethod
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerExtensions*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerExtensions
+  name: GetServerExtensions
+  nameWithType: TlsServer.GetServerExtensions
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerExtensions
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: Org.BouncyCastle.Crypto.Tls.SupplementalDataEntry
+  commentId: T:Org.BouncyCastle.Crypto.Tls.SupplementalDataEntry
+  name: SupplementalDataEntry
+  nameWithType: SupplementalDataEntry
+  fullName: Org.BouncyCastle.Crypto.Tls.SupplementalDataEntry
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerSupplementalData*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerSupplementalData
+  name: GetServerSupplementalData
+  nameWithType: TlsServer.GetServerSupplementalData
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetServerSupplementalData
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCredentials*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.GetCredentials
+  name: GetCredentials
+  nameWithType: TlsServer.GetCredentials
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCredentials
+- uid: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsCredentials
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsCredentials
+  nameWithType: TlsCredentials
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+- uid: Org.BouncyCastle.Crypto.Tls.CertificateStatus
+  commentId: T:Org.BouncyCastle.Crypto.Tls.CertificateStatus
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: CertificateStatus
+  nameWithType: CertificateStatus
+  fullName: Org.BouncyCastle.Crypto.Tls.CertificateStatus
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateStatus*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateStatus
+  name: GetCertificateStatus
+  nameWithType: TlsServer.GetCertificateStatus
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateStatus
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetKeyExchange*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.GetKeyExchange
+  name: GetKeyExchange
+  nameWithType: TlsServer.GetKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetKeyExchange
+- uid: Org.BouncyCastle.Crypto.Tls.TlsKeyExchange
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsKeyExchange
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsKeyExchange
+  nameWithType: TlsKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsKeyExchange
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateRequest*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateRequest
+  name: GetCertificateRequest
+  nameWithType: TlsServer.GetCertificateRequest
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetCertificateRequest
+- uid: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+  commentId: T:Org.BouncyCastle.Crypto.Tls.CertificateRequest
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: CertificateRequest
+  nameWithType: CertificateRequest
+  fullName: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientSupplementalData*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientSupplementalData
+  name: ProcessClientSupplementalData
+  nameWithType: TlsServer.ProcessClientSupplementalData
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.ProcessClientSupplementalData
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientCertificate*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientCertificate
+  name: NotifyClientCertificate
+  nameWithType: TlsServer.NotifyClientCertificate
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.NotifyClientCertificate
+- uid: Org.BouncyCastle.Crypto.Tls.Certificate
+  commentId: T:Org.BouncyCastle.Crypto.Tls.Certificate
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: Certificate
+  nameWithType: Certificate
+  fullName: Org.BouncyCastle.Crypto.Tls.Certificate
+- uid: Org.BouncyCastle.Crypto.Tls.NewSessionTicket
+  commentId: T:Org.BouncyCastle.Crypto.Tls.NewSessionTicket
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: NewSessionTicket
+  nameWithType: NewSessionTicket
+  fullName: Org.BouncyCastle.Crypto.Tls.NewSessionTicket
+- uid: Org.BouncyCastle.Crypto.Tls.TlsServer.GetNewSessionTicket*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsServer.GetNewSessionTicket
+  name: GetNewSessionTicket
+  nameWithType: TlsServer.GetNewSessionTicket
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsServer.GetNewSessionTicket

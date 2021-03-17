@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.SignalR.Hubs.OnMethodFailedDelegate
+  commentId: T:BestHTTP.SignalR.Hubs.OnMethodFailedDelegate
+  id: OnMethodFailedDelegate
+  parent: BestHTTP.SignalR.Hubs
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnMethodFailedDelegate
+  nameWithType: OnMethodFailedDelegate
+  fullName: BestHTTP.SignalR.Hubs.OnMethodFailedDelegate
+  type: Delegate
+  source:
+    id: OnMethodFailedDelegate
+    path: ''
+    startLine: 12382
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Hubs
+  syntax:
+    content: public delegate void OnMethodFailedDelegate(Hub hub, ClientMessage originalMessage, FailureMessage error);
+    parameters:
+    - id: hub
+      type: BestHTTP.SignalR.Hubs.Hub
+    - id: originalMessage
+      type: ClientMessage
+    - id: error
+      type: FailureMessage
+    content.vb: Public Delegate Sub OnMethodFailedDelegate(hub As Hub, originalMessage As ClientMessage, error As FailureMessage)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: BestHTTP.SignalR.Hubs
+  commentId: N:BestHTTP.SignalR.Hubs
+  name: BestHTTP.SignalR.Hubs
+  nameWithType: BestHTTP.SignalR.Hubs
+  fullName: BestHTTP.SignalR.Hubs
+- uid: BestHTTP.SignalR.Hubs.Hub
+  commentId: T:BestHTTP.SignalR.Hubs.Hub
+  parent: BestHTTP.SignalR.Hubs
+  name: Hub
+  nameWithType: Hub
+  fullName: BestHTTP.SignalR.Hubs.Hub
+- uid: ClientMessage
+  isExternal: true
+  name: ClientMessage
+  nameWithType: ClientMessage
+  fullName: ClientMessage
+- uid: FailureMessage
+  commentId: '!:FailureMessage'
+  isExternal: true
+  name: FailureMessage
+  nameWithType: FailureMessage
+  fullName: FailureMessage

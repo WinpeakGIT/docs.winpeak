@@ -1,0 +1,594 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  id: TlsHandshakeHash
+  parent: Org.BouncyCastle.Crypto.Tls
+  children:
+  - Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.ForkPrfHash
+  - Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.GetFinalHash(System.Byte)
+  - Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  - Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.NotifyPrfDetermined
+  - Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.SealHashAlgorithms
+  - Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.StopTracking
+  - Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.TrackHashAlgorithm(System.Byte)
+  langs:
+  - csharp
+  - vb
+  name: TlsHandshakeHash
+  nameWithType: TlsHandshakeHash
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  type: Interface
+  source:
+    id: TlsHandshakeHash
+    path: ''
+    startLine: 135875
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: 'public interface TlsHandshakeHash : IDigest'
+    content.vb: >-
+      Public Interface TlsHandshakeHash
+          Inherits IDigest
+  inheritedMembers:
+  - Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+  - Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  - Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  - Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  - Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.IDigest.Reset
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  id: Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  langs:
+  - csharp
+  - vb
+  name: Init(TlsContext)
+  nameWithType: TlsHandshakeHash.Init(TlsContext)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 135878
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: void Init(TlsContext context)
+    parameters:
+    - id: context
+      type: Org.BouncyCastle.Crypto.Tls.TlsContext
+    content.vb: Sub Init(context As TlsContext)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.Init*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.NotifyPrfDetermined
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.NotifyPrfDetermined
+  id: NotifyPrfDetermined
+  parent: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  langs:
+  - csharp
+  - vb
+  name: NotifyPrfDetermined()
+  nameWithType: TlsHandshakeHash.NotifyPrfDetermined()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.NotifyPrfDetermined()
+  type: Method
+  source:
+    id: NotifyPrfDetermined
+    path: ''
+    startLine: 135880
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: TlsHandshakeHash NotifyPrfDetermined()
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+    content.vb: Function NotifyPrfDetermined As TlsHandshakeHash
+  overload: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.NotifyPrfDetermined*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.TrackHashAlgorithm(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.TrackHashAlgorithm(System.Byte)
+  id: TrackHashAlgorithm(System.Byte)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  langs:
+  - csharp
+  - vb
+  name: TrackHashAlgorithm(Byte)
+  nameWithType: TlsHandshakeHash.TrackHashAlgorithm(Byte)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.TrackHashAlgorithm(System.Byte)
+  type: Method
+  source:
+    id: TrackHashAlgorithm
+    path: ''
+    startLine: 135882
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: void TrackHashAlgorithm(byte hashAlgorithm)
+    parameters:
+    - id: hashAlgorithm
+      type: System.Byte
+    content.vb: Sub TrackHashAlgorithm(hashAlgorithm As Byte)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.TrackHashAlgorithm*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.SealHashAlgorithms
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.SealHashAlgorithms
+  id: SealHashAlgorithms
+  parent: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  langs:
+  - csharp
+  - vb
+  name: SealHashAlgorithms()
+  nameWithType: TlsHandshakeHash.SealHashAlgorithms()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.SealHashAlgorithms()
+  type: Method
+  source:
+    id: SealHashAlgorithms
+    path: ''
+    startLine: 135884
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: void SealHashAlgorithms()
+    content.vb: Sub SealHashAlgorithms
+  overload: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.SealHashAlgorithms*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.StopTracking
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.StopTracking
+  id: StopTracking
+  parent: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  langs:
+  - csharp
+  - vb
+  name: StopTracking()
+  nameWithType: TlsHandshakeHash.StopTracking()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.StopTracking()
+  type: Method
+  source:
+    id: StopTracking
+    path: ''
+    startLine: 135886
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: TlsHandshakeHash StopTracking()
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+    content.vb: Function StopTracking As TlsHandshakeHash
+  overload: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.StopTracking*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.ForkPrfHash
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.ForkPrfHash
+  id: ForkPrfHash
+  parent: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  langs:
+  - csharp
+  - vb
+  name: ForkPrfHash()
+  nameWithType: TlsHandshakeHash.ForkPrfHash()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.ForkPrfHash()
+  type: Method
+  source:
+    id: ForkPrfHash
+    path: ''
+    startLine: 135888
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: IDigest ForkPrfHash()
+    return:
+      type: Org.BouncyCastle.Crypto.IDigest
+    content.vb: Function ForkPrfHash As IDigest
+  overload: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.ForkPrfHash*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.GetFinalHash(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.GetFinalHash(System.Byte)
+  id: GetFinalHash(System.Byte)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  langs:
+  - csharp
+  - vb
+  name: GetFinalHash(Byte)
+  nameWithType: TlsHandshakeHash.GetFinalHash(Byte)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.GetFinalHash(System.Byte)
+  type: Method
+  source:
+    id: GetFinalHash
+    path: ''
+    startLine: 135890
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: byte[] GetFinalHash(byte hashAlgorithm)
+    parameters:
+    - id: hashAlgorithm
+      type: System.Byte
+    return:
+      type: System.Byte[]
+    content.vb: Function GetFinalHash(hashAlgorithm As Byte) As Byte()
+  overload: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.GetFinalHash*
+references:
+- uid: Org.BouncyCastle.Crypto.Tls
+  commentId: N:Org.BouncyCastle.Crypto.Tls
+  name: Org.BouncyCastle.Crypto.Tls
+  nameWithType: Org.BouncyCastle.Crypto.Tls
+  fullName: Org.BouncyCastle.Crypto.Tls
+- uid: Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: AlgorithmName
+  nameWithType: IDigest.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+- uid: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: GetDigestSize()
+  nameWithType: IDigest.GetDigestSize()
+  fullName: Org.BouncyCastle.Crypto.IDigest.GetDigestSize()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+    name: GetDigestSize
+    nameWithType: IDigest.GetDigestSize
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+    name: GetDigestSize
+    nameWithType: IDigest.GetDigestSize
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: GetByteLength()
+  nameWithType: IDigest.GetByteLength()
+  fullName: Org.BouncyCastle.Crypto.IDigest.GetByteLength()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+    name: GetByteLength
+    nameWithType: IDigest.GetByteLength
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+    name: GetByteLength
+    nameWithType: IDigest.GetByteLength
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  parent: Org.BouncyCastle.Crypto.IDigest
+  isExternal: true
+  name: Update(Byte)
+  nameWithType: IDigest.Update(Byte)
+  fullName: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+    name: Update
+    nameWithType: IDigest.Update
+    fullName: Org.BouncyCastle.Crypto.IDigest.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+    name: Update
+    nameWithType: IDigest.Update
+    fullName: Org.BouncyCastle.Crypto.IDigest.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.IDigest
+  isExternal: true
+  name: BlockUpdate(Byte[], Int32, Int32)
+  nameWithType: IDigest.BlockUpdate(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: IDigest.BlockUpdate(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte(), System.Int32, System.Int32)
+  name.vb: BlockUpdate(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+    name: BlockUpdate
+    nameWithType: IDigest.BlockUpdate
+    fullName: Org.BouncyCastle.Crypto.IDigest.BlockUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+    name: BlockUpdate
+    nameWithType: IDigest.BlockUpdate
+    fullName: Org.BouncyCastle.Crypto.IDigest.BlockUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.IDigest
+  isExternal: true
+  name: DoFinal(Byte[], Int32)
+  nameWithType: IDigest.DoFinal(Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[], System.Int32)
+  nameWithType.vb: IDigest.DoFinal(Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte(), System.Int32)
+  name.vb: DoFinal(Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: IDigest.DoFinal
+    fullName: Org.BouncyCastle.Crypto.IDigest.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: IDigest.DoFinal
+    fullName: Org.BouncyCastle.Crypto.IDigest.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest.Reset
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.Reset
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: Reset()
+  nameWithType: IDigest.Reset()
+  fullName: Org.BouncyCastle.Crypto.IDigest.Reset()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Reset
+    name: Reset
+    nameWithType: IDigest.Reset
+    fullName: Org.BouncyCastle.Crypto.IDigest.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Reset
+    name: Reset
+    nameWithType: IDigest.Reset
+    fullName: Org.BouncyCastle.Crypto.IDigest.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest
+  commentId: T:Org.BouncyCastle.Crypto.IDigest
+  parent: Org.BouncyCastle.Crypto
+  name: IDigest
+  nameWithType: IDigest
+  fullName: Org.BouncyCastle.Crypto.IDigest
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.Init*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.Init
+  name: Init
+  nameWithType: TlsHandshakeHash.Init
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.Init
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsContext
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsContext
+  nameWithType: TlsContext
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.NotifyPrfDetermined*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.NotifyPrfDetermined
+  name: NotifyPrfDetermined
+  nameWithType: TlsHandshakeHash.NotifyPrfDetermined
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.NotifyPrfDetermined
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsHandshakeHash
+  nameWithType: TlsHandshakeHash
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.TrackHashAlgorithm*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.TrackHashAlgorithm
+  name: TrackHashAlgorithm
+  nameWithType: TlsHandshakeHash.TrackHashAlgorithm
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.TrackHashAlgorithm
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.SealHashAlgorithms*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.SealHashAlgorithms
+  name: SealHashAlgorithms
+  nameWithType: TlsHandshakeHash.SealHashAlgorithms
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.SealHashAlgorithms
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.StopTracking*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.StopTracking
+  name: StopTracking
+  nameWithType: TlsHandshakeHash.StopTracking
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.StopTracking
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.ForkPrfHash*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.ForkPrfHash
+  name: ForkPrfHash
+  nameWithType: TlsHandshakeHash.ForkPrfHash
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.ForkPrfHash
+- uid: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.GetFinalHash*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.GetFinalHash
+  name: GetFinalHash
+  nameWithType: TlsHandshakeHash.GetFinalHash
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsHandshakeHash.GetFinalHash
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

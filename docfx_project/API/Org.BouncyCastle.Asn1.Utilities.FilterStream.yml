@@ -1,0 +1,686 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  commentId: T:Org.BouncyCastle.Asn1.Utilities.FilterStream
+  id: FilterStream
+  parent: Org.BouncyCastle.Asn1.Utilities
+  children:
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.#ctor(Stream)
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.CanRead
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.CanSeek
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.CanWrite
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.Close
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.Flush
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.Length
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.Position
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.Read(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.ReadByte
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.s
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.Seek(System.Int64,SeekOrigin)
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.SetLength(System.Int64)
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.Write(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Asn1.Utilities.FilterStream.WriteByte(System.Byte)
+  langs:
+  - csharp
+  - vb
+  name: FilterStream
+  nameWithType: FilterStream
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  type: Class
+  source:
+    id: FilterStream
+    path: ''
+    startLine: 75766
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: 'public class FilterStream : Stream'
+    content.vb: >-
+      Public Class FilterStream
+          Inherits Stream
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.#ctor(Stream)
+  commentId: M:Org.BouncyCastle.Asn1.Utilities.FilterStream.#ctor(Stream)
+  id: '#ctor(Stream)'
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: FilterStream(Stream)
+  nameWithType: FilterStream.FilterStream(Stream)
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.FilterStream(Stream)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 75768
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public FilterStream(Stream s)
+    parameters:
+    - id: s
+      type: Stream
+    content.vb: Public Sub New(s As Stream)
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanRead
+  commentId: P:Org.BouncyCastle.Asn1.Utilities.FilterStream.CanRead
+  id: CanRead
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: CanRead
+  nameWithType: FilterStream.CanRead
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanRead
+  type: Property
+  source:
+    id: CanRead
+    path: ''
+    startLine: 75772
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override bool CanRead { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property CanRead As Boolean
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanRead*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanSeek
+  commentId: P:Org.BouncyCastle.Asn1.Utilities.FilterStream.CanSeek
+  id: CanSeek
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: CanSeek
+  nameWithType: FilterStream.CanSeek
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanSeek
+  type: Property
+  source:
+    id: CanSeek
+    path: ''
+    startLine: 75776
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override bool CanSeek { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property CanSeek As Boolean
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanSeek*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanWrite
+  commentId: P:Org.BouncyCastle.Asn1.Utilities.FilterStream.CanWrite
+  id: CanWrite
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: CanWrite
+  nameWithType: FilterStream.CanWrite
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanWrite
+  type: Property
+  source:
+    id: CanWrite
+    path: ''
+    startLine: 75780
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override bool CanWrite { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property CanWrite As Boolean
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanWrite*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Length
+  commentId: P:Org.BouncyCastle.Asn1.Utilities.FilterStream.Length
+  id: Length
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: FilterStream.Length
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Length
+  type: Property
+  source:
+    id: Length
+    path: ''
+    startLine: 75784
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override long Length { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Overrides ReadOnly Property Length As Long
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.Length*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Position
+  commentId: P:Org.BouncyCastle.Asn1.Utilities.FilterStream.Position
+  id: Position
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: FilterStream.Position
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Position
+  type: Property
+  source:
+    id: Position
+    path: ''
+    startLine: 75788
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override long Position { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Overrides Property Position As Long
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.Position*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Close
+  commentId: M:Org.BouncyCastle.Asn1.Utilities.FilterStream.Close
+  id: Close
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: FilterStream.Close()
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Close()
+  type: Method
+  source:
+    id: Close
+    path: ''
+    startLine: 75803
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override void Close()
+    content.vb: Public Overrides Sub Close
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.Close*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Flush
+  commentId: M:Org.BouncyCastle.Asn1.Utilities.FilterStream.Flush
+  id: Flush
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: FilterStream.Flush()
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Flush()
+  type: Method
+  source:
+    id: Flush
+    path: ''
+    startLine: 75809
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override void Flush()
+    content.vb: Public Overrides Sub Flush
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.Flush*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Seek(System.Int64,SeekOrigin)
+  commentId: M:Org.BouncyCastle.Asn1.Utilities.FilterStream.Seek(System.Int64,SeekOrigin)
+  id: Seek(System.Int64,SeekOrigin)
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: Seek(Int64, SeekOrigin)
+  nameWithType: FilterStream.Seek(Int64, SeekOrigin)
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Seek(System.Int64, SeekOrigin)
+  type: Method
+  source:
+    id: Seek
+    path: ''
+    startLine: 75813
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override long Seek(long offset, SeekOrigin origin)
+    parameters:
+    - id: offset
+      type: System.Int64
+    - id: origin
+      type: SeekOrigin
+    return:
+      type: System.Int64
+    content.vb: Public Overrides Function Seek(offset As Long, origin As SeekOrigin) As Long
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.Seek*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.SetLength(System.Int64)
+  commentId: M:Org.BouncyCastle.Asn1.Utilities.FilterStream.SetLength(System.Int64)
+  id: SetLength(System.Int64)
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: SetLength(Int64)
+  nameWithType: FilterStream.SetLength(Int64)
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.SetLength(System.Int64)
+  type: Method
+  source:
+    id: SetLength
+    path: ''
+    startLine: 75817
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override void SetLength(long value)
+    parameters:
+    - id: value
+      type: System.Int64
+    content.vb: Public Overrides Sub SetLength(value As Long)
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.SetLength*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Read(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Asn1.Utilities.FilterStream.Read(System.Byte[],System.Int32,System.Int32)
+  id: Read(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: Read(Byte[], Int32, Int32)
+  nameWithType: FilterStream.Read(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Read(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Read
+    path: ''
+    startLine: 75821
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override int Read(byte[] buffer, int offset, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function Read(buffer As Byte(), offset As Integer, count As Integer) As Integer
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.Read*
+  nameWithType.vb: FilterStream.Read(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Asn1.Utilities.FilterStream.Read(System.Byte(), System.Int32, System.Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.ReadByte
+  commentId: M:Org.BouncyCastle.Asn1.Utilities.FilterStream.ReadByte
+  id: ReadByte
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: ReadByte()
+  nameWithType: FilterStream.ReadByte()
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.ReadByte()
+  type: Method
+  source:
+    id: ReadByte
+    path: ''
+    startLine: 75825
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override int ReadByte()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function ReadByte As Integer
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.ReadByte*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Asn1.Utilities.FilterStream.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: Write(Byte[], Int32, Int32)
+  nameWithType: FilterStream.Write(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Write(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Write
+    path: ''
+    startLine: 75829
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override void Write(byte[] buffer, int offset, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    content.vb: Public Overrides Sub Write(buffer As Byte(), offset As Integer, count As Integer)
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.Write*
+  nameWithType.vb: FilterStream.Write(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Asn1.Utilities.FilterStream.Write(System.Byte(), System.Int32, System.Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.WriteByte(System.Byte)
+  commentId: M:Org.BouncyCastle.Asn1.Utilities.FilterStream.WriteByte(System.Byte)
+  id: WriteByte(System.Byte)
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: WriteByte(Byte)
+  nameWithType: FilterStream.WriteByte(Byte)
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.WriteByte(System.Byte)
+  type: Method
+  source:
+    id: WriteByte
+    path: ''
+    startLine: 75833
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: public override void WriteByte(byte value)
+    parameters:
+    - id: value
+      type: System.Byte
+    content.vb: Public Overrides Sub WriteByte(value As Byte)
+  overload: Org.BouncyCastle.Asn1.Utilities.FilterStream.WriteByte*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.s
+  commentId: F:Org.BouncyCastle.Asn1.Utilities.FilterStream.s
+  id: s
+  parent: Org.BouncyCastle.Asn1.Utilities.FilterStream
+  langs:
+  - csharp
+  - vb
+  name: s
+  nameWithType: FilterStream.s
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.s
+  type: Field
+  source:
+    id: s
+    path: ''
+    startLine: 75837
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.Utilities
+  syntax:
+    content: protected readonly Stream s
+    return:
+      type: Stream
+    content.vb: Protected ReadOnly s As Stream
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+references:
+- uid: Org.BouncyCastle.Asn1.Utilities
+  commentId: N:Org.BouncyCastle.Asn1.Utilities
+  name: Org.BouncyCastle.Asn1.Utilities
+  nameWithType: Org.BouncyCastle.Asn1.Utilities
+  fullName: Org.BouncyCastle.Asn1.Utilities
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.#ctor*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.#ctor
+  name: FilterStream
+  nameWithType: FilterStream.FilterStream
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.FilterStream
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanRead*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.CanRead
+  name: CanRead
+  nameWithType: FilterStream.CanRead
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanRead
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanSeek*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.CanSeek
+  name: CanSeek
+  nameWithType: FilterStream.CanSeek
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanSeek
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanWrite*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.CanWrite
+  name: CanWrite
+  nameWithType: FilterStream.CanWrite
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.CanWrite
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Length*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.Length
+  name: Length
+  nameWithType: FilterStream.Length
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Length
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Position*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.Position
+  name: Position
+  nameWithType: FilterStream.Position
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Position
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Close*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.Close
+  name: Close
+  nameWithType: FilterStream.Close
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Close
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Flush*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.Flush
+  name: Flush
+  nameWithType: FilterStream.Flush
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Flush
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Seek*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.Seek
+  name: Seek
+  nameWithType: FilterStream.Seek
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Seek
+- uid: SeekOrigin
+  isExternal: true
+  name: SeekOrigin
+  nameWithType: SeekOrigin
+  fullName: SeekOrigin
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.SetLength*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.SetLength
+  name: SetLength
+  nameWithType: FilterStream.SetLength
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.SetLength
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Read*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.Read
+  name: Read
+  nameWithType: FilterStream.Read
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Read
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.ReadByte*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.ReadByte
+  name: ReadByte
+  nameWithType: FilterStream.ReadByte
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.ReadByte
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.Write*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.Write
+  name: Write
+  nameWithType: FilterStream.Write
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.Write
+- uid: Org.BouncyCastle.Asn1.Utilities.FilterStream.WriteByte*
+  commentId: Overload:Org.BouncyCastle.Asn1.Utilities.FilterStream.WriteByte
+  name: WriteByte
+  nameWithType: FilterStream.WriteByte
+  fullName: Org.BouncyCastle.Asn1.Utilities.FilterStream.WriteByte
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte

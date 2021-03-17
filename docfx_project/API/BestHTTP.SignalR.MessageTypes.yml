@@ -1,0 +1,261 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.SignalR.MessageTypes
+  commentId: T:BestHTTP.SignalR.MessageTypes
+  id: MessageTypes
+  parent: BestHTTP.SignalR
+  children:
+  - BestHTTP.SignalR.MessageTypes.Data
+  - BestHTTP.SignalR.MessageTypes.Failure
+  - BestHTTP.SignalR.MessageTypes.KeepAlive
+  - BestHTTP.SignalR.MessageTypes.MethodCall
+  - BestHTTP.SignalR.MessageTypes.Multiple
+  - BestHTTP.SignalR.MessageTypes.Progress
+  - BestHTTP.SignalR.MessageTypes.Result
+  langs:
+  - csharp
+  - vb
+  name: MessageTypes
+  nameWithType: MessageTypes
+  fullName: BestHTTP.SignalR.MessageTypes
+  type: Enum
+  source:
+    id: MessageTypes
+    path: ''
+    startLine: 11011
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  summary: "\nServer sent message types\n"
+  example: []
+  syntax:
+    content: public enum MessageTypes
+    content.vb: Public Enum MessageTypes
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: BestHTTP.SignalR.MessageTypes.KeepAlive
+  commentId: F:BestHTTP.SignalR.MessageTypes.KeepAlive
+  id: KeepAlive
+  parent: BestHTTP.SignalR.MessageTypes
+  langs:
+  - csharp
+  - vb
+  name: KeepAlive
+  nameWithType: MessageTypes.KeepAlive
+  fullName: BestHTTP.SignalR.MessageTypes.KeepAlive
+  type: Field
+  source:
+    id: KeepAlive
+    path: ''
+    startLine: 11016
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  summary: "\nAn empty json object {} sent by the server to check keep alive.\n"
+  example: []
+  syntax:
+    content: KeepAlive = 0
+    return:
+      type: BestHTTP.SignalR.MessageTypes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.SignalR.MessageTypes.Data
+  commentId: F:BestHTTP.SignalR.MessageTypes.Data
+  id: Data
+  parent: BestHTTP.SignalR.MessageTypes
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: MessageTypes.Data
+  fullName: BestHTTP.SignalR.MessageTypes.Data
+  type: Field
+  source:
+    id: Data
+    path: ''
+    startLine: 11021
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  summary: "\nA no-hub message that contains data.\n"
+  example: []
+  syntax:
+    content: Data = 1
+    return:
+      type: BestHTTP.SignalR.MessageTypes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.SignalR.MessageTypes.Multiple
+  commentId: F:BestHTTP.SignalR.MessageTypes.Multiple
+  id: Multiple
+  parent: BestHTTP.SignalR.MessageTypes
+  langs:
+  - csharp
+  - vb
+  name: Multiple
+  nameWithType: MessageTypes.Multiple
+  fullName: BestHTTP.SignalR.MessageTypes.Multiple
+  type: Field
+  source:
+    id: Multiple
+    path: ''
+    startLine: 11026
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  summary: "\nA message that can hold multiple data message alongside with other information.\n"
+  example: []
+  syntax:
+    content: Multiple = 2
+    return:
+      type: BestHTTP.SignalR.MessageTypes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.SignalR.MessageTypes.Result
+  commentId: F:BestHTTP.SignalR.MessageTypes.Result
+  id: Result
+  parent: BestHTTP.SignalR.MessageTypes
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: MessageTypes.Result
+  fullName: BestHTTP.SignalR.MessageTypes.Result
+  type: Field
+  source:
+    id: Result
+    path: ''
+    startLine: 11031
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  summary: "\nA method call result.\n"
+  example: []
+  syntax:
+    content: Result = 3
+    return:
+      type: BestHTTP.SignalR.MessageTypes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.SignalR.MessageTypes.Failure
+  commentId: F:BestHTTP.SignalR.MessageTypes.Failure
+  id: Failure
+  parent: BestHTTP.SignalR.MessageTypes
+  langs:
+  - csharp
+  - vb
+  name: Failure
+  nameWithType: MessageTypes.Failure
+  fullName: BestHTTP.SignalR.MessageTypes.Failure
+  type: Field
+  source:
+    id: Failure
+    path: ''
+    startLine: 11036
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  summary: "\nA message about a failed method call.\n"
+  example: []
+  syntax:
+    content: Failure = 4
+    return:
+      type: BestHTTP.SignalR.MessageTypes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.SignalR.MessageTypes.MethodCall
+  commentId: F:BestHTTP.SignalR.MessageTypes.MethodCall
+  id: MethodCall
+  parent: BestHTTP.SignalR.MessageTypes
+  langs:
+  - csharp
+  - vb
+  name: MethodCall
+  nameWithType: MessageTypes.MethodCall
+  fullName: BestHTTP.SignalR.MessageTypes.MethodCall
+  type: Field
+  source:
+    id: MethodCall
+    path: ''
+    startLine: 11041
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  summary: "\nA message with all information to be able to call a method on the client.\n"
+  example: []
+  syntax:
+    content: MethodCall = 5
+    return:
+      type: BestHTTP.SignalR.MessageTypes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.SignalR.MessageTypes.Progress
+  commentId: F:BestHTTP.SignalR.MessageTypes.Progress
+  id: Progress
+  parent: BestHTTP.SignalR.MessageTypes
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: MessageTypes.Progress
+  fullName: BestHTTP.SignalR.MessageTypes.Progress
+  type: Field
+  source:
+    id: Progress
+    path: ''
+    startLine: 11046
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  summary: "\nA long running server-method&apos;s progress.\n"
+  example: []
+  syntax:
+    content: Progress = 6
+    return:
+      type: BestHTTP.SignalR.MessageTypes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: BestHTTP.SignalR
+  commentId: N:BestHTTP.SignalR
+  name: BestHTTP.SignalR
+  nameWithType: BestHTTP.SignalR
+  fullName: BestHTTP.SignalR
+- uid: BestHTTP.SignalR.MessageTypes
+  commentId: T:BestHTTP.SignalR.MessageTypes
+  parent: BestHTTP.SignalR
+  name: MessageTypes
+  nameWithType: MessageTypes
+  fullName: BestHTTP.SignalR.MessageTypes

@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.Decompression.Zlib.FlushType
+  commentId: T:BestHTTP.Decompression.Zlib.FlushType
+  id: FlushType
+  parent: BestHTTP.Decompression.Zlib
+  children:
+  - BestHTTP.Decompression.Zlib.FlushType.Finish
+  - BestHTTP.Decompression.Zlib.FlushType.Full
+  - BestHTTP.Decompression.Zlib.FlushType.None
+  - BestHTTP.Decompression.Zlib.FlushType.Partial
+  - BestHTTP.Decompression.Zlib.FlushType.Sync
+  langs:
+  - csharp
+  - vb
+  name: FlushType
+  nameWithType: FlushType
+  fullName: BestHTTP.Decompression.Zlib.FlushType
+  type: Enum
+  source:
+    id: FlushType
+    path: ''
+    startLine: 154473
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Decompression.Zlib
+  summary: "\nDescribes how to flush the current deflate operation.\n"
+  remarks: "\nThe different FlushType values are useful when using a Deflate in a streaming application.\n"
+  example: []
+  syntax:
+    content: public enum FlushType
+    content.vb: Public Enum FlushType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: BestHTTP.Decompression.Zlib.FlushType.None
+  commentId: F:BestHTTP.Decompression.Zlib.FlushType.None
+  id: None
+  parent: BestHTTP.Decompression.Zlib.FlushType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: FlushType.None
+  fullName: BestHTTP.Decompression.Zlib.FlushType.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 154476
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Decompression.Zlib
+  summary: No flush at all.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: BestHTTP.Decompression.Zlib.FlushType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.Decompression.Zlib.FlushType.Partial
+  commentId: F:BestHTTP.Decompression.Zlib.FlushType.Partial
+  id: Partial
+  parent: BestHTTP.Decompression.Zlib.FlushType
+  langs:
+  - csharp
+  - vb
+  name: Partial
+  nameWithType: FlushType.Partial
+  fullName: BestHTTP.Decompression.Zlib.FlushType.Partial
+  type: Field
+  source:
+    id: Partial
+    path: ''
+    startLine: 154483
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Decompression.Zlib
+  summary: >
+    Closes the current block, but doesn&apos;t flush it to
+
+    the output. Used internally only in hypothetical
+
+    scenarios.  This was supposed to be removed by Zlib, but it is
+
+    still in use in some edge cases.
+  example: []
+  syntax:
+    content: Partial = 1
+    return:
+      type: BestHTTP.Decompression.Zlib.FlushType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.Decompression.Zlib.FlushType.Sync
+  commentId: F:BestHTTP.Decompression.Zlib.FlushType.Sync
+  id: Sync
+  parent: BestHTTP.Decompression.Zlib.FlushType
+  langs:
+  - csharp
+  - vb
+  name: Sync
+  nameWithType: FlushType.Sync
+  fullName: BestHTTP.Decompression.Zlib.FlushType.Sync
+  type: Field
+  source:
+    id: Sync
+    path: ''
+    startLine: 154494
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Decompression.Zlib
+  summary: "\nUse this during compression to specify that all pending output should be\nflushed to the output buffer and the output should be aligned on a byte\nboundary.  You might use this in a streaming communication scenario, so that\nthe decompressor can get all input data available so far.  When using this\nwith a ZlibCodec, <code>AvailableBytesIn</code> will be zero after the call if\nenough output space has been provided before the call.  Flushing will\ndegrade compression and so it should be used only when necessary.\n"
+  example: []
+  syntax:
+    content: Sync = 2
+    return:
+      type: BestHTTP.Decompression.Zlib.FlushType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.Decompression.Zlib.FlushType.Full
+  commentId: F:BestHTTP.Decompression.Zlib.FlushType.Full
+  id: Full
+  parent: BestHTTP.Decompression.Zlib.FlushType
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: FlushType.Full
+  fullName: BestHTTP.Decompression.Zlib.FlushType.Full
+  type: Field
+  source:
+    id: Full
+    path: ''
+    startLine: 154503
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Decompression.Zlib
+  summary: "\nUse this during compression to specify that all output should be flushed, as\nwith <code>FlushType.Sync</code>, but also, the compression state should be reset\nso that decompression can restart from this point if previous compressed\ndata has been damaged or if random access is desired.  Using\n<code>FlushType.Full</code> too often can significantly degrade the compression.\n"
+  example: []
+  syntax:
+    content: Full = 3
+    return:
+      type: BestHTTP.Decompression.Zlib.FlushType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.Decompression.Zlib.FlushType.Finish
+  commentId: F:BestHTTP.Decompression.Zlib.FlushType.Finish
+  id: Finish
+  parent: BestHTTP.Decompression.Zlib.FlushType
+  langs:
+  - csharp
+  - vb
+  name: Finish
+  nameWithType: FlushType.Finish
+  fullName: BestHTTP.Decompression.Zlib.FlushType.Finish
+  type: Field
+  source:
+    id: Finish
+    path: ''
+    startLine: 154506
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Decompression.Zlib
+  summary: Signals the end of the compression/decompression stream.
+  example: []
+  syntax:
+    content: Finish = 4
+    return:
+      type: BestHTTP.Decompression.Zlib.FlushType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: BestHTTP.Decompression.Zlib
+  commentId: N:BestHTTP.Decompression.Zlib
+  name: BestHTTP.Decompression.Zlib
+  nameWithType: BestHTTP.Decompression.Zlib
+  fullName: BestHTTP.Decompression.Zlib
+- uid: BestHTTP.Decompression.Zlib.FlushType
+  commentId: T:BestHTTP.Decompression.Zlib.FlushType
+  parent: BestHTTP.Decompression.Zlib
+  name: FlushType
+  nameWithType: FlushType
+  fullName: BestHTTP.Decompression.Zlib.FlushType

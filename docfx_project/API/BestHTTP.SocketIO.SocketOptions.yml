@@ -1,0 +1,912 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.SocketIO.SocketOptions
+  commentId: T:BestHTTP.SocketIO.SocketOptions
+  id: SocketOptions
+  parent: BestHTTP.SocketIO
+  children:
+  - BestHTTP.SocketIO.SocketOptions.#ctor
+  - BestHTTP.SocketIO.SocketOptions.AdditionalQueryParams
+  - BestHTTP.SocketIO.SocketOptions.AutoConnect
+  - BestHTTP.SocketIO.SocketOptions.ConnectWith
+  - BestHTTP.SocketIO.SocketOptions.QueryParamsOnlyForHandshake
+  - BestHTTP.SocketIO.SocketOptions.RandomizationFactor
+  - BestHTTP.SocketIO.SocketOptions.Reconnection
+  - BestHTTP.SocketIO.SocketOptions.ReconnectionAttempts
+  - BestHTTP.SocketIO.SocketOptions.ReconnectionDelay
+  - BestHTTP.SocketIO.SocketOptions.ReconnectionDelayMax
+  - BestHTTP.SocketIO.SocketOptions.Timeout
+  langs:
+  - csharp
+  - vb
+  name: SocketOptions
+  nameWithType: SocketOptions
+  fullName: BestHTTP.SocketIO.SocketOptions
+  type: Class
+  source:
+    id: SocketOptions
+    path: ''
+    startLine: 145944
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public sealed class SocketOptions
+    content.vb: Public NotInheritable Class SocketOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: BestHTTP.SocketIO.SocketOptions.ConnectWith
+  commentId: P:BestHTTP.SocketIO.SocketOptions.ConnectWith
+  id: ConnectWith
+  parent: BestHTTP.SocketIO.SocketOptions
+  langs:
+  - csharp
+  - vb
+  name: ConnectWith
+  nameWithType: SocketOptions.ConnectWith
+  fullName: BestHTTP.SocketIO.SocketOptions.ConnectWith
+  type: Property
+  source:
+    id: ConnectWith
+    path: ''
+    startLine: 145951
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nThe SocketManager will try to connect with this transport.\n"
+  example: []
+  syntax:
+    content: public TransportTypes ConnectWith { get; set; }
+    parameters: []
+    return:
+      type: BestHTTP.SocketIO.Transports.TransportTypes
+    content.vb: Public Property ConnectWith As TransportTypes
+  overload: BestHTTP.SocketIO.SocketOptions.ConnectWith*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.SocketOptions.Reconnection
+  commentId: P:BestHTTP.SocketIO.SocketOptions.Reconnection
+  id: Reconnection
+  parent: BestHTTP.SocketIO.SocketOptions
+  langs:
+  - csharp
+  - vb
+  name: Reconnection
+  nameWithType: SocketOptions.Reconnection
+  fullName: BestHTTP.SocketIO.SocketOptions.Reconnection
+  type: Property
+  source:
+    id: Reconnection
+    path: ''
+    startLine: 145956
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nWhether to reconnect automatically after a disconnect (default true)\n"
+  example: []
+  syntax:
+    content: public bool Reconnection { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Reconnection As Boolean
+  overload: BestHTTP.SocketIO.SocketOptions.Reconnection*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.SocketOptions.ReconnectionAttempts
+  commentId: P:BestHTTP.SocketIO.SocketOptions.ReconnectionAttempts
+  id: ReconnectionAttempts
+  parent: BestHTTP.SocketIO.SocketOptions
+  langs:
+  - csharp
+  - vb
+  name: ReconnectionAttempts
+  nameWithType: SocketOptions.ReconnectionAttempts
+  fullName: BestHTTP.SocketIO.SocketOptions.ReconnectionAttempts
+  type: Property
+  source:
+    id: ReconnectionAttempts
+    path: ''
+    startLine: 145961
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nNumber of attempts before giving up (default Int.MaxValue)\n"
+  example: []
+  syntax:
+    content: public int ReconnectionAttempts { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ReconnectionAttempts As Integer
+  overload: BestHTTP.SocketIO.SocketOptions.ReconnectionAttempts*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.SocketOptions.ReconnectionDelay
+  commentId: P:BestHTTP.SocketIO.SocketOptions.ReconnectionDelay
+  id: ReconnectionDelay
+  parent: BestHTTP.SocketIO.SocketOptions
+  langs:
+  - csharp
+  - vb
+  name: ReconnectionDelay
+  nameWithType: SocketOptions.ReconnectionDelay
+  fullName: BestHTTP.SocketIO.SocketOptions.ReconnectionDelay
+  type: Property
+  source:
+    id: ReconnectionDelay
+    path: ''
+    startLine: 145967
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nHow long to initially wait before attempting a new reconnection (default 1000ms).\nAffected by +/- RandomizationFactor, for example the default initial delay will be between 500ms to 1500ms.\n"
+  example: []
+  syntax:
+    content: public TimeSpan ReconnectionDelay { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property ReconnectionDelay As TimeSpan
+  overload: BestHTTP.SocketIO.SocketOptions.ReconnectionDelay*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.SocketOptions.ReconnectionDelayMax
+  commentId: P:BestHTTP.SocketIO.SocketOptions.ReconnectionDelayMax
+  id: ReconnectionDelayMax
+  parent: BestHTTP.SocketIO.SocketOptions
+  langs:
+  - csharp
+  - vb
+  name: ReconnectionDelayMax
+  nameWithType: SocketOptions.ReconnectionDelayMax
+  fullName: BestHTTP.SocketIO.SocketOptions.ReconnectionDelayMax
+  type: Property
+  source:
+    id: ReconnectionDelayMax
+    path: ''
+    startLine: 145973
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nMaximum amount of time to wait between reconnections (default 5000ms).\nEach attempt increases the reconnection delay along with a randomization as above.\n"
+  example: []
+  syntax:
+    content: public TimeSpan ReconnectionDelayMax { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property ReconnectionDelayMax As TimeSpan
+  overload: BestHTTP.SocketIO.SocketOptions.ReconnectionDelayMax*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.SocketOptions.RandomizationFactor
+  commentId: P:BestHTTP.SocketIO.SocketOptions.RandomizationFactor
+  id: RandomizationFactor
+  parent: BestHTTP.SocketIO.SocketOptions
+  langs:
+  - csharp
+  - vb
+  name: RandomizationFactor
+  nameWithType: SocketOptions.RandomizationFactor
+  fullName: BestHTTP.SocketIO.SocketOptions.RandomizationFactor
+  type: Property
+  source:
+    id: RandomizationFactor
+    path: ''
+    startLine: 145978
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\n(default 0.5`), [0..1]\n"
+  example: []
+  syntax:
+    content: public float RandomizationFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RandomizationFactor As Single
+  overload: BestHTTP.SocketIO.SocketOptions.RandomizationFactor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.SocketOptions.Timeout
+  commentId: P:BestHTTP.SocketIO.SocketOptions.Timeout
+  id: Timeout
+  parent: BestHTTP.SocketIO.SocketOptions
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: SocketOptions.Timeout
+  fullName: BestHTTP.SocketIO.SocketOptions.Timeout
+  type: Property
+  source:
+    id: Timeout
+    path: ''
+    startLine: 145984
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nConnection timeout before a connect_error and connect_timeout events are emitted (default 20000ms)\n"
+  example: []
+  syntax:
+    content: public TimeSpan Timeout { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property Timeout As TimeSpan
+  overload: BestHTTP.SocketIO.SocketOptions.Timeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.SocketOptions.AutoConnect
+  commentId: P:BestHTTP.SocketIO.SocketOptions.AutoConnect
+  id: AutoConnect
+  parent: BestHTTP.SocketIO.SocketOptions
+  langs:
+  - csharp
+  - vb
+  name: AutoConnect
+  nameWithType: SocketOptions.AutoConnect
+  fullName: BestHTTP.SocketIO.SocketOptions.AutoConnect
+  type: Property
+  source:
+    id: AutoConnect
+    path: ''
+    startLine: 145989
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nBy setting this false, you have to call SocketManager&apos;s Open() whenever you decide it&apos;s appropriate.\n"
+  example: []
+  syntax:
+    content: public bool AutoConnect { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AutoConnect As Boolean
+  overload: BestHTTP.SocketIO.SocketOptions.AutoConnect*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.SocketOptions.AdditionalQueryParams
+  commentId: P:BestHTTP.SocketIO.SocketOptions.AdditionalQueryParams
+  id: AdditionalQueryParams
+  parent: BestHTTP.SocketIO.SocketOptions
+  langs:
+  - csharp
+  - vb
+  name: AdditionalQueryParams
+  nameWithType: SocketOptions.AdditionalQueryParams
+  fullName: BestHTTP.SocketIO.SocketOptions.AdditionalQueryParams
+  type: Property
+  source:
+    id: AdditionalQueryParams
+    path: ''
+    startLine: 145995
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nAdditional query parameters that will be passed for the handshake uri. If the value is null, or an empty string it will be not appended to the query only the key.\n<remarks>The keys and values must be escaped properly, as the plugin will not escape these. </remarks>\n"
+  example: []
+  syntax:
+    content: public ObservableDictionary<string, string> AdditionalQueryParams { get; set; }
+    parameters: []
+    return:
+      type: ObservableDictionary{System.String,System.String}
+    content.vb: Public Property AdditionalQueryParams As ObservableDictionary(Of String, String)
+  overload: BestHTTP.SocketIO.SocketOptions.AdditionalQueryParams*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.SocketOptions.QueryParamsOnlyForHandshake
+  commentId: P:BestHTTP.SocketIO.SocketOptions.QueryParamsOnlyForHandshake
+  id: QueryParamsOnlyForHandshake
+  parent: BestHTTP.SocketIO.SocketOptions
+  langs:
+  - csharp
+  - vb
+  name: QueryParamsOnlyForHandshake
+  nameWithType: SocketOptions.QueryParamsOnlyForHandshake
+  fullName: BestHTTP.SocketIO.SocketOptions.QueryParamsOnlyForHandshake
+  type: Property
+  source:
+    id: QueryParamsOnlyForHandshake
+    path: ''
+    startLine: 146019
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nIf it&apos;s false, the parameters in the AdditionalQueryParams will be passed for all HTTP requests. Its default value is true.\n"
+  example: []
+  syntax:
+    content: public bool QueryParamsOnlyForHandshake { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property QueryParamsOnlyForHandshake As Boolean
+  overload: BestHTTP.SocketIO.SocketOptions.QueryParamsOnlyForHandshake*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.SocketOptions.#ctor
+  commentId: M:BestHTTP.SocketIO.SocketOptions.#ctor
+  id: '#ctor'
+  parent: BestHTTP.SocketIO.SocketOptions
+  langs:
+  - csharp
+  - vb
+  name: SocketOptions()
+  nameWithType: SocketOptions.SocketOptions()
+  fullName: BestHTTP.SocketIO.SocketOptions.SocketOptions()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 146031
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nConstructor, setting the default option values.\n"
+  example: []
+  syntax:
+    content: public SocketOptions()
+    content.vb: Public Sub New
+  overload: BestHTTP.SocketIO.SocketOptions.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BestHTTP.SocketIO
+  commentId: N:BestHTTP.SocketIO
+  name: BestHTTP.SocketIO
+  nameWithType: BestHTTP.SocketIO
+  fullName: BestHTTP.SocketIO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.SocketIO.SocketOptions.ConnectWith*
+  commentId: Overload:BestHTTP.SocketIO.SocketOptions.ConnectWith
+  name: ConnectWith
+  nameWithType: SocketOptions.ConnectWith
+  fullName: BestHTTP.SocketIO.SocketOptions.ConnectWith
+- uid: BestHTTP.SocketIO.Transports.TransportTypes
+  commentId: T:BestHTTP.SocketIO.Transports.TransportTypes
+  parent: BestHTTP.SocketIO.Transports
+  name: TransportTypes
+  nameWithType: TransportTypes
+  fullName: BestHTTP.SocketIO.Transports.TransportTypes
+- uid: BestHTTP.SocketIO.Transports
+  commentId: N:BestHTTP.SocketIO.Transports
+  name: BestHTTP.SocketIO.Transports
+  nameWithType: BestHTTP.SocketIO.Transports
+  fullName: BestHTTP.SocketIO.Transports
+- uid: BestHTTP.SocketIO.SocketOptions.Reconnection*
+  commentId: Overload:BestHTTP.SocketIO.SocketOptions.Reconnection
+  name: Reconnection
+  nameWithType: SocketOptions.Reconnection
+  fullName: BestHTTP.SocketIO.SocketOptions.Reconnection
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BestHTTP.SocketIO.SocketOptions.ReconnectionAttempts*
+  commentId: Overload:BestHTTP.SocketIO.SocketOptions.ReconnectionAttempts
+  name: ReconnectionAttempts
+  nameWithType: SocketOptions.ReconnectionAttempts
+  fullName: BestHTTP.SocketIO.SocketOptions.ReconnectionAttempts
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: BestHTTP.SocketIO.SocketOptions.ReconnectionDelay*
+  commentId: Overload:BestHTTP.SocketIO.SocketOptions.ReconnectionDelay
+  name: ReconnectionDelay
+  nameWithType: SocketOptions.ReconnectionDelay
+  fullName: BestHTTP.SocketIO.SocketOptions.ReconnectionDelay
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: BestHTTP.SocketIO.SocketOptions.ReconnectionDelayMax*
+  commentId: Overload:BestHTTP.SocketIO.SocketOptions.ReconnectionDelayMax
+  name: ReconnectionDelayMax
+  nameWithType: SocketOptions.ReconnectionDelayMax
+  fullName: BestHTTP.SocketIO.SocketOptions.ReconnectionDelayMax
+- uid: BestHTTP.SocketIO.SocketOptions.RandomizationFactor*
+  commentId: Overload:BestHTTP.SocketIO.SocketOptions.RandomizationFactor
+  name: RandomizationFactor
+  nameWithType: SocketOptions.RandomizationFactor
+  fullName: BestHTTP.SocketIO.SocketOptions.RandomizationFactor
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: BestHTTP.SocketIO.SocketOptions.Timeout*
+  commentId: Overload:BestHTTP.SocketIO.SocketOptions.Timeout
+  name: Timeout
+  nameWithType: SocketOptions.Timeout
+  fullName: BestHTTP.SocketIO.SocketOptions.Timeout
+- uid: BestHTTP.SocketIO.SocketOptions.AutoConnect*
+  commentId: Overload:BestHTTP.SocketIO.SocketOptions.AutoConnect
+  name: AutoConnect
+  nameWithType: SocketOptions.AutoConnect
+  fullName: BestHTTP.SocketIO.SocketOptions.AutoConnect
+- uid: BestHTTP.SocketIO.SocketOptions.AdditionalQueryParams*
+  commentId: Overload:BestHTTP.SocketIO.SocketOptions.AdditionalQueryParams
+  name: AdditionalQueryParams
+  nameWithType: SocketOptions.AdditionalQueryParams
+  fullName: BestHTTP.SocketIO.SocketOptions.AdditionalQueryParams
+- uid: ObservableDictionary{System.String,System.String}
+  commentId: '!:ObservableDictionary{System.String,System.String}'
+  definition: ObservableDictionary`2
+  name: ObservableDictionary<String, String>
+  nameWithType: ObservableDictionary<String, String>
+  fullName: ObservableDictionary<System.String, System.String>
+  nameWithType.vb: ObservableDictionary(Of String, String)
+  fullName.vb: ObservableDictionary(Of System.String, System.String)
+  name.vb: ObservableDictionary(Of String, String)
+  spec.csharp:
+  - uid: ObservableDictionary`2
+    name: ObservableDictionary
+    nameWithType: ObservableDictionary
+    fullName: ObservableDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ObservableDictionary`2
+    name: ObservableDictionary
+    nameWithType: ObservableDictionary
+    fullName: ObservableDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ObservableDictionary`2
+  isExternal: true
+  name: ObservableDictionary<, >
+  nameWithType: ObservableDictionary<, >
+  fullName: ObservableDictionary<, >
+  nameWithType.vb: ObservableDictionary(Of , )
+  fullName.vb: ObservableDictionary(Of , )
+  name.vb: ObservableDictionary(Of , )
+  spec.csharp:
+  - uid: ObservableDictionary`2
+    name: ObservableDictionary
+    nameWithType: ObservableDictionary
+    fullName: ObservableDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ObservableDictionary`2
+    name: ObservableDictionary
+    nameWithType: ObservableDictionary
+    fullName: ObservableDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SocketIO.SocketOptions.QueryParamsOnlyForHandshake*
+  commentId: Overload:BestHTTP.SocketIO.SocketOptions.QueryParamsOnlyForHandshake
+  name: QueryParamsOnlyForHandshake
+  nameWithType: SocketOptions.QueryParamsOnlyForHandshake
+  fullName: BestHTTP.SocketIO.SocketOptions.QueryParamsOnlyForHandshake
+- uid: BestHTTP.SocketIO.SocketOptions.#ctor*
+  commentId: Overload:BestHTTP.SocketIO.SocketOptions.#ctor
+  name: SocketOptions
+  nameWithType: SocketOptions.SocketOptions
+  fullName: BestHTTP.SocketIO.SocketOptions.SocketOptions

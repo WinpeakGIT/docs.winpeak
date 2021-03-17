@@ -1,0 +1,2615 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngine
+  commentId: T:Org.BouncyCastle.Crypto.Engines.SerpentEngine
+  id: SerpentEngine
+  parent: Org.BouncyCastle.Crypto.Engines
+  children:
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngine.DecryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngine.EncryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngine.MakeWorkingKey(System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: SerpentEngine
+  nameWithType: SerpentEngine
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngine
+  type: Class
+  source:
+    id: SerpentEngine
+    path: ''
+    startLine: 103679
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  example: []
+  syntax:
+    content: 'public sealed class SerpentEngine : SerpentEngineBase, IBlockCipher'
+    content.vb: >-
+      Public NotInheritable Class SerpentEngine
+          Inherits SerpentEngineBase
+          Implements IBlockCipher
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  implements:
+  - Org.BouncyCastle.Crypto.IBlockCipher
+  inheritedMembers:
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.BlockSize
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.encrypting
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.wKey
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X0
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X1
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X2
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X3
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.AlgorithmName
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.IsPartialBlockOkay
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.GetBlockSize
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Reset
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.RotateLeft(System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb0(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib0(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb1(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib1(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb2(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib2(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb3(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib3(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb4(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib4(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb5(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib5(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb6(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib6(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb7(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib7(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.LT
+  - Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.InverseLT
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngine.MakeWorkingKey(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngine.MakeWorkingKey(System.Byte[])
+  id: MakeWorkingKey(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngine
+  langs:
+  - csharp
+  - vb
+  name: MakeWorkingKey(Byte[])
+  nameWithType: SerpentEngine.MakeWorkingKey(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngine.MakeWorkingKey(System.Byte[])
+  type: Method
+  source:
+    id: MakeWorkingKey
+    path: ''
+    startLine: 103688
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  example: []
+  syntax:
+    content: protected override int[] MakeWorkingKey(byte[] key)
+    parameters:
+    - id: key
+      type: System.Byte[]
+    return:
+      type: System.Int32[]
+    content.vb: Protected Overrides Function MakeWorkingKey(key As Byte()) As Integer()
+  overridden: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.MakeWorkingKey(System.Byte[])
+  overload: Org.BouncyCastle.Crypto.Engines.SerpentEngine.MakeWorkingKey*
+  nameWithType.vb: SerpentEngine.MakeWorkingKey(Byte())
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Crypto.Engines.SerpentEngine.MakeWorkingKey(System.Byte())
+  name.vb: MakeWorkingKey(Byte())
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngine.EncryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngine.EncryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  id: EncryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngine
+  langs:
+  - csharp
+  - vb
+  name: EncryptBlock(Byte[], Int32, Byte[], Int32)
+  nameWithType: SerpentEngine.EncryptBlock(Byte[], Int32, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngine.EncryptBlock(System.Byte[], System.Int32, System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: EncryptBlock
+    path: ''
+    startLine: 103820
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  example: []
+  syntax:
+    content: protected override void EncryptBlock(byte[] input, int inOff, byte[] output, int outOff)
+    parameters:
+    - id: input
+      type: System.Byte[]
+    - id: inOff
+      type: System.Int32
+    - id: output
+      type: System.Byte[]
+    - id: outOff
+      type: System.Int32
+    content.vb: Protected Overrides Sub EncryptBlock(input As Byte(), inOff As Integer, output As Byte(), outOff As Integer)
+  overridden: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.EncryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  overload: Org.BouncyCastle.Crypto.Engines.SerpentEngine.EncryptBlock*
+  nameWithType.vb: SerpentEngine.EncryptBlock(Byte(), Int32, Byte(), Int32)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Crypto.Engines.SerpentEngine.EncryptBlock(System.Byte(), System.Int32, System.Byte(), System.Int32)
+  name.vb: EncryptBlock(Byte(), Int32, Byte(), Int32)
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngine.DecryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngine.DecryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  id: DecryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngine
+  langs:
+  - csharp
+  - vb
+  name: DecryptBlock(Byte[], Int32, Byte[], Int32)
+  nameWithType: SerpentEngine.DecryptBlock(Byte[], Int32, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngine.DecryptBlock(System.Byte[], System.Int32, System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: DecryptBlock
+    path: ''
+    startLine: 103874
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  example: []
+  syntax:
+    content: protected override void DecryptBlock(byte[] input, int inOff, byte[] output, int outOff)
+    parameters:
+    - id: input
+      type: System.Byte[]
+    - id: inOff
+      type: System.Int32
+    - id: output
+      type: System.Byte[]
+    - id: outOff
+      type: System.Int32
+    content.vb: Protected Overrides Sub DecryptBlock(input As Byte(), inOff As Integer, output As Byte(), outOff As Integer)
+  overridden: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.DecryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  overload: Org.BouncyCastle.Crypto.Engines.SerpentEngine.DecryptBlock*
+  nameWithType.vb: SerpentEngine.DecryptBlock(Byte(), Int32, Byte(), Int32)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Crypto.Engines.SerpentEngine.DecryptBlock(System.Byte(), System.Int32, System.Byte(), System.Int32)
+  name.vb: DecryptBlock(Byte(), Int32, Byte(), Int32)
+references:
+- uid: Org.BouncyCastle.Crypto.Engines
+  commentId: N:Org.BouncyCastle.Crypto.Engines
+  name: Org.BouncyCastle.Crypto.Engines
+  nameWithType: Org.BouncyCastle.Crypto.Engines
+  fullName: Org.BouncyCastle.Crypto.Engines
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  commentId: T:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  parent: Org.BouncyCastle.Crypto.Engines
+  name: SerpentEngineBase
+  nameWithType: SerpentEngineBase
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+- uid: Org.BouncyCastle.Crypto.IBlockCipher
+  commentId: T:Org.BouncyCastle.Crypto.IBlockCipher
+  parent: Org.BouncyCastle.Crypto
+  name: IBlockCipher
+  nameWithType: IBlockCipher
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.BlockSize
+  commentId: F:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.BlockSize
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: BlockSize
+  nameWithType: SerpentEngineBase.BlockSize
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.BlockSize
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.encrypting
+  commentId: F:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.encrypting
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: encrypting
+  nameWithType: SerpentEngineBase.encrypting
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.encrypting
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.wKey
+  commentId: F:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.wKey
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: wKey
+  nameWithType: SerpentEngineBase.wKey
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.wKey
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X0
+  commentId: F:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X0
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: X0
+  nameWithType: SerpentEngineBase.X0
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X0
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X1
+  commentId: F:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X1
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: X1
+  nameWithType: SerpentEngineBase.X1
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X1
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X2
+  commentId: F:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X2
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: X2
+  nameWithType: SerpentEngineBase.X2
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X2
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X3
+  commentId: F:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X3
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: X3
+  nameWithType: SerpentEngineBase.X3
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.X3
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Init(Boolean, ICipherParameters)
+  nameWithType: SerpentEngineBase.Init(Boolean, ICipherParameters)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Init(System.Boolean, Org.BouncyCastle.Crypto.ICipherParameters)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+    name: Init
+    nameWithType: SerpentEngineBase.Init
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.ICipherParameters
+    name: ICipherParameters
+    nameWithType: ICipherParameters
+    fullName: Org.BouncyCastle.Crypto.ICipherParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+    name: Init
+    nameWithType: SerpentEngineBase.Init
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.ICipherParameters
+    name: ICipherParameters
+    nameWithType: ICipherParameters
+    fullName: Org.BouncyCastle.Crypto.ICipherParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.AlgorithmName
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: AlgorithmName
+  nameWithType: SerpentEngineBase.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.AlgorithmName
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.IsPartialBlockOkay
+  commentId: P:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.IsPartialBlockOkay
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: IsPartialBlockOkay
+  nameWithType: SerpentEngineBase.IsPartialBlockOkay
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.IsPartialBlockOkay
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.GetBlockSize
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.GetBlockSize
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: GetBlockSize()
+  nameWithType: SerpentEngineBase.GetBlockSize()
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.GetBlockSize()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.GetBlockSize
+    name: GetBlockSize
+    nameWithType: SerpentEngineBase.GetBlockSize
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.GetBlockSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.GetBlockSize
+    name: GetBlockSize
+    nameWithType: SerpentEngineBase.GetBlockSize
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.GetBlockSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: ProcessBlock(Byte[], Int32, Byte[], Int32)
+  nameWithType: SerpentEngineBase.ProcessBlock(Byte[], Int32, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock(System.Byte[], System.Int32, System.Byte[], System.Int32)
+  nameWithType.vb: SerpentEngineBase.ProcessBlock(Byte(), Int32, Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock(System.Byte(), System.Int32, System.Byte(), System.Int32)
+  name.vb: ProcessBlock(Byte(), Int32, Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+    name: ProcessBlock
+    nameWithType: SerpentEngineBase.ProcessBlock
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+    name: ProcessBlock
+    nameWithType: SerpentEngineBase.ProcessBlock
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.ProcessBlock
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Reset
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Reset
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: Reset()
+  nameWithType: SerpentEngineBase.Reset()
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Reset()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Reset
+    name: Reset
+    nameWithType: SerpentEngineBase.Reset
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Reset
+    name: Reset
+    nameWithType: SerpentEngineBase.Reset
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.RotateLeft(System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.RotateLeft(System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: RotateLeft(Int32, Int32)
+  nameWithType: SerpentEngineBase.RotateLeft(Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.RotateLeft(System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.RotateLeft(System.Int32,System.Int32)
+    name: RotateLeft
+    nameWithType: SerpentEngineBase.RotateLeft
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.RotateLeft
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.RotateLeft(System.Int32,System.Int32)
+    name: RotateLeft
+    nameWithType: SerpentEngineBase.RotateLeft
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.RotateLeft
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb0(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb0(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Sb0(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Sb0(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb0(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb0(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb0
+    nameWithType: SerpentEngineBase.Sb0
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb0
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb0(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb0
+    nameWithType: SerpentEngineBase.Sb0
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb0
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib0(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib0(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Ib0(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Ib0(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib0(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib0(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib0
+    nameWithType: SerpentEngineBase.Ib0
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib0
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib0(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib0
+    nameWithType: SerpentEngineBase.Ib0
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib0
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb1(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb1(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Sb1(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Sb1(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb1(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb1(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb1
+    nameWithType: SerpentEngineBase.Sb1
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb1
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb1(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb1
+    nameWithType: SerpentEngineBase.Sb1
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb1
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib1(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib1(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Ib1(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Ib1(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib1(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib1(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib1
+    nameWithType: SerpentEngineBase.Ib1
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib1
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib1(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib1
+    nameWithType: SerpentEngineBase.Ib1
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib1
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb2(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb2(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Sb2(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Sb2(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb2(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb2(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb2
+    nameWithType: SerpentEngineBase.Sb2
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb2(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb2
+    nameWithType: SerpentEngineBase.Sb2
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib2(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib2(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Ib2(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Ib2(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib2(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib2(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib2
+    nameWithType: SerpentEngineBase.Ib2
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib2(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib2
+    nameWithType: SerpentEngineBase.Ib2
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb3(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb3(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Sb3(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Sb3(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb3(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb3(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb3
+    nameWithType: SerpentEngineBase.Sb3
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb3(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb3
+    nameWithType: SerpentEngineBase.Sb3
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib3(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib3(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Ib3(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Ib3(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib3(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib3(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib3
+    nameWithType: SerpentEngineBase.Ib3
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib3(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib3
+    nameWithType: SerpentEngineBase.Ib3
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib3
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb4(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb4(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Sb4(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Sb4(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb4(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb4(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb4
+    nameWithType: SerpentEngineBase.Sb4
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb4
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb4(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb4
+    nameWithType: SerpentEngineBase.Sb4
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb4
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib4(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib4(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Ib4(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Ib4(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib4(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib4(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib4
+    nameWithType: SerpentEngineBase.Ib4
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib4
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib4(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib4
+    nameWithType: SerpentEngineBase.Ib4
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib4
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb5(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb5(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Sb5(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Sb5(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb5(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb5(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb5
+    nameWithType: SerpentEngineBase.Sb5
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb5
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb5(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb5
+    nameWithType: SerpentEngineBase.Sb5
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb5
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib5(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib5(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Ib5(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Ib5(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib5(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib5(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib5
+    nameWithType: SerpentEngineBase.Ib5
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib5
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib5(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib5
+    nameWithType: SerpentEngineBase.Ib5
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib5
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb6(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb6(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Sb6(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Sb6(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb6(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb6(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb6
+    nameWithType: SerpentEngineBase.Sb6
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb6
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb6(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb6
+    nameWithType: SerpentEngineBase.Sb6
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb6
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib6(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib6(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Ib6(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Ib6(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib6(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib6(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib6
+    nameWithType: SerpentEngineBase.Ib6
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib6
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib6(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib6
+    nameWithType: SerpentEngineBase.Ib6
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib6
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb7(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb7(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Sb7(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Sb7(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb7(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb7(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb7
+    nameWithType: SerpentEngineBase.Sb7
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb7
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb7(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Sb7
+    nameWithType: SerpentEngineBase.Sb7
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Sb7
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib7(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib7(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: Ib7(Int32, Int32, Int32, Int32)
+  nameWithType: SerpentEngineBase.Ib7(Int32, Int32, Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib7(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib7(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib7
+    nameWithType: SerpentEngineBase.Ib7
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib7
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib7(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Ib7
+    nameWithType: SerpentEngineBase.Ib7
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.Ib7
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.LT
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.LT
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: LT()
+  nameWithType: SerpentEngineBase.LT()
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.LT()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.LT
+    name: LT
+    nameWithType: SerpentEngineBase.LT
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.LT
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.LT
+    name: LT
+    nameWithType: SerpentEngineBase.LT
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.LT
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.InverseLT
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.InverseLT
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  name: InverseLT()
+  nameWithType: SerpentEngineBase.InverseLT()
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.InverseLT()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.InverseLT
+    name: InverseLT
+    nameWithType: SerpentEngineBase.InverseLT
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.InverseLT
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.InverseLT
+    name: InverseLT
+    nameWithType: SerpentEngineBase.InverseLT
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.InverseLT
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.MakeWorkingKey(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.MakeWorkingKey(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: MakeWorkingKey(Byte[])
+  nameWithType: SerpentEngineBase.MakeWorkingKey(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.MakeWorkingKey(System.Byte[])
+  nameWithType.vb: SerpentEngineBase.MakeWorkingKey(Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.MakeWorkingKey(System.Byte())
+  name.vb: MakeWorkingKey(Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.MakeWorkingKey(System.Byte[])
+    name: MakeWorkingKey
+    nameWithType: SerpentEngineBase.MakeWorkingKey
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.MakeWorkingKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.MakeWorkingKey(System.Byte[])
+    name: MakeWorkingKey
+    nameWithType: SerpentEngineBase.MakeWorkingKey
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.MakeWorkingKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngine.MakeWorkingKey*
+  commentId: Overload:Org.BouncyCastle.Crypto.Engines.SerpentEngine.MakeWorkingKey
+  name: MakeWorkingKey
+  nameWithType: SerpentEngine.MakeWorkingKey
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngine.MakeWorkingKey
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.EncryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.EncryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: EncryptBlock(Byte[], Int32, Byte[], Int32)
+  nameWithType: SerpentEngineBase.EncryptBlock(Byte[], Int32, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.EncryptBlock(System.Byte[], System.Int32, System.Byte[], System.Int32)
+  nameWithType.vb: SerpentEngineBase.EncryptBlock(Byte(), Int32, Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.EncryptBlock(System.Byte(), System.Int32, System.Byte(), System.Int32)
+  name.vb: EncryptBlock(Byte(), Int32, Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.EncryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+    name: EncryptBlock
+    nameWithType: SerpentEngineBase.EncryptBlock
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.EncryptBlock
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.EncryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+    name: EncryptBlock
+    nameWithType: SerpentEngineBase.EncryptBlock
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.EncryptBlock
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngine.EncryptBlock*
+  commentId: Overload:Org.BouncyCastle.Crypto.Engines.SerpentEngine.EncryptBlock
+  name: EncryptBlock
+  nameWithType: SerpentEngine.EncryptBlock
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngine.EncryptBlock
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.DecryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.DecryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase
+  isExternal: true
+  name: DecryptBlock(Byte[], Int32, Byte[], Int32)
+  nameWithType: SerpentEngineBase.DecryptBlock(Byte[], Int32, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.DecryptBlock(System.Byte[], System.Int32, System.Byte[], System.Int32)
+  nameWithType.vb: SerpentEngineBase.DecryptBlock(Byte(), Int32, Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.DecryptBlock(System.Byte(), System.Int32, System.Byte(), System.Int32)
+  name.vb: DecryptBlock(Byte(), Int32, Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.DecryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+    name: DecryptBlock
+    nameWithType: SerpentEngineBase.DecryptBlock
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.DecryptBlock
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.DecryptBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+    name: DecryptBlock
+    nameWithType: SerpentEngineBase.DecryptBlock
+    fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngineBase.DecryptBlock
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.SerpentEngine.DecryptBlock*
+  commentId: Overload:Org.BouncyCastle.Crypto.Engines.SerpentEngine.DecryptBlock
+  name: DecryptBlock
+  nameWithType: SerpentEngine.DecryptBlock
+  fullName: Org.BouncyCastle.Crypto.Engines.SerpentEngine.DecryptBlock

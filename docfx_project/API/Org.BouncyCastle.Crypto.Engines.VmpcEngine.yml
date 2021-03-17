@@ -1,0 +1,1051 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  commentId: T:Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  id: VmpcEngine
+  parent: Org.BouncyCastle.Crypto.Engines
+  children:
+  - Org.BouncyCastle.Crypto.Engines.VmpcEngine.AlgorithmName
+  - Org.BouncyCastle.Crypto.Engines.VmpcEngine.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  - Org.BouncyCastle.Crypto.Engines.VmpcEngine.InitKey(System.Byte[],System.Byte[])
+  - Org.BouncyCastle.Crypto.Engines.VmpcEngine.n
+  - Org.BouncyCastle.Crypto.Engines.VmpcEngine.P
+  - Org.BouncyCastle.Crypto.Engines.VmpcEngine.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.Engines.VmpcEngine.Reset
+  - Org.BouncyCastle.Crypto.Engines.VmpcEngine.ReturnByte(System.Byte)
+  - Org.BouncyCastle.Crypto.Engines.VmpcEngine.s
+  - Org.BouncyCastle.Crypto.Engines.VmpcEngine.workingIV
+  - Org.BouncyCastle.Crypto.Engines.VmpcEngine.workingKey
+  langs:
+  - csharp
+  - vb
+  name: VmpcEngine
+  nameWithType: VmpcEngine
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  type: Class
+  source:
+    id: VmpcEngine
+    path: ''
+    startLine: 99694
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  syntax:
+    content: 'public class VmpcEngine : IStreamCipher'
+    content.vb: >-
+      Public Class VmpcEngine
+          Implements IStreamCipher
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Org.BouncyCastle.Crypto.Engines.VmpcKsa3Engine
+  implements:
+  - Org.BouncyCastle.Crypto.IStreamCipher
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.n
+  commentId: F:Org.BouncyCastle.Crypto.Engines.VmpcEngine.n
+  id: n
+  parent: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  langs:
+  - csharp
+  - vb
+  name: n
+  nameWithType: VmpcEngine.n
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.n
+  type: Field
+  source:
+    id: n
+    path: ''
+    startLine: 99701
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  syntax:
+    content: protected byte n
+    return:
+      type: System.Byte
+    content.vb: Protected n As Byte
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.P
+  commentId: F:Org.BouncyCastle.Crypto.Engines.VmpcEngine.P
+  id: P
+  parent: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  langs:
+  - csharp
+  - vb
+  name: P
+  nameWithType: VmpcEngine.P
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.P
+  type: Field
+  source:
+    id: P
+    path: ''
+    startLine: 99702
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  syntax:
+    content: protected byte[] P
+    return:
+      type: System.Byte[]
+    content.vb: Protected P As Byte()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.s
+  commentId: F:Org.BouncyCastle.Crypto.Engines.VmpcEngine.s
+  id: s
+  parent: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  langs:
+  - csharp
+  - vb
+  name: s
+  nameWithType: VmpcEngine.s
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.s
+  type: Field
+  source:
+    id: s
+    path: ''
+    startLine: 99703
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  syntax:
+    content: protected byte s
+    return:
+      type: System.Byte
+    content.vb: Protected s As Byte
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.workingIV
+  commentId: F:Org.BouncyCastle.Crypto.Engines.VmpcEngine.workingIV
+  id: workingIV
+  parent: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  langs:
+  - csharp
+  - vb
+  name: workingIV
+  nameWithType: VmpcEngine.workingIV
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.workingIV
+  type: Field
+  source:
+    id: workingIV
+    path: ''
+    startLine: 99705
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  syntax:
+    content: protected byte[] workingIV
+    return:
+      type: System.Byte[]
+    content.vb: Protected workingIV As Byte()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.workingKey
+  commentId: F:Org.BouncyCastle.Crypto.Engines.VmpcEngine.workingKey
+  id: workingKey
+  parent: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  langs:
+  - csharp
+  - vb
+  name: workingKey
+  nameWithType: VmpcEngine.workingKey
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.workingKey
+  type: Field
+  source:
+    id: workingKey
+    path: ''
+    startLine: 99706
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  syntax:
+    content: protected byte[] workingKey
+    return:
+      type: System.Byte[]
+    content.vb: Protected workingKey As Byte()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.Engines.VmpcEngine.AlgorithmName
+  id: AlgorithmName
+  parent: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  langs:
+  - csharp
+  - vb
+  name: AlgorithmName
+  nameWithType: VmpcEngine.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.AlgorithmName
+  type: Property
+  source:
+    id: AlgorithmName
+    path: ''
+    startLine: 99708
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  syntax:
+    content: public virtual string AlgorithmName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property AlgorithmName As String
+  overload: Org.BouncyCastle.Crypto.Engines.VmpcEngine.AlgorithmName*
+  implements:
+  - Org.BouncyCastle.Crypto.IStreamCipher.AlgorithmName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.VmpcEngine.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  id: Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  parent: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  langs:
+  - csharp
+  - vb
+  name: Init(Boolean, ICipherParameters)
+  nameWithType: VmpcEngine.Init(Boolean, ICipherParameters)
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.Init(System.Boolean, Org.BouncyCastle.Crypto.ICipherParameters)
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 99723
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  example: []
+  syntax:
+    content: public virtual void Init(bool forEncryption, ICipherParameters parameters)
+    parameters:
+    - id: forEncryption
+      type: System.Boolean
+    - id: parameters
+      type: Org.BouncyCastle.Crypto.ICipherParameters
+    content.vb: Public Overridable Sub Init(forEncryption As Boolean, parameters As ICipherParameters)
+  overload: Org.BouncyCastle.Crypto.Engines.VmpcEngine.Init*
+  implements:
+  - Org.BouncyCastle.Crypto.IStreamCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.InitKey(System.Byte[],System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Engines.VmpcEngine.InitKey(System.Byte[],System.Byte[])
+  id: InitKey(System.Byte[],System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  langs:
+  - csharp
+  - vb
+  name: InitKey(Byte[], Byte[])
+  nameWithType: VmpcEngine.InitKey(Byte[], Byte[])
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.InitKey(System.Byte[], System.Byte[])
+  type: Method
+  source:
+    id: InitKey
+    path: ''
+    startLine: 99747
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  syntax:
+    content: protected virtual void InitKey(byte[] keyBytes, byte[] ivBytes)
+    parameters:
+    - id: keyBytes
+      type: System.Byte[]
+    - id: ivBytes
+      type: System.Byte[]
+    content.vb: Protected Overridable Sub InitKey(keyBytes As Byte(), ivBytes As Byte())
+  overload: Org.BouncyCastle.Crypto.Engines.VmpcEngine.InitKey*
+  nameWithType.vb: VmpcEngine.InitKey(Byte(), Byte())
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Engines.VmpcEngine.InitKey(System.Byte(), System.Byte())
+  name.vb: InitKey(Byte(), Byte())
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.VmpcEngine.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  id: ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  langs:
+  - csharp
+  - vb
+  name: ProcessBytes(Byte[], Int32, Int32, Byte[], Int32)
+  nameWithType: VmpcEngine.ProcessBytes(Byte[], Int32, Int32, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.ProcessBytes(System.Byte[], System.Int32, System.Int32, System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: ProcessBytes
+    path: ''
+    startLine: 99775
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  syntax:
+    content: public virtual void ProcessBytes(byte[] input, int inOff, int len, byte[] output, int outOff)
+    parameters:
+    - id: input
+      type: System.Byte[]
+    - id: inOff
+      type: System.Int32
+    - id: len
+      type: System.Int32
+    - id: output
+      type: System.Byte[]
+    - id: outOff
+      type: System.Int32
+    content.vb: Public Overridable Sub ProcessBytes(input As Byte(), inOff As Integer, len As Integer, output As Byte(), outOff As Integer)
+  overload: Org.BouncyCastle.Crypto.Engines.VmpcEngine.ProcessBytes*
+  implements:
+  - Org.BouncyCastle.Crypto.IStreamCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  nameWithType.vb: VmpcEngine.ProcessBytes(Byte(), Int32, Int32, Byte(), Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Engines.VmpcEngine.ProcessBytes(System.Byte(), System.Int32, System.Int32, System.Byte(), System.Int32)
+  name.vb: ProcessBytes(Byte(), Int32, Int32, Byte(), Int32)
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.Reset
+  commentId: M:Org.BouncyCastle.Crypto.Engines.VmpcEngine.Reset
+  id: Reset
+  parent: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: VmpcEngine.Reset()
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.Reset()
+  type: Method
+  source:
+    id: Reset
+    path: ''
+    startLine: 99800
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  syntax:
+    content: public virtual void Reset()
+    content.vb: Public Overridable Sub Reset
+  overload: Org.BouncyCastle.Crypto.Engines.VmpcEngine.Reset*
+  implements:
+  - Org.BouncyCastle.Crypto.IStreamCipher.Reset
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.ReturnByte(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.Engines.VmpcEngine.ReturnByte(System.Byte)
+  id: ReturnByte(System.Byte)
+  parent: Org.BouncyCastle.Crypto.Engines.VmpcEngine
+  langs:
+  - csharp
+  - vb
+  name: ReturnByte(Byte)
+  nameWithType: VmpcEngine.ReturnByte(Byte)
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.ReturnByte(System.Byte)
+  type: Method
+  source:
+    id: ReturnByte
+    path: ''
+    startLine: 99805
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Engines
+  syntax:
+    content: public virtual byte ReturnByte(byte input)
+    parameters:
+    - id: input
+      type: System.Byte
+    return:
+      type: System.Byte
+    content.vb: Public Overridable Function ReturnByte(input As Byte) As Byte
+  overload: Org.BouncyCastle.Crypto.Engines.VmpcEngine.ReturnByte*
+  implements:
+  - Org.BouncyCastle.Crypto.IStreamCipher.ReturnByte(System.Byte)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Org.BouncyCastle.Crypto.Engines
+  commentId: N:Org.BouncyCastle.Crypto.Engines
+  name: Org.BouncyCastle.Crypto.Engines
+  nameWithType: Org.BouncyCastle.Crypto.Engines
+  fullName: Org.BouncyCastle.Crypto.Engines
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.IStreamCipher
+  commentId: T:Org.BouncyCastle.Crypto.IStreamCipher
+  parent: Org.BouncyCastle.Crypto
+  name: IStreamCipher
+  nameWithType: IStreamCipher
+  fullName: Org.BouncyCastle.Crypto.IStreamCipher
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.AlgorithmName*
+  commentId: Overload:Org.BouncyCastle.Crypto.Engines.VmpcEngine.AlgorithmName
+  name: AlgorithmName
+  nameWithType: VmpcEngine.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.AlgorithmName
+- uid: Org.BouncyCastle.Crypto.IStreamCipher.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.IStreamCipher.AlgorithmName
+  parent: Org.BouncyCastle.Crypto.IStreamCipher
+  name: AlgorithmName
+  nameWithType: IStreamCipher.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.IStreamCipher.AlgorithmName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.Init*
+  commentId: Overload:Org.BouncyCastle.Crypto.Engines.VmpcEngine.Init
+  name: Init
+  nameWithType: VmpcEngine.Init
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.Init
+- uid: Org.BouncyCastle.Crypto.IStreamCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  commentId: M:Org.BouncyCastle.Crypto.IStreamCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  parent: Org.BouncyCastle.Crypto.IStreamCipher
+  isExternal: true
+  name: Init(Boolean, ICipherParameters)
+  nameWithType: IStreamCipher.Init(Boolean, ICipherParameters)
+  fullName: Org.BouncyCastle.Crypto.IStreamCipher.Init(System.Boolean, Org.BouncyCastle.Crypto.ICipherParameters)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IStreamCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+    name: Init
+    nameWithType: IStreamCipher.Init
+    fullName: Org.BouncyCastle.Crypto.IStreamCipher.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.ICipherParameters
+    name: ICipherParameters
+    nameWithType: ICipherParameters
+    fullName: Org.BouncyCastle.Crypto.ICipherParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IStreamCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+    name: Init
+    nameWithType: IStreamCipher.Init
+    fullName: Org.BouncyCastle.Crypto.IStreamCipher.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.ICipherParameters
+    name: ICipherParameters
+    nameWithType: ICipherParameters
+    fullName: Org.BouncyCastle.Crypto.ICipherParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.ICipherParameters
+  commentId: T:Org.BouncyCastle.Crypto.ICipherParameters
+  parent: Org.BouncyCastle.Crypto
+  name: ICipherParameters
+  nameWithType: ICipherParameters
+  fullName: Org.BouncyCastle.Crypto.ICipherParameters
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.InitKey*
+  commentId: Overload:Org.BouncyCastle.Crypto.Engines.VmpcEngine.InitKey
+  name: InitKey
+  nameWithType: VmpcEngine.InitKey
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.InitKey
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.ProcessBytes*
+  commentId: Overload:Org.BouncyCastle.Crypto.Engines.VmpcEngine.ProcessBytes
+  name: ProcessBytes
+  nameWithType: VmpcEngine.ProcessBytes
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.ProcessBytes
+- uid: Org.BouncyCastle.Crypto.IStreamCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.IStreamCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.IStreamCipher
+  isExternal: true
+  name: ProcessBytes(Byte[], Int32, Int32, Byte[], Int32)
+  nameWithType: IStreamCipher.ProcessBytes(Byte[], Int32, Int32, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.IStreamCipher.ProcessBytes(System.Byte[], System.Int32, System.Int32, System.Byte[], System.Int32)
+  nameWithType.vb: IStreamCipher.ProcessBytes(Byte(), Int32, Int32, Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.IStreamCipher.ProcessBytes(System.Byte(), System.Int32, System.Int32, System.Byte(), System.Int32)
+  name.vb: ProcessBytes(Byte(), Int32, Int32, Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IStreamCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: ProcessBytes
+    nameWithType: IStreamCipher.ProcessBytes
+    fullName: Org.BouncyCastle.Crypto.IStreamCipher.ProcessBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IStreamCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: ProcessBytes
+    nameWithType: IStreamCipher.ProcessBytes
+    fullName: Org.BouncyCastle.Crypto.IStreamCipher.ProcessBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.Reset*
+  commentId: Overload:Org.BouncyCastle.Crypto.Engines.VmpcEngine.Reset
+  name: Reset
+  nameWithType: VmpcEngine.Reset
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.Reset
+- uid: Org.BouncyCastle.Crypto.IStreamCipher.Reset
+  commentId: M:Org.BouncyCastle.Crypto.IStreamCipher.Reset
+  parent: Org.BouncyCastle.Crypto.IStreamCipher
+  name: Reset()
+  nameWithType: IStreamCipher.Reset()
+  fullName: Org.BouncyCastle.Crypto.IStreamCipher.Reset()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IStreamCipher.Reset
+    name: Reset
+    nameWithType: IStreamCipher.Reset
+    fullName: Org.BouncyCastle.Crypto.IStreamCipher.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IStreamCipher.Reset
+    name: Reset
+    nameWithType: IStreamCipher.Reset
+    fullName: Org.BouncyCastle.Crypto.IStreamCipher.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Engines.VmpcEngine.ReturnByte*
+  commentId: Overload:Org.BouncyCastle.Crypto.Engines.VmpcEngine.ReturnByte
+  name: ReturnByte
+  nameWithType: VmpcEngine.ReturnByte
+  fullName: Org.BouncyCastle.Crypto.Engines.VmpcEngine.ReturnByte
+- uid: Org.BouncyCastle.Crypto.IStreamCipher.ReturnByte(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.IStreamCipher.ReturnByte(System.Byte)
+  parent: Org.BouncyCastle.Crypto.IStreamCipher
+  isExternal: true
+  name: ReturnByte(Byte)
+  nameWithType: IStreamCipher.ReturnByte(Byte)
+  fullName: Org.BouncyCastle.Crypto.IStreamCipher.ReturnByte(System.Byte)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IStreamCipher.ReturnByte(System.Byte)
+    name: ReturnByte
+    nameWithType: IStreamCipher.ReturnByte
+    fullName: Org.BouncyCastle.Crypto.IStreamCipher.ReturnByte
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IStreamCipher.ReturnByte(System.Byte)
+    name: ReturnByte
+    nameWithType: IStreamCipher.ReturnByte
+    fullName: Org.BouncyCastle.Crypto.IStreamCipher.ReturnByte
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

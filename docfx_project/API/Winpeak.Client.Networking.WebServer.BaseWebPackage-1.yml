@@ -1,0 +1,856 @@
+### YamlMime:ManagedReference
+items:
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1
+  commentId: T:Winpeak.Client.Networking.WebServer.BaseWebPackage`1
+  id: BaseWebPackage`1
+  parent: Winpeak.Client.Networking.WebServer
+  children:
+  - Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor(System.String,System.String)
+  - Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Callback
+  - Winpeak.Client.Networking.WebServer.BaseWebPackage`1.OnRequestFinished(HTTPRequest,HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send(System.Action{`0})
+  langs:
+  - csharp
+  - vb
+  name: BaseWebPackage<T>
+  nameWithType: BaseWebPackage<T>
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>
+  type: Class
+  source:
+    id: BaseWebPackage
+    path: ''
+    startLine: 166884
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: 'public abstract class BaseWebPackage<T> : WebRequest, IWebRequest where T : WebResult, new()'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public MustInherit Class BaseWebPackage(Of T As {WebResult, New})
+          Inherits WebRequest
+          Implements IWebRequest
+  inheritance:
+  - System.Object
+  - Winpeak.Client.Networking.WebServer.WebRequest
+  derivedClasses:
+  - Winpeak.Client.Networking.WebServer.AddFriend
+  - Winpeak.Client.Networking.WebServer.ApproveGameSessionRequest
+  - Winpeak.Client.Networking.WebServer.Authorization
+  - Winpeak.Client.Networking.WebServer.CheckAuthorization
+  - Winpeak.Client.Networking.WebServer.CloseGameSession
+  - Winpeak.Client.Networking.WebServer.CreateGameSession
+  - Winpeak.Client.Networking.WebServer.CreateGameSessionRequest
+  - Winpeak.Client.Networking.WebServer.EditProfile
+  - Winpeak.Client.Networking.WebServer.GetGameInfo
+  - Winpeak.Client.Networking.WebServer.GetUserInfo
+  - Winpeak.Client.Networking.WebServer.PasswordRecovery
+  - Winpeak.Client.Networking.WebServer.PasswordRecoveryRequest
+  - Winpeak.Client.Networking.WebServer.Registration
+  - Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequest
+  - Winpeak.Client.Networking.WebServer.RemoveFriend
+  - Winpeak.Client.Networking.WebServer.SearchGame
+  - Winpeak.Client.Networking.WebServer.SearchUser
+  implements:
+  - Winpeak.Client.Networking.WebServer.IWebRequest
+  inheritedMembers:
+  - Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
+  - Winpeak.Client.Networking.WebServer.WebRequest.m_url
+  - Winpeak.Client.Networking.WebServer.WebRequest.Send
+  - Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
+  - Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl(System.String)
+  - Winpeak.Client.Networking.WebServer.WebRequest.Url
+  - Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
+  - Winpeak.Client.Networking.WebServer.WebRequest.Timeout
+  - Winpeak.Client.Networking.WebServer.WebRequest.Method
+  - Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: BaseWebPackage(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T)
+  name.vb: BaseWebPackage(Of T)
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Callback
+  commentId: F:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Callback
+  id: Callback
+  parent: Winpeak.Client.Networking.WebServer.BaseWebPackage`1
+  langs:
+  - csharp
+  - vb
+  name: Callback
+  nameWithType: BaseWebPackage<T>.Callback
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.Callback
+  type: Field
+  source:
+    id: Callback
+    path: ''
+    startLine: 166886
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public Action<T> Callback
+    return:
+      type: System.Action{{T}}
+    content.vb: Public Callback As Action(Of T)
+  nameWithType.vb: BaseWebPackage(Of T).Callback
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).Callback
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor(System.String,System.String)
+  commentId: M:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Winpeak.Client.Networking.WebServer.BaseWebPackage`1
+  langs:
+  - csharp
+  - vb
+  name: BaseWebPackage(String, String)
+  nameWithType: BaseWebPackage<T>.BaseWebPackage(String, String)
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.BaseWebPackage(System.String, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 166889
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: protected BaseWebPackage(string mod, string act)
+    parameters:
+    - id: mod
+      type: System.String
+    - id: act
+      type: System.String
+    content.vb: Protected Sub New(mod As String, act As String)
+  overload: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor*
+  nameWithType.vb: BaseWebPackage(Of T).BaseWebPackage(String, String)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).BaseWebPackage(System.String, System.String)
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send(System.Action{`0})
+  commentId: M:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send(System.Action{`0})
+  id: Send(System.Action{`0})
+  parent: Winpeak.Client.Networking.WebServer.BaseWebPackage`1
+  langs:
+  - csharp
+  - vb
+  name: Send(Action<T>)
+  nameWithType: BaseWebPackage<T>.Send(Action<T>)
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.Send(System.Action<T>)
+  type: Method
+  source:
+    id: Send
+    path: ''
+    startLine: 166891
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public void Send(Action<T> callback)
+    parameters:
+    - id: callback
+      type: System.Action{{T}}
+    content.vb: Public Sub Send(callback As Action(Of T))
+  overload: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send*
+  nameWithType.vb: BaseWebPackage(Of T).Send(Action(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).Send(System.Action(Of T))
+  name.vb: Send(Action(Of T))
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.OnRequestFinished(HTTPRequest,HTTPResponse)
+  commentId: M:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.OnRequestFinished(HTTPRequest,HTTPResponse)
+  id: OnRequestFinished(HTTPRequest,HTTPResponse)
+  parent: Winpeak.Client.Networking.WebServer.BaseWebPackage`1
+  langs:
+  - csharp
+  - vb
+  name: OnRequestFinished(HTTPRequest, HTTPResponse)
+  nameWithType: BaseWebPackage<T>.OnRequestFinished(HTTPRequest, HTTPResponse)
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.OnRequestFinished(HTTPRequest, HTTPResponse)
+  type: Method
+  source:
+    id: OnRequestFinished
+    path: ''
+    startLine: 166896
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public override void OnRequestFinished(HTTPRequest originalRequest, HTTPResponse response)
+    parameters:
+    - id: originalRequest
+      type: HTTPRequest
+    - id: response
+      type: HTTPResponse
+    content.vb: Public Overrides Sub OnRequestFinished(originalRequest As HTTPRequest, response As HTTPResponse)
+  overridden: Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished(HTTPRequest,HTTPResponse)
+  overload: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.OnRequestFinished*
+  nameWithType.vb: BaseWebPackage(Of T).OnRequestFinished(HTTPRequest, HTTPResponse)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).OnRequestFinished(HTTPRequest, HTTPResponse)
+references:
+- uid: Winpeak.Client.Networking.WebServer
+  commentId: N:Winpeak.Client.Networking.WebServer
+  name: Winpeak.Client.Networking.WebServer
+  nameWithType: Winpeak.Client.Networking.WebServer
+  fullName: Winpeak.Client.Networking.WebServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Winpeak.Client.Networking.WebServer.WebRequest
+  commentId: T:Winpeak.Client.Networking.WebServer.WebRequest
+  parent: Winpeak.Client.Networking.WebServer
+  name: WebRequest
+  nameWithType: WebRequest
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest
+- uid: Winpeak.Client.Networking.WebServer.IWebRequest
+  commentId: T:Winpeak.Client.Networking.WebServer.IWebRequest
+  parent: Winpeak.Client.Networking.WebServer
+  name: IWebRequest
+  nameWithType: IWebRequest
+  fullName: Winpeak.Client.Networking.WebServer.IWebRequest
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
+  commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: GenerateData()
+  nameWithType: WebRequest.GenerateData()
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData()
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
+    name: GenerateData
+    nameWithType: WebRequest.GenerateData
+    fullName: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
+    name: GenerateData
+    nameWithType: WebRequest.GenerateData
+    fullName: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.m_url
+  commentId: F:Winpeak.Client.Networking.WebServer.WebRequest.m_url
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: m_url
+  nameWithType: WebRequest.m_url
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.m_url
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Send
+  commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.Send
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: Send()
+  nameWithType: WebRequest.Send()
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Send()
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebRequest.Send
+    name: Send
+    nameWithType: WebRequest.Send
+    fullName: Winpeak.Client.Networking.WebServer.WebRequest.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebRequest.Send
+    name: Send
+    nameWithType: WebRequest.Send
+    fullName: Winpeak.Client.Networking.WebServer.WebRequest.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
+  commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: CustomHeaders()
+  nameWithType: WebRequest.CustomHeaders()
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders()
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
+    name: CustomHeaders
+    nameWithType: WebRequest.CustomHeaders
+    fullName: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
+    name: CustomHeaders
+    nameWithType: WebRequest.CustomHeaders
+    fullName: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl(System.String)
+  commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl(System.String)
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  isExternal: true
+  name: AddToUrl(String)
+  nameWithType: WebRequest.AddToUrl(String)
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl(System.String)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl(System.String)
+    name: AddToUrl
+    nameWithType: WebRequest.AddToUrl
+    fullName: Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl(System.String)
+    name: AddToUrl
+    nameWithType: WebRequest.AddToUrl
+    fullName: Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Url
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Url
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: Url
+  nameWithType: WebRequest.Url
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Url
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: TimeStamp
+  nameWithType: WebRequest.TimeStamp
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Timeout
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Timeout
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: Timeout
+  nameWithType: WebRequest.Timeout
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Timeout
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Method
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Method
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: Method
+  nameWithType: WebRequest.Method
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Method
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: AuthenticationRequired
+  nameWithType: WebRequest.AuthenticationRequired
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action{{T}}
+  commentId: T:System.Action{`0}
+  parent: System
+  definition: System.Action`1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor
+  name: BaseWebPackage
+  nameWithType: BaseWebPackage<T>.BaseWebPackage
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.BaseWebPackage
+  nameWithType.vb: BaseWebPackage(Of T).BaseWebPackage
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).BaseWebPackage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send
+  name: Send
+  nameWithType: BaseWebPackage<T>.Send
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.Send
+  nameWithType.vb: BaseWebPackage(Of T).Send
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).Send
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished(HTTPRequest,HTTPResponse)
+  commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished(HTTPRequest,HTTPResponse)
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  isExternal: true
+  name: OnRequestFinished(HTTPRequest, HTTPResponse)
+  nameWithType: WebRequest.OnRequestFinished(HTTPRequest, HTTPResponse)
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished(HTTPRequest, HTTPResponse)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished(HTTPRequest,HTTPResponse)
+    name: OnRequestFinished
+    nameWithType: WebRequest.OnRequestFinished
+    fullName: Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HTTPRequest
+    name: HTTPRequest
+    nameWithType: HTTPRequest
+    fullName: HTTPRequest
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HTTPResponse
+    name: HTTPResponse
+    nameWithType: HTTPResponse
+    fullName: HTTPResponse
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished(HTTPRequest,HTTPResponse)
+    name: OnRequestFinished
+    nameWithType: WebRequest.OnRequestFinished
+    fullName: Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HTTPRequest
+    name: HTTPRequest
+    nameWithType: HTTPRequest
+    fullName: HTTPRequest
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: HTTPResponse
+    name: HTTPResponse
+    nameWithType: HTTPResponse
+    fullName: HTTPResponse
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.OnRequestFinished*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.OnRequestFinished
+  name: OnRequestFinished
+  nameWithType: BaseWebPackage<T>.OnRequestFinished
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.OnRequestFinished
+  nameWithType.vb: BaseWebPackage(Of T).OnRequestFinished
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).OnRequestFinished
+- uid: HTTPRequest
+  isExternal: true
+  name: HTTPRequest
+  nameWithType: HTTPRequest
+  fullName: HTTPRequest
+- uid: HTTPResponse
+  isExternal: true
+  name: HTTPResponse
+  nameWithType: HTTPResponse
+  fullName: HTTPResponse

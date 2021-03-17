@@ -1,0 +1,458 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.IXof
+  commentId: T:Org.BouncyCastle.Crypto.IXof
+  id: IXof
+  parent: Org.BouncyCastle.Crypto
+  children:
+  - Org.BouncyCastle.Crypto.IXof.DoFinal(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.IXof.DoOutput(System.Byte[],System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IXof
+  nameWithType: IXof
+  fullName: Org.BouncyCastle.Crypto.IXof
+  type: Interface
+  source:
+    id: IXof
+    path: ''
+    startLine: 91351
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  remarks: "\nWith FIPS PUB 202 a new kind of message digest was announced which supported extendable output, or variable digest sizes.\nThis interface provides the extra method required to support variable output on a digest implementation.\n"
+  example: []
+  syntax:
+    content: 'public interface IXof : IDigest'
+    content.vb: >-
+      Public Interface IXof
+          Inherits IDigest
+  inheritedMembers:
+  - Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+  - Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  - Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  - Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  - Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.IDigest.Reset
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Org.BouncyCastle.Crypto.IXof.DoFinal(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.IXof.DoFinal(System.Byte[],System.Int32,System.Int32)
+  id: DoFinal(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.IXof
+  langs:
+  - csharp
+  - vb
+  name: DoFinal(Byte[], Int32, Int32)
+  nameWithType: IXof.DoFinal(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.IXof.DoFinal(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: DoFinal
+    path: ''
+    startLine: 91361
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  summary: "\nOutput the results of the final calculation for this digest to outLen number of bytes.\n"
+  example: []
+  syntax:
+    content: int DoFinal(byte[] output, int outOff, int outLen)
+    parameters:
+    - id: output
+      type: System.Byte[]
+      description: output array to write the output bytes to.
+    - id: outOff
+      type: System.Int32
+      description: offset to start writing the bytes at.
+    - id: outLen
+      type: System.Int32
+      description: the number of output bytes requested.
+    return:
+      type: System.Int32
+      description: the number of bytes written
+    content.vb: Function DoFinal(output As Byte(), outOff As Integer, outLen As Integer) As Integer
+  overload: Org.BouncyCastle.Crypto.IXof.DoFinal*
+  nameWithType.vb: IXof.DoFinal(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.IXof.DoFinal(System.Byte(), System.Int32, System.Int32)
+  name.vb: DoFinal(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Crypto.IXof.DoOutput(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.IXof.DoOutput(System.Byte[],System.Int32,System.Int32)
+  id: DoOutput(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.IXof
+  langs:
+  - csharp
+  - vb
+  name: DoOutput(Byte[], Int32, Int32)
+  nameWithType: IXof.DoOutput(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.IXof.DoOutput(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: DoOutput
+    path: ''
+    startLine: 91371
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  summary: "\nStart outputting the results of the final calculation for this digest. Unlike DoFinal, this method\nwill continue producing output until the Xof is explicitly reset, or signals otherwise.\n"
+  example: []
+  syntax:
+    content: int DoOutput(byte[] output, int outOff, int outLen)
+    parameters:
+    - id: output
+      type: System.Byte[]
+      description: output array to write the output bytes to.
+    - id: outOff
+      type: System.Int32
+      description: offset to start writing the bytes at.
+    - id: outLen
+      type: System.Int32
+      description: the number of output bytes requested.
+    return:
+      type: System.Int32
+      description: the number of bytes written
+    content.vb: Function DoOutput(output As Byte(), outOff As Integer, outLen As Integer) As Integer
+  overload: Org.BouncyCastle.Crypto.IXof.DoOutput*
+  nameWithType.vb: IXof.DoOutput(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.IXof.DoOutput(System.Byte(), System.Int32, System.Int32)
+  name.vb: DoOutput(Byte(), Int32, Int32)
+references:
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: AlgorithmName
+  nameWithType: IDigest.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+- uid: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: GetDigestSize()
+  nameWithType: IDigest.GetDigestSize()
+  fullName: Org.BouncyCastle.Crypto.IDigest.GetDigestSize()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+    name: GetDigestSize
+    nameWithType: IDigest.GetDigestSize
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+    name: GetDigestSize
+    nameWithType: IDigest.GetDigestSize
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: GetByteLength()
+  nameWithType: IDigest.GetByteLength()
+  fullName: Org.BouncyCastle.Crypto.IDigest.GetByteLength()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+    name: GetByteLength
+    nameWithType: IDigest.GetByteLength
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+    name: GetByteLength
+    nameWithType: IDigest.GetByteLength
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  parent: Org.BouncyCastle.Crypto.IDigest
+  isExternal: true
+  name: Update(Byte)
+  nameWithType: IDigest.Update(Byte)
+  fullName: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+    name: Update
+    nameWithType: IDigest.Update
+    fullName: Org.BouncyCastle.Crypto.IDigest.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+    name: Update
+    nameWithType: IDigest.Update
+    fullName: Org.BouncyCastle.Crypto.IDigest.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.IDigest
+  isExternal: true
+  name: BlockUpdate(Byte[], Int32, Int32)
+  nameWithType: IDigest.BlockUpdate(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: IDigest.BlockUpdate(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte(), System.Int32, System.Int32)
+  name.vb: BlockUpdate(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+    name: BlockUpdate
+    nameWithType: IDigest.BlockUpdate
+    fullName: Org.BouncyCastle.Crypto.IDigest.BlockUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+    name: BlockUpdate
+    nameWithType: IDigest.BlockUpdate
+    fullName: Org.BouncyCastle.Crypto.IDigest.BlockUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.IDigest
+  isExternal: true
+  name: DoFinal(Byte[], Int32)
+  nameWithType: IDigest.DoFinal(Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[], System.Int32)
+  nameWithType.vb: IDigest.DoFinal(Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte(), System.Int32)
+  name.vb: DoFinal(Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: IDigest.DoFinal
+    fullName: Org.BouncyCastle.Crypto.IDigest.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: IDigest.DoFinal
+    fullName: Org.BouncyCastle.Crypto.IDigest.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest.Reset
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.Reset
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: Reset()
+  nameWithType: IDigest.Reset()
+  fullName: Org.BouncyCastle.Crypto.IDigest.Reset()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Reset
+    name: Reset
+    nameWithType: IDigest.Reset
+    fullName: Org.BouncyCastle.Crypto.IDigest.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Reset
+    name: Reset
+    nameWithType: IDigest.Reset
+    fullName: Org.BouncyCastle.Crypto.IDigest.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IDigest
+  commentId: T:Org.BouncyCastle.Crypto.IDigest
+  parent: Org.BouncyCastle.Crypto
+  name: IDigest
+  nameWithType: IDigest
+  fullName: Org.BouncyCastle.Crypto.IDigest
+- uid: Org.BouncyCastle.Crypto.IXof.DoFinal*
+  commentId: Overload:Org.BouncyCastle.Crypto.IXof.DoFinal
+  name: DoFinal
+  nameWithType: IXof.DoFinal
+  fullName: Org.BouncyCastle.Crypto.IXof.DoFinal
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.IXof.DoOutput*
+  commentId: Overload:Org.BouncyCastle.Crypto.IXof.DoOutput
+  name: DoOutput
+  nameWithType: IXof.DoOutput
+  fullName: Org.BouncyCastle.Crypto.IXof.DoOutput

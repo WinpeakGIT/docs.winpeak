@@ -1,0 +1,1398 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement
+  commentId: T:Org.BouncyCastle.Math.EC.ECFieldElement
+  id: ECFieldElement
+  parent: Org.BouncyCastle.Math.EC
+  children:
+  - Org.BouncyCastle.Math.EC.ECFieldElement.Add(Org.BouncyCastle.Math.EC.ECFieldElement)
+  - Org.BouncyCastle.Math.EC.ECFieldElement.AddOne
+  - Org.BouncyCastle.Math.EC.ECFieldElement.BitLength
+  - Org.BouncyCastle.Math.EC.ECFieldElement.Divide(Org.BouncyCastle.Math.EC.ECFieldElement)
+  - Org.BouncyCastle.Math.EC.ECFieldElement.Equals(Org.BouncyCastle.Math.EC.ECFieldElement)
+  - Org.BouncyCastle.Math.EC.ECFieldElement.Equals(System.Object)
+  - Org.BouncyCastle.Math.EC.ECFieldElement.FieldName
+  - Org.BouncyCastle.Math.EC.ECFieldElement.FieldSize
+  - Org.BouncyCastle.Math.EC.ECFieldElement.GetEncoded
+  - Org.BouncyCastle.Math.EC.ECFieldElement.GetHashCode
+  - Org.BouncyCastle.Math.EC.ECFieldElement.Invert
+  - Org.BouncyCastle.Math.EC.ECFieldElement.IsOne
+  - Org.BouncyCastle.Math.EC.ECFieldElement.IsZero
+  - Org.BouncyCastle.Math.EC.ECFieldElement.Multiply(Org.BouncyCastle.Math.EC.ECFieldElement)
+  - Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyMinusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  - Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyPlusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  - Org.BouncyCastle.Math.EC.ECFieldElement.Negate
+  - Org.BouncyCastle.Math.EC.ECFieldElement.Sqrt
+  - Org.BouncyCastle.Math.EC.ECFieldElement.Square
+  - Org.BouncyCastle.Math.EC.ECFieldElement.SquareMinusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  - Org.BouncyCastle.Math.EC.ECFieldElement.SquarePlusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  - Org.BouncyCastle.Math.EC.ECFieldElement.SquarePow(System.Int32)
+  - Org.BouncyCastle.Math.EC.ECFieldElement.Subtract(Org.BouncyCastle.Math.EC.ECFieldElement)
+  - Org.BouncyCastle.Math.EC.ECFieldElement.TestBitZero
+  - Org.BouncyCastle.Math.EC.ECFieldElement.ToBigInteger
+  - Org.BouncyCastle.Math.EC.ECFieldElement.ToString
+  langs:
+  - csharp
+  - vb
+  name: ECFieldElement
+  nameWithType: ECFieldElement
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement
+  type: Class
+  source:
+    id: ECFieldElement
+    path: ''
+    startLine: 23969
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract class ECFieldElement
+    content.vb: Public MustInherit Class ECFieldElement
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Org.BouncyCastle.Math.EC.F2mFieldElement
+  - Org.BouncyCastle.Math.EC.FpFieldElement
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.ToBigInteger
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.ToBigInteger
+  id: ToBigInteger
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: ToBigInteger()
+  nameWithType: ECFieldElement.ToBigInteger()
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.ToBigInteger()
+  type: Method
+  source:
+    id: ToBigInteger
+    path: ''
+    startLine: 23971
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract BigInteger ToBigInteger()
+    return:
+      type: Org.BouncyCastle.Math.BigInteger
+    content.vb: Public MustOverride Function ToBigInteger As BigInteger
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.ToBigInteger*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.FieldName
+  commentId: P:Org.BouncyCastle.Math.EC.ECFieldElement.FieldName
+  id: FieldName
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: FieldName
+  nameWithType: ECFieldElement.FieldName
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.FieldName
+  type: Property
+  source:
+    id: FieldName
+    path: ''
+    startLine: 23972
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract string FieldName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public MustOverride ReadOnly Property FieldName As String
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.FieldName*
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.FieldSize
+  commentId: P:Org.BouncyCastle.Math.EC.ECFieldElement.FieldSize
+  id: FieldSize
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: FieldSize
+  nameWithType: ECFieldElement.FieldSize
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.FieldSize
+  type: Property
+  source:
+    id: FieldSize
+    path: ''
+    startLine: 23973
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract int FieldSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride ReadOnly Property FieldSize As Integer
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.FieldSize*
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Add(Org.BouncyCastle.Math.EC.ECFieldElement)
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.Add(Org.BouncyCastle.Math.EC.ECFieldElement)
+  id: Add(Org.BouncyCastle.Math.EC.ECFieldElement)
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: Add(ECFieldElement)
+  nameWithType: ECFieldElement.Add(ECFieldElement)
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Add(Org.BouncyCastle.Math.EC.ECFieldElement)
+  type: Method
+  source:
+    id: Add
+    path: ''
+    startLine: 23974
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract ECFieldElement Add(ECFieldElement b)
+    parameters:
+    - id: b
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public MustOverride Function Add(b As ECFieldElement) As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.Add*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.AddOne
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.AddOne
+  id: AddOne
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: AddOne()
+  nameWithType: ECFieldElement.AddOne()
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.AddOne()
+  type: Method
+  source:
+    id: AddOne
+    path: ''
+    startLine: 23975
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract ECFieldElement AddOne()
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public MustOverride Function AddOne As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.AddOne*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Subtract(Org.BouncyCastle.Math.EC.ECFieldElement)
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.Subtract(Org.BouncyCastle.Math.EC.ECFieldElement)
+  id: Subtract(Org.BouncyCastle.Math.EC.ECFieldElement)
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: Subtract(ECFieldElement)
+  nameWithType: ECFieldElement.Subtract(ECFieldElement)
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Subtract(Org.BouncyCastle.Math.EC.ECFieldElement)
+  type: Method
+  source:
+    id: Subtract
+    path: ''
+    startLine: 23976
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract ECFieldElement Subtract(ECFieldElement b)
+    parameters:
+    - id: b
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public MustOverride Function Subtract(b As ECFieldElement) As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.Subtract*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Multiply(Org.BouncyCastle.Math.EC.ECFieldElement)
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.Multiply(Org.BouncyCastle.Math.EC.ECFieldElement)
+  id: Multiply(Org.BouncyCastle.Math.EC.ECFieldElement)
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: Multiply(ECFieldElement)
+  nameWithType: ECFieldElement.Multiply(ECFieldElement)
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Multiply(Org.BouncyCastle.Math.EC.ECFieldElement)
+  type: Method
+  source:
+    id: Multiply
+    path: ''
+    startLine: 23977
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract ECFieldElement Multiply(ECFieldElement b)
+    parameters:
+    - id: b
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public MustOverride Function Multiply(b As ECFieldElement) As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.Multiply*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Divide(Org.BouncyCastle.Math.EC.ECFieldElement)
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.Divide(Org.BouncyCastle.Math.EC.ECFieldElement)
+  id: Divide(Org.BouncyCastle.Math.EC.ECFieldElement)
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: Divide(ECFieldElement)
+  nameWithType: ECFieldElement.Divide(ECFieldElement)
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Divide(Org.BouncyCastle.Math.EC.ECFieldElement)
+  type: Method
+  source:
+    id: Divide
+    path: ''
+    startLine: 23978
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract ECFieldElement Divide(ECFieldElement b)
+    parameters:
+    - id: b
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public MustOverride Function Divide(b As ECFieldElement) As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.Divide*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Negate
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.Negate
+  id: Negate
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: Negate()
+  nameWithType: ECFieldElement.Negate()
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Negate()
+  type: Method
+  source:
+    id: Negate
+    path: ''
+    startLine: 23979
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract ECFieldElement Negate()
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public MustOverride Function Negate As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.Negate*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Square
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.Square
+  id: Square
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: Square()
+  nameWithType: ECFieldElement.Square()
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Square()
+  type: Method
+  source:
+    id: Square
+    path: ''
+    startLine: 23980
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract ECFieldElement Square()
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public MustOverride Function Square As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.Square*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Invert
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.Invert
+  id: Invert
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: Invert()
+  nameWithType: ECFieldElement.Invert()
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Invert()
+  type: Method
+  source:
+    id: Invert
+    path: ''
+    startLine: 23981
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract ECFieldElement Invert()
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public MustOverride Function Invert As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.Invert*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Sqrt
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.Sqrt
+  id: Sqrt
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: Sqrt()
+  nameWithType: ECFieldElement.Sqrt()
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Sqrt()
+  type: Method
+  source:
+    id: Sqrt
+    path: ''
+    startLine: 23982
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public abstract ECFieldElement Sqrt()
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public MustOverride Function Sqrt As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.Sqrt*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.BitLength
+  commentId: P:Org.BouncyCastle.Math.EC.ECFieldElement.BitLength
+  id: BitLength
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: BitLength
+  nameWithType: ECFieldElement.BitLength
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.BitLength
+  type: Property
+  source:
+    id: BitLength
+    path: ''
+    startLine: 23984
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public virtual int BitLength { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property BitLength As Integer
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.BitLength*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.IsOne
+  commentId: P:Org.BouncyCastle.Math.EC.ECFieldElement.IsOne
+  id: IsOne
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: IsOne
+  nameWithType: ECFieldElement.IsOne
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.IsOne
+  type: Property
+  source:
+    id: IsOne
+    path: ''
+    startLine: 23989
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public virtual bool IsOne { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsOne As Boolean
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.IsOne*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.IsZero
+  commentId: P:Org.BouncyCastle.Math.EC.ECFieldElement.IsZero
+  id: IsZero
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: IsZero
+  nameWithType: ECFieldElement.IsZero
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.IsZero
+  type: Property
+  source:
+    id: IsZero
+    path: ''
+    startLine: 23994
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public virtual bool IsZero { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsZero As Boolean
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.IsZero*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyMinusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyMinusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  id: MultiplyMinusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: MultiplyMinusProduct(ECFieldElement, ECFieldElement, ECFieldElement)
+  nameWithType: ECFieldElement.MultiplyMinusProduct(ECFieldElement, ECFieldElement, ECFieldElement)
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyMinusProduct(Org.BouncyCastle.Math.EC.ECFieldElement, Org.BouncyCastle.Math.EC.ECFieldElement, Org.BouncyCastle.Math.EC.ECFieldElement)
+  type: Method
+  source:
+    id: MultiplyMinusProduct
+    path: ''
+    startLine: 23999
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public virtual ECFieldElement MultiplyMinusProduct(ECFieldElement b, ECFieldElement x, ECFieldElement y)
+    parameters:
+    - id: b
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    - id: x
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    - id: y
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public Overridable Function MultiplyMinusProduct(b As ECFieldElement, x As ECFieldElement, y As ECFieldElement) As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyMinusProduct*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyPlusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyPlusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  id: MultiplyPlusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: MultiplyPlusProduct(ECFieldElement, ECFieldElement, ECFieldElement)
+  nameWithType: ECFieldElement.MultiplyPlusProduct(ECFieldElement, ECFieldElement, ECFieldElement)
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyPlusProduct(Org.BouncyCastle.Math.EC.ECFieldElement, Org.BouncyCastle.Math.EC.ECFieldElement, Org.BouncyCastle.Math.EC.ECFieldElement)
+  type: Method
+  source:
+    id: MultiplyPlusProduct
+    path: ''
+    startLine: 24004
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public virtual ECFieldElement MultiplyPlusProduct(ECFieldElement b, ECFieldElement x, ECFieldElement y)
+    parameters:
+    - id: b
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    - id: x
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    - id: y
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public Overridable Function MultiplyPlusProduct(b As ECFieldElement, x As ECFieldElement, y As ECFieldElement) As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyPlusProduct*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.SquareMinusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.SquareMinusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  id: SquareMinusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: SquareMinusProduct(ECFieldElement, ECFieldElement)
+  nameWithType: ECFieldElement.SquareMinusProduct(ECFieldElement, ECFieldElement)
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.SquareMinusProduct(Org.BouncyCastle.Math.EC.ECFieldElement, Org.BouncyCastle.Math.EC.ECFieldElement)
+  type: Method
+  source:
+    id: SquareMinusProduct
+    path: ''
+    startLine: 24009
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public virtual ECFieldElement SquareMinusProduct(ECFieldElement x, ECFieldElement y)
+    parameters:
+    - id: x
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    - id: y
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public Overridable Function SquareMinusProduct(x As ECFieldElement, y As ECFieldElement) As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.SquareMinusProduct*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.SquarePlusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.SquarePlusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  id: SquarePlusProduct(Org.BouncyCastle.Math.EC.ECFieldElement,Org.BouncyCastle.Math.EC.ECFieldElement)
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: SquarePlusProduct(ECFieldElement, ECFieldElement)
+  nameWithType: ECFieldElement.SquarePlusProduct(ECFieldElement, ECFieldElement)
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.SquarePlusProduct(Org.BouncyCastle.Math.EC.ECFieldElement, Org.BouncyCastle.Math.EC.ECFieldElement)
+  type: Method
+  source:
+    id: SquarePlusProduct
+    path: ''
+    startLine: 24014
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public virtual ECFieldElement SquarePlusProduct(ECFieldElement x, ECFieldElement y)
+    parameters:
+    - id: x
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    - id: y
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public Overridable Function SquarePlusProduct(x As ECFieldElement, y As ECFieldElement) As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.SquarePlusProduct*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.SquarePow(System.Int32)
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.SquarePow(System.Int32)
+  id: SquarePow(System.Int32)
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: SquarePow(Int32)
+  nameWithType: ECFieldElement.SquarePow(Int32)
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.SquarePow(System.Int32)
+  type: Method
+  source:
+    id: SquarePow
+    path: ''
+    startLine: 24019
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public virtual ECFieldElement SquarePow(int pow)
+    parameters:
+    - id: pow
+      type: System.Int32
+    return:
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    content.vb: Public Overridable Function SquarePow(pow As Integer) As ECFieldElement
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.SquarePow*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.TestBitZero
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.TestBitZero
+  id: TestBitZero
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: TestBitZero()
+  nameWithType: ECFieldElement.TestBitZero()
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.TestBitZero()
+  type: Method
+  source:
+    id: TestBitZero
+    path: ''
+    startLine: 24029
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public virtual bool TestBitZero()
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function TestBitZero As Boolean
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.TestBitZero*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Equals(System.Object)
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: ECFieldElement.Equals(Object)
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 24034
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Equals(Org.BouncyCastle.Math.EC.ECFieldElement)
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.Equals(Org.BouncyCastle.Math.EC.ECFieldElement)
+  id: Equals(Org.BouncyCastle.Math.EC.ECFieldElement)
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: Equals(ECFieldElement)
+  nameWithType: ECFieldElement.Equals(ECFieldElement)
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Equals(Org.BouncyCastle.Math.EC.ECFieldElement)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 24039
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public virtual bool Equals(ECFieldElement other)
+    parameters:
+    - id: other
+      type: Org.BouncyCastle.Math.EC.ECFieldElement
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function Equals(other As ECFieldElement) As Boolean
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.Equals*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.GetHashCode
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.GetHashCode
+  id: GetHashCode
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ECFieldElement.GetHashCode()
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: ''
+    startLine: 24048
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.ToString
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.ToString
+  id: ToString
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ECFieldElement.ToString()
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 24053
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.GetEncoded
+  commentId: M:Org.BouncyCastle.Math.EC.ECFieldElement.GetEncoded
+  id: GetEncoded
+  parent: Org.BouncyCastle.Math.EC.ECFieldElement
+  langs:
+  - csharp
+  - vb
+  name: GetEncoded()
+  nameWithType: ECFieldElement.GetEncoded()
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.GetEncoded()
+  type: Method
+  source:
+    id: GetEncoded
+    path: ''
+    startLine: 24058
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC
+  syntax:
+    content: public virtual byte[] GetEncoded()
+    return:
+      type: System.Byte[]
+    content.vb: Public Overridable Function GetEncoded As Byte()
+  overload: Org.BouncyCastle.Math.EC.ECFieldElement.GetEncoded*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Org.BouncyCastle.Math.EC
+  commentId: N:Org.BouncyCastle.Math.EC
+  name: Org.BouncyCastle.Math.EC
+  nameWithType: Org.BouncyCastle.Math.EC
+  fullName: Org.BouncyCastle.Math.EC
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.ToBigInteger*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.ToBigInteger
+  name: ToBigInteger
+  nameWithType: ECFieldElement.ToBigInteger
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.ToBigInteger
+- uid: Org.BouncyCastle.Math.BigInteger
+  commentId: T:Org.BouncyCastle.Math.BigInteger
+  parent: Org.BouncyCastle.Math
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: Org.BouncyCastle.Math.BigInteger
+- uid: Org.BouncyCastle.Math
+  commentId: N:Org.BouncyCastle.Math
+  name: Org.BouncyCastle.Math
+  nameWithType: Org.BouncyCastle.Math
+  fullName: Org.BouncyCastle.Math
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.FieldName*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.FieldName
+  name: FieldName
+  nameWithType: ECFieldElement.FieldName
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.FieldName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.FieldSize*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.FieldSize
+  name: FieldSize
+  nameWithType: ECFieldElement.FieldSize
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.FieldSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Add*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.Add
+  name: Add
+  nameWithType: ECFieldElement.Add
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Add
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement
+  commentId: T:Org.BouncyCastle.Math.EC.ECFieldElement
+  parent: Org.BouncyCastle.Math.EC
+  name: ECFieldElement
+  nameWithType: ECFieldElement
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.AddOne*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.AddOne
+  name: AddOne
+  nameWithType: ECFieldElement.AddOne
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.AddOne
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Subtract*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.Subtract
+  name: Subtract
+  nameWithType: ECFieldElement.Subtract
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Subtract
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Multiply*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.Multiply
+  name: Multiply
+  nameWithType: ECFieldElement.Multiply
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Multiply
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Divide*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.Divide
+  name: Divide
+  nameWithType: ECFieldElement.Divide
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Divide
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Negate*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.Negate
+  name: Negate
+  nameWithType: ECFieldElement.Negate
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Negate
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Square*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.Square
+  name: Square
+  nameWithType: ECFieldElement.Square
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Square
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Invert*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.Invert
+  name: Invert
+  nameWithType: ECFieldElement.Invert
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Invert
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Sqrt*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.Sqrt
+  name: Sqrt
+  nameWithType: ECFieldElement.Sqrt
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Sqrt
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.BitLength*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.BitLength
+  name: BitLength
+  nameWithType: ECFieldElement.BitLength
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.BitLength
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.IsOne*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.IsOne
+  name: IsOne
+  nameWithType: ECFieldElement.IsOne
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.IsOne
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.IsZero*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.IsZero
+  name: IsZero
+  nameWithType: ECFieldElement.IsZero
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.IsZero
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyMinusProduct*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyMinusProduct
+  name: MultiplyMinusProduct
+  nameWithType: ECFieldElement.MultiplyMinusProduct
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyMinusProduct
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyPlusProduct*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyPlusProduct
+  name: MultiplyPlusProduct
+  nameWithType: ECFieldElement.MultiplyPlusProduct
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.MultiplyPlusProduct
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.SquareMinusProduct*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.SquareMinusProduct
+  name: SquareMinusProduct
+  nameWithType: ECFieldElement.SquareMinusProduct
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.SquareMinusProduct
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.SquarePlusProduct*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.SquarePlusProduct
+  name: SquarePlusProduct
+  nameWithType: ECFieldElement.SquarePlusProduct
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.SquarePlusProduct
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.SquarePow*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.SquarePow
+  name: SquarePow
+  nameWithType: ECFieldElement.SquarePow
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.SquarePow
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.TestBitZero*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.TestBitZero
+  name: TestBitZero
+  nameWithType: ECFieldElement.TestBitZero
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.TestBitZero
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.Equals*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.Equals
+  name: Equals
+  nameWithType: ECFieldElement.Equals
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.Equals
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.GetHashCode*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.GetHashCode
+  name: GetHashCode
+  nameWithType: ECFieldElement.GetHashCode
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.ToString*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.ToString
+  name: ToString
+  nameWithType: ECFieldElement.ToString
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.ToString
+- uid: Org.BouncyCastle.Math.EC.ECFieldElement.GetEncoded*
+  commentId: Overload:Org.BouncyCastle.Math.EC.ECFieldElement.GetEncoded
+  name: GetEncoded
+  nameWithType: ECFieldElement.GetEncoded
+  fullName: Org.BouncyCastle.Math.EC.ECFieldElement.GetEncoded
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

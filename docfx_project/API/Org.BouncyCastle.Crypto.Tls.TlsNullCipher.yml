@@ -1,0 +1,990 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsNullCipher
+  id: TlsNullCipher
+  parent: Org.BouncyCastle.Crypto.Tls
+  children:
+  - Org.BouncyCastle.Crypto.Tls.TlsNullCipher.#ctor(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  - Org.BouncyCastle.Crypto.Tls.TlsNullCipher.#ctor(Org.BouncyCastle.Crypto.Tls.TlsContext,Org.BouncyCastle.Crypto.IDigest,Org.BouncyCastle.Crypto.IDigest)
+  - Org.BouncyCastle.Crypto.Tls.TlsNullCipher.context
+  - Org.BouncyCastle.Crypto.Tls.TlsNullCipher.DecodeCiphertext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Tls.TlsNullCipher.EncodePlaintext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Tls.TlsNullCipher.GetPlaintextLimit(System.Int32)
+  - Org.BouncyCastle.Crypto.Tls.TlsNullCipher.readMac
+  - Org.BouncyCastle.Crypto.Tls.TlsNullCipher.writeMac
+  langs:
+  - csharp
+  - vb
+  name: TlsNullCipher
+  nameWithType: TlsNullCipher
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher
+  type: Class
+  source:
+    id: TlsNullCipher
+    path: ''
+    startLine: 137495
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  summary: "\nA NULL CipherSuite, with optional MAC.\n"
+  example: []
+  syntax:
+    content: 'public class TlsNullCipher : TlsCipher'
+    content.vb: >-
+      Public Class TlsNullCipher
+          Implements TlsCipher
+  inheritance:
+  - System.Object
+  implements:
+  - Org.BouncyCastle.Crypto.Tls.TlsCipher
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.context
+  commentId: F:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.context
+  id: context
+  parent: Org.BouncyCastle.Crypto.Tls.TlsNullCipher
+  langs:
+  - csharp
+  - vb
+  name: context
+  nameWithType: TlsNullCipher.context
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.context
+  type: Field
+  source:
+    id: context
+    path: ''
+    startLine: 137498
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected readonly TlsContext context
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.TlsContext
+    content.vb: Protected ReadOnly context As TlsContext
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.writeMac
+  commentId: F:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.writeMac
+  id: writeMac
+  parent: Org.BouncyCastle.Crypto.Tls.TlsNullCipher
+  langs:
+  - csharp
+  - vb
+  name: writeMac
+  nameWithType: TlsNullCipher.writeMac
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.writeMac
+  type: Field
+  source:
+    id: writeMac
+    path: ''
+    startLine: 137500
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected readonly TlsMac writeMac
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.TlsMac
+    content.vb: Protected ReadOnly writeMac As TlsMac
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.readMac
+  commentId: F:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.readMac
+  id: readMac
+  parent: Org.BouncyCastle.Crypto.Tls.TlsNullCipher
+  langs:
+  - csharp
+  - vb
+  name: readMac
+  nameWithType: TlsNullCipher.readMac
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.readMac
+  type: Field
+  source:
+    id: readMac
+    path: ''
+    startLine: 137501
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected readonly TlsMac readMac
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.TlsMac
+    content.vb: Protected ReadOnly readMac As TlsMac
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.#ctor(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.#ctor(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  id: '#ctor(Org.BouncyCastle.Crypto.Tls.TlsContext)'
+  parent: Org.BouncyCastle.Crypto.Tls.TlsNullCipher
+  langs:
+  - csharp
+  - vb
+  name: TlsNullCipher(TlsContext)
+  nameWithType: TlsNullCipher.TlsNullCipher(TlsContext)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.TlsNullCipher(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 137503
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public TlsNullCipher(TlsContext context)
+    parameters:
+    - id: context
+      type: Org.BouncyCastle.Crypto.Tls.TlsContext
+    content.vb: Public Sub New(context As TlsContext)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.#ctor(Org.BouncyCastle.Crypto.Tls.TlsContext,Org.BouncyCastle.Crypto.IDigest,Org.BouncyCastle.Crypto.IDigest)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.#ctor(Org.BouncyCastle.Crypto.Tls.TlsContext,Org.BouncyCastle.Crypto.IDigest,Org.BouncyCastle.Crypto.IDigest)
+  id: '#ctor(Org.BouncyCastle.Crypto.Tls.TlsContext,Org.BouncyCastle.Crypto.IDigest,Org.BouncyCastle.Crypto.IDigest)'
+  parent: Org.BouncyCastle.Crypto.Tls.TlsNullCipher
+  langs:
+  - csharp
+  - vb
+  name: TlsNullCipher(TlsContext, IDigest, IDigest)
+  nameWithType: TlsNullCipher.TlsNullCipher(TlsContext, IDigest, IDigest)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.TlsNullCipher(Org.BouncyCastle.Crypto.Tls.TlsContext, Org.BouncyCastle.Crypto.IDigest, Org.BouncyCastle.Crypto.IDigest)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 137511
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: public TlsNullCipher(TlsContext context, IDigest clientWriteDigest, IDigest serverWriteDigest)
+    parameters:
+    - id: context
+      type: Org.BouncyCastle.Crypto.Tls.TlsContext
+    - id: clientWriteDigest
+      type: Org.BouncyCastle.Crypto.IDigest
+    - id: serverWriteDigest
+      type: Org.BouncyCastle.Crypto.IDigest
+    content.vb: Public Sub New(context As TlsContext, clientWriteDigest As IDigest, serverWriteDigest As IDigest)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.GetPlaintextLimit(System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.GetPlaintextLimit(System.Int32)
+  id: GetPlaintextLimit(System.Int32)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsNullCipher
+  langs:
+  - csharp
+  - vb
+  name: GetPlaintextLimit(Int32)
+  nameWithType: TlsNullCipher.GetPlaintextLimit(Int32)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.GetPlaintextLimit(System.Int32)
+  type: Method
+  source:
+    id: GetPlaintextLimit
+    path: ''
+    startLine: 137554
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public virtual int GetPlaintextLimit(int ciphertextLimit)
+    parameters:
+    - id: ciphertextLimit
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Function GetPlaintextLimit(ciphertextLimit As Integer) As Integer
+  overload: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.GetPlaintextLimit*
+  implements:
+  - Org.BouncyCastle.Crypto.Tls.TlsCipher.GetPlaintextLimit(System.Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.EncodePlaintext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.EncodePlaintext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  id: EncodePlaintext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsNullCipher
+  langs:
+  - csharp
+  - vb
+  name: EncodePlaintext(Int64, Byte, Byte[], Int32, Int32)
+  nameWithType: TlsNullCipher.EncodePlaintext(Int64, Byte, Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.EncodePlaintext(System.Int64, System.Byte, System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: EncodePlaintext
+    path: ''
+    startLine: 137565
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: public virtual byte[] EncodePlaintext(long seqNo, byte type, byte[] plaintext, int offset, int len)
+    parameters:
+    - id: seqNo
+      type: System.Int64
+    - id: type
+      type: System.Byte
+    - id: plaintext
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: len
+      type: System.Int32
+    return:
+      type: System.Byte[]
+    content.vb: Public Overridable Function EncodePlaintext(seqNo As Long, type As Byte, plaintext As Byte(), offset As Integer, len As Integer) As Byte()
+  overload: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.EncodePlaintext*
+  implements:
+  - Org.BouncyCastle.Crypto.Tls.TlsCipher.EncodePlaintext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  nameWithType.vb: TlsNullCipher.EncodePlaintext(Int64, Byte, Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.EncodePlaintext(System.Int64, System.Byte, System.Byte(), System.Int32, System.Int32)
+  name.vb: EncodePlaintext(Int64, Byte, Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.DecodeCiphertext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.DecodeCiphertext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  id: DecodeCiphertext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsNullCipher
+  langs:
+  - csharp
+  - vb
+  name: DecodeCiphertext(Int64, Byte, Byte[], Int32, Int32)
+  nameWithType: TlsNullCipher.DecodeCiphertext(Int64, Byte, Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.DecodeCiphertext(System.Int64, System.Byte, System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: DecodeCiphertext
+    path: ''
+    startLine: 137580
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: public virtual byte[] DecodeCiphertext(long seqNo, byte type, byte[] ciphertext, int offset, int len)
+    parameters:
+    - id: seqNo
+      type: System.Int64
+    - id: type
+      type: System.Byte
+    - id: ciphertext
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: len
+      type: System.Int32
+    return:
+      type: System.Byte[]
+    content.vb: Public Overridable Function DecodeCiphertext(seqNo As Long, type As Byte, ciphertext As Byte(), offset As Integer, len As Integer) As Byte()
+  overload: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.DecodeCiphertext*
+  implements:
+  - Org.BouncyCastle.Crypto.Tls.TlsCipher.DecodeCiphertext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  nameWithType.vb: TlsNullCipher.DecodeCiphertext(Int64, Byte, Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.DecodeCiphertext(System.Int64, System.Byte, System.Byte(), System.Int32, System.Int32)
+  name.vb: DecodeCiphertext(Int64, Byte, Byte(), Int32, Int32)
+references:
+- uid: Org.BouncyCastle.Crypto.Tls
+  commentId: N:Org.BouncyCastle.Crypto.Tls
+  name: Org.BouncyCastle.Crypto.Tls
+  nameWithType: Org.BouncyCastle.Crypto.Tls
+  fullName: Org.BouncyCastle.Crypto.Tls
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.Tls.TlsCipher
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsCipher
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsCipher
+  nameWithType: TlsCipher
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsCipher
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsContext
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsContext
+  nameWithType: TlsContext
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext
+- uid: Org.BouncyCastle.Crypto.Tls.TlsMac
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsMac
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsMac
+  nameWithType: TlsMac
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsMac
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.#ctor
+  name: TlsNullCipher
+  nameWithType: TlsNullCipher.TlsNullCipher
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.TlsNullCipher
+- uid: Org.BouncyCastle.Crypto.IDigest
+  commentId: T:Org.BouncyCastle.Crypto.IDigest
+  parent: Org.BouncyCastle.Crypto
+  name: IDigest
+  nameWithType: IDigest
+  fullName: Org.BouncyCastle.Crypto.IDigest
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.GetPlaintextLimit*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.GetPlaintextLimit
+  name: GetPlaintextLimit
+  nameWithType: TlsNullCipher.GetPlaintextLimit
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.GetPlaintextLimit
+- uid: Org.BouncyCastle.Crypto.Tls.TlsCipher.GetPlaintextLimit(System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsCipher.GetPlaintextLimit(System.Int32)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsCipher
+  isExternal: true
+  name: GetPlaintextLimit(Int32)
+  nameWithType: TlsCipher.GetPlaintextLimit(Int32)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsCipher.GetPlaintextLimit(System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsCipher.GetPlaintextLimit(System.Int32)
+    name: GetPlaintextLimit
+    nameWithType: TlsCipher.GetPlaintextLimit
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsCipher.GetPlaintextLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsCipher.GetPlaintextLimit(System.Int32)
+    name: GetPlaintextLimit
+    nameWithType: TlsCipher.GetPlaintextLimit
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsCipher.GetPlaintextLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.EncodePlaintext*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.EncodePlaintext
+  name: EncodePlaintext
+  nameWithType: TlsNullCipher.EncodePlaintext
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.EncodePlaintext
+- uid: Org.BouncyCastle.Crypto.Tls.TlsCipher.EncodePlaintext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsCipher.EncodePlaintext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsCipher
+  isExternal: true
+  name: EncodePlaintext(Int64, Byte, Byte[], Int32, Int32)
+  nameWithType: TlsCipher.EncodePlaintext(Int64, Byte, Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsCipher.EncodePlaintext(System.Int64, System.Byte, System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: TlsCipher.EncodePlaintext(Int64, Byte, Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsCipher.EncodePlaintext(System.Int64, System.Byte, System.Byte(), System.Int32, System.Int32)
+  name.vb: EncodePlaintext(Int64, Byte, Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsCipher.EncodePlaintext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+    name: EncodePlaintext
+    nameWithType: TlsCipher.EncodePlaintext
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsCipher.EncodePlaintext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsCipher.EncodePlaintext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+    name: EncodePlaintext
+    nameWithType: TlsCipher.EncodePlaintext
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsCipher.EncodePlaintext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.DecodeCiphertext*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsNullCipher.DecodeCiphertext
+  name: DecodeCiphertext
+  nameWithType: TlsNullCipher.DecodeCiphertext
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsNullCipher.DecodeCiphertext
+- uid: Org.BouncyCastle.Crypto.Tls.TlsCipher.DecodeCiphertext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsCipher.DecodeCiphertext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsCipher
+  isExternal: true
+  name: DecodeCiphertext(Int64, Byte, Byte[], Int32, Int32)
+  nameWithType: TlsCipher.DecodeCiphertext(Int64, Byte, Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsCipher.DecodeCiphertext(System.Int64, System.Byte, System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: TlsCipher.DecodeCiphertext(Int64, Byte, Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsCipher.DecodeCiphertext(System.Int64, System.Byte, System.Byte(), System.Int32, System.Int32)
+  name.vb: DecodeCiphertext(Int64, Byte, Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsCipher.DecodeCiphertext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+    name: DecodeCiphertext
+    nameWithType: TlsCipher.DecodeCiphertext
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsCipher.DecodeCiphertext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsCipher.DecodeCiphertext(System.Int64,System.Byte,System.Byte[],System.Int32,System.Int32)
+    name: DecodeCiphertext
+    nameWithType: TlsCipher.DecodeCiphertext
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsCipher.DecodeCiphertext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

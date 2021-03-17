@@ -1,0 +1,4175 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.HTTPRequest
+  commentId: T:BestHTTP.HTTPRequest
+  id: HTTPRequest
+  parent: BestHTTP
+  children:
+  - BestHTTP.HTTPRequest.#ctor(System.Uri)
+  - BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods)
+  - BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods,BestHTTP.OnRequestFinishedDelegate)
+  - BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  - BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods,System.Boolean,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  - BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.OnRequestFinishedDelegate)
+  - BestHTTP.HTTPRequest.#ctor(System.Uri,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  - BestHTTP.HTTPRequest.#ctor(System.Uri,System.Boolean,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  - BestHTTP.HTTPRequest.Abort
+  - BestHTTP.HTTPRequest.AddBinaryData(System.String,System.Byte[])
+  - BestHTTP.HTTPRequest.AddBinaryData(System.String,System.Byte[],System.String)
+  - BestHTTP.HTTPRequest.AddBinaryData(System.String,System.Byte[],System.String,System.String)
+  - BestHTTP.HTTPRequest.AddField(System.String,System.String)
+  - BestHTTP.HTTPRequest.AddField(System.String,System.String,System.Text.Encoding)
+  - BestHTTP.HTTPRequest.AddHeader(System.String,System.String)
+  - BestHTTP.HTTPRequest.CacheOnly
+  - BestHTTP.HTTPRequest.Callback
+  - BestHTTP.HTTPRequest.Clear
+  - BestHTTP.HTTPRequest.ClearForm
+  - BestHTTP.HTTPRequest.ConnectTimeout
+  - BestHTTP.HTTPRequest.Cookies
+  - BestHTTP.HTTPRequest.Credentials
+  - BestHTTP.HTTPRequest.Current
+  - BestHTTP.HTTPRequest.CurrentUri
+  - BestHTTP.HTTPRequest.CustomCertificateVerifyer
+  - BestHTTP.HTTPRequest.CustomCertificationValidator
+  - BestHTTP.HTTPRequest.CustomClientCredentialsProvider
+  - BestHTTP.HTTPRequest.DisableCache
+  - BestHTTP.HTTPRequest.DisableRetry
+  - BestHTTP.HTTPRequest.Dispose
+  - BestHTTP.HTTPRequest.DisposeUploadStream
+  - BestHTTP.HTTPRequest.DumpHeaders
+  - BestHTTP.HTTPRequest.EnableSafeReadOnUnknownContentLength
+  - BestHTTP.HTTPRequest.EnableTimoutForStreaming
+  - BestHTTP.HTTPRequest.EnumerateHeaders(BestHTTP.OnHeaderEnumerationDelegate)
+  - BestHTTP.HTTPRequest.EnumerateHeaders(BestHTTP.OnHeaderEnumerationDelegate,System.Boolean)
+  - BestHTTP.HTTPRequest.EOL
+  - BestHTTP.HTTPRequest.Exception
+  - BestHTTP.HTTPRequest.FormUsage
+  - BestHTTP.HTTPRequest.GetFirstHeaderValue(System.String)
+  - BestHTTP.HTTPRequest.GetHeaderValues(System.String)
+  - BestHTTP.HTTPRequest.HasHeader(System.String)
+  - BestHTTP.HTTPRequest.HasProxy
+  - BestHTTP.HTTPRequest.IsCookiesEnabled
+  - BestHTTP.HTTPRequest.IsKeepAlive
+  - BestHTTP.HTTPRequest.IsRedirected
+  - BestHTTP.HTTPRequest.MaxRedirects
+  - BestHTTP.HTTPRequest.MethodNames
+  - BestHTTP.HTTPRequest.MethodType
+  - BestHTTP.HTTPRequest.MoveNext
+  - BestHTTP.HTTPRequest.OnBeforeHeaderSend
+  - BestHTTP.HTTPRequest.OnBeforeRedirection
+  - BestHTTP.HTTPRequest.OnProgress
+  - BestHTTP.HTTPRequest.OnUpgraded
+  - BestHTTP.HTTPRequest.OnUploadProgress
+  - BestHTTP.HTTPRequest.Priority
+  - BestHTTP.HTTPRequest.ProtocolHandler
+  - BestHTTP.HTTPRequest.Proxy
+  - BestHTTP.HTTPRequest.ProxyResponse
+  - BestHTTP.HTTPRequest.RawData
+  - BestHTTP.HTTPRequest.RedirectCount
+  - BestHTTP.HTTPRequest.RedirectUri
+  - BestHTTP.HTTPRequest.RemoveHeader(System.String)
+  - BestHTTP.HTTPRequest.RemoveHeaders
+  - BestHTTP.HTTPRequest.Reset
+  - BestHTTP.HTTPRequest.Response
+  - BestHTTP.HTTPRequest.Send
+  - BestHTTP.HTTPRequest.SetFields(UnityEngine.WWWForm)
+  - BestHTTP.HTTPRequest.SetForm(BestHTTP.Forms.HTTPFormBase)
+  - BestHTTP.HTTPRequest.SetHeader(System.String,System.String)
+  - BestHTTP.HTTPRequest.SetRangeHeader(System.Int32)
+  - BestHTTP.HTTPRequest.SetRangeHeader(System.Int32,System.Int32)
+  - BestHTTP.HTTPRequest.State
+  - BestHTTP.HTTPRequest.StreamFragmentSize
+  - BestHTTP.HTTPRequest.System#Collections#Generic#IEnumerator{BestHTTP#HTTPRequest}#Current
+  - BestHTTP.HTTPRequest.Tag
+  - BestHTTP.HTTPRequest.Timeout
+  - BestHTTP.HTTPRequest.UploadChunkSize
+  - BestHTTP.HTTPRequest.UploadStream
+  - BestHTTP.HTTPRequest.Uri
+  - BestHTTP.HTTPRequest.UseAlternateSSL
+  - BestHTTP.HTTPRequest.UseStreaming
+  - BestHTTP.HTTPRequest.UseUploadStreamLength
+  langs:
+  - csharp
+  - vb
+  name: HTTPRequest
+  nameWithType: HTTPRequest
+  fullName: BestHTTP.HTTPRequest
+  type: Class
+  source:
+    id: HTTPRequest
+    path: ''
+    startLine: 4104
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: 'public sealed class HTTPRequest : IEnumerator<HTTPRequest>, IDisposable, IEnumerator'
+    content.vb: >-
+      Public NotInheritable Class HTTPRequest
+          Implements IEnumerator(Of HTTPRequest), IDisposable, IEnumerator
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IEnumerator{BestHTTP.HTTPRequest}
+  - System.IDisposable
+  - System.Collections.IEnumerator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: BestHTTP.HTTPRequest.EOL
+  commentId: F:BestHTTP.HTTPRequest.EOL
+  id: EOL
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: EOL
+  nameWithType: HTTPRequest.EOL
+  fullName: BestHTTP.HTTPRequest.EOL
+  type: Field
+  source:
+    id: EOL
+    path: ''
+    startLine: 4108
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public static readonly byte[] EOL
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared ReadOnly EOL As Byte()
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.MethodNames
+  commentId: F:BestHTTP.HTTPRequest.MethodNames
+  id: MethodNames
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: MethodNames
+  nameWithType: HTTPRequest.MethodNames
+  fullName: BestHTTP.HTTPRequest.MethodNames
+  type: Field
+  source:
+    id: MethodNames
+    path: ''
+    startLine: 4113
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nCached uppercase values to save some cpu cycles and GC alloc per request.\n"
+  example: []
+  syntax:
+    content: public static readonly string[] MethodNames
+    return:
+      type: System.String[]
+    content.vb: Public Shared ReadOnly MethodNames As String()
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.UploadChunkSize
+  commentId: F:BestHTTP.HTTPRequest.UploadChunkSize
+  id: UploadChunkSize
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: UploadChunkSize
+  nameWithType: HTTPRequest.UploadChunkSize
+  fullName: BestHTTP.HTTPRequest.UploadChunkSize
+  type: Field
+  source:
+    id: UploadChunkSize
+    path: ''
+    startLine: 4126
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nSize of the internal buffer, and upload progress will be fired when this size of data sent to the wire. It&apos;s default value is 2 KiB.\n"
+  example: []
+  syntax:
+    content: public static int UploadChunkSize
+    return:
+      type: System.Int32
+    content.vb: Public Shared UploadChunkSize As Integer
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BestHTTP.HTTPRequest.Uri
+  commentId: P:BestHTTP.HTTPRequest.Uri
+  id: Uri
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Uri
+  nameWithType: HTTPRequest.Uri
+  fullName: BestHTTP.HTTPRequest.Uri
+  type: Property
+  source:
+    id: Uri
+    path: ''
+    startLine: 4135
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe original request&apos;s Uri.\n"
+  example: []
+  syntax:
+    content: public Uri Uri { get; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public ReadOnly Property Uri As Uri
+  overload: BestHTTP.HTTPRequest.Uri*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.MethodType
+  commentId: P:BestHTTP.HTTPRequest.MethodType
+  id: MethodType
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: MethodType
+  nameWithType: HTTPRequest.MethodType
+  fullName: BestHTTP.HTTPRequest.MethodType
+  type: Property
+  source:
+    id: MethodType
+    path: ''
+    startLine: 4140
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe method that how we want to process our request the server.\n"
+  example: []
+  syntax:
+    content: public HTTPMethods MethodType { get; set; }
+    parameters: []
+    return:
+      type: BestHTTP.HTTPMethods
+    content.vb: Public Property MethodType As HTTPMethods
+  overload: BestHTTP.HTTPRequest.MethodType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.RawData
+  commentId: P:BestHTTP.HTTPRequest.RawData
+  id: RawData
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: RawData
+  nameWithType: HTTPRequest.RawData
+  fullName: BestHTTP.HTTPRequest.RawData
+  type: Property
+  source:
+    id: RawData
+    path: ''
+    startLine: 4145
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe raw data to send in a POST request. If it set all other fields that added to this request will be ignored.\n"
+  example: []
+  syntax:
+    content: public byte[] RawData { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property RawData As Byte()
+  overload: BestHTTP.HTTPRequest.RawData*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.UploadStream
+  commentId: P:BestHTTP.HTTPRequest.UploadStream
+  id: UploadStream
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: UploadStream
+  nameWithType: HTTPRequest.UploadStream
+  fullName: BestHTTP.HTTPRequest.UploadStream
+  type: Property
+  source:
+    id: UploadStream
+    path: ''
+    startLine: 4150
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe stream that the plugin will use to get the data to send out the server. When this property is set, no forms or the RawData property will be used\n"
+  example: []
+  syntax:
+    content: public Stream UploadStream { get; set; }
+    parameters: []
+    return:
+      type: Stream
+    content.vb: Public Property UploadStream As Stream
+  overload: BestHTTP.HTTPRequest.UploadStream*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.DisposeUploadStream
+  commentId: P:BestHTTP.HTTPRequest.DisposeUploadStream
+  id: DisposeUploadStream
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: DisposeUploadStream
+  nameWithType: HTTPRequest.DisposeUploadStream
+  fullName: BestHTTP.HTTPRequest.DisposeUploadStream
+  type: Property
+  source:
+    id: DisposeUploadStream
+    path: ''
+    startLine: 4155
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nWhen set to true(its default value) the plugin will call the UploadStream&apos;s Dispose() function when finished uploading the data from it. Default value is true.\n"
+  example: []
+  syntax:
+    content: public bool DisposeUploadStream { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DisposeUploadStream As Boolean
+  overload: BestHTTP.HTTPRequest.DisposeUploadStream*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.UseUploadStreamLength
+  commentId: P:BestHTTP.HTTPRequest.UseUploadStreamLength
+  id: UseUploadStreamLength
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: UseUploadStreamLength
+  nameWithType: HTTPRequest.UseUploadStreamLength
+  fullName: BestHTTP.HTTPRequest.UseUploadStreamLength
+  type: Property
+  source:
+    id: UseUploadStreamLength
+    path: ''
+    startLine: 4160
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nIf it&apos;s true, the plugin will use the Stream&apos;s Length property. Otherwise the plugin will send the data chunked. Default value is true.\n"
+  example: []
+  syntax:
+    content: public bool UseUploadStreamLength { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseUploadStreamLength As Boolean
+  overload: BestHTTP.HTTPRequest.UseUploadStreamLength*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.OnUploadProgress
+  commentId: F:BestHTTP.HTTPRequest.OnUploadProgress
+  id: OnUploadProgress
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: OnUploadProgress
+  nameWithType: HTTPRequest.OnUploadProgress
+  fullName: BestHTTP.HTTPRequest.OnUploadProgress
+  type: Field
+  source:
+    id: OnUploadProgress
+    path: ''
+    startLine: 4165
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nCalled after data sent out to the wire.\n"
+  example: []
+  syntax:
+    content: public OnUploadProgressDelegate OnUploadProgress
+    return:
+      type: BestHTTP.OnUploadProgressDelegate
+    content.vb: Public OnUploadProgress As OnUploadProgressDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.IsKeepAlive
+  commentId: P:BestHTTP.HTTPRequest.IsKeepAlive
+  id: IsKeepAlive
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: IsKeepAlive
+  nameWithType: HTTPRequest.IsKeepAlive
+  fullName: BestHTTP.HTTPRequest.IsKeepAlive
+  type: Property
+  source:
+    id: IsKeepAlive
+    path: ''
+    startLine: 4171
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nIndicates that the connection should be open after the response received. If its true, then the internal TCP connections will be reused if it&apos;s possible. Default value is true.\nThe default value can be changed in the HTTPManager class. If you make rare request to the server it&apos;s should be changed to false.\n"
+  example: []
+  syntax:
+    content: public bool IsKeepAlive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsKeepAlive As Boolean
+  overload: BestHTTP.HTTPRequest.IsKeepAlive*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.DisableCache
+  commentId: P:BestHTTP.HTTPRequest.DisableCache
+  id: DisableCache
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: DisableCache
+  nameWithType: HTTPRequest.DisableCache
+  fullName: BestHTTP.HTTPRequest.DisableCache
+  type: Property
+  source:
+    id: DisableCache
+    path: ''
+    startLine: 4186
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nWith this property caching can be enabled/disabled on a per-request basis.\n"
+  example: []
+  syntax:
+    content: public bool DisableCache { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DisableCache As Boolean
+  overload: BestHTTP.HTTPRequest.DisableCache*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.CacheOnly
+  commentId: P:BestHTTP.HTTPRequest.CacheOnly
+  id: CacheOnly
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: CacheOnly
+  nameWithType: HTTPRequest.CacheOnly
+  fullName: BestHTTP.HTTPRequest.CacheOnly
+  type: Property
+  source:
+    id: CacheOnly
+    path: ''
+    startLine: 4197
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public bool CacheOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property CacheOnly As Boolean
+  overload: BestHTTP.HTTPRequest.CacheOnly*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.UseStreaming
+  commentId: P:BestHTTP.HTTPRequest.UseStreaming
+  id: UseStreaming
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: UseStreaming
+  nameWithType: HTTPRequest.UseStreaming
+  fullName: BestHTTP.HTTPRequest.UseStreaming
+  type: Property
+  source:
+    id: UseStreaming
+    path: ''
+    startLine: 4212
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nIf it&apos;s true, the Callback will be called every time if we can send out at least one fragment.\n"
+  example: []
+  syntax:
+    content: public bool UseStreaming { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseStreaming As Boolean
+  overload: BestHTTP.HTTPRequest.UseStreaming*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.StreamFragmentSize
+  commentId: P:BestHTTP.HTTPRequest.StreamFragmentSize
+  id: StreamFragmentSize
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: StreamFragmentSize
+  nameWithType: HTTPRequest.StreamFragmentSize
+  fullName: BestHTTP.HTTPRequest.StreamFragmentSize
+  type: Property
+  source:
+    id: StreamFragmentSize
+    path: ''
+    startLine: 4226
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nMaximum size of a data chunk that we want to receive when streaming is set.\n"
+  example: []
+  syntax:
+    content: public int StreamFragmentSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StreamFragmentSize As Integer
+  overload: BestHTTP.HTTPRequest.StreamFragmentSize*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.Callback
+  commentId: P:BestHTTP.HTTPRequest.Callback
+  id: Callback
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Callback
+  nameWithType: HTTPRequest.Callback
+  fullName: BestHTTP.HTTPRequest.Callback
+  type: Property
+  source:
+    id: Callback
+    path: ''
+    startLine: 4244
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe callback function that will be called when a request is fully processed or when any downloaded fragment is available if UseStreaming is true. Can be null for fire-and-forget requests.\n"
+  example: []
+  syntax:
+    content: public OnRequestFinishedDelegate Callback { get; set; }
+    parameters: []
+    return:
+      type: BestHTTP.OnRequestFinishedDelegate
+    content.vb: Public Property Callback As OnRequestFinishedDelegate
+  overload: BestHTTP.HTTPRequest.Callback*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.OnProgress
+  commentId: F:BestHTTP.HTTPRequest.OnProgress
+  id: OnProgress
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: OnProgress
+  nameWithType: HTTPRequest.OnProgress
+  fullName: BestHTTP.HTTPRequest.OnProgress
+  type: Field
+  source:
+    id: OnProgress
+    path: ''
+    startLine: 4251
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nCalled when new data downloaded from the server.\nThe first parameter is the original HTTTPRequest object itself, the second parameter is the downloaded bytes while the third parameter is the content length.\n<remarks>There are download modes where we can&apos;t figure out the exact length of the final content. In these cases we just guarantee that the third parameter will be at least the size of the second one.</remarks>\n"
+  example: []
+  syntax:
+    content: public OnDownloadProgressDelegate OnProgress
+    return:
+      type: BestHTTP.OnDownloadProgressDelegate
+    content.vb: Public OnProgress As OnDownloadProgressDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.OnUpgraded
+  commentId: F:BestHTTP.HTTPRequest.OnUpgraded
+  id: OnUpgraded
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: OnUpgraded
+  nameWithType: HTTPRequest.OnUpgraded
+  fullName: BestHTTP.HTTPRequest.OnUpgraded
+  type: Field
+  source:
+    id: OnUpgraded
+    path: ''
+    startLine: 4256
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nCalled when the current protocol is upgraded to an other. (HTTP => WebSocket for example)\n"
+  example: []
+  syntax:
+    content: public OnRequestFinishedDelegate OnUpgraded
+    return:
+      type: BestHTTP.OnRequestFinishedDelegate
+    content.vb: Public OnUpgraded As OnRequestFinishedDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.DisableRetry
+  commentId: P:BestHTTP.HTTPRequest.DisableRetry
+  id: DisableRetry
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: DisableRetry
+  nameWithType: HTTPRequest.DisableRetry
+  fullName: BestHTTP.HTTPRequest.DisableRetry
+  type: Property
+  source:
+    id: DisableRetry
+    path: ''
+    startLine: 4261
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nWith this option if reading back the server&apos;s response fails, the request will fail and any exceptions can be checked through the Exception property. The default value is True for POST requests, otherwise false.\n"
+  example: []
+  syntax:
+    content: public bool DisableRetry { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DisableRetry As Boolean
+  overload: BestHTTP.HTTPRequest.DisableRetry*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.IsRedirected
+  commentId: P:BestHTTP.HTTPRequest.IsRedirected
+  id: IsRedirected
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: IsRedirected
+  nameWithType: HTTPRequest.IsRedirected
+  fullName: BestHTTP.HTTPRequest.IsRedirected
+  type: Property
+  source:
+    id: IsRedirected
+    path: ''
+    startLine: 4266
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nIndicates that the request is redirected. If a request is redirected, the connection that served it will be closed regardless of the value of IsKeepAlive.\n"
+  example: []
+  syntax:
+    content: public bool IsRedirected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRedirected As Boolean
+  overload: BestHTTP.HTTPRequest.IsRedirected*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.RedirectUri
+  commentId: P:BestHTTP.HTTPRequest.RedirectUri
+  id: RedirectUri
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: RedirectUri
+  nameWithType: HTTPRequest.RedirectUri
+  fullName: BestHTTP.HTTPRequest.RedirectUri
+  type: Property
+  source:
+    id: RedirectUri
+    path: ''
+    startLine: 4271
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe Uri that the request redirected to.\n"
+  example: []
+  syntax:
+    content: public Uri RedirectUri { get; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public ReadOnly Property RedirectUri As Uri
+  overload: BestHTTP.HTTPRequest.RedirectUri*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.CurrentUri
+  commentId: P:BestHTTP.HTTPRequest.CurrentUri
+  id: CurrentUri
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: CurrentUri
+  nameWithType: HTTPRequest.CurrentUri
+  fullName: BestHTTP.HTTPRequest.CurrentUri
+  type: Property
+  source:
+    id: CurrentUri
+    path: ''
+    startLine: 4276
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nIf redirected it contains the RedirectUri.\n"
+  example: []
+  syntax:
+    content: public Uri CurrentUri { get; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public ReadOnly Property CurrentUri As Uri
+  overload: BestHTTP.HTTPRequest.CurrentUri*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.Response
+  commentId: P:BestHTTP.HTTPRequest.Response
+  id: Response
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Response
+  nameWithType: HTTPRequest.Response
+  fullName: BestHTTP.HTTPRequest.Response
+  type: Property
+  source:
+    id: Response
+    path: ''
+    startLine: 4282
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe response to the query.\n<remarks>If an exception occurred during reading of the response stream or can&apos;t connect to the server, this will be null!</remarks>\n"
+  example: []
+  syntax:
+    content: public HTTPResponse Response { get; }
+    parameters: []
+    return:
+      type: BestHTTP.HTTPResponse
+    content.vb: Public ReadOnly Property Response As HTTPResponse
+  overload: BestHTTP.HTTPRequest.Response*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.ProxyResponse
+  commentId: P:BestHTTP.HTTPRequest.ProxyResponse
+  id: ProxyResponse
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: ProxyResponse
+  nameWithType: HTTPRequest.ProxyResponse
+  fullName: BestHTTP.HTTPRequest.ProxyResponse
+  type: Property
+  source:
+    id: ProxyResponse
+    path: ''
+    startLine: 4288
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nResponse from the Proxy server. It&apos;s null with transparent proxies.\n"
+  example: []
+  syntax:
+    content: public HTTPResponse ProxyResponse { get; }
+    parameters: []
+    return:
+      type: BestHTTP.HTTPResponse
+    content.vb: Public ReadOnly Property ProxyResponse As HTTPResponse
+  overload: BestHTTP.HTTPRequest.ProxyResponse*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.Exception
+  commentId: P:BestHTTP.HTTPRequest.Exception
+  id: Exception
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: HTTPRequest.Exception
+  fullName: BestHTTP.HTTPRequest.Exception
+  type: Property
+  source:
+    id: Exception
+    path: ''
+    startLine: 4294
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nIt there is an exception while processing the request or response the Response property will be null, and the Exception will be stored in this property.\n"
+  example: []
+  syntax:
+    content: public Exception Exception { get; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: Public ReadOnly Property Exception As Exception
+  overload: BestHTTP.HTTPRequest.Exception*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.Tag
+  commentId: P:BestHTTP.HTTPRequest.Tag
+  id: Tag
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Tag
+  nameWithType: HTTPRequest.Tag
+  fullName: BestHTTP.HTTPRequest.Tag
+  type: Property
+  source:
+    id: Tag
+    path: ''
+    startLine: 4299
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nAny object can be passed with the request with this property. (eq. it can be identified, etc.)\n"
+  example: []
+  syntax:
+    content: public object Tag { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property Tag As Object
+  overload: BestHTTP.HTTPRequest.Tag*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.Credentials
+  commentId: P:BestHTTP.HTTPRequest.Credentials
+  id: Credentials
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Credentials
+  nameWithType: HTTPRequest.Credentials
+  fullName: BestHTTP.HTTPRequest.Credentials
+  type: Property
+  source:
+    id: Credentials
+    path: ''
+    startLine: 4304
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe UserName, Password pair that the plugin will use to authenticate to the remote server.\n"
+  example: []
+  syntax:
+    content: public Credentials Credentials { get; set; }
+    parameters: []
+    return:
+      type: BestHTTP.Authentication.Credentials
+    content.vb: Public Property Credentials As Credentials
+  overload: BestHTTP.HTTPRequest.Credentials*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.HasProxy
+  commentId: P:BestHTTP.HTTPRequest.HasProxy
+  id: HasProxy
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: HasProxy
+  nameWithType: HTTPRequest.HasProxy
+  fullName: BestHTTP.HTTPRequest.HasProxy
+  type: Property
+  source:
+    id: HasProxy
+    path: ''
+    startLine: 4310
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nTrue, if there is a Proxy object.\n"
+  example: []
+  syntax:
+    content: public bool HasProxy { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasProxy As Boolean
+  overload: BestHTTP.HTTPRequest.HasProxy*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.Proxy
+  commentId: P:BestHTTP.HTTPRequest.Proxy
+  id: Proxy
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Proxy
+  nameWithType: HTTPRequest.Proxy
+  fullName: BestHTTP.HTTPRequest.Proxy
+  type: Property
+  source:
+    id: Proxy
+    path: ''
+    startLine: 4315
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nA web proxy&apos;s properties where the request must pass through.\n"
+  example: []
+  syntax:
+    content: public HTTPProxy Proxy { get; set; }
+    parameters: []
+    return:
+      type: BestHTTP.HTTPProxy
+    content.vb: Public Property Proxy As HTTPProxy
+  overload: BestHTTP.HTTPRequest.Proxy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.MaxRedirects
+  commentId: P:BestHTTP.HTTPRequest.MaxRedirects
+  id: MaxRedirects
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: MaxRedirects
+  nameWithType: HTTPRequest.MaxRedirects
+  fullName: BestHTTP.HTTPRequest.MaxRedirects
+  type: Property
+  source:
+    id: MaxRedirects
+    path: ''
+    startLine: 4321
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nHow many redirection supported for this request. The default is int.MaxValue. 0 or a negative value means no redirection supported.\n"
+  example: []
+  syntax:
+    content: public int MaxRedirects { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxRedirects As Integer
+  overload: BestHTTP.HTTPRequest.MaxRedirects*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.UseAlternateSSL
+  commentId: P:BestHTTP.HTTPRequest.UseAlternateSSL
+  id: UseAlternateSSL
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: UseAlternateSSL
+  nameWithType: HTTPRequest.UseAlternateSSL
+  fullName: BestHTTP.HTTPRequest.UseAlternateSSL
+  type: Property
+  source:
+    id: UseAlternateSSL
+    path: ''
+    startLine: 4327
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nUse Bouncy Castle&apos;s code to handle the secure protocol instead of Mono&apos;s. You can try to set it true if you receive a &quot;System.Security.Cryptography.CryptographicException: Unsupported hash algorithm&quot; exception.\n"
+  example: []
+  syntax:
+    content: public bool UseAlternateSSL { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseAlternateSSL As Boolean
+  overload: BestHTTP.HTTPRequest.UseAlternateSSL*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.IsCookiesEnabled
+  commentId: P:BestHTTP.HTTPRequest.IsCookiesEnabled
+  id: IsCookiesEnabled
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: IsCookiesEnabled
+  nameWithType: HTTPRequest.IsCookiesEnabled
+  fullName: BestHTTP.HTTPRequest.IsCookiesEnabled
+  type: Property
+  source:
+    id: IsCookiesEnabled
+    path: ''
+    startLine: 4335
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nIf true cookies will be added to the headers (if any), and parsed from the response. If false, all cookie operations will be ignored. It&apos;s default value is HTTPManager&apos;s IsCookiesEnabled.\n"
+  example: []
+  syntax:
+    content: public bool IsCookiesEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsCookiesEnabled As Boolean
+  overload: BestHTTP.HTTPRequest.IsCookiesEnabled*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.Cookies
+  commentId: P:BestHTTP.HTTPRequest.Cookies
+  id: Cookies
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Cookies
+  nameWithType: HTTPRequest.Cookies
+  fullName: BestHTTP.HTTPRequest.Cookies
+  type: Property
+  source:
+    id: Cookies
+    path: ''
+    startLine: 4340
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nCookies that are added to this list will be sent to the server alongside withe the server sent ones. If cookies are disabled only these cookies will be sent.\n"
+  example: []
+  syntax:
+    content: public List<Cookie> Cookies { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{BestHTTP.Cookies.Cookie}
+    content.vb: Public Property Cookies As List(Of Cookie)
+  overload: BestHTTP.HTTPRequest.Cookies*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.FormUsage
+  commentId: P:BestHTTP.HTTPRequest.FormUsage
+  id: FormUsage
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: FormUsage
+  nameWithType: HTTPRequest.FormUsage
+  fullName: BestHTTP.HTTPRequest.FormUsage
+  type: Property
+  source:
+    id: FormUsage
+    path: ''
+    startLine: 4357
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nWhat form should used. Default to Automatic.\n"
+  example: []
+  syntax:
+    content: public HTTPFormUsage FormUsage { get; set; }
+    parameters: []
+    return:
+      type: BestHTTP.Forms.HTTPFormUsage
+    content.vb: Public Property FormUsage As HTTPFormUsage
+  overload: BestHTTP.HTTPRequest.FormUsage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.State
+  commentId: P:BestHTTP.HTTPRequest.State
+  id: State
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: HTTPRequest.State
+  fullName: BestHTTP.HTTPRequest.State
+  type: Property
+  source:
+    id: State
+    path: ''
+    startLine: 4362
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nCurrent state of this request.\n"
+  example: []
+  syntax:
+    content: public HTTPRequestStates State { get; }
+    parameters: []
+    return:
+      type: BestHTTP.HTTPRequestStates
+    content.vb: Public ReadOnly Property State As HTTPRequestStates
+  overload: BestHTTP.HTTPRequest.State*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.RedirectCount
+  commentId: P:BestHTTP.HTTPRequest.RedirectCount
+  id: RedirectCount
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: RedirectCount
+  nameWithType: HTTPRequest.RedirectCount
+  fullName: BestHTTP.HTTPRequest.RedirectCount
+  type: Property
+  source:
+    id: RedirectCount
+    path: ''
+    startLine: 4367
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nHow many times redirected.\n"
+  example: []
+  syntax:
+    content: public int RedirectCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property RedirectCount As Integer
+  overload: BestHTTP.HTTPRequest.RedirectCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.CustomCertificationValidator
+  commentId: E:BestHTTP.HTTPRequest.CustomCertificationValidator
+  id: CustomCertificationValidator
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: CustomCertificationValidator
+  nameWithType: HTTPRequest.CustomCertificationValidator
+  fullName: BestHTTP.HTTPRequest.CustomCertificationValidator
+  type: Event
+  source:
+    id: CustomCertificationValidator
+    path: ''
+    startLine: 4374
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nCustom validator for an SslStream. This event will receive the original HTTPRequest, an X509Certificate and an X509Chain objects. It must return true if the certificate valid, false otherwise.\n<remarks>It&apos;s called in a thread! Not available on Windows Phone!</remarks>\n"
+  example: []
+  syntax:
+    content: public event Func<HTTPRequest, X509Certificate, X509Chain, bool> CustomCertificationValidator
+    return:
+      type: System.Func{BestHTTP.HTTPRequest,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Boolean}
+    content.vb: Public Event CustomCertificationValidator As Func(Of HTTPRequest, X509Certificate, X509Chain, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.ConnectTimeout
+  commentId: P:BestHTTP.HTTPRequest.ConnectTimeout
+  id: ConnectTimeout
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: ConnectTimeout
+  nameWithType: HTTPRequest.ConnectTimeout
+  fullName: BestHTTP.HTTPRequest.ConnectTimeout
+  type: Property
+  source:
+    id: ConnectTimeout
+    path: ''
+    startLine: 4380
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nMaximum time we wait to establish the connection to the target server. If set to TimeSpan.Zero or lower, no connect timeout logic is executed. Default value is 20 seconds.\n"
+  example: []
+  syntax:
+    content: public TimeSpan ConnectTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property ConnectTimeout As TimeSpan
+  overload: BestHTTP.HTTPRequest.ConnectTimeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.Timeout
+  commentId: P:BestHTTP.HTTPRequest.Timeout
+  id: Timeout
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: HTTPRequest.Timeout
+  fullName: BestHTTP.HTTPRequest.Timeout
+  type: Property
+  source:
+    id: Timeout
+    path: ''
+    startLine: 4386
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nMaximum time we want to wait to the request to finish after the connection is established. Default value is 60 seconds.\n<remarks>It&apos;s disabled for streaming requests! See <xref href=\"BestHTTP.HTTPRequest.EnableTimoutForStreaming\" data-throw-if-not-resolved=\"false\"></xref>.</remarks>\n"
+  example: []
+  syntax:
+    content: public TimeSpan Timeout { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property Timeout As TimeSpan
+  overload: BestHTTP.HTTPRequest.Timeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.EnableTimoutForStreaming
+  commentId: P:BestHTTP.HTTPRequest.EnableTimoutForStreaming
+  id: EnableTimoutForStreaming
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: EnableTimoutForStreaming
+  nameWithType: HTTPRequest.EnableTimoutForStreaming
+  fullName: BestHTTP.HTTPRequest.EnableTimoutForStreaming
+  type: Property
+  source:
+    id: EnableTimoutForStreaming
+    path: ''
+    startLine: 4391
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nSet to true to enable Timeouts on streaming request. Default value is false.\n"
+  example: []
+  syntax:
+    content: public bool EnableTimoutForStreaming { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property EnableTimoutForStreaming As Boolean
+  overload: BestHTTP.HTTPRequest.EnableTimoutForStreaming*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.EnableSafeReadOnUnknownContentLength
+  commentId: P:BestHTTP.HTTPRequest.EnableSafeReadOnUnknownContentLength
+  id: EnableSafeReadOnUnknownContentLength
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: EnableSafeReadOnUnknownContentLength
+  nameWithType: HTTPRequest.EnableSafeReadOnUnknownContentLength
+  fullName: BestHTTP.HTTPRequest.EnableSafeReadOnUnknownContentLength
+  type: Property
+  source:
+    id: EnableSafeReadOnUnknownContentLength
+    path: ''
+    startLine: 4396
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nEnables safe read method when the response&apos;s length of the content is unknown. Its default value is enabled (true).\n"
+  example: []
+  syntax:
+    content: public bool EnableSafeReadOnUnknownContentLength { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property EnableSafeReadOnUnknownContentLength As Boolean
+  overload: BestHTTP.HTTPRequest.EnableSafeReadOnUnknownContentLength*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.Priority
+  commentId: P:BestHTTP.HTTPRequest.Priority
+  id: Priority
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Priority
+  nameWithType: HTTPRequest.Priority
+  fullName: BestHTTP.HTTPRequest.Priority
+  type: Property
+  source:
+    id: Priority
+    path: ''
+    startLine: 4401
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe priority of the request. Higher priority requests will be picked from the request queue sooner than lower priority ones.\n"
+  example: []
+  syntax:
+    content: public int Priority { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Priority As Integer
+  overload: BestHTTP.HTTPRequest.Priority*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.CustomCertificateVerifyer
+  commentId: P:BestHTTP.HTTPRequest.CustomCertificateVerifyer
+  id: CustomCertificateVerifyer
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: CustomCertificateVerifyer
+  nameWithType: HTTPRequest.CustomCertificateVerifyer
+  fullName: BestHTTP.HTTPRequest.CustomCertificateVerifyer
+  type: Property
+  source:
+    id: CustomCertificateVerifyer
+    path: ''
+    startLine: 4407
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe ICertificateVerifyer implementation that the plugin will use to verify the server certificates when the request&apos;s UseAlternateSSL property is set to true.\n"
+  example: []
+  syntax:
+    content: public ICertificateVerifyer CustomCertificateVerifyer { get; set; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.ICertificateVerifyer
+    content.vb: Public Property CustomCertificateVerifyer As ICertificateVerifyer
+  overload: BestHTTP.HTTPRequest.CustomCertificateVerifyer*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.CustomClientCredentialsProvider
+  commentId: P:BestHTTP.HTTPRequest.CustomClientCredentialsProvider
+  id: CustomClientCredentialsProvider
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: CustomClientCredentialsProvider
+  nameWithType: HTTPRequest.CustomClientCredentialsProvider
+  fullName: BestHTTP.HTTPRequest.CustomClientCredentialsProvider
+  type: Property
+  source:
+    id: CustomClientCredentialsProvider
+    path: ''
+    startLine: 4412
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe IClientCredentialsProvider implementation that the plugin will use to send client certificates when the request&apos;s UseAlternateSSL property is set to true.\n"
+  example: []
+  syntax:
+    content: public IClientCredentialsProvider CustomClientCredentialsProvider { get; set; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.IClientCredentialsProvider
+    content.vb: Public Property CustomClientCredentialsProvider As IClientCredentialsProvider
+  overload: BestHTTP.HTTPRequest.CustomClientCredentialsProvider*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.ProtocolHandler
+  commentId: P:BestHTTP.HTTPRequest.ProtocolHandler
+  id: ProtocolHandler
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: ProtocolHandler
+  nameWithType: HTTPRequest.ProtocolHandler
+  fullName: BestHTTP.HTTPRequest.ProtocolHandler
+  type: Property
+  source:
+    id: ProtocolHandler
+    path: ''
+    startLine: 4418
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public SupportedProtocols ProtocolHandler { get; set; }
+    parameters: []
+    return:
+      type: BestHTTP.SupportedProtocols
+    content.vb: Public Property ProtocolHandler As SupportedProtocols
+  overload: BestHTTP.HTTPRequest.ProtocolHandler*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.OnBeforeRedirection
+  commentId: E:BestHTTP.HTTPRequest.OnBeforeRedirection
+  id: OnBeforeRedirection
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: OnBeforeRedirection
+  nameWithType: HTTPRequest.OnBeforeRedirection
+  fullName: BestHTTP.HTTPRequest.OnBeforeRedirection
+  type: Event
+  source:
+    id: OnBeforeRedirection
+    path: ''
+    startLine: 4424
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nIt&apos;s called before the plugin will do a new request to the new uri. The return value of this function will control the redirection: if it&apos;s false the redirection is aborted.\nThis function is called on a thread other than the main Unity thread!\n"
+  example: []
+  syntax:
+    content: public event OnBeforeRedirectionDelegate OnBeforeRedirection
+    return:
+      type: BestHTTP.OnBeforeRedirectionDelegate
+    content.vb: Public Event OnBeforeRedirection As OnBeforeRedirectionDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.OnBeforeHeaderSend
+  commentId: E:BestHTTP.HTTPRequest.OnBeforeHeaderSend
+  id: OnBeforeHeaderSend
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: OnBeforeHeaderSend
+  nameWithType: HTTPRequest.OnBeforeHeaderSend
+  fullName: BestHTTP.HTTPRequest.OnBeforeHeaderSend
+  type: Event
+  source:
+    id: OnBeforeHeaderSend
+    path: ''
+    startLine: 4434
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThis event will be fired before the plugin will write headers to the wire. New headers can be added in this callback. This event is called on a non-Unity thread!\n"
+  example: []
+  syntax:
+    content: public event OnBeforeHeaderSendDelegate OnBeforeHeaderSend
+    return:
+      type: BestHTTP.OnBeforeHeaderSendDelegate
+    content.vb: Public Event OnBeforeHeaderSend As OnBeforeHeaderSendDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.#ctor(System.Uri)
+  commentId: M:BestHTTP.HTTPRequest.#ctor(System.Uri)
+  id: '#ctor(System.Uri)'
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: HTTPRequest(Uri)
+  nameWithType: HTTPRequest.HTTPRequest(Uri)
+  fullName: BestHTTP.HTTPRequest.HTTPRequest(System.Uri)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4531
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public HTTPRequest(Uri uri)
+    parameters:
+    - id: uri
+      type: System.Uri
+    content.vb: Public Sub New(uri As Uri)
+  overload: BestHTTP.HTTPRequest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.OnRequestFinishedDelegate)
+  commentId: M:BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.OnRequestFinishedDelegate)
+  id: '#ctor(System.Uri,BestHTTP.OnRequestFinishedDelegate)'
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: HTTPRequest(Uri, OnRequestFinishedDelegate)
+  nameWithType: HTTPRequest.HTTPRequest(Uri, OnRequestFinishedDelegate)
+  fullName: BestHTTP.HTTPRequest.HTTPRequest(System.Uri, BestHTTP.OnRequestFinishedDelegate)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4542
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public HTTPRequest(Uri uri, OnRequestFinishedDelegate callback)
+    parameters:
+    - id: uri
+      type: System.Uri
+    - id: callback
+      type: BestHTTP.OnRequestFinishedDelegate
+    content.vb: Public Sub New(uri As Uri, callback As OnRequestFinishedDelegate)
+  overload: BestHTTP.HTTPRequest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.#ctor(System.Uri,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  commentId: M:BestHTTP.HTTPRequest.#ctor(System.Uri,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  id: '#ctor(System.Uri,System.Boolean,BestHTTP.OnRequestFinishedDelegate)'
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: HTTPRequest(Uri, Boolean, OnRequestFinishedDelegate)
+  nameWithType: HTTPRequest.HTTPRequest(Uri, Boolean, OnRequestFinishedDelegate)
+  fullName: BestHTTP.HTTPRequest.HTTPRequest(System.Uri, System.Boolean, BestHTTP.OnRequestFinishedDelegate)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4553
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public HTTPRequest(Uri uri, bool isKeepAlive, OnRequestFinishedDelegate callback)
+    parameters:
+    - id: uri
+      type: System.Uri
+    - id: isKeepAlive
+      type: System.Boolean
+    - id: callback
+      type: BestHTTP.OnRequestFinishedDelegate
+    content.vb: Public Sub New(uri As Uri, isKeepAlive As Boolean, callback As OnRequestFinishedDelegate)
+  overload: BestHTTP.HTTPRequest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.#ctor(System.Uri,System.Boolean,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  commentId: M:BestHTTP.HTTPRequest.#ctor(System.Uri,System.Boolean,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  id: '#ctor(System.Uri,System.Boolean,System.Boolean,BestHTTP.OnRequestFinishedDelegate)'
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: HTTPRequest(Uri, Boolean, Boolean, OnRequestFinishedDelegate)
+  nameWithType: HTTPRequest.HTTPRequest(Uri, Boolean, Boolean, OnRequestFinishedDelegate)
+  fullName: BestHTTP.HTTPRequest.HTTPRequest(System.Uri, System.Boolean, System.Boolean, BestHTTP.OnRequestFinishedDelegate)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4564
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public HTTPRequest(Uri uri, bool isKeepAlive, bool disableCache, OnRequestFinishedDelegate callback)
+    parameters:
+    - id: uri
+      type: System.Uri
+    - id: isKeepAlive
+      type: System.Boolean
+    - id: disableCache
+      type: System.Boolean
+    - id: callback
+      type: BestHTTP.OnRequestFinishedDelegate
+    content.vb: Public Sub New(uri As Uri, isKeepAlive As Boolean, disableCache As Boolean, callback As OnRequestFinishedDelegate)
+  overload: BestHTTP.HTTPRequest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods)
+  commentId: M:BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods)
+  id: '#ctor(System.Uri,BestHTTP.HTTPMethods)'
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: HTTPRequest(Uri, HTTPMethods)
+  nameWithType: HTTPRequest.HTTPRequest(Uri, HTTPMethods)
+  fullName: BestHTTP.HTTPRequest.HTTPRequest(System.Uri, BestHTTP.HTTPMethods)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4571
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public HTTPRequest(Uri uri, HTTPMethods methodType)
+    parameters:
+    - id: uri
+      type: System.Uri
+    - id: methodType
+      type: BestHTTP.HTTPMethods
+    content.vb: Public Sub New(uri As Uri, methodType As HTTPMethods)
+  overload: BestHTTP.HTTPRequest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods,BestHTTP.OnRequestFinishedDelegate)
+  commentId: M:BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods,BestHTTP.OnRequestFinishedDelegate)
+  id: '#ctor(System.Uri,BestHTTP.HTTPMethods,BestHTTP.OnRequestFinishedDelegate)'
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: HTTPRequest(Uri, HTTPMethods, OnRequestFinishedDelegate)
+  nameWithType: HTTPRequest.HTTPRequest(Uri, HTTPMethods, OnRequestFinishedDelegate)
+  fullName: BestHTTP.HTTPRequest.HTTPRequest(System.Uri, BestHTTP.HTTPMethods, BestHTTP.OnRequestFinishedDelegate)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4582
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public HTTPRequest(Uri uri, HTTPMethods methodType, OnRequestFinishedDelegate callback)
+    parameters:
+    - id: uri
+      type: System.Uri
+    - id: methodType
+      type: BestHTTP.HTTPMethods
+    - id: callback
+      type: BestHTTP.OnRequestFinishedDelegate
+    content.vb: Public Sub New(uri As Uri, methodType As HTTPMethods, callback As OnRequestFinishedDelegate)
+  overload: BestHTTP.HTTPRequest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  commentId: M:BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  id: '#ctor(System.Uri,BestHTTP.HTTPMethods,System.Boolean,BestHTTP.OnRequestFinishedDelegate)'
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: HTTPRequest(Uri, HTTPMethods, Boolean, OnRequestFinishedDelegate)
+  nameWithType: HTTPRequest.HTTPRequest(Uri, HTTPMethods, Boolean, OnRequestFinishedDelegate)
+  fullName: BestHTTP.HTTPRequest.HTTPRequest(System.Uri, BestHTTP.HTTPMethods, System.Boolean, BestHTTP.OnRequestFinishedDelegate)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4593
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public HTTPRequest(Uri uri, HTTPMethods methodType, bool isKeepAlive, OnRequestFinishedDelegate callback)
+    parameters:
+    - id: uri
+      type: System.Uri
+    - id: methodType
+      type: BestHTTP.HTTPMethods
+    - id: isKeepAlive
+      type: System.Boolean
+    - id: callback
+      type: BestHTTP.OnRequestFinishedDelegate
+    content.vb: Public Sub New(uri As Uri, methodType As HTTPMethods, isKeepAlive As Boolean, callback As OnRequestFinishedDelegate)
+  overload: BestHTTP.HTTPRequest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods,System.Boolean,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  commentId: M:BestHTTP.HTTPRequest.#ctor(System.Uri,BestHTTP.HTTPMethods,System.Boolean,System.Boolean,BestHTTP.OnRequestFinishedDelegate)
+  id: '#ctor(System.Uri,BestHTTP.HTTPMethods,System.Boolean,System.Boolean,BestHTTP.OnRequestFinishedDelegate)'
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: HTTPRequest(Uri, HTTPMethods, Boolean, Boolean, OnRequestFinishedDelegate)
+  nameWithType: HTTPRequest.HTTPRequest(Uri, HTTPMethods, Boolean, Boolean, OnRequestFinishedDelegate)
+  fullName: BestHTTP.HTTPRequest.HTTPRequest(System.Uri, BestHTTP.HTTPMethods, System.Boolean, System.Boolean, BestHTTP.OnRequestFinishedDelegate)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4604
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public HTTPRequest(Uri uri, HTTPMethods methodType, bool isKeepAlive, bool disableCache, OnRequestFinishedDelegate callback)
+    parameters:
+    - id: uri
+      type: System.Uri
+    - id: methodType
+      type: BestHTTP.HTTPMethods
+    - id: isKeepAlive
+      type: System.Boolean
+    - id: disableCache
+      type: System.Boolean
+    - id: callback
+      type: BestHTTP.OnRequestFinishedDelegate
+    content.vb: Public Sub New(uri As Uri, methodType As HTTPMethods, isKeepAlive As Boolean, disableCache As Boolean, callback As OnRequestFinishedDelegate)
+  overload: BestHTTP.HTTPRequest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.AddField(System.String,System.String)
+  commentId: M:BestHTTP.HTTPRequest.AddField(System.String,System.String)
+  id: AddField(System.String,System.String)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: AddField(String, String)
+  nameWithType: HTTPRequest.AddField(String, String)
+  fullName: BestHTTP.HTTPRequest.AddField(System.String, System.String)
+  type: Method
+  source:
+    id: AddField
+    path: ''
+    startLine: 4654
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nAdd a field with a given string value.\n"
+  example: []
+  syntax:
+    content: public void AddField(string fieldName, string value)
+    parameters:
+    - id: fieldName
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Public Sub AddField(fieldName As String, value As String)
+  overload: BestHTTP.HTTPRequest.AddField*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.AddField(System.String,System.String,System.Text.Encoding)
+  commentId: M:BestHTTP.HTTPRequest.AddField(System.String,System.String,System.Text.Encoding)
+  id: AddField(System.String,System.String,System.Text.Encoding)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: AddField(String, String, Encoding)
+  nameWithType: HTTPRequest.AddField(String, String, Encoding)
+  fullName: BestHTTP.HTTPRequest.AddField(System.String, System.String, System.Text.Encoding)
+  type: Method
+  source:
+    id: AddField
+    path: ''
+    startLine: 4662
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nAdd a field with a given string value.\n"
+  example: []
+  syntax:
+    content: public void AddField(string fieldName, string value, Encoding e)
+    parameters:
+    - id: fieldName
+      type: System.String
+    - id: value
+      type: System.String
+    - id: e
+      type: System.Text.Encoding
+    content.vb: Public Sub AddField(fieldName As String, value As String, e As Encoding)
+  overload: BestHTTP.HTTPRequest.AddField*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.AddBinaryData(System.String,System.Byte[])
+  commentId: M:BestHTTP.HTTPRequest.AddBinaryData(System.String,System.Byte[])
+  id: AddBinaryData(System.String,System.Byte[])
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: AddBinaryData(String, Byte[])
+  nameWithType: HTTPRequest.AddBinaryData(String, Byte[])
+  fullName: BestHTTP.HTTPRequest.AddBinaryData(System.String, System.Byte[])
+  type: Method
+  source:
+    id: AddBinaryData
+    path: ''
+    startLine: 4673
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nAdd a field with binary content to the form.\n"
+  example: []
+  syntax:
+    content: public void AddBinaryData(string fieldName, byte[] content)
+    parameters:
+    - id: fieldName
+      type: System.String
+    - id: content
+      type: System.Byte[]
+    content.vb: Public Sub AddBinaryData(fieldName As String, content As Byte())
+  overload: BestHTTP.HTTPRequest.AddBinaryData*
+  nameWithType.vb: HTTPRequest.AddBinaryData(String, Byte())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BestHTTP.HTTPRequest.AddBinaryData(System.String, System.Byte())
+  name.vb: AddBinaryData(String, Byte())
+- uid: BestHTTP.HTTPRequest.AddBinaryData(System.String,System.Byte[],System.String)
+  commentId: M:BestHTTP.HTTPRequest.AddBinaryData(System.String,System.Byte[],System.String)
+  id: AddBinaryData(System.String,System.Byte[],System.String)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: AddBinaryData(String, Byte[], String)
+  nameWithType: HTTPRequest.AddBinaryData(String, Byte[], String)
+  fullName: BestHTTP.HTTPRequest.AddBinaryData(System.String, System.Byte[], System.String)
+  type: Method
+  source:
+    id: AddBinaryData
+    path: ''
+    startLine: 4681
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nAdd a field with binary content to the form.\n"
+  example: []
+  syntax:
+    content: public void AddBinaryData(string fieldName, byte[] content, string fileName)
+    parameters:
+    - id: fieldName
+      type: System.String
+    - id: content
+      type: System.Byte[]
+    - id: fileName
+      type: System.String
+    content.vb: Public Sub AddBinaryData(fieldName As String, content As Byte(), fileName As String)
+  overload: BestHTTP.HTTPRequest.AddBinaryData*
+  nameWithType.vb: HTTPRequest.AddBinaryData(String, Byte(), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BestHTTP.HTTPRequest.AddBinaryData(System.String, System.Byte(), System.String)
+  name.vb: AddBinaryData(String, Byte(), String)
+- uid: BestHTTP.HTTPRequest.AddBinaryData(System.String,System.Byte[],System.String,System.String)
+  commentId: M:BestHTTP.HTTPRequest.AddBinaryData(System.String,System.Byte[],System.String,System.String)
+  id: AddBinaryData(System.String,System.Byte[],System.String,System.String)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: AddBinaryData(String, Byte[], String, String)
+  nameWithType: HTTPRequest.AddBinaryData(String, Byte[], String, String)
+  fullName: BestHTTP.HTTPRequest.AddBinaryData(System.String, System.Byte[], System.String, System.String)
+  type: Method
+  source:
+    id: AddBinaryData
+    path: ''
+    startLine: 4689
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nAdd a field with binary content to the form.\n"
+  example: []
+  syntax:
+    content: public void AddBinaryData(string fieldName, byte[] content, string fileName, string mimeType)
+    parameters:
+    - id: fieldName
+      type: System.String
+    - id: content
+      type: System.Byte[]
+    - id: fileName
+      type: System.String
+    - id: mimeType
+      type: System.String
+    content.vb: Public Sub AddBinaryData(fieldName As String, content As Byte(), fileName As String, mimeType As String)
+  overload: BestHTTP.HTTPRequest.AddBinaryData*
+  nameWithType.vb: HTTPRequest.AddBinaryData(String, Byte(), String, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BestHTTP.HTTPRequest.AddBinaryData(System.String, System.Byte(), System.String, System.String)
+  name.vb: AddBinaryData(String, Byte(), String, String)
+- uid: BestHTTP.HTTPRequest.SetFields(UnityEngine.WWWForm)
+  commentId: M:BestHTTP.HTTPRequest.SetFields(UnityEngine.WWWForm)
+  id: SetFields(UnityEngine.WWWForm)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: SetFields(UnityEngine.WWWForm)
+  nameWithType: HTTPRequest.SetFields(UnityEngine.WWWForm)
+  fullName: BestHTTP.HTTPRequest.SetFields(UnityEngine.WWWForm)
+  type: Method
+  source:
+    id: SetFields
+    path: ''
+    startLine: 4700
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nSet or overwrite the internal form. Remarks: on WP8 it doesn&apos;t supported!\n"
+  example: []
+  syntax:
+    content: public void SetFields(UnityEngine.WWWForm wwwForm)
+    parameters:
+    - id: wwwForm
+      type: UnityEngine.WWWForm
+    content.vb: Public Sub SetFields(wwwForm As UnityEngine.WWWForm)
+  overload: BestHTTP.HTTPRequest.SetFields*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.SetForm(BestHTTP.Forms.HTTPFormBase)
+  commentId: M:BestHTTP.HTTPRequest.SetForm(BestHTTP.Forms.HTTPFormBase)
+  id: SetForm(BestHTTP.Forms.HTTPFormBase)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: SetForm(HTTPFormBase)
+  nameWithType: HTTPRequest.SetForm(HTTPFormBase)
+  fullName: BestHTTP.HTTPRequest.SetForm(BestHTTP.Forms.HTTPFormBase)
+  type: Method
+  source:
+    id: SetForm
+    path: ''
+    startLine: 4711
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nManually set a HTTP Form.\n"
+  example: []
+  syntax:
+    content: public void SetForm(HTTPFormBase form)
+    parameters:
+    - id: form
+      type: BestHTTP.Forms.HTTPFormBase
+    content.vb: Public Sub SetForm(form As HTTPFormBase)
+  overload: BestHTTP.HTTPRequest.SetForm*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.ClearForm
+  commentId: M:BestHTTP.HTTPRequest.ClearForm
+  id: ClearForm
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: ClearForm()
+  nameWithType: HTTPRequest.ClearForm()
+  fullName: BestHTTP.HTTPRequest.ClearForm()
+  type: Method
+  source:
+    id: ClearForm
+    path: ''
+    startLine: 4719
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nClears all data from the form.\n"
+  example: []
+  syntax:
+    content: public void ClearForm()
+    content.vb: Public Sub ClearForm
+  overload: BestHTTP.HTTPRequest.ClearForm*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.AddHeader(System.String,System.String)
+  commentId: M:BestHTTP.HTTPRequest.AddHeader(System.String,System.String)
+  id: AddHeader(System.String,System.String)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: AddHeader(String, String)
+  nameWithType: HTTPRequest.AddHeader(String, String)
+  fullName: BestHTTP.HTTPRequest.AddHeader(System.String, System.String)
+  type: Method
+  source:
+    id: AddHeader
+    path: ''
+    startLine: 4771
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nAdds a header and value pair to the Headers. Use it to add custom headers to the request.\n"
+  example:
+  - AddHeader(&quot;User-Agent&apos;, &quot;FooBar 1.0&quot;)
+  syntax:
+    content: public void AddHeader(string name, string value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Public Sub AddHeader(name As String, value As String)
+  overload: BestHTTP.HTTPRequest.AddHeader*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.SetHeader(System.String,System.String)
+  commentId: M:BestHTTP.HTTPRequest.SetHeader(System.String,System.String)
+  id: SetHeader(System.String,System.String)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: SetHeader(String, String)
+  nameWithType: HTTPRequest.SetHeader(String, String)
+  fullName: BestHTTP.HTTPRequest.SetHeader(System.String, System.String)
+  type: Method
+  source:
+    id: SetHeader
+    path: ''
+    startLine: 4786
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nRemoves any previously added values, and sets the given one.\n"
+  example: []
+  syntax:
+    content: public void SetHeader(string name, string value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Public Sub SetHeader(name As String, value As String)
+  overload: BestHTTP.HTTPRequest.SetHeader*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.RemoveHeader(System.String)
+  commentId: M:BestHTTP.HTTPRequest.RemoveHeader(System.String)
+  id: RemoveHeader(System.String)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: RemoveHeader(String)
+  nameWithType: HTTPRequest.RemoveHeader(String)
+  fullName: BestHTTP.HTTPRequest.RemoveHeader(System.String)
+  type: Method
+  source:
+    id: RemoveHeader
+    path: ''
+    startLine: 4804
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nRemoves the specified header. Returns true, if the header found and succesfully removed.\n"
+  example: []
+  syntax:
+    content: public bool RemoveHeader(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function RemoveHeader(name As String) As Boolean
+  overload: BestHTTP.HTTPRequest.RemoveHeader*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.HasHeader(System.String)
+  commentId: M:BestHTTP.HTTPRequest.HasHeader(System.String)
+  id: HasHeader(System.String)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: HasHeader(String)
+  nameWithType: HTTPRequest.HasHeader(String)
+  fullName: BestHTTP.HTTPRequest.HasHeader(System.String)
+  type: Method
+  source:
+    id: HasHeader
+    path: ''
+    startLine: 4815
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nReturns true if the given head name is already in the Headers.\n"
+  example: []
+  syntax:
+    content: public bool HasHeader(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasHeader(name As String) As Boolean
+  overload: BestHTTP.HTTPRequest.HasHeader*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.GetFirstHeaderValue(System.String)
+  commentId: M:BestHTTP.HTTPRequest.GetFirstHeaderValue(System.String)
+  id: GetFirstHeaderValue(System.String)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: GetFirstHeaderValue(String)
+  nameWithType: HTTPRequest.GetFirstHeaderValue(String)
+  fullName: BestHTTP.HTTPRequest.GetFirstHeaderValue(System.String)
+  type: Method
+  source:
+    id: GetFirstHeaderValue
+    path: ''
+    startLine: 4823
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nReturns the first header or null for the given header name.\n"
+  example: []
+  syntax:
+    content: public string GetFirstHeaderValue(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetFirstHeaderValue(name As String) As String
+  overload: BestHTTP.HTTPRequest.GetFirstHeaderValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.GetHeaderValues(System.String)
+  commentId: M:BestHTTP.HTTPRequest.GetHeaderValues(System.String)
+  id: GetHeaderValues(System.String)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: GetHeaderValues(String)
+  nameWithType: HTTPRequest.GetHeaderValues(String)
+  fullName: BestHTTP.HTTPRequest.GetHeaderValues(System.String)
+  type: Method
+  source:
+    id: GetHeaderValues
+    path: ''
+    startLine: 4838
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nReturns all header values for the given header or null.\n"
+  example: []
+  syntax:
+    content: public List<string> GetHeaderValues(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Function GetHeaderValues(name As String) As List(Of String)
+  overload: BestHTTP.HTTPRequest.GetHeaderValues*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.RemoveHeaders
+  commentId: M:BestHTTP.HTTPRequest.RemoveHeaders
+  id: RemoveHeaders
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: RemoveHeaders()
+  nameWithType: HTTPRequest.RemoveHeaders()
+  fullName: BestHTTP.HTTPRequest.RemoveHeaders()
+  type: Method
+  source:
+    id: RemoveHeaders
+    path: ''
+    startLine: 4850
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public void RemoveHeaders()
+    content.vb: Public Sub RemoveHeaders
+  overload: BestHTTP.HTTPRequest.RemoveHeaders*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.SetRangeHeader(System.Int32)
+  commentId: M:BestHTTP.HTTPRequest.SetRangeHeader(System.Int32)
+  id: SetRangeHeader(System.Int32)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: SetRangeHeader(Int32)
+  nameWithType: HTTPRequest.SetRangeHeader(Int32)
+  fullName: BestHTTP.HTTPRequest.SetRangeHeader(System.Int32)
+  type: Method
+  source:
+    id: SetRangeHeader
+    path: ''
+    startLine: 4866
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nSets the Range header to download the content from the given byte position. See http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35\n"
+  example: []
+  syntax:
+    content: public void SetRangeHeader(int firstBytePos)
+    parameters:
+    - id: firstBytePos
+      type: System.Int32
+      description: Start position of the download.
+    content.vb: Public Sub SetRangeHeader(firstBytePos As Integer)
+  overload: BestHTTP.HTTPRequest.SetRangeHeader*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.SetRangeHeader(System.Int32,System.Int32)
+  commentId: M:BestHTTP.HTTPRequest.SetRangeHeader(System.Int32,System.Int32)
+  id: SetRangeHeader(System.Int32,System.Int32)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: SetRangeHeader(Int32, Int32)
+  nameWithType: HTTPRequest.SetRangeHeader(Int32, Int32)
+  fullName: BestHTTP.HTTPRequest.SetRangeHeader(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: SetRangeHeader
+    path: ''
+    startLine: 4876
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nSets the Range header to download the content from the given byte position to the given last position. See http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35\n"
+  example: []
+  syntax:
+    content: public void SetRangeHeader(int firstBytePos, int lastBytePos)
+    parameters:
+    - id: firstBytePos
+      type: System.Int32
+      description: Start position of the download.
+    - id: lastBytePos
+      type: System.Int32
+      description: The end position of the download.
+    content.vb: Public Sub SetRangeHeader(firstBytePos As Integer, lastBytePos As Integer)
+  overload: BestHTTP.HTTPRequest.SetRangeHeader*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.EnumerateHeaders(BestHTTP.OnHeaderEnumerationDelegate)
+  commentId: M:BestHTTP.HTTPRequest.EnumerateHeaders(BestHTTP.OnHeaderEnumerationDelegate)
+  id: EnumerateHeaders(BestHTTP.OnHeaderEnumerationDelegate)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: EnumerateHeaders(OnHeaderEnumerationDelegate)
+  nameWithType: HTTPRequest.EnumerateHeaders(OnHeaderEnumerationDelegate)
+  fullName: BestHTTP.HTTPRequest.EnumerateHeaders(BestHTTP.OnHeaderEnumerationDelegate)
+  type: Method
+  source:
+    id: EnumerateHeaders
+    path: ''
+    startLine: 4883
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public void EnumerateHeaders(OnHeaderEnumerationDelegate callback)
+    parameters:
+    - id: callback
+      type: BestHTTP.OnHeaderEnumerationDelegate
+    content.vb: Public Sub EnumerateHeaders(callback As OnHeaderEnumerationDelegate)
+  overload: BestHTTP.HTTPRequest.EnumerateHeaders*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.EnumerateHeaders(BestHTTP.OnHeaderEnumerationDelegate,System.Boolean)
+  commentId: M:BestHTTP.HTTPRequest.EnumerateHeaders(BestHTTP.OnHeaderEnumerationDelegate,System.Boolean)
+  id: EnumerateHeaders(BestHTTP.OnHeaderEnumerationDelegate,System.Boolean)
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: EnumerateHeaders(OnHeaderEnumerationDelegate, Boolean)
+  nameWithType: HTTPRequest.EnumerateHeaders(OnHeaderEnumerationDelegate, Boolean)
+  fullName: BestHTTP.HTTPRequest.EnumerateHeaders(BestHTTP.OnHeaderEnumerationDelegate, System.Boolean)
+  type: Method
+  source:
+    id: EnumerateHeaders
+    path: ''
+    startLine: 4888
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public void EnumerateHeaders(OnHeaderEnumerationDelegate callback, bool callBeforeSendCallback)
+    parameters:
+    - id: callback
+      type: BestHTTP.OnHeaderEnumerationDelegate
+    - id: callBeforeSendCallback
+      type: System.Boolean
+    content.vb: Public Sub EnumerateHeaders(callback As OnHeaderEnumerationDelegate, callBeforeSendCallback As Boolean)
+  overload: BestHTTP.HTTPRequest.EnumerateHeaders*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.DumpHeaders
+  commentId: M:BestHTTP.HTTPRequest.DumpHeaders
+  id: DumpHeaders
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: DumpHeaders()
+  nameWithType: HTTPRequest.DumpHeaders()
+  fullName: BestHTTP.HTTPRequest.DumpHeaders()
+  type: Method
+  source:
+    id: DumpHeaders
+    path: ''
+    startLine: 5110
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nReturns a string representation of the headers.\n"
+  example: []
+  syntax:
+    content: public string DumpHeaders()
+    return:
+      type: System.String
+    content.vb: Public Function DumpHeaders As String
+  overload: BestHTTP.HTTPRequest.DumpHeaders*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.Send
+  commentId: M:BestHTTP.HTTPRequest.Send
+  id: Send
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Send()
+  nameWithType: HTTPRequest.Send()
+  fullName: BestHTTP.HTTPRequest.Send()
+  type: Method
+  source:
+    id: Send
+    path: ''
+    startLine: 5318
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nStarts processing the request.\n"
+  example: []
+  syntax:
+    content: public HTTPRequest Send()
+    return:
+      type: BestHTTP.HTTPRequest
+    content.vb: Public Function Send As HTTPRequest
+  overload: BestHTTP.HTTPRequest.Send*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.Abort
+  commentId: M:BestHTTP.HTTPRequest.Abort
+  id: Abort
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Abort()
+  nameWithType: HTTPRequest.Abort()
+  fullName: BestHTTP.HTTPRequest.Abort()
+  type: Method
+  source:
+    id: Abort
+    path: ''
+    startLine: 5326
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nAborts an already established connection, so no further download or upload are done.\n"
+  example: []
+  syntax:
+    content: public void Abort()
+    content.vb: Public Sub Abort
+  overload: BestHTTP.HTTPRequest.Abort*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.Clear
+  commentId: M:BestHTTP.HTTPRequest.Clear
+  id: Clear
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: HTTPRequest.Clear()
+  fullName: BestHTTP.HTTPRequest.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: ''
+    startLine: 5374
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nResets the request for a state where switching MethodType is possible.\n"
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: BestHTTP.HTTPRequest.Clear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.Current
+  commentId: P:BestHTTP.HTTPRequest.Current
+  id: Current
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: HTTPRequest.Current
+  fullName: BestHTTP.HTTPRequest.Current
+  type: Property
+  source:
+    id: Current
+    path: ''
+    startLine: 5385
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public object Current { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property Current As Object
+  overload: BestHTTP.HTTPRequest.Current*
+  implements:
+  - System.Collections.IEnumerator.Current
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPRequest.MoveNext
+  commentId: M:BestHTTP.HTTPRequest.MoveNext
+  id: MoveNext
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: MoveNext()
+  nameWithType: HTTPRequest.MoveNext()
+  fullName: BestHTTP.HTTPRequest.MoveNext()
+  type: Method
+  source:
+    id: MoveNext
+    path: ''
+    startLine: 5387
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public bool MoveNext()
+    return:
+      type: System.Boolean
+    content.vb: Public Function MoveNext As Boolean
+  overload: BestHTTP.HTTPRequest.MoveNext*
+  implements:
+  - System.Collections.IEnumerator.MoveNext
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.Reset
+  commentId: M:BestHTTP.HTTPRequest.Reset
+  id: Reset
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: HTTPRequest.Reset()
+  fullName: BestHTTP.HTTPRequest.Reset()
+  type: Method
+  source:
+    id: Reset
+    path: ''
+    startLine: 5392
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+  overload: BestHTTP.HTTPRequest.Reset*
+  implements:
+  - System.Collections.IEnumerator.Reset
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPRequest.System#Collections#Generic#IEnumerator{BestHTTP#HTTPRequest}#Current
+  commentId: P:BestHTTP.HTTPRequest.System#Collections#Generic#IEnumerator{BestHTTP#HTTPRequest}#Current
+  id: System#Collections#Generic#IEnumerator{BestHTTP#HTTPRequest}#Current
+  isEii: true
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: IEnumerator<HTTPRequest>.Current
+  nameWithType: HTTPRequest.IEnumerator<HTTPRequest>.Current
+  fullName: BestHTTP.HTTPRequest.System.Collections.Generic.IEnumerator<BestHTTP.HTTPRequest>.Current
+  type: Property
+  source:
+    id: System.Collections.Generic.IEnumerator<BestHTTP.HTTPRequest>.Current
+    path: ''
+    startLine: 5399
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: HTTPRequest IEnumerator<HTTPRequest>.Current { get; }
+    parameters: []
+    return:
+      type: BestHTTP.HTTPRequest
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IEnumerator<BestHTTP.HTTPRequest>.Current As HTTPRequest Implements IEnumerator(Of HTTPRequest).Current
+  overload: BestHTTP.HTTPRequest.System#Collections#Generic#IEnumerator{BestHTTP#HTTPRequest}#Current*
+  implements:
+  - System.Collections.Generic.IEnumerator{BestHTTP.HTTPRequest}.Current
+  nameWithType.vb: HTTPRequest.System.Collections.Generic.IEnumerator<BestHTTP.HTTPRequest>.Current
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.Generic.IEnumerator<BestHTTP.HTTPRequest>.Current
+- uid: BestHTTP.HTTPRequest.Dispose
+  commentId: M:BestHTTP.HTTPRequest.Dispose
+  id: Dispose
+  parent: BestHTTP.HTTPRequest
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: HTTPRequest.Dispose()
+  fullName: BestHTTP.HTTPRequest.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: ''
+    startLine: 5404
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: BestHTTP.HTTPRequest.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BestHTTP
+  commentId: N:BestHTTP
+  name: BestHTTP
+  nameWithType: BestHTTP
+  fullName: BestHTTP
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.Generic.IEnumerator{BestHTTP.HTTPRequest}
+  commentId: T:System.Collections.Generic.IEnumerator{BestHTTP.HTTPRequest}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<HTTPRequest>
+  nameWithType: IEnumerator<HTTPRequest>
+  fullName: System.Collections.Generic.IEnumerator<BestHTTP.HTTPRequest>
+  nameWithType.vb: IEnumerator(Of HTTPRequest)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of BestHTTP.HTTPRequest)
+  name.vb: IEnumerator(Of HTTPRequest)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BestHTTP.HTTPRequest
+    name: HTTPRequest
+    nameWithType: HTTPRequest
+    fullName: BestHTTP.HTTPRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BestHTTP.HTTPRequest
+    name: HTTPRequest
+    nameWithType: HTTPRequest
+    fullName: BestHTTP.HTTPRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: BestHTTP.HTTPRequest.Uri*
+  commentId: Overload:BestHTTP.HTTPRequest.Uri
+  name: Uri
+  nameWithType: HTTPRequest.Uri
+  fullName: BestHTTP.HTTPRequest.Uri
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: BestHTTP.HTTPRequest.MethodType*
+  commentId: Overload:BestHTTP.HTTPRequest.MethodType
+  name: MethodType
+  nameWithType: HTTPRequest.MethodType
+  fullName: BestHTTP.HTTPRequest.MethodType
+- uid: BestHTTP.HTTPMethods
+  commentId: T:BestHTTP.HTTPMethods
+  parent: BestHTTP
+  name: HTTPMethods
+  nameWithType: HTTPMethods
+  fullName: BestHTTP.HTTPMethods
+- uid: BestHTTP.HTTPRequest.RawData*
+  commentId: Overload:BestHTTP.HTTPRequest.RawData
+  name: RawData
+  nameWithType: HTTPRequest.RawData
+  fullName: BestHTTP.HTTPRequest.RawData
+- uid: BestHTTP.HTTPRequest.UploadStream*
+  commentId: Overload:BestHTTP.HTTPRequest.UploadStream
+  name: UploadStream
+  nameWithType: HTTPRequest.UploadStream
+  fullName: BestHTTP.HTTPRequest.UploadStream
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: BestHTTP.HTTPRequest.DisposeUploadStream*
+  commentId: Overload:BestHTTP.HTTPRequest.DisposeUploadStream
+  name: DisposeUploadStream
+  nameWithType: HTTPRequest.DisposeUploadStream
+  fullName: BestHTTP.HTTPRequest.DisposeUploadStream
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BestHTTP.HTTPRequest.UseUploadStreamLength*
+  commentId: Overload:BestHTTP.HTTPRequest.UseUploadStreamLength
+  name: UseUploadStreamLength
+  nameWithType: HTTPRequest.UseUploadStreamLength
+  fullName: BestHTTP.HTTPRequest.UseUploadStreamLength
+- uid: BestHTTP.OnUploadProgressDelegate
+  commentId: T:BestHTTP.OnUploadProgressDelegate
+  parent: BestHTTP
+  name: OnUploadProgressDelegate
+  nameWithType: OnUploadProgressDelegate
+  fullName: BestHTTP.OnUploadProgressDelegate
+- uid: BestHTTP.HTTPRequest.IsKeepAlive*
+  commentId: Overload:BestHTTP.HTTPRequest.IsKeepAlive
+  name: IsKeepAlive
+  nameWithType: HTTPRequest.IsKeepAlive
+  fullName: BestHTTP.HTTPRequest.IsKeepAlive
+- uid: BestHTTP.HTTPRequest.DisableCache*
+  commentId: Overload:BestHTTP.HTTPRequest.DisableCache
+  name: DisableCache
+  nameWithType: HTTPRequest.DisableCache
+  fullName: BestHTTP.HTTPRequest.DisableCache
+- uid: BestHTTP.HTTPRequest.CacheOnly*
+  commentId: Overload:BestHTTP.HTTPRequest.CacheOnly
+  name: CacheOnly
+  nameWithType: HTTPRequest.CacheOnly
+  fullName: BestHTTP.HTTPRequest.CacheOnly
+- uid: BestHTTP.HTTPRequest.UseStreaming*
+  commentId: Overload:BestHTTP.HTTPRequest.UseStreaming
+  name: UseStreaming
+  nameWithType: HTTPRequest.UseStreaming
+  fullName: BestHTTP.HTTPRequest.UseStreaming
+- uid: BestHTTP.HTTPRequest.StreamFragmentSize*
+  commentId: Overload:BestHTTP.HTTPRequest.StreamFragmentSize
+  name: StreamFragmentSize
+  nameWithType: HTTPRequest.StreamFragmentSize
+  fullName: BestHTTP.HTTPRequest.StreamFragmentSize
+- uid: BestHTTP.HTTPRequest.Callback*
+  commentId: Overload:BestHTTP.HTTPRequest.Callback
+  name: Callback
+  nameWithType: HTTPRequest.Callback
+  fullName: BestHTTP.HTTPRequest.Callback
+- uid: BestHTTP.OnRequestFinishedDelegate
+  commentId: T:BestHTTP.OnRequestFinishedDelegate
+  parent: BestHTTP
+  name: OnRequestFinishedDelegate
+  nameWithType: OnRequestFinishedDelegate
+  fullName: BestHTTP.OnRequestFinishedDelegate
+- uid: BestHTTP.OnDownloadProgressDelegate
+  commentId: T:BestHTTP.OnDownloadProgressDelegate
+  parent: BestHTTP
+  name: OnDownloadProgressDelegate
+  nameWithType: OnDownloadProgressDelegate
+  fullName: BestHTTP.OnDownloadProgressDelegate
+- uid: BestHTTP.HTTPRequest.DisableRetry*
+  commentId: Overload:BestHTTP.HTTPRequest.DisableRetry
+  name: DisableRetry
+  nameWithType: HTTPRequest.DisableRetry
+  fullName: BestHTTP.HTTPRequest.DisableRetry
+- uid: BestHTTP.HTTPRequest.IsRedirected*
+  commentId: Overload:BestHTTP.HTTPRequest.IsRedirected
+  name: IsRedirected
+  nameWithType: HTTPRequest.IsRedirected
+  fullName: BestHTTP.HTTPRequest.IsRedirected
+- uid: BestHTTP.HTTPRequest.RedirectUri*
+  commentId: Overload:BestHTTP.HTTPRequest.RedirectUri
+  name: RedirectUri
+  nameWithType: HTTPRequest.RedirectUri
+  fullName: BestHTTP.HTTPRequest.RedirectUri
+- uid: BestHTTP.HTTPRequest.CurrentUri*
+  commentId: Overload:BestHTTP.HTTPRequest.CurrentUri
+  name: CurrentUri
+  nameWithType: HTTPRequest.CurrentUri
+  fullName: BestHTTP.HTTPRequest.CurrentUri
+- uid: BestHTTP.HTTPRequest.Response*
+  commentId: Overload:BestHTTP.HTTPRequest.Response
+  name: Response
+  nameWithType: HTTPRequest.Response
+  fullName: BestHTTP.HTTPRequest.Response
+- uid: BestHTTP.HTTPResponse
+  commentId: T:BestHTTP.HTTPResponse
+  parent: BestHTTP
+  name: HTTPResponse
+  nameWithType: HTTPResponse
+  fullName: BestHTTP.HTTPResponse
+- uid: BestHTTP.HTTPRequest.ProxyResponse*
+  commentId: Overload:BestHTTP.HTTPRequest.ProxyResponse
+  name: ProxyResponse
+  nameWithType: HTTPRequest.ProxyResponse
+  fullName: BestHTTP.HTTPRequest.ProxyResponse
+- uid: BestHTTP.HTTPRequest.Exception*
+  commentId: Overload:BestHTTP.HTTPRequest.Exception
+  name: Exception
+  nameWithType: HTTPRequest.Exception
+  fullName: BestHTTP.HTTPRequest.Exception
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: BestHTTP.HTTPRequest.Tag*
+  commentId: Overload:BestHTTP.HTTPRequest.Tag
+  name: Tag
+  nameWithType: HTTPRequest.Tag
+  fullName: BestHTTP.HTTPRequest.Tag
+- uid: BestHTTP.HTTPRequest.Credentials*
+  commentId: Overload:BestHTTP.HTTPRequest.Credentials
+  name: Credentials
+  nameWithType: HTTPRequest.Credentials
+  fullName: BestHTTP.HTTPRequest.Credentials
+- uid: BestHTTP.Authentication.Credentials
+  commentId: T:BestHTTP.Authentication.Credentials
+  parent: BestHTTP.Authentication
+  name: Credentials
+  nameWithType: Credentials
+  fullName: BestHTTP.Authentication.Credentials
+- uid: BestHTTP.Authentication
+  commentId: N:BestHTTP.Authentication
+  name: BestHTTP.Authentication
+  nameWithType: BestHTTP.Authentication
+  fullName: BestHTTP.Authentication
+- uid: BestHTTP.HTTPRequest.HasProxy*
+  commentId: Overload:BestHTTP.HTTPRequest.HasProxy
+  name: HasProxy
+  nameWithType: HTTPRequest.HasProxy
+  fullName: BestHTTP.HTTPRequest.HasProxy
+- uid: BestHTTP.HTTPRequest.Proxy*
+  commentId: Overload:BestHTTP.HTTPRequest.Proxy
+  name: Proxy
+  nameWithType: HTTPRequest.Proxy
+  fullName: BestHTTP.HTTPRequest.Proxy
+- uid: BestHTTP.HTTPProxy
+  commentId: T:BestHTTP.HTTPProxy
+  parent: BestHTTP
+  name: HTTPProxy
+  nameWithType: HTTPProxy
+  fullName: BestHTTP.HTTPProxy
+- uid: BestHTTP.HTTPRequest.MaxRedirects*
+  commentId: Overload:BestHTTP.HTTPRequest.MaxRedirects
+  name: MaxRedirects
+  nameWithType: HTTPRequest.MaxRedirects
+  fullName: BestHTTP.HTTPRequest.MaxRedirects
+- uid: BestHTTP.HTTPRequest.UseAlternateSSL*
+  commentId: Overload:BestHTTP.HTTPRequest.UseAlternateSSL
+  name: UseAlternateSSL
+  nameWithType: HTTPRequest.UseAlternateSSL
+  fullName: BestHTTP.HTTPRequest.UseAlternateSSL
+- uid: BestHTTP.HTTPRequest.IsCookiesEnabled*
+  commentId: Overload:BestHTTP.HTTPRequest.IsCookiesEnabled
+  name: IsCookiesEnabled
+  nameWithType: HTTPRequest.IsCookiesEnabled
+  fullName: BestHTTP.HTTPRequest.IsCookiesEnabled
+- uid: BestHTTP.HTTPRequest.Cookies*
+  commentId: Overload:BestHTTP.HTTPRequest.Cookies
+  name: Cookies
+  nameWithType: HTTPRequest.Cookies
+  fullName: BestHTTP.HTTPRequest.Cookies
+- uid: System.Collections.Generic.List{BestHTTP.Cookies.Cookie}
+  commentId: T:System.Collections.Generic.List{BestHTTP.Cookies.Cookie}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Cookie>
+  nameWithType: List<Cookie>
+  fullName: System.Collections.Generic.List<BestHTTP.Cookies.Cookie>
+  nameWithType.vb: List(Of Cookie)
+  fullName.vb: System.Collections.Generic.List(Of BestHTTP.Cookies.Cookie)
+  name.vb: List(Of Cookie)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BestHTTP.Cookies.Cookie
+    name: Cookie
+    nameWithType: Cookie
+    fullName: BestHTTP.Cookies.Cookie
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BestHTTP.Cookies.Cookie
+    name: Cookie
+    nameWithType: Cookie
+    fullName: BestHTTP.Cookies.Cookie
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.HTTPRequest.FormUsage*
+  commentId: Overload:BestHTTP.HTTPRequest.FormUsage
+  name: FormUsage
+  nameWithType: HTTPRequest.FormUsage
+  fullName: BestHTTP.HTTPRequest.FormUsage
+- uid: BestHTTP.Forms.HTTPFormUsage
+  commentId: T:BestHTTP.Forms.HTTPFormUsage
+  parent: BestHTTP.Forms
+  name: HTTPFormUsage
+  nameWithType: HTTPFormUsage
+  fullName: BestHTTP.Forms.HTTPFormUsage
+- uid: BestHTTP.Forms
+  commentId: N:BestHTTP.Forms
+  name: BestHTTP.Forms
+  nameWithType: BestHTTP.Forms
+  fullName: BestHTTP.Forms
+- uid: BestHTTP.HTTPRequest.State*
+  commentId: Overload:BestHTTP.HTTPRequest.State
+  name: State
+  nameWithType: HTTPRequest.State
+  fullName: BestHTTP.HTTPRequest.State
+- uid: BestHTTP.HTTPRequestStates
+  commentId: T:BestHTTP.HTTPRequestStates
+  parent: BestHTTP
+  name: HTTPRequestStates
+  nameWithType: HTTPRequestStates
+  fullName: BestHTTP.HTTPRequestStates
+- uid: BestHTTP.HTTPRequest.RedirectCount*
+  commentId: Overload:BestHTTP.HTTPRequest.RedirectCount
+  name: RedirectCount
+  nameWithType: HTTPRequest.RedirectCount
+  fullName: BestHTTP.HTTPRequest.RedirectCount
+- uid: System.Func{BestHTTP.HTTPRequest,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Boolean}
+  commentId: T:System.Func{BestHTTP.HTTPRequest,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Boolean}
+  parent: System
+  definition: System.Func`4
+  name: Func<HTTPRequest, X509Certificate, X509Chain, Boolean>
+  nameWithType: Func<HTTPRequest, X509Certificate, X509Chain, Boolean>
+  fullName: System.Func<BestHTTP.HTTPRequest, System.Security.Cryptography.X509Certificates.X509Certificate, System.Security.Cryptography.X509Certificates.X509Chain, System.Boolean>
+  nameWithType.vb: Func(Of HTTPRequest, X509Certificate, X509Chain, Boolean)
+  fullName.vb: System.Func(Of BestHTTP.HTTPRequest, System.Security.Cryptography.X509Certificates.X509Certificate, System.Security.Cryptography.X509Certificates.X509Chain, System.Boolean)
+  name.vb: Func(Of HTTPRequest, X509Certificate, X509Chain, Boolean)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BestHTTP.HTTPRequest
+    name: HTTPRequest
+    nameWithType: HTTPRequest
+    fullName: BestHTTP.HTTPRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Cryptography.X509Certificates.X509Certificate
+    name: X509Certificate
+    nameWithType: X509Certificate
+    fullName: System.Security.Cryptography.X509Certificates.X509Certificate
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Cryptography.X509Certificates.X509Chain
+    name: X509Chain
+    nameWithType: X509Chain
+    fullName: System.Security.Cryptography.X509Certificates.X509Chain
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BestHTTP.HTTPRequest
+    name: HTTPRequest
+    nameWithType: HTTPRequest
+    fullName: BestHTTP.HTTPRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Cryptography.X509Certificates.X509Certificate
+    name: X509Certificate
+    nameWithType: X509Certificate
+    fullName: System.Security.Cryptography.X509Certificates.X509Certificate
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Cryptography.X509Certificates.X509Chain
+    name: X509Chain
+    nameWithType: X509Chain
+    fullName: System.Security.Cryptography.X509Certificates.X509Chain
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`4
+  commentId: T:System.Func`4
+  isExternal: true
+  name: Func<T1, T2, T3, TResult>
+  nameWithType: Func<T1, T2, T3, TResult>
+  fullName: System.Func<T1, T2, T3, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, TResult)
+  name.vb: Func(Of T1, T2, T3, TResult)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.HTTPRequest.ConnectTimeout*
+  commentId: Overload:BestHTTP.HTTPRequest.ConnectTimeout
+  name: ConnectTimeout
+  nameWithType: HTTPRequest.ConnectTimeout
+  fullName: BestHTTP.HTTPRequest.ConnectTimeout
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: BestHTTP.HTTPRequest.EnableTimoutForStreaming
+  commentId: P:BestHTTP.HTTPRequest.EnableTimoutForStreaming
+  isExternal: true
+- uid: BestHTTP.HTTPRequest.Timeout*
+  commentId: Overload:BestHTTP.HTTPRequest.Timeout
+  name: Timeout
+  nameWithType: HTTPRequest.Timeout
+  fullName: BestHTTP.HTTPRequest.Timeout
+- uid: BestHTTP.HTTPRequest.EnableTimoutForStreaming*
+  commentId: Overload:BestHTTP.HTTPRequest.EnableTimoutForStreaming
+  name: EnableTimoutForStreaming
+  nameWithType: HTTPRequest.EnableTimoutForStreaming
+  fullName: BestHTTP.HTTPRequest.EnableTimoutForStreaming
+- uid: BestHTTP.HTTPRequest.EnableSafeReadOnUnknownContentLength*
+  commentId: Overload:BestHTTP.HTTPRequest.EnableSafeReadOnUnknownContentLength
+  name: EnableSafeReadOnUnknownContentLength
+  nameWithType: HTTPRequest.EnableSafeReadOnUnknownContentLength
+  fullName: BestHTTP.HTTPRequest.EnableSafeReadOnUnknownContentLength
+- uid: BestHTTP.HTTPRequest.Priority*
+  commentId: Overload:BestHTTP.HTTPRequest.Priority
+  name: Priority
+  nameWithType: HTTPRequest.Priority
+  fullName: BestHTTP.HTTPRequest.Priority
+- uid: BestHTTP.HTTPRequest.CustomCertificateVerifyer*
+  commentId: Overload:BestHTTP.HTTPRequest.CustomCertificateVerifyer
+  name: CustomCertificateVerifyer
+  nameWithType: HTTPRequest.CustomCertificateVerifyer
+  fullName: BestHTTP.HTTPRequest.CustomCertificateVerifyer
+- uid: Org.BouncyCastle.Crypto.Tls.ICertificateVerifyer
+  commentId: T:Org.BouncyCastle.Crypto.Tls.ICertificateVerifyer
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: ICertificateVerifyer
+  nameWithType: ICertificateVerifyer
+  fullName: Org.BouncyCastle.Crypto.Tls.ICertificateVerifyer
+- uid: Org.BouncyCastle.Crypto.Tls
+  commentId: N:Org.BouncyCastle.Crypto.Tls
+  name: Org.BouncyCastle.Crypto.Tls
+  nameWithType: Org.BouncyCastle.Crypto.Tls
+  fullName: Org.BouncyCastle.Crypto.Tls
+- uid: BestHTTP.HTTPRequest.CustomClientCredentialsProvider*
+  commentId: Overload:BestHTTP.HTTPRequest.CustomClientCredentialsProvider
+  name: CustomClientCredentialsProvider
+  nameWithType: HTTPRequest.CustomClientCredentialsProvider
+  fullName: BestHTTP.HTTPRequest.CustomClientCredentialsProvider
+- uid: Org.BouncyCastle.Crypto.Tls.IClientCredentialsProvider
+  commentId: T:Org.BouncyCastle.Crypto.Tls.IClientCredentialsProvider
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: IClientCredentialsProvider
+  nameWithType: IClientCredentialsProvider
+  fullName: Org.BouncyCastle.Crypto.Tls.IClientCredentialsProvider
+- uid: BestHTTP.HTTPRequest.ProtocolHandler*
+  commentId: Overload:BestHTTP.HTTPRequest.ProtocolHandler
+  name: ProtocolHandler
+  nameWithType: HTTPRequest.ProtocolHandler
+  fullName: BestHTTP.HTTPRequest.ProtocolHandler
+- uid: BestHTTP.SupportedProtocols
+  commentId: T:BestHTTP.SupportedProtocols
+  parent: BestHTTP
+  name: SupportedProtocols
+  nameWithType: SupportedProtocols
+  fullName: BestHTTP.SupportedProtocols
+- uid: BestHTTP.OnBeforeRedirectionDelegate
+  commentId: T:BestHTTP.OnBeforeRedirectionDelegate
+  parent: BestHTTP
+  name: OnBeforeRedirectionDelegate
+  nameWithType: OnBeforeRedirectionDelegate
+  fullName: BestHTTP.OnBeforeRedirectionDelegate
+- uid: BestHTTP.OnBeforeHeaderSendDelegate
+  commentId: T:BestHTTP.OnBeforeHeaderSendDelegate
+  parent: BestHTTP
+  name: OnBeforeHeaderSendDelegate
+  nameWithType: OnBeforeHeaderSendDelegate
+  fullName: BestHTTP.OnBeforeHeaderSendDelegate
+- uid: BestHTTP.HTTPRequest.#ctor*
+  commentId: Overload:BestHTTP.HTTPRequest.#ctor
+  name: HTTPRequest
+  nameWithType: HTTPRequest.HTTPRequest
+  fullName: BestHTTP.HTTPRequest.HTTPRequest
+- uid: BestHTTP.HTTPRequest.AddField*
+  commentId: Overload:BestHTTP.HTTPRequest.AddField
+  name: AddField
+  nameWithType: HTTPRequest.AddField
+  fullName: BestHTTP.HTTPRequest.AddField
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: BestHTTP.HTTPRequest.AddBinaryData*
+  commentId: Overload:BestHTTP.HTTPRequest.AddBinaryData
+  name: AddBinaryData
+  nameWithType: HTTPRequest.AddBinaryData
+  fullName: BestHTTP.HTTPRequest.AddBinaryData
+- uid: BestHTTP.HTTPRequest.SetFields*
+  commentId: Overload:BestHTTP.HTTPRequest.SetFields
+  name: SetFields
+  nameWithType: HTTPRequest.SetFields
+  fullName: BestHTTP.HTTPRequest.SetFields
+- uid: UnityEngine.WWWForm
+  commentId: '!:UnityEngine.WWWForm'
+  isExternal: true
+  name: UnityEngine.WWWForm
+  nameWithType: UnityEngine.WWWForm
+  fullName: UnityEngine.WWWForm
+- uid: BestHTTP.HTTPRequest.SetForm*
+  commentId: Overload:BestHTTP.HTTPRequest.SetForm
+  name: SetForm
+  nameWithType: HTTPRequest.SetForm
+  fullName: BestHTTP.HTTPRequest.SetForm
+- uid: BestHTTP.Forms.HTTPFormBase
+  commentId: T:BestHTTP.Forms.HTTPFormBase
+  parent: BestHTTP.Forms
+  name: HTTPFormBase
+  nameWithType: HTTPFormBase
+  fullName: BestHTTP.Forms.HTTPFormBase
+- uid: BestHTTP.HTTPRequest.ClearForm*
+  commentId: Overload:BestHTTP.HTTPRequest.ClearForm
+  name: ClearForm
+  nameWithType: HTTPRequest.ClearForm
+  fullName: BestHTTP.HTTPRequest.ClearForm
+- uid: BestHTTP.HTTPRequest.AddHeader*
+  commentId: Overload:BestHTTP.HTTPRequest.AddHeader
+  name: AddHeader
+  nameWithType: HTTPRequest.AddHeader
+  fullName: BestHTTP.HTTPRequest.AddHeader
+- uid: BestHTTP.HTTPRequest.SetHeader*
+  commentId: Overload:BestHTTP.HTTPRequest.SetHeader
+  name: SetHeader
+  nameWithType: HTTPRequest.SetHeader
+  fullName: BestHTTP.HTTPRequest.SetHeader
+- uid: BestHTTP.HTTPRequest.RemoveHeader*
+  commentId: Overload:BestHTTP.HTTPRequest.RemoveHeader
+  name: RemoveHeader
+  nameWithType: HTTPRequest.RemoveHeader
+  fullName: BestHTTP.HTTPRequest.RemoveHeader
+- uid: BestHTTP.HTTPRequest.HasHeader*
+  commentId: Overload:BestHTTP.HTTPRequest.HasHeader
+  name: HasHeader
+  nameWithType: HTTPRequest.HasHeader
+  fullName: BestHTTP.HTTPRequest.HasHeader
+- uid: BestHTTP.HTTPRequest.GetFirstHeaderValue*
+  commentId: Overload:BestHTTP.HTTPRequest.GetFirstHeaderValue
+  name: GetFirstHeaderValue
+  nameWithType: HTTPRequest.GetFirstHeaderValue
+  fullName: BestHTTP.HTTPRequest.GetFirstHeaderValue
+- uid: BestHTTP.HTTPRequest.GetHeaderValues*
+  commentId: Overload:BestHTTP.HTTPRequest.GetHeaderValues
+  name: GetHeaderValues
+  nameWithType: HTTPRequest.GetHeaderValues
+  fullName: BestHTTP.HTTPRequest.GetHeaderValues
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.HTTPRequest.RemoveHeaders*
+  commentId: Overload:BestHTTP.HTTPRequest.RemoveHeaders
+  name: RemoveHeaders
+  nameWithType: HTTPRequest.RemoveHeaders
+  fullName: BestHTTP.HTTPRequest.RemoveHeaders
+- uid: BestHTTP.HTTPRequest.SetRangeHeader*
+  commentId: Overload:BestHTTP.HTTPRequest.SetRangeHeader
+  name: SetRangeHeader
+  nameWithType: HTTPRequest.SetRangeHeader
+  fullName: BestHTTP.HTTPRequest.SetRangeHeader
+- uid: BestHTTP.HTTPRequest.EnumerateHeaders*
+  commentId: Overload:BestHTTP.HTTPRequest.EnumerateHeaders
+  name: EnumerateHeaders
+  nameWithType: HTTPRequest.EnumerateHeaders
+  fullName: BestHTTP.HTTPRequest.EnumerateHeaders
+- uid: BestHTTP.OnHeaderEnumerationDelegate
+  commentId: T:BestHTTP.OnHeaderEnumerationDelegate
+  parent: BestHTTP
+  name: OnHeaderEnumerationDelegate
+  nameWithType: OnHeaderEnumerationDelegate
+  fullName: BestHTTP.OnHeaderEnumerationDelegate
+- uid: BestHTTP.HTTPRequest.DumpHeaders*
+  commentId: Overload:BestHTTP.HTTPRequest.DumpHeaders
+  name: DumpHeaders
+  nameWithType: HTTPRequest.DumpHeaders
+  fullName: BestHTTP.HTTPRequest.DumpHeaders
+- uid: BestHTTP.HTTPRequest.Send*
+  commentId: Overload:BestHTTP.HTTPRequest.Send
+  name: Send
+  nameWithType: HTTPRequest.Send
+  fullName: BestHTTP.HTTPRequest.Send
+- uid: BestHTTP.HTTPRequest
+  commentId: T:BestHTTP.HTTPRequest
+  parent: BestHTTP
+  name: HTTPRequest
+  nameWithType: HTTPRequest
+  fullName: BestHTTP.HTTPRequest
+- uid: BestHTTP.HTTPRequest.Abort*
+  commentId: Overload:BestHTTP.HTTPRequest.Abort
+  name: Abort
+  nameWithType: HTTPRequest.Abort
+  fullName: BestHTTP.HTTPRequest.Abort
+- uid: BestHTTP.HTTPRequest.Clear*
+  commentId: Overload:BestHTTP.HTTPRequest.Clear
+  name: Clear
+  nameWithType: HTTPRequest.Clear
+  fullName: BestHTTP.HTTPRequest.Clear
+- uid: BestHTTP.HTTPRequest.Current*
+  commentId: Overload:BestHTTP.HTTPRequest.Current
+  name: Current
+  nameWithType: HTTPRequest.Current
+  fullName: BestHTTP.HTTPRequest.Current
+- uid: System.Collections.IEnumerator.Current
+  commentId: P:System.Collections.IEnumerator.Current
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  name: Current
+  nameWithType: IEnumerator.Current
+  fullName: System.Collections.IEnumerator.Current
+- uid: BestHTTP.HTTPRequest.MoveNext*
+  commentId: Overload:BestHTTP.HTTPRequest.MoveNext
+  name: MoveNext
+  nameWithType: HTTPRequest.MoveNext
+  fullName: BestHTTP.HTTPRequest.MoveNext
+- uid: System.Collections.IEnumerator.MoveNext
+  commentId: M:System.Collections.IEnumerator.MoveNext
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  name: MoveNext()
+  nameWithType: IEnumerator.MoveNext()
+  fullName: System.Collections.IEnumerator.MoveNext()
+  spec.csharp:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: MoveNext
+    nameWithType: IEnumerator.MoveNext
+    fullName: System.Collections.IEnumerator.MoveNext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: MoveNext
+    nameWithType: IEnumerator.MoveNext
+    fullName: System.Collections.IEnumerator.MoveNext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.HTTPRequest.Reset*
+  commentId: Overload:BestHTTP.HTTPRequest.Reset
+  name: Reset
+  nameWithType: HTTPRequest.Reset
+  fullName: BestHTTP.HTTPRequest.Reset
+- uid: System.Collections.IEnumerator.Reset
+  commentId: M:System.Collections.IEnumerator.Reset
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  name: Reset()
+  nameWithType: IEnumerator.Reset()
+  fullName: System.Collections.IEnumerator.Reset()
+  spec.csharp:
+  - uid: System.Collections.IEnumerator.Reset
+    name: Reset
+    nameWithType: IEnumerator.Reset
+    fullName: System.Collections.IEnumerator.Reset
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerator.Reset
+    name: Reset
+    nameWithType: IEnumerator.Reset
+    fullName: System.Collections.IEnumerator.Reset
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.HTTPRequest.System#Collections#Generic#IEnumerator{BestHTTP#HTTPRequest}#Current*
+  commentId: Overload:BestHTTP.HTTPRequest.System#Collections#Generic#IEnumerator{BestHTTP#HTTPRequest}#Current
+  name: IEnumerator<HTTPRequest>.Current
+  nameWithType: HTTPRequest.IEnumerator<HTTPRequest>.Current
+  fullName: BestHTTP.HTTPRequest.System.Collections.Generic.IEnumerator<BestHTTP.HTTPRequest>.Current
+  nameWithType.vb: HTTPRequest.System.Collections.Generic.IEnumerator<BestHTTP.HTTPRequest>.Current
+  name.vb: System.Collections.Generic.IEnumerator<BestHTTP.HTTPRequest>.Current
+- uid: System.Collections.Generic.IEnumerator{BestHTTP.HTTPRequest}.Current
+  commentId: P:System.Collections.Generic.IEnumerator{BestHTTP.HTTPRequest}.Current
+  parent: System.Collections.Generic.IEnumerator{BestHTTP.HTTPRequest}
+  definition: System.Collections.Generic.IEnumerator`1.Current
+  name: Current
+  nameWithType: IEnumerator<HTTPRequest>.Current
+  fullName: System.Collections.Generic.IEnumerator<BestHTTP.HTTPRequest>.Current
+  nameWithType.vb: IEnumerator(Of HTTPRequest).Current
+  fullName.vb: System.Collections.Generic.IEnumerator(Of BestHTTP.HTTPRequest).Current
+- uid: System.Collections.Generic.IEnumerator`1.Current
+  commentId: P:System.Collections.Generic.IEnumerator`1.Current
+  isExternal: true
+  name: Current
+  nameWithType: IEnumerator<T>.Current
+  fullName: System.Collections.Generic.IEnumerator<T>.Current
+  nameWithType.vb: IEnumerator(Of T).Current
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T).Current
+- uid: BestHTTP.HTTPRequest.Dispose*
+  commentId: Overload:BestHTTP.HTTPRequest.Dispose
+  name: Dispose
+  nameWithType: HTTPRequest.Dispose
+  fullName: BestHTTP.HTTPRequest.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

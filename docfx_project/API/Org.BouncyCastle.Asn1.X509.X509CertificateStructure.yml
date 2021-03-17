@@ -1,0 +1,1152 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  commentId: T:Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  id: X509CertificateStructure
+  parent: Org.BouncyCastle.Asn1.X509
+  children:
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.#ctor(Org.BouncyCastle.Asn1.X509.TbsCertificateStructure,Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier,Org.BouncyCastle.Asn1.DerBitString)
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.EndDate
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance(System.Object)
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetSignatureOctets
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Issuer
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SerialNumber
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Signature
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SignatureAlgorithm
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.StartDate
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Subject
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SubjectPublicKeyInfo
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.TbsCertificate
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.ToAsn1Object
+  - Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Version
+  langs:
+  - csharp
+  - vb
+  name: X509CertificateStructure
+  nameWithType: X509CertificateStructure
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  type: Class
+  source:
+    id: X509CertificateStructure
+    path: ''
+    startLine: 71209
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  example: []
+  syntax:
+    content: 'public class X509CertificateStructure : Asn1Encodable, IAsn1Convertible'
+    content.vb: >-
+      Public Class X509CertificateStructure
+          Inherits Asn1Encodable
+          Implements IAsn1Convertible
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Asn1.Asn1Encodable
+  implements:
+  - Org.BouncyCastle.Asn1.IAsn1Convertible
+  inheritedMembers:
+  - Org.BouncyCastle.Asn1.Asn1Encodable.Der
+  - Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  - Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  commentId: M:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  id: GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: GetInstance(Asn1TaggedObject, Boolean)
+  nameWithType: X509CertificateStructure.GetInstance(Asn1TaggedObject, Boolean)
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject, System.Boolean)
+  type: Method
+  source:
+    id: GetInstance
+    path: ''
+    startLine: 71216
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public static X509CertificateStructure GetInstance(Asn1TaggedObject obj, bool explicitly)
+    parameters:
+    - id: obj
+      type: Org.BouncyCastle.Asn1.Asn1TaggedObject
+    - id: explicitly
+      type: System.Boolean
+    return:
+      type: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+    content.vb: Public Shared Function GetInstance(obj As Asn1TaggedObject, explicitly As Boolean) As X509CertificateStructure
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance(System.Object)
+  commentId: M:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance(System.Object)
+  id: GetInstance(System.Object)
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: GetInstance(Object)
+  nameWithType: X509CertificateStructure.GetInstance(Object)
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance(System.Object)
+  type: Method
+  source:
+    id: GetInstance
+    path: ''
+    startLine: 71223
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public static X509CertificateStructure GetInstance(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+    content.vb: Public Shared Function GetInstance(obj As Object) As X509CertificateStructure
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.#ctor(Org.BouncyCastle.Asn1.X509.TbsCertificateStructure,Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier,Org.BouncyCastle.Asn1.DerBitString)
+  commentId: M:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.#ctor(Org.BouncyCastle.Asn1.X509.TbsCertificateStructure,Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier,Org.BouncyCastle.Asn1.DerBitString)
+  id: '#ctor(Org.BouncyCastle.Asn1.X509.TbsCertificateStructure,Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier,Org.BouncyCastle.Asn1.DerBitString)'
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: X509CertificateStructure(TbsCertificateStructure, AlgorithmIdentifier, DerBitString)
+  nameWithType: X509CertificateStructure.X509CertificateStructure(TbsCertificateStructure, AlgorithmIdentifier, DerBitString)
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.X509CertificateStructure(Org.BouncyCastle.Asn1.X509.TbsCertificateStructure, Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier, Org.BouncyCastle.Asn1.DerBitString)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 71233
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public X509CertificateStructure(TbsCertificateStructure tbsCert, AlgorithmIdentifier sigAlgID, DerBitString sig)
+    parameters:
+    - id: tbsCert
+      type: Org.BouncyCastle.Asn1.X509.TbsCertificateStructure
+    - id: sigAlgID
+      type: Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier
+    - id: sig
+      type: Org.BouncyCastle.Asn1.DerBitString
+    content.vb: Public Sub New(tbsCert As TbsCertificateStructure, sigAlgID As AlgorithmIdentifier, sig As DerBitString)
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.TbsCertificate
+  commentId: P:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.TbsCertificate
+  id: TbsCertificate
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: TbsCertificate
+  nameWithType: X509CertificateStructure.TbsCertificate
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.TbsCertificate
+  type: Property
+  source:
+    id: TbsCertificate
+    path: ''
+    startLine: 71264
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public TbsCertificateStructure TbsCertificate { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Asn1.X509.TbsCertificateStructure
+    content.vb: Public ReadOnly Property TbsCertificate As TbsCertificateStructure
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.TbsCertificate*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Version
+  commentId: P:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Version
+  id: Version
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: X509CertificateStructure.Version
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Version
+  type: Property
+  source:
+    id: Version
+    path: ''
+    startLine: 71269
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public int Version { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Version As Integer
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Version*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SerialNumber
+  commentId: P:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SerialNumber
+  id: SerialNumber
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: SerialNumber
+  nameWithType: X509CertificateStructure.SerialNumber
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SerialNumber
+  type: Property
+  source:
+    id: SerialNumber
+    path: ''
+    startLine: 71274
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public DerInteger SerialNumber { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Asn1.DerInteger
+    content.vb: Public ReadOnly Property SerialNumber As DerInteger
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SerialNumber*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Issuer
+  commentId: P:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Issuer
+  id: Issuer
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: Issuer
+  nameWithType: X509CertificateStructure.Issuer
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Issuer
+  type: Property
+  source:
+    id: Issuer
+    path: ''
+    startLine: 71279
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public X509Name Issuer { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Asn1.X509.X509Name
+    content.vb: Public ReadOnly Property Issuer As X509Name
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Issuer*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.StartDate
+  commentId: P:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.StartDate
+  id: StartDate
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: StartDate
+  nameWithType: X509CertificateStructure.StartDate
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.StartDate
+  type: Property
+  source:
+    id: StartDate
+    path: ''
+    startLine: 71284
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public Time StartDate { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Asn1.X509.Time
+    content.vb: Public ReadOnly Property StartDate As Time
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.StartDate*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.EndDate
+  commentId: P:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.EndDate
+  id: EndDate
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: EndDate
+  nameWithType: X509CertificateStructure.EndDate
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.EndDate
+  type: Property
+  source:
+    id: EndDate
+    path: ''
+    startLine: 71289
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public Time EndDate { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Asn1.X509.Time
+    content.vb: Public ReadOnly Property EndDate As Time
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.EndDate*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Subject
+  commentId: P:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Subject
+  id: Subject
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: Subject
+  nameWithType: X509CertificateStructure.Subject
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Subject
+  type: Property
+  source:
+    id: Subject
+    path: ''
+    startLine: 71294
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public X509Name Subject { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Asn1.X509.X509Name
+    content.vb: Public ReadOnly Property Subject As X509Name
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Subject*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SubjectPublicKeyInfo
+  commentId: P:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SubjectPublicKeyInfo
+  id: SubjectPublicKeyInfo
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: SubjectPublicKeyInfo
+  nameWithType: X509CertificateStructure.SubjectPublicKeyInfo
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SubjectPublicKeyInfo
+  type: Property
+  source:
+    id: SubjectPublicKeyInfo
+    path: ''
+    startLine: 71299
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public SubjectPublicKeyInfo SubjectPublicKeyInfo { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo
+    content.vb: Public ReadOnly Property SubjectPublicKeyInfo As SubjectPublicKeyInfo
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SubjectPublicKeyInfo*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SignatureAlgorithm
+  commentId: P:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SignatureAlgorithm
+  id: SignatureAlgorithm
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: SignatureAlgorithm
+  nameWithType: X509CertificateStructure.SignatureAlgorithm
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SignatureAlgorithm
+  type: Property
+  source:
+    id: SignatureAlgorithm
+    path: ''
+    startLine: 71304
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public AlgorithmIdentifier SignatureAlgorithm { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier
+    content.vb: Public ReadOnly Property SignatureAlgorithm As AlgorithmIdentifier
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SignatureAlgorithm*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Signature
+  commentId: P:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Signature
+  id: Signature
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: Signature
+  nameWithType: X509CertificateStructure.Signature
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Signature
+  type: Property
+  source:
+    id: Signature
+    path: ''
+    startLine: 71309
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public DerBitString Signature { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Asn1.DerBitString
+    content.vb: Public ReadOnly Property Signature As DerBitString
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Signature*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetSignatureOctets
+  commentId: M:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetSignatureOctets
+  id: GetSignatureOctets
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: GetSignatureOctets()
+  nameWithType: X509CertificateStructure.GetSignatureOctets()
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetSignatureOctets()
+  type: Method
+  source:
+    id: GetSignatureOctets
+    path: ''
+    startLine: 71314
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public byte[] GetSignatureOctets()
+    return:
+      type: System.Byte[]
+    content.vb: Public Function GetSignatureOctets As Byte()
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetSignatureOctets*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.ToAsn1Object
+  commentId: M:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.ToAsn1Object
+  id: ToAsn1Object
+  parent: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  langs:
+  - csharp
+  - vb
+  name: ToAsn1Object()
+  nameWithType: X509CertificateStructure.ToAsn1Object()
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.ToAsn1Object()
+  type: Method
+  source:
+    id: ToAsn1Object
+    path: ''
+    startLine: 71319
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public override Asn1Object ToAsn1Object()
+    return:
+      type: Org.BouncyCastle.Asn1.Asn1Object
+    content.vb: Public Overrides Function ToAsn1Object As Asn1Object
+  overridden: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+  overload: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.ToAsn1Object*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Org.BouncyCastle.Asn1.X509
+  commentId: N:Org.BouncyCastle.Asn1.X509
+  name: Org.BouncyCastle.Asn1.X509
+  nameWithType: Org.BouncyCastle.Asn1.X509
+  fullName: Org.BouncyCastle.Asn1.X509
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Encodable
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1Encodable
+  nameWithType: Asn1Encodable
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable
+- uid: Org.BouncyCastle.Asn1.IAsn1Convertible
+  commentId: T:Org.BouncyCastle.Asn1.IAsn1Convertible
+  parent: Org.BouncyCastle.Asn1
+  name: IAsn1Convertible
+  nameWithType: IAsn1Convertible
+  fullName: Org.BouncyCastle.Asn1.IAsn1Convertible
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.Der
+  commentId: F:Org.BouncyCastle.Asn1.Asn1Encodable.Der
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: Der
+  nameWithType: Asn1Encodable.Der
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Der
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+  commentId: F:Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: Ber
+  nameWithType: Asn1Encodable.Ber
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: GetEncoded()
+  nameWithType: Asn1Encodable.GetEncoded()
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  isExternal: true
+  name: GetEncoded(String)
+  nameWithType: Asn1Encodable.GetEncoded(String)
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: GetDerEncoded()
+  nameWithType: Asn1Encodable.GetDerEncoded()
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+    name: GetDerEncoded
+    nameWithType: Asn1Encodable.GetDerEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+    name: GetDerEncoded
+    nameWithType: Asn1Encodable.GetDerEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: GetHashCode()
+  nameWithType: Asn1Encodable.GetHashCode()
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+    name: GetHashCode
+    nameWithType: Asn1Encodable.GetHashCode
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+    name: GetHashCode
+    nameWithType: Asn1Encodable.GetHashCode
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Asn1Encodable.Equals(Object)
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+    name: Equals
+    nameWithType: Asn1Encodable.Equals
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+    name: Equals
+    nameWithType: Asn1Encodable.Equals
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Asn1
+  commentId: N:Org.BouncyCastle.Asn1
+  name: Org.BouncyCastle.Asn1
+  nameWithType: Org.BouncyCastle.Asn1
+  fullName: Org.BouncyCastle.Asn1
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance
+  name: GetInstance
+  nameWithType: X509CertificateStructure.GetInstance
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetInstance
+- uid: Org.BouncyCastle.Asn1.Asn1TaggedObject
+  commentId: T:Org.BouncyCastle.Asn1.Asn1TaggedObject
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1TaggedObject
+  nameWithType: Asn1TaggedObject
+  fullName: Org.BouncyCastle.Asn1.Asn1TaggedObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  commentId: T:Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+  parent: Org.BouncyCastle.Asn1.X509
+  name: X509CertificateStructure
+  nameWithType: X509CertificateStructure
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.#ctor*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.#ctor
+  name: X509CertificateStructure
+  nameWithType: X509CertificateStructure.X509CertificateStructure
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.X509CertificateStructure
+- uid: Org.BouncyCastle.Asn1.X509.TbsCertificateStructure
+  commentId: T:Org.BouncyCastle.Asn1.X509.TbsCertificateStructure
+  parent: Org.BouncyCastle.Asn1.X509
+  name: TbsCertificateStructure
+  nameWithType: TbsCertificateStructure
+  fullName: Org.BouncyCastle.Asn1.X509.TbsCertificateStructure
+- uid: Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier
+  commentId: T:Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier
+  parent: Org.BouncyCastle.Asn1.X509
+  name: AlgorithmIdentifier
+  nameWithType: AlgorithmIdentifier
+  fullName: Org.BouncyCastle.Asn1.X509.AlgorithmIdentifier
+- uid: Org.BouncyCastle.Asn1.DerBitString
+  commentId: T:Org.BouncyCastle.Asn1.DerBitString
+  parent: Org.BouncyCastle.Asn1
+  name: DerBitString
+  nameWithType: DerBitString
+  fullName: Org.BouncyCastle.Asn1.DerBitString
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.TbsCertificate*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.TbsCertificate
+  name: TbsCertificate
+  nameWithType: X509CertificateStructure.TbsCertificate
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.TbsCertificate
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Version*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Version
+  name: Version
+  nameWithType: X509CertificateStructure.Version
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Version
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SerialNumber*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SerialNumber
+  name: SerialNumber
+  nameWithType: X509CertificateStructure.SerialNumber
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SerialNumber
+- uid: Org.BouncyCastle.Asn1.DerInteger
+  commentId: T:Org.BouncyCastle.Asn1.DerInteger
+  parent: Org.BouncyCastle.Asn1
+  name: DerInteger
+  nameWithType: DerInteger
+  fullName: Org.BouncyCastle.Asn1.DerInteger
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Issuer*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Issuer
+  name: Issuer
+  nameWithType: X509CertificateStructure.Issuer
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Issuer
+- uid: Org.BouncyCastle.Asn1.X509.X509Name
+  commentId: T:Org.BouncyCastle.Asn1.X509.X509Name
+  parent: Org.BouncyCastle.Asn1.X509
+  name: X509Name
+  nameWithType: X509Name
+  fullName: Org.BouncyCastle.Asn1.X509.X509Name
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.StartDate*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.StartDate
+  name: StartDate
+  nameWithType: X509CertificateStructure.StartDate
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.StartDate
+- uid: Org.BouncyCastle.Asn1.X509.Time
+  commentId: T:Org.BouncyCastle.Asn1.X509.Time
+  parent: Org.BouncyCastle.Asn1.X509
+  name: Time
+  nameWithType: Time
+  fullName: Org.BouncyCastle.Asn1.X509.Time
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.EndDate*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.EndDate
+  name: EndDate
+  nameWithType: X509CertificateStructure.EndDate
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.EndDate
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Subject*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Subject
+  name: Subject
+  nameWithType: X509CertificateStructure.Subject
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Subject
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SubjectPublicKeyInfo*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SubjectPublicKeyInfo
+  name: SubjectPublicKeyInfo
+  nameWithType: X509CertificateStructure.SubjectPublicKeyInfo
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SubjectPublicKeyInfo
+- uid: Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo
+  commentId: T:Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo
+  parent: Org.BouncyCastle.Asn1.X509
+  name: SubjectPublicKeyInfo
+  nameWithType: SubjectPublicKeyInfo
+  fullName: Org.BouncyCastle.Asn1.X509.SubjectPublicKeyInfo
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SignatureAlgorithm*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SignatureAlgorithm
+  name: SignatureAlgorithm
+  nameWithType: X509CertificateStructure.SignatureAlgorithm
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.SignatureAlgorithm
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Signature*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Signature
+  name: Signature
+  nameWithType: X509CertificateStructure.Signature
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.Signature
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetSignatureOctets*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetSignatureOctets
+  name: GetSignatureOctets
+  nameWithType: X509CertificateStructure.GetSignatureOctets
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.GetSignatureOctets
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: ToAsn1Object()
+  nameWithType: Asn1Encodable.ToAsn1Object()
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+    name: ToAsn1Object
+    nameWithType: Asn1Encodable.ToAsn1Object
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+    name: ToAsn1Object
+    nameWithType: Asn1Encodable.ToAsn1Object
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.ToAsn1Object*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.X509CertificateStructure.ToAsn1Object
+  name: ToAsn1Object
+  nameWithType: X509CertificateStructure.ToAsn1Object
+  fullName: Org.BouncyCastle.Asn1.X509.X509CertificateStructure.ToAsn1Object
+- uid: Org.BouncyCastle.Asn1.Asn1Object
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Object
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1Object
+  nameWithType: Asn1Object
+  fullName: Org.BouncyCastle.Asn1.Asn1Object

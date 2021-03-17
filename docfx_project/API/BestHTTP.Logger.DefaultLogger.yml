@@ -1,0 +1,1160 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.Logger.DefaultLogger
+  commentId: T:BestHTTP.Logger.DefaultLogger
+  id: DefaultLogger
+  parent: BestHTTP.Logger
+  children:
+  - BestHTTP.Logger.DefaultLogger.#ctor
+  - BestHTTP.Logger.DefaultLogger.Error(System.String,System.String)
+  - BestHTTP.Logger.DefaultLogger.Exception(System.String,System.String,System.Exception)
+  - BestHTTP.Logger.DefaultLogger.FormatErr
+  - BestHTTP.Logger.DefaultLogger.FormatEx
+  - BestHTTP.Logger.DefaultLogger.FormatInfo
+  - BestHTTP.Logger.DefaultLogger.FormatVerbose
+  - BestHTTP.Logger.DefaultLogger.FormatWarn
+  - BestHTTP.Logger.DefaultLogger.Information(System.String,System.String)
+  - BestHTTP.Logger.DefaultLogger.Level
+  - BestHTTP.Logger.DefaultLogger.Verbose(System.String,System.String)
+  - BestHTTP.Logger.DefaultLogger.Warning(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: DefaultLogger
+  nameWithType: DefaultLogger
+  fullName: BestHTTP.Logger.DefaultLogger
+  type: Class
+  source:
+    id: DefaultLogger
+    path: ''
+    startLine: 154259
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  summary: "\nA basic logger implementation to be able to log intelligently additional informations about the plugin&apos;s internal mechanism.\n"
+  example: []
+  syntax:
+    content: 'public class DefaultLogger : ILogger'
+    content.vb: >-
+      Public Class DefaultLogger
+          Implements ILogger
+  inheritance:
+  - System.Object
+  implements:
+  - BestHTTP.Logger.ILogger
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BestHTTP.Logger.DefaultLogger.Level
+  commentId: P:BestHTTP.Logger.DefaultLogger.Level
+  id: Level
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: DefaultLogger.Level
+  fullName: BestHTTP.Logger.DefaultLogger.Level
+  type: Property
+  source:
+    id: Level
+    path: ''
+    startLine: 154261
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public Loglevels Level { get; set; }
+    parameters: []
+    return:
+      type: BestHTTP.Logger.Loglevels
+    content.vb: Public Property Level As Loglevels
+  overload: BestHTTP.Logger.DefaultLogger.Level*
+  implements:
+  - BestHTTP.Logger.ILogger.Level
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Logger.DefaultLogger.FormatVerbose
+  commentId: P:BestHTTP.Logger.DefaultLogger.FormatVerbose
+  id: FormatVerbose
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: FormatVerbose
+  nameWithType: DefaultLogger.FormatVerbose
+  fullName: BestHTTP.Logger.DefaultLogger.FormatVerbose
+  type: Property
+  source:
+    id: FormatVerbose
+    path: ''
+    startLine: 154262
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public string FormatVerbose { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FormatVerbose As String
+  overload: BestHTTP.Logger.DefaultLogger.FormatVerbose*
+  implements:
+  - BestHTTP.Logger.ILogger.FormatVerbose
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Logger.DefaultLogger.FormatInfo
+  commentId: P:BestHTTP.Logger.DefaultLogger.FormatInfo
+  id: FormatInfo
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: FormatInfo
+  nameWithType: DefaultLogger.FormatInfo
+  fullName: BestHTTP.Logger.DefaultLogger.FormatInfo
+  type: Property
+  source:
+    id: FormatInfo
+    path: ''
+    startLine: 154263
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public string FormatInfo { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FormatInfo As String
+  overload: BestHTTP.Logger.DefaultLogger.FormatInfo*
+  implements:
+  - BestHTTP.Logger.ILogger.FormatInfo
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Logger.DefaultLogger.FormatWarn
+  commentId: P:BestHTTP.Logger.DefaultLogger.FormatWarn
+  id: FormatWarn
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: FormatWarn
+  nameWithType: DefaultLogger.FormatWarn
+  fullName: BestHTTP.Logger.DefaultLogger.FormatWarn
+  type: Property
+  source:
+    id: FormatWarn
+    path: ''
+    startLine: 154264
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public string FormatWarn { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FormatWarn As String
+  overload: BestHTTP.Logger.DefaultLogger.FormatWarn*
+  implements:
+  - BestHTTP.Logger.ILogger.FormatWarn
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Logger.DefaultLogger.FormatErr
+  commentId: P:BestHTTP.Logger.DefaultLogger.FormatErr
+  id: FormatErr
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: FormatErr
+  nameWithType: DefaultLogger.FormatErr
+  fullName: BestHTTP.Logger.DefaultLogger.FormatErr
+  type: Property
+  source:
+    id: FormatErr
+    path: ''
+    startLine: 154265
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public string FormatErr { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FormatErr As String
+  overload: BestHTTP.Logger.DefaultLogger.FormatErr*
+  implements:
+  - BestHTTP.Logger.ILogger.FormatErr
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Logger.DefaultLogger.FormatEx
+  commentId: P:BestHTTP.Logger.DefaultLogger.FormatEx
+  id: FormatEx
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: FormatEx
+  nameWithType: DefaultLogger.FormatEx
+  fullName: BestHTTP.Logger.DefaultLogger.FormatEx
+  type: Property
+  source:
+    id: FormatEx
+    path: ''
+    startLine: 154266
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public string FormatEx { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FormatEx As String
+  overload: BestHTTP.Logger.DefaultLogger.FormatEx*
+  implements:
+  - BestHTTP.Logger.ILogger.FormatEx
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Logger.DefaultLogger.#ctor
+  commentId: M:BestHTTP.Logger.DefaultLogger.#ctor
+  id: '#ctor'
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: DefaultLogger()
+  nameWithType: DefaultLogger.DefaultLogger()
+  fullName: BestHTTP.Logger.DefaultLogger.DefaultLogger()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 154268
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public DefaultLogger()
+    content.vb: Public Sub New
+  overload: BestHTTP.Logger.DefaultLogger.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Logger.DefaultLogger.Verbose(System.String,System.String)
+  commentId: M:BestHTTP.Logger.DefaultLogger.Verbose(System.String,System.String)
+  id: Verbose(System.String,System.String)
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: Verbose(String, String)
+  nameWithType: DefaultLogger.Verbose(String, String)
+  fullName: BestHTTP.Logger.DefaultLogger.Verbose(System.String, System.String)
+  type: Method
+  source:
+    id: Verbose
+    path: ''
+    startLine: 154279
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public void Verbose(string division, string verb)
+    parameters:
+    - id: division
+      type: System.String
+    - id: verb
+      type: System.String
+    content.vb: Public Sub Verbose(division As String, verb As String)
+  overload: BestHTTP.Logger.DefaultLogger.Verbose*
+  implements:
+  - BestHTTP.Logger.ILogger.Verbose(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Logger.DefaultLogger.Information(System.String,System.String)
+  commentId: M:BestHTTP.Logger.DefaultLogger.Information(System.String,System.String)
+  id: Information(System.String,System.String)
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: Information(String, String)
+  nameWithType: DefaultLogger.Information(String, String)
+  fullName: BestHTTP.Logger.DefaultLogger.Information(System.String, System.String)
+  type: Method
+  source:
+    id: Information
+    path: ''
+    startLine: 154292
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public void Information(string division, string info)
+    parameters:
+    - id: division
+      type: System.String
+    - id: info
+      type: System.String
+    content.vb: Public Sub Information(division As String, info As String)
+  overload: BestHTTP.Logger.DefaultLogger.Information*
+  implements:
+  - BestHTTP.Logger.ILogger.Information(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Logger.DefaultLogger.Warning(System.String,System.String)
+  commentId: M:BestHTTP.Logger.DefaultLogger.Warning(System.String,System.String)
+  id: Warning(System.String,System.String)
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: Warning(String, String)
+  nameWithType: DefaultLogger.Warning(String, String)
+  fullName: BestHTTP.Logger.DefaultLogger.Warning(System.String, System.String)
+  type: Method
+  source:
+    id: Warning
+    path: ''
+    startLine: 154305
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public void Warning(string division, string warn)
+    parameters:
+    - id: division
+      type: System.String
+    - id: warn
+      type: System.String
+    content.vb: Public Sub Warning(division As String, warn As String)
+  overload: BestHTTP.Logger.DefaultLogger.Warning*
+  implements:
+  - BestHTTP.Logger.ILogger.Warning(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Logger.DefaultLogger.Error(System.String,System.String)
+  commentId: M:BestHTTP.Logger.DefaultLogger.Error(System.String,System.String)
+  id: Error(System.String,System.String)
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: Error(String, String)
+  nameWithType: DefaultLogger.Error(String, String)
+  fullName: BestHTTP.Logger.DefaultLogger.Error(System.String, System.String)
+  type: Method
+  source:
+    id: Error
+    path: ''
+    startLine: 154318
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public void Error(string division, string err)
+    parameters:
+    - id: division
+      type: System.String
+    - id: err
+      type: System.String
+    content.vb: Public Sub Error(division As String, err As String)
+  overload: BestHTTP.Logger.DefaultLogger.Error*
+  implements:
+  - BestHTTP.Logger.ILogger.Error(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Logger.DefaultLogger.Exception(System.String,System.String,System.Exception)
+  commentId: M:BestHTTP.Logger.DefaultLogger.Exception(System.String,System.String,System.Exception)
+  id: Exception(System.String,System.String,System.Exception)
+  parent: BestHTTP.Logger.DefaultLogger
+  langs:
+  - csharp
+  - vb
+  name: Exception(String, String, Exception)
+  nameWithType: DefaultLogger.Exception(String, String, Exception)
+  fullName: BestHTTP.Logger.DefaultLogger.Exception(System.String, System.String, System.Exception)
+  type: Method
+  source:
+    id: Exception
+    path: ''
+    startLine: 154331
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Logger
+  syntax:
+    content: public void Exception(string division, string msg, Exception ex)
+    parameters:
+    - id: division
+      type: System.String
+    - id: msg
+      type: System.String
+    - id: ex
+      type: System.Exception
+    content.vb: Public Sub Exception(division As String, msg As String, ex As Exception)
+  overload: BestHTTP.Logger.DefaultLogger.Exception*
+  implements:
+  - BestHTTP.Logger.ILogger.Exception(System.String,System.String,System.Exception)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BestHTTP.Logger
+  commentId: N:BestHTTP.Logger
+  name: BestHTTP.Logger
+  nameWithType: BestHTTP.Logger
+  fullName: BestHTTP.Logger
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BestHTTP.Logger.ILogger
+  commentId: T:BestHTTP.Logger.ILogger
+  parent: BestHTTP.Logger
+  name: ILogger
+  nameWithType: ILogger
+  fullName: BestHTTP.Logger.ILogger
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.Logger.DefaultLogger.Level*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.Level
+  name: Level
+  nameWithType: DefaultLogger.Level
+  fullName: BestHTTP.Logger.DefaultLogger.Level
+- uid: BestHTTP.Logger.ILogger.Level
+  commentId: P:BestHTTP.Logger.ILogger.Level
+  parent: BestHTTP.Logger.ILogger
+  name: Level
+  nameWithType: ILogger.Level
+  fullName: BestHTTP.Logger.ILogger.Level
+- uid: BestHTTP.Logger.Loglevels
+  commentId: T:BestHTTP.Logger.Loglevels
+  parent: BestHTTP.Logger
+  name: Loglevels
+  nameWithType: Loglevels
+  fullName: BestHTTP.Logger.Loglevels
+- uid: BestHTTP.Logger.DefaultLogger.FormatVerbose*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.FormatVerbose
+  name: FormatVerbose
+  nameWithType: DefaultLogger.FormatVerbose
+  fullName: BestHTTP.Logger.DefaultLogger.FormatVerbose
+- uid: BestHTTP.Logger.ILogger.FormatVerbose
+  commentId: P:BestHTTP.Logger.ILogger.FormatVerbose
+  parent: BestHTTP.Logger.ILogger
+  name: FormatVerbose
+  nameWithType: ILogger.FormatVerbose
+  fullName: BestHTTP.Logger.ILogger.FormatVerbose
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BestHTTP.Logger.DefaultLogger.FormatInfo*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.FormatInfo
+  name: FormatInfo
+  nameWithType: DefaultLogger.FormatInfo
+  fullName: BestHTTP.Logger.DefaultLogger.FormatInfo
+- uid: BestHTTP.Logger.ILogger.FormatInfo
+  commentId: P:BestHTTP.Logger.ILogger.FormatInfo
+  parent: BestHTTP.Logger.ILogger
+  name: FormatInfo
+  nameWithType: ILogger.FormatInfo
+  fullName: BestHTTP.Logger.ILogger.FormatInfo
+- uid: BestHTTP.Logger.DefaultLogger.FormatWarn*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.FormatWarn
+  name: FormatWarn
+  nameWithType: DefaultLogger.FormatWarn
+  fullName: BestHTTP.Logger.DefaultLogger.FormatWarn
+- uid: BestHTTP.Logger.ILogger.FormatWarn
+  commentId: P:BestHTTP.Logger.ILogger.FormatWarn
+  parent: BestHTTP.Logger.ILogger
+  name: FormatWarn
+  nameWithType: ILogger.FormatWarn
+  fullName: BestHTTP.Logger.ILogger.FormatWarn
+- uid: BestHTTP.Logger.DefaultLogger.FormatErr*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.FormatErr
+  name: FormatErr
+  nameWithType: DefaultLogger.FormatErr
+  fullName: BestHTTP.Logger.DefaultLogger.FormatErr
+- uid: BestHTTP.Logger.ILogger.FormatErr
+  commentId: P:BestHTTP.Logger.ILogger.FormatErr
+  parent: BestHTTP.Logger.ILogger
+  name: FormatErr
+  nameWithType: ILogger.FormatErr
+  fullName: BestHTTP.Logger.ILogger.FormatErr
+- uid: BestHTTP.Logger.DefaultLogger.FormatEx*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.FormatEx
+  name: FormatEx
+  nameWithType: DefaultLogger.FormatEx
+  fullName: BestHTTP.Logger.DefaultLogger.FormatEx
+- uid: BestHTTP.Logger.ILogger.FormatEx
+  commentId: P:BestHTTP.Logger.ILogger.FormatEx
+  parent: BestHTTP.Logger.ILogger
+  name: FormatEx
+  nameWithType: ILogger.FormatEx
+  fullName: BestHTTP.Logger.ILogger.FormatEx
+- uid: BestHTTP.Logger.DefaultLogger.#ctor*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.#ctor
+  name: DefaultLogger
+  nameWithType: DefaultLogger.DefaultLogger
+  fullName: BestHTTP.Logger.DefaultLogger.DefaultLogger
+- uid: BestHTTP.Logger.DefaultLogger.Verbose*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.Verbose
+  name: Verbose
+  nameWithType: DefaultLogger.Verbose
+  fullName: BestHTTP.Logger.DefaultLogger.Verbose
+- uid: BestHTTP.Logger.ILogger.Verbose(System.String,System.String)
+  commentId: M:BestHTTP.Logger.ILogger.Verbose(System.String,System.String)
+  parent: BestHTTP.Logger.ILogger
+  isExternal: true
+  name: Verbose(String, String)
+  nameWithType: ILogger.Verbose(String, String)
+  fullName: BestHTTP.Logger.ILogger.Verbose(System.String, System.String)
+  spec.csharp:
+  - uid: BestHTTP.Logger.ILogger.Verbose(System.String,System.String)
+    name: Verbose
+    nameWithType: ILogger.Verbose
+    fullName: BestHTTP.Logger.ILogger.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Logger.ILogger.Verbose(System.String,System.String)
+    name: Verbose
+    nameWithType: ILogger.Verbose
+    fullName: BestHTTP.Logger.ILogger.Verbose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.Logger.DefaultLogger.Information*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.Information
+  name: Information
+  nameWithType: DefaultLogger.Information
+  fullName: BestHTTP.Logger.DefaultLogger.Information
+- uid: BestHTTP.Logger.ILogger.Information(System.String,System.String)
+  commentId: M:BestHTTP.Logger.ILogger.Information(System.String,System.String)
+  parent: BestHTTP.Logger.ILogger
+  isExternal: true
+  name: Information(String, String)
+  nameWithType: ILogger.Information(String, String)
+  fullName: BestHTTP.Logger.ILogger.Information(System.String, System.String)
+  spec.csharp:
+  - uid: BestHTTP.Logger.ILogger.Information(System.String,System.String)
+    name: Information
+    nameWithType: ILogger.Information
+    fullName: BestHTTP.Logger.ILogger.Information
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Logger.ILogger.Information(System.String,System.String)
+    name: Information
+    nameWithType: ILogger.Information
+    fullName: BestHTTP.Logger.ILogger.Information
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.Logger.DefaultLogger.Warning*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.Warning
+  name: Warning
+  nameWithType: DefaultLogger.Warning
+  fullName: BestHTTP.Logger.DefaultLogger.Warning
+- uid: BestHTTP.Logger.ILogger.Warning(System.String,System.String)
+  commentId: M:BestHTTP.Logger.ILogger.Warning(System.String,System.String)
+  parent: BestHTTP.Logger.ILogger
+  isExternal: true
+  name: Warning(String, String)
+  nameWithType: ILogger.Warning(String, String)
+  fullName: BestHTTP.Logger.ILogger.Warning(System.String, System.String)
+  spec.csharp:
+  - uid: BestHTTP.Logger.ILogger.Warning(System.String,System.String)
+    name: Warning
+    nameWithType: ILogger.Warning
+    fullName: BestHTTP.Logger.ILogger.Warning
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Logger.ILogger.Warning(System.String,System.String)
+    name: Warning
+    nameWithType: ILogger.Warning
+    fullName: BestHTTP.Logger.ILogger.Warning
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.Logger.DefaultLogger.Error*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.Error
+  name: Error
+  nameWithType: DefaultLogger.Error
+  fullName: BestHTTP.Logger.DefaultLogger.Error
+- uid: BestHTTP.Logger.ILogger.Error(System.String,System.String)
+  commentId: M:BestHTTP.Logger.ILogger.Error(System.String,System.String)
+  parent: BestHTTP.Logger.ILogger
+  isExternal: true
+  name: Error(String, String)
+  nameWithType: ILogger.Error(String, String)
+  fullName: BestHTTP.Logger.ILogger.Error(System.String, System.String)
+  spec.csharp:
+  - uid: BestHTTP.Logger.ILogger.Error(System.String,System.String)
+    name: Error
+    nameWithType: ILogger.Error
+    fullName: BestHTTP.Logger.ILogger.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Logger.ILogger.Error(System.String,System.String)
+    name: Error
+    nameWithType: ILogger.Error
+    fullName: BestHTTP.Logger.ILogger.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.Logger.DefaultLogger.Exception*
+  commentId: Overload:BestHTTP.Logger.DefaultLogger.Exception
+  name: Exception
+  nameWithType: DefaultLogger.Exception
+  fullName: BestHTTP.Logger.DefaultLogger.Exception
+- uid: BestHTTP.Logger.ILogger.Exception(System.String,System.String,System.Exception)
+  commentId: M:BestHTTP.Logger.ILogger.Exception(System.String,System.String,System.Exception)
+  parent: BestHTTP.Logger.ILogger
+  isExternal: true
+  name: Exception(String, String, Exception)
+  nameWithType: ILogger.Exception(String, String, Exception)
+  fullName: BestHTTP.Logger.ILogger.Exception(System.String, System.String, System.Exception)
+  spec.csharp:
+  - uid: BestHTTP.Logger.ILogger.Exception(System.String,System.String,System.Exception)
+    name: Exception
+    nameWithType: ILogger.Exception
+    fullName: BestHTTP.Logger.ILogger.Exception
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Logger.ILogger.Exception(System.String,System.String,System.Exception)
+    name: Exception
+    nameWithType: ILogger.Exception
+    fullName: BestHTTP.Logger.ILogger.Exception
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception

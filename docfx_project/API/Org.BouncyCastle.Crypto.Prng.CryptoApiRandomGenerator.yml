@@ -1,0 +1,832 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator
+  commentId: T:Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator
+  id: CryptoApiRandomGenerator
+  parent: Org.BouncyCastle.Crypto.Prng
+  children:
+  - Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.#ctor
+  - Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.#ctor(RandomNumberGenerator)
+  - Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial(System.Byte[])
+  - Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial(System.Int64)
+  - Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes(System.Byte[])
+  - Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes(System.Byte[],System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: CryptoApiRandomGenerator
+  nameWithType: CryptoApiRandomGenerator
+  fullName: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator
+  type: Class
+  source:
+    id: CryptoApiRandomGenerator
+    path: ''
+    startLine: 141668
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Prng
+  summary: "\nUses Microsoft&apos;s RNGCryptoServiceProvider\n"
+  example: []
+  syntax:
+    content: 'public class CryptoApiRandomGenerator : IRandomGenerator'
+    content.vb: >-
+      Public Class CryptoApiRandomGenerator
+          Implements IRandomGenerator
+  inheritance:
+  - System.Object
+  implements:
+  - Org.BouncyCastle.Crypto.Prng.IRandomGenerator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.#ctor
+  commentId: M:Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.#ctor
+  id: '#ctor'
+  parent: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator
+  langs:
+  - csharp
+  - vb
+  name: CryptoApiRandomGenerator()
+  nameWithType: CryptoApiRandomGenerator.CryptoApiRandomGenerator()
+  fullName: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.CryptoApiRandomGenerator()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 141675
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Prng
+  syntax:
+    content: public CryptoApiRandomGenerator()
+    content.vb: Public Sub New
+  overload: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.#ctor(RandomNumberGenerator)
+  commentId: M:Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.#ctor(RandomNumberGenerator)
+  id: '#ctor(RandomNumberGenerator)'
+  parent: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator
+  langs:
+  - csharp
+  - vb
+  name: CryptoApiRandomGenerator(RandomNumberGenerator)
+  nameWithType: CryptoApiRandomGenerator.CryptoApiRandomGenerator(RandomNumberGenerator)
+  fullName: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.CryptoApiRandomGenerator(RandomNumberGenerator)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 141683
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Prng
+  syntax:
+    content: public CryptoApiRandomGenerator(RandomNumberGenerator rng)
+    parameters:
+    - id: rng
+      type: RandomNumberGenerator
+    content.vb: Public Sub New(rng As RandomNumberGenerator)
+  overload: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial(System.Byte[])
+  id: AddSeedMaterial(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator
+  langs:
+  - csharp
+  - vb
+  name: AddSeedMaterial(Byte[])
+  nameWithType: CryptoApiRandomGenerator.AddSeedMaterial(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial(System.Byte[])
+  type: Method
+  source:
+    id: AddSeedMaterial
+    path: ''
+    startLine: 141691
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Prng
+  syntax:
+    content: public virtual void AddSeedMaterial(byte[] seed)
+    parameters:
+    - id: seed
+      type: System.Byte[]
+    content.vb: Public Overridable Sub AddSeedMaterial(seed As Byte())
+  overload: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial*
+  implements:
+  - Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Byte[])
+  nameWithType.vb: CryptoApiRandomGenerator.AddSeedMaterial(Byte())
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial(System.Byte())
+  name.vb: AddSeedMaterial(Byte())
+- uid: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial(System.Int64)
+  commentId: M:Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial(System.Int64)
+  id: AddSeedMaterial(System.Int64)
+  parent: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator
+  langs:
+  - csharp
+  - vb
+  name: AddSeedMaterial(Int64)
+  nameWithType: CryptoApiRandomGenerator.AddSeedMaterial(Int64)
+  fullName: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial(System.Int64)
+  type: Method
+  source:
+    id: AddSeedMaterial
+    path: ''
+    startLine: 141696
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Prng
+  syntax:
+    content: public virtual void AddSeedMaterial(long seed)
+    parameters:
+    - id: seed
+      type: System.Int64
+    content.vb: Public Overridable Sub AddSeedMaterial(seed As Long)
+  overload: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial*
+  implements:
+  - Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Int64)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes(System.Byte[])
+  id: NextBytes(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator
+  langs:
+  - csharp
+  - vb
+  name: NextBytes(Byte[])
+  nameWithType: CryptoApiRandomGenerator.NextBytes(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes(System.Byte[])
+  type: Method
+  source:
+    id: NextBytes
+    path: ''
+    startLine: 141701
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Prng
+  syntax:
+    content: public virtual void NextBytes(byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    content.vb: Public Overridable Sub NextBytes(bytes As Byte())
+  overload: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes*
+  implements:
+  - Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[])
+  nameWithType.vb: CryptoApiRandomGenerator.NextBytes(Byte())
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes(System.Byte())
+  name.vb: NextBytes(Byte())
+- uid: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes(System.Byte[],System.Int32,System.Int32)
+  id: NextBytes(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator
+  langs:
+  - csharp
+  - vb
+  name: NextBytes(Byte[], Int32, Int32)
+  nameWithType: CryptoApiRandomGenerator.NextBytes(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: NextBytes
+    path: ''
+    startLine: 141713
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Prng
+  syntax:
+    content: public virtual void NextBytes(byte[] bytes, int start, int len)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    - id: start
+      type: System.Int32
+    - id: len
+      type: System.Int32
+    content.vb: Public Overridable Sub NextBytes(bytes As Byte(), start As Integer, len As Integer)
+  overload: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes*
+  implements:
+  - Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[],System.Int32,System.Int32)
+  nameWithType.vb: CryptoApiRandomGenerator.NextBytes(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes(System.Byte(), System.Int32, System.Int32)
+  name.vb: NextBytes(Byte(), Int32, Int32)
+references:
+- uid: Org.BouncyCastle.Crypto.Prng
+  commentId: N:Org.BouncyCastle.Crypto.Prng
+  name: Org.BouncyCastle.Crypto.Prng
+  nameWithType: Org.BouncyCastle.Crypto.Prng
+  fullName: Org.BouncyCastle.Crypto.Prng
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator
+  commentId: T:Org.BouncyCastle.Crypto.Prng.IRandomGenerator
+  parent: Org.BouncyCastle.Crypto.Prng
+  name: IRandomGenerator
+  nameWithType: IRandomGenerator
+  fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.#ctor
+  name: CryptoApiRandomGenerator
+  nameWithType: CryptoApiRandomGenerator.CryptoApiRandomGenerator
+  fullName: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.CryptoApiRandomGenerator
+- uid: RandomNumberGenerator
+  commentId: '!:RandomNumberGenerator'
+  isExternal: true
+  name: RandomNumberGenerator
+  nameWithType: RandomNumberGenerator
+  fullName: RandomNumberGenerator
+- uid: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial*
+  commentId: Overload:Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial
+  name: AddSeedMaterial
+  nameWithType: CryptoApiRandomGenerator.AddSeedMaterial
+  fullName: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.AddSeedMaterial
+- uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Prng.IRandomGenerator
+  isExternal: true
+  name: AddSeedMaterial(Byte[])
+  nameWithType: IRandomGenerator.AddSeedMaterial(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Byte[])
+  nameWithType.vb: IRandomGenerator.AddSeedMaterial(Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Byte())
+  name.vb: AddSeedMaterial(Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Byte[])
+    name: AddSeedMaterial
+    nameWithType: IRandomGenerator.AddSeedMaterial
+    fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Byte[])
+    name: AddSeedMaterial
+    nameWithType: IRandomGenerator.AddSeedMaterial
+    fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Int64)
+  commentId: M:Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Int64)
+  parent: Org.BouncyCastle.Crypto.Prng.IRandomGenerator
+  isExternal: true
+  name: AddSeedMaterial(Int64)
+  nameWithType: IRandomGenerator.AddSeedMaterial(Int64)
+  fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Int64)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Int64)
+    name: AddSeedMaterial
+    nameWithType: IRandomGenerator.AddSeedMaterial
+    fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial(System.Int64)
+    name: AddSeedMaterial
+    nameWithType: IRandomGenerator.AddSeedMaterial
+    fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.AddSeedMaterial
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes*
+  commentId: Overload:Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes
+  name: NextBytes
+  nameWithType: CryptoApiRandomGenerator.NextBytes
+  fullName: Org.BouncyCastle.Crypto.Prng.CryptoApiRandomGenerator.NextBytes
+- uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Prng.IRandomGenerator
+  isExternal: true
+  name: NextBytes(Byte[])
+  nameWithType: IRandomGenerator.NextBytes(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[])
+  nameWithType.vb: IRandomGenerator.NextBytes(Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte())
+  name.vb: NextBytes(Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[])
+    name: NextBytes
+    nameWithType: IRandomGenerator.NextBytes
+    fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[])
+    name: NextBytes
+    nameWithType: IRandomGenerator.NextBytes
+    fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Prng.IRandomGenerator
+  isExternal: true
+  name: NextBytes(Byte[], Int32, Int32)
+  nameWithType: IRandomGenerator.NextBytes(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: IRandomGenerator.NextBytes(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte(), System.Int32, System.Int32)
+  name.vb: NextBytes(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[],System.Int32,System.Int32)
+    name: NextBytes
+    nameWithType: IRandomGenerator.NextBytes
+    fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Byte[],System.Int32,System.Int32)
+    name: NextBytes
+    nameWithType: IRandomGenerator.NextBytes
+    fullName: Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

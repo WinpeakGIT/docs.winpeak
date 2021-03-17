@@ -1,0 +1,1175 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  commentId: T:BestHTTP.WebSocket.Extensions.PerMessageCompression
+  id: PerMessageCompression
+  parent: BestHTTP.WebSocket.Extensions
+  children:
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor(CompressionLevel,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32)
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.AddNegotiation(BestHTTP.HTTPRequest)
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientMaxWindowBits
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientNoContextTakeover
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.Decode(System.Byte,System.Byte[])
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.Encode(WebSocketFrame)
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.GetFrameHeader(WebSocketFrame,System.Byte)
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.Level
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.MinimumDataLegthToCompress
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerMaxWindowBits
+  - BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerNoContextTakeover
+  langs:
+  - csharp
+  - vb
+  name: PerMessageCompression
+  nameWithType: PerMessageCompression
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  type: Class
+  source:
+    id: PerMessageCompression
+    path: ''
+    startLine: 8682
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  summary: "\nCompression Extensions for WebSocket implementation.\nhttp://tools.ietf.org/html/rfc7692\n"
+  example: []
+  syntax:
+    content: 'public sealed class PerMessageCompression : IExtension'
+    content.vb: >-
+      Public NotInheritable Class PerMessageCompression
+          Implements IExtension
+  inheritance:
+  - System.Object
+  implements:
+  - BestHTTP.WebSocket.Extensions.IExtension
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientNoContextTakeover
+  commentId: P:BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientNoContextTakeover
+  id: ClientNoContextTakeover
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: ClientNoContextTakeover
+  nameWithType: PerMessageCompression.ClientNoContextTakeover
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientNoContextTakeover
+  type: Property
+  source:
+    id: ClientNoContextTakeover
+    path: ''
+    startLine: 8693
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  summary: "\nBy including this extension parameter in an extension negotiation offer, a client informs the peer server\nof a hint that even if the server doesn&apos;t include the &quot;client_no_context_takeover&quot; extension parameter in\nthe corresponding extension negotiation response to the offer, the client is not going to use context takeover.\n"
+  example: []
+  syntax:
+    content: public bool ClientNoContextTakeover { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ClientNoContextTakeover As Boolean
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientNoContextTakeover*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerNoContextTakeover
+  commentId: P:BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerNoContextTakeover
+  id: ServerNoContextTakeover
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: ServerNoContextTakeover
+  nameWithType: PerMessageCompression.ServerNoContextTakeover
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerNoContextTakeover
+  type: Property
+  source:
+    id: ServerNoContextTakeover
+    path: ''
+    startLine: 8698
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  summary: "\nBy including this extension parameter in an extension negotiation offer, a client prevents the peer server from using context takeover.\n"
+  example: []
+  syntax:
+    content: public bool ServerNoContextTakeover { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ServerNoContextTakeover As Boolean
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerNoContextTakeover*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientMaxWindowBits
+  commentId: P:BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientMaxWindowBits
+  id: ClientMaxWindowBits
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: ClientMaxWindowBits
+  nameWithType: PerMessageCompression.ClientMaxWindowBits
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientMaxWindowBits
+  type: Property
+  source:
+    id: ClientMaxWindowBits
+    path: ''
+    startLine: 8703
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  summary: "\nThis parameter indicates the base-2 logarithm of the LZ77 sliding window size of the client context.\n"
+  example: []
+  syntax:
+    content: public int ClientMaxWindowBits { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ClientMaxWindowBits As Integer
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientMaxWindowBits*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerMaxWindowBits
+  commentId: P:BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerMaxWindowBits
+  id: ServerMaxWindowBits
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: ServerMaxWindowBits
+  nameWithType: PerMessageCompression.ServerMaxWindowBits
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerMaxWindowBits
+  type: Property
+  source:
+    id: ServerMaxWindowBits
+    path: ''
+    startLine: 8708
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  summary: "\nThis parameter indicates the base-2 logarithm of the LZ77 sliding window size of the server context.\n"
+  example: []
+  syntax:
+    content: public int ServerMaxWindowBits { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ServerMaxWindowBits As Integer
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerMaxWindowBits*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.Level
+  commentId: P:BestHTTP.WebSocket.Extensions.PerMessageCompression.Level
+  id: Level
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: PerMessageCompression.Level
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.Level
+  type: Property
+  source:
+    id: Level
+    path: ''
+    startLine: 8713
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  summary: "\nThe compression level that the client will use to compress the frames.\n"
+  example: []
+  syntax:
+    content: public CompressionLevel Level { get; }
+    parameters: []
+    return:
+      type: CompressionLevel
+    content.vb: Public ReadOnly Property Level As CompressionLevel
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.Level*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.MinimumDataLegthToCompress
+  commentId: P:BestHTTP.WebSocket.Extensions.PerMessageCompression.MinimumDataLegthToCompress
+  id: MinimumDataLegthToCompress
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: MinimumDataLegthToCompress
+  nameWithType: PerMessageCompression.MinimumDataLegthToCompress
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.MinimumDataLegthToCompress
+  type: Property
+  source:
+    id: MinimumDataLegthToCompress
+    path: ''
+    startLine: 8718
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  summary: "\nWhat minimum data length will trigger the compression.\n"
+  example: []
+  syntax:
+    content: public int MinimumDataLegthToCompress { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MinimumDataLegthToCompress As Integer
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.MinimumDataLegthToCompress*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor
+  commentId: M:BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor
+  id: '#ctor'
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: PerMessageCompression()
+  nameWithType: PerMessageCompression.PerMessageCompression()
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.PerMessageCompression()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 8740
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  syntax:
+    content: public PerMessageCompression()
+    content.vb: Public Sub New
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor(CompressionLevel,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32)
+  commentId: M:BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor(CompressionLevel,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(CompressionLevel,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32)'
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: PerMessageCompression(CompressionLevel, Boolean, Boolean, Int32, Int32, Int32)
+  nameWithType: PerMessageCompression.PerMessageCompression(CompressionLevel, Boolean, Boolean, Int32, Int32, Int32)
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.PerMessageCompression(CompressionLevel, System.Boolean, System.Boolean, System.Int32, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 8744
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  syntax:
+    content: public PerMessageCompression(CompressionLevel level, bool clientNoContextTakeover, bool serverNoContextTakeover, int desiredClientMaxWindowBits, int desiredServerMaxWindowBits, int minDatalengthToCompress)
+    parameters:
+    - id: level
+      type: CompressionLevel
+    - id: clientNoContextTakeover
+      type: System.Boolean
+    - id: serverNoContextTakeover
+      type: System.Boolean
+    - id: desiredClientMaxWindowBits
+      type: System.Int32
+    - id: desiredServerMaxWindowBits
+      type: System.Int32
+    - id: minDatalengthToCompress
+      type: System.Int32
+    content.vb: Public Sub New(level As CompressionLevel, clientNoContextTakeover As Boolean, serverNoContextTakeover As Boolean, desiredClientMaxWindowBits As Integer, desiredServerMaxWindowBits As Integer, minDatalengthToCompress As Integer)
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.AddNegotiation(BestHTTP.HTTPRequest)
+  commentId: M:BestHTTP.WebSocket.Extensions.PerMessageCompression.AddNegotiation(BestHTTP.HTTPRequest)
+  id: AddNegotiation(BestHTTP.HTTPRequest)
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: AddNegotiation(HTTPRequest)
+  nameWithType: PerMessageCompression.AddNegotiation(HTTPRequest)
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.AddNegotiation(BestHTTP.HTTPRequest)
+  type: Method
+  source:
+    id: AddNegotiation
+    path: ''
+    startLine: 8765
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  summary: "\nThis will start the permessage-deflate negotiation process.\n<a href=\"http://tools.ietf.org/html/rfc7692#section-5.1\">http://tools.ietf.org/html/rfc7692#section-5.1</a>\n"
+  example: []
+  syntax:
+    content: public void AddNegotiation(HTTPRequest request)
+    parameters:
+    - id: request
+      type: BestHTTP.HTTPRequest
+    content.vb: Public Sub AddNegotiation(request As HTTPRequest)
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.AddNegotiation*
+  implements:
+  - BestHTTP.WebSocket.Extensions.IExtension.AddNegotiation(BestHTTP.HTTPRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)
+  commentId: M:BestHTTP.WebSocket.Extensions.PerMessageCompression.ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)
+  id: ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: ParseNegotiation(WebSocketResponse)
+  nameWithType: PerMessageCompression.ParseNegotiation(WebSocketResponse)
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)
+  type: Method
+  source:
+    id: ParseNegotiation
+    path: ''
+    startLine: 8817
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  syntax:
+    content: public bool ParseNegotiation(WebSocketResponse resp)
+    parameters:
+    - id: resp
+      type: BestHTTP.WebSocket.WebSocketResponse
+    return:
+      type: System.Boolean
+    content.vb: Public Function ParseNegotiation(resp As WebSocketResponse) As Boolean
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.ParseNegotiation*
+  implements:
+  - BestHTTP.WebSocket.Extensions.IExtension.ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.GetFrameHeader(WebSocketFrame,System.Byte)
+  commentId: M:BestHTTP.WebSocket.Extensions.PerMessageCompression.GetFrameHeader(WebSocketFrame,System.Byte)
+  id: GetFrameHeader(WebSocketFrame,System.Byte)
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: GetFrameHeader(WebSocketFrame, Byte)
+  nameWithType: PerMessageCompression.GetFrameHeader(WebSocketFrame, Byte)
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.GetFrameHeader(WebSocketFrame, System.Byte)
+  type: Method
+  source:
+    id: GetFrameHeader
+    path: ''
+    startLine: 8872
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  summary: "\nIExtension implementation to set the Rsv1 flag in the header if we are we will want to compress the data\nin the writer.\n"
+  example: []
+  syntax:
+    content: public byte GetFrameHeader(WebSocketFrame writer, byte inFlag)
+    parameters:
+    - id: writer
+      type: WebSocketFrame
+    - id: inFlag
+      type: System.Byte
+    return:
+      type: System.Byte
+    content.vb: Public Function GetFrameHeader(writer As WebSocketFrame, inFlag As Byte) As Byte
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.GetFrameHeader*
+  implements:
+  - BestHTTP.WebSocket.Extensions.IExtension.GetFrameHeader(WebSocketFrame,System.Byte)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.Encode(WebSocketFrame)
+  commentId: M:BestHTTP.WebSocket.Extensions.PerMessageCompression.Encode(WebSocketFrame)
+  id: Encode(WebSocketFrame)
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: Encode(WebSocketFrame)
+  nameWithType: PerMessageCompression.Encode(WebSocketFrame)
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.Encode(WebSocketFrame)
+  type: Method
+  source:
+    id: Encode
+    path: ''
+    startLine: 8886
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  summary: "\nIExtension implementation to be able to compress the data hold in the writer.\n"
+  example: []
+  syntax:
+    content: public byte[] Encode(WebSocketFrame writer)
+    parameters:
+    - id: writer
+      type: WebSocketFrame
+    return:
+      type: System.Byte[]
+    content.vb: Public Function Encode(writer As WebSocketFrame) As Byte()
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.Encode*
+  implements:
+  - BestHTTP.WebSocket.Extensions.IExtension.Encode(WebSocketFrame)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.Decode(System.Byte,System.Byte[])
+  commentId: M:BestHTTP.WebSocket.Extensions.PerMessageCompression.Decode(System.Byte,System.Byte[])
+  id: Decode(System.Byte,System.Byte[])
+  parent: BestHTTP.WebSocket.Extensions.PerMessageCompression
+  langs:
+  - csharp
+  - vb
+  name: Decode(Byte, Byte[])
+  nameWithType: PerMessageCompression.Decode(Byte, Byte[])
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.Decode(System.Byte, System.Byte[])
+  type: Method
+  source:
+    id: Decode
+    path: ''
+    startLine: 8901
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.WebSocket.Extensions
+  summary: "\nIExtension implementation to possible decompress the data.\n"
+  example: []
+  syntax:
+    content: public byte[] Decode(byte header, byte[] data)
+    parameters:
+    - id: header
+      type: System.Byte
+    - id: data
+      type: System.Byte[]
+    return:
+      type: System.Byte[]
+    content.vb: Public Function Decode(header As Byte, data As Byte()) As Byte()
+  overload: BestHTTP.WebSocket.Extensions.PerMessageCompression.Decode*
+  implements:
+  - BestHTTP.WebSocket.Extensions.IExtension.Decode(System.Byte,System.Byte[])
+  nameWithType.vb: PerMessageCompression.Decode(Byte, Byte())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BestHTTP.WebSocket.Extensions.PerMessageCompression.Decode(System.Byte, System.Byte())
+  name.vb: Decode(Byte, Byte())
+references:
+- uid: BestHTTP.WebSocket.Extensions
+  commentId: N:BestHTTP.WebSocket.Extensions
+  name: BestHTTP.WebSocket.Extensions
+  nameWithType: BestHTTP.WebSocket.Extensions
+  fullName: BestHTTP.WebSocket.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BestHTTP.WebSocket.Extensions.IExtension
+  commentId: T:BestHTTP.WebSocket.Extensions.IExtension
+  parent: BestHTTP.WebSocket.Extensions
+  name: IExtension
+  nameWithType: IExtension
+  fullName: BestHTTP.WebSocket.Extensions.IExtension
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientNoContextTakeover*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientNoContextTakeover
+  name: ClientNoContextTakeover
+  nameWithType: PerMessageCompression.ClientNoContextTakeover
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientNoContextTakeover
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerNoContextTakeover*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerNoContextTakeover
+  name: ServerNoContextTakeover
+  nameWithType: PerMessageCompression.ServerNoContextTakeover
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerNoContextTakeover
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientMaxWindowBits*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientMaxWindowBits
+  name: ClientMaxWindowBits
+  nameWithType: PerMessageCompression.ClientMaxWindowBits
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.ClientMaxWindowBits
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerMaxWindowBits*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerMaxWindowBits
+  name: ServerMaxWindowBits
+  nameWithType: PerMessageCompression.ServerMaxWindowBits
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.ServerMaxWindowBits
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.Level*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.Level
+  name: Level
+  nameWithType: PerMessageCompression.Level
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.Level
+- uid: CompressionLevel
+  isExternal: true
+  name: CompressionLevel
+  nameWithType: CompressionLevel
+  fullName: CompressionLevel
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.MinimumDataLegthToCompress*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.MinimumDataLegthToCompress
+  name: MinimumDataLegthToCompress
+  nameWithType: PerMessageCompression.MinimumDataLegthToCompress
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.MinimumDataLegthToCompress
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.#ctor
+  name: PerMessageCompression
+  nameWithType: PerMessageCompression.PerMessageCompression
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.PerMessageCompression
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.AddNegotiation*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.AddNegotiation
+  name: AddNegotiation
+  nameWithType: PerMessageCompression.AddNegotiation
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.AddNegotiation
+- uid: BestHTTP.WebSocket.Extensions.IExtension.AddNegotiation(BestHTTP.HTTPRequest)
+  commentId: M:BestHTTP.WebSocket.Extensions.IExtension.AddNegotiation(BestHTTP.HTTPRequest)
+  parent: BestHTTP.WebSocket.Extensions.IExtension
+  name: AddNegotiation(HTTPRequest)
+  nameWithType: IExtension.AddNegotiation(HTTPRequest)
+  fullName: BestHTTP.WebSocket.Extensions.IExtension.AddNegotiation(BestHTTP.HTTPRequest)
+  spec.csharp:
+  - uid: BestHTTP.WebSocket.Extensions.IExtension.AddNegotiation(BestHTTP.HTTPRequest)
+    name: AddNegotiation
+    nameWithType: IExtension.AddNegotiation
+    fullName: BestHTTP.WebSocket.Extensions.IExtension.AddNegotiation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.HTTPRequest
+    name: HTTPRequest
+    nameWithType: HTTPRequest
+    fullName: BestHTTP.HTTPRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.WebSocket.Extensions.IExtension.AddNegotiation(BestHTTP.HTTPRequest)
+    name: AddNegotiation
+    nameWithType: IExtension.AddNegotiation
+    fullName: BestHTTP.WebSocket.Extensions.IExtension.AddNegotiation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.HTTPRequest
+    name: HTTPRequest
+    nameWithType: HTTPRequest
+    fullName: BestHTTP.HTTPRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.HTTPRequest
+  commentId: T:BestHTTP.HTTPRequest
+  parent: BestHTTP
+  name: HTTPRequest
+  nameWithType: HTTPRequest
+  fullName: BestHTTP.HTTPRequest
+- uid: BestHTTP
+  commentId: N:BestHTTP
+  name: BestHTTP
+  nameWithType: BestHTTP
+  fullName: BestHTTP
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.ParseNegotiation*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.ParseNegotiation
+  name: ParseNegotiation
+  nameWithType: PerMessageCompression.ParseNegotiation
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.ParseNegotiation
+- uid: BestHTTP.WebSocket.Extensions.IExtension.ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)
+  commentId: M:BestHTTP.WebSocket.Extensions.IExtension.ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)
+  parent: BestHTTP.WebSocket.Extensions.IExtension
+  name: ParseNegotiation(WebSocketResponse)
+  nameWithType: IExtension.ParseNegotiation(WebSocketResponse)
+  fullName: BestHTTP.WebSocket.Extensions.IExtension.ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)
+  spec.csharp:
+  - uid: BestHTTP.WebSocket.Extensions.IExtension.ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)
+    name: ParseNegotiation
+    nameWithType: IExtension.ParseNegotiation
+    fullName: BestHTTP.WebSocket.Extensions.IExtension.ParseNegotiation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.WebSocket.WebSocketResponse
+    name: WebSocketResponse
+    nameWithType: WebSocketResponse
+    fullName: BestHTTP.WebSocket.WebSocketResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.WebSocket.Extensions.IExtension.ParseNegotiation(BestHTTP.WebSocket.WebSocketResponse)
+    name: ParseNegotiation
+    nameWithType: IExtension.ParseNegotiation
+    fullName: BestHTTP.WebSocket.Extensions.IExtension.ParseNegotiation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.WebSocket.WebSocketResponse
+    name: WebSocketResponse
+    nameWithType: WebSocketResponse
+    fullName: BestHTTP.WebSocket.WebSocketResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.WebSocket.WebSocketResponse
+  commentId: T:BestHTTP.WebSocket.WebSocketResponse
+  parent: BestHTTP.WebSocket
+  name: WebSocketResponse
+  nameWithType: WebSocketResponse
+  fullName: BestHTTP.WebSocket.WebSocketResponse
+- uid: BestHTTP.WebSocket
+  commentId: N:BestHTTP.WebSocket
+  name: BestHTTP.WebSocket
+  nameWithType: BestHTTP.WebSocket
+  fullName: BestHTTP.WebSocket
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.GetFrameHeader*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.GetFrameHeader
+  name: GetFrameHeader
+  nameWithType: PerMessageCompression.GetFrameHeader
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.GetFrameHeader
+- uid: BestHTTP.WebSocket.Extensions.IExtension.GetFrameHeader(WebSocketFrame,System.Byte)
+  commentId: M:BestHTTP.WebSocket.Extensions.IExtension.GetFrameHeader(WebSocketFrame,System.Byte)
+  parent: BestHTTP.WebSocket.Extensions.IExtension
+  isExternal: true
+  name: GetFrameHeader(WebSocketFrame, Byte)
+  nameWithType: IExtension.GetFrameHeader(WebSocketFrame, Byte)
+  fullName: BestHTTP.WebSocket.Extensions.IExtension.GetFrameHeader(WebSocketFrame, System.Byte)
+  spec.csharp:
+  - uid: BestHTTP.WebSocket.Extensions.IExtension.GetFrameHeader(WebSocketFrame,System.Byte)
+    name: GetFrameHeader
+    nameWithType: IExtension.GetFrameHeader
+    fullName: BestHTTP.WebSocket.Extensions.IExtension.GetFrameHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WebSocketFrame
+    name: WebSocketFrame
+    nameWithType: WebSocketFrame
+    fullName: WebSocketFrame
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.WebSocket.Extensions.IExtension.GetFrameHeader(WebSocketFrame,System.Byte)
+    name: GetFrameHeader
+    nameWithType: IExtension.GetFrameHeader
+    fullName: BestHTTP.WebSocket.Extensions.IExtension.GetFrameHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WebSocketFrame
+    name: WebSocketFrame
+    nameWithType: WebSocketFrame
+    fullName: WebSocketFrame
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WebSocketFrame
+  isExternal: true
+  name: WebSocketFrame
+  nameWithType: WebSocketFrame
+  fullName: WebSocketFrame
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.Encode*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.Encode
+  name: Encode
+  nameWithType: PerMessageCompression.Encode
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.Encode
+- uid: BestHTTP.WebSocket.Extensions.IExtension.Encode(WebSocketFrame)
+  commentId: M:BestHTTP.WebSocket.Extensions.IExtension.Encode(WebSocketFrame)
+  parent: BestHTTP.WebSocket.Extensions.IExtension
+  isExternal: true
+  name: Encode(WebSocketFrame)
+  nameWithType: IExtension.Encode(WebSocketFrame)
+  fullName: BestHTTP.WebSocket.Extensions.IExtension.Encode(WebSocketFrame)
+  spec.csharp:
+  - uid: BestHTTP.WebSocket.Extensions.IExtension.Encode(WebSocketFrame)
+    name: Encode
+    nameWithType: IExtension.Encode
+    fullName: BestHTTP.WebSocket.Extensions.IExtension.Encode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WebSocketFrame
+    name: WebSocketFrame
+    nameWithType: WebSocketFrame
+    fullName: WebSocketFrame
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.WebSocket.Extensions.IExtension.Encode(WebSocketFrame)
+    name: Encode
+    nameWithType: IExtension.Encode
+    fullName: BestHTTP.WebSocket.Extensions.IExtension.Encode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WebSocketFrame
+    name: WebSocketFrame
+    nameWithType: WebSocketFrame
+    fullName: WebSocketFrame
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BestHTTP.WebSocket.Extensions.PerMessageCompression.Decode*
+  commentId: Overload:BestHTTP.WebSocket.Extensions.PerMessageCompression.Decode
+  name: Decode
+  nameWithType: PerMessageCompression.Decode
+  fullName: BestHTTP.WebSocket.Extensions.PerMessageCompression.Decode
+- uid: BestHTTP.WebSocket.Extensions.IExtension.Decode(System.Byte,System.Byte[])
+  commentId: M:BestHTTP.WebSocket.Extensions.IExtension.Decode(System.Byte,System.Byte[])
+  parent: BestHTTP.WebSocket.Extensions.IExtension
+  isExternal: true
+  name: Decode(Byte, Byte[])
+  nameWithType: IExtension.Decode(Byte, Byte[])
+  fullName: BestHTTP.WebSocket.Extensions.IExtension.Decode(System.Byte, System.Byte[])
+  nameWithType.vb: IExtension.Decode(Byte, Byte())
+  fullName.vb: BestHTTP.WebSocket.Extensions.IExtension.Decode(System.Byte, System.Byte())
+  name.vb: Decode(Byte, Byte())
+  spec.csharp:
+  - uid: BestHTTP.WebSocket.Extensions.IExtension.Decode(System.Byte,System.Byte[])
+    name: Decode
+    nameWithType: IExtension.Decode
+    fullName: BestHTTP.WebSocket.Extensions.IExtension.Decode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.WebSocket.Extensions.IExtension.Decode(System.Byte,System.Byte[])
+    name: Decode
+    nameWithType: IExtension.Decode
+    fullName: BestHTTP.WebSocket.Extensions.IExtension.Decode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )

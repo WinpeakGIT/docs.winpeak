@@ -1,0 +1,553 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters
+  id: MqvPrivateParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  children:
+  - Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.#ctor(Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters)
+  - Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.#ctor(Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters)
+  - Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPrivateKey
+  - Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPublicKey
+  - Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.StaticPrivateKey
+  langs:
+  - csharp
+  - vb
+  name: MqvPrivateParameters
+  nameWithType: MqvPrivateParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters
+  type: Class
+  source:
+    id: MqvPrivateParameters
+    path: ''
+    startLine: 111709
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: 'public class MqvPrivateParameters : ICipherParameters'
+    content.vb: >-
+      Public Class MqvPrivateParameters
+          Implements ICipherParameters
+  inheritance:
+  - System.Object
+  implements:
+  - Org.BouncyCastle.Crypto.ICipherParameters
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.#ctor(Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.#ctor(Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters)
+  id: '#ctor(Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters)'
+  parent: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters
+  langs:
+  - csharp
+  - vb
+  name: MqvPrivateParameters(ECPrivateKeyParameters, ECPrivateKeyParameters)
+  nameWithType: MqvPrivateParameters.MqvPrivateParameters(ECPrivateKeyParameters, ECPrivateKeyParameters)
+  fullName: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.MqvPrivateParameters(Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters, Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 111716
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public MqvPrivateParameters(ECPrivateKeyParameters staticPrivateKey, ECPrivateKeyParameters ephemeralPrivateKey)
+    parameters:
+    - id: staticPrivateKey
+      type: Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters
+    - id: ephemeralPrivateKey
+      type: Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters
+    content.vb: Public Sub New(staticPrivateKey As ECPrivateKeyParameters, ephemeralPrivateKey As ECPrivateKeyParameters)
+  overload: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.#ctor(Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.#ctor(Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters)
+  id: '#ctor(Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters,Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters)'
+  parent: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters
+  langs:
+  - csharp
+  - vb
+  name: MqvPrivateParameters(ECPrivateKeyParameters, ECPrivateKeyParameters, ECPublicKeyParameters)
+  nameWithType: MqvPrivateParameters.MqvPrivateParameters(ECPrivateKeyParameters, ECPrivateKeyParameters, ECPublicKeyParameters)
+  fullName: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.MqvPrivateParameters(Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters, Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters, Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 111723
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public MqvPrivateParameters(ECPrivateKeyParameters staticPrivateKey, ECPrivateKeyParameters ephemeralPrivateKey, ECPublicKeyParameters ephemeralPublicKey)
+    parameters:
+    - id: staticPrivateKey
+      type: Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters
+    - id: ephemeralPrivateKey
+      type: Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters
+    - id: ephemeralPublicKey
+      type: Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters
+    content.vb: Public Sub New(staticPrivateKey As ECPrivateKeyParameters, ephemeralPrivateKey As ECPrivateKeyParameters, ephemeralPublicKey As ECPublicKeyParameters)
+  overload: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.StaticPrivateKey
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.StaticPrivateKey
+  id: StaticPrivateKey
+  parent: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters
+  langs:
+  - csharp
+  - vb
+  name: StaticPrivateKey
+  nameWithType: MqvPrivateParameters.StaticPrivateKey
+  fullName: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.StaticPrivateKey
+  type: Property
+  source:
+    id: StaticPrivateKey
+    path: ''
+    startLine: 111753
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public virtual ECPrivateKeyParameters StaticPrivateKey { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters
+    content.vb: Public Overridable ReadOnly Property StaticPrivateKey As ECPrivateKeyParameters
+  overload: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.StaticPrivateKey*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPrivateKey
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPrivateKey
+  id: EphemeralPrivateKey
+  parent: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters
+  langs:
+  - csharp
+  - vb
+  name: EphemeralPrivateKey
+  nameWithType: MqvPrivateParameters.EphemeralPrivateKey
+  fullName: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPrivateKey
+  type: Property
+  source:
+    id: EphemeralPrivateKey
+    path: ''
+    startLine: 111758
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public virtual ECPrivateKeyParameters EphemeralPrivateKey { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters
+    content.vb: Public Overridable ReadOnly Property EphemeralPrivateKey As ECPrivateKeyParameters
+  overload: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPrivateKey*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPublicKey
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPublicKey
+  id: EphemeralPublicKey
+  parent: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters
+  langs:
+  - csharp
+  - vb
+  name: EphemeralPublicKey
+  nameWithType: MqvPrivateParameters.EphemeralPublicKey
+  fullName: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPublicKey
+  type: Property
+  source:
+    id: EphemeralPublicKey
+    path: ''
+    startLine: 111763
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public virtual ECPublicKeyParameters EphemeralPublicKey { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters
+    content.vb: Public Overridable ReadOnly Property EphemeralPublicKey As ECPublicKeyParameters
+  overload: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPublicKey*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+references:
+- uid: Org.BouncyCastle.Crypto.Parameters
+  commentId: N:Org.BouncyCastle.Crypto.Parameters
+  name: Org.BouncyCastle.Crypto.Parameters
+  nameWithType: Org.BouncyCastle.Crypto.Parameters
+  fullName: Org.BouncyCastle.Crypto.Parameters
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.ICipherParameters
+  commentId: T:Org.BouncyCastle.Crypto.ICipherParameters
+  parent: Org.BouncyCastle.Crypto
+  name: ICipherParameters
+  nameWithType: ICipherParameters
+  fullName: Org.BouncyCastle.Crypto.ICipherParameters
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.#ctor
+  name: MqvPrivateParameters
+  nameWithType: MqvPrivateParameters.MqvPrivateParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.MqvPrivateParameters
+- uid: Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  name: ECPrivateKeyParameters
+  nameWithType: ECPrivateKeyParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.ECPrivateKeyParameters
+- uid: Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  name: ECPublicKeyParameters
+  nameWithType: ECPublicKeyParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.ECPublicKeyParameters
+- uid: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.StaticPrivateKey*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.StaticPrivateKey
+  name: StaticPrivateKey
+  nameWithType: MqvPrivateParameters.StaticPrivateKey
+  fullName: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.StaticPrivateKey
+- uid: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPrivateKey*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPrivateKey
+  name: EphemeralPrivateKey
+  nameWithType: MqvPrivateParameters.EphemeralPrivateKey
+  fullName: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPrivateKey
+- uid: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPublicKey*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPublicKey
+  name: EphemeralPublicKey
+  nameWithType: MqvPrivateParameters.EphemeralPublicKey
+  fullName: Org.BouncyCastle.Crypto.Parameters.MqvPrivateParameters.EphemeralPublicKey

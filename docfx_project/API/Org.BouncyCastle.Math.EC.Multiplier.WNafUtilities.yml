@@ -1,0 +1,967 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  commentId: T:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  id: WNafUtilities
+  parent: Org.BouncyCastle.Math.EC.Multiplier
+  children:
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactNaf(Org.BouncyCastle.Math.BigInteger)
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactWindowNaf(System.Int32,Org.BouncyCastle.Math.BigInteger)
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateJsf(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger)
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateNaf(Org.BouncyCastle.Math.BigInteger)
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateWindowNaf(System.Int32,Org.BouncyCastle.Math.BigInteger)
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetNafWeight(Org.BouncyCastle.Math.BigInteger)
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize(System.Int32)
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize(System.Int32,System.Int32[])
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo(Org.BouncyCastle.Math.EC.ECPoint)
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo(Org.BouncyCastle.Math.EC.Multiplier.PreCompInfo)
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.MapPointWithPrecomp(Org.BouncyCastle.Math.EC.ECPoint,System.Int32,System.Boolean,Org.BouncyCastle.Math.EC.ECPointMap)
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.PRECOMP_NAME
+  - Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.Precompute(Org.BouncyCastle.Math.EC.ECPoint,System.Int32,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: WNafUtilities
+  nameWithType: WNafUtilities
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  type: Class
+  source:
+    id: WNafUtilities
+    path: ''
+    startLine: 24990
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public abstract class WNafUtilities
+    content.vb: Public MustInherit Class WNafUtilities
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.PRECOMP_NAME
+  commentId: F:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.PRECOMP_NAME
+  id: PRECOMP_NAME
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: PRECOMP_NAME
+  nameWithType: WNafUtilities.PRECOMP_NAME
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.PRECOMP_NAME
+  type: Field
+  source:
+    id: PRECOMP_NAME
+    path: ''
+    startLine: 24992
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public static readonly string PRECOMP_NAME
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly PRECOMP_NAME As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactNaf(Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactNaf(Org.BouncyCastle.Math.BigInteger)
+  id: GenerateCompactNaf(Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: GenerateCompactNaf(BigInteger)
+  nameWithType: WNafUtilities.GenerateCompactNaf(BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactNaf(Org.BouncyCastle.Math.BigInteger)
+  type: Method
+  source:
+    id: GenerateCompactNaf
+    path: ''
+    startLine: 25000
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public static int[] GenerateCompactNaf(BigInteger k)
+    parameters:
+    - id: k
+      type: Org.BouncyCastle.Math.BigInteger
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function GenerateCompactNaf(k As BigInteger) As Integer()
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactNaf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactWindowNaf(System.Int32,Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactWindowNaf(System.Int32,Org.BouncyCastle.Math.BigInteger)
+  id: GenerateCompactWindowNaf(System.Int32,Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: GenerateCompactWindowNaf(Int32, BigInteger)
+  nameWithType: WNafUtilities.GenerateCompactWindowNaf(Int32, BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactWindowNaf(System.Int32, Org.BouncyCastle.Math.BigInteger)
+  type: Method
+  source:
+    id: GenerateCompactWindowNaf
+    path: ''
+    startLine: 25039
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public static int[] GenerateCompactWindowNaf(int width, BigInteger k)
+    parameters:
+    - id: width
+      type: System.Int32
+    - id: k
+      type: Org.BouncyCastle.Math.BigInteger
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function GenerateCompactWindowNaf(width As Integer, k As BigInteger) As Integer()
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactWindowNaf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateJsf(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateJsf(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger)
+  id: GenerateJsf(Org.BouncyCastle.Math.BigInteger,Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: GenerateJsf(BigInteger, BigInteger)
+  nameWithType: WNafUtilities.GenerateJsf(BigInteger, BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateJsf(Org.BouncyCastle.Math.BigInteger, Org.BouncyCastle.Math.BigInteger)
+  type: Method
+  source:
+    id: GenerateJsf
+    path: ''
+    startLine: 25099
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public static byte[] GenerateJsf(BigInteger g, BigInteger h)
+    parameters:
+    - id: g
+      type: Org.BouncyCastle.Math.BigInteger
+    - id: h
+      type: Org.BouncyCastle.Math.BigInteger
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function GenerateJsf(g As BigInteger, h As BigInteger) As Byte()
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateJsf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateNaf(Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateNaf(Org.BouncyCastle.Math.BigInteger)
+  id: GenerateNaf(Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: GenerateNaf(BigInteger)
+  nameWithType: WNafUtilities.GenerateNaf(BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateNaf(Org.BouncyCastle.Math.BigInteger)
+  type: Method
+  source:
+    id: GenerateNaf
+    path: ''
+    startLine: 25161
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public static byte[] GenerateNaf(BigInteger k)
+    parameters:
+    - id: k
+      type: Org.BouncyCastle.Math.BigInteger
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function GenerateNaf(k As BigInteger) As Byte()
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateNaf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateWindowNaf(System.Int32,Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateWindowNaf(System.Int32,Org.BouncyCastle.Math.BigInteger)
+  id: GenerateWindowNaf(System.Int32,Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: GenerateWindowNaf(Int32, BigInteger)
+  nameWithType: WNafUtilities.GenerateWindowNaf(Int32, BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateWindowNaf(System.Int32, Org.BouncyCastle.Math.BigInteger)
+  type: Method
+  source:
+    id: GenerateWindowNaf
+    path: ''
+    startLine: 25199
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  example: []
+  syntax:
+    content: public static byte[] GenerateWindowNaf(int width, BigInteger k)
+    parameters:
+    - id: width
+      type: System.Int32
+    - id: k
+      type: Org.BouncyCastle.Math.BigInteger
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function GenerateWindowNaf(width As Integer, k As BigInteger) As Byte()
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateWindowNaf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetNafWeight(Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetNafWeight(Org.BouncyCastle.Math.BigInteger)
+  id: GetNafWeight(Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetNafWeight(BigInteger)
+  nameWithType: WNafUtilities.GetNafWeight(BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetNafWeight(Org.BouncyCastle.Math.BigInteger)
+  type: Method
+  source:
+    id: GetNafWeight
+    path: ''
+    startLine: 25257
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public static int GetNafWeight(BigInteger k)
+    parameters:
+    - id: k
+      type: Org.BouncyCastle.Math.BigInteger
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetNafWeight(k As BigInteger) As Integer
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetNafWeight*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo(Org.BouncyCastle.Math.EC.ECPoint)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo(Org.BouncyCastle.Math.EC.ECPoint)
+  id: GetWNafPreCompInfo(Org.BouncyCastle.Math.EC.ECPoint)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetWNafPreCompInfo(ECPoint)
+  nameWithType: WNafUtilities.GetWNafPreCompInfo(ECPoint)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo(Org.BouncyCastle.Math.EC.ECPoint)
+  type: Method
+  source:
+    id: GetWNafPreCompInfo
+    path: ''
+    startLine: 25268
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public static WNafPreCompInfo GetWNafPreCompInfo(ECPoint p)
+    parameters:
+    - id: p
+      type: Org.BouncyCastle.Math.EC.ECPoint
+    return:
+      type: Org.BouncyCastle.Math.EC.Multiplier.WNafPreCompInfo
+    content.vb: Public Shared Function GetWNafPreCompInfo(p As ECPoint) As WNafPreCompInfo
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo(Org.BouncyCastle.Math.EC.Multiplier.PreCompInfo)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo(Org.BouncyCastle.Math.EC.Multiplier.PreCompInfo)
+  id: GetWNafPreCompInfo(Org.BouncyCastle.Math.EC.Multiplier.PreCompInfo)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetWNafPreCompInfo(PreCompInfo)
+  nameWithType: WNafUtilities.GetWNafPreCompInfo(PreCompInfo)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo(Org.BouncyCastle.Math.EC.Multiplier.PreCompInfo)
+  type: Method
+  source:
+    id: GetWNafPreCompInfo
+    path: ''
+    startLine: 25273
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public static WNafPreCompInfo GetWNafPreCompInfo(PreCompInfo preCompInfo)
+    parameters:
+    - id: preCompInfo
+      type: Org.BouncyCastle.Math.EC.Multiplier.PreCompInfo
+    return:
+      type: Org.BouncyCastle.Math.EC.Multiplier.WNafPreCompInfo
+    content.vb: Public Shared Function GetWNafPreCompInfo(preCompInfo As PreCompInfo) As WNafPreCompInfo
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize(System.Int32)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize(System.Int32)
+  id: GetWindowSize(System.Int32)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetWindowSize(Int32)
+  nameWithType: WNafUtilities.GetWindowSize(Int32)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize(System.Int32)
+  type: Method
+  source:
+    id: GetWindowSize
+    path: ''
+    startLine: 25289
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  example: []
+  syntax:
+    content: public static int GetWindowSize(int bits)
+    parameters:
+    - id: bits
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetWindowSize(bits As Integer) As Integer
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize(System.Int32,System.Int32[])
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize(System.Int32,System.Int32[])
+  id: GetWindowSize(System.Int32,System.Int32[])
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetWindowSize(Int32, Int32[])
+  nameWithType: WNafUtilities.GetWindowSize(Int32, Int32[])
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize(System.Int32, System.Int32[])
+  type: Method
+  source:
+    id: GetWindowSize
+    path: ''
+    startLine: 25301
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  example: []
+  syntax:
+    content: public static int GetWindowSize(int bits, int[] windowSizeCutoffs)
+    parameters:
+    - id: bits
+      type: System.Int32
+    - id: windowSizeCutoffs
+      type: System.Int32[]
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetWindowSize(bits As Integer, windowSizeCutoffs As Integer()) As Integer
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize*
+  nameWithType.vb: WNafUtilities.GetWindowSize(Int32, Int32())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize(System.Int32, System.Int32())
+  name.vb: GetWindowSize(Int32, Int32())
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.MapPointWithPrecomp(Org.BouncyCastle.Math.EC.ECPoint,System.Int32,System.Boolean,Org.BouncyCastle.Math.EC.ECPointMap)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.MapPointWithPrecomp(Org.BouncyCastle.Math.EC.ECPoint,System.Int32,System.Boolean,Org.BouncyCastle.Math.EC.ECPointMap)
+  id: MapPointWithPrecomp(Org.BouncyCastle.Math.EC.ECPoint,System.Int32,System.Boolean,Org.BouncyCastle.Math.EC.ECPointMap)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: MapPointWithPrecomp(ECPoint, Int32, Boolean, ECPointMap)
+  nameWithType: WNafUtilities.MapPointWithPrecomp(ECPoint, Int32, Boolean, ECPointMap)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.MapPointWithPrecomp(Org.BouncyCastle.Math.EC.ECPoint, System.Int32, System.Boolean, Org.BouncyCastle.Math.EC.ECPointMap)
+  type: Method
+  source:
+    id: MapPointWithPrecomp
+    path: ''
+    startLine: 25314
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public static ECPoint MapPointWithPrecomp(ECPoint p, int width, bool includeNegated, ECPointMap pointMap)
+    parameters:
+    - id: p
+      type: Org.BouncyCastle.Math.EC.ECPoint
+    - id: width
+      type: System.Int32
+    - id: includeNegated
+      type: System.Boolean
+    - id: pointMap
+      type: Org.BouncyCastle.Math.EC.ECPointMap
+    return:
+      type: Org.BouncyCastle.Math.EC.ECPoint
+    content.vb: Public Shared Function MapPointWithPrecomp(p As ECPoint, width As Integer, includeNegated As Boolean, pointMap As ECPointMap) As ECPoint
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.MapPointWithPrecomp*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.Precompute(Org.BouncyCastle.Math.EC.ECPoint,System.Int32,System.Boolean)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.Precompute(Org.BouncyCastle.Math.EC.ECPoint,System.Int32,System.Boolean)
+  id: Precompute(Org.BouncyCastle.Math.EC.ECPoint,System.Int32,System.Boolean)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities
+  langs:
+  - csharp
+  - vb
+  name: Precompute(ECPoint, Int32, Boolean)
+  nameWithType: WNafUtilities.Precompute(ECPoint, Int32, Boolean)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.Precompute(Org.BouncyCastle.Math.EC.ECPoint, System.Int32, System.Boolean)
+  type: Method
+  source:
+    id: Precompute
+    path: ''
+    startLine: 25353
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public static WNafPreCompInfo Precompute(ECPoint p, int width, bool includeNegated)
+    parameters:
+    - id: p
+      type: Org.BouncyCastle.Math.EC.ECPoint
+    - id: width
+      type: System.Int32
+    - id: includeNegated
+      type: System.Boolean
+    return:
+      type: Org.BouncyCastle.Math.EC.Multiplier.WNafPreCompInfo
+    content.vb: Public Shared Function Precompute(p As ECPoint, width As Integer, includeNegated As Boolean) As WNafPreCompInfo
+  overload: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.Precompute*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Org.BouncyCastle.Math.EC.Multiplier
+  commentId: N:Org.BouncyCastle.Math.EC.Multiplier
+  name: Org.BouncyCastle.Math.EC.Multiplier
+  nameWithType: Org.BouncyCastle.Math.EC.Multiplier
+  fullName: Org.BouncyCastle.Math.EC.Multiplier
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactNaf*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactNaf
+  name: GenerateCompactNaf
+  nameWithType: WNafUtilities.GenerateCompactNaf
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactNaf
+- uid: Org.BouncyCastle.Math.BigInteger
+  commentId: T:Org.BouncyCastle.Math.BigInteger
+  parent: Org.BouncyCastle.Math
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: Org.BouncyCastle.Math.BigInteger
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Math
+  commentId: N:Org.BouncyCastle.Math
+  name: Org.BouncyCastle.Math
+  nameWithType: Org.BouncyCastle.Math
+  fullName: Org.BouncyCastle.Math
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactWindowNaf*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactWindowNaf
+  name: GenerateCompactWindowNaf
+  nameWithType: WNafUtilities.GenerateCompactWindowNaf
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateCompactWindowNaf
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateJsf*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateJsf
+  name: GenerateJsf
+  nameWithType: WNafUtilities.GenerateJsf
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateJsf
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateNaf*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateNaf
+  name: GenerateNaf
+  nameWithType: WNafUtilities.GenerateNaf
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateNaf
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateWindowNaf*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateWindowNaf
+  name: GenerateWindowNaf
+  nameWithType: WNafUtilities.GenerateWindowNaf
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GenerateWindowNaf
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetNafWeight*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetNafWeight
+  name: GetNafWeight
+  nameWithType: WNafUtilities.GetNafWeight
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetNafWeight
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo
+  name: GetWNafPreCompInfo
+  nameWithType: WNafUtilities.GetWNafPreCompInfo
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWNafPreCompInfo
+- uid: Org.BouncyCastle.Math.EC.ECPoint
+  commentId: T:Org.BouncyCastle.Math.EC.ECPoint
+  parent: Org.BouncyCastle.Math.EC
+  name: ECPoint
+  nameWithType: ECPoint
+  fullName: Org.BouncyCastle.Math.EC.ECPoint
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafPreCompInfo
+  commentId: T:Org.BouncyCastle.Math.EC.Multiplier.WNafPreCompInfo
+  parent: Org.BouncyCastle.Math.EC.Multiplier
+  name: WNafPreCompInfo
+  nameWithType: WNafPreCompInfo
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafPreCompInfo
+- uid: Org.BouncyCastle.Math.EC
+  commentId: N:Org.BouncyCastle.Math.EC
+  name: Org.BouncyCastle.Math.EC
+  nameWithType: Org.BouncyCastle.Math.EC
+  fullName: Org.BouncyCastle.Math.EC
+- uid: Org.BouncyCastle.Math.EC.Multiplier.PreCompInfo
+  commentId: T:Org.BouncyCastle.Math.EC.Multiplier.PreCompInfo
+  parent: Org.BouncyCastle.Math.EC.Multiplier
+  name: PreCompInfo
+  nameWithType: PreCompInfo
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.PreCompInfo
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize
+  name: GetWindowSize
+  nameWithType: WNafUtilities.GetWindowSize
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.GetWindowSize
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.MapPointWithPrecomp*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.MapPointWithPrecomp
+  name: MapPointWithPrecomp
+  nameWithType: WNafUtilities.MapPointWithPrecomp
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.MapPointWithPrecomp
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Math.EC.ECPointMap
+  commentId: T:Org.BouncyCastle.Math.EC.ECPointMap
+  parent: Org.BouncyCastle.Math.EC
+  name: ECPointMap
+  nameWithType: ECPointMap
+  fullName: Org.BouncyCastle.Math.EC.ECPointMap
+- uid: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.Precompute*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.Precompute
+  name: Precompute
+  nameWithType: WNafUtilities.Precompute
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.WNafUtilities.Precompute

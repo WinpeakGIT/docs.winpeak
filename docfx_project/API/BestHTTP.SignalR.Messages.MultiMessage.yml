@@ -1,0 +1,906 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.SignalR.Messages.MultiMessage
+  commentId: T:BestHTTP.SignalR.Messages.MultiMessage
+  id: MultiMessage
+  parent: BestHTTP.SignalR.Messages
+  children:
+  - BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Parse(System.Object)
+  - BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Type
+  - BestHTTP.SignalR.Messages.MultiMessage.Data
+  - BestHTTP.SignalR.Messages.MultiMessage.GroupsToken
+  - BestHTTP.SignalR.Messages.MultiMessage.IsInitialization
+  - BestHTTP.SignalR.Messages.MultiMessage.MessageId
+  - BestHTTP.SignalR.Messages.MultiMessage.PollDelay
+  - BestHTTP.SignalR.Messages.MultiMessage.ShouldReconnect
+  langs:
+  - csharp
+  - vb
+  name: MultiMessage
+  nameWithType: MultiMessage
+  fullName: BestHTTP.SignalR.Messages.MultiMessage
+  type: Class
+  source:
+    id: MultiMessage
+    path: ''
+    startLine: 12782
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nA message that may contains multiple sub-messages and additional informations.\n"
+  example: []
+  syntax:
+    content: 'public sealed class MultiMessage : IServerMessage'
+    content.vb: >-
+      Public NotInheritable Class MultiMessage
+          Implements IServerMessage
+  inheritance:
+  - System.Object
+  implements:
+  - BestHTTP.SignalR.Messages.IServerMessage
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Type
+  commentId: P:BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Type
+  id: BestHTTP#SignalR#Messages#IServerMessage#Type
+  isEii: true
+  parent: BestHTTP.SignalR.Messages.MultiMessage
+  langs:
+  - csharp
+  - vb
+  name: IServerMessage.Type
+  nameWithType: MultiMessage.IServerMessage.Type
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.BestHTTP.SignalR.Messages.IServerMessage.Type
+  type: Property
+  source:
+    id: BestHTTP.SignalR.Messages.IServerMessage.Type
+    path: ''
+    startLine: 12784
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  syntax:
+    content: MessageTypes IServerMessage.Type { get; }
+    parameters: []
+    return:
+      type: BestHTTP.SignalR.MessageTypes
+    content.vb: ReadOnly WriteOnly Property BestHTTP.SignalR.Messages.IServerMessage.Type As MessageTypes Implements IServerMessage.Type
+  overload: BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Type*
+  implements:
+  - BestHTTP.SignalR.Messages.IServerMessage.Type
+  nameWithType.vb: MultiMessage.BestHTTP.SignalR.Messages.IServerMessage.Type
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: BestHTTP.SignalR.Messages.IServerMessage.Type
+- uid: BestHTTP.SignalR.Messages.MultiMessage.MessageId
+  commentId: P:BestHTTP.SignalR.Messages.MultiMessage.MessageId
+  id: MessageId
+  parent: BestHTTP.SignalR.Messages.MultiMessage
+  langs:
+  - csharp
+  - vb
+  name: MessageId
+  nameWithType: MultiMessage.MessageId
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.MessageId
+  type: Property
+  source:
+    id: MessageId
+    path: ''
+    startLine: 12789
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nId of the sent message\n"
+  example: []
+  syntax:
+    content: public string MessageId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property MessageId As String
+  overload: BestHTTP.SignalR.Messages.MultiMessage.MessageId*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.MultiMessage.IsInitialization
+  commentId: P:BestHTTP.SignalR.Messages.MultiMessage.IsInitialization
+  id: IsInitialization
+  parent: BestHTTP.SignalR.Messages.MultiMessage
+  langs:
+  - csharp
+  - vb
+  name: IsInitialization
+  nameWithType: MultiMessage.IsInitialization
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.IsInitialization
+  type: Property
+  source:
+    id: IsInitialization
+    path: ''
+    startLine: 12794
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nTrue if it&apos;s an initialization message, false otherwise.\n"
+  example: []
+  syntax:
+    content: public bool IsInitialization { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInitialization As Boolean
+  overload: BestHTTP.SignalR.Messages.MultiMessage.IsInitialization*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.MultiMessage.GroupsToken
+  commentId: P:BestHTTP.SignalR.Messages.MultiMessage.GroupsToken
+  id: GroupsToken
+  parent: BestHTTP.SignalR.Messages.MultiMessage
+  langs:
+  - csharp
+  - vb
+  name: GroupsToken
+  nameWithType: MultiMessage.GroupsToken
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.GroupsToken
+  type: Property
+  source:
+    id: GroupsToken
+    path: ''
+    startLine: 12799
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nGroup token may be sent, if the group changed that the client belongs to.\n"
+  example: []
+  syntax:
+    content: public string GroupsToken { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property GroupsToken As String
+  overload: BestHTTP.SignalR.Messages.MultiMessage.GroupsToken*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.MultiMessage.ShouldReconnect
+  commentId: P:BestHTTP.SignalR.Messages.MultiMessage.ShouldReconnect
+  id: ShouldReconnect
+  parent: BestHTTP.SignalR.Messages.MultiMessage
+  langs:
+  - csharp
+  - vb
+  name: ShouldReconnect
+  nameWithType: MultiMessage.ShouldReconnect
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.ShouldReconnect
+  type: Property
+  source:
+    id: ShouldReconnect
+    path: ''
+    startLine: 12804
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nThe server suggests that the client should do a reconnect turn.\n"
+  example: []
+  syntax:
+    content: public bool ShouldReconnect { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ShouldReconnect As Boolean
+  overload: BestHTTP.SignalR.Messages.MultiMessage.ShouldReconnect*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.MultiMessage.PollDelay
+  commentId: P:BestHTTP.SignalR.Messages.MultiMessage.PollDelay
+  id: PollDelay
+  parent: BestHTTP.SignalR.Messages.MultiMessage
+  langs:
+  - csharp
+  - vb
+  name: PollDelay
+  nameWithType: MultiMessage.PollDelay
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.PollDelay
+  type: Property
+  source:
+    id: PollDelay
+    path: ''
+    startLine: 12809
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nAdditional poll delay sent by the server.\n"
+  example: []
+  syntax:
+    content: public TimeSpan? PollDelay { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.TimeSpan}
+    content.vb: Public ReadOnly Property PollDelay As TimeSpan?
+  overload: BestHTTP.SignalR.Messages.MultiMessage.PollDelay*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.MultiMessage.Data
+  commentId: P:BestHTTP.SignalR.Messages.MultiMessage.Data
+  id: Data
+  parent: BestHTTP.SignalR.Messages.MultiMessage
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: MultiMessage.Data
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.Data
+  type: Property
+  source:
+    id: Data
+    path: ''
+    startLine: 12814
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nList of server messages sent inside this message.\n"
+  example: []
+  syntax:
+    content: public List<IServerMessage> Data { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{BestHTTP.SignalR.Messages.IServerMessage}
+    content.vb: Public ReadOnly Property Data As List(Of IServerMessage)
+  overload: BestHTTP.SignalR.Messages.MultiMessage.Data*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Parse(System.Object)
+  commentId: M:BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Parse(System.Object)
+  id: BestHTTP#SignalR#Messages#IServerMessage#Parse(System.Object)
+  isEii: true
+  parent: BestHTTP.SignalR.Messages.MultiMessage
+  langs:
+  - csharp
+  - vb
+  name: IServerMessage.Parse(Object)
+  nameWithType: MultiMessage.IServerMessage.Parse(Object)
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.BestHTTP.SignalR.Messages.IServerMessage.Parse(System.Object)
+  type: Method
+  source:
+    id: BestHTTP.SignalR.Messages.IServerMessage.Parse
+    path: ''
+    startLine: 12816
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  syntax:
+    content: void IServerMessage.Parse(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Sub BestHTTP.SignalR.Messages.IServerMessage.Parse(data As Object) Implements IServerMessage.Parse
+  overload: BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Parse*
+  implements:
+  - BestHTTP.SignalR.Messages.IServerMessage.Parse(System.Object)
+  nameWithType.vb: MultiMessage.BestHTTP.SignalR.Messages.IServerMessage.Parse(Object)
+  name.vb: BestHTTP.SignalR.Messages.IServerMessage.Parse(Object)
+references:
+- uid: BestHTTP.SignalR.Messages
+  commentId: N:BestHTTP.SignalR.Messages
+  name: BestHTTP.SignalR.Messages
+  nameWithType: BestHTTP.SignalR.Messages
+  fullName: BestHTTP.SignalR.Messages
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BestHTTP.SignalR.Messages.IServerMessage
+  commentId: T:BestHTTP.SignalR.Messages.IServerMessage
+  parent: BestHTTP.SignalR.Messages
+  name: IServerMessage
+  nameWithType: IServerMessage
+  fullName: BestHTTP.SignalR.Messages.IServerMessage
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Type*
+  commentId: Overload:BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Type
+  name: IServerMessage.Type
+  nameWithType: MultiMessage.IServerMessage.Type
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.BestHTTP.SignalR.Messages.IServerMessage.Type
+  nameWithType.vb: MultiMessage.BestHTTP.SignalR.Messages.IServerMessage.Type
+  name.vb: BestHTTP.SignalR.Messages.IServerMessage.Type
+- uid: BestHTTP.SignalR.Messages.IServerMessage.Type
+  commentId: P:BestHTTP.SignalR.Messages.IServerMessage.Type
+  parent: BestHTTP.SignalR.Messages.IServerMessage
+  name: Type
+  nameWithType: IServerMessage.Type
+  fullName: BestHTTP.SignalR.Messages.IServerMessage.Type
+- uid: BestHTTP.SignalR.MessageTypes
+  commentId: T:BestHTTP.SignalR.MessageTypes
+  parent: BestHTTP.SignalR
+  name: MessageTypes
+  nameWithType: MessageTypes
+  fullName: BestHTTP.SignalR.MessageTypes
+- uid: BestHTTP.SignalR
+  commentId: N:BestHTTP.SignalR
+  name: BestHTTP.SignalR
+  nameWithType: BestHTTP.SignalR
+  fullName: BestHTTP.SignalR
+- uid: BestHTTP.SignalR.Messages.MultiMessage.MessageId*
+  commentId: Overload:BestHTTP.SignalR.Messages.MultiMessage.MessageId
+  name: MessageId
+  nameWithType: MultiMessage.MessageId
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.MessageId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BestHTTP.SignalR.Messages.MultiMessage.IsInitialization*
+  commentId: Overload:BestHTTP.SignalR.Messages.MultiMessage.IsInitialization
+  name: IsInitialization
+  nameWithType: MultiMessage.IsInitialization
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.IsInitialization
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BestHTTP.SignalR.Messages.MultiMessage.GroupsToken*
+  commentId: Overload:BestHTTP.SignalR.Messages.MultiMessage.GroupsToken
+  name: GroupsToken
+  nameWithType: MultiMessage.GroupsToken
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.GroupsToken
+- uid: BestHTTP.SignalR.Messages.MultiMessage.ShouldReconnect*
+  commentId: Overload:BestHTTP.SignalR.Messages.MultiMessage.ShouldReconnect
+  name: ShouldReconnect
+  nameWithType: MultiMessage.ShouldReconnect
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.ShouldReconnect
+- uid: BestHTTP.SignalR.Messages.MultiMessage.PollDelay*
+  commentId: Overload:BestHTTP.SignalR.Messages.MultiMessage.PollDelay
+  name: PollDelay
+  nameWithType: MultiMessage.PollDelay
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.PollDelay
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<System.TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of System.TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Messages.MultiMessage.Data*
+  commentId: Overload:BestHTTP.SignalR.Messages.MultiMessage.Data
+  name: Data
+  nameWithType: MultiMessage.Data
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.Data
+- uid: System.Collections.Generic.List{BestHTTP.SignalR.Messages.IServerMessage}
+  commentId: T:System.Collections.Generic.List{BestHTTP.SignalR.Messages.IServerMessage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IServerMessage>
+  nameWithType: List<IServerMessage>
+  fullName: System.Collections.Generic.List<BestHTTP.SignalR.Messages.IServerMessage>
+  nameWithType.vb: List(Of IServerMessage)
+  fullName.vb: System.Collections.Generic.List(Of BestHTTP.SignalR.Messages.IServerMessage)
+  name.vb: List(Of IServerMessage)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BestHTTP.SignalR.Messages.IServerMessage
+    name: IServerMessage
+    nameWithType: IServerMessage
+    fullName: BestHTTP.SignalR.Messages.IServerMessage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BestHTTP.SignalR.Messages.IServerMessage
+    name: IServerMessage
+    nameWithType: IServerMessage
+    fullName: BestHTTP.SignalR.Messages.IServerMessage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Parse*
+  commentId: Overload:BestHTTP.SignalR.Messages.MultiMessage.BestHTTP#SignalR#Messages#IServerMessage#Parse
+  name: IServerMessage.Parse
+  nameWithType: MultiMessage.IServerMessage.Parse
+  fullName: BestHTTP.SignalR.Messages.MultiMessage.BestHTTP.SignalR.Messages.IServerMessage.Parse
+  nameWithType.vb: MultiMessage.BestHTTP.SignalR.Messages.IServerMessage.Parse
+  name.vb: BestHTTP.SignalR.Messages.IServerMessage.Parse
+- uid: BestHTTP.SignalR.Messages.IServerMessage.Parse(System.Object)
+  commentId: M:BestHTTP.SignalR.Messages.IServerMessage.Parse(System.Object)
+  parent: BestHTTP.SignalR.Messages.IServerMessage
+  isExternal: true
+  name: Parse(Object)
+  nameWithType: IServerMessage.Parse(Object)
+  fullName: BestHTTP.SignalR.Messages.IServerMessage.Parse(System.Object)
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Messages.IServerMessage.Parse(System.Object)
+    name: Parse
+    nameWithType: IServerMessage.Parse
+    fullName: BestHTTP.SignalR.Messages.IServerMessage.Parse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Messages.IServerMessage.Parse(System.Object)
+    name: Parse
+    nameWithType: IServerMessage.Parse
+    fullName: BestHTTP.SignalR.Messages.IServerMessage.Parse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

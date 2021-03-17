@@ -1,0 +1,2583 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.HTTPResponse
+  commentId: T:BestHTTP.HTTPResponse
+  id: HTTPResponse
+  parent: BestHTTP
+  children:
+  - BestHTTP.HTTPResponse.AddHeader(System.String,System.String)
+  - BestHTTP.HTTPResponse.AddStreamedFragment(System.Byte[])
+  - BestHTTP.HTTPResponse.allFragmentSize
+  - BestHTTP.HTTPResponse.BeginReceiveStreamFragments
+  - BestHTTP.HTTPResponse.CacheFileInfo
+  - BestHTTP.HTTPResponse.cacheStream
+  - BestHTTP.HTTPResponse.Cookies
+  - BestHTTP.HTTPResponse.Data
+  - BestHTTP.HTTPResponse.dataAsText
+  - BestHTTP.HTTPResponse.DataAsText
+  - BestHTTP.HTTPResponse.DataAsTexture2D
+  - BestHTTP.HTTPResponse.DecodeStream(MemoryStream)
+  - BestHTTP.HTTPResponse.Dispose
+  - BestHTTP.HTTPResponse.FeedStreamFragment(System.Byte[],System.Int32,System.Int32)
+  - BestHTTP.HTTPResponse.FlushRemainingFragmentBuffer
+  - BestHTTP.HTTPResponse.fragmentBuffer
+  - BestHTTP.HTTPResponse.fragmentBufferDataLength
+  - BestHTTP.HTTPResponse.GetFirstHeaderValue(System.String)
+  - BestHTTP.HTTPResponse.GetHeaderValues(System.String)
+  - BestHTTP.HTTPResponse.GetRange
+  - BestHTTP.HTTPResponse.GetStreamedFragments
+  - BestHTTP.HTTPResponse.HasHeader(System.String)
+  - BestHTTP.HTTPResponse.HasHeaderWithValue(System.String,System.String)
+  - BestHTTP.HTTPResponse.Headers
+  - BestHTTP.HTTPResponse.IsCacheOnly
+  - BestHTTP.HTTPResponse.IsClosedManually
+  - BestHTTP.HTTPResponse.IsFromCache
+  - BestHTTP.HTTPResponse.IsStreamed
+  - BestHTTP.HTTPResponse.IsStreamingFinished
+  - BestHTTP.HTTPResponse.IsSuccess
+  - BestHTTP.HTTPResponse.IsUpgraded
+  - BestHTTP.HTTPResponse.Message
+  - BestHTTP.HTTPResponse.MinBufferSize
+  - BestHTTP.HTTPResponse.NoTrimReadTo(Stream,System.Byte,System.Byte)
+  - BestHTTP.HTTPResponse.ReadChunked(Stream)
+  - BestHTTP.HTTPResponse.ReadChunkLength(Stream)
+  - BestHTTP.HTTPResponse.ReadHeaders(Stream)
+  - BestHTTP.HTTPResponse.ReadPayload(System.Int32)
+  - BestHTTP.HTTPResponse.ReadTo(Stream,System.Byte)
+  - BestHTTP.HTTPResponse.ReadTo(Stream,System.Byte,System.Byte)
+  - BestHTTP.HTTPResponse.ReadUnknownSize(Stream)
+  - BestHTTP.HTTPResponse.StatusCode
+  - BestHTTP.HTTPResponse.Stream
+  - BestHTTP.HTTPResponse.streamedFragments
+  - BestHTTP.HTTPResponse.SyncRoot
+  - BestHTTP.HTTPResponse.texture
+  - BestHTTP.HTTPResponse.VersionMajor
+  - BestHTTP.HTTPResponse.VersionMinor
+  - BestHTTP.HTTPResponse.WaitWhileHasFragments
+  langs:
+  - csharp
+  - vb
+  name: HTTPResponse
+  nameWithType: HTTPResponse
+  fullName: BestHTTP.HTTPResponse
+  type: Class
+  source:
+    id: HTTPResponse
+    path: ''
+    startLine: 2647
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: 'public class HTTPResponse : IDisposable'
+    content.vb: >-
+      Public Class HTTPResponse
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - BestHTTP.ServerSentEvents.EventSourceResponse
+  - BestHTTP.WebSocket.WebSocketResponse
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BestHTTP.HTTPResponse.MinBufferSize
+  commentId: F:BestHTTP.HTTPResponse.MinBufferSize
+  id: MinBufferSize
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: MinBufferSize
+  nameWithType: HTTPResponse.MinBufferSize
+  fullName: BestHTTP.HTTPResponse.MinBufferSize
+  type: Field
+  source:
+    id: MinBufferSize
+    path: ''
+    startLine: 2652
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public const int MinBufferSize = 4096
+    return:
+      type: System.Int32
+    content.vb: Public Const MinBufferSize As Integer = 4096
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.HTTPResponse.VersionMajor
+  commentId: P:BestHTTP.HTTPResponse.VersionMajor
+  id: VersionMajor
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: VersionMajor
+  nameWithType: HTTPResponse.VersionMajor
+  fullName: BestHTTP.HTTPResponse.VersionMajor
+  type: Property
+  source:
+    id: VersionMajor
+    path: ''
+    startLine: 2656
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public int VersionMajor { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property VersionMajor As Integer
+  overload: BestHTTP.HTTPResponse.VersionMajor*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: BestHTTP.HTTPResponse.VersionMinor
+  commentId: P:BestHTTP.HTTPResponse.VersionMinor
+  id: VersionMinor
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: VersionMinor
+  nameWithType: HTTPResponse.VersionMinor
+  fullName: BestHTTP.HTTPResponse.VersionMinor
+  type: Property
+  source:
+    id: VersionMinor
+    path: ''
+    startLine: 2657
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public int VersionMinor { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property VersionMinor As Integer
+  overload: BestHTTP.HTTPResponse.VersionMinor*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: BestHTTP.HTTPResponse.StatusCode
+  commentId: P:BestHTTP.HTTPResponse.StatusCode
+  id: StatusCode
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  nameWithType: HTTPResponse.StatusCode
+  fullName: BestHTTP.HTTPResponse.StatusCode
+  type: Property
+  source:
+    id: StatusCode
+    path: ''
+    startLine: 2662
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe status code that sent from the server.\n"
+  example: []
+  syntax:
+    content: public int StatusCode { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StatusCode As Integer
+  overload: BestHTTP.HTTPResponse.StatusCode*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: BestHTTP.HTTPResponse.IsSuccess
+  commentId: P:BestHTTP.HTTPResponse.IsSuccess
+  id: IsSuccess
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: IsSuccess
+  nameWithType: HTTPResponse.IsSuccess
+  fullName: BestHTTP.HTTPResponse.IsSuccess
+  type: Property
+  source:
+    id: IsSuccess
+    path: ''
+    startLine: 2667
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nReturns true if the status code is in the range of [200..300[ or 304 (Not Modified)\n"
+  example: []
+  syntax:
+    content: public bool IsSuccess { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsSuccess As Boolean
+  overload: BestHTTP.HTTPResponse.IsSuccess*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPResponse.Message
+  commentId: P:BestHTTP.HTTPResponse.Message
+  id: Message
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: HTTPResponse.Message
+  fullName: BestHTTP.HTTPResponse.Message
+  type: Property
+  source:
+    id: Message
+    path: ''
+    startLine: 2672
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe message that sent along with the StatusCode from the server. You can check it for errors from the server.\n"
+  example: []
+  syntax:
+    content: public string Message { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: BestHTTP.HTTPResponse.Message*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: BestHTTP.HTTPResponse.IsStreamed
+  commentId: P:BestHTTP.HTTPResponse.IsStreamed
+  id: IsStreamed
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: IsStreamed
+  nameWithType: HTTPResponse.IsStreamed
+  fullName: BestHTTP.HTTPResponse.IsStreamed
+  type: Property
+  source:
+    id: IsStreamed
+    path: ''
+    startLine: 2677
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nTrue if it&apos;s a streamed response.\n"
+  example: []
+  syntax:
+    content: public bool IsStreamed { get; protected set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsStreamed As Boolean
+  overload: BestHTTP.HTTPResponse.IsStreamed*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: BestHTTP.HTTPResponse.IsStreamingFinished
+  commentId: P:BestHTTP.HTTPResponse.IsStreamingFinished
+  id: IsStreamingFinished
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: IsStreamingFinished
+  nameWithType: HTTPResponse.IsStreamingFinished
+  fullName: BestHTTP.HTTPResponse.IsStreamingFinished
+  type: Property
+  source:
+    id: IsStreamingFinished
+    path: ''
+    startLine: 2682
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nTrue if the streaming is finished, and no more fragments are coming.\n"
+  example: []
+  syntax:
+    content: public bool IsStreamingFinished { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsStreamingFinished As Boolean
+  overload: BestHTTP.HTTPResponse.IsStreamingFinished*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPResponse.IsFromCache
+  commentId: P:BestHTTP.HTTPResponse.IsFromCache
+  id: IsFromCache
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: IsFromCache
+  nameWithType: HTTPResponse.IsFromCache
+  fullName: BestHTTP.HTTPResponse.IsFromCache
+  type: Property
+  source:
+    id: IsFromCache
+    path: ''
+    startLine: 2688
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nIndicates that the response body is read from the cache.\n"
+  example: []
+  syntax:
+    content: public bool IsFromCache { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFromCache As Boolean
+  overload: BestHTTP.HTTPResponse.IsFromCache*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPResponse.CacheFileInfo
+  commentId: P:BestHTTP.HTTPResponse.CacheFileInfo
+  id: CacheFileInfo
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: CacheFileInfo
+  nameWithType: HTTPResponse.CacheFileInfo
+  fullName: BestHTTP.HTTPResponse.CacheFileInfo
+  type: Property
+  source:
+    id: CacheFileInfo
+    path: ''
+    startLine: 2693
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nProvides information about the file used for caching the request.\n"
+  example: []
+  syntax:
+    content: public HTTPCacheFileInfo CacheFileInfo { get; }
+    parameters: []
+    return:
+      type: BestHTTP.Caching.HTTPCacheFileInfo
+    content.vb: Public ReadOnly Property CacheFileInfo As HTTPCacheFileInfo
+  overload: BestHTTP.HTTPResponse.CacheFileInfo*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPResponse.IsCacheOnly
+  commentId: P:BestHTTP.HTTPResponse.IsCacheOnly
+  id: IsCacheOnly
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: IsCacheOnly
+  nameWithType: HTTPResponse.IsCacheOnly
+  fullName: BestHTTP.HTTPResponse.IsCacheOnly
+  type: Property
+  source:
+    id: IsCacheOnly
+    path: ''
+    startLine: 2699
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nDetermines if this response is only stored to cache.\nIf both IsCacheOnly and IsStreamed are true, GetStreamedFragments should not be called.\n"
+  example: []
+  syntax:
+    content: public bool IsCacheOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCacheOnly As Boolean
+  overload: BestHTTP.HTTPResponse.IsCacheOnly*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPResponse.Headers
+  commentId: P:BestHTTP.HTTPResponse.Headers
+  id: Headers
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: Headers
+  nameWithType: HTTPResponse.Headers
+  fullName: BestHTTP.HTTPResponse.Headers
+  type: Property
+  source:
+    id: Headers
+    path: ''
+    startLine: 2705
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe headers that sent from the server.\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, List<string>> Headers { get; protected set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+    content.vb: Public Property Headers As Dictionary(Of String, List(Of String))
+  overload: BestHTTP.HTTPResponse.Headers*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: BestHTTP.HTTPResponse.Data
+  commentId: P:BestHTTP.HTTPResponse.Data
+  id: Data
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: HTTPResponse.Data
+  fullName: BestHTTP.HTTPResponse.Data
+  type: Property
+  source:
+    id: Data
+    path: ''
+    startLine: 2710
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe data that downloaded from the server. All Transfer and Content encodings decoded if any(eg. chunked, gzip, deflate).\n"
+  example: []
+  syntax:
+    content: public byte[] Data { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public ReadOnly Property Data As Byte()
+  overload: BestHTTP.HTTPResponse.Data*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPResponse.IsUpgraded
+  commentId: P:BestHTTP.HTTPResponse.IsUpgraded
+  id: IsUpgraded
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: IsUpgraded
+  nameWithType: HTTPResponse.IsUpgraded
+  fullName: BestHTTP.HTTPResponse.IsUpgraded
+  type: Property
+  source:
+    id: IsUpgraded
+    path: ''
+    startLine: 2715
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe normal HTTP protocol is upgraded to an other.\n"
+  example: []
+  syntax:
+    content: public bool IsUpgraded { get; protected set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsUpgraded As Boolean
+  overload: BestHTTP.HTTPResponse.IsUpgraded*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: BestHTTP.HTTPResponse.Cookies
+  commentId: P:BestHTTP.HTTPResponse.Cookies
+  id: Cookies
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: Cookies
+  nameWithType: HTTPResponse.Cookies
+  fullName: BestHTTP.HTTPResponse.Cookies
+  type: Property
+  source:
+    id: Cookies
+    path: ''
+    startLine: 2721
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe cookies that the server sent to the client.\n"
+  example: []
+  syntax:
+    content: public List<Cookie> Cookies { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{BestHTTP.Cookies.Cookie}
+    content.vb: Public ReadOnly Property Cookies As List(Of Cookie)
+  overload: BestHTTP.HTTPResponse.Cookies*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPResponse.dataAsText
+  commentId: F:BestHTTP.HTTPResponse.dataAsText
+  id: dataAsText
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: dataAsText
+  nameWithType: HTTPResponse.dataAsText
+  fullName: BestHTTP.HTTPResponse.dataAsText
+  type: Field
+  source:
+    id: dataAsText
+    path: ''
+    startLine: 2727
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nCached, converted data.\n"
+  example: []
+  syntax:
+    content: protected string dataAsText
+    return:
+      type: System.String
+    content.vb: Protected dataAsText As String
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.DataAsText
+  commentId: P:BestHTTP.HTTPResponse.DataAsText
+  id: DataAsText
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: DataAsText
+  nameWithType: HTTPResponse.DataAsText
+  fullName: BestHTTP.HTTPResponse.DataAsText
+  type: Property
+  source:
+    id: DataAsText
+    path: ''
+    startLine: 2732
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe data converted to an UTF8 string.\n"
+  example: []
+  syntax:
+    content: public string DataAsText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DataAsText As String
+  overload: BestHTTP.HTTPResponse.DataAsText*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPResponse.texture
+  commentId: F:BestHTTP.HTTPResponse.texture
+  id: texture
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: texture
+  nameWithType: HTTPResponse.texture
+  fullName: BestHTTP.HTTPResponse.texture
+  type: Field
+  source:
+    id: texture
+    path: ''
+    startLine: 2749
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nCached converted data.\n"
+  example: []
+  syntax:
+    content: protected UnityEngine.Texture2D texture
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Protected texture As UnityEngine.Texture2D
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.DataAsTexture2D
+  commentId: P:BestHTTP.HTTPResponse.DataAsTexture2D
+  id: DataAsTexture2D
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: DataAsTexture2D
+  nameWithType: HTTPResponse.DataAsTexture2D
+  fullName: BestHTTP.HTTPResponse.DataAsTexture2D
+  type: Property
+  source:
+    id: DataAsTexture2D
+    path: ''
+    startLine: 2754
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe data loaded to a Texture2D.\n"
+  example: []
+  syntax:
+    content: public UnityEngine.Texture2D DataAsTexture2D { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public ReadOnly Property DataAsTexture2D As UnityEngine.Texture2D
+  overload: BestHTTP.HTTPResponse.DataAsTexture2D*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.HTTPResponse.IsClosedManually
+  commentId: P:BestHTTP.HTTPResponse.IsClosedManually
+  id: IsClosedManually
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: IsClosedManually
+  nameWithType: HTTPResponse.IsClosedManually
+  fullName: BestHTTP.HTTPResponse.IsClosedManually
+  type: Property
+  source:
+    id: IsClosedManually
+    path: ''
+    startLine: 2775
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nTrue if the connection&apos;s stream will be closed manually. Used in custom protocols (WebSocket, EventSource).\n"
+  example: []
+  syntax:
+    content: public bool IsClosedManually { get; protected set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsClosedManually As Boolean
+  overload: BestHTTP.HTTPResponse.IsClosedManually*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: BestHTTP.HTTPResponse.Stream
+  commentId: F:BestHTTP.HTTPResponse.Stream
+  id: Stream
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: HTTPResponse.Stream
+  fullName: BestHTTP.HTTPResponse.Stream
+  type: Field
+  source:
+    id: Stream
+    path: ''
+    startLine: 2787
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected Stream Stream
+    return:
+      type: Stream
+    content.vb: Protected Stream As Stream
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.streamedFragments
+  commentId: F:BestHTTP.HTTPResponse.streamedFragments
+  id: streamedFragments
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: streamedFragments
+  nameWithType: HTTPResponse.streamedFragments
+  fullName: BestHTTP.HTTPResponse.streamedFragments
+  type: Field
+  source:
+    id: streamedFragments
+    path: ''
+    startLine: 2789
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected List<byte[]> streamedFragments
+    return:
+      type: System.Collections.Generic.List{System.Byte[]}
+    content.vb: Protected streamedFragments As List(Of Byte())
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.SyncRoot
+  commentId: F:BestHTTP.HTTPResponse.SyncRoot
+  id: SyncRoot
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: SyncRoot
+  nameWithType: HTTPResponse.SyncRoot
+  fullName: BestHTTP.HTTPResponse.SyncRoot
+  type: Field
+  source:
+    id: SyncRoot
+    path: ''
+    startLine: 2790
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected object SyncRoot
+    return:
+      type: System.Object
+    content.vb: Protected SyncRoot As Object
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.fragmentBuffer
+  commentId: F:BestHTTP.HTTPResponse.fragmentBuffer
+  id: fragmentBuffer
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: fragmentBuffer
+  nameWithType: HTTPResponse.fragmentBuffer
+  fullName: BestHTTP.HTTPResponse.fragmentBuffer
+  type: Field
+  source:
+    id: fragmentBuffer
+    path: ''
+    startLine: 2792
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected byte[] fragmentBuffer
+    return:
+      type: System.Byte[]
+    content.vb: Protected fragmentBuffer As Byte()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.fragmentBufferDataLength
+  commentId: F:BestHTTP.HTTPResponse.fragmentBufferDataLength
+  id: fragmentBufferDataLength
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: fragmentBufferDataLength
+  nameWithType: HTTPResponse.fragmentBufferDataLength
+  fullName: BestHTTP.HTTPResponse.fragmentBufferDataLength
+  type: Field
+  source:
+    id: fragmentBufferDataLength
+    path: ''
+    startLine: 2793
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected int fragmentBufferDataLength
+    return:
+      type: System.Int32
+    content.vb: Protected fragmentBufferDataLength As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.cacheStream
+  commentId: F:BestHTTP.HTTPResponse.cacheStream
+  id: cacheStream
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: cacheStream
+  nameWithType: HTTPResponse.cacheStream
+  fullName: BestHTTP.HTTPResponse.cacheStream
+  type: Field
+  source:
+    id: cacheStream
+    path: ''
+    startLine: 2795
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected Stream cacheStream
+    return:
+      type: Stream
+    content.vb: Protected cacheStream As Stream
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.allFragmentSize
+  commentId: F:BestHTTP.HTTPResponse.allFragmentSize
+  id: allFragmentSize
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: allFragmentSize
+  nameWithType: HTTPResponse.allFragmentSize
+  fullName: BestHTTP.HTTPResponse.allFragmentSize
+  type: Field
+  source:
+    id: allFragmentSize
+    path: ''
+    startLine: 2797
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected int allFragmentSize
+    return:
+      type: System.Int32
+    content.vb: Protected allFragmentSize As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.ReadPayload(System.Int32)
+  commentId: M:BestHTTP.HTTPResponse.ReadPayload(System.Int32)
+  id: ReadPayload(System.Int32)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: ReadPayload(Int32)
+  nameWithType: HTTPResponse.ReadPayload(Int32)
+  fullName: BestHTTP.HTTPResponse.ReadPayload(System.Int32)
+  type: Method
+  source:
+    id: ReadPayload
+    path: ''
+    startLine: 2897
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected bool ReadPayload(int forceReadRawContentLength)
+    parameters:
+    - id: forceReadRawContentLength
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Protected Function ReadPayload(forceReadRawContentLength As Integer) As Boolean
+  overload: BestHTTP.HTTPResponse.ReadPayload*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.ReadHeaders(Stream)
+  commentId: M:BestHTTP.HTTPResponse.ReadHeaders(Stream)
+  id: ReadHeaders(Stream)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: ReadHeaders(Stream)
+  nameWithType: HTTPResponse.ReadHeaders(Stream)
+  fullName: BestHTTP.HTTPResponse.ReadHeaders(Stream)
+  type: Method
+  source:
+    id: ReadHeaders
+    path: ''
+    startLine: 2952
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected void ReadHeaders(Stream stream)
+    parameters:
+    - id: stream
+      type: Stream
+    content.vb: Protected Sub ReadHeaders(stream As Stream)
+  overload: BestHTTP.HTTPResponse.ReadHeaders*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.AddHeader(System.String,System.String)
+  commentId: M:BestHTTP.HTTPResponse.AddHeader(System.String,System.String)
+  id: AddHeader(System.String,System.String)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: AddHeader(String, String)
+  nameWithType: HTTPResponse.AddHeader(String, String)
+  fullName: BestHTTP.HTTPResponse.AddHeader(System.String, System.String)
+  type: Method
+  source:
+    id: AddHeader
+    path: ''
+    startLine: 2968
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected void AddHeader(string name, string value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Protected Sub AddHeader(name As String, value As String)
+  overload: BestHTTP.HTTPResponse.AddHeader*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.GetHeaderValues(System.String)
+  commentId: M:BestHTTP.HTTPResponse.GetHeaderValues(System.String)
+  id: GetHeaderValues(System.String)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: GetHeaderValues(String)
+  nameWithType: HTTPResponse.GetHeaderValues(String)
+  fullName: BestHTTP.HTTPResponse.GetHeaderValues(System.String)
+  type: Method
+  source:
+    id: GetHeaderValues
+    path: ''
+    startLine: 2988
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nReturns the list of values that received from the server for the given header name.\n<remarks>Remarks: All headers converted to lowercase while reading the response.</remarks>\n"
+  example: []
+  syntax:
+    content: public List<string> GetHeaderValues(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the header
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: If no header found with the given name or there are no values in the list (eg. Count == 0) returns null.
+    content.vb: Public Function GetHeaderValues(name As String) As List(Of String)
+  overload: BestHTTP.HTTPResponse.GetHeaderValues*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPResponse.GetFirstHeaderValue(System.String)
+  commentId: M:BestHTTP.HTTPResponse.GetFirstHeaderValue(System.String)
+  id: GetFirstHeaderValue(System.String)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: GetFirstHeaderValue(String)
+  nameWithType: HTTPResponse.GetFirstHeaderValue(String)
+  fullName: BestHTTP.HTTPResponse.GetFirstHeaderValue(System.String)
+  type: Method
+  source:
+    id: GetFirstHeaderValue
+    path: ''
+    startLine: 3007
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nReturns the first value in the header list or null if there are no header or value.\n"
+  example: []
+  syntax:
+    content: public string GetFirstHeaderValue(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the header
+    return:
+      type: System.String
+      description: If no header found with the given name or there are no values in the list (eg. Count == 0) returns null.
+    content.vb: Public Function GetFirstHeaderValue(name As String) As String
+  overload: BestHTTP.HTTPResponse.GetFirstHeaderValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPResponse.HasHeaderWithValue(System.String,System.String)
+  commentId: M:BestHTTP.HTTPResponse.HasHeaderWithValue(System.String,System.String)
+  id: HasHeaderWithValue(System.String,System.String)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: HasHeaderWithValue(String, String)
+  nameWithType: HTTPResponse.HasHeaderWithValue(String, String)
+  fullName: BestHTTP.HTTPResponse.HasHeaderWithValue(System.String, System.String)
+  type: Method
+  source:
+    id: HasHeaderWithValue
+    path: ''
+    startLine: 3027
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nChecks if there is a header with the given name and value.\n"
+  example: []
+  syntax:
+    content: public bool HasHeaderWithValue(string headerName, string value)
+    parameters:
+    - id: headerName
+      type: System.String
+      description: Name of the header.
+    - id: value
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: Returns true if there is a header with the given name and value.
+    content.vb: Public Function HasHeaderWithValue(headerName As String, value As String) As Boolean
+  overload: BestHTTP.HTTPResponse.HasHeaderWithValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPResponse.HasHeader(System.String)
+  commentId: M:BestHTTP.HTTPResponse.HasHeader(System.String)
+  id: HasHeader(System.String)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: HasHeader(String)
+  nameWithType: HTTPResponse.HasHeader(String)
+  fullName: BestHTTP.HTTPResponse.HasHeader(System.String)
+  type: Method
+  source:
+    id: HasHeader
+    path: ''
+    startLine: 3045
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nChecks if there is a header with the given name.\n"
+  example: []
+  syntax:
+    content: public bool HasHeader(string headerName)
+    parameters:
+    - id: headerName
+      type: System.String
+      description: Name of the header.
+    return:
+      type: System.Boolean
+      description: Returns true if there is a header with the given name.
+    content.vb: Public Function HasHeader(headerName As String) As Boolean
+  overload: BestHTTP.HTTPResponse.HasHeader*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPResponse.GetRange
+  commentId: M:BestHTTP.HTTPResponse.GetRange
+  id: GetRange
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: GetRange()
+  nameWithType: HTTPResponse.GetRange()
+  fullName: BestHTTP.HTTPResponse.GetRange()
+  type: Method
+  source:
+    id: GetRange
+    path: ''
+    startLine: 3060
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nParses the &apos;Content-Range&apos; header&apos;s value and returns a HTTPRange object.\n"
+  remarks: >-
+    If the server ignores a byte-range-spec because it is syntactically invalid, the server SHOULD treat the request as if the invalid Range header field did not exist.
+
+    (Normally, this means return a 200 response containing the full entity). In this case because of there are no &apos;Content-Range&apos; header, this function will return null!
+  example: []
+  syntax:
+    content: public HTTPRange GetRange()
+    return:
+      type: BestHTTP.HTTPRange
+      description: Returns null if no &apos;Content-Range&apos; header found.
+    content.vb: Public Function GetRange As HTTPRange
+  overload: BestHTTP.HTTPResponse.GetRange*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPResponse.ReadTo(Stream,System.Byte)
+  commentId: M:BestHTTP.HTTPResponse.ReadTo(Stream,System.Byte)
+  id: ReadTo(Stream,System.Byte)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: ReadTo(Stream, Byte)
+  nameWithType: HTTPResponse.ReadTo(Stream, Byte)
+  fullName: BestHTTP.HTTPResponse.ReadTo(Stream, System.Byte)
+  type: Method
+  source:
+    id: ReadTo
+    path: ''
+    startLine: 3086
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public static string ReadTo(Stream stream, byte blocker)
+    parameters:
+    - id: stream
+      type: Stream
+    - id: blocker
+      type: System.Byte
+    return:
+      type: System.String
+    content.vb: Public Shared Function ReadTo(stream As Stream, blocker As Byte) As String
+  overload: BestHTTP.HTTPResponse.ReadTo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BestHTTP.HTTPResponse.ReadTo(Stream,System.Byte,System.Byte)
+  commentId: M:BestHTTP.HTTPResponse.ReadTo(Stream,System.Byte,System.Byte)
+  id: ReadTo(Stream,System.Byte,System.Byte)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: ReadTo(Stream, Byte, Byte)
+  nameWithType: HTTPResponse.ReadTo(Stream, Byte, Byte)
+  fullName: BestHTTP.HTTPResponse.ReadTo(Stream, System.Byte, System.Byte)
+  type: Method
+  source:
+    id: ReadTo
+    path: ''
+    startLine: 3101
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public static string ReadTo(Stream stream, byte blocker1, byte blocker2)
+    parameters:
+    - id: stream
+      type: Stream
+    - id: blocker1
+      type: System.Byte
+    - id: blocker2
+      type: System.Byte
+    return:
+      type: System.String
+    content.vb: Public Shared Function ReadTo(stream As Stream, blocker1 As Byte, blocker2 As Byte) As String
+  overload: BestHTTP.HTTPResponse.ReadTo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BestHTTP.HTTPResponse.NoTrimReadTo(Stream,System.Byte,System.Byte)
+  commentId: M:BestHTTP.HTTPResponse.NoTrimReadTo(Stream,System.Byte,System.Byte)
+  id: NoTrimReadTo(Stream,System.Byte,System.Byte)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: NoTrimReadTo(Stream, Byte, Byte)
+  nameWithType: HTTPResponse.NoTrimReadTo(Stream, Byte, Byte)
+  fullName: BestHTTP.HTTPResponse.NoTrimReadTo(Stream, System.Byte, System.Byte)
+  type: Method
+  source:
+    id: NoTrimReadTo
+    path: ''
+    startLine: 3116
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: public static string NoTrimReadTo(Stream stream, byte blocker1, byte blocker2)
+    parameters:
+    - id: stream
+      type: Stream
+    - id: blocker1
+      type: System.Byte
+    - id: blocker2
+      type: System.Byte
+    return:
+      type: System.String
+    content.vb: Public Shared Function NoTrimReadTo(stream As Stream, blocker1 As Byte, blocker2 As Byte) As String
+  overload: BestHTTP.HTTPResponse.NoTrimReadTo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BestHTTP.HTTPResponse.ReadChunkLength(Stream)
+  commentId: M:BestHTTP.HTTPResponse.ReadChunkLength(Stream)
+  id: ReadChunkLength(Stream)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: ReadChunkLength(Stream)
+  nameWithType: HTTPResponse.ReadChunkLength(Stream)
+  fullName: BestHTTP.HTTPResponse.ReadChunkLength(Stream)
+  type: Method
+  source:
+    id: ReadChunkLength
+    path: ''
+    startLine: 3135
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected int ReadChunkLength(Stream stream)
+    parameters:
+    - id: stream
+      type: Stream
+    return:
+      type: System.Int32
+    content.vb: Protected Function ReadChunkLength(stream As Stream) As Integer
+  overload: BestHTTP.HTTPResponse.ReadChunkLength*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.ReadChunked(Stream)
+  commentId: M:BestHTTP.HTTPResponse.ReadChunked(Stream)
+  id: ReadChunked(Stream)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: ReadChunked(Stream)
+  nameWithType: HTTPResponse.ReadChunked(Stream)
+  fullName: BestHTTP.HTTPResponse.ReadChunked(Stream)
+  type: Method
+  source:
+    id: ReadChunked
+    path: ''
+    startLine: 3150
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected void ReadChunked(Stream stream)
+    parameters:
+    - id: stream
+      type: Stream
+    content.vb: Protected Sub ReadChunked(stream As Stream)
+  overload: BestHTTP.HTTPResponse.ReadChunked*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.ReadUnknownSize(Stream)
+  commentId: M:BestHTTP.HTTPResponse.ReadUnknownSize(Stream)
+  id: ReadUnknownSize(Stream)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: ReadUnknownSize(Stream)
+  nameWithType: HTTPResponse.ReadUnknownSize(Stream)
+  fullName: BestHTTP.HTTPResponse.ReadUnknownSize(Stream)
+  type: Method
+  source:
+    id: ReadUnknownSize
+    path: ''
+    startLine: 3355
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected void ReadUnknownSize(Stream stream)
+    parameters:
+    - id: stream
+      type: Stream
+    content.vb: Protected Sub ReadUnknownSize(stream As Stream)
+  overload: BestHTTP.HTTPResponse.ReadUnknownSize*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.DecodeStream(MemoryStream)
+  commentId: M:BestHTTP.HTTPResponse.DecodeStream(MemoryStream)
+  id: DecodeStream(MemoryStream)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: DecodeStream(MemoryStream)
+  nameWithType: HTTPResponse.DecodeStream(MemoryStream)
+  fullName: BestHTTP.HTTPResponse.DecodeStream(MemoryStream)
+  type: Method
+  source:
+    id: DecodeStream
+    path: ''
+    startLine: 3447
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected byte[] DecodeStream(MemoryStream streamToDecode)
+    parameters:
+    - id: streamToDecode
+      type: MemoryStream
+    return:
+      type: System.Byte[]
+    content.vb: Protected Function DecodeStream(streamToDecode As MemoryStream) As Byte()
+  overload: BestHTTP.HTTPResponse.DecodeStream*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.BeginReceiveStreamFragments
+  commentId: M:BestHTTP.HTTPResponse.BeginReceiveStreamFragments
+  id: BeginReceiveStreamFragments
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: BeginReceiveStreamFragments()
+  nameWithType: HTTPResponse.BeginReceiveStreamFragments()
+  fullName: BestHTTP.HTTPResponse.BeginReceiveStreamFragments()
+  type: Method
+  source:
+    id: BeginReceiveStreamFragments
+    path: ''
+    startLine: 3549
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected void BeginReceiveStreamFragments()
+    content.vb: Protected Sub BeginReceiveStreamFragments
+  overload: BestHTTP.HTTPResponse.BeginReceiveStreamFragments*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.FeedStreamFragment(System.Byte[],System.Int32,System.Int32)
+  commentId: M:BestHTTP.HTTPResponse.FeedStreamFragment(System.Byte[],System.Int32,System.Int32)
+  id: FeedStreamFragment(System.Byte[],System.Int32,System.Int32)
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: FeedStreamFragment(Byte[], Int32, Int32)
+  nameWithType: HTTPResponse.FeedStreamFragment(Byte[], Int32, Int32)
+  fullName: BestHTTP.HTTPResponse.FeedStreamFragment(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: FeedStreamFragment
+    path: ''
+    startLine: 3568
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nAdd data to the fragments list.\n"
+  example: []
+  syntax:
+    content: protected void FeedStreamFragment(byte[] buffer, int pos, int length)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The buffer to be added.
+    - id: pos
+      type: System.Int32
+      description: The position where we start copy the data.
+    - id: length
+      type: System.Int32
+      description: How many data we want to copy.
+    content.vb: Protected Sub FeedStreamFragment(buffer As Byte(), pos As Integer, length As Integer)
+  overload: BestHTTP.HTTPResponse.FeedStreamFragment*
+  nameWithType.vb: HTTPResponse.FeedStreamFragment(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: BestHTTP.HTTPResponse.FeedStreamFragment(System.Byte(), System.Int32, System.Int32)
+  name.vb: FeedStreamFragment(Byte(), Int32, Int32)
+- uid: BestHTTP.HTTPResponse.FlushRemainingFragmentBuffer
+  commentId: M:BestHTTP.HTTPResponse.FlushRemainingFragmentBuffer
+  id: FlushRemainingFragmentBuffer
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: FlushRemainingFragmentBuffer()
+  nameWithType: HTTPResponse.FlushRemainingFragmentBuffer()
+  fullName: BestHTTP.HTTPResponse.FlushRemainingFragmentBuffer()
+  type: Method
+  source:
+    id: FlushRemainingFragmentBuffer
+    path: ''
+    startLine: 3597
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected void FlushRemainingFragmentBuffer()
+    content.vb: Protected Sub FlushRemainingFragmentBuffer
+  overload: BestHTTP.HTTPResponse.FlushRemainingFragmentBuffer*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.AddStreamedFragment(System.Byte[])
+  commentId: M:BestHTTP.HTTPResponse.AddStreamedFragment(System.Byte[])
+  id: AddStreamedFragment(System.Byte[])
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: AddStreamedFragment(Byte[])
+  nameWithType: HTTPResponse.AddStreamedFragment(Byte[])
+  fullName: BestHTTP.HTTPResponse.AddStreamedFragment(System.Byte[])
+  type: Method
+  source:
+    id: AddStreamedFragment
+    path: ''
+    startLine: 3619
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected void AddStreamedFragment(byte[] buffer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    content.vb: Protected Sub AddStreamedFragment(buffer As Byte())
+  overload: BestHTTP.HTTPResponse.AddStreamedFragment*
+  nameWithType.vb: HTTPResponse.AddStreamedFragment(Byte())
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: BestHTTP.HTTPResponse.AddStreamedFragment(System.Byte())
+  name.vb: AddStreamedFragment(Byte())
+- uid: BestHTTP.HTTPResponse.WaitWhileHasFragments
+  commentId: M:BestHTTP.HTTPResponse.WaitWhileHasFragments
+  id: WaitWhileHasFragments
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: WaitWhileHasFragments()
+  nameWithType: HTTPResponse.WaitWhileHasFragments()
+  fullName: BestHTTP.HTTPResponse.WaitWhileHasFragments()
+  type: Method
+  source:
+    id: WaitWhileHasFragments
+    path: ''
+    startLine: 3647
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  syntax:
+    content: protected void WaitWhileHasFragments()
+    content.vb: Protected Sub WaitWhileHasFragments
+  overload: BestHTTP.HTTPResponse.WaitWhileHasFragments*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BestHTTP.HTTPResponse.GetStreamedFragments
+  commentId: M:BestHTTP.HTTPResponse.GetStreamedFragments
+  id: GetStreamedFragments
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: GetStreamedFragments()
+  nameWithType: HTTPResponse.GetStreamedFragments()
+  fullName: BestHTTP.HTTPResponse.GetStreamedFragments()
+  type: Method
+  source:
+    id: GetStreamedFragments
+    path: ''
+    startLine: 3674
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nIf streaming is used, then every time this callback function called we can use this function to\nretrieve the downloaded and buffered data. The returned list can be null, if there is no data yet.\n"
+  example: []
+  syntax:
+    content: public List<byte[]> GetStreamedFragments()
+    return:
+      type: System.Collections.Generic.List{System.Byte[]}
+      description: ''
+    content.vb: Public Function GetStreamedFragments As List(Of Byte())
+  overload: BestHTTP.HTTPResponse.GetStreamedFragments*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.HTTPResponse.Dispose
+  commentId: M:BestHTTP.HTTPResponse.Dispose
+  id: Dispose
+  parent: BestHTTP.HTTPResponse
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: HTTPResponse.Dispose()
+  fullName: BestHTTP.HTTPResponse.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: ''
+    startLine: 3720
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nIDisposable implementation.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: BestHTTP.HTTPResponse.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BestHTTP
+  commentId: N:BestHTTP
+  name: BestHTTP
+  nameWithType: BestHTTP
+  fullName: BestHTTP
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: BestHTTP.HTTPResponse.VersionMajor*
+  commentId: Overload:BestHTTP.HTTPResponse.VersionMajor
+  name: VersionMajor
+  nameWithType: HTTPResponse.VersionMajor
+  fullName: BestHTTP.HTTPResponse.VersionMajor
+- uid: BestHTTP.HTTPResponse.VersionMinor*
+  commentId: Overload:BestHTTP.HTTPResponse.VersionMinor
+  name: VersionMinor
+  nameWithType: HTTPResponse.VersionMinor
+  fullName: BestHTTP.HTTPResponse.VersionMinor
+- uid: BestHTTP.HTTPResponse.StatusCode*
+  commentId: Overload:BestHTTP.HTTPResponse.StatusCode
+  name: StatusCode
+  nameWithType: HTTPResponse.StatusCode
+  fullName: BestHTTP.HTTPResponse.StatusCode
+- uid: BestHTTP.HTTPResponse.IsSuccess*
+  commentId: Overload:BestHTTP.HTTPResponse.IsSuccess
+  name: IsSuccess
+  nameWithType: HTTPResponse.IsSuccess
+  fullName: BestHTTP.HTTPResponse.IsSuccess
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BestHTTP.HTTPResponse.Message*
+  commentId: Overload:BestHTTP.HTTPResponse.Message
+  name: Message
+  nameWithType: HTTPResponse.Message
+  fullName: BestHTTP.HTTPResponse.Message
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BestHTTP.HTTPResponse.IsStreamed*
+  commentId: Overload:BestHTTP.HTTPResponse.IsStreamed
+  name: IsStreamed
+  nameWithType: HTTPResponse.IsStreamed
+  fullName: BestHTTP.HTTPResponse.IsStreamed
+- uid: BestHTTP.HTTPResponse.IsStreamingFinished*
+  commentId: Overload:BestHTTP.HTTPResponse.IsStreamingFinished
+  name: IsStreamingFinished
+  nameWithType: HTTPResponse.IsStreamingFinished
+  fullName: BestHTTP.HTTPResponse.IsStreamingFinished
+- uid: BestHTTP.HTTPResponse.IsFromCache*
+  commentId: Overload:BestHTTP.HTTPResponse.IsFromCache
+  name: IsFromCache
+  nameWithType: HTTPResponse.IsFromCache
+  fullName: BestHTTP.HTTPResponse.IsFromCache
+- uid: BestHTTP.HTTPResponse.CacheFileInfo*
+  commentId: Overload:BestHTTP.HTTPResponse.CacheFileInfo
+  name: CacheFileInfo
+  nameWithType: HTTPResponse.CacheFileInfo
+  fullName: BestHTTP.HTTPResponse.CacheFileInfo
+- uid: BestHTTP.Caching.HTTPCacheFileInfo
+  commentId: T:BestHTTP.Caching.HTTPCacheFileInfo
+  parent: BestHTTP.Caching
+  name: HTTPCacheFileInfo
+  nameWithType: HTTPCacheFileInfo
+  fullName: BestHTTP.Caching.HTTPCacheFileInfo
+- uid: BestHTTP.Caching
+  commentId: N:BestHTTP.Caching
+  name: BestHTTP.Caching
+  nameWithType: BestHTTP.Caching
+  fullName: BestHTTP.Caching
+- uid: BestHTTP.HTTPResponse.IsCacheOnly*
+  commentId: Overload:BestHTTP.HTTPResponse.IsCacheOnly
+  name: IsCacheOnly
+  nameWithType: HTTPResponse.IsCacheOnly
+  fullName: BestHTTP.HTTPResponse.IsCacheOnly
+- uid: BestHTTP.HTTPResponse.Headers*
+  commentId: Overload:BestHTTP.HTTPResponse.Headers
+  name: Headers
+  nameWithType: HTTPResponse.Headers
+  fullName: BestHTTP.HTTPResponse.Headers
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, List<String>>
+  nameWithType: Dictionary<String, List<String>>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Collections.Generic.List<System.String>>
+  nameWithType.vb: Dictionary(Of String, List(Of String))
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Collections.Generic.List(Of System.String))
+  name.vb: Dictionary(Of String, List(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: BestHTTP.HTTPResponse.Data*
+  commentId: Overload:BestHTTP.HTTPResponse.Data
+  name: Data
+  nameWithType: HTTPResponse.Data
+  fullName: BestHTTP.HTTPResponse.Data
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BestHTTP.HTTPResponse.IsUpgraded*
+  commentId: Overload:BestHTTP.HTTPResponse.IsUpgraded
+  name: IsUpgraded
+  nameWithType: HTTPResponse.IsUpgraded
+  fullName: BestHTTP.HTTPResponse.IsUpgraded
+- uid: BestHTTP.HTTPResponse.Cookies*
+  commentId: Overload:BestHTTP.HTTPResponse.Cookies
+  name: Cookies
+  nameWithType: HTTPResponse.Cookies
+  fullName: BestHTTP.HTTPResponse.Cookies
+- uid: System.Collections.Generic.List{BestHTTP.Cookies.Cookie}
+  commentId: T:System.Collections.Generic.List{BestHTTP.Cookies.Cookie}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Cookie>
+  nameWithType: List<Cookie>
+  fullName: System.Collections.Generic.List<BestHTTP.Cookies.Cookie>
+  nameWithType.vb: List(Of Cookie)
+  fullName.vb: System.Collections.Generic.List(Of BestHTTP.Cookies.Cookie)
+  name.vb: List(Of Cookie)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BestHTTP.Cookies.Cookie
+    name: Cookie
+    nameWithType: Cookie
+    fullName: BestHTTP.Cookies.Cookie
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BestHTTP.Cookies.Cookie
+    name: Cookie
+    nameWithType: Cookie
+    fullName: BestHTTP.Cookies.Cookie
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.HTTPResponse.DataAsText*
+  commentId: Overload:BestHTTP.HTTPResponse.DataAsText
+  name: DataAsText
+  nameWithType: HTTPResponse.DataAsText
+  fullName: BestHTTP.HTTPResponse.DataAsText
+- uid: UnityEngine.Texture2D
+  isExternal: true
+  name: UnityEngine.Texture2D
+  nameWithType: UnityEngine.Texture2D
+  fullName: UnityEngine.Texture2D
+- uid: BestHTTP.HTTPResponse.DataAsTexture2D*
+  commentId: Overload:BestHTTP.HTTPResponse.DataAsTexture2D
+  name: DataAsTexture2D
+  nameWithType: HTTPResponse.DataAsTexture2D
+  fullName: BestHTTP.HTTPResponse.DataAsTexture2D
+- uid: BestHTTP.HTTPResponse.IsClosedManually*
+  commentId: Overload:BestHTTP.HTTPResponse.IsClosedManually
+  name: IsClosedManually
+  nameWithType: HTTPResponse.IsClosedManually
+  fullName: BestHTTP.HTTPResponse.IsClosedManually
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: System.Collections.Generic.List{System.Byte[]}
+  commentId: T:System.Collections.Generic.List{System.Byte[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Byte[]>
+  nameWithType: List<Byte[]>
+  fullName: System.Collections.Generic.List<System.Byte[]>
+  nameWithType.vb: List(Of Byte())
+  fullName.vb: System.Collections.Generic.List(Of System.Byte())
+  name.vb: List(Of Byte())
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.HTTPResponse.ReadPayload*
+  commentId: Overload:BestHTTP.HTTPResponse.ReadPayload
+  name: ReadPayload
+  nameWithType: HTTPResponse.ReadPayload
+  fullName: BestHTTP.HTTPResponse.ReadPayload
+- uid: BestHTTP.HTTPResponse.ReadHeaders*
+  commentId: Overload:BestHTTP.HTTPResponse.ReadHeaders
+  name: ReadHeaders
+  nameWithType: HTTPResponse.ReadHeaders
+  fullName: BestHTTP.HTTPResponse.ReadHeaders
+- uid: BestHTTP.HTTPResponse.AddHeader*
+  commentId: Overload:BestHTTP.HTTPResponse.AddHeader
+  name: AddHeader
+  nameWithType: HTTPResponse.AddHeader
+  fullName: BestHTTP.HTTPResponse.AddHeader
+- uid: BestHTTP.HTTPResponse.GetHeaderValues*
+  commentId: Overload:BestHTTP.HTTPResponse.GetHeaderValues
+  name: GetHeaderValues
+  nameWithType: HTTPResponse.GetHeaderValues
+  fullName: BestHTTP.HTTPResponse.GetHeaderValues
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.HTTPResponse.GetFirstHeaderValue*
+  commentId: Overload:BestHTTP.HTTPResponse.GetFirstHeaderValue
+  name: GetFirstHeaderValue
+  nameWithType: HTTPResponse.GetFirstHeaderValue
+  fullName: BestHTTP.HTTPResponse.GetFirstHeaderValue
+- uid: BestHTTP.HTTPResponse.HasHeaderWithValue*
+  commentId: Overload:BestHTTP.HTTPResponse.HasHeaderWithValue
+  name: HasHeaderWithValue
+  nameWithType: HTTPResponse.HasHeaderWithValue
+  fullName: BestHTTP.HTTPResponse.HasHeaderWithValue
+- uid: BestHTTP.HTTPResponse.HasHeader*
+  commentId: Overload:BestHTTP.HTTPResponse.HasHeader
+  name: HasHeader
+  nameWithType: HTTPResponse.HasHeader
+  fullName: BestHTTP.HTTPResponse.HasHeader
+- uid: BestHTTP.HTTPResponse.GetRange*
+  commentId: Overload:BestHTTP.HTTPResponse.GetRange
+  name: GetRange
+  nameWithType: HTTPResponse.GetRange
+  fullName: BestHTTP.HTTPResponse.GetRange
+- uid: BestHTTP.HTTPRange
+  commentId: T:BestHTTP.HTTPRange
+  parent: BestHTTP
+  name: HTTPRange
+  nameWithType: HTTPRange
+  fullName: BestHTTP.HTTPRange
+- uid: BestHTTP.HTTPResponse.ReadTo*
+  commentId: Overload:BestHTTP.HTTPResponse.ReadTo
+  name: ReadTo
+  nameWithType: HTTPResponse.ReadTo
+  fullName: BestHTTP.HTTPResponse.ReadTo
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: BestHTTP.HTTPResponse.NoTrimReadTo*
+  commentId: Overload:BestHTTP.HTTPResponse.NoTrimReadTo
+  name: NoTrimReadTo
+  nameWithType: HTTPResponse.NoTrimReadTo
+  fullName: BestHTTP.HTTPResponse.NoTrimReadTo
+- uid: BestHTTP.HTTPResponse.ReadChunkLength*
+  commentId: Overload:BestHTTP.HTTPResponse.ReadChunkLength
+  name: ReadChunkLength
+  nameWithType: HTTPResponse.ReadChunkLength
+  fullName: BestHTTP.HTTPResponse.ReadChunkLength
+- uid: BestHTTP.HTTPResponse.ReadChunked*
+  commentId: Overload:BestHTTP.HTTPResponse.ReadChunked
+  name: ReadChunked
+  nameWithType: HTTPResponse.ReadChunked
+  fullName: BestHTTP.HTTPResponse.ReadChunked
+- uid: BestHTTP.HTTPResponse.ReadUnknownSize*
+  commentId: Overload:BestHTTP.HTTPResponse.ReadUnknownSize
+  name: ReadUnknownSize
+  nameWithType: HTTPResponse.ReadUnknownSize
+  fullName: BestHTTP.HTTPResponse.ReadUnknownSize
+- uid: BestHTTP.HTTPResponse.DecodeStream*
+  commentId: Overload:BestHTTP.HTTPResponse.DecodeStream
+  name: DecodeStream
+  nameWithType: HTTPResponse.DecodeStream
+  fullName: BestHTTP.HTTPResponse.DecodeStream
+- uid: MemoryStream
+  isExternal: true
+  name: MemoryStream
+  nameWithType: MemoryStream
+  fullName: MemoryStream
+- uid: BestHTTP.HTTPResponse.BeginReceiveStreamFragments*
+  commentId: Overload:BestHTTP.HTTPResponse.BeginReceiveStreamFragments
+  name: BeginReceiveStreamFragments
+  nameWithType: HTTPResponse.BeginReceiveStreamFragments
+  fullName: BestHTTP.HTTPResponse.BeginReceiveStreamFragments
+- uid: BestHTTP.HTTPResponse.FeedStreamFragment*
+  commentId: Overload:BestHTTP.HTTPResponse.FeedStreamFragment
+  name: FeedStreamFragment
+  nameWithType: HTTPResponse.FeedStreamFragment
+  fullName: BestHTTP.HTTPResponse.FeedStreamFragment
+- uid: BestHTTP.HTTPResponse.FlushRemainingFragmentBuffer*
+  commentId: Overload:BestHTTP.HTTPResponse.FlushRemainingFragmentBuffer
+  name: FlushRemainingFragmentBuffer
+  nameWithType: HTTPResponse.FlushRemainingFragmentBuffer
+  fullName: BestHTTP.HTTPResponse.FlushRemainingFragmentBuffer
+- uid: BestHTTP.HTTPResponse.AddStreamedFragment*
+  commentId: Overload:BestHTTP.HTTPResponse.AddStreamedFragment
+  name: AddStreamedFragment
+  nameWithType: HTTPResponse.AddStreamedFragment
+  fullName: BestHTTP.HTTPResponse.AddStreamedFragment
+- uid: BestHTTP.HTTPResponse.WaitWhileHasFragments*
+  commentId: Overload:BestHTTP.HTTPResponse.WaitWhileHasFragments
+  name: WaitWhileHasFragments
+  nameWithType: HTTPResponse.WaitWhileHasFragments
+  fullName: BestHTTP.HTTPResponse.WaitWhileHasFragments
+- uid: BestHTTP.HTTPResponse.GetStreamedFragments*
+  commentId: Overload:BestHTTP.HTTPResponse.GetStreamedFragments
+  name: GetStreamedFragments
+  nameWithType: HTTPResponse.GetStreamedFragments
+  fullName: BestHTTP.HTTPResponse.GetStreamedFragments
+- uid: BestHTTP.HTTPResponse.Dispose*
+  commentId: Overload:BestHTTP.HTTPResponse.Dispose
+  name: Dispose
+  nameWithType: HTTPResponse.Dispose
+  fullName: BestHTTP.HTTPResponse.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

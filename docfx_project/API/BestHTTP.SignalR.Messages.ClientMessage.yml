@@ -1,0 +1,647 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.SignalR.Messages.ClientMessage
+  commentId: T:BestHTTP.SignalR.Messages.ClientMessage
+  id: ClientMessage
+  parent: BestHTTP.SignalR.Messages
+  children:
+  - BestHTTP.SignalR.Messages.ClientMessage.#ctor(Hub,System.String,System.Object[],System.UInt64,OnMethodResultDelegate,OnMethodFailedDelegate,OnMethodProgressDelegate)
+  - BestHTTP.SignalR.Messages.ClientMessage.Args
+  - BestHTTP.SignalR.Messages.ClientMessage.CallIdx
+  - BestHTTP.SignalR.Messages.ClientMessage.Hub
+  - BestHTTP.SignalR.Messages.ClientMessage.Method
+  - BestHTTP.SignalR.Messages.ClientMessage.ProgressCallback
+  - BestHTTP.SignalR.Messages.ClientMessage.ResultCallback
+  - BestHTTP.SignalR.Messages.ClientMessage.ResultErrorCallback
+  langs:
+  - csharp
+  - vb
+  name: ClientMessage
+  nameWithType: ClientMessage
+  fullName: BestHTTP.SignalR.Messages.ClientMessage
+  type: Struct
+  source:
+    id: ClientMessage
+    path: ''
+    startLine: 13144
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nThis struct represents a message from the client.\nIt holds every data and reference needed to construct the string represented message that will be sent to the wire.\n"
+  example: []
+  syntax:
+    content: public struct ClientMessage
+    content.vb: Public Structure ClientMessage
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: BestHTTP.SignalR.Messages.ClientMessage.Hub
+  commentId: F:BestHTTP.SignalR.Messages.ClientMessage.Hub
+  id: Hub
+  parent: BestHTTP.SignalR.Messages.ClientMessage
+  langs:
+  - csharp
+  - vb
+  name: Hub
+  nameWithType: ClientMessage.Hub
+  fullName: BestHTTP.SignalR.Messages.ClientMessage.Hub
+  type: Field
+  source:
+    id: Hub
+    path: ''
+    startLine: 13149
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nReference to the source Hub. The Name and the State of the hub will be user.\n"
+  example: []
+  syntax:
+    content: public readonly Hub Hub
+    return:
+      type: Hub
+    content.vb: Public ReadOnly Hub As Hub
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.ClientMessage.Method
+  commentId: F:BestHTTP.SignalR.Messages.ClientMessage.Method
+  id: Method
+  parent: BestHTTP.SignalR.Messages.ClientMessage
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: ClientMessage.Method
+  fullName: BestHTTP.SignalR.Messages.ClientMessage.Method
+  type: Field
+  source:
+    id: Method
+    path: ''
+    startLine: 13154
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nName of the method on the server to be called.\n"
+  example: []
+  syntax:
+    content: public readonly string Method
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Method As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.ClientMessage.Args
+  commentId: F:BestHTTP.SignalR.Messages.ClientMessage.Args
+  id: Args
+  parent: BestHTTP.SignalR.Messages.ClientMessage
+  langs:
+  - csharp
+  - vb
+  name: Args
+  nameWithType: ClientMessage.Args
+  fullName: BestHTTP.SignalR.Messages.ClientMessage.Args
+  type: Field
+  source:
+    id: Args
+    path: ''
+    startLine: 13159
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nArguments of the method.\n"
+  example: []
+  syntax:
+    content: public readonly object[] Args
+    return:
+      type: System.Object[]
+    content.vb: Public ReadOnly Args As Object()
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.ClientMessage.CallIdx
+  commentId: F:BestHTTP.SignalR.Messages.ClientMessage.CallIdx
+  id: CallIdx
+  parent: BestHTTP.SignalR.Messages.ClientMessage
+  langs:
+  - csharp
+  - vb
+  name: CallIdx
+  nameWithType: ClientMessage.CallIdx
+  fullName: BestHTTP.SignalR.Messages.ClientMessage.CallIdx
+  type: Field
+  source:
+    id: CallIdx
+    path: ''
+    startLine: 13164
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nUnique id on the client of this message\n"
+  example: []
+  syntax:
+    content: public readonly ulong CallIdx
+    return:
+      type: System.UInt64
+    content.vb: Public ReadOnly CallIdx As ULong
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.ClientMessage.ResultCallback
+  commentId: F:BestHTTP.SignalR.Messages.ClientMessage.ResultCallback
+  id: ResultCallback
+  parent: BestHTTP.SignalR.Messages.ClientMessage
+  langs:
+  - csharp
+  - vb
+  name: ResultCallback
+  nameWithType: ClientMessage.ResultCallback
+  fullName: BestHTTP.SignalR.Messages.ClientMessage.ResultCallback
+  type: Field
+  source:
+    id: ResultCallback
+    path: ''
+    startLine: 13169
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nThe delegate that will be called when the server will sends a result of this method call.\n"
+  example: []
+  syntax:
+    content: public readonly OnMethodResultDelegate ResultCallback
+    return:
+      type: OnMethodResultDelegate
+    content.vb: Public ReadOnly ResultCallback As OnMethodResultDelegate
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.ClientMessage.ResultErrorCallback
+  commentId: F:BestHTTP.SignalR.Messages.ClientMessage.ResultErrorCallback
+  id: ResultErrorCallback
+  parent: BestHTTP.SignalR.Messages.ClientMessage
+  langs:
+  - csharp
+  - vb
+  name: ResultErrorCallback
+  nameWithType: ClientMessage.ResultErrorCallback
+  fullName: BestHTTP.SignalR.Messages.ClientMessage.ResultErrorCallback
+  type: Field
+  source:
+    id: ResultErrorCallback
+    path: ''
+    startLine: 13174
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nThe delegate that will be called when the server sends an error-result to this method call.\n"
+  example: []
+  syntax:
+    content: public readonly OnMethodFailedDelegate ResultErrorCallback
+    return:
+      type: OnMethodFailedDelegate
+    content.vb: Public ReadOnly ResultErrorCallback As OnMethodFailedDelegate
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.ClientMessage.ProgressCallback
+  commentId: F:BestHTTP.SignalR.Messages.ClientMessage.ProgressCallback
+  id: ProgressCallback
+  parent: BestHTTP.SignalR.Messages.ClientMessage
+  langs:
+  - csharp
+  - vb
+  name: ProgressCallback
+  nameWithType: ClientMessage.ProgressCallback
+  fullName: BestHTTP.SignalR.Messages.ClientMessage.ProgressCallback
+  type: Field
+  source:
+    id: ProgressCallback
+    path: ''
+    startLine: 13179
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  summary: "\nThe delegate that will be called when the server sends a progress message to this method call.\n"
+  example: []
+  syntax:
+    content: public readonly OnMethodProgressDelegate ProgressCallback
+    return:
+      type: OnMethodProgressDelegate
+    content.vb: Public ReadOnly ProgressCallback As OnMethodProgressDelegate
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SignalR.Messages.ClientMessage.#ctor(Hub,System.String,System.Object[],System.UInt64,OnMethodResultDelegate,OnMethodFailedDelegate,OnMethodProgressDelegate)
+  commentId: M:BestHTTP.SignalR.Messages.ClientMessage.#ctor(Hub,System.String,System.Object[],System.UInt64,OnMethodResultDelegate,OnMethodFailedDelegate,OnMethodProgressDelegate)
+  id: '#ctor(Hub,System.String,System.Object[],System.UInt64,OnMethodResultDelegate,OnMethodFailedDelegate,OnMethodProgressDelegate)'
+  parent: BestHTTP.SignalR.Messages.ClientMessage
+  langs:
+  - csharp
+  - vb
+  name: ClientMessage(Hub, String, Object[], UInt64, OnMethodResultDelegate, OnMethodFailedDelegate, OnMethodProgressDelegate)
+  nameWithType: ClientMessage.ClientMessage(Hub, String, Object[], UInt64, OnMethodResultDelegate, OnMethodFailedDelegate, OnMethodProgressDelegate)
+  fullName: BestHTTP.SignalR.Messages.ClientMessage.ClientMessage(Hub, System.String, System.Object[], System.UInt64, OnMethodResultDelegate, OnMethodFailedDelegate, OnMethodProgressDelegate)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 13181
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Messages
+  syntax:
+    content: public ClientMessage(Hub hub, string method, object[] args, ulong callIdx, OnMethodResultDelegate resultCallback, OnMethodFailedDelegate resultErrorCallback, OnMethodProgressDelegate progressCallback)
+    parameters:
+    - id: hub
+      type: Hub
+    - id: method
+      type: System.String
+    - id: args
+      type: System.Object[]
+    - id: callIdx
+      type: System.UInt64
+    - id: resultCallback
+      type: OnMethodResultDelegate
+    - id: resultErrorCallback
+      type: OnMethodFailedDelegate
+    - id: progressCallback
+      type: OnMethodProgressDelegate
+    content.vb: Public Sub New(hub As Hub, method As String, args As Object(), callIdx As ULong, resultCallback As OnMethodResultDelegate, resultErrorCallback As OnMethodFailedDelegate, progressCallback As OnMethodProgressDelegate)
+  overload: BestHTTP.SignalR.Messages.ClientMessage.#ctor*
+  nameWithType.vb: ClientMessage.ClientMessage(Hub, String, Object(), UInt64, OnMethodResultDelegate, OnMethodFailedDelegate, OnMethodProgressDelegate)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BestHTTP.SignalR.Messages.ClientMessage.ClientMessage(Hub, System.String, System.Object(), System.UInt64, OnMethodResultDelegate, OnMethodFailedDelegate, OnMethodProgressDelegate)
+  name.vb: ClientMessage(Hub, String, Object(), UInt64, OnMethodResultDelegate, OnMethodFailedDelegate, OnMethodProgressDelegate)
+references:
+- uid: BestHTTP.SignalR.Messages
+  commentId: N:BestHTTP.SignalR.Messages
+  name: BestHTTP.SignalR.Messages
+  nameWithType: BestHTTP.SignalR.Messages
+  fullName: BestHTTP.SignalR.Messages
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hub
+  isExternal: true
+  name: Hub
+  nameWithType: Hub
+  fullName: Hub
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: OnMethodResultDelegate
+  isExternal: true
+  name: OnMethodResultDelegate
+  nameWithType: OnMethodResultDelegate
+  fullName: OnMethodResultDelegate
+- uid: OnMethodFailedDelegate
+  isExternal: true
+  name: OnMethodFailedDelegate
+  nameWithType: OnMethodFailedDelegate
+  fullName: OnMethodFailedDelegate
+- uid: OnMethodProgressDelegate
+  isExternal: true
+  name: OnMethodProgressDelegate
+  nameWithType: OnMethodProgressDelegate
+  fullName: OnMethodProgressDelegate
+- uid: BestHTTP.SignalR.Messages.ClientMessage.#ctor*
+  commentId: Overload:BestHTTP.SignalR.Messages.ClientMessage.#ctor
+  name: ClientMessage
+  nameWithType: ClientMessage.ClientMessage
+  fullName: BestHTTP.SignalR.Messages.ClientMessage.ClientMessage

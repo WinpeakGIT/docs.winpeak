@@ -1,0 +1,445 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsContext
+  id: TlsContext
+  parent: Org.BouncyCastle.Crypto.Tls
+  children:
+  - Org.BouncyCastle.Crypto.Tls.TlsContext.ClientVersion
+  - Org.BouncyCastle.Crypto.Tls.TlsContext.ExportKeyingMaterial(System.String,System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.Tls.TlsContext.IsServer
+  - Org.BouncyCastle.Crypto.Tls.TlsContext.NonceRandomGenerator
+  - Org.BouncyCastle.Crypto.Tls.TlsContext.ResumableSession
+  - Org.BouncyCastle.Crypto.Tls.TlsContext.SecureRandom
+  - Org.BouncyCastle.Crypto.Tls.TlsContext.SecurityParameters
+  - Org.BouncyCastle.Crypto.Tls.TlsContext.ServerVersion
+  - Org.BouncyCastle.Crypto.Tls.TlsContext.UserObject
+  langs:
+  - csharp
+  - vb
+  name: TlsContext
+  nameWithType: TlsContext
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext
+  type: Interface
+  source:
+    id: TlsContext
+    path: ''
+    startLine: 131125
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public interface TlsContext
+    content.vb: Public Interface TlsContext
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.NonceRandomGenerator
+  commentId: P:Org.BouncyCastle.Crypto.Tls.TlsContext.NonceRandomGenerator
+  id: NonceRandomGenerator
+  parent: Org.BouncyCastle.Crypto.Tls.TlsContext
+  langs:
+  - csharp
+  - vb
+  name: NonceRandomGenerator
+  nameWithType: TlsContext.NonceRandomGenerator
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.NonceRandomGenerator
+  type: Property
+  source:
+    id: NonceRandomGenerator
+    path: ''
+    startLine: 131127
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: IRandomGenerator NonceRandomGenerator { get; }
+    parameters: []
+    return:
+      type: IRandomGenerator
+    content.vb: ReadOnly Property NonceRandomGenerator As IRandomGenerator
+  overload: Org.BouncyCastle.Crypto.Tls.TlsContext.NonceRandomGenerator*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.SecureRandom
+  commentId: P:Org.BouncyCastle.Crypto.Tls.TlsContext.SecureRandom
+  id: SecureRandom
+  parent: Org.BouncyCastle.Crypto.Tls.TlsContext
+  langs:
+  - csharp
+  - vb
+  name: SecureRandom
+  nameWithType: TlsContext.SecureRandom
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.SecureRandom
+  type: Property
+  source:
+    id: SecureRandom
+    path: ''
+    startLine: 131129
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: SecureRandom SecureRandom { get; }
+    parameters: []
+    return:
+      type: SecureRandom
+    content.vb: ReadOnly Property SecureRandom As SecureRandom
+  overload: Org.BouncyCastle.Crypto.Tls.TlsContext.SecureRandom*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.SecurityParameters
+  commentId: P:Org.BouncyCastle.Crypto.Tls.TlsContext.SecurityParameters
+  id: SecurityParameters
+  parent: Org.BouncyCastle.Crypto.Tls.TlsContext
+  langs:
+  - csharp
+  - vb
+  name: SecurityParameters
+  nameWithType: TlsContext.SecurityParameters
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.SecurityParameters
+  type: Property
+  source:
+    id: SecurityParameters
+    path: ''
+    startLine: 131131
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: SecurityParameters SecurityParameters { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.SecurityParameters
+    content.vb: ReadOnly Property SecurityParameters As SecurityParameters
+  overload: Org.BouncyCastle.Crypto.Tls.TlsContext.SecurityParameters*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.IsServer
+  commentId: P:Org.BouncyCastle.Crypto.Tls.TlsContext.IsServer
+  id: IsServer
+  parent: Org.BouncyCastle.Crypto.Tls.TlsContext
+  langs:
+  - csharp
+  - vb
+  name: IsServer
+  nameWithType: TlsContext.IsServer
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.IsServer
+  type: Property
+  source:
+    id: IsServer
+    path: ''
+    startLine: 131133
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: bool IsServer { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsServer As Boolean
+  overload: Org.BouncyCastle.Crypto.Tls.TlsContext.IsServer*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.ClientVersion
+  commentId: P:Org.BouncyCastle.Crypto.Tls.TlsContext.ClientVersion
+  id: ClientVersion
+  parent: Org.BouncyCastle.Crypto.Tls.TlsContext
+  langs:
+  - csharp
+  - vb
+  name: ClientVersion
+  nameWithType: TlsContext.ClientVersion
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.ClientVersion
+  type: Property
+  source:
+    id: ClientVersion
+    path: ''
+    startLine: 131135
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: ProtocolVersion ClientVersion { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.ProtocolVersion
+    content.vb: ReadOnly Property ClientVersion As ProtocolVersion
+  overload: Org.BouncyCastle.Crypto.Tls.TlsContext.ClientVersion*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.ServerVersion
+  commentId: P:Org.BouncyCastle.Crypto.Tls.TlsContext.ServerVersion
+  id: ServerVersion
+  parent: Org.BouncyCastle.Crypto.Tls.TlsContext
+  langs:
+  - csharp
+  - vb
+  name: ServerVersion
+  nameWithType: TlsContext.ServerVersion
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.ServerVersion
+  type: Property
+  source:
+    id: ServerVersion
+    path: ''
+    startLine: 131137
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: ProtocolVersion ServerVersion { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.ProtocolVersion
+    content.vb: ReadOnly Property ServerVersion As ProtocolVersion
+  overload: Org.BouncyCastle.Crypto.Tls.TlsContext.ServerVersion*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.ResumableSession
+  commentId: P:Org.BouncyCastle.Crypto.Tls.TlsContext.ResumableSession
+  id: ResumableSession
+  parent: Org.BouncyCastle.Crypto.Tls.TlsContext
+  langs:
+  - csharp
+  - vb
+  name: ResumableSession
+  nameWithType: TlsContext.ResumableSession
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.ResumableSession
+  type: Property
+  source:
+    id: ResumableSession
+    path: ''
+    startLine: 131147
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: TlsSession ResumableSession { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.TlsSession
+    content.vb: ReadOnly Property ResumableSession As TlsSession
+  overload: Org.BouncyCastle.Crypto.Tls.TlsContext.ResumableSession*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.UserObject
+  commentId: P:Org.BouncyCastle.Crypto.Tls.TlsContext.UserObject
+  id: UserObject
+  parent: Org.BouncyCastle.Crypto.Tls.TlsContext
+  langs:
+  - csharp
+  - vb
+  name: UserObject
+  nameWithType: TlsContext.UserObject
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.UserObject
+  type: Property
+  source:
+    id: UserObject
+    path: ''
+    startLine: 131149
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: object UserObject { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Property UserObject As Object
+  overload: Org.BouncyCastle.Crypto.Tls.TlsContext.UserObject*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.ExportKeyingMaterial(System.String,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsContext.ExportKeyingMaterial(System.String,System.Byte[],System.Int32)
+  id: ExportKeyingMaterial(System.String,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsContext
+  langs:
+  - csharp
+  - vb
+  name: ExportKeyingMaterial(String, Byte[], Int32)
+  nameWithType: TlsContext.ExportKeyingMaterial(String, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.ExportKeyingMaterial(System.String, System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: ExportKeyingMaterial
+    path: ''
+    startLine: 131160
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: byte[] ExportKeyingMaterial(string asciiLabel, byte[] context_value, int length)
+    parameters:
+    - id: asciiLabel
+      type: System.String
+    - id: context_value
+      type: System.Byte[]
+    - id: length
+      type: System.Int32
+    return:
+      type: System.Byte[]
+    content.vb: Function ExportKeyingMaterial(asciiLabel As String, context_value As Byte(), length As Integer) As Byte()
+  overload: Org.BouncyCastle.Crypto.Tls.TlsContext.ExportKeyingMaterial*
+  nameWithType.vb: TlsContext.ExportKeyingMaterial(String, Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsContext.ExportKeyingMaterial(System.String, System.Byte(), System.Int32)
+  name.vb: ExportKeyingMaterial(String, Byte(), Int32)
+references:
+- uid: Org.BouncyCastle.Crypto.Tls
+  commentId: N:Org.BouncyCastle.Crypto.Tls
+  name: Org.BouncyCastle.Crypto.Tls
+  nameWithType: Org.BouncyCastle.Crypto.Tls
+  fullName: Org.BouncyCastle.Crypto.Tls
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.NonceRandomGenerator*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsContext.NonceRandomGenerator
+  name: NonceRandomGenerator
+  nameWithType: TlsContext.NonceRandomGenerator
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.NonceRandomGenerator
+- uid: IRandomGenerator
+  isExternal: true
+  name: IRandomGenerator
+  nameWithType: IRandomGenerator
+  fullName: IRandomGenerator
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.SecureRandom*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsContext.SecureRandom
+  name: SecureRandom
+  nameWithType: TlsContext.SecureRandom
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.SecureRandom
+- uid: SecureRandom
+  isExternal: true
+  name: SecureRandom
+  nameWithType: SecureRandom
+  fullName: SecureRandom
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.SecurityParameters*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsContext.SecurityParameters
+  name: SecurityParameters
+  nameWithType: TlsContext.SecurityParameters
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.SecurityParameters
+- uid: Org.BouncyCastle.Crypto.Tls.SecurityParameters
+  commentId: T:Org.BouncyCastle.Crypto.Tls.SecurityParameters
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: SecurityParameters
+  nameWithType: SecurityParameters
+  fullName: Org.BouncyCastle.Crypto.Tls.SecurityParameters
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.IsServer*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsContext.IsServer
+  name: IsServer
+  nameWithType: TlsContext.IsServer
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.IsServer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.ClientVersion*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsContext.ClientVersion
+  name: ClientVersion
+  nameWithType: TlsContext.ClientVersion
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.ClientVersion
+- uid: Org.BouncyCastle.Crypto.Tls.ProtocolVersion
+  commentId: T:Org.BouncyCastle.Crypto.Tls.ProtocolVersion
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: ProtocolVersion
+  nameWithType: ProtocolVersion
+  fullName: Org.BouncyCastle.Crypto.Tls.ProtocolVersion
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.ServerVersion*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsContext.ServerVersion
+  name: ServerVersion
+  nameWithType: TlsContext.ServerVersion
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.ServerVersion
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.ResumableSession*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsContext.ResumableSession
+  name: ResumableSession
+  nameWithType: TlsContext.ResumableSession
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.ResumableSession
+- uid: Org.BouncyCastle.Crypto.Tls.TlsSession
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsSession
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsSession
+  nameWithType: TlsSession
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsSession
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.UserObject*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsContext.UserObject
+  name: UserObject
+  nameWithType: TlsContext.UserObject
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.UserObject
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext.ExportKeyingMaterial*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsContext.ExportKeyingMaterial
+  name: ExportKeyingMaterial
+  nameWithType: TlsContext.ExportKeyingMaterial
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext.ExportKeyingMaterial
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

@@ -1,0 +1,329 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.IBlockCipher
+  commentId: T:Org.BouncyCastle.Crypto.IBlockCipher
+  id: IBlockCipher
+  parent: Org.BouncyCastle.Crypto
+  children:
+  - Org.BouncyCastle.Crypto.IBlockCipher.AlgorithmName
+  - Org.BouncyCastle.Crypto.IBlockCipher.GetBlockSize
+  - Org.BouncyCastle.Crypto.IBlockCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  - Org.BouncyCastle.Crypto.IBlockCipher.IsPartialBlockOkay
+  - Org.BouncyCastle.Crypto.IBlockCipher.ProcessBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.IBlockCipher.Reset
+  langs:
+  - csharp
+  - vb
+  name: IBlockCipher
+  nameWithType: IBlockCipher
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher
+  type: Interface
+  source:
+    id: IBlockCipher
+    path: ''
+    startLine: 90223
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  remarks: Base interface for a symmetric key block cipher.
+  example: []
+  syntax:
+    content: public interface IBlockCipher
+    content.vb: Public Interface IBlockCipher
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.IBlockCipher.AlgorithmName
+  id: AlgorithmName
+  parent: Org.BouncyCastle.Crypto.IBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: AlgorithmName
+  nameWithType: IBlockCipher.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.AlgorithmName
+  type: Property
+  source:
+    id: AlgorithmName
+    path: ''
+    startLine: 90226
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  summary: The name of the algorithm this cipher implements.
+  example: []
+  syntax:
+    content: string AlgorithmName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AlgorithmName As String
+  overload: Org.BouncyCastle.Crypto.IBlockCipher.AlgorithmName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  commentId: M:Org.BouncyCastle.Crypto.IBlockCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  id: Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  parent: Org.BouncyCastle.Crypto.IBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: Init(Boolean, ICipherParameters)
+  nameWithType: IBlockCipher.Init(Boolean, ICipherParameters)
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.Init(System.Boolean, Org.BouncyCastle.Crypto.ICipherParameters)
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 90231
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  summary: Initialise the cipher.
+  example: []
+  syntax:
+    content: void Init(bool forEncryption, ICipherParameters parameters)
+    parameters:
+    - id: forEncryption
+      type: System.Boolean
+      description: Initialise for encryption if true, for decryption if false.
+    - id: parameters
+      type: Org.BouncyCastle.Crypto.ICipherParameters
+      description: The key or other data required by the cipher.
+    content.vb: Sub Init(forEncryption As Boolean, parameters As ICipherParameters)
+  overload: Org.BouncyCastle.Crypto.IBlockCipher.Init*
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.GetBlockSize
+  commentId: M:Org.BouncyCastle.Crypto.IBlockCipher.GetBlockSize
+  id: GetBlockSize
+  parent: Org.BouncyCastle.Crypto.IBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: GetBlockSize()
+  nameWithType: IBlockCipher.GetBlockSize()
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.GetBlockSize()
+  type: Method
+  source:
+    id: GetBlockSize
+    path: ''
+    startLine: 90234
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  example: []
+  syntax:
+    content: int GetBlockSize()
+    return:
+      type: System.Int32
+      description: The block size for this cipher, in bytes.
+    content.vb: Function GetBlockSize As Integer
+  overload: Org.BouncyCastle.Crypto.IBlockCipher.GetBlockSize*
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.IsPartialBlockOkay
+  commentId: P:Org.BouncyCastle.Crypto.IBlockCipher.IsPartialBlockOkay
+  id: IsPartialBlockOkay
+  parent: Org.BouncyCastle.Crypto.IBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: IsPartialBlockOkay
+  nameWithType: IBlockCipher.IsPartialBlockOkay
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.IsPartialBlockOkay
+  type: Property
+  source:
+    id: IsPartialBlockOkay
+    path: ''
+    startLine: 90237
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  summary: Indicates whether this cipher can handle partial blocks.
+  example: []
+  syntax:
+    content: bool IsPartialBlockOkay { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsPartialBlockOkay As Boolean
+  overload: Org.BouncyCastle.Crypto.IBlockCipher.IsPartialBlockOkay*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.ProcessBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.IBlockCipher.ProcessBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  id: ProcessBlock(System.Byte[],System.Int32,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.IBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: ProcessBlock(Byte[], Int32, Byte[], Int32)
+  nameWithType: IBlockCipher.ProcessBlock(Byte[], Int32, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.ProcessBlock(System.Byte[], System.Int32, System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: ProcessBlock
+    path: ''
+    startLine: 90246
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  summary: Process a block.
+  example: []
+  syntax:
+    content: int ProcessBlock(byte[] inBuf, int inOff, byte[] outBuf, int outOff)
+    parameters:
+    - id: inBuf
+      type: System.Byte[]
+      description: The input buffer.
+    - id: inOff
+      type: System.Int32
+      description: The offset into  that the input block begins.
+    - id: outBuf
+      type: System.Byte[]
+      description: The output buffer.
+    - id: outOff
+      type: System.Int32
+      description: The offset into  to write the output block.
+    return:
+      type: System.Int32
+      description: The number of bytes processed and produced.
+    content.vb: Function ProcessBlock(inBuf As Byte(), inOff As Integer, outBuf As Byte(), outOff As Integer) As Integer
+  overload: Org.BouncyCastle.Crypto.IBlockCipher.ProcessBlock*
+  exceptions:
+  - type: Org.BouncyCastle.Crypto.DataLengthException
+    commentId: T:Org.BouncyCastle.Crypto.DataLengthException
+    description: If input block is wrong size, or outBuf too small.
+  nameWithType.vb: IBlockCipher.ProcessBlock(Byte(), Int32, Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.IBlockCipher.ProcessBlock(System.Byte(), System.Int32, System.Byte(), System.Int32)
+  name.vb: ProcessBlock(Byte(), Int32, Byte(), Int32)
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.Reset
+  commentId: M:Org.BouncyCastle.Crypto.IBlockCipher.Reset
+  id: Reset
+  parent: Org.BouncyCastle.Crypto.IBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: IBlockCipher.Reset()
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.Reset()
+  type: Method
+  source:
+    id: Reset
+    path: ''
+    startLine: 90251
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  summary: "\nReset the cipher to the same state as it was after the last init (if there was one).\n"
+  example: []
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset
+  overload: Org.BouncyCastle.Crypto.IBlockCipher.Reset*
+references:
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.AlgorithmName*
+  commentId: Overload:Org.BouncyCastle.Crypto.IBlockCipher.AlgorithmName
+  name: AlgorithmName
+  nameWithType: IBlockCipher.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.AlgorithmName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.Init*
+  commentId: Overload:Org.BouncyCastle.Crypto.IBlockCipher.Init
+  name: Init
+  nameWithType: IBlockCipher.Init
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.Init
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.ICipherParameters
+  commentId: T:Org.BouncyCastle.Crypto.ICipherParameters
+  parent: Org.BouncyCastle.Crypto
+  name: ICipherParameters
+  nameWithType: ICipherParameters
+  fullName: Org.BouncyCastle.Crypto.ICipherParameters
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.GetBlockSize*
+  commentId: Overload:Org.BouncyCastle.Crypto.IBlockCipher.GetBlockSize
+  name: GetBlockSize
+  nameWithType: IBlockCipher.GetBlockSize
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.GetBlockSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.IsPartialBlockOkay*
+  commentId: Overload:Org.BouncyCastle.Crypto.IBlockCipher.IsPartialBlockOkay
+  name: IsPartialBlockOkay
+  nameWithType: IBlockCipher.IsPartialBlockOkay
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.IsPartialBlockOkay
+- uid: Org.BouncyCastle.Crypto.DataLengthException
+  commentId: T:Org.BouncyCastle.Crypto.DataLengthException
+  parent: Org.BouncyCastle.Crypto
+  name: DataLengthException
+  nameWithType: DataLengthException
+  fullName: Org.BouncyCastle.Crypto.DataLengthException
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.ProcessBlock*
+  commentId: Overload:Org.BouncyCastle.Crypto.IBlockCipher.ProcessBlock
+  name: ProcessBlock
+  nameWithType: IBlockCipher.ProcessBlock
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.ProcessBlock
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.IBlockCipher.Reset*
+  commentId: Overload:Org.BouncyCastle.Crypto.IBlockCipher.Reset
+  name: Reset
+  nameWithType: IBlockCipher.Reset
+  fullName: Org.BouncyCastle.Crypto.IBlockCipher.Reset

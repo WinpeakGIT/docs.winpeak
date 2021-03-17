@@ -1,0 +1,253 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Asn1.DerOutputStream
+  commentId: T:Org.BouncyCastle.Asn1.DerOutputStream
+  id: DerOutputStream
+  parent: Org.BouncyCastle.Asn1
+  children:
+  - Org.BouncyCastle.Asn1.DerOutputStream.#ctor(Stream)
+  - Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+  - Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  - Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Object)
+  - Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: DerOutputStream
+  nameWithType: DerOutputStream
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream
+  type: Class
+  source:
+    id: DerOutputStream
+    path: ''
+    startLine: 62654
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: 'public class DerOutputStream : FilterStream'
+    content.vb: >-
+      Public Class DerOutputStream
+          Inherits FilterStream
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Org.BouncyCastle.Asn1.Asn1OutputStream
+  - Org.BouncyCastle.Asn1.BerOutputStream
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.#ctor(Stream)
+  commentId: M:Org.BouncyCastle.Asn1.DerOutputStream.#ctor(Stream)
+  id: '#ctor(Stream)'
+  parent: Org.BouncyCastle.Asn1.DerOutputStream
+  langs:
+  - csharp
+  - vb
+  name: DerOutputStream(Stream)
+  nameWithType: DerOutputStream.DerOutputStream(Stream)
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.DerOutputStream(Stream)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 62657
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public DerOutputStream(Stream os)
+    parameters:
+    - id: os
+      type: Stream
+    content.vb: Public Sub New(os As Stream)
+  overload: Org.BouncyCastle.Asn1.DerOutputStream.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+  commentId: M:Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+  id: WriteNull
+  parent: Org.BouncyCastle.Asn1.DerOutputStream
+  langs:
+  - csharp
+  - vb
+  name: WriteNull()
+  nameWithType: DerOutputStream.WriteNull()
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteNull()
+  type: Method
+  source:
+    id: WriteNull
+    path: ''
+    startLine: 62763
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: protected void WriteNull()
+    content.vb: Protected Sub WriteNull
+  overload: Org.BouncyCastle.Asn1.DerOutputStream.WriteNull*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(System.Object)
+  commentId: M:Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(System.Object)
+  id: WriteObject(System.Object)
+  parent: Org.BouncyCastle.Asn1.DerOutputStream
+  langs:
+  - csharp
+  - vb
+  name: WriteObject(Object)
+  nameWithType: DerOutputStream.WriteObject(Object)
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(System.Object)
+  type: Method
+  source:
+    id: WriteObject
+    path: ''
+    startLine: 62769
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: >-
+      [Obsolete("Use version taking an Asn1Encodable arg instead")]
+
+      public virtual void WriteObject(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    content.vb: >-
+      <Obsolete("Use version taking an Asn1Encodable arg instead")>
+
+      Public Overridable Sub WriteObject(obj As Object)
+  overload: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use version taking an Asn1Encodable arg instead
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  commentId: M:Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  id: WriteObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  parent: Org.BouncyCastle.Asn1.DerOutputStream
+  langs:
+  - csharp
+  - vb
+  name: WriteObject(Asn1Encodable)
+  nameWithType: DerOutputStream.WriteObject(Asn1Encodable)
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  type: Method
+  source:
+    id: WriteObject
+    path: ''
+    startLine: 62791
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public virtual void WriteObject(Asn1Encodable obj)
+    parameters:
+    - id: obj
+      type: Org.BouncyCastle.Asn1.Asn1Encodable
+    content.vb: Public Overridable Sub WriteObject(obj As Asn1Encodable)
+  overload: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Object)
+  commentId: M:Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Object)
+  id: WriteObject(Org.BouncyCastle.Asn1.Asn1Object)
+  parent: Org.BouncyCastle.Asn1.DerOutputStream
+  langs:
+  - csharp
+  - vb
+  name: WriteObject(Asn1Object)
+  nameWithType: DerOutputStream.WriteObject(Asn1Object)
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject(Org.BouncyCastle.Asn1.Asn1Object)
+  type: Method
+  source:
+    id: WriteObject
+    path: ''
+    startLine: 62804
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public virtual void WriteObject(Asn1Object obj)
+    parameters:
+    - id: obj
+      type: Org.BouncyCastle.Asn1.Asn1Object
+    content.vb: Public Overridable Sub WriteObject(obj As Asn1Object)
+  overload: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Org.BouncyCastle.Asn1
+  commentId: N:Org.BouncyCastle.Asn1
+  name: Org.BouncyCastle.Asn1
+  nameWithType: Org.BouncyCastle.Asn1
+  fullName: Org.BouncyCastle.Asn1
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.#ctor*
+  commentId: Overload:Org.BouncyCastle.Asn1.DerOutputStream.#ctor
+  name: DerOutputStream
+  nameWithType: DerOutputStream.DerOutputStream
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.DerOutputStream
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteNull*
+  commentId: Overload:Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+  name: WriteNull
+  nameWithType: DerOutputStream.WriteNull
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteNull
+- uid: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject*
+  commentId: Overload:Org.BouncyCastle.Asn1.DerOutputStream.WriteObject
+  name: WriteObject
+  nameWithType: DerOutputStream.WriteObject
+  fullName: Org.BouncyCastle.Asn1.DerOutputStream.WriteObject
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Encodable
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1Encodable
+  nameWithType: Asn1Encodable
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable
+- uid: Org.BouncyCastle.Asn1.Asn1Object
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Object
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1Object
+  nameWithType: Asn1Object
+  fullName: Org.BouncyCastle.Asn1.Asn1Object

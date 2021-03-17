@@ -1,0 +1,533 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Asn1.Asn1Generator
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Generator
+  id: Asn1Generator
+  parent: Org.BouncyCastle.Asn1
+  children:
+  - Org.BouncyCastle.Asn1.Asn1Generator.#ctor(Stream)
+  - Org.BouncyCastle.Asn1.Asn1Generator.AddObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  - Org.BouncyCastle.Asn1.Asn1Generator.Close
+  - Org.BouncyCastle.Asn1.Asn1Generator.GetRawOutputStream
+  - Org.BouncyCastle.Asn1.Asn1Generator.Out
+  langs:
+  - csharp
+  - vb
+  name: Asn1Generator
+  nameWithType: Asn1Generator
+  fullName: Org.BouncyCastle.Asn1.Asn1Generator
+  type: Class
+  source:
+    id: Asn1Generator
+    path: ''
+    startLine: 62255
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public abstract class Asn1Generator
+    content.vb: Public MustInherit Class Asn1Generator
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Org.BouncyCastle.Asn1.BerGenerator
+  - Org.BouncyCastle.Asn1.DerGenerator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Org.BouncyCastle.Asn1.Asn1Generator.#ctor(Stream)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Generator.#ctor(Stream)
+  id: '#ctor(Stream)'
+  parent: Org.BouncyCastle.Asn1.Asn1Generator
+  langs:
+  - csharp
+  - vb
+  name: Asn1Generator(Stream)
+  nameWithType: Asn1Generator.Asn1Generator(Stream)
+  fullName: Org.BouncyCastle.Asn1.Asn1Generator.Asn1Generator(Stream)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 62259
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: protected Asn1Generator(Stream outStream)
+    parameters:
+    - id: outStream
+      type: Stream
+    content.vb: Protected Sub New(outStream As Stream)
+  overload: Org.BouncyCastle.Asn1.Asn1Generator.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Asn1.Asn1Generator.Out
+  commentId: P:Org.BouncyCastle.Asn1.Asn1Generator.Out
+  id: Out
+  parent: Org.BouncyCastle.Asn1.Asn1Generator
+  langs:
+  - csharp
+  - vb
+  name: Out
+  nameWithType: Asn1Generator.Out
+  fullName: Org.BouncyCastle.Asn1.Asn1Generator.Out
+  type: Property
+  source:
+    id: Out
+    path: ''
+    startLine: 62265
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: protected Stream Out { get; }
+    parameters: []
+    return:
+      type: Stream
+    content.vb: Protected ReadOnly Property Out As Stream
+  overload: Org.BouncyCastle.Asn1.Asn1Generator.Out*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.Asn1Generator.AddObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Generator.AddObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  id: AddObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  parent: Org.BouncyCastle.Asn1.Asn1Generator
+  langs:
+  - csharp
+  - vb
+  name: AddObject(Asn1Encodable)
+  nameWithType: Asn1Generator.AddObject(Asn1Encodable)
+  fullName: Org.BouncyCastle.Asn1.Asn1Generator.AddObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  type: Method
+  source:
+    id: AddObject
+    path: ''
+    startLine: 62270
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public abstract void AddObject(Asn1Encodable obj)
+    parameters:
+    - id: obj
+      type: Org.BouncyCastle.Asn1.Asn1Encodable
+    content.vb: Public MustOverride Sub AddObject(obj As Asn1Encodable)
+  overload: Org.BouncyCastle.Asn1.Asn1Generator.AddObject*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Asn1.Asn1Generator.GetRawOutputStream
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Generator.GetRawOutputStream
+  id: GetRawOutputStream
+  parent: Org.BouncyCastle.Asn1.Asn1Generator
+  langs:
+  - csharp
+  - vb
+  name: GetRawOutputStream()
+  nameWithType: Asn1Generator.GetRawOutputStream()
+  fullName: Org.BouncyCastle.Asn1.Asn1Generator.GetRawOutputStream()
+  type: Method
+  source:
+    id: GetRawOutputStream
+    path: ''
+    startLine: 62272
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public abstract Stream GetRawOutputStream()
+    return:
+      type: Stream
+    content.vb: Public MustOverride Function GetRawOutputStream As Stream
+  overload: Org.BouncyCastle.Asn1.Asn1Generator.GetRawOutputStream*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Org.BouncyCastle.Asn1.Asn1Generator.Close
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Generator.Close
+  id: Close
+  parent: Org.BouncyCastle.Asn1.Asn1Generator
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: Asn1Generator.Close()
+  fullName: Org.BouncyCastle.Asn1.Asn1Generator.Close()
+  type: Method
+  source:
+    id: Close
+    path: ''
+    startLine: 62274
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public abstract void Close()
+    content.vb: Public MustOverride Sub Close
+  overload: Org.BouncyCastle.Asn1.Asn1Generator.Close*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+references:
+- uid: Org.BouncyCastle.Asn1
+  commentId: N:Org.BouncyCastle.Asn1
+  name: Org.BouncyCastle.Asn1
+  nameWithType: Org.BouncyCastle.Asn1
+  fullName: Org.BouncyCastle.Asn1
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Asn1.Asn1Generator.#ctor*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Generator.#ctor
+  name: Asn1Generator
+  nameWithType: Asn1Generator.Asn1Generator
+  fullName: Org.BouncyCastle.Asn1.Asn1Generator.Asn1Generator
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Org.BouncyCastle.Asn1.Asn1Generator.Out*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Generator.Out
+  name: Out
+  nameWithType: Asn1Generator.Out
+  fullName: Org.BouncyCastle.Asn1.Asn1Generator.Out
+- uid: Org.BouncyCastle.Asn1.Asn1Generator.AddObject*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Generator.AddObject
+  name: AddObject
+  nameWithType: Asn1Generator.AddObject
+  fullName: Org.BouncyCastle.Asn1.Asn1Generator.AddObject
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Encodable
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1Encodable
+  nameWithType: Asn1Encodable
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable
+- uid: Org.BouncyCastle.Asn1.Asn1Generator.GetRawOutputStream*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Generator.GetRawOutputStream
+  name: GetRawOutputStream
+  nameWithType: Asn1Generator.GetRawOutputStream
+  fullName: Org.BouncyCastle.Asn1.Asn1Generator.GetRawOutputStream
+- uid: Org.BouncyCastle.Asn1.Asn1Generator.Close*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Generator.Close
+  name: Close
+  nameWithType: Asn1Generator.Close
+  fullName: Org.BouncyCastle.Asn1.Asn1Generator.Close
