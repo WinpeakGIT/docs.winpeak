@@ -16,7 +16,7 @@ items:
   source:
     id: SearchGameResult
     path: ''
-    startLine: 167200
+    startLine: 164735
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -34,9 +34,10 @@ items:
   inheritedMembers:
   - Winpeak.Client.Networking.WebServer.WebResult.ErrorCode
   - Winpeak.Client.Networking.WebServer.WebResult.ErrorMessage
+  - Winpeak.Client.Networking.WebServer.WebResult.m_state
+  - Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
   - Winpeak.Client.Networking.WebServer.WebResult.HandleError
   - Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-  - Winpeak.Client.Networking.WebServer.WebResult.Response
   - Winpeak.Client.Networking.WebServer.WebResult.StatusCode
   - Winpeak.Client.Networking.WebServer.WebResult.DataAsText
   - Winpeak.Client.Networking.WebServer.WebResult.Message
@@ -70,7 +71,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 167205
+    startLine: 164740
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -125,6 +126,18 @@ references:
   name: ErrorMessage
   nameWithType: WebResult.ErrorMessage
   fullName: Winpeak.Client.Networking.WebServer.WebResult.ErrorMessage
+- uid: Winpeak.Client.Networking.WebServer.WebResult.m_state
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_state
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: m_state
+  nameWithType: WebResult.m_state
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_state
+- uid: Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: m_sessionId
+  nameWithType: WebResult.m_sessionId
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleError
   parent: Winpeak.Client.Networking.WebServer.WebResult
@@ -192,12 +205,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.WebResult.Response
-  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.Response
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: Response
-  nameWithType: WebResult.Response
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.Response
 - uid: Winpeak.Client.Networking.WebServer.WebResult.StatusCode
   commentId: P:Winpeak.Client.Networking.WebServer.WebResult.StatusCode
   parent: Winpeak.Client.Networking.WebServer.WebResult

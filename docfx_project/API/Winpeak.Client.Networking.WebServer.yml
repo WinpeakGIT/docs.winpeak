@@ -12,6 +12,7 @@ items:
   - Winpeak.Client.Networking.WebServer.AuthorizationResult
   - Winpeak.Client.Networking.WebServer.BaseWebPackage`1
   - Winpeak.Client.Networking.WebServer.ChechAuthorizationResult
+  - Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Data
   - Winpeak.Client.Networking.WebServer.CheckAuthorization
   - Winpeak.Client.Networking.WebServer.CloseGameSession
   - Winpeak.Client.Networking.WebServer.CloseGameSessionResult
@@ -34,6 +35,7 @@ items:
   - Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
   - Winpeak.Client.Networking.WebServer.Registration
   - Winpeak.Client.Networking.WebServer.RegistrationResult
+  - Winpeak.Client.Networking.WebServer.RegistrationResult.Data
   - Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequest
   - Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequestResult
   - Winpeak.Client.Networking.WebServer.RemoveFriend
@@ -60,57 +62,189 @@ references:
   name: IWebResult
   nameWithType: IWebResult
   fullName: Winpeak.Client.Networking.WebServer.IWebResult
-- uid: Winpeak.Client.Networking.WebServer.HTTPRequestFactory
-  commentId: T:Winpeak.Client.Networking.WebServer.HTTPRequestFactory
-  name: HTTPRequestFactory
-  nameWithType: HTTPRequestFactory
-  fullName: Winpeak.Client.Networking.WebServer.HTTPRequestFactory
 - uid: Winpeak.Client.Networking.WebServer.WebResult
   commentId: T:Winpeak.Client.Networking.WebServer.WebResult
   parent: Winpeak.Client.Networking.WebServer
   name: WebResult
   nameWithType: WebResult
   fullName: Winpeak.Client.Networking.WebServer.WebResult
-- uid: Winpeak.Client.Networking.WebServer.ApproveGameSessionRequest
-  commentId: T:Winpeak.Client.Networking.WebServer.ApproveGameSessionRequest
-  name: ApproveGameSessionRequest
-  nameWithType: ApproveGameSessionRequest
-  fullName: Winpeak.Client.Networking.WebServer.ApproveGameSessionRequest
-- uid: Winpeak.Client.Networking.WebServer.CreateGameSession
-  commentId: T:Winpeak.Client.Networking.WebServer.CreateGameSession
-  name: CreateGameSession
-  nameWithType: CreateGameSession
-  fullName: Winpeak.Client.Networking.WebServer.CreateGameSession
-- uid: Winpeak.Client.Networking.WebServer.CheckAuthorization
-  commentId: T:Winpeak.Client.Networking.WebServer.CheckAuthorization
-  name: CheckAuthorization
-  nameWithType: CheckAuthorization
-  fullName: Winpeak.Client.Networking.WebServer.CheckAuthorization
-- uid: Winpeak.Client.Networking.WebServer.RemoveFriend
-  commentId: T:Winpeak.Client.Networking.WebServer.RemoveFriend
-  name: RemoveFriend
-  nameWithType: RemoveFriend
-  fullName: Winpeak.Client.Networking.WebServer.RemoveFriend
-- uid: Winpeak.Client.Networking.WebServer.GetUserInfo
-  commentId: T:Winpeak.Client.Networking.WebServer.GetUserInfo
-  name: GetUserInfo
-  nameWithType: GetUserInfo
-  fullName: Winpeak.Client.Networking.WebServer.GetUserInfo
+- uid: Winpeak.Client.Networking.WebServer.HTTPRequestFactory
+  commentId: T:Winpeak.Client.Networking.WebServer.HTTPRequestFactory
+  name: HTTPRequestFactory
+  nameWithType: HTTPRequestFactory
+  fullName: Winpeak.Client.Networking.WebServer.HTTPRequestFactory
+- uid: Winpeak.Client.Networking.WebServer.AuthorizationResult
+  commentId: T:Winpeak.Client.Networking.WebServer.AuthorizationResult
+  name: AuthorizationResult
+  nameWithType: AuthorizationResult
+  fullName: Winpeak.Client.Networking.WebServer.AuthorizationResult
+- uid: Winpeak.Client.Networking.WebServer.CloseGameSessionResult
+  commentId: T:Winpeak.Client.Networking.WebServer.CloseGameSessionResult
+  name: CloseGameSessionResult
+  nameWithType: CloseGameSessionResult
+  fullName: Winpeak.Client.Networking.WebServer.CloseGameSessionResult
+- uid: Winpeak.Client.Networking.WebServer.GetGameInfoResult
+  commentId: T:Winpeak.Client.Networking.WebServer.GetGameInfoResult
+  name: GetGameInfoResult
+  nameWithType: GetGameInfoResult
+  fullName: Winpeak.Client.Networking.WebServer.GetGameInfoResult
+- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult
+  commentId: T:Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult
+  name: CreateGameSessionRequestResult
+  nameWithType: CreateGameSessionRequestResult
+  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult
+- uid: Winpeak.Client.Networking.WebServer.SearchUserResult
+  commentId: T:Winpeak.Client.Networking.WebServer.SearchUserResult
+  name: SearchUserResult
+  nameWithType: SearchUserResult
+  fullName: Winpeak.Client.Networking.WebServer.SearchUserResult
+- uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryRequestResult
+  commentId: T:Winpeak.Client.Networking.WebServer.PasswordRecoveryRequestResult
+  name: PasswordRecoveryRequestResult
+  nameWithType: PasswordRecoveryRequestResult
+  fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryRequestResult
+- uid: Winpeak.Client.Networking.WebServer.EditProfileResult
+  commentId: T:Winpeak.Client.Networking.WebServer.EditProfileResult
+  name: EditProfileResult
+  nameWithType: EditProfileResult
+  fullName: Winpeak.Client.Networking.WebServer.EditProfileResult
+- uid: Winpeak.Client.Networking.WebServer.ApproveGameSessionRequestResult
+  commentId: T:Winpeak.Client.Networking.WebServer.ApproveGameSessionRequestResult
+  name: ApproveGameSessionRequestResult
+  nameWithType: ApproveGameSessionRequestResult
+  fullName: Winpeak.Client.Networking.WebServer.ApproveGameSessionRequestResult
+- uid: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult
+  commentId: T:Winpeak.Client.Networking.WebServer.ChechAuthorizationResult
+  name: ChechAuthorizationResult
+  nameWithType: ChechAuthorizationResult
+  fullName: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult
+- uid: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Data
+  parent: Winpeak.Client.Networking.WebServer
+  name: ChechAuthorizationResult.Data
+  nameWithType: ChechAuthorizationResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Data
+- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult
+  commentId: T:Winpeak.Client.Networking.WebServer.GetUserInfoResult
+  name: GetUserInfoResult
+  nameWithType: GetUserInfoResult
+  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult
+- uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
+  commentId: T:Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
+  name: PasswordRecoveryResult
+  nameWithType: PasswordRecoveryResult
+  fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
+- uid: Winpeak.Client.Networking.WebServer.RegistrationResult
+  commentId: T:Winpeak.Client.Networking.WebServer.RegistrationResult
+  name: RegistrationResult
+  nameWithType: RegistrationResult
+  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult
+- uid: Winpeak.Client.Networking.WebServer.RegistrationResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.RegistrationResult.Data
+  parent: Winpeak.Client.Networking.WebServer
+  name: RegistrationResult.Data
+  nameWithType: RegistrationResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult.Data
+- uid: Winpeak.Client.Networking.WebServer.SearchGameResult
+  commentId: T:Winpeak.Client.Networking.WebServer.SearchGameResult
+  name: SearchGameResult
+  nameWithType: SearchGameResult
+  fullName: Winpeak.Client.Networking.WebServer.SearchGameResult
+- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionResult
+  commentId: T:Winpeak.Client.Networking.WebServer.CreateGameSessionResult
+  name: CreateGameSessionResult
+  nameWithType: CreateGameSessionResult
+  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionResult
+- uid: Winpeak.Client.Networking.WebServer.AddFriendResult
+  commentId: T:Winpeak.Client.Networking.WebServer.AddFriendResult
+  name: AddFriendResult
+  nameWithType: AddFriendResult
+  fullName: Winpeak.Client.Networking.WebServer.AddFriendResult
+- uid: Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequestResult
+  commentId: T:Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequestResult
+  name: RejectCreateGameSessionRequestResult
+  nameWithType: RejectCreateGameSessionRequestResult
+  fullName: Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequestResult
+- uid: Winpeak.Client.Networking.WebServer.RemoveFriendResult
+  commentId: T:Winpeak.Client.Networking.WebServer.RemoveFriendResult
+  name: RemoveFriendResult
+  nameWithType: RemoveFriendResult
+  fullName: Winpeak.Client.Networking.WebServer.RemoveFriendResult
+- uid: Winpeak.Client.Networking.WebServer.EditProfile
+  commentId: T:Winpeak.Client.Networking.WebServer.EditProfile
+  name: EditProfile
+  nameWithType: EditProfile
+  fullName: Winpeak.Client.Networking.WebServer.EditProfile
 - uid: Winpeak.Client.Networking.WebServer.AddFriend
   commentId: T:Winpeak.Client.Networking.WebServer.AddFriend
   name: AddFriend
   nameWithType: AddFriend
   fullName: Winpeak.Client.Networking.WebServer.AddFriend
-- uid: Winpeak.Client.Networking.WebServer.GetGameInfo
-  commentId: T:Winpeak.Client.Networking.WebServer.GetGameInfo
-  name: GetGameInfo
-  nameWithType: GetGameInfo
-  fullName: Winpeak.Client.Networking.WebServer.GetGameInfo
+- uid: Winpeak.Client.Networking.WebServer.Authorization
+  commentId: T:Winpeak.Client.Networking.WebServer.Authorization
+  name: Authorization
+  nameWithType: Authorization
+  fullName: Winpeak.Client.Networking.WebServer.Authorization
 - uid: Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequest
   commentId: T:Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequest
   name: RejectCreateGameSessionRequest
   nameWithType: RejectCreateGameSessionRequest
   fullName: Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequest
+- uid: Winpeak.Client.Networking.WebServer.ApproveGameSessionRequest
+  commentId: T:Winpeak.Client.Networking.WebServer.ApproveGameSessionRequest
+  name: ApproveGameSessionRequest
+  nameWithType: ApproveGameSessionRequest
+  fullName: Winpeak.Client.Networking.WebServer.ApproveGameSessionRequest
+- uid: Winpeak.Client.Networking.WebServer.GetGameInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.GetGameInfo
+  name: GetGameInfo
+  nameWithType: GetGameInfo
+  fullName: Winpeak.Client.Networking.WebServer.GetGameInfo
+- uid: Winpeak.Client.Networking.WebServer.SearchGame
+  commentId: T:Winpeak.Client.Networking.WebServer.SearchGame
+  name: SearchGame
+  nameWithType: SearchGame
+  fullName: Winpeak.Client.Networking.WebServer.SearchGame
+- uid: Winpeak.Client.Networking.WebServer.SearchUser
+  commentId: T:Winpeak.Client.Networking.WebServer.SearchUser
+  name: SearchUser
+  nameWithType: SearchUser
+  fullName: Winpeak.Client.Networking.WebServer.SearchUser
+- uid: Winpeak.Client.Networking.WebServer.PasswordRecovery
+  commentId: T:Winpeak.Client.Networking.WebServer.PasswordRecovery
+  name: PasswordRecovery
+  nameWithType: PasswordRecovery
+  fullName: Winpeak.Client.Networking.WebServer.PasswordRecovery
+- uid: Winpeak.Client.Networking.WebServer.RemoveFriend
+  commentId: T:Winpeak.Client.Networking.WebServer.RemoveFriend
+  name: RemoveFriend
+  nameWithType: RemoveFriend
+  fullName: Winpeak.Client.Networking.WebServer.RemoveFriend
+- uid: Winpeak.Client.Networking.WebServer.CheckAuthorization
+  commentId: T:Winpeak.Client.Networking.WebServer.CheckAuthorization
+  name: CheckAuthorization
+  nameWithType: CheckAuthorization
+  fullName: Winpeak.Client.Networking.WebServer.CheckAuthorization
+- uid: Winpeak.Client.Networking.WebServer.CloseGameSession
+  commentId: T:Winpeak.Client.Networking.WebServer.CloseGameSession
+  name: CloseGameSession
+  nameWithType: CloseGameSession
+  fullName: Winpeak.Client.Networking.WebServer.CloseGameSession
+- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionRequest
+  commentId: T:Winpeak.Client.Networking.WebServer.CreateGameSessionRequest
+  name: CreateGameSessionRequest
+  nameWithType: CreateGameSessionRequest
+  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionRequest
+- uid: Winpeak.Client.Networking.WebServer.GetUserInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.GetUserInfo
+  name: GetUserInfo
+  nameWithType: GetUserInfo
+  fullName: Winpeak.Client.Networking.WebServer.GetUserInfo
+- uid: Winpeak.Client.Networking.WebServer.CreateGameSession
+  commentId: T:Winpeak.Client.Networking.WebServer.CreateGameSession
+  name: CreateGameSession
+  nameWithType: CreateGameSession
+  fullName: Winpeak.Client.Networking.WebServer.CreateGameSession
 - uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryRequest
   commentId: T:Winpeak.Client.Networking.WebServer.PasswordRecoveryRequest
   name: PasswordRecoveryRequest
@@ -121,41 +255,12 @@ references:
   name: Registration
   nameWithType: Registration
   fullName: Winpeak.Client.Networking.WebServer.Registration
-- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionRequest
-  commentId: T:Winpeak.Client.Networking.WebServer.CreateGameSessionRequest
-  name: CreateGameSessionRequest
-  nameWithType: CreateGameSessionRequest
-  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionRequest
-- uid: Winpeak.Client.Networking.WebServer.SearchUser
-  commentId: T:Winpeak.Client.Networking.WebServer.SearchUser
-  name: SearchUser
-  nameWithType: SearchUser
-  fullName: Winpeak.Client.Networking.WebServer.SearchUser
-- uid: Winpeak.Client.Networking.WebServer.EditProfile
-  commentId: T:Winpeak.Client.Networking.WebServer.EditProfile
-  name: EditProfile
-  nameWithType: EditProfile
-  fullName: Winpeak.Client.Networking.WebServer.EditProfile
-- uid: Winpeak.Client.Networking.WebServer.CloseGameSession
-  commentId: T:Winpeak.Client.Networking.WebServer.CloseGameSession
-  name: CloseGameSession
-  nameWithType: CloseGameSession
-  fullName: Winpeak.Client.Networking.WebServer.CloseGameSession
-- uid: Winpeak.Client.Networking.WebServer.SearchGame
-  commentId: T:Winpeak.Client.Networking.WebServer.SearchGame
-  name: SearchGame
-  nameWithType: SearchGame
-  fullName: Winpeak.Client.Networking.WebServer.SearchGame
-- uid: Winpeak.Client.Networking.WebServer.Authorization
-  commentId: T:Winpeak.Client.Networking.WebServer.Authorization
-  name: Authorization
-  nameWithType: Authorization
-  fullName: Winpeak.Client.Networking.WebServer.Authorization
-- uid: Winpeak.Client.Networking.WebServer.PasswordRecovery
-  commentId: T:Winpeak.Client.Networking.WebServer.PasswordRecovery
-  name: PasswordRecovery
-  nameWithType: PasswordRecovery
-  fullName: Winpeak.Client.Networking.WebServer.PasswordRecovery
+- uid: Winpeak.Client.Networking.WebServer.WebRequest
+  commentId: T:Winpeak.Client.Networking.WebServer.WebRequest
+  parent: Winpeak.Client.Networking.WebServer
+  name: WebRequest
+  nameWithType: WebRequest
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest
 - uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1
   commentId: T:Winpeak.Client.Networking.WebServer.BaseWebPackage`1
   name: BaseWebPackage<T>
@@ -198,97 +303,6 @@ references:
   name: IWebRequest
   nameWithType: IWebRequest
   fullName: Winpeak.Client.Networking.WebServer.IWebRequest
-- uid: Winpeak.Client.Networking.WebServer.WebRequest
-  commentId: T:Winpeak.Client.Networking.WebServer.WebRequest
-  parent: Winpeak.Client.Networking.WebServer
-  name: WebRequest
-  nameWithType: WebRequest
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest
-- uid: Winpeak.Client.Networking.WebServer.ApproveGameSessionRequestResult
-  commentId: T:Winpeak.Client.Networking.WebServer.ApproveGameSessionRequestResult
-  name: ApproveGameSessionRequestResult
-  nameWithType: ApproveGameSessionRequestResult
-  fullName: Winpeak.Client.Networking.WebServer.ApproveGameSessionRequestResult
-- uid: Winpeak.Client.Networking.WebServer.EditProfileResult
-  commentId: T:Winpeak.Client.Networking.WebServer.EditProfileResult
-  name: EditProfileResult
-  nameWithType: EditProfileResult
-  fullName: Winpeak.Client.Networking.WebServer.EditProfileResult
-- uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
-  commentId: T:Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
-  name: PasswordRecoveryResult
-  nameWithType: PasswordRecoveryResult
-  fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
-- uid: Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequestResult
-  commentId: T:Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequestResult
-  name: RejectCreateGameSessionRequestResult
-  nameWithType: RejectCreateGameSessionRequestResult
-  fullName: Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequestResult
-- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult
-  commentId: T:Winpeak.Client.Networking.WebServer.GetUserInfoResult
-  name: GetUserInfoResult
-  nameWithType: GetUserInfoResult
-  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult
-- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionResult
-  commentId: T:Winpeak.Client.Networking.WebServer.CreateGameSessionResult
-  name: CreateGameSessionResult
-  nameWithType: CreateGameSessionResult
-  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionResult
-- uid: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult
-  commentId: T:Winpeak.Client.Networking.WebServer.ChechAuthorizationResult
-  name: ChechAuthorizationResult
-  nameWithType: ChechAuthorizationResult
-  fullName: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult
-- uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryRequestResult
-  commentId: T:Winpeak.Client.Networking.WebServer.PasswordRecoveryRequestResult
-  name: PasswordRecoveryRequestResult
-  nameWithType: PasswordRecoveryRequestResult
-  fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryRequestResult
-- uid: Winpeak.Client.Networking.WebServer.AddFriendResult
-  commentId: T:Winpeak.Client.Networking.WebServer.AddFriendResult
-  name: AddFriendResult
-  nameWithType: AddFriendResult
-  fullName: Winpeak.Client.Networking.WebServer.AddFriendResult
-- uid: Winpeak.Client.Networking.WebServer.AuthorizationResult
-  commentId: T:Winpeak.Client.Networking.WebServer.AuthorizationResult
-  name: AuthorizationResult
-  nameWithType: AuthorizationResult
-  fullName: Winpeak.Client.Networking.WebServer.AuthorizationResult
-- uid: Winpeak.Client.Networking.WebServer.SearchGameResult
-  commentId: T:Winpeak.Client.Networking.WebServer.SearchGameResult
-  name: SearchGameResult
-  nameWithType: SearchGameResult
-  fullName: Winpeak.Client.Networking.WebServer.SearchGameResult
-- uid: Winpeak.Client.Networking.WebServer.SearchUserResult
-  commentId: T:Winpeak.Client.Networking.WebServer.SearchUserResult
-  name: SearchUserResult
-  nameWithType: SearchUserResult
-  fullName: Winpeak.Client.Networking.WebServer.SearchUserResult
-- uid: Winpeak.Client.Networking.WebServer.RemoveFriendResult
-  commentId: T:Winpeak.Client.Networking.WebServer.RemoveFriendResult
-  name: RemoveFriendResult
-  nameWithType: RemoveFriendResult
-  fullName: Winpeak.Client.Networking.WebServer.RemoveFriendResult
-- uid: Winpeak.Client.Networking.WebServer.GetGameInfoResult
-  commentId: T:Winpeak.Client.Networking.WebServer.GetGameInfoResult
-  name: GetGameInfoResult
-  nameWithType: GetGameInfoResult
-  fullName: Winpeak.Client.Networking.WebServer.GetGameInfoResult
-- uid: Winpeak.Client.Networking.WebServer.CloseGameSessionResult
-  commentId: T:Winpeak.Client.Networking.WebServer.CloseGameSessionResult
-  name: CloseGameSessionResult
-  nameWithType: CloseGameSessionResult
-  fullName: Winpeak.Client.Networking.WebServer.CloseGameSessionResult
-- uid: Winpeak.Client.Networking.WebServer.RegistrationResult
-  commentId: T:Winpeak.Client.Networking.WebServer.RegistrationResult
-  name: RegistrationResult
-  nameWithType: RegistrationResult
-  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult
-- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult
-  commentId: T:Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult
-  name: CreateGameSessionRequestResult
-  nameWithType: CreateGameSessionRequestResult
-  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult
 - uid: Winpeak.Client.Networking.WebServer
   commentId: N:Winpeak.Client.Networking.WebServer
   name: Winpeak.Client.Networking.WebServer

@@ -6,6 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.HandleResponse(HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Result
   langs:
   - csharp
   - vb
@@ -16,7 +17,7 @@ items:
   source:
     id: ChechAuthorizationResult
     path: ''
-    startLine: 167130
+    startLine: 164636
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -34,9 +35,10 @@ items:
   inheritedMembers:
   - Winpeak.Client.Networking.WebServer.WebResult.ErrorCode
   - Winpeak.Client.Networking.WebServer.WebResult.ErrorMessage
+  - Winpeak.Client.Networking.WebServer.WebResult.m_state
+  - Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
   - Winpeak.Client.Networking.WebServer.WebResult.HandleError
   - Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-  - Winpeak.Client.Networking.WebServer.WebResult.Response
   - Winpeak.Client.Networking.WebServer.WebResult.StatusCode
   - Winpeak.Client.Networking.WebServer.WebResult.DataAsText
   - Winpeak.Client.Networking.WebServer.WebResult.Message
@@ -56,6 +58,37 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Result
+  commentId: P:Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Result
+  id: Result
+  parent: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: ChechAuthorizationResult.Result
+  fullName: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Result
+  type: Property
+  source:
+    id: Result
+    path: ''
+    startLine: 164639
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public ChechAuthorizationResult.Data Result { get; }
+    parameters: []
+    return:
+      type: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Data
+    content.vb: Public ReadOnly Property Result As ChechAuthorizationResult.Data
+  overload: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Result*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.HandleResponse(HTTPResponse)
   id: HandleResponse(HTTPResponse)
@@ -70,7 +103,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 167135
+    startLine: 164641
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -125,6 +158,18 @@ references:
   name: ErrorMessage
   nameWithType: WebResult.ErrorMessage
   fullName: Winpeak.Client.Networking.WebServer.WebResult.ErrorMessage
+- uid: Winpeak.Client.Networking.WebServer.WebResult.m_state
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_state
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: m_state
+  nameWithType: WebResult.m_state
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_state
+- uid: Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: m_sessionId
+  nameWithType: WebResult.m_sessionId
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleError
   parent: Winpeak.Client.Networking.WebServer.WebResult
@@ -192,12 +237,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.WebResult.Response
-  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.Response
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: Response
-  nameWithType: WebResult.Response
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.Response
 - uid: Winpeak.Client.Networking.WebServer.WebResult.StatusCode
   commentId: P:Winpeak.Client.Networking.WebServer.WebResult.StatusCode
   parent: Winpeak.Client.Networking.WebServer.WebResult
@@ -519,6 +558,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Result*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Result
+  name: Result
+  nameWithType: ChechAuthorizationResult.Result
+  fullName: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Result
+- uid: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Data
+  parent: Winpeak.Client.Networking.WebServer
+  name: ChechAuthorizationResult.Data
+  nameWithType: ChechAuthorizationResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.ChechAuthorizationResult.Data
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   parent: Winpeak.Client.Networking.WebServer.WebResult

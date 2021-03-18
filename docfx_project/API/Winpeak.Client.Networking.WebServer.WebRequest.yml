@@ -6,7 +6,6 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.WebRequest.#ctor(System.String,System.String)
-  - Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl(System.String)
   - Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
   - Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
@@ -14,7 +13,6 @@ items:
   - Winpeak.Client.Networking.WebServer.WebRequest.Method
   - Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished(HTTPRequest,HTTPResponse)
   - Winpeak.Client.Networking.WebServer.WebRequest.Send
-  - Winpeak.Client.Networking.WebServer.WebRequest.Timeout
   - Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
   - Winpeak.Client.Networking.WebServer.WebRequest.Url
   langs:
@@ -27,7 +25,7 @@ items:
   source:
     id: WebRequest
     path: ''
-    startLine: 166941
+    startLine: 165359
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -72,7 +70,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 166943
+    startLine: 165361
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -104,7 +102,7 @@ items:
   source:
     id: OnRequestFinished
     path: ''
-    startLine: 166950
+    startLine: 165368
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -139,7 +137,7 @@ items:
   source:
     id: m_url
     path: ''
-    startLine: 166952
+    startLine: 165370
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -166,7 +164,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 166956
+    startLine: 165374
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -197,7 +195,7 @@ items:
   source:
     id: Send
     path: ''
-    startLine: 166963
+    startLine: 165381
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -223,7 +221,7 @@ items:
   source:
     id: CustomHeaders
     path: ''
-    startLine: 166967
+    startLine: 165385
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -241,35 +239,6 @@ items:
   modifiers.vb:
   - Public
   - Overridable
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl(System.String)
-  commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl(System.String)
-  id: AddToUrl(System.String)
-  parent: Winpeak.Client.Networking.WebServer.WebRequest
-  langs:
-  - csharp
-  - vb
-  name: AddToUrl(String)
-  nameWithType: WebRequest.AddToUrl(String)
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl(System.String)
-  type: Method
-  source:
-    id: AddToUrl
-    path: ''
-    startLine: 166971
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: protected void AddToUrl(string newPart)
-    parameters:
-    - id: newPart
-      type: System.String
-    content.vb: Protected Sub AddToUrl(newPart As String)
-  overload: Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl*
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.Url
   commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Url
   id: Url
@@ -284,7 +253,7 @@ items:
   source:
     id: Url
     path: ''
-    startLine: 166975
+    startLine: 165389
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -317,7 +286,7 @@ items:
   source:
     id: TimeStamp
     path: ''
-    startLine: 166980
+    startLine: 165394
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -334,39 +303,6 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.Timeout
-  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Timeout
-  id: Timeout
-  parent: Winpeak.Client.Networking.WebServer.WebRequest
-  langs:
-  - csharp
-  - vb
-  name: Timeout
-  nameWithType: WebRequest.Timeout
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Timeout
-  type: Property
-  source:
-    id: Timeout
-    path: ''
-    startLine: 166982
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: public virtual int Timeout { get; }
-    parameters: []
-    return:
-      type: System.Int32
-    content.vb: Public Overridable ReadOnly Property Timeout As Integer
-  overload: Winpeak.Client.Networking.WebServer.WebRequest.Timeout*
-  modifiers.csharp:
-  - public
-  - virtual
-  - get
-  modifiers.vb:
-  - Public
-  - Overridable
-  - ReadOnly
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.Method
   commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Method
   id: Method
@@ -381,7 +317,7 @@ items:
   source:
     id: Method
     path: ''
-    startLine: 166984
+    startLine: 165396
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -416,7 +352,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 166986
+    startLine: 165398
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -1071,11 +1007,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl
-  name: AddToUrl
-  nameWithType: WebRequest.AddToUrl
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.AddToUrl
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.Url*
   commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.Url
   name: Url
@@ -1099,11 +1030,6 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.Timeout*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.Timeout
-  name: Timeout
-  nameWithType: WebRequest.Timeout
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Timeout
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.Method*
   commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.Method
   name: Method

@@ -6,9 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.RegistrationResult.HandleResponse(HTTPResponse)
-  - Winpeak.Client.Networking.WebServer.RegistrationResult.Login
-  - Winpeak.Client.Networking.WebServer.RegistrationResult.Password
-  - Winpeak.Client.Networking.WebServer.RegistrationResult.UserId
+  - Winpeak.Client.Networking.WebServer.RegistrationResult.Result
   langs:
   - csharp
   - vb
@@ -19,7 +17,7 @@ items:
   source:
     id: RegistrationResult
     path: ''
-    startLine: 167289
+    startLine: 164703
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -37,9 +35,10 @@ items:
   inheritedMembers:
   - Winpeak.Client.Networking.WebServer.WebResult.ErrorCode
   - Winpeak.Client.Networking.WebServer.WebResult.ErrorMessage
+  - Winpeak.Client.Networking.WebServer.WebResult.m_state
+  - Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
   - Winpeak.Client.Networking.WebServer.WebResult.HandleError
   - Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-  - Winpeak.Client.Networking.WebServer.WebResult.Response
   - Winpeak.Client.Networking.WebServer.WebResult.StatusCode
   - Winpeak.Client.Networking.WebServer.WebResult.DataAsText
   - Winpeak.Client.Networking.WebServer.WebResult.Message
@@ -59,93 +58,31 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.RegistrationResult.UserId
-  commentId: P:Winpeak.Client.Networking.WebServer.RegistrationResult.UserId
-  id: UserId
+- uid: Winpeak.Client.Networking.WebServer.RegistrationResult.Result
+  commentId: P:Winpeak.Client.Networking.WebServer.RegistrationResult.Result
+  id: Result
   parent: Winpeak.Client.Networking.WebServer.RegistrationResult
   langs:
   - csharp
   - vb
-  name: UserId
-  nameWithType: RegistrationResult.UserId
-  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult.UserId
+  name: Result
+  nameWithType: RegistrationResult.Result
+  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult.Result
   type: Property
   source:
-    id: UserId
+    id: Result
     path: ''
-    startLine: 167292
+    startLine: 164709
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public long UserId { get; }
+    content: public RegistrationResult.Data Result { get; }
     parameters: []
     return:
-      type: System.Int64
-    content.vb: Public ReadOnly Property UserId As Long
-  overload: Winpeak.Client.Networking.WebServer.RegistrationResult.UserId*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.RegistrationResult.Login
-  commentId: P:Winpeak.Client.Networking.WebServer.RegistrationResult.Login
-  id: Login
-  parent: Winpeak.Client.Networking.WebServer.RegistrationResult
-  langs:
-  - csharp
-  - vb
-  name: Login
-  nameWithType: RegistrationResult.Login
-  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult.Login
-  type: Property
-  source:
-    id: Login
-    path: ''
-    startLine: 167293
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: public string Login { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public ReadOnly Property Login As String
-  overload: Winpeak.Client.Networking.WebServer.RegistrationResult.Login*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.RegistrationResult.Password
-  commentId: P:Winpeak.Client.Networking.WebServer.RegistrationResult.Password
-  id: Password
-  parent: Winpeak.Client.Networking.WebServer.RegistrationResult
-  langs:
-  - csharp
-  - vb
-  name: Password
-  nameWithType: RegistrationResult.Password
-  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult.Password
-  type: Property
-  source:
-    id: Password
-    path: ''
-    startLine: 167294
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: public string Password { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public ReadOnly Property Password As String
-  overload: Winpeak.Client.Networking.WebServer.RegistrationResult.Password*
+      type: Winpeak.Client.Networking.WebServer.RegistrationResult.Data
+    content.vb: Public ReadOnly Property Result As RegistrationResult.Data
+  overload: Winpeak.Client.Networking.WebServer.RegistrationResult.Result*
   modifiers.csharp:
   - public
   - get
@@ -166,7 +103,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 167300
+    startLine: 164711
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -221,6 +158,18 @@ references:
   name: ErrorMessage
   nameWithType: WebResult.ErrorMessage
   fullName: Winpeak.Client.Networking.WebServer.WebResult.ErrorMessage
+- uid: Winpeak.Client.Networking.WebServer.WebResult.m_state
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_state
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: m_state
+  nameWithType: WebResult.m_state
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_state
+- uid: Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: m_sessionId
+  nameWithType: WebResult.m_sessionId
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleError
   parent: Winpeak.Client.Networking.WebServer.WebResult
@@ -288,12 +237,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.WebResult.Response
-  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.Response
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: Response
-  nameWithType: WebResult.Response
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.Response
 - uid: Winpeak.Client.Networking.WebServer.WebResult.StatusCode
   commentId: P:Winpeak.Client.Networking.WebServer.WebResult.StatusCode
   parent: Winpeak.Client.Networking.WebServer.WebResult
@@ -615,35 +558,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Networking.WebServer.RegistrationResult.UserId*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.RegistrationResult.UserId
-  name: UserId
-  nameWithType: RegistrationResult.UserId
-  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult.UserId
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
-  isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64
-- uid: Winpeak.Client.Networking.WebServer.RegistrationResult.Login*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.RegistrationResult.Login
-  name: Login
-  nameWithType: RegistrationResult.Login
-  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult.Login
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: Winpeak.Client.Networking.WebServer.RegistrationResult.Password*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.RegistrationResult.Password
-  name: Password
-  nameWithType: RegistrationResult.Password
-  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult.Password
+- uid: Winpeak.Client.Networking.WebServer.RegistrationResult.Result*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.RegistrationResult.Result
+  name: Result
+  nameWithType: RegistrationResult.Result
+  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult.Result
+- uid: Winpeak.Client.Networking.WebServer.RegistrationResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.RegistrationResult.Data
+  parent: Winpeak.Client.Networking.WebServer
+  name: RegistrationResult.Data
+  nameWithType: RegistrationResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.RegistrationResult.Data
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   parent: Winpeak.Client.Networking.WebServer.WebResult
