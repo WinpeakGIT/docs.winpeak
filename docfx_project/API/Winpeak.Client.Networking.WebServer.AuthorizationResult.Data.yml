@@ -1,29 +1,28 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Networking.SocketServer.RoundResult
-  commentId: T:Winpeak.Client.Networking.SocketServer.RoundResult
-  id: RoundResult
-  parent: Winpeak.Client.Networking.SocketServer
+- uid: Winpeak.Client.Networking.WebServer.AuthorizationResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.AuthorizationResult.Data
+  id: AuthorizationResult.Data
+  parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.SocketServer.RoundResult.CurrentRound
-  - Winpeak.Client.Networking.SocketServer.RoundResult.Stats
+  - Winpeak.Client.Networking.WebServer.AuthorizationResult.Data.UserId
   langs:
   - csharp
   - vb
-  name: RoundResult
-  nameWithType: RoundResult
-  fullName: Winpeak.Client.Networking.SocketServer.RoundResult
+  name: AuthorizationResult.Data
+  nameWithType: AuthorizationResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.AuthorizationResult.Data
   type: Class
   source:
-    id: RoundResult
+    id: Data
     path: ''
-    startLine: 166472
+    startLine: 164545
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Networking.SocketServer
+  namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public class RoundResult
-    content.vb: Public Class RoundResult
+    content: public class Data
+    content.vb: Public Class Data
   inheritance:
   - System.Object
   inheritedMembers:
@@ -40,74 +39,39 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.SocketServer.RoundResult.CurrentRound
-  commentId: P:Winpeak.Client.Networking.SocketServer.RoundResult.CurrentRound
-  id: CurrentRound
-  parent: Winpeak.Client.Networking.SocketServer.RoundResult
+- uid: Winpeak.Client.Networking.WebServer.AuthorizationResult.Data.UserId
+  commentId: F:Winpeak.Client.Networking.WebServer.AuthorizationResult.Data.UserId
+  id: UserId
+  parent: Winpeak.Client.Networking.WebServer.AuthorizationResult.Data
   langs:
   - csharp
   - vb
-  name: CurrentRound
-  nameWithType: RoundResult.CurrentRound
-  fullName: Winpeak.Client.Networking.SocketServer.RoundResult.CurrentRound
-  type: Property
+  name: UserId
+  nameWithType: AuthorizationResult.Data.UserId
+  fullName: Winpeak.Client.Networking.WebServer.AuthorizationResult.Data.UserId
+  type: Field
   source:
-    id: CurrentRound
+    id: UserId
     path: ''
-    startLine: 166474
+    startLine: 164548
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Networking.SocketServer
+  namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public int CurrentRound { get; }
-    parameters: []
+    content: public long UserId
     return:
-      type: System.Int32
-    content.vb: Public ReadOnly Property CurrentRound As Integer
-  overload: Winpeak.Client.Networking.SocketServer.RoundResult.CurrentRound*
+      type: System.Int64
+    content.vb: Public UserId As Long
   modifiers.csharp:
   - public
-  - get
   modifiers.vb:
   - Public
-  - ReadOnly
-- uid: Winpeak.Client.Networking.SocketServer.RoundResult.Stats
-  commentId: P:Winpeak.Client.Networking.SocketServer.RoundResult.Stats
-  id: Stats
-  parent: Winpeak.Client.Networking.SocketServer.RoundResult
-  langs:
-  - csharp
-  - vb
-  name: Stats
-  nameWithType: RoundResult.Stats
-  fullName: Winpeak.Client.Networking.SocketServer.RoundResult.Stats
-  type: Property
-  source:
-    id: Stats
-    path: ''
-    startLine: 166477
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.SocketServer
-  syntax:
-    content: public PlayersStats Stats { get; }
-    parameters: []
-    return:
-      type: Winpeak.Client.Networking.SocketServer.PlayersStats
-    content.vb: Public ReadOnly Property Stats As PlayersStats
-  overload: Winpeak.Client.Networking.SocketServer.RoundResult.Stats*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
 references:
-- uid: Winpeak.Client.Networking.SocketServer
-  commentId: N:Winpeak.Client.Networking.SocketServer
-  name: Winpeak.Client.Networking.SocketServer
-  nameWithType: Winpeak.Client.Networking.SocketServer
-  fullName: Winpeak.Client.Networking.SocketServer
+- uid: Winpeak.Client.Networking.WebServer
+  commentId: N:Winpeak.Client.Networking.WebServer
+  name: Winpeak.Client.Networking.WebServer
+  nameWithType: Winpeak.Client.Networking.WebServer
+  fullName: Winpeak.Client.Networking.WebServer
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -400,26 +364,10 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Networking.SocketServer.RoundResult.CurrentRound*
-  commentId: Overload:Winpeak.Client.Networking.SocketServer.RoundResult.CurrentRound
-  name: CurrentRound
-  nameWithType: RoundResult.CurrentRound
-  fullName: Winpeak.Client.Networking.SocketServer.RoundResult.CurrentRound
-- uid: System.Int32
-  commentId: T:System.Int32
+- uid: System.Int64
+  commentId: T:System.Int64
   parent: System
   isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
-- uid: Winpeak.Client.Networking.SocketServer.RoundResult.Stats*
-  commentId: Overload:Winpeak.Client.Networking.SocketServer.RoundResult.Stats
-  name: Stats
-  nameWithType: RoundResult.Stats
-  fullName: Winpeak.Client.Networking.SocketServer.RoundResult.Stats
-- uid: Winpeak.Client.Networking.SocketServer.PlayersStats
-  commentId: T:Winpeak.Client.Networking.SocketServer.PlayersStats
-  parent: Winpeak.Client.Networking.SocketServer
-  name: PlayersStats
-  nameWithType: PlayersStats
-  fullName: Winpeak.Client.Networking.SocketServer.PlayersStats
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64

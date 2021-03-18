@@ -16,7 +16,7 @@ items:
   source:
     id: CreateGameSessionResult
     path: ''
-    startLine: 164751
+    startLine: 164816
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -32,18 +32,21 @@ items:
   implements:
   - Winpeak.Client.Networking.WebServer.IWebResult
   inheritedMembers:
-  - Winpeak.Client.Networking.WebServer.WebResult.ErrorCode
-  - Winpeak.Client.Networking.WebServer.WebResult.ErrorMessage
+  - Winpeak.Client.Networking.WebServer.WebResult.Error
   - Winpeak.Client.Networking.WebServer.WebResult.m_state
   - Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
-  - Winpeak.Client.Networking.WebServer.WebResult.HandleError
+  - Winpeak.Client.Networking.WebServer.WebResult.m_needAuth
+  - Winpeak.Client.Networking.WebServer.WebResult.m_error
   - Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-  - Winpeak.Client.Networking.WebServer.WebResult.StatusCode
-  - Winpeak.Client.Networking.WebServer.WebResult.DataAsText
-  - Winpeak.Client.Networking.WebServer.WebResult.Message
+  - Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  - Winpeak.Client.Networking.WebServer.WebResult.IsSuccessCallback
+  - Winpeak.Client.Networking.WebServer.WebResult.HasError
   - Winpeak.Client.Networking.WebServer.WebResult.IsSuccess
   - Winpeak.Client.Networking.WebServer.WebResult.DataAsByteArray
   - Winpeak.Client.Networking.WebServer.WebResult.DataAsTexture
+  - Winpeak.Client.Networking.WebServer.WebResult.StatusCode
+  - Winpeak.Client.Networking.WebServer.WebResult.DataAsText
+  - Winpeak.Client.Networking.WebServer.WebResult.Message
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -71,7 +74,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 164766
+    startLine: 164831
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -114,18 +117,12 @@ references:
   name: IWebResult
   nameWithType: IWebResult
   fullName: Winpeak.Client.Networking.WebServer.IWebResult
-- uid: Winpeak.Client.Networking.WebServer.WebResult.ErrorCode
-  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.ErrorCode
+- uid: Winpeak.Client.Networking.WebServer.WebResult.Error
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.Error
   parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: ErrorCode
-  nameWithType: WebResult.ErrorCode
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.ErrorCode
-- uid: Winpeak.Client.Networking.WebServer.WebResult.ErrorMessage
-  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.ErrorMessage
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: ErrorMessage
-  nameWithType: WebResult.ErrorMessage
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.ErrorMessage
+  name: Error
+  nameWithType: WebResult.Error
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.Error
 - uid: Winpeak.Client.Networking.WebServer.WebResult.m_state
   commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_state
   parent: Winpeak.Client.Networking.WebServer.WebResult
@@ -138,34 +135,18 @@ references:
   name: m_sessionId
   nameWithType: WebResult.m_sessionId
   fullName: Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
-- uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError
-  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleError
+- uid: Winpeak.Client.Networking.WebServer.WebResult.m_needAuth
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_needAuth
   parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: HandleError()
-  nameWithType: WebResult.HandleError()
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError()
-  spec.csharp:
-  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError
-    name: HandleError
-    nameWithType: WebResult.HandleError
-    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError
-    name: HandleError
-    nameWithType: WebResult.HandleError
-    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
+  name: m_needAuth
+  nameWithType: WebResult.m_needAuth
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_needAuth
+- uid: Winpeak.Client.Networking.WebServer.WebResult.m_error
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_error
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: m_error
+  nameWithType: WebResult.m_error
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_error
 - uid: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
   parent: Winpeak.Client.Networking.WebServer.WebResult
@@ -205,24 +186,54 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.WebResult.StatusCode
-  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.StatusCode
+- uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
   parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: StatusCode
-  nameWithType: WebResult.StatusCode
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.StatusCode
-- uid: Winpeak.Client.Networking.WebServer.WebResult.DataAsText
-  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.DataAsText
+  name: HandleError(WebError)
+  nameWithType: WebResult.HandleError(WebError)
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+    name: HandleError
+    nameWithType: WebResult.HandleError
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Winpeak.Client.Networking.WebServer.WebError
+    name: WebError
+    nameWithType: WebError
+    fullName: Winpeak.Client.Networking.WebServer.WebError
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+    name: HandleError
+    nameWithType: WebResult.HandleError
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Winpeak.Client.Networking.WebServer.WebError
+    name: WebError
+    nameWithType: WebError
+    fullName: Winpeak.Client.Networking.WebServer.WebError
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebResult.IsSuccessCallback
+  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.IsSuccessCallback
   parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: DataAsText
-  nameWithType: WebResult.DataAsText
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.DataAsText
-- uid: Winpeak.Client.Networking.WebServer.WebResult.Message
-  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.Message
+  name: IsSuccessCallback
+  nameWithType: WebResult.IsSuccessCallback
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.IsSuccessCallback
+- uid: Winpeak.Client.Networking.WebServer.WebResult.HasError
+  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.HasError
   parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: Message
-  nameWithType: WebResult.Message
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.Message
+  name: HasError
+  nameWithType: WebResult.HasError
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.HasError
 - uid: Winpeak.Client.Networking.WebServer.WebResult.IsSuccess
   commentId: P:Winpeak.Client.Networking.WebServer.WebResult.IsSuccess
   parent: Winpeak.Client.Networking.WebServer.WebResult
@@ -241,6 +252,24 @@ references:
   name: DataAsTexture
   nameWithType: WebResult.DataAsTexture
   fullName: Winpeak.Client.Networking.WebServer.WebResult.DataAsTexture
+- uid: Winpeak.Client.Networking.WebServer.WebResult.StatusCode
+  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.StatusCode
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: StatusCode
+  nameWithType: WebResult.StatusCode
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.StatusCode
+- uid: Winpeak.Client.Networking.WebServer.WebResult.DataAsText
+  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.DataAsText
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: DataAsText
+  nameWithType: WebResult.DataAsText
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.DataAsText
+- uid: Winpeak.Client.Networking.WebServer.WebResult.Message
+  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.Message
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: Message
+  nameWithType: WebResult.Message
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.Message
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object

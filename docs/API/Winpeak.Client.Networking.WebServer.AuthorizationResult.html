@@ -88,10 +88,7 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_ErrorCode">WebResult.ErrorCode</a>
-    </div>
-    <div>
-      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_ErrorMessage">WebResult.ErrorMessage</a>
+      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_Error">WebResult.Error</a>
     </div>
     <div>
       <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_m_state">WebResult.m_state</a>
@@ -100,19 +97,19 @@
       <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_m_sessionId">WebResult.m_sessionId</a>
     </div>
     <div>
-      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_HandleError">WebResult.HandleError()</a>
+      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_m_needAuth">WebResult.m_needAuth</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_m_error">WebResult.m_error</a>
     </div>
     <div>
       <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_SetResponse_HTTPResponse_">WebResult.SetResponse(HTTPResponse)</a>
     </div>
     <div>
-      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_StatusCode">WebResult.StatusCode</a>
+      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_IsSuccessCallback">WebResult.IsSuccessCallback</a>
     </div>
     <div>
-      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_DataAsText">WebResult.DataAsText</a>
-    </div>
-    <div>
-      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_Message">WebResult.Message</a>
+      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_HasError">WebResult.HasError</a>
     </div>
     <div>
       <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_IsSuccess">WebResult.IsSuccess</a>
@@ -122,6 +119,15 @@
     </div>
     <div>
       <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_DataAsTexture">WebResult.DataAsTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_StatusCode">WebResult.StatusCode</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_DataAsText">WebResult.DataAsText</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_Message">WebResult.Message</a>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
@@ -151,8 +157,64 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AuthorizationResult : WebResult, IWebResult</code></pre>
   </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Winpeak_Client_Networking_WebServer_AuthorizationResult_Result_" data-uid="Winpeak.Client.Networking.WebServer.AuthorizationResult.Result*"></a>
+  <h4 id="Winpeak_Client_Networking_WebServer_AuthorizationResult_Result" data-uid="Winpeak.Client.Networking.WebServer.AuthorizationResult.Result">Result</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AuthorizationResult.Data Result { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Winpeak.Client.Networking.WebServer.AuthorizationResult.Data.html">AuthorizationResult.Data</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="Winpeak_Client_Networking_WebServer_AuthorizationResult_HandleError_" data-uid="Winpeak.Client.Networking.WebServer.AuthorizationResult.HandleError*"></a>
+  <h4 id="Winpeak_Client_Networking_WebServer_AuthorizationResult_HandleError_Winpeak_Client_Networking_WebServer_WebError_" data-uid="Winpeak.Client.Networking.WebServer.AuthorizationResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)">HandleError(WebError)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void HandleError(WebError error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Winpeak.Client.Networking.WebServer.WebError.html">WebError</a></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Winpeak.Client.Networking.WebServer.WebResult.html#Winpeak_Client_Networking_WebServer_WebResult_HandleError_Winpeak_Client_Networking_WebServer_WebError_">WebResult.HandleError(WebError)</a></div>
   
   
   <a id="Winpeak_Client_Networking_WebServer_AuthorizationResult_HandleResponse_" data-uid="Winpeak.Client.Networking.WebServer.AuthorizationResult.HandleResponse*"></a>
