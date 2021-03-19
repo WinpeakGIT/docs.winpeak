@@ -27,6 +27,7 @@ items:
   - Winpeak.Client.Networking.WebServer.GetGameInfoResult
   - Winpeak.Client.Networking.WebServer.GetUserInfo
   - Winpeak.Client.Networking.WebServer.GetUserInfoResult
+  - Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
   - Winpeak.Client.Networking.WebServer.HTTPRequestFactory
   - Winpeak.Client.Networking.WebServer.IWebRequest
   - Winpeak.Client.Networking.WebServer.IWebResult
@@ -34,6 +35,7 @@ items:
   - Winpeak.Client.Networking.WebServer.PasswordRecoveryRequest
   - Winpeak.Client.Networking.WebServer.PasswordRecoveryRequestResult
   - Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
+  - Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Data
   - Winpeak.Client.Networking.WebServer.Registration
   - Winpeak.Client.Networking.WebServer.RegistrationResult
   - Winpeak.Client.Networking.WebServer.RegistrationResult.Data
@@ -45,6 +47,7 @@ items:
   - Winpeak.Client.Networking.WebServer.SearchGameResult
   - Winpeak.Client.Networking.WebServer.SearchUser
   - Winpeak.Client.Networking.WebServer.SearchUserResult
+  - Winpeak.Client.Networking.WebServer.Session
   - Winpeak.Client.Networking.WebServer.WebError
   - Winpeak.Client.Networking.WebServer.WebRequest
   - Winpeak.Client.Networking.WebServer.WebResult
@@ -143,11 +146,23 @@ references:
   name: GetUserInfoResult
   nameWithType: GetUserInfoResult
   fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult
+- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
+  commentId: T:Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
+  parent: Winpeak.Client.Networking.WebServer
+  name: GetUserInfoResult.UserMetaData
+  nameWithType: GetUserInfoResult.UserMetaData
+  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
 - uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
   commentId: T:Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
   name: PasswordRecoveryResult
   nameWithType: PasswordRecoveryResult
   fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
+- uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Data
+  parent: Winpeak.Client.Networking.WebServer
+  name: PasswordRecoveryResult.Data
+  nameWithType: PasswordRecoveryResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Data
 - uid: Winpeak.Client.Networking.WebServer.RegistrationResult
   commentId: T:Winpeak.Client.Networking.WebServer.RegistrationResult
   name: RegistrationResult
@@ -184,6 +199,11 @@ references:
   name: RemoveFriendResult
   nameWithType: RemoveFriendResult
   fullName: Winpeak.Client.Networking.WebServer.RemoveFriendResult
+- uid: Winpeak.Client.Networking.WebServer.Session
+  commentId: T:Winpeak.Client.Networking.WebServer.Session
+  name: Session
+  nameWithType: Session
+  fullName: Winpeak.Client.Networking.WebServer.Session
 - uid: Winpeak.Client.Networking.WebServer.EditProfile
   commentId: T:Winpeak.Client.Networking.WebServer.EditProfile
   name: EditProfile

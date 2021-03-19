@@ -5,7 +5,9 @@ items:
   id: GetUserInfoResult
   parent: Winpeak.Client.Networking.WebServer
   children:
+  - Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
   - Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleResponse(HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
   langs:
   - csharp
   - vb
@@ -34,11 +36,9 @@ items:
   inheritedMembers:
   - Winpeak.Client.Networking.WebServer.WebResult.Error
   - Winpeak.Client.Networking.WebServer.WebResult.m_state
-  - Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
   - Winpeak.Client.Networking.WebServer.WebResult.m_needAuth
   - Winpeak.Client.Networking.WebServer.WebResult.m_error
   - Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-  - Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
   - Winpeak.Client.Networking.WebServer.WebResult.IsSuccessCallback
   - Winpeak.Client.Networking.WebServer.WebResult.HasError
   - Winpeak.Client.Networking.WebServer.WebResult.IsSuccess
@@ -60,6 +60,37 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
+  commentId: P:Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
+  id: Result
+  parent: Winpeak.Client.Networking.WebServer.GetUserInfoResult
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: GetUserInfoResult.Result
+  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
+  type: Property
+  source:
+    id: Result
+    path: ''
+    startLine: 164733
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public GetUserInfoResult.UserMetaData Result { get; }
+    parameters: []
+    return:
+      type: Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
+    content.vb: Public ReadOnly Property Result As GetUserInfoResult.UserMetaData
+  overload: Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleResponse(HTTPResponse)
   id: HandleResponse(HTTPResponse)
@@ -74,7 +105,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 164733
+    startLine: 164735
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -86,6 +117,38 @@ items:
     content.vb: Protected Overrides Sub HandleResponse(response As HTTPResponse)
   overridden: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   overload: Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleResponse*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  commentId: M:Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  id: HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  parent: Winpeak.Client.Networking.WebServer.GetUserInfoResult
+  langs:
+  - csharp
+  - vb
+  name: HandleError(WebError)
+  nameWithType: GetUserInfoResult.HandleError(WebError)
+  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  type: Method
+  source:
+    id: HandleError
+    path: ''
+    startLine: 164741
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: protected override void HandleError(WebError error)
+    parameters:
+    - id: error
+      type: Winpeak.Client.Networking.WebServer.WebError
+    content.vb: Protected Overrides Sub HandleError(error As WebError)
+  overridden: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  overload: Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleError*
   modifiers.csharp:
   - protected
   - override
@@ -129,12 +192,6 @@ references:
   name: m_state
   nameWithType: WebResult.m_state
   fullName: Winpeak.Client.Networking.WebServer.WebResult.m_state
-- uid: Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
-  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: m_sessionId
-  nameWithType: WebResult.m_sessionId
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_sessionId
 - uid: Winpeak.Client.Networking.WebServer.WebResult.m_needAuth
   commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_needAuth
   parent: Winpeak.Client.Networking.WebServer.WebResult
@@ -183,42 +240,6 @@ references:
     nameWithType: HTTPResponse
     fullName: HTTPResponse
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
-  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: HandleError(WebError)
-  nameWithType: WebResult.HandleError(WebError)
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
-  spec.csharp:
-  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
-    name: HandleError
-    nameWithType: WebResult.HandleError
-    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Winpeak.Client.Networking.WebServer.WebError
-    name: WebError
-    nameWithType: WebError
-    fullName: Winpeak.Client.Networking.WebServer.WebError
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
-    name: HandleError
-    nameWithType: WebResult.HandleError
-    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Winpeak.Client.Networking.WebServer.WebError
-    name: WebError
-    nameWithType: WebError
-    fullName: Winpeak.Client.Networking.WebServer.WebError
   - name: )
     nameWithType: )
     fullName: )
@@ -555,6 +576,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
+  name: Result
+  nameWithType: GetUserInfoResult.Result
+  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
+- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
+  commentId: T:Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
+  parent: Winpeak.Client.Networking.WebServer
+  name: GetUserInfoResult.UserMetaData
+  nameWithType: GetUserInfoResult.UserMetaData
+  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   parent: Winpeak.Client.Networking.WebServer.WebResult
@@ -604,3 +636,50 @@ references:
   name: HTTPResponse
   nameWithType: HTTPResponse
   fullName: HTTPResponse
+- uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: HandleError(WebError)
+  nameWithType: WebResult.HandleError(WebError)
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+    name: HandleError
+    nameWithType: WebResult.HandleError
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Winpeak.Client.Networking.WebServer.WebError
+    name: WebError
+    nameWithType: WebError
+    fullName: Winpeak.Client.Networking.WebServer.WebError
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+    name: HandleError
+    nameWithType: WebResult.HandleError
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Winpeak.Client.Networking.WebServer.WebError
+    name: WebError
+    nameWithType: WebError
+    fullName: Winpeak.Client.Networking.WebServer.WebError
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleError*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleError
+  name: HandleError
+  nameWithType: GetUserInfoResult.HandleError
+  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleError
+- uid: Winpeak.Client.Networking.WebServer.WebError
+  commentId: T:Winpeak.Client.Networking.WebServer.WebError
+  parent: Winpeak.Client.Networking.WebServer
+  name: WebError
+  nameWithType: WebError
+  fullName: Winpeak.Client.Networking.WebServer.WebError

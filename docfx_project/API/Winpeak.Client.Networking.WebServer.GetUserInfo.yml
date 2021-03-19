@@ -5,7 +5,7 @@ items:
   id: GetUserInfo
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.GetUserInfo.#ctor(System.String,System.Int32,System.String)
+  - Winpeak.Client.Networking.WebServer.GetUserInfo.#ctor(System.Int32,System.Int32,System.Int32)
   - Winpeak.Client.Networking.WebServer.GetUserInfo.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.GetUserInfo.GenerateData
   langs:
@@ -18,7 +18,7 @@ items:
   source:
     id: GetUserInfo
     path: ''
-    startLine: 165309
+    startLine: 165355
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -57,34 +57,34 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.GetUserInfo.#ctor(System.String,System.Int32,System.String)
-  commentId: M:Winpeak.Client.Networking.WebServer.GetUserInfo.#ctor(System.String,System.Int32,System.String)
-  id: '#ctor(System.String,System.Int32,System.String)'
+- uid: Winpeak.Client.Networking.WebServer.GetUserInfo.#ctor(System.Int32,System.Int32,System.Int32)
+  commentId: M:Winpeak.Client.Networking.WebServer.GetUserInfo.#ctor(System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32)'
   parent: Winpeak.Client.Networking.WebServer.GetUserInfo
   langs:
   - csharp
   - vb
-  name: GetUserInfo(String, Int32, String)
-  nameWithType: GetUserInfo.GetUserInfo(String, Int32, String)
-  fullName: Winpeak.Client.Networking.WebServer.GetUserInfo.GetUserInfo(System.String, System.Int32, System.String)
+  name: GetUserInfo(Int32, Int32, Int32)
+  nameWithType: GetUserInfo.GetUserInfo(Int32, Int32, Int32)
+  fullName: Winpeak.Client.Networking.WebServer.GetUserInfo.GetUserInfo(System.Int32, System.Int32, System.Int32)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 165317
+    startLine: 165363
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public GetUserInfo(string appVersion, int gameId, string gameVersion)
+    content: public GetUserInfo(int appVersion, int gameId, int gameVersion)
     parameters:
     - id: appVersion
-      type: System.String
+      type: System.Int32
     - id: gameId
       type: System.Int32
     - id: gameVersion
-      type: System.String
-    content.vb: Public Sub New(appVersion As String, gameId As Integer, gameVersion As String)
+      type: System.Int32
+    content.vb: Public Sub New(appVersion As Integer, gameId As Integer, gameVersion As Integer)
   overload: Winpeak.Client.Networking.WebServer.GetUserInfo.#ctor*
   modifiers.csharp:
   - public
@@ -104,7 +104,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 165323
+    startLine: 165369
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -135,7 +135,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 165334
+    startLine: 165380
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -876,13 +876,6 @@ references:
   name: GetUserInfo
   nameWithType: GetUserInfo.GetUserInfo
   fullName: Winpeak.Client.Networking.WebServer.GetUserInfo.GetUserInfo
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
