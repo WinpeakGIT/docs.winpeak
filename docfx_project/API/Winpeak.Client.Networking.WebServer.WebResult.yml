@@ -19,6 +19,7 @@ items:
   - Winpeak.Client.Networking.WebServer.WebResult.m_state
   - Winpeak.Client.Networking.WebServer.WebResult.Message
   - Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.WebResult.State
   - Winpeak.Client.Networking.WebServer.WebResult.StatusCode
   langs:
   - csharp
@@ -30,7 +31,7 @@ items:
   source:
     id: WebResult
     path: ''
-    startLine: 164361
+    startLine: 164362
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -89,7 +90,7 @@ items:
   source:
     id: Error
     path: ''
-    startLine: 164363
+    startLine: 164364
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -116,7 +117,7 @@ items:
   source:
     id: m_state
     path: ''
-    startLine: 164366
+    startLine: 164367
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -143,7 +144,7 @@ items:
   source:
     id: m_needAuth
     path: ''
-    startLine: 164367
+    startLine: 164368
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -170,7 +171,7 @@ items:
   source:
     id: m_error
     path: ''
-    startLine: 164368
+    startLine: 164369
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -197,7 +198,7 @@ items:
   source:
     id: SetResponse
     path: ''
-    startLine: 164370
+    startLine: 164371
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -226,7 +227,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 164410
+    startLine: 164411
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -257,7 +258,7 @@ items:
   source:
     id: HandleError
     path: ''
-    startLine: 164414
+    startLine: 164415
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -288,7 +289,7 @@ items:
   source:
     id: IsSuccessCallback
     path: ''
-    startLine: 164418
+    startLine: 164419
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -321,7 +322,7 @@ items:
   source:
     id: HasError
     path: ''
-    startLine: 164433
+    startLine: 164434
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -354,7 +355,7 @@ items:
   source:
     id: IsSuccess
     path: ''
-    startLine: 164435
+    startLine: 164436
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -385,7 +386,7 @@ items:
   source:
     id: DataAsByteArray
     path: ''
-    startLine: 164437
+    startLine: 164438
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -418,7 +419,7 @@ items:
   source:
     id: DataAsTexture
     path: ''
-    startLine: 164439
+    startLine: 164440
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -451,7 +452,7 @@ items:
   source:
     id: StatusCode
     path: ''
-    startLine: 164441
+    startLine: 164442
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -484,7 +485,7 @@ items:
   source:
     id: DataAsText
     path: ''
-    startLine: 164443
+    startLine: 164444
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -517,7 +518,7 @@ items:
   source:
     id: Message
     path: ''
-    startLine: 164445
+    startLine: 164446
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -530,6 +531,39 @@ items:
   overload: Winpeak.Client.Networking.WebServer.WebResult.Message*
   implements:
   - Winpeak.Client.Networking.WebServer.IWebResult.Message
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.WebResult.State
+  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.State
+  id: State
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: WebResult.State
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.State
+  type: Property
+  source:
+    id: State
+    path: ''
+    startLine: 164448
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public bool State { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property State As Boolean
+  overload: Winpeak.Client.Networking.WebServer.WebResult.State*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IWebResult.State
   modifiers.csharp:
   - public
   - get
@@ -1000,3 +1034,14 @@ references:
   name: Message
   nameWithType: IWebResult.Message
   fullName: Winpeak.Client.Networking.WebServer.IWebResult.Message
+- uid: Winpeak.Client.Networking.WebServer.WebResult.State*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.WebResult.State
+  name: State
+  nameWithType: WebResult.State
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.State
+- uid: Winpeak.Client.Networking.WebServer.IWebResult.State
+  commentId: P:Winpeak.Client.Networking.WebServer.IWebResult.State
+  parent: Winpeak.Client.Networking.WebServer.IWebResult
+  name: State
+  nameWithType: IWebResult.State
+  fullName: Winpeak.Client.Networking.WebServer.IWebResult.State

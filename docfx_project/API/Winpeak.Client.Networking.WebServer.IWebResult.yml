@@ -11,6 +11,7 @@ items:
   - Winpeak.Client.Networking.WebServer.IWebResult.HasError
   - Winpeak.Client.Networking.WebServer.IWebResult.IsSuccessCallback
   - Winpeak.Client.Networking.WebServer.IWebResult.Message
+  - Winpeak.Client.Networking.WebServer.IWebResult.State
   - Winpeak.Client.Networking.WebServer.IWebResult.StatusCode
   langs:
   - csharp
@@ -238,6 +239,35 @@ items:
   - get
   modifiers.vb:
   - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.IWebResult.State
+  commentId: P:Winpeak.Client.Networking.WebServer.IWebResult.State
+  id: State
+  parent: Winpeak.Client.Networking.WebServer.IWebResult
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: IWebResult.State
+  fullName: Winpeak.Client.Networking.WebServer.IWebResult.State
+  type: Property
+  source:
+    id: State
+    path: ''
+    startLine: 164340
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: bool State { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property State As Boolean
+  overload: Winpeak.Client.Networking.WebServer.IWebResult.State*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
 references:
 - uid: Winpeak.Client.Networking.WebServer
   commentId: N:Winpeak.Client.Networking.WebServer
@@ -337,3 +367,8 @@ references:
   name: HasError
   nameWithType: IWebResult.HasError
   fullName: Winpeak.Client.Networking.WebServer.IWebResult.HasError
+- uid: Winpeak.Client.Networking.WebServer.IWebResult.State*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.IWebResult.State
+  name: State
+  nameWithType: IWebResult.State
+  fullName: Winpeak.Client.Networking.WebServer.IWebResult.State
