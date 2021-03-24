@@ -1,0 +1,976 @@
+### YamlMime:ManagedReference
+items:
+- uid: Winpeak.Client.Modules.CacheData
+  commentId: T:Winpeak.Client.Modules.CacheData
+  id: CacheData
+  parent: Winpeak.Client.Modules
+  children:
+  - Winpeak.Client.Modules.CacheData.#ctor
+  - Winpeak.Client.Modules.CacheData.Clear
+  - Winpeak.Client.Modules.CacheData.ClearActiveSessionData
+  - Winpeak.Client.Modules.CacheData.GetActiveSession
+  - Winpeak.Client.Modules.CacheData.GetActiveSessionLogin
+  - Winpeak.Client.Modules.CacheData.GetActiveSessionPassword
+  - Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData
+  - Winpeak.Client.Modules.CacheData.HasActiveSessionData
+  - Winpeak.Client.Modules.CacheData.SetActiveSessionData(System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: CacheData
+  nameWithType: CacheData
+  fullName: Winpeak.Client.Modules.CacheData
+  type: Class
+  source:
+    id: CacheData
+    path: ''
+    startLine: 169187
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: 'public class CacheData : ICacheData'
+    content.vb: >-
+      Public Class CacheData
+          Implements ICacheData
+  inheritance:
+  - System.Object
+  implements:
+  - Winpeak.Client.Modules.ICacheData
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Winpeak.Client.Modules.CacheData.#ctor
+  commentId: M:Winpeak.Client.Modules.CacheData.#ctor
+  id: '#ctor'
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: CacheData()
+  nameWithType: CacheData.CacheData()
+  fullName: Winpeak.Client.Modules.CacheData.CacheData()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 169192
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public CacheData()
+    content.vb: Public Sub New
+  overload: Winpeak.Client.Modules.CacheData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.SetActiveSessionData(System.String,System.String,System.String)
+  commentId: M:Winpeak.Client.Modules.CacheData.SetActiveSessionData(System.String,System.String,System.String)
+  id: SetActiveSessionData(System.String,System.String,System.String)
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: SetActiveSessionData(String, String, String)
+  nameWithType: CacheData.SetActiveSessionData(String, String, String)
+  fullName: Winpeak.Client.Modules.CacheData.SetActiveSessionData(System.String, System.String, System.String)
+  type: Method
+  source:
+    id: SetActiveSessionData
+    path: ''
+    startLine: 169196
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public void SetActiveSessionData(string login, string password, string sessionId)
+    parameters:
+    - id: login
+      type: System.String
+    - id: password
+      type: System.String
+    - id: sessionId
+      type: System.String
+    content.vb: Public Sub SetActiveSessionData(login As String, password As String, sessionId As String)
+  overload: Winpeak.Client.Modules.CacheData.SetActiveSessionData*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.SetActiveSessionData(System.String,System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData
+  commentId: M:Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData
+  id: GetLatestActiveSessionData
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: GetLatestActiveSessionData()
+  nameWithType: CacheData.GetLatestActiveSessionData()
+  fullName: Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData()
+  type: Method
+  source:
+    id: GetLatestActiveSessionData
+    path: ''
+    startLine: 169201
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public string[] GetLatestActiveSessionData()
+    return:
+      type: System.String[]
+    content.vb: Public Function GetLatestActiveSessionData As String()
+  overload: Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.GetLatestActiveSessionData
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.ClearActiveSessionData
+  commentId: M:Winpeak.Client.Modules.CacheData.ClearActiveSessionData
+  id: ClearActiveSessionData
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: ClearActiveSessionData()
+  nameWithType: CacheData.ClearActiveSessionData()
+  fullName: Winpeak.Client.Modules.CacheData.ClearActiveSessionData()
+  type: Method
+  source:
+    id: ClearActiveSessionData
+    path: ''
+    startLine: 169206
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public void ClearActiveSessionData()
+    content.vb: Public Sub ClearActiveSessionData
+  overload: Winpeak.Client.Modules.CacheData.ClearActiveSessionData*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.ClearActiveSessionData
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.HasActiveSessionData
+  commentId: M:Winpeak.Client.Modules.CacheData.HasActiveSessionData
+  id: HasActiveSessionData
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: HasActiveSessionData()
+  nameWithType: CacheData.HasActiveSessionData()
+  fullName: Winpeak.Client.Modules.CacheData.HasActiveSessionData()
+  type: Method
+  source:
+    id: HasActiveSessionData
+    path: ''
+    startLine: 169210
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public bool HasActiveSessionData()
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasActiveSessionData As Boolean
+  overload: Winpeak.Client.Modules.CacheData.HasActiveSessionData*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.HasActiveSessionData
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.GetActiveSessionLogin
+  commentId: M:Winpeak.Client.Modules.CacheData.GetActiveSessionLogin
+  id: GetActiveSessionLogin
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: GetActiveSessionLogin()
+  nameWithType: CacheData.GetActiveSessionLogin()
+  fullName: Winpeak.Client.Modules.CacheData.GetActiveSessionLogin()
+  type: Method
+  source:
+    id: GetActiveSessionLogin
+    path: ''
+    startLine: 169219
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public string GetActiveSessionLogin()
+    return:
+      type: System.String
+    content.vb: Public Function GetActiveSessionLogin As String
+  overload: Winpeak.Client.Modules.CacheData.GetActiveSessionLogin*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.GetActiveSessionLogin
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.GetActiveSessionPassword
+  commentId: M:Winpeak.Client.Modules.CacheData.GetActiveSessionPassword
+  id: GetActiveSessionPassword
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: GetActiveSessionPassword()
+  nameWithType: CacheData.GetActiveSessionPassword()
+  fullName: Winpeak.Client.Modules.CacheData.GetActiveSessionPassword()
+  type: Method
+  source:
+    id: GetActiveSessionPassword
+    path: ''
+    startLine: 169225
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public string GetActiveSessionPassword()
+    return:
+      type: System.String
+    content.vb: Public Function GetActiveSessionPassword As String
+  overload: Winpeak.Client.Modules.CacheData.GetActiveSessionPassword*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.GetActiveSessionPassword
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.GetActiveSession
+  commentId: M:Winpeak.Client.Modules.CacheData.GetActiveSession
+  id: GetActiveSession
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: GetActiveSession()
+  nameWithType: CacheData.GetActiveSession()
+  fullName: Winpeak.Client.Modules.CacheData.GetActiveSession()
+  type: Method
+  source:
+    id: GetActiveSession
+    path: ''
+    startLine: 169231
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public string GetActiveSession()
+    return:
+      type: System.String
+    content.vb: Public Function GetActiveSession As String
+  overload: Winpeak.Client.Modules.CacheData.GetActiveSession*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.GetActiveSession
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.Clear
+  commentId: M:Winpeak.Client.Modules.CacheData.Clear
+  id: Clear
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: CacheData.Clear()
+  fullName: Winpeak.Client.Modules.CacheData.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: ''
+    startLine: 169237
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: Winpeak.Client.Modules.CacheData.Clear*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.Clear
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Winpeak.Client.Modules
+  commentId: N:Winpeak.Client.Modules
+  name: Winpeak.Client.Modules
+  nameWithType: Winpeak.Client.Modules
+  fullName: Winpeak.Client.Modules
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Winpeak.Client.Modules.ICacheData
+  commentId: T:Winpeak.Client.Modules.ICacheData
+  parent: Winpeak.Client.Modules
+  name: ICacheData
+  nameWithType: ICacheData
+  fullName: Winpeak.Client.Modules.ICacheData
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Winpeak.Client.Modules.CacheData.#ctor*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.#ctor
+  name: CacheData
+  nameWithType: CacheData.CacheData
+  fullName: Winpeak.Client.Modules.CacheData.CacheData
+- uid: Winpeak.Client.Modules.CacheData.SetActiveSessionData*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.SetActiveSessionData
+  name: SetActiveSessionData
+  nameWithType: CacheData.SetActiveSessionData
+  fullName: Winpeak.Client.Modules.CacheData.SetActiveSessionData
+- uid: Winpeak.Client.Modules.ICacheData.SetActiveSessionData(System.String,System.String,System.String)
+  commentId: M:Winpeak.Client.Modules.ICacheData.SetActiveSessionData(System.String,System.String,System.String)
+  parent: Winpeak.Client.Modules.ICacheData
+  isExternal: true
+  name: SetActiveSessionData(String, String, String)
+  nameWithType: ICacheData.SetActiveSessionData(String, String, String)
+  fullName: Winpeak.Client.Modules.ICacheData.SetActiveSessionData(System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.SetActiveSessionData(System.String,System.String,System.String)
+    name: SetActiveSessionData
+    nameWithType: ICacheData.SetActiveSessionData
+    fullName: Winpeak.Client.Modules.ICacheData.SetActiveSessionData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.SetActiveSessionData(System.String,System.String,System.String)
+    name: SetActiveSessionData
+    nameWithType: ICacheData.SetActiveSessionData
+    fullName: Winpeak.Client.Modules.ICacheData.SetActiveSessionData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData
+  name: GetLatestActiveSessionData
+  nameWithType: CacheData.GetLatestActiveSessionData
+  fullName: Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData
+- uid: Winpeak.Client.Modules.ICacheData.GetLatestActiveSessionData
+  commentId: M:Winpeak.Client.Modules.ICacheData.GetLatestActiveSessionData
+  parent: Winpeak.Client.Modules.ICacheData
+  name: GetLatestActiveSessionData()
+  nameWithType: ICacheData.GetLatestActiveSessionData()
+  fullName: Winpeak.Client.Modules.ICacheData.GetLatestActiveSessionData()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.GetLatestActiveSessionData
+    name: GetLatestActiveSessionData
+    nameWithType: ICacheData.GetLatestActiveSessionData
+    fullName: Winpeak.Client.Modules.ICacheData.GetLatestActiveSessionData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.GetLatestActiveSessionData
+    name: GetLatestActiveSessionData
+    nameWithType: ICacheData.GetLatestActiveSessionData
+    fullName: Winpeak.Client.Modules.ICacheData.GetLatestActiveSessionData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Winpeak.Client.Modules.CacheData.ClearActiveSessionData*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.ClearActiveSessionData
+  name: ClearActiveSessionData
+  nameWithType: CacheData.ClearActiveSessionData
+  fullName: Winpeak.Client.Modules.CacheData.ClearActiveSessionData
+- uid: Winpeak.Client.Modules.ICacheData.ClearActiveSessionData
+  commentId: M:Winpeak.Client.Modules.ICacheData.ClearActiveSessionData
+  parent: Winpeak.Client.Modules.ICacheData
+  name: ClearActiveSessionData()
+  nameWithType: ICacheData.ClearActiveSessionData()
+  fullName: Winpeak.Client.Modules.ICacheData.ClearActiveSessionData()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.ClearActiveSessionData
+    name: ClearActiveSessionData
+    nameWithType: ICacheData.ClearActiveSessionData
+    fullName: Winpeak.Client.Modules.ICacheData.ClearActiveSessionData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.ClearActiveSessionData
+    name: ClearActiveSessionData
+    nameWithType: ICacheData.ClearActiveSessionData
+    fullName: Winpeak.Client.Modules.ICacheData.ClearActiveSessionData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.HasActiveSessionData*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.HasActiveSessionData
+  name: HasActiveSessionData
+  nameWithType: CacheData.HasActiveSessionData
+  fullName: Winpeak.Client.Modules.CacheData.HasActiveSessionData
+- uid: Winpeak.Client.Modules.ICacheData.HasActiveSessionData
+  commentId: M:Winpeak.Client.Modules.ICacheData.HasActiveSessionData
+  parent: Winpeak.Client.Modules.ICacheData
+  name: HasActiveSessionData()
+  nameWithType: ICacheData.HasActiveSessionData()
+  fullName: Winpeak.Client.Modules.ICacheData.HasActiveSessionData()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.HasActiveSessionData
+    name: HasActiveSessionData
+    nameWithType: ICacheData.HasActiveSessionData
+    fullName: Winpeak.Client.Modules.ICacheData.HasActiveSessionData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.HasActiveSessionData
+    name: HasActiveSessionData
+    nameWithType: ICacheData.HasActiveSessionData
+    fullName: Winpeak.Client.Modules.ICacheData.HasActiveSessionData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Winpeak.Client.Modules.CacheData.GetActiveSessionLogin*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.GetActiveSessionLogin
+  name: GetActiveSessionLogin
+  nameWithType: CacheData.GetActiveSessionLogin
+  fullName: Winpeak.Client.Modules.CacheData.GetActiveSessionLogin
+- uid: Winpeak.Client.Modules.ICacheData.GetActiveSessionLogin
+  commentId: M:Winpeak.Client.Modules.ICacheData.GetActiveSessionLogin
+  parent: Winpeak.Client.Modules.ICacheData
+  name: GetActiveSessionLogin()
+  nameWithType: ICacheData.GetActiveSessionLogin()
+  fullName: Winpeak.Client.Modules.ICacheData.GetActiveSessionLogin()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.GetActiveSessionLogin
+    name: GetActiveSessionLogin
+    nameWithType: ICacheData.GetActiveSessionLogin
+    fullName: Winpeak.Client.Modules.ICacheData.GetActiveSessionLogin
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.GetActiveSessionLogin
+    name: GetActiveSessionLogin
+    nameWithType: ICacheData.GetActiveSessionLogin
+    fullName: Winpeak.Client.Modules.ICacheData.GetActiveSessionLogin
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.GetActiveSessionPassword*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.GetActiveSessionPassword
+  name: GetActiveSessionPassword
+  nameWithType: CacheData.GetActiveSessionPassword
+  fullName: Winpeak.Client.Modules.CacheData.GetActiveSessionPassword
+- uid: Winpeak.Client.Modules.ICacheData.GetActiveSessionPassword
+  commentId: M:Winpeak.Client.Modules.ICacheData.GetActiveSessionPassword
+  parent: Winpeak.Client.Modules.ICacheData
+  name: GetActiveSessionPassword()
+  nameWithType: ICacheData.GetActiveSessionPassword()
+  fullName: Winpeak.Client.Modules.ICacheData.GetActiveSessionPassword()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.GetActiveSessionPassword
+    name: GetActiveSessionPassword
+    nameWithType: ICacheData.GetActiveSessionPassword
+    fullName: Winpeak.Client.Modules.ICacheData.GetActiveSessionPassword
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.GetActiveSessionPassword
+    name: GetActiveSessionPassword
+    nameWithType: ICacheData.GetActiveSessionPassword
+    fullName: Winpeak.Client.Modules.ICacheData.GetActiveSessionPassword
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.GetActiveSession*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.GetActiveSession
+  name: GetActiveSession
+  nameWithType: CacheData.GetActiveSession
+  fullName: Winpeak.Client.Modules.CacheData.GetActiveSession
+- uid: Winpeak.Client.Modules.ICacheData.GetActiveSession
+  commentId: M:Winpeak.Client.Modules.ICacheData.GetActiveSession
+  parent: Winpeak.Client.Modules.ICacheData
+  name: GetActiveSession()
+  nameWithType: ICacheData.GetActiveSession()
+  fullName: Winpeak.Client.Modules.ICacheData.GetActiveSession()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.GetActiveSession
+    name: GetActiveSession
+    nameWithType: ICacheData.GetActiveSession
+    fullName: Winpeak.Client.Modules.ICacheData.GetActiveSession
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.GetActiveSession
+    name: GetActiveSession
+    nameWithType: ICacheData.GetActiveSession
+    fullName: Winpeak.Client.Modules.ICacheData.GetActiveSession
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.Clear*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.Clear
+  name: Clear
+  nameWithType: CacheData.Clear
+  fullName: Winpeak.Client.Modules.CacheData.Clear
+- uid: Winpeak.Client.Modules.ICacheData.Clear
+  commentId: M:Winpeak.Client.Modules.ICacheData.Clear
+  parent: Winpeak.Client.Modules.ICacheData
+  name: Clear()
+  nameWithType: ICacheData.Clear()
+  fullName: Winpeak.Client.Modules.ICacheData.Clear()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.Clear
+    name: Clear
+    nameWithType: ICacheData.Clear
+    fullName: Winpeak.Client.Modules.ICacheData.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.Clear
+    name: Clear
+    nameWithType: ICacheData.Clear
+    fullName: Winpeak.Client.Modules.ICacheData.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
