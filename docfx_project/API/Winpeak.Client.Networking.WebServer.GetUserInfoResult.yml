@@ -5,9 +5,9 @@ items:
   id: GetUserInfoResult
   parent: Winpeak.Client.Networking.WebServer
   children:
+  - Winpeak.Client.Networking.WebServer.GetUserInfoResult.AccountInfo
   - Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
   - Winpeak.Client.Networking.WebServer.GetUserInfoResult.HandleResponse(HTTPResponse)
-  - Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
   langs:
   - csharp
   - vb
@@ -18,7 +18,7 @@ items:
   source:
     id: GetUserInfoResult
     path: ''
-    startLine: 3284
+    startLine: 3286
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -61,31 +61,31 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
-  commentId: P:Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
-  id: Result
+- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.AccountInfo
+  commentId: P:Winpeak.Client.Networking.WebServer.GetUserInfoResult.AccountInfo
+  id: AccountInfo
   parent: Winpeak.Client.Networking.WebServer.GetUserInfoResult
   langs:
   - csharp
   - vb
-  name: Result
-  nameWithType: GetUserInfoResult.Result
-  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
+  name: AccountInfo
+  nameWithType: GetUserInfoResult.AccountInfo
+  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.AccountInfo
   type: Property
   source:
-    id: Result
+    id: AccountInfo
     path: ''
     startLine: 3294
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public GetUserInfoResult.UserMetaData Result { get; }
+    content: public IAccount AccountInfo { get; }
     parameters: []
     return:
-      type: Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
-    content.vb: Public ReadOnly Property Result As GetUserInfoResult.UserMetaData
-  overload: Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result*
+      type: Winpeak.Client.Networking.WebServer.IAccount
+    content.vb: Public ReadOnly Property AccountInfo As IAccount
+  overload: Winpeak.Client.Networking.WebServer.GetUserInfoResult.AccountInfo*
   modifiers.csharp:
   - public
   - get
@@ -138,7 +138,7 @@ items:
   source:
     id: HandleError
     path: ''
-    startLine: 3302
+    startLine: 3304
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -583,17 +583,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
-  name: Result
-  nameWithType: GetUserInfoResult.Result
-  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.Result
-- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
-  commentId: T:Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
+- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.AccountInfo*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetUserInfoResult.AccountInfo
+  name: AccountInfo
+  nameWithType: GetUserInfoResult.AccountInfo
+  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.AccountInfo
+- uid: Winpeak.Client.Networking.WebServer.IAccount
+  commentId: T:Winpeak.Client.Networking.WebServer.IAccount
   parent: Winpeak.Client.Networking.WebServer
-  name: GetUserInfoResult.UserMetaData
-  nameWithType: GetUserInfoResult.UserMetaData
-  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
+  name: IAccount
+  nameWithType: IAccount
+  fullName: Winpeak.Client.Networking.WebServer.IAccount
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   parent: Winpeak.Client.Networking.WebServer.WebResult

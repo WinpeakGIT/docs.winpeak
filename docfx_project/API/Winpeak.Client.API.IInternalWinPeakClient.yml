@@ -31,7 +31,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 2273
+    startLine: 2274
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -72,7 +72,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{System.Boolean})
   - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.Action{System.Boolean})
   - Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{System.Int64,System.String,System.String})
-  - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action)
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
   modifiers.csharp:
   - public
   - interface
@@ -93,7 +93,7 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 2278
+    startLine: 2279
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -118,7 +118,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 2283
+    startLine: 2284
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -143,7 +143,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 2290
+    startLine: 2291
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -174,7 +174,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 2295
+    startLine: 2296
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -198,7 +198,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 2301
+    startLine: 2302
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -226,7 +226,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 2307
+    startLine: 2308
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -254,7 +254,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 2312
+    startLine: 2313
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -284,7 +284,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 2320
+    startLine: 2321
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -318,7 +318,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 2326
+    startLine: 2327
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -346,7 +346,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 2332
+    startLine: 2333
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -374,7 +374,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 2338
+    startLine: 2339
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -402,7 +402,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 2343
+    startLine: 2344
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -429,7 +429,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 2348
+    startLine: 2349
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -453,7 +453,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 2354
+    startLine: 2355
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -481,7 +481,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 2359
+    startLine: 2360
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -505,7 +505,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 2364
+    startLine: 2365
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -1874,15 +1874,18 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action)
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action)
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   isExternal: true
-  name: GetUserInfo(Int32, Int32, Int32, Action)
-  nameWithType: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32, System.Int32, System.Int32, System.Action)
+  name: GetUserInfo(Int32, Int32, Int32, Action<IAccount>)
+  nameWithType: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action<IAccount>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32, System.Int32, System.Int32, System.Action<IAccount>)
+  nameWithType.vb: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action(Of IAccount))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32, System.Int32, System.Int32, System.Action(Of IAccount))
+  name.vb: GetUserInfo(Int32, Int32, Int32, Action(Of IAccount))
   spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action)
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
     name: GetUserInfo
     nameWithType: IWinPeakNetworkClient.GetUserInfo
     fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo
@@ -1913,16 +1916,27 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Action
+  - uid: System.Action`1
     name: Action
     nameWithType: Action
     fullName: System.Action
     isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IAccount
+    name: IAccount
+    nameWithType: IAccount
+    fullName: IAccount
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action)
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
     name: GetUserInfo
     nameWithType: IWinPeakNetworkClient.GetUserInfo
     fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo
@@ -1953,11 +1967,22 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Action
+  - uid: System.Action`1
     name: Action
     nameWithType: Action
     fullName: System.Action
     isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IAccount
+    name: IAccount
+    nameWithType: IAccount
+    fullName: IAccount
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
   - name: )
     nameWithType: )
     fullName: )

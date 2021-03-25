@@ -4,6 +4,7 @@ items:
   commentId: N:Winpeak.Client.Networking.WebServer
   id: Winpeak.Client.Networking.WebServer
   children:
+  - Winpeak.Client.Networking.WebServer.Account
   - Winpeak.Client.Networking.WebServer.AddFriend
   - Winpeak.Client.Networking.WebServer.AddFriendResult
   - Winpeak.Client.Networking.WebServer.ApproveGameSessionRequest
@@ -26,8 +27,9 @@ items:
   - Winpeak.Client.Networking.WebServer.GetGameInfoResult
   - Winpeak.Client.Networking.WebServer.GetUserInfo
   - Winpeak.Client.Networking.WebServer.GetUserInfoResult
-  - Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
   - Winpeak.Client.Networking.WebServer.HTTPRequestFactory
+  - Winpeak.Client.Networking.WebServer.IAccount
+  - Winpeak.Client.Networking.WebServer.InternalAccount
   - Winpeak.Client.Networking.WebServer.IWebRequest
   - Winpeak.Client.Networking.WebServer.IWebResult
   - Winpeak.Client.Networking.WebServer.PasswordRecovery
@@ -101,12 +103,6 @@ references:
   name: GetUserInfoResult
   nameWithType: GetUserInfoResult
   fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult
-- uid: Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
-  commentId: T:Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
-  parent: Winpeak.Client.Networking.WebServer
-  name: GetUserInfoResult.UserMetaData
-  nameWithType: GetUserInfoResult.UserMetaData
-  fullName: Winpeak.Client.Networking.WebServer.GetUserInfoResult.UserMetaData
 - uid: Winpeak.Client.Networking.WebServer.AddFriendResult
   commentId: T:Winpeak.Client.Networking.WebServer.AddFriendResult
   name: AddFriendResult
@@ -186,6 +182,12 @@ references:
   name: RejectCreateGameSessionRequestResult
   nameWithType: RejectCreateGameSessionRequestResult
   fullName: Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequestResult
+- uid: Winpeak.Client.Networking.WebServer.IAccount
+  commentId: T:Winpeak.Client.Networking.WebServer.IAccount
+  parent: Winpeak.Client.Networking.WebServer
+  name: IAccount
+  nameWithType: IAccount
+  fullName: Winpeak.Client.Networking.WebServer.IAccount
 - uid: Winpeak.Client.Networking.WebServer.AddFriend
   commentId: T:Winpeak.Client.Networking.WebServer.AddFriend
   name: AddFriend
@@ -326,11 +328,22 @@ references:
   name: WebResult
   nameWithType: WebResult
   fullName: Winpeak.Client.Networking.WebServer.WebResult
+- uid: Winpeak.Client.Networking.WebServer.Account
+  commentId: T:Winpeak.Client.Networking.WebServer.Account
+  name: Account
+  nameWithType: Account
+  fullName: Winpeak.Client.Networking.WebServer.Account
 - uid: Winpeak.Client.Networking.WebServer.Session
   commentId: T:Winpeak.Client.Networking.WebServer.Session
   name: Session
   nameWithType: Session
   fullName: Winpeak.Client.Networking.WebServer.Session
+- uid: Winpeak.Client.Networking.WebServer.InternalAccount
+  commentId: T:Winpeak.Client.Networking.WebServer.InternalAccount
+  parent: Winpeak.Client.Networking.WebServer
+  name: InternalAccount
+  nameWithType: InternalAccount
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccount
 - uid: Winpeak.Client.Networking.WebServer
   commentId: N:Winpeak.Client.Networking.WebServer
   name: Winpeak.Client.Networking.WebServer
