@@ -1,0 +1,1745 @@
+### YamlMime:ManagedReference
+items:
+- uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1
+  commentId: T:Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1
+  id: WebCallbackPaginatedRequest`1
+  parent: Winpeak.Client.Networking.WebServer
+  children:
+  - Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.Clear
+  - Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  - Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.HandleReceivedItems(System.Boolean,System.Collections.Generic.List{`0})
+  - Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.m_excludedItems
+  - Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.SendRequest(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: WebCallbackPaginatedRequest<T>
+  nameWithType: WebCallbackPaginatedRequest<T>
+  fullName: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest<T>
+  type: Class
+  source:
+    id: WebCallbackPaginatedRequest
+    path: ''
+    startLine: 4844
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: 'public abstract class WebCallbackPaginatedRequest<T> : WebBasePaginatedRequest<T>, IPaginatedDataSource<T> where T : ITemplate'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public MustInherit Class WebCallbackPaginatedRequest(Of T As ITemplate)
+          Inherits WebBasePaginatedRequest(Of T)
+          Implements IPaginatedDataSource(Of T)
+  inheritance:
+  - System.Object
+  - Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  implements:
+  - Winpeak.Client.Networking.WebServer.IPaginatedDataSource{{T}}
+  inheritedMembers:
+  - Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.ReceivedData
+  - Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.m_waitingRequestResult
+  - Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.m_requestsQueue
+  - Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.m_items
+  - Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.m_itemsReceivedCallback
+  - Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.HasReceivedAllItems
+  - Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.SendRequestResult(System.Collections.Generic.List{{T}})
+  - Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.HandleNextRequest
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: WebCallbackPaginatedRequest(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest(Of T)
+  name.vb: WebCallbackPaginatedRequest(Of T)
+- uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.m_excludedItems
+  commentId: F:Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.m_excludedItems
+  id: m_excludedItems
+  parent: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1
+  langs:
+  - csharp
+  - vb
+  name: m_excludedItems
+  nameWithType: WebCallbackPaginatedRequest<T>.m_excludedItems
+  fullName: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest<T>.m_excludedItems
+  type: Field
+  source:
+    id: m_excludedItems
+    path: ''
+    startLine: 4850
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: protected List<string> m_excludedItems
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Protected m_excludedItems As List(Of String)
+  nameWithType.vb: WebCallbackPaginatedRequest(Of T).m_excludedItems
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest(Of T).m_excludedItems
+- uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  commentId: M:Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  id: GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  parent: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1
+  langs:
+  - csharp
+  - vb
+  name: GetItems(Int32, Int32, Action<List<T>>)
+  nameWithType: WebCallbackPaginatedRequest<T>.GetItems(Int32, Int32, Action<List<T>>)
+  fullName: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest<T>.GetItems(System.Int32, System.Int32, System.Action<System.Collections.Generic.List<T>>)
+  type: Method
+  source:
+    id: GetItems
+    path: ''
+    startLine: 4852
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public override sealed void GetItems(int offset, int size, Action<List<T>> callback)
+    parameters:
+    - id: offset
+      type: System.Int32
+    - id: size
+      type: System.Int32
+    - id: callback
+      type: System.Action{System.Collections.Generic.List{{T}}}
+    content.vb: Public NotOverridable Overrides Sub GetItems(offset As Integer, size As Integer, callback As Action(Of List(Of T)))
+  overridden: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{{T}}})
+  overload: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.GetItems*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IPaginatedDataSource{{T}}.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{{T}}})
+  nameWithType.vb: WebCallbackPaginatedRequest(Of T).GetItems(Int32, Int32, Action(Of List(Of T)))
+  modifiers.csharp:
+  - public
+  - override
+  - sealed
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest(Of T).GetItems(System.Int32, System.Int32, System.Action(Of System.Collections.Generic.List(Of T)))
+  name.vb: GetItems(Int32, Int32, Action(Of List(Of T)))
+- uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.Clear
+  commentId: M:Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.Clear
+  id: Clear
+  parent: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: WebCallbackPaginatedRequest<T>.Clear()
+  fullName: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest<T>.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: ''
+    startLine: 4884
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public override void Clear()
+    content.vb: Public Overrides Sub Clear
+  overridden: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.Clear
+  overload: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.Clear*
+  nameWithType.vb: WebCallbackPaginatedRequest(Of T).Clear()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest(Of T).Clear()
+- uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.SendRequest(System.Int32,System.Int32)
+  commentId: M:Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.SendRequest(System.Int32,System.Int32)
+  id: SendRequest(System.Int32,System.Int32)
+  parent: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1
+  langs:
+  - csharp
+  - vb
+  name: SendRequest(Int32, Int32)
+  nameWithType: WebCallbackPaginatedRequest<T>.SendRequest(Int32, Int32)
+  fullName: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest<T>.SendRequest(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: SendRequest
+    path: ''
+    startLine: 4891
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: protected abstract void SendRequest(int offset, int size)
+    parameters:
+    - id: offset
+      type: System.Int32
+    - id: size
+      type: System.Int32
+    content.vb: Protected MustOverride Sub SendRequest(offset As Integer, size As Integer)
+  overload: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.SendRequest*
+  nameWithType.vb: WebCallbackPaginatedRequest(Of T).SendRequest(Int32, Int32)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest(Of T).SendRequest(System.Int32, System.Int32)
+- uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.HandleReceivedItems(System.Boolean,System.Collections.Generic.List{`0})
+  commentId: M:Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.HandleReceivedItems(System.Boolean,System.Collections.Generic.List{`0})
+  id: HandleReceivedItems(System.Boolean,System.Collections.Generic.List{`0})
+  parent: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1
+  langs:
+  - csharp
+  - vb
+  name: HandleReceivedItems(Boolean, List<T>)
+  nameWithType: WebCallbackPaginatedRequest<T>.HandleReceivedItems(Boolean, List<T>)
+  fullName: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest<T>.HandleReceivedItems(System.Boolean, System.Collections.Generic.List<T>)
+  type: Method
+  source:
+    id: HandleReceivedItems
+    path: ''
+    startLine: 4893
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: protected void HandleReceivedItems(bool responseSucceed, List<T> receivedItems)
+    parameters:
+    - id: responseSucceed
+      type: System.Boolean
+    - id: receivedItems
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Protected Sub HandleReceivedItems(responseSucceed As Boolean, receivedItems As List(Of T))
+  overload: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.HandleReceivedItems*
+  nameWithType.vb: WebCallbackPaginatedRequest(Of T).HandleReceivedItems(Boolean, List(Of T))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest(Of T).HandleReceivedItems(System.Boolean, System.Collections.Generic.List(Of T))
+  name.vb: HandleReceivedItems(Boolean, List(Of T))
+references:
+- uid: Winpeak.Client.Networking.WebServer
+  commentId: N:Winpeak.Client.Networking.WebServer
+  name: Winpeak.Client.Networking.WebServer
+  nameWithType: Winpeak.Client.Networking.WebServer
+  fullName: Winpeak.Client.Networking.WebServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  commentId: T:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{`0}
+  parent: Winpeak.Client.Networking.WebServer
+  definition: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1
+  name: WebBasePaginatedRequest<T>
+  nameWithType: WebBasePaginatedRequest<T>
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>
+  nameWithType.vb: WebBasePaginatedRequest(Of T)
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T)
+  name.vb: WebBasePaginatedRequest(Of T)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1
+    name: WebBasePaginatedRequest
+    nameWithType: WebBasePaginatedRequest
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1
+    name: WebBasePaginatedRequest
+    nameWithType: WebBasePaginatedRequest
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource{{T}}
+  commentId: T:Winpeak.Client.Networking.WebServer.IPaginatedDataSource{`0}
+  parent: Winpeak.Client.Networking.WebServer
+  definition: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+  name: IPaginatedDataSource<T>
+  nameWithType: IPaginatedDataSource<T>
+  fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource<T>
+  nameWithType.vb: IPaginatedDataSource(Of T)
+  fullName.vb: Winpeak.Client.Networking.WebServer.IPaginatedDataSource(Of T)
+  name.vb: IPaginatedDataSource(Of T)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+    name: IPaginatedDataSource
+    nameWithType: IPaginatedDataSource
+    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+    name: IPaginatedDataSource
+    nameWithType: IPaginatedDataSource
+    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.ReceivedData
+  commentId: P:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{`0}.ReceivedData
+  parent: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  definition: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.ReceivedData
+  name: ReceivedData
+  nameWithType: WebBasePaginatedRequest<T>.ReceivedData
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.ReceivedData
+  nameWithType.vb: WebBasePaginatedRequest(Of T).ReceivedData
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).ReceivedData
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.m_waitingRequestResult
+  commentId: F:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{`0}.m_waitingRequestResult
+  parent: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  definition: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_waitingRequestResult
+  name: m_waitingRequestResult
+  nameWithType: WebBasePaginatedRequest<T>.m_waitingRequestResult
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.m_waitingRequestResult
+  nameWithType.vb: WebBasePaginatedRequest(Of T).m_waitingRequestResult
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).m_waitingRequestResult
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.m_requestsQueue
+  commentId: F:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{`0}.m_requestsQueue
+  parent: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  definition: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_requestsQueue
+  name: m_requestsQueue
+  nameWithType: WebBasePaginatedRequest<T>.m_requestsQueue
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.m_requestsQueue
+  nameWithType.vb: WebBasePaginatedRequest(Of T).m_requestsQueue
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).m_requestsQueue
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.m_items
+  commentId: F:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{`0}.m_items
+  parent: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  definition: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_items
+  name: m_items
+  nameWithType: WebBasePaginatedRequest<T>.m_items
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.m_items
+  nameWithType.vb: WebBasePaginatedRequest(Of T).m_items
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).m_items
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.m_itemsReceivedCallback
+  commentId: E:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{`0}.m_itemsReceivedCallback
+  parent: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  definition: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_itemsReceivedCallback
+  name: m_itemsReceivedCallback
+  nameWithType: WebBasePaginatedRequest<T>.m_itemsReceivedCallback
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.m_itemsReceivedCallback
+  nameWithType.vb: WebBasePaginatedRequest(Of T).m_itemsReceivedCallback
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).m_itemsReceivedCallback
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.HasReceivedAllItems
+  commentId: P:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{`0}.HasReceivedAllItems
+  parent: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  definition: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.HasReceivedAllItems
+  name: HasReceivedAllItems
+  nameWithType: WebBasePaginatedRequest<T>.HasReceivedAllItems
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.HasReceivedAllItems
+  nameWithType.vb: WebBasePaginatedRequest(Of T).HasReceivedAllItems
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).HasReceivedAllItems
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.SendRequestResult(System.Collections.Generic.List{{T}})
+  commentId: M:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{`0}.SendRequestResult(System.Collections.Generic.List{`0})
+  parent: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  definition: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.SendRequestResult(System.Collections.Generic.List{`0})
+  name: SendRequestResult(List<T>)
+  nameWithType: WebBasePaginatedRequest<T>.SendRequestResult(List<T>)
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.SendRequestResult(System.Collections.Generic.List<T>)
+  nameWithType.vb: WebBasePaginatedRequest(Of T).SendRequestResult(List(Of T))
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).SendRequestResult(System.Collections.Generic.List(Of T))
+  name.vb: SendRequestResult(List(Of T))
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.SendRequestResult(System.Collections.Generic.List{`0})
+    name: SendRequestResult
+    nameWithType: WebBasePaginatedRequest<T>.SendRequestResult
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.SendRequestResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.SendRequestResult(System.Collections.Generic.List{`0})
+    name: SendRequestResult
+    nameWithType: WebBasePaginatedRequest(Of T).SendRequestResult
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).SendRequestResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.HandleNextRequest
+  commentId: M:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{`0}.HandleNextRequest
+  parent: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  definition: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.HandleNextRequest
+  name: HandleNextRequest()
+  nameWithType: WebBasePaginatedRequest<T>.HandleNextRequest()
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.HandleNextRequest()
+  nameWithType.vb: WebBasePaginatedRequest(Of T).HandleNextRequest()
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).HandleNextRequest()
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.HandleNextRequest
+    name: HandleNextRequest
+    nameWithType: WebBasePaginatedRequest<T>.HandleNextRequest
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.HandleNextRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.HandleNextRequest
+    name: HandleNextRequest
+    nameWithType: WebBasePaginatedRequest(Of T).HandleNextRequest
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).HandleNextRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1
+  commentId: T:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1
+  name: WebBasePaginatedRequest<T>
+  nameWithType: WebBasePaginatedRequest<T>
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>
+  nameWithType.vb: WebBasePaginatedRequest(Of T)
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T)
+  name.vb: WebBasePaginatedRequest(Of T)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1
+    name: WebBasePaginatedRequest
+    nameWithType: WebBasePaginatedRequest
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1
+    name: WebBasePaginatedRequest
+    nameWithType: WebBasePaginatedRequest
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+  commentId: T:Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+  name: IPaginatedDataSource<T>
+  nameWithType: IPaginatedDataSource<T>
+  fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource<T>
+  nameWithType.vb: IPaginatedDataSource(Of T)
+  fullName.vb: Winpeak.Client.Networking.WebServer.IPaginatedDataSource(Of T)
+  name.vb: IPaginatedDataSource(Of T)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+    name: IPaginatedDataSource
+    nameWithType: IPaginatedDataSource
+    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+    name: IPaginatedDataSource
+    nameWithType: IPaginatedDataSource
+    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.ReceivedData
+  commentId: P:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.ReceivedData
+  name: ReceivedData
+  nameWithType: WebBasePaginatedRequest<T>.ReceivedData
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.ReceivedData
+  nameWithType.vb: WebBasePaginatedRequest(Of T).ReceivedData
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).ReceivedData
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_waitingRequestResult
+  commentId: F:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_waitingRequestResult
+  name: m_waitingRequestResult
+  nameWithType: WebBasePaginatedRequest<T>.m_waitingRequestResult
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.m_waitingRequestResult
+  nameWithType.vb: WebBasePaginatedRequest(Of T).m_waitingRequestResult
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).m_waitingRequestResult
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_requestsQueue
+  commentId: F:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_requestsQueue
+  name: m_requestsQueue
+  nameWithType: WebBasePaginatedRequest<T>.m_requestsQueue
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.m_requestsQueue
+  nameWithType.vb: WebBasePaginatedRequest(Of T).m_requestsQueue
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).m_requestsQueue
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_items
+  commentId: F:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_items
+  name: m_items
+  nameWithType: WebBasePaginatedRequest<T>.m_items
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.m_items
+  nameWithType.vb: WebBasePaginatedRequest(Of T).m_items
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).m_items
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_itemsReceivedCallback
+  commentId: E:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.m_itemsReceivedCallback
+  name: m_itemsReceivedCallback
+  nameWithType: WebBasePaginatedRequest<T>.m_itemsReceivedCallback
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.m_itemsReceivedCallback
+  nameWithType.vb: WebBasePaginatedRequest(Of T).m_itemsReceivedCallback
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).m_itemsReceivedCallback
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.HasReceivedAllItems
+  commentId: P:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.HasReceivedAllItems
+  name: HasReceivedAllItems
+  nameWithType: WebBasePaginatedRequest<T>.HasReceivedAllItems
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.HasReceivedAllItems
+  nameWithType.vb: WebBasePaginatedRequest(Of T).HasReceivedAllItems
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).HasReceivedAllItems
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.SendRequestResult(System.Collections.Generic.List{`0})
+  commentId: M:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.SendRequestResult(System.Collections.Generic.List{`0})
+  isExternal: true
+  name: SendRequestResult(List<T>)
+  nameWithType: WebBasePaginatedRequest<T>.SendRequestResult(List<T>)
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.SendRequestResult(System.Collections.Generic.List<T>)
+  nameWithType.vb: WebBasePaginatedRequest(Of T).SendRequestResult(List(Of T))
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).SendRequestResult(System.Collections.Generic.List(Of T))
+  name.vb: SendRequestResult(List(Of T))
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.SendRequestResult(System.Collections.Generic.List{`0})
+    name: SendRequestResult
+    nameWithType: WebBasePaginatedRequest<T>.SendRequestResult
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.SendRequestResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.SendRequestResult(System.Collections.Generic.List{`0})
+    name: SendRequestResult
+    nameWithType: WebBasePaginatedRequest(Of T).SendRequestResult
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).SendRequestResult
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.HandleNextRequest
+  commentId: M:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.HandleNextRequest
+  name: HandleNextRequest()
+  nameWithType: WebBasePaginatedRequest<T>.HandleNextRequest()
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.HandleNextRequest()
+  nameWithType.vb: WebBasePaginatedRequest(Of T).HandleNextRequest()
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).HandleNextRequest()
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.HandleNextRequest
+    name: HandleNextRequest
+    nameWithType: WebBasePaginatedRequest<T>.HandleNextRequest
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.HandleNextRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.HandleNextRequest
+    name: HandleNextRequest
+    nameWithType: WebBasePaginatedRequest(Of T).HandleNextRequest
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).HandleNextRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{{T}}})
+  commentId: M:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{`0}.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  parent: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  definition: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  name: GetItems(Int32, Int32, Action<List<T>>)
+  nameWithType: WebBasePaginatedRequest<T>.GetItems(Int32, Int32, Action<List<T>>)
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.GetItems(System.Int32, System.Int32, System.Action<System.Collections.Generic.List<T>>)
+  nameWithType.vb: WebBasePaginatedRequest(Of T).GetItems(Int32, Int32, Action(Of List(Of T)))
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).GetItems(System.Int32, System.Int32, System.Action(Of System.Collections.Generic.List(Of T)))
+  name.vb: GetItems(Int32, Int32, Action(Of List(Of T)))
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+    name: GetItems
+    nameWithType: WebBasePaginatedRequest<T>.GetItems
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.GetItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+    name: GetItems
+    nameWithType: WebBasePaginatedRequest(Of T).GetItems
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).GetItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.GetItems*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.GetItems
+  name: GetItems
+  nameWithType: WebCallbackPaginatedRequest<T>.GetItems
+  fullName: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest<T>.GetItems
+  nameWithType.vb: WebCallbackPaginatedRequest(Of T).GetItems
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest(Of T).GetItems
+- uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource{{T}}.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{{T}}})
+  commentId: M:Winpeak.Client.Networking.WebServer.IPaginatedDataSource{`0}.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  parent: Winpeak.Client.Networking.WebServer.IPaginatedDataSource{{T}}
+  definition: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  name: GetItems(Int32, Int32, Action<List<T>>)
+  nameWithType: IPaginatedDataSource<T>.GetItems(Int32, Int32, Action<List<T>>)
+  fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource<T>.GetItems(System.Int32, System.Int32, System.Action<System.Collections.Generic.List<T>>)
+  nameWithType.vb: IPaginatedDataSource(Of T).GetItems(Int32, Int32, Action(Of List(Of T)))
+  fullName.vb: Winpeak.Client.Networking.WebServer.IPaginatedDataSource(Of T).GetItems(System.Int32, System.Int32, System.Action(Of System.Collections.Generic.List(Of T)))
+  name.vb: GetItems(Int32, Int32, Action(Of List(Of T)))
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+    name: GetItems
+    nameWithType: IPaginatedDataSource<T>.GetItems
+    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource<T>.GetItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+    name: GetItems
+    nameWithType: IPaginatedDataSource(Of T).GetItems
+    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource(Of T).GetItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Action{System.Collections.Generic.List{{T}}}
+  commentId: T:System.Action{System.Collections.Generic.List{`0}}
+  parent: System
+  definition: System.Action`1
+  name: Action<List<T>>
+  nameWithType: Action<List<T>>
+  fullName: System.Action<System.Collections.Generic.List<T>>
+  nameWithType.vb: Action(Of List(Of T))
+  fullName.vb: System.Action(Of System.Collections.Generic.List(Of T))
+  name.vb: Action(Of List(Of T))
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  commentId: M:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  isExternal: true
+  name: GetItems(Int32, Int32, Action<List<T>>)
+  nameWithType: WebBasePaginatedRequest<T>.GetItems(Int32, Int32, Action<List<T>>)
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.GetItems(System.Int32, System.Int32, System.Action<System.Collections.Generic.List<T>>)
+  nameWithType.vb: WebBasePaginatedRequest(Of T).GetItems(Int32, Int32, Action(Of List(Of T)))
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).GetItems(System.Int32, System.Int32, System.Action(Of System.Collections.Generic.List(Of T)))
+  name.vb: GetItems(Int32, Int32, Action(Of List(Of T)))
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+    name: GetItems
+    nameWithType: WebBasePaginatedRequest<T>.GetItems
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.GetItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+    name: GetItems
+    nameWithType: WebBasePaginatedRequest(Of T).GetItems
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).GetItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  commentId: M:Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+  isExternal: true
+  name: GetItems(Int32, Int32, Action<List<T>>)
+  nameWithType: IPaginatedDataSource<T>.GetItems(Int32, Int32, Action<List<T>>)
+  fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource<T>.GetItems(System.Int32, System.Int32, System.Action<System.Collections.Generic.List<T>>)
+  nameWithType.vb: IPaginatedDataSource(Of T).GetItems(Int32, Int32, Action(Of List(Of T)))
+  fullName.vb: Winpeak.Client.Networking.WebServer.IPaginatedDataSource(Of T).GetItems(System.Int32, System.Int32, System.Action(Of System.Collections.Generic.List(Of T)))
+  name.vb: GetItems(Int32, Int32, Action(Of List(Of T)))
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+    name: GetItems
+    nameWithType: IPaginatedDataSource<T>.GetItems
+    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource<T>.GetItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1.GetItems(System.Int32,System.Int32,System.Action{System.Collections.Generic.List{`0}})
+    name: GetItems
+    nameWithType: IPaginatedDataSource(Of T).GetItems
+    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource(Of T).GetItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.Clear
+  commentId: M:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{`0}.Clear
+  parent: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}
+  definition: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.Clear
+  name: Clear()
+  nameWithType: WebBasePaginatedRequest<T>.Clear()
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.Clear()
+  nameWithType.vb: WebBasePaginatedRequest(Of T).Clear()
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).Clear()
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.Clear
+    name: Clear
+    nameWithType: WebBasePaginatedRequest<T>.Clear
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.Clear
+    name: Clear
+    nameWithType: WebBasePaginatedRequest(Of T).Clear
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.Clear*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.Clear
+  name: Clear
+  nameWithType: WebCallbackPaginatedRequest<T>.Clear
+  fullName: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest<T>.Clear
+  nameWithType.vb: WebCallbackPaginatedRequest(Of T).Clear
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest(Of T).Clear
+- uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.Clear
+  commentId: M:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.Clear
+  name: Clear()
+  nameWithType: WebBasePaginatedRequest<T>.Clear()
+  fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.Clear()
+  nameWithType.vb: WebBasePaginatedRequest(Of T).Clear()
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).Clear()
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.Clear
+    name: Clear
+    nameWithType: WebBasePaginatedRequest<T>.Clear
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest<T>.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.Clear
+    name: Clear
+    nameWithType: WebBasePaginatedRequest(Of T).Clear
+    fullName: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest(Of T).Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.SendRequest*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.SendRequest
+  name: SendRequest
+  nameWithType: WebCallbackPaginatedRequest<T>.SendRequest
+  fullName: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest<T>.SendRequest
+  nameWithType.vb: WebCallbackPaginatedRequest(Of T).SendRequest
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest(Of T).SendRequest
+- uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.HandleReceivedItems*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.HandleReceivedItems
+  name: HandleReceivedItems
+  nameWithType: WebCallbackPaginatedRequest<T>.HandleReceivedItems
+  fullName: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest<T>.HandleReceivedItems
+  nameWithType.vb: WebCallbackPaginatedRequest(Of T).HandleReceivedItems
+  fullName.vb: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest(Of T).HandleReceivedItems
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -6,7 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.WebError.#ctor(System.String)
-  - Winpeak.Client.Networking.WebServer.WebError.Message
+  - Winpeak.Client.Networking.WebServer.WebError.Token
   langs:
   - csharp
   - vb
@@ -17,7 +17,7 @@ items:
   source:
     id: WebError
     path: ''
-    startLine: 4221
+    startLine: 4805
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -40,31 +40,31 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.WebError.Message
-  commentId: P:Winpeak.Client.Networking.WebServer.WebError.Message
-  id: Message
+- uid: Winpeak.Client.Networking.WebServer.WebError.Token
+  commentId: P:Winpeak.Client.Networking.WebServer.WebError.Token
+  id: Token
   parent: Winpeak.Client.Networking.WebServer.WebError
   langs:
   - csharp
   - vb
-  name: Message
-  nameWithType: WebError.Message
-  fullName: Winpeak.Client.Networking.WebServer.WebError.Message
+  name: Token
+  nameWithType: WebError.Token
+  fullName: Winpeak.Client.Networking.WebServer.WebError.Token
   type: Property
   source:
-    id: Message
+    id: Token
     path: ''
-    startLine: 4224
+    startLine: 4808
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public string Message { get; }
+    content: public string Token { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public ReadOnly Property Message As String
-  overload: Winpeak.Client.Networking.WebServer.WebError.Message*
+    content.vb: Public ReadOnly Property Token As String
+  overload: Winpeak.Client.Networking.WebServer.WebError.Token*
   modifiers.csharp:
   - public
   - get
@@ -85,16 +85,16 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 4226
+    startLine: 4810
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public WebError(string message)
+    content: public WebError(string token)
     parameters:
-    - id: message
+    - id: token
       type: System.String
-    content.vb: Public Sub New(message As String)
+    content.vb: Public Sub New(token As String)
   overload: Winpeak.Client.Networking.WebServer.WebError.#ctor*
   modifiers.csharp:
   - public
@@ -398,11 +398,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Networking.WebServer.WebError.Message*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.WebError.Message
-  name: Message
-  nameWithType: WebError.Message
-  fullName: Winpeak.Client.Networking.WebServer.WebError.Message
+- uid: Winpeak.Client.Networking.WebServer.WebError.Token*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.WebError.Token
+  name: Token
+  nameWithType: WebError.Token
+  fullName: Winpeak.Client.Networking.WebServer.WebError.Token
 - uid: System.String
   commentId: T:System.String
   parent: System

@@ -42,7 +42,7 @@ items:
   source:
     id: IWinPeakClient
     path: ''
-    startLine: 2375
+    startLine: 684
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -53,10 +53,13 @@ items:
           Inherits IWinPeakNetworkClient
   inheritedMembers:
   - Winpeak.Client.API.IWinPeakNetworkClient.CheckAuthorization(System.Action{System.Boolean})
-  - Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{System.Boolean})
-  - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.Action{System.Boolean})
-  - Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{System.Int64,System.String,System.String})
-  - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
+  - Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
+  - Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})
   modifiers.csharp:
   - public
   - interface
@@ -77,7 +80,7 @@ items:
   source:
     id: OnClientDisconnected
     path: ''
-    startLine: 2380
+    startLine: 689
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -102,7 +105,7 @@ items:
   source:
     id: OnRoundScoreUpdated
     path: ''
-    startLine: 2385
+    startLine: 694
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -127,7 +130,7 @@ items:
   source:
     id: OnGameOver
     path: ''
-    startLine: 2390
+    startLine: 699
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -152,7 +155,7 @@ items:
   source:
     id: OnStartGameCountdown
     path: ''
-    startLine: 2395
+    startLine: 704
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -177,7 +180,7 @@ items:
   source:
     id: OnUserInfoUpdated
     path: ''
-    startLine: 2400
+    startLine: 709
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -202,7 +205,7 @@ items:
   source:
     id: OnGameObjectsReady
     path: ''
-    startLine: 2405
+    startLine: 714
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -227,7 +230,7 @@ items:
   source:
     id: OnOccurConnectionProblem
     path: ''
-    startLine: 2410
+    startLine: 719
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -252,7 +255,7 @@ items:
   source:
     id: OnPingUpdated
     path: ''
-    startLine: 2415
+    startLine: 724
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -277,7 +280,7 @@ items:
   source:
     id: OnPlayWallHitSound
     path: ''
-    startLine: 2420
+    startLine: 729
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -302,7 +305,7 @@ items:
   source:
     id: OnGameStateChanged
     path: ''
-    startLine: 2425
+    startLine: 734
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -327,7 +330,7 @@ items:
   source:
     id: IsConnected
     path: ''
-    startLine: 2430
+    startLine: 739
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -358,7 +361,7 @@ items:
   source:
     id: IsActiveNetwork
     path: ''
-    startLine: 2435
+    startLine: 744
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -389,7 +392,7 @@ items:
   source:
     id: SubscribeRigidbody
     path: ''
-    startLine: 2440
+    startLine: 749
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -416,7 +419,7 @@ items:
   source:
     id: Connect
     path: ''
-    startLine: 2445
+    startLine: 754
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -447,7 +450,7 @@ items:
   source:
     id: Auth
     path: ''
-    startLine: 2450
+    startLine: 759
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -474,7 +477,7 @@ items:
   source:
     id: Die
     path: ''
-    startLine: 2455
+    startLine: 764
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -501,7 +504,7 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 2466
+    startLine: 775
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -544,7 +547,7 @@ items:
   source:
     id: Utilize
     path: ''
-    startLine: 2471
+    startLine: 780
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -568,7 +571,7 @@ items:
   source:
     id: BlockInGameInput
     path: ''
-    startLine: 2477
+    startLine: 786
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -596,7 +599,7 @@ items:
   source:
     id: RequestServers
     path: ''
-    startLine: 2483
+    startLine: 792
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -627,7 +630,7 @@ items:
   source:
     id: DrawLines
     path: ''
-    startLine: 2488
+    startLine: 797
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -651,7 +654,7 @@ items:
   source:
     id: DrawSingleLine
     path: ''
-    startLine: 2494
+    startLine: 803
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -675,7 +678,7 @@ items:
   source:
     id: DrawPoint
     path: ''
-    startLine: 2499
+    startLine: 808
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -699,7 +702,7 @@ items:
   source:
     id: OnDrawPoint
     path: ''
-    startLine: 2502
+    startLine: 811
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -722,7 +725,7 @@ items:
   source:
     id: OnDrawLine
     path: ''
-    startLine: 2503
+    startLine: 812
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -745,7 +748,7 @@ items:
   source:
     id: InvokeDrawPoint
     path: ''
-    startLine: 2504
+    startLine: 813
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -776,7 +779,7 @@ items:
   source:
     id: InvokeDrawLine
     path: ''
-    startLine: 2505
+    startLine: 814
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -867,18 +870,18 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{System.Boolean})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{System.Boolean})
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   isExternal: true
-  name: Authenticate(String, String, Boolean, Action<Boolean>)
-  nameWithType: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Action<Boolean>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Action<System.Boolean>)
-  nameWithType.vb: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Action(Of Boolean))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Action(Of System.Boolean))
-  name.vb: Authenticate(String, String, Boolean, Action(Of Boolean))
+  name: Authenticate(String, String, Boolean, Action<AuthorizationResult>)
+  nameWithType: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Action<AuthorizationResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Action<AuthorizationResult>)
+  nameWithType.vb: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Action(Of AuthorizationResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Action(Of AuthorizationResult))
+  name.vb: Authenticate(String, String, Boolean, Action(Of AuthorizationResult))
   spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{System.Boolean})
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
     name: Authenticate
     nameWithType: IWinPeakNetworkClient.Authenticate
     fullName: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate
@@ -917,10 +920,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
+  - uid: AuthorizationResult
+    name: AuthorizationResult
+    nameWithType: AuthorizationResult
+    fullName: AuthorizationResult
     isExternal: true
   - name: '>'
     nameWithType: '>'
@@ -929,7 +932,7 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{System.Boolean})
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
     name: Authenticate
     nameWithType: IWinPeakNetworkClient.Authenticate
     fullName: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate
@@ -968,10 +971,10 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
+  - uid: AuthorizationResult
+    name: AuthorizationResult
+    nameWithType: AuthorizationResult
+    fullName: AuthorizationResult
     isExternal: true
   - name: )
     nameWithType: )
@@ -979,18 +982,162 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.Action{System.Boolean})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.Action{System.Boolean})
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   isExternal: true
-  name: EditProfile(String, String, String, String, Int32, String, Int32, Int32, String, String, Action<Boolean>)
-  nameWithType: IWinPeakNetworkClient.EditProfile(String, String, String, String, Int32, String, Int32, Int32, String, String, Action<Boolean>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.Int32, System.String, System.Int32, System.Int32, System.String, System.String, System.Action<System.Boolean>)
-  nameWithType.vb: IWinPeakNetworkClient.EditProfile(String, String, String, String, Int32, String, Int32, Int32, String, String, Action(Of Boolean))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.Int32, System.String, System.Int32, System.Int32, System.String, System.String, System.Action(Of System.Boolean))
-  name.vb: EditProfile(String, String, String, String, Int32, String, Int32, Int32, String, String, Action(Of Boolean))
+  name: EditProfile(String, String, String, String, String, Action<EditProfileResult>)
+  nameWithType: IWinPeakNetworkClient.EditProfile(String, String, String, String, String, Action<EditProfileResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.String, System.Action<EditProfileResult>)
+  nameWithType.vb: IWinPeakNetworkClient.EditProfile(String, String, String, String, String, Action(Of EditProfileResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.String, System.Action(Of EditProfileResult))
+  name.vb: EditProfile(String, String, String, String, String, Action(Of EditProfileResult))
   spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.Action{System.Boolean})
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
+    name: EditProfile
+    nameWithType: IWinPeakNetworkClient.EditProfile
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EditProfileResult
+    name: EditProfileResult
+    nameWithType: EditProfileResult
+    fullName: EditProfileResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
+    name: EditProfile
+    nameWithType: IWinPeakNetworkClient.EditProfile
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EditProfileResult
+    name: EditProfileResult
+    nameWithType: EditProfileResult
+    fullName: EditProfileResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: EditProfile(String, String, String, String, Int32, Action<EditProfileResult>)
+  nameWithType: IWinPeakNetworkClient.EditProfile(String, String, String, String, Int32, Action<EditProfileResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.Int32, System.Action<EditProfileResult>)
+  nameWithType.vb: IWinPeakNetworkClient.EditProfile(String, String, String, String, Int32, Action(Of EditProfileResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.Int32, System.Action(Of EditProfileResult))
+  name.vb: EditProfile(String, String, String, String, Int32, Action(Of EditProfileResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
     name: EditProfile
     nameWithType: IWinPeakNetworkClient.EditProfile
     fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile
@@ -1037,46 +1184,6 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
   - uid: System.Action`1
     name: Action
     nameWithType: Action
@@ -1085,10 +1192,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
+  - uid: EditProfileResult
+    name: EditProfileResult
+    nameWithType: EditProfileResult
+    fullName: EditProfileResult
     isExternal: true
   - name: '>'
     nameWithType: '>'
@@ -1097,7 +1204,7 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.Action{System.Boolean})
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
     name: EditProfile
     nameWithType: IWinPeakNetworkClient.EditProfile
     fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile
@@ -1144,14 +1251,123 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EditProfileResult
+    name: EditProfileResult
+    nameWithType: EditProfileResult
+    fullName: EditProfileResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: Register(Int64, Action<RegistrationResult>)
+  nameWithType: IWinPeakNetworkClient.Register(Int64, Action<RegistrationResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64, System.Action<RegistrationResult>)
+  nameWithType.vb: IWinPeakNetworkClient.Register(Int64, Action(Of RegistrationResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64, System.Action(Of RegistrationResult))
+  name.vb: Register(Int64, Action(Of RegistrationResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
+    name: Register
+    nameWithType: IWinPeakNetworkClient.Register
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.Register
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
     isExternal: true
   - name: ', '
     nameWithType: ', '
     fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RegistrationResult
+    name: RegistrationResult
+    nameWithType: RegistrationResult
+    fullName: RegistrationResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
+    name: Register
+    nameWithType: IWinPeakNetworkClient.Register
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.Register
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RegistrationResult
+    name: RegistrationResult
+    nameWithType: RegistrationResult
+    fullName: RegistrationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: GetUserInfo(Int32, Int32, Int32, Action<GetUserInfoResult>)
+  nameWithType: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action<GetUserInfoResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32, System.Int32, System.Int32, System.Action<GetUserInfoResult>)
+  nameWithType.vb: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action(Of GetUserInfoResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32, System.Int32, System.Int32, System.Action(Of GetUserInfoResult))
+  name.vb: GetUserInfo(Int32, Int32, Int32, Action(Of GetUserInfoResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
+    name: GetUserInfo
+    nameWithType: IWinPeakNetworkClient.GetUserInfo
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo
+  - name: (
+    nameWithType: (
+    fullName: (
   - uid: System.Int32
     name: Int32
     nameWithType: Int32
@@ -1168,22 +1384,129 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
     isExternal: true
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GetUserInfoResult
+    name: GetUserInfoResult
+    nameWithType: GetUserInfoResult
+    fullName: GetUserInfoResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
+    name: GetUserInfo
+    nameWithType: IWinPeakNetworkClient.GetUserInfo
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
     isExternal: true
   - name: ', '
     nameWithType: ', '
     fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GetUserInfoResult
+    name: GetUserInfoResult
+    nameWithType: GetUserInfoResult
+    fullName: GetUserInfoResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: Logout(Action<Boolean>)
+  nameWithType: IWinPeakNetworkClient.Logout(Action<Boolean>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action<System.Boolean>)
+  nameWithType.vb: IWinPeakNetworkClient.Logout(Action(Of Boolean))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action(Of System.Boolean))
+  name.vb: Logout(Action(Of Boolean))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
+    name: Logout
+    nameWithType: IWinPeakNetworkClient.Logout
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.Logout
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
+    name: Logout
+    nameWithType: IWinPeakNetworkClient.Logout
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.Logout
+  - name: (
+    nameWithType: (
+    fullName: (
   - uid: System.Action`1
     name: Action
     nameWithType: Action
@@ -1203,133 +1526,21 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{System.Int64,System.String,System.String})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{System.Int64,System.String,System.String})
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   isExternal: true
-  name: Register(Int64, Action<Int64, String, String>)
-  nameWithType: IWinPeakNetworkClient.Register(Int64, Action<Int64, String, String>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64, System.Action<System.Int64, System.String, System.String>)
-  nameWithType.vb: IWinPeakNetworkClient.Register(Int64, Action(Of Int64, String, String))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64, System.Action(Of System.Int64, System.String, System.String))
-  name.vb: Register(Int64, Action(Of Int64, String, String))
+  name: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, Action<SearchGameResult>)
+  nameWithType: IWinPeakNetworkClient.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, Action<SearchGameResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.Action<SearchGameResult>)
+  nameWithType.vb: IWinPeakNetworkClient.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, Action(Of SearchGameResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.Action(Of SearchGameResult))
+  name.vb: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, Action(Of SearchGameResult))
   spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{System.Int64,System.String,System.String})
-    name: Register
-    nameWithType: IWinPeakNetworkClient.Register
-    fullName: Winpeak.Client.API.IWinPeakNetworkClient.Register
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Action`3
-    name: Action
-    nameWithType: Action
-    fullName: System.Action
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{System.Int64,System.String,System.String})
-    name: Register
-    nameWithType: IWinPeakNetworkClient.Register
-    fullName: Winpeak.Client.API.IWinPeakNetworkClient.Register
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Action`3
-    name: Action
-    nameWithType: Action
-    fullName: System.Action
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
-  parent: Winpeak.Client.API.IWinPeakNetworkClient
-  isExternal: true
-  name: GetUserInfo(Int32, Int32, Int32, Action<IAccount>)
-  nameWithType: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action<IAccount>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32, System.Int32, System.Int32, System.Action<IAccount>)
-  nameWithType.vb: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action(Of IAccount))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32, System.Int32, System.Int32, System.Action(Of IAccount))
-  name.vb: GetUserInfo(Int32, Int32, Int32, Action(Of IAccount))
-  spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
-    name: GetUserInfo
-    nameWithType: IWinPeakNetworkClient.GetUserInfo
-    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})
+    name: SearchGame
+    nameWithType: IWinPeakNetworkClient.SearchGame
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame
   - name: (
     nameWithType: (
     fullName: (
@@ -1353,6 +1564,30 @@ references:
     name: Int32
     nameWithType: Int32
     fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
     isExternal: true
   - name: ', '
     nameWithType: ', '
@@ -1365,10 +1600,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: IAccount
-    name: IAccount
-    nameWithType: IAccount
-    fullName: IAccount
+  - uid: SearchGameResult
+    name: SearchGameResult
+    nameWithType: SearchGameResult
+    fullName: SearchGameResult
     isExternal: true
   - name: '>'
     nameWithType: '>'
@@ -1377,10 +1612,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
-    name: GetUserInfo
-    nameWithType: IWinPeakNetworkClient.GetUserInfo
-    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})
+    name: SearchGame
+    nameWithType: IWinPeakNetworkClient.SearchGame
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame
   - name: (
     nameWithType: (
     fullName: (
@@ -1408,6 +1643,30 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.Action`1
     name: Action
     nameWithType: Action
@@ -1416,10 +1675,10 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: IAccount
-    name: IAccount
-    nameWithType: IAccount
-    fullName: IAccount
+  - uid: SearchGameResult
+    name: SearchGameResult
+    nameWithType: SearchGameResult
+    fullName: SearchGameResult
     isExternal: true
   - name: )
     nameWithType: )
@@ -1949,7 +2208,6 @@ references:
   nameWithType: IWinPeakClient.SubscribeRigidbody
   fullName: Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody
 - uid: WinPeakRigidbody
-  commentId: '!:WinPeakRigidbody'
   isExternal: true
   name: WinPeakRigidbody
   nameWithType: WinPeakRigidbody

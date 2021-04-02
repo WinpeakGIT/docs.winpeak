@@ -86,13 +86,13 @@
   
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_Authenticate_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Authenticate*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_Authenticate_System_String_System_String_System_Boolean_System_Action_System_Boolean__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{System.Boolean})">Authenticate(String, String, Boolean, Action&lt;Boolean&gt;)</h4>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_Authenticate_System_String_System_String_System_Boolean_System_Action_AuthorizationResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})">Authenticate(String, String, Boolean, Action&lt;AuthorizationResult&gt;)</h4>
   <div class="markdown level1 summary"><p>Authenticate user in the system</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Authenticate(string login, string password, bool rememberMe, Action&lt;bool&gt; callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void Authenticate(string login, string password, bool rememberMe, Action&lt;AuthorizationResult&gt; callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -120,7 +120,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">AuthorizationResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
         <td></td>
       </tr>
@@ -157,13 +157,13 @@
   
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_EditProfile_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.EditProfile*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_EditProfile_System_String_System_String_System_String_System_String_System_Int32_System_String_System_Int32_System_Int32_System_String_System_String_System_Action_System_Boolean__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.Action{System.Boolean})">EditProfile(String, String, String, String, Int32, String, Int32, Int32, String, String, Action&lt;Boolean&gt;)</h4>
-  <div class="markdown level1 summary"><p>Edit user profile in the system. Returns result of action true - succeeded, false - failed</p>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_EditProfile_System_String_System_String_System_String_System_String_System_Int32_System_Action_EditProfileResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})">EditProfile(String, String, String, String, Int32, Action&lt;EditProfileResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Uses for registration form. Edit user profile in the system with specified fields. Returns result of action true - succeeded, false - failed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EditProfile(string email, string login, string firstName, string lastName, int sex, string phone, int visibility, int agree, string password, string rePassword, Action&lt;bool&gt; callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void EditProfile(string email, string login, string password, string rePassword, int agree, Action&lt;EditProfileResult&gt; callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -187,32 +187,60 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">firstName</span></td>
+        <td><span class="parametername">password</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">lastName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">sex</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">phone</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">visibility</span></td>
+        <td><span class="parametername">rePassword</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">agree</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">EditProfileResult</span>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Winpeak_Client_API_IWinPeakNetworkClient_EditProfile_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.EditProfile*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_EditProfile_System_String_System_String_System_String_System_String_System_String_System_Action_EditProfileResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})">EditProfile(String, String, String, String, String, Action&lt;EditProfileResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Uses for profile edit form. Edit user profile in the system. Returns result of action true - succeeded, false - failed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void EditProfile(string email, string login, string phone, string password, string rePassword, Action&lt;EditProfileResult&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">email</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">login</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">phone</span></td>
         <td></td>
       </tr>
       <tr>
@@ -226,7 +254,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">EditProfileResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
         <td></td>
       </tr>
@@ -235,13 +263,13 @@
   
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_GetUserInfo_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_GetUserInfo_System_Int32_System_Int32_System_Int32_System_Action_IAccount__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})">GetUserInfo(Int32, Int32, Int32, Action&lt;IAccount&gt;)</h4>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_GetUserInfo_System_Int32_System_Int32_System_Int32_System_Action_GetUserInfoResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})">GetUserInfo(Int32, Int32, Int32, Action&lt;GetUserInfoResult&gt;)</h4>
   <div class="markdown level1 summary"><p>Get actual userinfo</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void GetUserInfo(int appVersion, int gameId, int gameVersion, Action&lt;IAccount&gt; callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void GetUserInfo(int appVersion, int gameId, int gameVersion, Action&lt;GetUserInfoResult&gt; callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -269,7 +297,35 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">IAccount</span>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">GetUserInfoResult</span>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Winpeak_Client_API_IWinPeakNetworkClient_Logout_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Logout*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_Logout_System_Action_System_Boolean__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})">Logout(Action&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Logout user in the system. Clear session on server side</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Logout(Action&lt;bool&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
         <td></td>
       </tr>
@@ -278,13 +334,13 @@
   
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_Register_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Register*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_Register_System_Int64_System_Action_System_Int64_System_String_System_String__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{System.Int64,System.String,System.String})">Register(Int64, Action&lt;Int64, String, String&gt;)</h4>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_Register_System_Int64_System_Action_RegistrationResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})">Register(Int64, Action&lt;RegistrationResult&gt;)</h4>
   <div class="markdown level1 summary"><p>Register user in the system. Return user_id, login, password</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Register(long partnerId, Action&lt;long, string, string&gt; callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void Register(long partnerId, Action&lt;RegistrationResult&gt; callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -302,7 +358,65 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int64</span>, <span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">RegistrationResult</span>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Winpeak_Client_API_IWinPeakNetworkClient_SearchGame_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.SearchGame*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_SearchGame_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int64_System_Action_SearchGameResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})">SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, Action&lt;SearchGameResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Search game session by specified params</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SearchGame(int offset, int size, int gameId, int state, int tplId, long userId, Action&lt;SearchGameResult&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">gameId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tplId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">SearchGameResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
         <td></td>
       </tr>

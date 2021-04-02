@@ -4,8 +4,7 @@ items:
   commentId: T:Winpeak.Client.Scene.WpSceneObjectController
   id: WpSceneObjectController
   parent: Winpeak.Client.Scene
-  children:
-  - Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},Winpeak.Client.Scene.WinPeakRigidbody)
+  children: []
   langs:
   - csharp
   - vb
@@ -16,7 +15,7 @@ items:
   source:
     id: WpSceneObjectController
     path: ''
-    startLine: 2910
+    startLine: 3314
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -33,40 +32,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},Winpeak.Client.Scene.WinPeakRigidbody)
-  commentId: M:Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},Winpeak.Client.Scene.WinPeakRigidbody)
-  id: UpdateSceneObjects(System.Collections.Generic.Dictionary{System.String,System.String[]},Winpeak.Client.Scene.WinPeakRigidbody)
-  parent: Winpeak.Client.Scene.WpSceneObjectController
-  langs:
-  - csharp
-  - vb
-  name: UpdateSceneObjects(Dictionary<String, String[]>, WinPeakRigidbody)
-  nameWithType: WpSceneObjectController.UpdateSceneObjects(Dictionary<String, String[]>, WinPeakRigidbody)
-  fullName: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary<System.String, System.String[]>, Winpeak.Client.Scene.WinPeakRigidbody)
-  type: Method
-  source:
-    id: UpdateSceneObjects
-    path: ''
-    startLine: 3009
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public void UpdateSceneObjects(Dictionary<string, string[]> actorFunctions, WinPeakRigidbody rigidbody)
-    parameters:
-    - id: actorFunctions
-      type: System.Collections.Generic.Dictionary{System.String,System.String[]}
-    - id: rigidbody
-      type: Winpeak.Client.Scene.WinPeakRigidbody
-    content.vb: Public Sub UpdateSceneObjects(actorFunctions As Dictionary(Of String, String()), rigidbody As WinPeakRigidbody)
-  overload: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects*
-  nameWithType.vb: WpSceneObjectController.UpdateSceneObjects(Dictionary(Of String, String()), WinPeakRigidbody)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects(System.Collections.Generic.Dictionary(Of System.String, System.String()), Winpeak.Client.Scene.WinPeakRigidbody)
-  name.vb: UpdateSceneObjects(Dictionary(Of String, String()), WinPeakRigidbody)
 references:
 - uid: Winpeak.Client.Scene
   commentId: N:Winpeak.Client.Scene
@@ -86,137 +51,3 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects*
-  commentId: Overload:Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects
-  name: UpdateSceneObjects
-  nameWithType: WpSceneObjectController.UpdateSceneObjects
-  fullName: Winpeak.Client.Scene.WpSceneObjectController.UpdateSceneObjects
-- uid: System.Collections.Generic.Dictionary{System.String,System.String[]}
-  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String[]}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.Dictionary`2
-  name: Dictionary<String, String[]>
-  nameWithType: Dictionary<String, String[]>
-  fullName: System.Collections.Generic.Dictionary<System.String, System.String[]>
-  nameWithType.vb: Dictionary(Of String, String())
-  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String())
-  name.vb: Dictionary(Of String, String())
-  spec.csharp:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.Scene.WinPeakRigidbody
-  commentId: T:Winpeak.Client.Scene.WinPeakRigidbody
-  parent: Winpeak.Client.Scene
-  name: WinPeakRigidbody
-  nameWithType: WinPeakRigidbody
-  fullName: Winpeak.Client.Scene.WinPeakRigidbody
-- uid: System.Collections.Generic.Dictionary`2
-  commentId: T:System.Collections.Generic.Dictionary`2
-  isExternal: true
-  name: Dictionary<TKey, TValue>
-  nameWithType: Dictionary<TKey, TValue>
-  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
-  nameWithType.vb: Dictionary(Of TKey, TValue)
-  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
-  name.vb: Dictionary(Of TKey, TValue)
-  spec.csharp:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: TKey
-    nameWithType: TKey
-    fullName: TKey
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: TValue
-    nameWithType: TValue
-    fullName: TValue
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: TKey
-    nameWithType: TKey
-    fullName: TKey
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: TValue
-    nameWithType: TValue
-    fullName: TValue
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic

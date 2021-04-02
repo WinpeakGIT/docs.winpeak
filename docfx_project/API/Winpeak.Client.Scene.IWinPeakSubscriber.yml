@@ -5,6 +5,7 @@ items:
   id: IWinPeakSubscriber
   parent: Winpeak.Client.Scene
   children:
+  - Winpeak.Client.Scene.IWinPeakSubscriber.Clear
   - Winpeak.Client.Scene.IWinPeakSubscriber.Move(Waypoint[],System.Int64)
   langs:
   - csharp
@@ -16,7 +17,7 @@ items:
   source:
     id: IWinPeakSubscriber
     path: ''
-    startLine: 136
+    startLine: 78
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -43,7 +44,7 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 138
+    startLine: 80
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -59,6 +60,28 @@ items:
   nameWithType.vb: IWinPeakSubscriber.Move(Waypoint(), Int64)
   fullName.vb: Winpeak.Client.Scene.IWinPeakSubscriber.Move(Waypoint(), System.Int64)
   name.vb: Move(Waypoint(), Int64)
+- uid: Winpeak.Client.Scene.IWinPeakSubscriber.Clear
+  commentId: M:Winpeak.Client.Scene.IWinPeakSubscriber.Clear
+  id: Clear
+  parent: Winpeak.Client.Scene.IWinPeakSubscriber
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: IWinPeakSubscriber.Clear()
+  fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: ''
+    startLine: 81
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Scene
+  syntax:
+    content: void Clear()
+    content.vb: Sub Clear
+  overload: Winpeak.Client.Scene.IWinPeakSubscriber.Clear*
 references:
 - uid: Winpeak.Client.Scene
   commentId: N:Winpeak.Client.Scene
@@ -109,3 +132,8 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Winpeak.Client.Scene.IWinPeakSubscriber.Clear*
+  commentId: Overload:Winpeak.Client.Scene.IWinPeakSubscriber.Clear
+  name: Clear
+  nameWithType: IWinPeakSubscriber.Clear
+  fullName: Winpeak.Client.Scene.IWinPeakSubscriber.Clear

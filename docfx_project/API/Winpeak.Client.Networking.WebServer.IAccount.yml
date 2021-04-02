@@ -6,13 +6,13 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.IAccount.GetCash
-  - Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft
   - Winpeak.Client.Networking.WebServer.IAccount.GetEmail
   - Winpeak.Client.Networking.WebServer.IAccount.GetFirstName
   - Winpeak.Client.Networking.WebServer.IAccount.GetId
   - Winpeak.Client.Networking.WebServer.IAccount.GetLastName
   - Winpeak.Client.Networking.WebServer.IAccount.GetLogin
   - Winpeak.Client.Networking.WebServer.IAccount.GetPhone
+  - Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
   - Winpeak.Client.Networking.WebServer.IAccount.IsValid
   langs:
   - csharp
@@ -24,7 +24,7 @@ items:
   source:
     id: IAccount
     path: ''
-    startLine: 3578
+    startLine: 3538
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -51,7 +51,7 @@ items:
   source:
     id: GetId
     path: ''
-    startLine: 3580
+    startLine: 3540
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -80,7 +80,7 @@ items:
   source:
     id: GetLogin
     path: ''
-    startLine: 3581
+    startLine: 3541
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -109,7 +109,7 @@ items:
   source:
     id: GetEmail
     path: ''
-    startLine: 3582
+    startLine: 3542
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -138,7 +138,7 @@ items:
   source:
     id: GetFirstName
     path: ''
-    startLine: 3583
+    startLine: 3543
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -167,7 +167,7 @@ items:
   source:
     id: GetLastName
     path: ''
-    startLine: 3584
+    startLine: 3544
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -196,7 +196,7 @@ items:
   source:
     id: GetPhone
     path: ''
-    startLine: 3585
+    startLine: 3545
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -225,7 +225,7 @@ items:
   source:
     id: GetCash
     path: ''
-    startLine: 3586
+    startLine: 3546
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -240,31 +240,31 @@ items:
   - get
   modifiers.vb:
   - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft
-  commentId: P:Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft
-  id: GetCashSoft
+- uid: Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
+  commentId: P:Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
+  id: GetSoftCash
   parent: Winpeak.Client.Networking.WebServer.IAccount
   langs:
   - csharp
   - vb
-  name: GetCashSoft
-  nameWithType: IAccount.GetCashSoft
-  fullName: Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft
+  name: GetSoftCash
+  nameWithType: IAccount.GetSoftCash
+  fullName: Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
   type: Property
   source:
-    id: GetCashSoft
+    id: GetSoftCash
     path: ''
-    startLine: 3587
+    startLine: 3547
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: int GetCashSoft { get; }
+    content: int GetSoftCash { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: ReadOnly Property GetCashSoft As Integer
-  overload: Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft*
+    content.vb: ReadOnly Property GetSoftCash As Integer
+  overload: Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash*
   modifiers.csharp:
   - get
   modifiers.vb:
@@ -283,7 +283,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 3588
+    startLine: 3548
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -359,11 +359,11 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft
-  name: GetCashSoft
-  nameWithType: IAccount.GetCashSoft
-  fullName: Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft
+- uid: Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
+  name: GetSoftCash
+  nameWithType: IAccount.GetSoftCash
+  fullName: Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
 - uid: Winpeak.Client.Networking.WebServer.IAccount.IsValid*
   commentId: Overload:Winpeak.Client.Networking.WebServer.IAccount.IsValid
   name: IsValid

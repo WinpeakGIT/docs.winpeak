@@ -5,7 +5,8 @@ items:
   id: EditProfile
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String)
+  - Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.Int32)
+  - Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.String)
   - Winpeak.Client.Networking.WebServer.EditProfile.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.EditProfile.GenerateData
   langs:
@@ -18,7 +19,7 @@ items:
   source:
     id: EditProfile
     path: ''
-    startLine: 3881
+    startLine: 3739
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -57,48 +58,75 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String)
-  commentId: M:Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String)
-  id: '#ctor(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String)'
+- uid: Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.String)
+  commentId: M:Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.String,System.String)'
   parent: Winpeak.Client.Networking.WebServer.EditProfile
   langs:
   - csharp
   - vb
-  name: EditProfile(String, String, String, String, Int32, String, Int32, Int32, String, String)
-  nameWithType: EditProfile.EditProfile(String, String, String, String, Int32, String, Int32, Int32, String, String)
-  fullName: Winpeak.Client.Networking.WebServer.EditProfile.EditProfile(System.String, System.String, System.String, System.String, System.Int32, System.String, System.Int32, System.Int32, System.String, System.String)
+  name: EditProfile(String, String, String, String, String)
+  nameWithType: EditProfile.EditProfile(String, String, String, String, String)
+  fullName: Winpeak.Client.Networking.WebServer.EditProfile.EditProfile(System.String, System.String, System.String, System.String, System.String)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 3895
+    startLine: 3757
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public EditProfile(string email = "", string login = "", string firstName = "", string lastName = "", int sex = 0, string phone = "", int visibility = 0, int agreeTerms = 0, string password = "", string rePassword = "")
+    content: public EditProfile(string email = "", string login = "", string phone = "", string password = "", string rePassword = "")
     parameters:
     - id: email
       type: System.String
     - id: login
       type: System.String
-    - id: firstName
-      type: System.String
-    - id: lastName
-      type: System.String
-    - id: sex
-      type: System.Int32
     - id: phone
       type: System.String
-    - id: visibility
-      type: System.Int32
-    - id: agreeTerms
-      type: System.Int32
     - id: password
       type: System.String
     - id: rePassword
       type: System.String
-    content.vb: Public Sub New(email As String = "", login As String = "", firstName As String = "", lastName As String = "", sex As Integer = 0, phone As String = "", visibility As Integer = 0, agreeTerms As Integer = 0, password As String = "", rePassword As String = "")
+    content.vb: Public Sub New(email As String = "", login As String = "", phone As String = "", password As String = "", rePassword As String = "")
+  overload: Winpeak.Client.Networking.WebServer.EditProfile.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.Int32)
+  commentId: M:Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.Int32)
+  id: '#ctor(System.String,System.String,System.String,System.String,System.Int32)'
+  parent: Winpeak.Client.Networking.WebServer.EditProfile
+  langs:
+  - csharp
+  - vb
+  name: EditProfile(String, String, String, String, Int32)
+  nameWithType: EditProfile.EditProfile(String, String, String, String, Int32)
+  fullName: Winpeak.Client.Networking.WebServer.EditProfile.EditProfile(System.String, System.String, System.String, System.String, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3772
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public EditProfile(string email = "", string login = "", string password = "", string rePassword = "", int agreeTerms = 0)
+    parameters:
+    - id: email
+      type: System.String
+    - id: login
+      type: System.String
+    - id: password
+      type: System.String
+    - id: rePassword
+      type: System.String
+    - id: agreeTerms
+      type: System.Int32
+    content.vb: Public Sub New(email As String = "", login As String = "", password As String = "", rePassword As String = "", agreeTerms As Integer = 0)
   overload: Winpeak.Client.Networking.WebServer.EditProfile.#ctor*
   modifiers.csharp:
   - public
@@ -118,7 +146,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 3907
+    startLine: 3787
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -149,7 +177,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 3923
+    startLine: 3793
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer

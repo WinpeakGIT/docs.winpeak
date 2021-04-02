@@ -6,13 +6,13 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.Account.GetCash
-  - Winpeak.Client.Networking.WebServer.Account.GetCashSoft
   - Winpeak.Client.Networking.WebServer.Account.GetEmail
   - Winpeak.Client.Networking.WebServer.Account.GetFirstName
   - Winpeak.Client.Networking.WebServer.Account.GetId
   - Winpeak.Client.Networking.WebServer.Account.GetLastName
   - Winpeak.Client.Networking.WebServer.Account.GetLogin
   - Winpeak.Client.Networking.WebServer.Account.GetPhone
+  - Winpeak.Client.Networking.WebServer.Account.GetSoftCash
   - Winpeak.Client.Networking.WebServer.Account.IsValid
   langs:
   - csharp
@@ -24,7 +24,7 @@ items:
   source:
     id: Account
     path: ''
-    startLine: 4329
+    startLine: 4970
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -40,7 +40,7 @@ items:
   implements:
   - Winpeak.Client.Networking.WebServer.IAccount
   inheritedMembers:
-  - Winpeak.Client.Networking.WebServer.InternalAccount.ID
+  - Winpeak.Client.Networking.WebServer.InternalAccount.Id
   - Winpeak.Client.Networking.WebServer.InternalAccount.Login
   - Winpeak.Client.Networking.WebServer.InternalAccount.Email
   - Winpeak.Client.Networking.WebServer.InternalAccount.FirstName
@@ -50,7 +50,7 @@ items:
   - Winpeak.Client.Networking.WebServer.InternalAccount.Phone
   - Winpeak.Client.Networking.WebServer.InternalAccount.Sex
   - Winpeak.Client.Networking.WebServer.InternalAccount.Cash
-  - Winpeak.Client.Networking.WebServer.InternalAccount.CashSoft
+  - Winpeak.Client.Networking.WebServer.InternalAccount.SoftCash
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -78,7 +78,7 @@ items:
   source:
     id: GetId
     path: ''
-    startLine: 4331
+    startLine: 4972
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -111,7 +111,7 @@ items:
   source:
     id: GetLogin
     path: ''
-    startLine: 4333
+    startLine: 4974
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -144,7 +144,7 @@ items:
   source:
     id: GetEmail
     path: ''
-    startLine: 4335
+    startLine: 4976
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -177,7 +177,7 @@ items:
   source:
     id: GetFirstName
     path: ''
-    startLine: 4337
+    startLine: 4978
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -210,7 +210,7 @@ items:
   source:
     id: GetLastName
     path: ''
-    startLine: 4339
+    startLine: 4980
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -243,7 +243,7 @@ items:
   source:
     id: GetPhone
     path: ''
-    startLine: 4341
+    startLine: 4982
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -276,7 +276,7 @@ items:
   source:
     id: GetCash
     path: ''
-    startLine: 4343
+    startLine: 4984
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -295,33 +295,33 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.Account.GetCashSoft
-  commentId: P:Winpeak.Client.Networking.WebServer.Account.GetCashSoft
-  id: GetCashSoft
+- uid: Winpeak.Client.Networking.WebServer.Account.GetSoftCash
+  commentId: P:Winpeak.Client.Networking.WebServer.Account.GetSoftCash
+  id: GetSoftCash
   parent: Winpeak.Client.Networking.WebServer.Account
   langs:
   - csharp
   - vb
-  name: GetCashSoft
-  nameWithType: Account.GetCashSoft
-  fullName: Winpeak.Client.Networking.WebServer.Account.GetCashSoft
+  name: GetSoftCash
+  nameWithType: Account.GetSoftCash
+  fullName: Winpeak.Client.Networking.WebServer.Account.GetSoftCash
   type: Property
   source:
-    id: GetCashSoft
+    id: GetSoftCash
     path: ''
-    startLine: 4345
+    startLine: 4986
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public int GetCashSoft { get; }
+    content: public int GetSoftCash { get; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: Public ReadOnly Property GetCashSoft As Integer
-  overload: Winpeak.Client.Networking.WebServer.Account.GetCashSoft*
+    content.vb: Public ReadOnly Property GetSoftCash As Integer
+  overload: Winpeak.Client.Networking.WebServer.Account.GetSoftCash*
   implements:
-  - Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft
+  - Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
   modifiers.csharp:
   - public
   - get
@@ -342,7 +342,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 4347
+    startLine: 4988
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -386,12 +386,12 @@ references:
   name: IAccount
   nameWithType: IAccount
   fullName: Winpeak.Client.Networking.WebServer.IAccount
-- uid: Winpeak.Client.Networking.WebServer.InternalAccount.ID
-  commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.ID
+- uid: Winpeak.Client.Networking.WebServer.InternalAccount.Id
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.Id
   parent: Winpeak.Client.Networking.WebServer.InternalAccount
-  name: ID
-  nameWithType: InternalAccount.ID
-  fullName: Winpeak.Client.Networking.WebServer.InternalAccount.ID
+  name: Id
+  nameWithType: InternalAccount.Id
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccount.Id
 - uid: Winpeak.Client.Networking.WebServer.InternalAccount.Login
   commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.Login
   parent: Winpeak.Client.Networking.WebServer.InternalAccount
@@ -446,12 +446,12 @@ references:
   name: Cash
   nameWithType: InternalAccount.Cash
   fullName: Winpeak.Client.Networking.WebServer.InternalAccount.Cash
-- uid: Winpeak.Client.Networking.WebServer.InternalAccount.CashSoft
-  commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.CashSoft
+- uid: Winpeak.Client.Networking.WebServer.InternalAccount.SoftCash
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.SoftCash
   parent: Winpeak.Client.Networking.WebServer.InternalAccount
-  name: CashSoft
-  nameWithType: InternalAccount.CashSoft
-  fullName: Winpeak.Client.Networking.WebServer.InternalAccount.CashSoft
+  name: SoftCash
+  nameWithType: InternalAccount.SoftCash
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccount.SoftCash
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -828,17 +828,17 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: Winpeak.Client.Networking.WebServer.Account.GetCashSoft*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.Account.GetCashSoft
-  name: GetCashSoft
-  nameWithType: Account.GetCashSoft
-  fullName: Winpeak.Client.Networking.WebServer.Account.GetCashSoft
-- uid: Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft
-  commentId: P:Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft
+- uid: Winpeak.Client.Networking.WebServer.Account.GetSoftCash*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.Account.GetSoftCash
+  name: GetSoftCash
+  nameWithType: Account.GetSoftCash
+  fullName: Winpeak.Client.Networking.WebServer.Account.GetSoftCash
+- uid: Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
+  commentId: P:Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
   parent: Winpeak.Client.Networking.WebServer.IAccount
-  name: GetCashSoft
-  nameWithType: IAccount.GetCashSoft
-  fullName: Winpeak.Client.Networking.WebServer.IAccount.GetCashSoft
+  name: GetSoftCash
+  nameWithType: IAccount.GetSoftCash
+  fullName: Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
 - uid: Winpeak.Client.Networking.WebServer.Account.IsValid*
   commentId: Overload:Winpeak.Client.Networking.WebServer.Account.IsValid
   name: IsValid

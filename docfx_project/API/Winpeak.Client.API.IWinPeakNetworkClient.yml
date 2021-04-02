@@ -5,11 +5,14 @@ items:
   id: IWinPeakNetworkClient
   parent: Winpeak.Client.API
   children:
-  - Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{System.Boolean})
+  - Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CheckAuthorization(System.Action{System.Boolean})
-  - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.Action{System.Boolean})
-  - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
-  - Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{System.Int64,System.String,System.String})
+  - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
+  - Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})
   langs:
   - csharp
   - vb
@@ -20,7 +23,7 @@ items:
   source:
     id: IWinPeakNetworkClient
     path: ''
-    startLine: 2222
+    startLine: 823
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -47,7 +50,7 @@ items:
   source:
     id: CheckAuthorization
     path: ''
-    startLine: 2227
+    startLine: 828
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -63,28 +66,28 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.CheckAuthorization(Action(Of Boolean))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.CheckAuthorization(System.Action(Of System.Boolean))
   name.vb: CheckAuthorization(Action(Of Boolean))
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{System.Boolean})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{System.Boolean})
-  id: Authenticate(System.String,System.String,System.Boolean,System.Action{System.Boolean})
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
+  id: Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   langs:
   - csharp
   - vb
-  name: Authenticate(String, String, Boolean, Action<Boolean>)
-  nameWithType: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Action<Boolean>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Action<System.Boolean>)
+  name: Authenticate(String, String, Boolean, Action<AuthorizationResult>)
+  nameWithType: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Action<AuthorizationResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Action<AuthorizationResult>)
   type: Method
   source:
     id: Authenticate
     path: ''
-    startLine: 2236
+    startLine: 837
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   summary: "\nAuthenticate user in the system\n"
   example: []
   syntax:
-    content: void Authenticate(string login, string password, bool rememberMe, Action<bool> callback)
+    content: void Authenticate(string login, string password, bool rememberMe, Action<AuthorizationResult> callback)
     parameters:
     - id: login
       type: System.String
@@ -96,35 +99,35 @@ items:
       type: System.Boolean
       description: ''
     - id: callback
-      type: System.Action{System.Boolean}
+      type: System.Action{AuthorizationResult}
       description: ''
-    content.vb: Sub Authenticate(login As String, password As String, rememberMe As Boolean, callback As Action(Of Boolean))
+    content.vb: Sub Authenticate(login As String, password As String, rememberMe As Boolean, callback As Action(Of AuthorizationResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate*
-  nameWithType.vb: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Action(Of Boolean))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Action(Of System.Boolean))
-  name.vb: Authenticate(String, String, Boolean, Action(Of Boolean))
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.Action{System.Boolean})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.Action{System.Boolean})
-  id: EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.Action{System.Boolean})
+  nameWithType.vb: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Action(Of AuthorizationResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Action(Of AuthorizationResult))
+  name.vb: Authenticate(String, String, Boolean, Action(Of AuthorizationResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
+  id: EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   langs:
   - csharp
   - vb
-  name: EditProfile(String, String, String, String, Int32, String, Int32, Int32, String, String, Action<Boolean>)
-  nameWithType: IWinPeakNetworkClient.EditProfile(String, String, String, String, Int32, String, Int32, Int32, String, String, Action<Boolean>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.Int32, System.String, System.Int32, System.Int32, System.String, System.String, System.Action<System.Boolean>)
+  name: EditProfile(String, String, String, String, String, Action<EditProfileResult>)
+  nameWithType: IWinPeakNetworkClient.EditProfile(String, String, String, String, String, Action<EditProfileResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.String, System.Action<EditProfileResult>)
   type: Method
   source:
     id: EditProfile
     path: ''
-    startLine: 2247
+    startLine: 853
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nEdit user profile in the system. Returns result of action true - succeeded, false - failed\n"
+  summary: "\nUses for profile edit form. Edit user profile in the system. Returns result of action true - succeeded, false - failed\n"
   example: []
   syntax:
-    content: void EditProfile(string email, string login, string firstName, string lastName, int sex, string phone, int visibility, int agree, string password, string rePassword, Action<bool> callback)
+    content: void EditProfile(string email, string login, string phone, string password, string rePassword, Action<EditProfileResult> callback)
     parameters:
     - id: email
       type: System.String
@@ -132,18 +135,8 @@ items:
     - id: login
       type: System.String
       description: ''
-    - id: firstName
-      type: System.String
-    - id: lastName
-      type: System.String
-    - id: sex
-      type: System.Int32
     - id: phone
       type: System.String
-    - id: visibility
-      type: System.Int32
-    - id: agree
-      type: System.Int32
       description: ''
     - id: password
       type: System.String
@@ -152,69 +145,115 @@ items:
       type: System.String
       description: ''
     - id: callback
-      type: System.Action{System.Boolean}
+      type: System.Action{EditProfileResult}
       description: ''
-    content.vb: Sub EditProfile(email As String, login As String, firstName As String, lastName As String, sex As Integer, phone As String, visibility As Integer, agree As Integer, password As String, rePassword As String, callback As Action(Of Boolean))
+    content.vb: Sub EditProfile(email As String, login As String, phone As String, password As String, rePassword As String, callback As Action(Of EditProfileResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile*
-  nameWithType.vb: IWinPeakNetworkClient.EditProfile(String, String, String, String, Int32, String, Int32, Int32, String, String, Action(Of Boolean))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.Int32, System.String, System.Int32, System.Int32, System.String, System.String, System.Action(Of System.Boolean))
-  name.vb: EditProfile(String, String, String, String, Int32, String, Int32, Int32, String, String, Action(Of Boolean))
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{System.Int64,System.String,System.String})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{System.Int64,System.String,System.String})
-  id: Register(System.Int64,System.Action{System.Int64,System.String,System.String})
+  nameWithType.vb: IWinPeakNetworkClient.EditProfile(String, String, String, String, String, Action(Of EditProfileResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.String, System.Action(Of EditProfileResult))
+  name.vb: EditProfile(String, String, String, String, String, Action(Of EditProfileResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
+  id: EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   langs:
   - csharp
   - vb
-  name: Register(Int64, Action<Int64, String, String>)
-  nameWithType: IWinPeakNetworkClient.Register(Int64, Action<Int64, String, String>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64, System.Action<System.Int64, System.String, System.String>)
+  name: EditProfile(String, String, String, String, Int32, Action<EditProfileResult>)
+  nameWithType: IWinPeakNetworkClient.EditProfile(String, String, String, String, Int32, Action<EditProfileResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.Int32, System.Action<EditProfileResult>)
+  type: Method
+  source:
+    id: EditProfile
+    path: ''
+    startLine: 864
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nUses for registration form. Edit user profile in the system with specified fields. Returns result of action true - succeeded, false - failed\n"
+  example: []
+  syntax:
+    content: void EditProfile(string email, string login, string password, string rePassword, int agree, Action<EditProfileResult> callback)
+    parameters:
+    - id: email
+      type: System.String
+      description: ''
+    - id: login
+      type: System.String
+      description: ''
+    - id: password
+      type: System.String
+      description: ''
+    - id: rePassword
+      type: System.String
+      description: ''
+    - id: agree
+      type: System.Int32
+      description: ''
+    - id: callback
+      type: System.Action{EditProfileResult}
+      description: ''
+    content.vb: Sub EditProfile(email As String, login As String, password As String, rePassword As String, agree As Integer, callback As Action(Of EditProfileResult))
+  overload: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile*
+  nameWithType.vb: IWinPeakNetworkClient.EditProfile(String, String, String, String, Int32, Action(Of EditProfileResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.Int32, System.Action(Of EditProfileResult))
+  name.vb: EditProfile(String, String, String, String, Int32, Action(Of EditProfileResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
+  id: Register(System.Int64,System.Action{RegistrationResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  langs:
+  - csharp
+  - vb
+  name: Register(Int64, Action<RegistrationResult>)
+  nameWithType: IWinPeakNetworkClient.Register(Int64, Action<RegistrationResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64, System.Action<RegistrationResult>)
   type: Method
   source:
     id: Register
     path: ''
-    startLine: 2254
+    startLine: 871
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   summary: "\nRegister user in the system. Return user_id, login, password\n"
   example: []
   syntax:
-    content: void Register(long partnerId, Action<long, string, string> callback)
+    content: void Register(long partnerId, Action<RegistrationResult> callback)
     parameters:
     - id: partnerId
       type: System.Int64
       description: ''
     - id: callback
-      type: System.Action{System.Int64,System.String,System.String}
+      type: System.Action{RegistrationResult}
       description: ''
-    content.vb: Sub Register(partnerId As Long, callback As Action(Of Long, String, String))
+    content.vb: Sub Register(partnerId As Long, callback As Action(Of RegistrationResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.Register*
-  nameWithType.vb: IWinPeakNetworkClient.Register(Int64, Action(Of Int64, String, String))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64, System.Action(Of System.Int64, System.String, System.String))
-  name.vb: Register(Int64, Action(Of Int64, String, String))
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
-  id: GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{IAccount})
+  nameWithType.vb: IWinPeakNetworkClient.Register(Int64, Action(Of RegistrationResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64, System.Action(Of RegistrationResult))
+  name.vb: Register(Int64, Action(Of RegistrationResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
+  id: GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   langs:
   - csharp
   - vb
-  name: GetUserInfo(Int32, Int32, Int32, Action<IAccount>)
-  nameWithType: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action<IAccount>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32, System.Int32, System.Int32, System.Action<IAccount>)
+  name: GetUserInfo(Int32, Int32, Int32, Action<GetUserInfoResult>)
+  nameWithType: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action<GetUserInfoResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32, System.Int32, System.Int32, System.Action<GetUserInfoResult>)
   type: Method
   source:
     id: GetUserInfo
     path: ''
-    startLine: 2263
+    startLine: 880
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   summary: "\nGet actual userinfo\n"
   example: []
   syntax:
-    content: void GetUserInfo(int appVersion, int gameId, int gameVersion, Action<IAccount> callback)
+    content: void GetUserInfo(int appVersion, int gameId, int gameVersion, Action<GetUserInfoResult> callback)
     parameters:
     - id: appVersion
       type: System.Int32
@@ -226,13 +265,93 @@ items:
       type: System.Int32
       description: ''
     - id: callback
-      type: System.Action{IAccount}
+      type: System.Action{GetUserInfoResult}
       description: ''
-    content.vb: Sub GetUserInfo(appVersion As Integer, gameId As Integer, gameVersion As Integer, callback As Action(Of IAccount))
+    content.vb: Sub GetUserInfo(appVersion As Integer, gameId As Integer, gameVersion As Integer, callback As Action(Of GetUserInfoResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo*
-  nameWithType.vb: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action(Of IAccount))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32, System.Int32, System.Int32, System.Action(Of IAccount))
-  name.vb: GetUserInfo(Int32, Int32, Int32, Action(Of IAccount))
+  nameWithType.vb: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action(Of GetUserInfoResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32, System.Int32, System.Int32, System.Action(Of GetUserInfoResult))
+  name.vb: GetUserInfo(Int32, Int32, Int32, Action(Of GetUserInfoResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
+  id: Logout(System.Action{System.Boolean})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  langs:
+  - csharp
+  - vb
+  name: Logout(Action<Boolean>)
+  nameWithType: IWinPeakNetworkClient.Logout(Action<Boolean>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action<System.Boolean>)
+  type: Method
+  source:
+    id: Logout
+    path: ''
+    startLine: 886
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nLogout user in the system. Clear session on server side\n"
+  example: []
+  syntax:
+    content: void Logout(Action<bool> callback)
+    parameters:
+    - id: callback
+      type: System.Action{System.Boolean}
+      description: ''
+    content.vb: Sub Logout(callback As Action(Of Boolean))
+  overload: Winpeak.Client.API.IWinPeakNetworkClient.Logout*
+  nameWithType.vb: IWinPeakNetworkClient.Logout(Action(Of Boolean))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action(Of System.Boolean))
+  name.vb: Logout(Action(Of Boolean))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})
+  id: SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  langs:
+  - csharp
+  - vb
+  name: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, Action<SearchGameResult>)
+  nameWithType: IWinPeakNetworkClient.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, Action<SearchGameResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.Action<SearchGameResult>)
+  type: Method
+  source:
+    id: SearchGame
+    path: ''
+    startLine: 898
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nSearch game session by specified params\n"
+  example: []
+  syntax:
+    content: void SearchGame(int offset, int size, int gameId, int state, int tplId, long userId, Action<SearchGameResult> callback)
+    parameters:
+    - id: offset
+      type: System.Int32
+      description: ''
+    - id: size
+      type: System.Int32
+      description: ''
+    - id: gameId
+      type: System.Int32
+      description: ''
+    - id: state
+      type: System.Int32
+      description: ''
+    - id: tplId
+      type: System.Int32
+      description: ''
+    - id: userId
+      type: System.Int64
+      description: ''
+    - id: callback
+      type: System.Action{SearchGameResult}
+      description: ''
+    content.vb: Sub SearchGame(offset As Integer, size As Integer, gameId As Integer, state As Integer, tplId As Integer, userId As Long, callback As Action(Of SearchGameResult))
+  overload: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame*
+  nameWithType.vb: IWinPeakNetworkClient.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, Action(Of SearchGameResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.Action(Of SearchGameResult))
+  name.vb: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, Action(Of SearchGameResult))
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -352,11 +471,99 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: System.Action{AuthorizationResult}
+  commentId: T:System.Action{AuthorizationResult}
+  parent: System
+  definition: System.Action`1
+  name: Action<AuthorizationResult>
+  nameWithType: Action<AuthorizationResult>
+  fullName: System.Action<AuthorizationResult>
+  nameWithType.vb: Action(Of AuthorizationResult)
+  fullName.vb: System.Action(Of AuthorizationResult)
+  name.vb: Action(Of AuthorizationResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: AuthorizationResult
+    name: AuthorizationResult
+    nameWithType: AuthorizationResult
+    fullName: AuthorizationResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: AuthorizationResult
+    name: AuthorizationResult
+    nameWithType: AuthorizationResult
+    fullName: AuthorizationResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile*
   commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.EditProfile
   name: EditProfile
   nameWithType: IWinPeakNetworkClient.EditProfile
   fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile
+- uid: System.Action{EditProfileResult}
+  commentId: T:System.Action{EditProfileResult}
+  parent: System
+  definition: System.Action`1
+  name: Action<EditProfileResult>
+  nameWithType: Action<EditProfileResult>
+  fullName: System.Action<EditProfileResult>
+  nameWithType.vb: Action(Of EditProfileResult)
+  fullName.vb: System.Action(Of EditProfileResult)
+  name.vb: Action(Of EditProfileResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EditProfileResult
+    name: EditProfileResult
+    nameWithType: EditProfileResult
+    fullName: EditProfileResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EditProfileResult
+    name: EditProfileResult
+    nameWithType: EditProfileResult
+    fullName: EditProfileResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -376,18 +583,18 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
-- uid: System.Action{System.Int64,System.String,System.String}
-  commentId: T:System.Action{System.Int64,System.String,System.String}
+- uid: System.Action{RegistrationResult}
+  commentId: T:System.Action{RegistrationResult}
   parent: System
-  definition: System.Action`3
-  name: Action<Int64, String, String>
-  nameWithType: Action<Int64, String, String>
-  fullName: System.Action<System.Int64, System.String, System.String>
-  nameWithType.vb: Action(Of Int64, String, String)
-  fullName.vb: System.Action(Of System.Int64, System.String, System.String)
-  name.vb: Action(Of Int64, String, String)
+  definition: System.Action`1
+  name: Action<RegistrationResult>
+  nameWithType: Action<RegistrationResult>
+  fullName: System.Action<RegistrationResult>
+  nameWithType.vb: Action(Of RegistrationResult)
+  fullName.vb: System.Action(Of RegistrationResult)
+  name.vb: Action(Of RegistrationResult)
   spec.csharp:
-  - uid: System.Action`3
+  - uid: System.Action`1
     name: Action
     nameWithType: Action
     fullName: System.Action
@@ -395,32 +602,16 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+  - uid: RegistrationResult
+    name: RegistrationResult
+    nameWithType: RegistrationResult
+    fullName: RegistrationResult
     isExternal: true
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Action`3
+  - uid: System.Action`1
     name: Action
     nameWithType: Action
     fullName: System.Action
@@ -428,90 +619,11 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
+  - uid: RegistrationResult
+    name: RegistrationResult
+    nameWithType: RegistrationResult
+    fullName: RegistrationResult
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Action`3
-  commentId: T:System.Action`3
-  isExternal: true
-  name: Action<T1, T2, T3>
-  nameWithType: Action<T1, T2, T3>
-  fullName: System.Action<T1, T2, T3>
-  nameWithType.vb: Action(Of T1, T2, T3)
-  fullName.vb: System.Action(Of T1, T2, T3)
-  name.vb: Action(Of T1, T2, T3)
-  spec.csharp:
-  - uid: System.Action`3
-    name: Action
-    nameWithType: Action
-    fullName: System.Action
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T1
-    nameWithType: T1
-    fullName: T1
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: T2
-    nameWithType: T2
-    fullName: T2
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: T3
-    nameWithType: T3
-    fullName: T3
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Action`3
-    name: Action
-    nameWithType: Action
-    fullName: System.Action
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T1
-    nameWithType: T1
-    fullName: T1
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: T2
-    nameWithType: T2
-    fullName: T2
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: T3
-    nameWithType: T3
-    fullName: T3
   - name: )
     nameWithType: )
     fullName: )
@@ -520,16 +632,16 @@ references:
   name: GetUserInfo
   nameWithType: IWinPeakNetworkClient.GetUserInfo
   fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo
-- uid: System.Action{IAccount}
-  commentId: T:System.Action{IAccount}
+- uid: System.Action{GetUserInfoResult}
+  commentId: T:System.Action{GetUserInfoResult}
   parent: System
   definition: System.Action`1
-  name: Action<IAccount>
-  nameWithType: Action<IAccount>
-  fullName: System.Action<IAccount>
-  nameWithType.vb: Action(Of IAccount)
-  fullName.vb: System.Action(Of IAccount)
-  name.vb: Action(Of IAccount)
+  name: Action<GetUserInfoResult>
+  nameWithType: Action<GetUserInfoResult>
+  fullName: System.Action<GetUserInfoResult>
+  nameWithType.vb: Action(Of GetUserInfoResult)
+  fullName.vb: System.Action(Of GetUserInfoResult)
+  name.vb: Action(Of GetUserInfoResult)
   spec.csharp:
   - uid: System.Action`1
     name: Action
@@ -539,10 +651,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: IAccount
-    name: IAccount
-    nameWithType: IAccount
-    fullName: IAccount
+  - uid: GetUserInfoResult
+    name: GetUserInfoResult
+    nameWithType: GetUserInfoResult
+    fullName: GetUserInfoResult
     isExternal: true
   - name: '>'
     nameWithType: '>'
@@ -556,10 +668,64 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: IAccount
-    name: IAccount
-    nameWithType: IAccount
-    fullName: IAccount
+  - uid: GetUserInfoResult
+    name: GetUserInfoResult
+    nameWithType: GetUserInfoResult
+    fullName: GetUserInfoResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.Logout*
+  commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.Logout
+  name: Logout
+  nameWithType: IWinPeakNetworkClient.Logout
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Logout
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame*
+  commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.SearchGame
+  name: SearchGame
+  nameWithType: IWinPeakNetworkClient.SearchGame
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame
+- uid: System.Action{SearchGameResult}
+  commentId: T:System.Action{SearchGameResult}
+  parent: System
+  definition: System.Action`1
+  name: Action<SearchGameResult>
+  nameWithType: Action<SearchGameResult>
+  fullName: System.Action<SearchGameResult>
+  nameWithType.vb: Action(Of SearchGameResult)
+  fullName.vb: System.Action(Of SearchGameResult)
+  name.vb: Action(Of SearchGameResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SearchGameResult
+    name: SearchGameResult
+    nameWithType: SearchGameResult
+    fullName: SearchGameResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SearchGameResult
+    name: SearchGameResult
+    nameWithType: SearchGameResult
+    fullName: SearchGameResult
     isExternal: true
   - name: )
     nameWithType: )

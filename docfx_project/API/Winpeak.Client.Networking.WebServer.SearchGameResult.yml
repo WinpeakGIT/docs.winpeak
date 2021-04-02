@@ -5,6 +5,8 @@ items:
   id: SearchGameResult
   parent: Winpeak.Client.Networking.WebServer
   children:
+  - Winpeak.Client.Networking.WebServer.SearchGameResult.GamesList
+  - Winpeak.Client.Networking.WebServer.SearchGameResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
   - Winpeak.Client.Networking.WebServer.SearchGameResult.HandleResponse(HTTPResponse)
   langs:
   - csharp
@@ -16,7 +18,7 @@ items:
   source:
     id: SearchGameResult
     path: ''
-    startLine: 3502
+    startLine: 4392
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -37,7 +39,6 @@ items:
   - Winpeak.Client.Networking.WebServer.WebResult.m_needAuth
   - Winpeak.Client.Networking.WebServer.WebResult.m_error
   - Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-  - Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
   - Winpeak.Client.Networking.WebServer.WebResult.IsSuccessCallback
   - Winpeak.Client.Networking.WebServer.WebResult.HasError
   - Winpeak.Client.Networking.WebServer.WebResult.IsSuccess
@@ -60,6 +61,37 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: Winpeak.Client.Networking.WebServer.SearchGameResult.GamesList
+  commentId: P:Winpeak.Client.Networking.WebServer.SearchGameResult.GamesList
+  id: GamesList
+  parent: Winpeak.Client.Networking.WebServer.SearchGameResult
+  langs:
+  - csharp
+  - vb
+  name: GamesList
+  nameWithType: SearchGameResult.GamesList
+  fullName: Winpeak.Client.Networking.WebServer.SearchGameResult.GamesList
+  type: Property
+  source:
+    id: GamesList
+    path: ''
+    startLine: 4397
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public List<GameInfo> GamesList { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameInfo}
+    content.vb: Public ReadOnly Property GamesList As List(Of GameInfo)
+  overload: Winpeak.Client.Networking.WebServer.SearchGameResult.GamesList*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Winpeak.Client.Networking.WebServer.SearchGameResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.SearchGameResult.HandleResponse(HTTPResponse)
   id: HandleResponse(HTTPResponse)
@@ -74,7 +106,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 3507
+    startLine: 4399
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -86,6 +118,38 @@ items:
     content.vb: Protected Overrides Sub HandleResponse(response As HTTPResponse)
   overridden: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   overload: Winpeak.Client.Networking.WebServer.SearchGameResult.HandleResponse*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Winpeak.Client.Networking.WebServer.SearchGameResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  commentId: M:Winpeak.Client.Networking.WebServer.SearchGameResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  id: HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  parent: Winpeak.Client.Networking.WebServer.SearchGameResult
+  langs:
+  - csharp
+  - vb
+  name: HandleError(WebError)
+  nameWithType: SearchGameResult.HandleError(WebError)
+  fullName: Winpeak.Client.Networking.WebServer.SearchGameResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  type: Method
+  source:
+    id: HandleError
+    path: ''
+    startLine: 4411
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: protected override void HandleError(WebError error)
+    parameters:
+    - id: error
+      type: Winpeak.Client.Networking.WebServer.WebError
+    content.vb: Protected Overrides Sub HandleError(error As WebError)
+  overridden: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  overload: Winpeak.Client.Networking.WebServer.SearchGameResult.HandleError*
   modifiers.csharp:
   - protected
   - override
@@ -177,42 +241,6 @@ references:
     nameWithType: HTTPResponse
     fullName: HTTPResponse
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
-  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: HandleError(WebError)
-  nameWithType: WebResult.HandleError(WebError)
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
-  spec.csharp:
-  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
-    name: HandleError
-    nameWithType: WebResult.HandleError
-    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Winpeak.Client.Networking.WebServer.WebError
-    name: WebError
-    nameWithType: WebError
-    fullName: Winpeak.Client.Networking.WebServer.WebError
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
-    name: HandleError
-    nameWithType: WebResult.HandleError
-    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Winpeak.Client.Networking.WebServer.WebError
-    name: WebError
-    nameWithType: WebError
-    fullName: Winpeak.Client.Networking.WebServer.WebError
   - name: )
     nameWithType: )
     fullName: )
@@ -555,6 +583,98 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Winpeak.Client.Networking.WebServer.SearchGameResult.GamesList*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.SearchGameResult.GamesList
+  name: GamesList
+  nameWithType: SearchGameResult.GamesList
+  fullName: Winpeak.Client.Networking.WebServer.SearchGameResult.GamesList
+- uid: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameInfo}
+  commentId: T:System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<GameInfo>
+  nameWithType: List<GameInfo>
+  fullName: System.Collections.Generic.List<Winpeak.Client.Networking.WebServer.GameInfo>
+  nameWithType.vb: List(Of GameInfo)
+  fullName.vb: System.Collections.Generic.List(Of Winpeak.Client.Networking.WebServer.GameInfo)
+  name.vb: List(Of GameInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Winpeak.Client.Networking.WebServer.GameInfo
+    name: GameInfo
+    nameWithType: GameInfo
+    fullName: Winpeak.Client.Networking.WebServer.GameInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Winpeak.Client.Networking.WebServer.GameInfo
+    name: GameInfo
+    nameWithType: GameInfo
+    fullName: Winpeak.Client.Networking.WebServer.GameInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   parent: Winpeak.Client.Networking.WebServer.WebResult
@@ -604,3 +724,50 @@ references:
   name: HTTPResponse
   nameWithType: HTTPResponse
   fullName: HTTPResponse
+- uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: HandleError(WebError)
+  nameWithType: WebResult.HandleError(WebError)
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+    name: HandleError
+    nameWithType: WebResult.HandleError
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Winpeak.Client.Networking.WebServer.WebError
+    name: WebError
+    nameWithType: WebError
+    fullName: Winpeak.Client.Networking.WebServer.WebError
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleError(Winpeak.Client.Networking.WebServer.WebError)
+    name: HandleError
+    nameWithType: WebResult.HandleError
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Winpeak.Client.Networking.WebServer.WebError
+    name: WebError
+    nameWithType: WebError
+    fullName: Winpeak.Client.Networking.WebServer.WebError
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.SearchGameResult.HandleError*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.SearchGameResult.HandleError
+  name: HandleError
+  nameWithType: SearchGameResult.HandleError
+  fullName: Winpeak.Client.Networking.WebServer.SearchGameResult.HandleError
+- uid: Winpeak.Client.Networking.WebServer.WebError
+  commentId: T:Winpeak.Client.Networking.WebServer.WebError
+  parent: Winpeak.Client.Networking.WebServer
+  name: WebError
+  nameWithType: WebError
+  fullName: Winpeak.Client.Networking.WebServer.WebError
