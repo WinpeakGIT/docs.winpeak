@@ -12,6 +12,7 @@ items:
   - Winpeak.Client.Networking.WebServer.InternalAccount.LastName
   - Winpeak.Client.Networking.WebServer.InternalAccount.Login
   - Winpeak.Client.Networking.WebServer.InternalAccount.Phone
+  - Winpeak.Client.Networking.WebServer.InternalAccount.Rating
   - Winpeak.Client.Networking.WebServer.InternalAccount.Sex
   - Winpeak.Client.Networking.WebServer.InternalAccount.SoftCash
   - Winpeak.Client.Networking.WebServer.InternalAccount.Type
@@ -26,7 +27,7 @@ items:
   source:
     id: InternalAccount
     path: ''
-    startLine: 4930
+    startLine: 4904
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -65,15 +66,15 @@ items:
   source:
     id: Id
     path: ''
-    startLine: 4933
+    startLine: 4907
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public string Id
+    content: public long Id
     return:
-      type: System.String
-    content.vb: Public Id As String
+      type: System.Int64
+    content.vb: Public Id As Long
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -92,7 +93,7 @@ items:
   source:
     id: Login
     path: ''
-    startLine: 4936
+    startLine: 4910
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -119,7 +120,7 @@ items:
   source:
     id: Email
     path: ''
-    startLine: 4940
+    startLine: 4914
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -146,7 +147,7 @@ items:
   source:
     id: FirstName
     path: ''
-    startLine: 4943
+    startLine: 4917
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -173,7 +174,7 @@ items:
   source:
     id: LastName
     path: ''
-    startLine: 4946
+    startLine: 4920
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -200,7 +201,7 @@ items:
   source:
     id: Visibility
     path: ''
-    startLine: 4949
+    startLine: 4923
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -227,7 +228,7 @@ items:
   source:
     id: Type
     path: ''
-    startLine: 4952
+    startLine: 4926
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -254,7 +255,7 @@ items:
   source:
     id: Phone
     path: ''
-    startLine: 4955
+    startLine: 4929
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -281,7 +282,7 @@ items:
   source:
     id: Sex
     path: ''
-    startLine: 4958
+    startLine: 4932
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -308,7 +309,7 @@ items:
   source:
     id: Cash
     path: ''
-    startLine: 4961
+    startLine: 4935
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -335,7 +336,7 @@ items:
   source:
     id: SoftCash
     path: ''
-    startLine: 4964
+    startLine: 4938
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -344,6 +345,33 @@ items:
     return:
       type: System.Int32
     content.vb: Public SoftCash As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.WebServer.InternalAccount.Rating
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.Rating
+  id: Rating
+  parent: Winpeak.Client.Networking.WebServer.InternalAccount
+  langs:
+  - csharp
+  - vb
+  name: Rating
+  nameWithType: InternalAccount.Rating
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccount.Rating
+  type: Field
+  source:
+    id: Rating
+    path: ''
+    startLine: 4941
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public int Rating
+    return:
+      type: System.Int32
+    content.vb: Public Rating As Integer
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -646,6 +674,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System.String
   commentId: T:System.String
   parent: System

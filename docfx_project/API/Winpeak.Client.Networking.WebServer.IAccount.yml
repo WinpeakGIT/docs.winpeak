@@ -12,6 +12,7 @@ items:
   - Winpeak.Client.Networking.WebServer.IAccount.GetLastName
   - Winpeak.Client.Networking.WebServer.IAccount.GetLogin
   - Winpeak.Client.Networking.WebServer.IAccount.GetPhone
+  - Winpeak.Client.Networking.WebServer.IAccount.GetRating
   - Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
   - Winpeak.Client.Networking.WebServer.IAccount.IsValid
   langs:
@@ -24,7 +25,7 @@ items:
   source:
     id: IAccount
     path: ''
-    startLine: 3538
+    startLine: 3561
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -51,16 +52,16 @@ items:
   source:
     id: GetId
     path: ''
-    startLine: 3540
+    startLine: 3563
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: string GetId { get; }
+    content: long GetId { get; }
     parameters: []
     return:
-      type: System.String
-    content.vb: ReadOnly Property GetId As String
+      type: System.Int64
+    content.vb: ReadOnly Property GetId As Long
   overload: Winpeak.Client.Networking.WebServer.IAccount.GetId*
   modifiers.csharp:
   - get
@@ -80,7 +81,7 @@ items:
   source:
     id: GetLogin
     path: ''
-    startLine: 3541
+    startLine: 3564
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -109,7 +110,7 @@ items:
   source:
     id: GetEmail
     path: ''
-    startLine: 3542
+    startLine: 3565
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -138,7 +139,7 @@ items:
   source:
     id: GetFirstName
     path: ''
-    startLine: 3543
+    startLine: 3566
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -167,7 +168,7 @@ items:
   source:
     id: GetLastName
     path: ''
-    startLine: 3544
+    startLine: 3567
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -196,7 +197,7 @@ items:
   source:
     id: GetPhone
     path: ''
-    startLine: 3545
+    startLine: 3568
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -225,7 +226,7 @@ items:
   source:
     id: GetCash
     path: ''
-    startLine: 3546
+    startLine: 3569
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -254,7 +255,7 @@ items:
   source:
     id: GetSoftCash
     path: ''
-    startLine: 3547
+    startLine: 3570
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -265,6 +266,35 @@ items:
       type: System.Int32
     content.vb: ReadOnly Property GetSoftCash As Integer
   overload: Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.IAccount.GetRating
+  commentId: P:Winpeak.Client.Networking.WebServer.IAccount.GetRating
+  id: GetRating
+  parent: Winpeak.Client.Networking.WebServer.IAccount
+  langs:
+  - csharp
+  - vb
+  name: GetRating
+  nameWithType: IAccount.GetRating
+  fullName: Winpeak.Client.Networking.WebServer.IAccount.GetRating
+  type: Property
+  source:
+    id: GetRating
+    path: ''
+    startLine: 3571
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: int GetRating { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property GetRating As Integer
+  overload: Winpeak.Client.Networking.WebServer.IAccount.GetRating*
   modifiers.csharp:
   - get
   modifiers.vb:
@@ -283,7 +313,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 3548
+    startLine: 3572
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -309,13 +339,13 @@ references:
   name: GetId
   nameWithType: IAccount.GetId
   fullName: Winpeak.Client.Networking.WebServer.IAccount.GetId
-- uid: System.String
-  commentId: T:System.String
+- uid: System.Int64
+  commentId: T:System.Int64
   parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System
   commentId: N:System
   isExternal: true
@@ -327,6 +357,13 @@ references:
   name: GetLogin
   nameWithType: IAccount.GetLogin
   fullName: Winpeak.Client.Networking.WebServer.IAccount.GetLogin
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Winpeak.Client.Networking.WebServer.IAccount.GetEmail*
   commentId: Overload:Winpeak.Client.Networking.WebServer.IAccount.GetEmail
   name: GetEmail
@@ -364,6 +401,11 @@ references:
   name: GetSoftCash
   nameWithType: IAccount.GetSoftCash
   fullName: Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
+- uid: Winpeak.Client.Networking.WebServer.IAccount.GetRating*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.IAccount.GetRating
+  name: GetRating
+  nameWithType: IAccount.GetRating
+  fullName: Winpeak.Client.Networking.WebServer.IAccount.GetRating
 - uid: Winpeak.Client.Networking.WebServer.IAccount.IsValid*
   commentId: Overload:Winpeak.Client.Networking.WebServer.IAccount.IsValid
   name: IsValid

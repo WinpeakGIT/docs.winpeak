@@ -22,7 +22,7 @@ items:
   source:
     id: GameInfo
     path: ''
-    startLine: 5077
+    startLine: 5056
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -73,16 +73,16 @@ items:
   source:
     id: GetGameId
     path: ''
-    startLine: 5079
+    startLine: 5058
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public string GetGameId { get; }
+    content: public int GetGameId { get; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public ReadOnly Property GetGameId As String
+      type: System.Int32
+    content.vb: Public ReadOnly Property GetGameId As Integer
   overload: Winpeak.Client.Networking.WebServer.GameInfo.GetGameId*
   implements:
   - Winpeak.Client.Networking.WebServer.IGameInfo.GetGameId
@@ -106,7 +106,7 @@ items:
   source:
     id: GetGameType
     path: ''
-    startLine: 5080
+    startLine: 5059
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -139,7 +139,7 @@ items:
   source:
     id: GetGameState
     path: ''
-    startLine: 5081
+    startLine: 5060
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -172,7 +172,7 @@ items:
   source:
     id: GetCash
     path: ''
-    startLine: 5082
+    startLine: 5061
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -205,7 +205,7 @@ items:
   source:
     id: GetMaxUsersCount
     path: ''
-    startLine: 5083
+    startLine: 5062
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -238,7 +238,7 @@ items:
   source:
     id: GetUsersCount
     path: ''
-    startLine: 5084
+    startLine: 5063
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -271,7 +271,7 @@ items:
   source:
     id: GetGameCreatorAccount
     path: ''
-    startLine: 5085
+    startLine: 5064
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -659,13 +659,13 @@ references:
   name: GetGameId
   nameWithType: IGameInfo.GetGameId
   fullName: Winpeak.Client.Networking.WebServer.IGameInfo.GetGameId
-- uid: System.String
-  commentId: T:System.String
+- uid: System.Int32
+  commentId: T:System.Int32
   parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Winpeak.Client.Networking.WebServer.GameInfo.GetGameType*
   commentId: Overload:Winpeak.Client.Networking.WebServer.GameInfo.GetGameType
   name: GetGameType
@@ -677,13 +677,6 @@ references:
   name: GetGameType
   nameWithType: IGameInfo.GetGameType
   fullName: Winpeak.Client.Networking.WebServer.IGameInfo.GetGameType
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
 - uid: Winpeak.Client.Networking.WebServer.GameInfo.GetGameState*
   commentId: Overload:Winpeak.Client.Networking.WebServer.GameInfo.GetGameState
   name: GetGameState
