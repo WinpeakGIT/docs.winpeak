@@ -7,6 +7,7 @@ items:
   children:
   - Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CheckAuthorization(System.Action{System.Boolean})
+  - Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest(System.Int32,System.Action{CreateGameSessionRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
@@ -425,6 +426,40 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.RejectCreateGameSessionRequest(Int64, Int64, Action(Of RejectCreateGameSessionRequestResult))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.RejectCreateGameSessionRequest(System.Int64, System.Int64, System.Action(Of RejectCreateGameSessionRequestResult))
   name.vb: RejectCreateGameSessionRequest(Int64, Int64, Action(Of RejectCreateGameSessionRequestResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
+  id: CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  langs:
+  - csharp
+  - vb
+  name: CreateGame(Int32, Int32, Int32, Action<CreateGameSessionResult>)
+  nameWithType: IWinPeakNetworkClient.CreateGame(Int32, Int32, Int32, Action<CreateGameSessionResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32, System.Int32, System.Int32, System.Action<CreateGameSessionResult>)
+  type: Method
+  source:
+    id: CreateGame
+    path: ''
+    startLine: 921
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  syntax:
+    content: void CreateGame(int gameId, int gameType, int cashFee, Action<CreateGameSessionResult> callback)
+    parameters:
+    - id: gameId
+      type: System.Int32
+    - id: gameType
+      type: System.Int32
+    - id: cashFee
+      type: System.Int32
+    - id: callback
+      type: System.Action{CreateGameSessionResult}
+    content.vb: Sub CreateGame(gameId As Integer, gameType As Integer, cashFee As Integer, callback As Action(Of CreateGameSessionResult))
+  overload: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame*
+  nameWithType.vb: IWinPeakNetworkClient.CreateGame(Int32, Int32, Int32, Action(Of CreateGameSessionResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32, System.Int32, System.Int32, System.Action(Of CreateGameSessionResult))
+  name.vb: CreateGame(Int32, Int32, Int32, Action(Of CreateGameSessionResult))
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -897,6 +932,55 @@ references:
     name: RejectCreateGameSessionRequestResult
     nameWithType: RejectCreateGameSessionRequestResult
     fullName: RejectCreateGameSessionRequestResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame*
+  commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.CreateGame
+  name: CreateGame
+  nameWithType: IWinPeakNetworkClient.CreateGame
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame
+- uid: System.Action{CreateGameSessionResult}
+  commentId: T:System.Action{CreateGameSessionResult}
+  parent: System
+  definition: System.Action`1
+  name: Action<CreateGameSessionResult>
+  nameWithType: Action<CreateGameSessionResult>
+  fullName: System.Action<CreateGameSessionResult>
+  nameWithType.vb: Action(Of CreateGameSessionResult)
+  fullName.vb: System.Action(Of CreateGameSessionResult)
+  name.vb: Action(Of CreateGameSessionResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CreateGameSessionResult
+    name: CreateGameSessionResult
+    nameWithType: CreateGameSessionResult
+    fullName: CreateGameSessionResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CreateGameSessionResult
+    name: CreateGameSessionResult
+    nameWithType: CreateGameSessionResult
+    fullName: CreateGameSessionResult
     isExternal: true
   - name: )
     nameWithType: )

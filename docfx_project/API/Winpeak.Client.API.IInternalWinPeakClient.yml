@@ -31,7 +31,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 1145
+    startLine: 1157
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -78,6 +78,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest(System.Int32,System.Action{CreateGameSessionRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.RejectCreateGameSessionRequest(System.Int64,System.Int64,System.Action{RejectCreateGameSessionRequestResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
   modifiers.csharp:
   - public
   - interface
@@ -98,7 +99,7 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 1150
+    startLine: 1162
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -123,7 +124,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 1155
+    startLine: 1167
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -148,7 +149,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 1162
+    startLine: 1174
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -179,7 +180,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 1167
+    startLine: 1179
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -203,7 +204,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 1173
+    startLine: 1185
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -231,7 +232,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 1179
+    startLine: 1191
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -259,7 +260,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 1184
+    startLine: 1196
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -289,7 +290,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 1192
+    startLine: 1204
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -323,7 +324,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 1198
+    startLine: 1210
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -351,7 +352,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 1204
+    startLine: 1216
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -379,7 +380,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 1210
+    startLine: 1222
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -407,7 +408,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 1215
+    startLine: 1227
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -434,7 +435,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 1220
+    startLine: 1232
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -458,7 +459,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 1226
+    startLine: 1238
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -486,7 +487,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 1231
+    startLine: 1243
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -510,7 +511,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 1236
+    startLine: 1248
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -2416,6 +2417,118 @@ references:
     name: RejectCreateGameSessionRequestResult
     nameWithType: RejectCreateGameSessionRequestResult
     fullName: RejectCreateGameSessionRequestResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: CreateGame(Int32, Int32, Int32, Action<CreateGameSessionResult>)
+  nameWithType: IWinPeakNetworkClient.CreateGame(Int32, Int32, Int32, Action<CreateGameSessionResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32, System.Int32, System.Int32, System.Action<CreateGameSessionResult>)
+  nameWithType.vb: IWinPeakNetworkClient.CreateGame(Int32, Int32, Int32, Action(Of CreateGameSessionResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32, System.Int32, System.Int32, System.Action(Of CreateGameSessionResult))
+  name.vb: CreateGame(Int32, Int32, Int32, Action(Of CreateGameSessionResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
+    name: CreateGame
+    nameWithType: IWinPeakNetworkClient.CreateGame
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CreateGameSessionResult
+    name: CreateGameSessionResult
+    nameWithType: CreateGameSessionResult
+    fullName: CreateGameSessionResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
+    name: CreateGame
+    nameWithType: IWinPeakNetworkClient.CreateGame
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CreateGameSessionResult
+    name: CreateGameSessionResult
+    nameWithType: CreateGameSessionResult
+    fullName: CreateGameSessionResult
     isExternal: true
   - name: )
     nameWithType: )
