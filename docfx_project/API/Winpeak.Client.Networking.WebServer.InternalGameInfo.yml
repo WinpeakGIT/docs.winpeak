@@ -7,8 +7,8 @@ items:
   children:
   - Winpeak.Client.Networking.WebServer.InternalGameInfo.GameCash
   - Winpeak.Client.Networking.WebServer.InternalGameInfo.GameCreator
-  - Winpeak.Client.Networking.WebServer.InternalGameInfo.GameId
   - Winpeak.Client.Networking.WebServer.InternalGameInfo.GameMaxUsers
+  - Winpeak.Client.Networking.WebServer.InternalGameInfo.GameSessionId
   - Winpeak.Client.Networking.WebServer.InternalGameInfo.GameState
   - Winpeak.Client.Networking.WebServer.InternalGameInfo.GameType
   - Winpeak.Client.Networking.WebServer.InternalGameInfo.GameUsersCount
@@ -22,7 +22,7 @@ items:
   source:
     id: InternalGameInfo
     path: ''
-    startLine: 4990
+    startLine: 5055
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -47,29 +47,29 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.InternalGameInfo.GameId
-  commentId: F:Winpeak.Client.Networking.WebServer.InternalGameInfo.GameId
-  id: GameId
+- uid: Winpeak.Client.Networking.WebServer.InternalGameInfo.GameSessionId
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalGameInfo.GameSessionId
+  id: GameSessionId
   parent: Winpeak.Client.Networking.WebServer.InternalGameInfo
   langs:
   - csharp
   - vb
-  name: GameId
-  nameWithType: InternalGameInfo.GameId
-  fullName: Winpeak.Client.Networking.WebServer.InternalGameInfo.GameId
+  name: GameSessionId
+  nameWithType: InternalGameInfo.GameSessionId
+  fullName: Winpeak.Client.Networking.WebServer.InternalGameInfo.GameSessionId
   type: Field
   source:
-    id: GameId
+    id: GameSessionId
     path: ''
-    startLine: 4993
+    startLine: 5058
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public int GameId
+    content: public int GameSessionId
     return:
       type: System.Int32
-    content.vb: Public GameId As Integer
+    content.vb: Public GameSessionId As Integer
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -88,7 +88,7 @@ items:
   source:
     id: GameType
     path: ''
-    startLine: 4996
+    startLine: 5061
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -115,7 +115,7 @@ items:
   source:
     id: GameState
     path: ''
-    startLine: 4999
+    startLine: 5064
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -142,7 +142,7 @@ items:
   source:
     id: GameCash
     path: ''
-    startLine: 5002
+    startLine: 5067
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -169,7 +169,7 @@ items:
   source:
     id: GameMaxUsers
     path: ''
-    startLine: 5005
+    startLine: 5070
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -196,7 +196,7 @@ items:
   source:
     id: GameUsersCount
     path: ''
-    startLine: 5008
+    startLine: 5073
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -223,7 +223,7 @@ items:
   source:
     id: GameCreator
     path: ''
-    startLine: 5011
+    startLine: 5076
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer

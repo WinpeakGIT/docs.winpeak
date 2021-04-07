@@ -5,7 +5,11 @@ items:
   id: GetGameInfoResult
   parent: Winpeak.Client.Networking.WebServer
   children:
+  - Winpeak.Client.Networking.WebServer.GetGameInfoResult.Game
+  - Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameServer
+  - Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameUsers
   - Winpeak.Client.Networking.WebServer.GetGameInfoResult.HandleResponse(HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.GetGameInfoResult.RequestsList
   langs:
   - csharp
   - vb
@@ -16,7 +20,7 @@ items:
   source:
     id: GetGameInfoResult
     path: ''
-    startLine: 4458
+    startLine: 4481
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -58,6 +62,130 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: Winpeak.Client.Networking.WebServer.GetGameInfoResult.Game
+  commentId: P:Winpeak.Client.Networking.WebServer.GetGameInfoResult.Game
+  id: Game
+  parent: Winpeak.Client.Networking.WebServer.GetGameInfoResult
+  langs:
+  - csharp
+  - vb
+  name: Game
+  nameWithType: GetGameInfoResult.Game
+  fullName: Winpeak.Client.Networking.WebServer.GetGameInfoResult.Game
+  type: Property
+  source:
+    id: Game
+    path: ''
+    startLine: 4486
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public GameInfo Game { get; }
+    parameters: []
+    return:
+      type: Winpeak.Client.Networking.WebServer.GameInfo
+    content.vb: Public ReadOnly Property Game As GameInfo
+  overload: Winpeak.Client.Networking.WebServer.GetGameInfoResult.Game*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameUsers
+  commentId: P:Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameUsers
+  id: GameUsers
+  parent: Winpeak.Client.Networking.WebServer.GetGameInfoResult
+  langs:
+  - csharp
+  - vb
+  name: GameUsers
+  nameWithType: GetGameInfoResult.GameUsers
+  fullName: Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameUsers
+  type: Property
+  source:
+    id: GameUsers
+    path: ''
+    startLine: 4487
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public List<GameUser> GameUsers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameUser}
+    content.vb: Public ReadOnly Property GameUsers As List(Of GameUser)
+  overload: Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameUsers*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.GetGameInfoResult.RequestsList
+  commentId: P:Winpeak.Client.Networking.WebServer.GetGameInfoResult.RequestsList
+  id: RequestsList
+  parent: Winpeak.Client.Networking.WebServer.GetGameInfoResult
+  langs:
+  - csharp
+  - vb
+  name: RequestsList
+  nameWithType: GetGameInfoResult.RequestsList
+  fullName: Winpeak.Client.Networking.WebServer.GetGameInfoResult.RequestsList
+  type: Property
+  source:
+    id: RequestsList
+    path: ''
+    startLine: 4488
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public List<GameRequest> RequestsList { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameRequest}
+    content.vb: Public ReadOnly Property RequestsList As List(Of GameRequest)
+  overload: Winpeak.Client.Networking.WebServer.GetGameInfoResult.RequestsList*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameServer
+  commentId: P:Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameServer
+  id: GameServer
+  parent: Winpeak.Client.Networking.WebServer.GetGameInfoResult
+  langs:
+  - csharp
+  - vb
+  name: GameServer
+  nameWithType: GetGameInfoResult.GameServer
+  fullName: Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameServer
+  type: Property
+  source:
+    id: GameServer
+    path: ''
+    startLine: 4489
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public GameServerInfo GameServer { get; }
+    parameters: []
+    return:
+      type: Winpeak.Client.Networking.WebServer.GameServerInfo
+    content.vb: Public ReadOnly Property GameServer As GameServerInfo
+  overload: Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameServer*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Winpeak.Client.Networking.WebServer.GetGameInfoResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.GetGameInfoResult.HandleResponse(HTTPResponse)
   id: HandleResponse(HTTPResponse)
@@ -72,7 +200,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 4462
+    startLine: 4491
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -511,6 +639,167 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Winpeak.Client.Networking.WebServer.GetGameInfoResult.Game*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetGameInfoResult.Game
+  name: Game
+  nameWithType: GetGameInfoResult.Game
+  fullName: Winpeak.Client.Networking.WebServer.GetGameInfoResult.Game
+- uid: Winpeak.Client.Networking.WebServer.GameInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.GameInfo
+  parent: Winpeak.Client.Networking.WebServer
+  name: GameInfo
+  nameWithType: GameInfo
+  fullName: Winpeak.Client.Networking.WebServer.GameInfo
+- uid: Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameUsers*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameUsers
+  name: GameUsers
+  nameWithType: GetGameInfoResult.GameUsers
+  fullName: Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameUsers
+- uid: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameUser}
+  commentId: T:System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameUser}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<GameUser>
+  nameWithType: List<GameUser>
+  fullName: System.Collections.Generic.List<Winpeak.Client.Networking.WebServer.GameUser>
+  nameWithType.vb: List(Of GameUser)
+  fullName.vb: System.Collections.Generic.List(Of Winpeak.Client.Networking.WebServer.GameUser)
+  name.vb: List(Of GameUser)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Winpeak.Client.Networking.WebServer.GameUser
+    name: GameUser
+    nameWithType: GameUser
+    fullName: Winpeak.Client.Networking.WebServer.GameUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Winpeak.Client.Networking.WebServer.GameUser
+    name: GameUser
+    nameWithType: GameUser
+    fullName: Winpeak.Client.Networking.WebServer.GameUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Winpeak.Client.Networking.WebServer.GetGameInfoResult.RequestsList*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetGameInfoResult.RequestsList
+  name: RequestsList
+  nameWithType: GetGameInfoResult.RequestsList
+  fullName: Winpeak.Client.Networking.WebServer.GetGameInfoResult.RequestsList
+- uid: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameRequest}
+  commentId: T:System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameRequest}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<GameRequest>
+  nameWithType: List<GameRequest>
+  fullName: System.Collections.Generic.List<Winpeak.Client.Networking.WebServer.GameRequest>
+  nameWithType.vb: List(Of GameRequest)
+  fullName.vb: System.Collections.Generic.List(Of Winpeak.Client.Networking.WebServer.GameRequest)
+  name.vb: List(Of GameRequest)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Winpeak.Client.Networking.WebServer.GameRequest
+    name: GameRequest
+    nameWithType: GameRequest
+    fullName: Winpeak.Client.Networking.WebServer.GameRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Winpeak.Client.Networking.WebServer.GameRequest
+    name: GameRequest
+    nameWithType: GameRequest
+    fullName: Winpeak.Client.Networking.WebServer.GameRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameServer*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameServer
+  name: GameServer
+  nameWithType: GetGameInfoResult.GameServer
+  fullName: Winpeak.Client.Networking.WebServer.GetGameInfoResult.GameServer
+- uid: Winpeak.Client.Networking.WebServer.GameServerInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.GameServerInfo
+  parent: Winpeak.Client.Networking.WebServer
+  name: GameServerInfo
+  nameWithType: GameServerInfo
+  fullName: Winpeak.Client.Networking.WebServer.GameServerInfo
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   parent: Winpeak.Client.Networking.WebServer.WebResult

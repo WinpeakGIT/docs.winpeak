@@ -11,6 +11,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest(System.Int32,System.Action{CreateGameSessionRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
   - Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
@@ -440,26 +441,69 @@ items:
   source:
     id: CreateGame
     path: ''
-    startLine: 921
+    startLine: 922
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
+  summary: "\nCreate game session by specified params\n"
+  example: []
   syntax:
     content: void CreateGame(int gameId, int gameType, int cashFee, Action<CreateGameSessionResult> callback)
     parameters:
     - id: gameId
       type: System.Int32
+      description: ''
     - id: gameType
       type: System.Int32
+      description: ''
     - id: cashFee
       type: System.Int32
+      description: ''
     - id: callback
       type: System.Action{CreateGameSessionResult}
+      description: ''
     content.vb: Sub CreateGame(gameId As Integer, gameType As Integer, cashFee As Integer, callback As Action(Of CreateGameSessionResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame*
   nameWithType.vb: IWinPeakNetworkClient.CreateGame(Int32, Int32, Int32, Action(Of CreateGameSessionResult))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32, System.Int32, System.Int32, System.Action(Of CreateGameSessionResult))
   name.vb: CreateGame(Int32, Int32, Int32, Action(Of CreateGameSessionResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})
+  id: GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  langs:
+  - csharp
+  - vb
+  name: GetGameInfo(Int32, Int64, Action<GetGameInfoResult>)
+  nameWithType: IWinPeakNetworkClient.GetGameInfo(Int32, Int64, Action<GetGameInfoResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32, System.Int64, System.Action<GetGameInfoResult>)
+  type: Method
+  source:
+    id: GetGameInfo
+    path: ''
+    startLine: 930
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nGet detailed information about specified game\n"
+  example: []
+  syntax:
+    content: void GetGameInfo(int gameId, long gameSessionId, Action<GetGameInfoResult> callback)
+    parameters:
+    - id: gameId
+      type: System.Int32
+      description: ''
+    - id: gameSessionId
+      type: System.Int64
+      description: ''
+    - id: callback
+      type: System.Action{GetGameInfoResult}
+      description: ''
+    content.vb: Sub GetGameInfo(gameId As Integer, gameSessionId As Long, callback As Action(Of GetGameInfoResult))
+  overload: Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo*
+  nameWithType.vb: IWinPeakNetworkClient.GetGameInfo(Int32, Int64, Action(Of GetGameInfoResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32, System.Int64, System.Action(Of GetGameInfoResult))
+  name.vb: GetGameInfo(Int32, Int64, Action(Of GetGameInfoResult))
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -981,6 +1025,55 @@ references:
     name: CreateGameSessionResult
     nameWithType: CreateGameSessionResult
     fullName: CreateGameSessionResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo*
+  commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo
+  name: GetGameInfo
+  nameWithType: IWinPeakNetworkClient.GetGameInfo
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo
+- uid: System.Action{GetGameInfoResult}
+  commentId: T:System.Action{GetGameInfoResult}
+  parent: System
+  definition: System.Action`1
+  name: Action<GetGameInfoResult>
+  nameWithType: Action<GetGameInfoResult>
+  fullName: System.Action<GetGameInfoResult>
+  nameWithType.vb: Action(Of GetGameInfoResult)
+  fullName.vb: System.Action(Of GetGameInfoResult)
+  name.vb: Action(Of GetGameInfoResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GetGameInfoResult
+    name: GetGameInfoResult
+    nameWithType: GetGameInfoResult
+    fullName: GetGameInfoResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GetGameInfoResult
+    name: GetGameInfoResult
+    nameWithType: GetGameInfoResult
+    fullName: GetGameInfoResult
     isExternal: true
   - name: )
     nameWithType: )

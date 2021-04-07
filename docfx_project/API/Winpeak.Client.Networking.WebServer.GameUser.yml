@@ -1,0 +1,539 @@
+### YamlMime:ManagedReference
+items:
+- uid: Winpeak.Client.Networking.WebServer.GameUser
+  commentId: T:Winpeak.Client.Networking.WebServer.GameUser
+  id: GameUser
+  parent: Winpeak.Client.Networking.WebServer
+  children:
+  - Winpeak.Client.Networking.WebServer.GameUser.GetGameUserInfo
+  - Winpeak.Client.Networking.WebServer.GameUser.GetUserStatusUpdateTime
+  - Winpeak.Client.Networking.WebServer.GameUser.Winner
+  langs:
+  - csharp
+  - vb
+  name: GameUser
+  nameWithType: GameUser
+  fullName: Winpeak.Client.Networking.WebServer.GameUser
+  type: Class
+  source:
+    id: GameUser
+    path: ''
+    startLine: 4879
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: 'public class GameUser : InternalGameUser, IGameUser, ITemplate'
+    content.vb: >-
+      Public Class GameUser
+          Inherits InternalGameUser
+          Implements IGameUser, ITemplate
+  inheritance:
+  - System.Object
+  - Winpeak.Client.Networking.WebServer.InternalGameUser
+  implements:
+  - Winpeak.Client.Networking.WebServer.IGameUser
+  - Winpeak.Client.Networking.WebServer.ITemplate
+  inheritedMembers:
+  - Winpeak.Client.Networking.WebServer.InternalGameUser.Win
+  - Winpeak.Client.Networking.WebServer.InternalGameUser.UserStatusUpdateTime
+  - Winpeak.Client.Networking.WebServer.InternalGameUser.GameUserInfo
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Winpeak.Client.Networking.WebServer.GameUser.Winner
+  commentId: P:Winpeak.Client.Networking.WebServer.GameUser.Winner
+  id: Winner
+  parent: Winpeak.Client.Networking.WebServer.GameUser
+  langs:
+  - csharp
+  - vb
+  name: Winner
+  nameWithType: GameUser.Winner
+  fullName: Winpeak.Client.Networking.WebServer.GameUser.Winner
+  type: Property
+  source:
+    id: Winner
+    path: ''
+    startLine: 4881
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public bool Winner { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Winner As Boolean
+  overload: Winpeak.Client.Networking.WebServer.GameUser.Winner*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IGameUser.Winner
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.GameUser.GetUserStatusUpdateTime
+  commentId: P:Winpeak.Client.Networking.WebServer.GameUser.GetUserStatusUpdateTime
+  id: GetUserStatusUpdateTime
+  parent: Winpeak.Client.Networking.WebServer.GameUser
+  langs:
+  - csharp
+  - vb
+  name: GetUserStatusUpdateTime
+  nameWithType: GameUser.GetUserStatusUpdateTime
+  fullName: Winpeak.Client.Networking.WebServer.GameUser.GetUserStatusUpdateTime
+  type: Property
+  source:
+    id: GetUserStatusUpdateTime
+    path: ''
+    startLine: 4882
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public long GetUserStatusUpdateTime { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property GetUserStatusUpdateTime As Long
+  overload: Winpeak.Client.Networking.WebServer.GameUser.GetUserStatusUpdateTime*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IGameUser.GetUserStatusUpdateTime
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.GameUser.GetGameUserInfo
+  commentId: P:Winpeak.Client.Networking.WebServer.GameUser.GetGameUserInfo
+  id: GetGameUserInfo
+  parent: Winpeak.Client.Networking.WebServer.GameUser
+  langs:
+  - csharp
+  - vb
+  name: GetGameUserInfo
+  nameWithType: GameUser.GetGameUserInfo
+  fullName: Winpeak.Client.Networking.WebServer.GameUser.GetGameUserInfo
+  type: Property
+  source:
+    id: GetGameUserInfo
+    path: ''
+    startLine: 4883
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public IAccount GetGameUserInfo { get; }
+    parameters: []
+    return:
+      type: Winpeak.Client.Networking.WebServer.IAccount
+    content.vb: Public ReadOnly Property GetGameUserInfo As IAccount
+  overload: Winpeak.Client.Networking.WebServer.GameUser.GetGameUserInfo*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IGameUser.GetGameUserInfo
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Winpeak.Client.Networking.WebServer
+  commentId: N:Winpeak.Client.Networking.WebServer
+  name: Winpeak.Client.Networking.WebServer
+  nameWithType: Winpeak.Client.Networking.WebServer
+  fullName: Winpeak.Client.Networking.WebServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Winpeak.Client.Networking.WebServer.InternalGameUser
+  commentId: T:Winpeak.Client.Networking.WebServer.InternalGameUser
+  parent: Winpeak.Client.Networking.WebServer
+  name: InternalGameUser
+  nameWithType: InternalGameUser
+  fullName: Winpeak.Client.Networking.WebServer.InternalGameUser
+- uid: Winpeak.Client.Networking.WebServer.IGameUser
+  commentId: T:Winpeak.Client.Networking.WebServer.IGameUser
+  parent: Winpeak.Client.Networking.WebServer
+  name: IGameUser
+  nameWithType: IGameUser
+  fullName: Winpeak.Client.Networking.WebServer.IGameUser
+- uid: Winpeak.Client.Networking.WebServer.ITemplate
+  commentId: T:Winpeak.Client.Networking.WebServer.ITemplate
+  parent: Winpeak.Client.Networking.WebServer
+  name: ITemplate
+  nameWithType: ITemplate
+  fullName: Winpeak.Client.Networking.WebServer.ITemplate
+- uid: Winpeak.Client.Networking.WebServer.InternalGameUser.Win
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalGameUser.Win
+  parent: Winpeak.Client.Networking.WebServer.InternalGameUser
+  name: Win
+  nameWithType: InternalGameUser.Win
+  fullName: Winpeak.Client.Networking.WebServer.InternalGameUser.Win
+- uid: Winpeak.Client.Networking.WebServer.InternalGameUser.UserStatusUpdateTime
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalGameUser.UserStatusUpdateTime
+  parent: Winpeak.Client.Networking.WebServer.InternalGameUser
+  name: UserStatusUpdateTime
+  nameWithType: InternalGameUser.UserStatusUpdateTime
+  fullName: Winpeak.Client.Networking.WebServer.InternalGameUser.UserStatusUpdateTime
+- uid: Winpeak.Client.Networking.WebServer.InternalGameUser.GameUserInfo
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalGameUser.GameUserInfo
+  parent: Winpeak.Client.Networking.WebServer.InternalGameUser
+  name: GameUserInfo
+  nameWithType: InternalGameUser.GameUserInfo
+  fullName: Winpeak.Client.Networking.WebServer.InternalGameUser.GameUserInfo
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Winpeak.Client.Networking.WebServer.GameUser.Winner*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GameUser.Winner
+  name: Winner
+  nameWithType: GameUser.Winner
+  fullName: Winpeak.Client.Networking.WebServer.GameUser.Winner
+- uid: Winpeak.Client.Networking.WebServer.IGameUser.Winner
+  commentId: P:Winpeak.Client.Networking.WebServer.IGameUser.Winner
+  parent: Winpeak.Client.Networking.WebServer.IGameUser
+  name: Winner
+  nameWithType: IGameUser.Winner
+  fullName: Winpeak.Client.Networking.WebServer.IGameUser.Winner
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Winpeak.Client.Networking.WebServer.GameUser.GetUserStatusUpdateTime*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GameUser.GetUserStatusUpdateTime
+  name: GetUserStatusUpdateTime
+  nameWithType: GameUser.GetUserStatusUpdateTime
+  fullName: Winpeak.Client.Networking.WebServer.GameUser.GetUserStatusUpdateTime
+- uid: Winpeak.Client.Networking.WebServer.IGameUser.GetUserStatusUpdateTime
+  commentId: P:Winpeak.Client.Networking.WebServer.IGameUser.GetUserStatusUpdateTime
+  parent: Winpeak.Client.Networking.WebServer.IGameUser
+  name: GetUserStatusUpdateTime
+  nameWithType: IGameUser.GetUserStatusUpdateTime
+  fullName: Winpeak.Client.Networking.WebServer.IGameUser.GetUserStatusUpdateTime
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Winpeak.Client.Networking.WebServer.GameUser.GetGameUserInfo*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GameUser.GetGameUserInfo
+  name: GetGameUserInfo
+  nameWithType: GameUser.GetGameUserInfo
+  fullName: Winpeak.Client.Networking.WebServer.GameUser.GetGameUserInfo
+- uid: Winpeak.Client.Networking.WebServer.IGameUser.GetGameUserInfo
+  commentId: P:Winpeak.Client.Networking.WebServer.IGameUser.GetGameUserInfo
+  parent: Winpeak.Client.Networking.WebServer.IGameUser
+  name: GetGameUserInfo
+  nameWithType: IGameUser.GetGameUserInfo
+  fullName: Winpeak.Client.Networking.WebServer.IGameUser.GetGameUserInfo
+- uid: Winpeak.Client.Networking.WebServer.IAccount
+  commentId: T:Winpeak.Client.Networking.WebServer.IAccount
+  parent: Winpeak.Client.Networking.WebServer
+  name: IAccount
+  nameWithType: IAccount
+  fullName: Winpeak.Client.Networking.WebServer.IAccount

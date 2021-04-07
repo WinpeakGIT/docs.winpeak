@@ -20,10 +20,15 @@ items:
   - Winpeak.Client.Networking.WebServer.CreateGameSession
   - Winpeak.Client.Networking.WebServer.CreateGameSessionRequest
   - Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult
+  - Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult.Data
   - Winpeak.Client.Networking.WebServer.CreateGameSessionResult
   - Winpeak.Client.Networking.WebServer.EditProfile
   - Winpeak.Client.Networking.WebServer.EditProfileResult
   - Winpeak.Client.Networking.WebServer.GameInfo
+  - Winpeak.Client.Networking.WebServer.GameRequest
+  - Winpeak.Client.Networking.WebServer.GameServerInfo
+  - Winpeak.Client.Networking.WebServer.GameServerNetwork
+  - Winpeak.Client.Networking.WebServer.GameUser
   - Winpeak.Client.Networking.WebServer.GetGameInfo
   - Winpeak.Client.Networking.WebServer.GetGameInfoResult
   - Winpeak.Client.Networking.WebServer.GetUserInfo
@@ -31,8 +36,16 @@ items:
   - Winpeak.Client.Networking.WebServer.HTTPRequestFactory
   - Winpeak.Client.Networking.WebServer.IAccount
   - Winpeak.Client.Networking.WebServer.IGameInfo
+  - Winpeak.Client.Networking.WebServer.IGameRequest
+  - Winpeak.Client.Networking.WebServer.IGameServerInfo
+  - Winpeak.Client.Networking.WebServer.IGameServerNetwork
+  - Winpeak.Client.Networking.WebServer.IGameUser
   - Winpeak.Client.Networking.WebServer.InternalAccount
   - Winpeak.Client.Networking.WebServer.InternalGameInfo
+  - Winpeak.Client.Networking.WebServer.InternalGameRequest
+  - Winpeak.Client.Networking.WebServer.InternalGameServerInfo
+  - Winpeak.Client.Networking.WebServer.InternalGameServerNetwork
+  - Winpeak.Client.Networking.WebServer.InternalGameUser
   - Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
   - Winpeak.Client.Networking.WebServer.ITemplate
   - Winpeak.Client.Networking.WebServer.IWebRequest
@@ -243,6 +256,12 @@ references:
   name: CreateGameSessionRequestResult
   nameWithType: CreateGameSessionRequestResult
   fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult
+- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult.Data
+  parent: Winpeak.Client.Networking.WebServer
+  name: CreateGameSessionRequestResult.Data
+  nameWithType: CreateGameSessionRequestResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionRequestResult.Data
 - uid: Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequestResult
   commentId: T:Winpeak.Client.Networking.WebServer.RejectCreateGameSessionRequestResult
   name: RejectCreateGameSessionRequestResult
@@ -353,6 +372,142 @@ references:
   name: Session
   nameWithType: Session
   fullName: Winpeak.Client.Networking.WebServer.Session
+- uid: Winpeak.Client.Networking.WebServer.GameUser
+  commentId: T:Winpeak.Client.Networking.WebServer.GameUser
+  name: GameUser
+  nameWithType: GameUser
+  fullName: Winpeak.Client.Networking.WebServer.GameUser
+- uid: Winpeak.Client.Networking.WebServer.GameServerInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.GameServerInfo
+  parent: Winpeak.Client.Networking.WebServer
+  name: GameServerInfo
+  nameWithType: GameServerInfo
+  fullName: Winpeak.Client.Networking.WebServer.GameServerInfo
+- uid: Winpeak.Client.Networking.WebServer.Account
+  commentId: T:Winpeak.Client.Networking.WebServer.Account
+  parent: Winpeak.Client.Networking.WebServer
+  name: Account
+  nameWithType: Account
+  fullName: Winpeak.Client.Networking.WebServer.Account
+- uid: Winpeak.Client.Networking.WebServer.GameInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.GameInfo
+  parent: Winpeak.Client.Networking.WebServer
+  name: GameInfo
+  nameWithType: GameInfo
+  fullName: Winpeak.Client.Networking.WebServer.GameInfo
+- uid: Winpeak.Client.Networking.WebServer.GameRequest
+  commentId: T:Winpeak.Client.Networking.WebServer.GameRequest
+  name: GameRequest
+  nameWithType: GameRequest
+  fullName: Winpeak.Client.Networking.WebServer.GameRequest
+- uid: Winpeak.Client.Networking.WebServer.GameServerNetwork
+  commentId: T:Winpeak.Client.Networking.WebServer.GameServerNetwork
+  parent: Winpeak.Client.Networking.WebServer
+  name: GameServerNetwork
+  nameWithType: GameServerNetwork
+  fullName: Winpeak.Client.Networking.WebServer.GameServerNetwork
+- uid: Winpeak.Client.Networking.WebServer.IGameServerNetwork
+  commentId: T:Winpeak.Client.Networking.WebServer.IGameServerNetwork
+  parent: Winpeak.Client.Networking.WebServer
+  name: IGameServerNetwork
+  nameWithType: IGameServerNetwork
+  fullName: Winpeak.Client.Networking.WebServer.IGameServerNetwork
+- uid: Winpeak.Client.Networking.WebServer.IGameServerInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.IGameServerInfo
+  parent: Winpeak.Client.Networking.WebServer
+  name: IGameServerInfo
+  nameWithType: IGameServerInfo
+  fullName: Winpeak.Client.Networking.WebServer.IGameServerInfo
+- uid: Winpeak.Client.Networking.WebServer.ITemplate
+  commentId: T:Winpeak.Client.Networking.WebServer.ITemplate
+  parent: Winpeak.Client.Networking.WebServer
+  name: ITemplate
+  nameWithType: ITemplate
+  fullName: Winpeak.Client.Networking.WebServer.ITemplate
+- uid: Winpeak.Client.Networking.WebServer.IGameRequest
+  commentId: T:Winpeak.Client.Networking.WebServer.IGameRequest
+  parent: Winpeak.Client.Networking.WebServer
+  name: IGameRequest
+  nameWithType: IGameRequest
+  fullName: Winpeak.Client.Networking.WebServer.IGameRequest
+- uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+  commentId: T:Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+  name: IPaginatedDataSource<T>
+  nameWithType: IPaginatedDataSource<T>
+  fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource<T>
+  nameWithType.vb: IPaginatedDataSource(Of T)
+  fullName.vb: Winpeak.Client.Networking.WebServer.IPaginatedDataSource(Of T)
+  name.vb: IPaginatedDataSource(Of T)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+    name: IPaginatedDataSource
+    nameWithType: IPaginatedDataSource
+    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+    name: IPaginatedDataSource
+    nameWithType: IPaginatedDataSource
+    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.IGameUser
+  commentId: T:Winpeak.Client.Networking.WebServer.IGameUser
+  parent: Winpeak.Client.Networking.WebServer
+  name: IGameUser
+  nameWithType: IGameUser
+  fullName: Winpeak.Client.Networking.WebServer.IGameUser
+- uid: Winpeak.Client.Networking.WebServer.InternalAccount
+  commentId: T:Winpeak.Client.Networking.WebServer.InternalAccount
+  parent: Winpeak.Client.Networking.WebServer
+  name: InternalAccount
+  nameWithType: InternalAccount
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccount
+- uid: Winpeak.Client.Networking.WebServer.InternalGameInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.InternalGameInfo
+  parent: Winpeak.Client.Networking.WebServer
+  name: InternalGameInfo
+  nameWithType: InternalGameInfo
+  fullName: Winpeak.Client.Networking.WebServer.InternalGameInfo
+- uid: Winpeak.Client.Networking.WebServer.InternalGameServerInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.InternalGameServerInfo
+  parent: Winpeak.Client.Networking.WebServer
+  name: InternalGameServerInfo
+  nameWithType: InternalGameServerInfo
+  fullName: Winpeak.Client.Networking.WebServer.InternalGameServerInfo
+- uid: Winpeak.Client.Networking.WebServer.InternalGameServerNetwork
+  commentId: T:Winpeak.Client.Networking.WebServer.InternalGameServerNetwork
+  parent: Winpeak.Client.Networking.WebServer
+  name: InternalGameServerNetwork
+  nameWithType: InternalGameServerNetwork
+  fullName: Winpeak.Client.Networking.WebServer.InternalGameServerNetwork
+- uid: Winpeak.Client.Networking.WebServer.InternalGameRequest
+  commentId: T:Winpeak.Client.Networking.WebServer.InternalGameRequest
+  parent: Winpeak.Client.Networking.WebServer
+  name: InternalGameRequest
+  nameWithType: InternalGameRequest
+  fullName: Winpeak.Client.Networking.WebServer.InternalGameRequest
+- uid: Winpeak.Client.Networking.WebServer.InternalGameUser
+  commentId: T:Winpeak.Client.Networking.WebServer.InternalGameUser
+  parent: Winpeak.Client.Networking.WebServer
+  name: InternalGameUser
+  nameWithType: InternalGameUser
+  fullName: Winpeak.Client.Networking.WebServer.InternalGameUser
 - uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1
   commentId: T:Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1
   name: WebCallbackPaginatedRequest<T>
@@ -389,30 +544,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.InternalAccount
-  commentId: T:Winpeak.Client.Networking.WebServer.InternalAccount
-  parent: Winpeak.Client.Networking.WebServer
-  name: InternalAccount
-  nameWithType: InternalAccount
-  fullName: Winpeak.Client.Networking.WebServer.InternalAccount
-- uid: Winpeak.Client.Networking.WebServer.Account
-  commentId: T:Winpeak.Client.Networking.WebServer.Account
-  parent: Winpeak.Client.Networking.WebServer
-  name: Account
-  nameWithType: Account
-  fullName: Winpeak.Client.Networking.WebServer.Account
-- uid: Winpeak.Client.Networking.WebServer.ITemplate
-  commentId: T:Winpeak.Client.Networking.WebServer.ITemplate
-  parent: Winpeak.Client.Networking.WebServer
-  name: ITemplate
-  nameWithType: ITemplate
-  fullName: Winpeak.Client.Networking.WebServer.ITemplate
-- uid: Winpeak.Client.Networking.WebServer.InternalGameInfo
-  commentId: T:Winpeak.Client.Networking.WebServer.InternalGameInfo
-  parent: Winpeak.Client.Networking.WebServer
-  name: InternalGameInfo
-  nameWithType: InternalGameInfo
-  fullName: Winpeak.Client.Networking.WebServer.InternalGameInfo
 - uid: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1
   commentId: T:Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1
   name: WebBasePaginatedRequest<T>
@@ -476,47 +607,6 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.Networking.WebServer.GameInfo
-  commentId: T:Winpeak.Client.Networking.WebServer.GameInfo
-  name: GameInfo
-  nameWithType: GameInfo
-  fullName: Winpeak.Client.Networking.WebServer.GameInfo
-- uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
-  commentId: T:Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
-  name: IPaginatedDataSource<T>
-  nameWithType: IPaginatedDataSource<T>
-  fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource<T>
-  nameWithType.vb: IPaginatedDataSource(Of T)
-  fullName.vb: Winpeak.Client.Networking.WebServer.IPaginatedDataSource(Of T)
-  name.vb: IPaginatedDataSource(Of T)
-  spec.csharp:
-  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
-    name: IPaginatedDataSource
-    nameWithType: IPaginatedDataSource
-    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
-    name: IPaginatedDataSource
-    nameWithType: IPaginatedDataSource
-    fullName: Winpeak.Client.Networking.WebServer.IPaginatedDataSource
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
   - name: )
     nameWithType: )
     fullName: )
