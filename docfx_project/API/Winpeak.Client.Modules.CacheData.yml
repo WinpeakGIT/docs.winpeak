@@ -11,9 +11,19 @@ items:
   - Winpeak.Client.Modules.CacheData.GetActiveSession
   - Winpeak.Client.Modules.CacheData.GetActiveSessionLogin
   - Winpeak.Client.Modules.CacheData.GetActiveSessionPassword
+  - Winpeak.Client.Modules.CacheData.GetControlsMode
   - Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData
+  - Winpeak.Client.Modules.CacheData.GetNotificationsDisableFlag
+  - Winpeak.Client.Modules.CacheData.GetNotificationsPauseFlag
+  - Winpeak.Client.Modules.CacheData.GetSoundsFlag
+  - Winpeak.Client.Modules.CacheData.GetVolumeValue
   - Winpeak.Client.Modules.CacheData.HasActiveSessionData
   - Winpeak.Client.Modules.CacheData.SetActiveSessionData(System.String,System.String,System.String)
+  - Winpeak.Client.Modules.CacheData.SetControlsMode(System.Int32)
+  - Winpeak.Client.Modules.CacheData.SetNotificationsDisableFlag(System.Boolean)
+  - Winpeak.Client.Modules.CacheData.SetNotificationsPauseFlag(System.Boolean)
+  - Winpeak.Client.Modules.CacheData.SetSoundsFlag(System.Boolean)
+  - Winpeak.Client.Modules.CacheData.SetVolumeValue(System.Single)
   langs:
   - csharp
   - vb
@@ -65,7 +75,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 1273
+    startLine: 1278
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -91,7 +101,7 @@ items:
   source:
     id: SetActiveSessionData
     path: ''
-    startLine: 1277
+    startLine: 1282
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -112,6 +122,311 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Winpeak.Client.Modules.CacheData.SetVolumeValue(System.Single)
+  commentId: M:Winpeak.Client.Modules.CacheData.SetVolumeValue(System.Single)
+  id: SetVolumeValue(System.Single)
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: SetVolumeValue(Single)
+  nameWithType: CacheData.SetVolumeValue(Single)
+  fullName: Winpeak.Client.Modules.CacheData.SetVolumeValue(System.Single)
+  type: Method
+  source:
+    id: SetVolumeValue
+    path: ''
+    startLine: 1287
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public void SetVolumeValue(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    content.vb: Public Sub SetVolumeValue(value As Single)
+  overload: Winpeak.Client.Modules.CacheData.SetVolumeValue*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.SetVolumeValue(System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.GetVolumeValue
+  commentId: M:Winpeak.Client.Modules.CacheData.GetVolumeValue
+  id: GetVolumeValue
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: GetVolumeValue()
+  nameWithType: CacheData.GetVolumeValue()
+  fullName: Winpeak.Client.Modules.CacheData.GetVolumeValue()
+  type: Method
+  source:
+    id: GetVolumeValue
+    path: ''
+    startLine: 1291
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public float GetVolumeValue()
+    return:
+      type: System.Single
+    content.vb: Public Function GetVolumeValue As Single
+  overload: Winpeak.Client.Modules.CacheData.GetVolumeValue*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.GetVolumeValue
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.SetSoundsFlag(System.Boolean)
+  commentId: M:Winpeak.Client.Modules.CacheData.SetSoundsFlag(System.Boolean)
+  id: SetSoundsFlag(System.Boolean)
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: SetSoundsFlag(Boolean)
+  nameWithType: CacheData.SetSoundsFlag(Boolean)
+  fullName: Winpeak.Client.Modules.CacheData.SetSoundsFlag(System.Boolean)
+  type: Method
+  source:
+    id: SetSoundsFlag
+    path: ''
+    startLine: 1299
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public void SetSoundsFlag(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub SetSoundsFlag(value As Boolean)
+  overload: Winpeak.Client.Modules.CacheData.SetSoundsFlag*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.SetSoundsFlag(System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.GetSoundsFlag
+  commentId: M:Winpeak.Client.Modules.CacheData.GetSoundsFlag
+  id: GetSoundsFlag
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: GetSoundsFlag()
+  nameWithType: CacheData.GetSoundsFlag()
+  fullName: Winpeak.Client.Modules.CacheData.GetSoundsFlag()
+  type: Method
+  source:
+    id: GetSoundsFlag
+    path: ''
+    startLine: 1303
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public bool GetSoundsFlag()
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetSoundsFlag As Boolean
+  overload: Winpeak.Client.Modules.CacheData.GetSoundsFlag*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.GetSoundsFlag
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.SetNotificationsPauseFlag(System.Boolean)
+  commentId: M:Winpeak.Client.Modules.CacheData.SetNotificationsPauseFlag(System.Boolean)
+  id: SetNotificationsPauseFlag(System.Boolean)
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: SetNotificationsPauseFlag(Boolean)
+  nameWithType: CacheData.SetNotificationsPauseFlag(Boolean)
+  fullName: Winpeak.Client.Modules.CacheData.SetNotificationsPauseFlag(System.Boolean)
+  type: Method
+  source:
+    id: SetNotificationsPauseFlag
+    path: ''
+    startLine: 1311
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public void SetNotificationsPauseFlag(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub SetNotificationsPauseFlag(value As Boolean)
+  overload: Winpeak.Client.Modules.CacheData.SetNotificationsPauseFlag*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.SetNotificationsPauseFlag(System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.GetNotificationsPauseFlag
+  commentId: M:Winpeak.Client.Modules.CacheData.GetNotificationsPauseFlag
+  id: GetNotificationsPauseFlag
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: GetNotificationsPauseFlag()
+  nameWithType: CacheData.GetNotificationsPauseFlag()
+  fullName: Winpeak.Client.Modules.CacheData.GetNotificationsPauseFlag()
+  type: Method
+  source:
+    id: GetNotificationsPauseFlag
+    path: ''
+    startLine: 1315
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public bool GetNotificationsPauseFlag()
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetNotificationsPauseFlag As Boolean
+  overload: Winpeak.Client.Modules.CacheData.GetNotificationsPauseFlag*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.GetNotificationsPauseFlag
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.SetNotificationsDisableFlag(System.Boolean)
+  commentId: M:Winpeak.Client.Modules.CacheData.SetNotificationsDisableFlag(System.Boolean)
+  id: SetNotificationsDisableFlag(System.Boolean)
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: SetNotificationsDisableFlag(Boolean)
+  nameWithType: CacheData.SetNotificationsDisableFlag(Boolean)
+  fullName: Winpeak.Client.Modules.CacheData.SetNotificationsDisableFlag(System.Boolean)
+  type: Method
+  source:
+    id: SetNotificationsDisableFlag
+    path: ''
+    startLine: 1323
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public void SetNotificationsDisableFlag(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub SetNotificationsDisableFlag(value As Boolean)
+  overload: Winpeak.Client.Modules.CacheData.SetNotificationsDisableFlag*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.SetNotificationsDisableFlag(System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.GetNotificationsDisableFlag
+  commentId: M:Winpeak.Client.Modules.CacheData.GetNotificationsDisableFlag
+  id: GetNotificationsDisableFlag
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: GetNotificationsDisableFlag()
+  nameWithType: CacheData.GetNotificationsDisableFlag()
+  fullName: Winpeak.Client.Modules.CacheData.GetNotificationsDisableFlag()
+  type: Method
+  source:
+    id: GetNotificationsDisableFlag
+    path: ''
+    startLine: 1327
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public bool GetNotificationsDisableFlag()
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetNotificationsDisableFlag As Boolean
+  overload: Winpeak.Client.Modules.CacheData.GetNotificationsDisableFlag*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.GetNotificationsDisableFlag
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.SetControlsMode(System.Int32)
+  commentId: M:Winpeak.Client.Modules.CacheData.SetControlsMode(System.Int32)
+  id: SetControlsMode(System.Int32)
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: SetControlsMode(Int32)
+  nameWithType: CacheData.SetControlsMode(Int32)
+  fullName: Winpeak.Client.Modules.CacheData.SetControlsMode(System.Int32)
+  type: Method
+  source:
+    id: SetControlsMode
+    path: ''
+    startLine: 1335
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public void SetControlsMode(int mode)
+    parameters:
+    - id: mode
+      type: System.Int32
+    content.vb: Public Sub SetControlsMode(mode As Integer)
+  overload: Winpeak.Client.Modules.CacheData.SetControlsMode*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.SetControlsMode(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.GetControlsMode
+  commentId: M:Winpeak.Client.Modules.CacheData.GetControlsMode
+  id: GetControlsMode
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: GetControlsMode()
+  nameWithType: CacheData.GetControlsMode()
+  fullName: Winpeak.Client.Modules.CacheData.GetControlsMode()
+  type: Method
+  source:
+    id: GetControlsMode
+    path: ''
+    startLine: 1339
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public int GetControlsMode()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetControlsMode As Integer
+  overload: Winpeak.Client.Modules.CacheData.GetControlsMode*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.GetControlsMode
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData
   commentId: M:Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData
   id: GetLatestActiveSessionData
@@ -126,7 +441,7 @@ items:
   source:
     id: GetLatestActiveSessionData
     path: ''
-    startLine: 1282
+    startLine: 1347
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -156,7 +471,7 @@ items:
   source:
     id: ClearActiveSessionData
     path: ''
-    startLine: 1287
+    startLine: 1352
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -184,7 +499,7 @@ items:
   source:
     id: HasActiveSessionData
     path: ''
-    startLine: 1291
+    startLine: 1356
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -214,7 +529,7 @@ items:
   source:
     id: GetActiveSessionLogin
     path: ''
-    startLine: 1300
+    startLine: 1365
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -244,7 +559,7 @@ items:
   source:
     id: GetActiveSessionPassword
     path: ''
-    startLine: 1306
+    startLine: 1371
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -274,7 +589,7 @@ items:
   source:
     id: GetActiveSession
     path: ''
-    startLine: 1312
+    startLine: 1377
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -304,7 +619,7 @@ items:
   source:
     id: Clear
     path: ''
-    startLine: 1318
+    startLine: 1383
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -710,6 +1025,412 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: Winpeak.Client.Modules.CacheData.SetVolumeValue*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.SetVolumeValue
+  name: SetVolumeValue
+  nameWithType: CacheData.SetVolumeValue
+  fullName: Winpeak.Client.Modules.CacheData.SetVolumeValue
+- uid: Winpeak.Client.Modules.ICacheData.SetVolumeValue(System.Single)
+  commentId: M:Winpeak.Client.Modules.ICacheData.SetVolumeValue(System.Single)
+  parent: Winpeak.Client.Modules.ICacheData
+  isExternal: true
+  name: SetVolumeValue(Single)
+  nameWithType: ICacheData.SetVolumeValue(Single)
+  fullName: Winpeak.Client.Modules.ICacheData.SetVolumeValue(System.Single)
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.SetVolumeValue(System.Single)
+    name: SetVolumeValue
+    nameWithType: ICacheData.SetVolumeValue
+    fullName: Winpeak.Client.Modules.ICacheData.SetVolumeValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.SetVolumeValue(System.Single)
+    name: SetVolumeValue
+    nameWithType: ICacheData.SetVolumeValue
+    fullName: Winpeak.Client.Modules.ICacheData.SetVolumeValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Winpeak.Client.Modules.CacheData.GetVolumeValue*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.GetVolumeValue
+  name: GetVolumeValue
+  nameWithType: CacheData.GetVolumeValue
+  fullName: Winpeak.Client.Modules.CacheData.GetVolumeValue
+- uid: Winpeak.Client.Modules.ICacheData.GetVolumeValue
+  commentId: M:Winpeak.Client.Modules.ICacheData.GetVolumeValue
+  parent: Winpeak.Client.Modules.ICacheData
+  name: GetVolumeValue()
+  nameWithType: ICacheData.GetVolumeValue()
+  fullName: Winpeak.Client.Modules.ICacheData.GetVolumeValue()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.GetVolumeValue
+    name: GetVolumeValue
+    nameWithType: ICacheData.GetVolumeValue
+    fullName: Winpeak.Client.Modules.ICacheData.GetVolumeValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.GetVolumeValue
+    name: GetVolumeValue
+    nameWithType: ICacheData.GetVolumeValue
+    fullName: Winpeak.Client.Modules.ICacheData.GetVolumeValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.SetSoundsFlag*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.SetSoundsFlag
+  name: SetSoundsFlag
+  nameWithType: CacheData.SetSoundsFlag
+  fullName: Winpeak.Client.Modules.CacheData.SetSoundsFlag
+- uid: Winpeak.Client.Modules.ICacheData.SetSoundsFlag(System.Boolean)
+  commentId: M:Winpeak.Client.Modules.ICacheData.SetSoundsFlag(System.Boolean)
+  parent: Winpeak.Client.Modules.ICacheData
+  isExternal: true
+  name: SetSoundsFlag(Boolean)
+  nameWithType: ICacheData.SetSoundsFlag(Boolean)
+  fullName: Winpeak.Client.Modules.ICacheData.SetSoundsFlag(System.Boolean)
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.SetSoundsFlag(System.Boolean)
+    name: SetSoundsFlag
+    nameWithType: ICacheData.SetSoundsFlag
+    fullName: Winpeak.Client.Modules.ICacheData.SetSoundsFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.SetSoundsFlag(System.Boolean)
+    name: SetSoundsFlag
+    nameWithType: ICacheData.SetSoundsFlag
+    fullName: Winpeak.Client.Modules.ICacheData.SetSoundsFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Winpeak.Client.Modules.CacheData.GetSoundsFlag*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.GetSoundsFlag
+  name: GetSoundsFlag
+  nameWithType: CacheData.GetSoundsFlag
+  fullName: Winpeak.Client.Modules.CacheData.GetSoundsFlag
+- uid: Winpeak.Client.Modules.ICacheData.GetSoundsFlag
+  commentId: M:Winpeak.Client.Modules.ICacheData.GetSoundsFlag
+  parent: Winpeak.Client.Modules.ICacheData
+  name: GetSoundsFlag()
+  nameWithType: ICacheData.GetSoundsFlag()
+  fullName: Winpeak.Client.Modules.ICacheData.GetSoundsFlag()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.GetSoundsFlag
+    name: GetSoundsFlag
+    nameWithType: ICacheData.GetSoundsFlag
+    fullName: Winpeak.Client.Modules.ICacheData.GetSoundsFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.GetSoundsFlag
+    name: GetSoundsFlag
+    nameWithType: ICacheData.GetSoundsFlag
+    fullName: Winpeak.Client.Modules.ICacheData.GetSoundsFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.SetNotificationsPauseFlag*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.SetNotificationsPauseFlag
+  name: SetNotificationsPauseFlag
+  nameWithType: CacheData.SetNotificationsPauseFlag
+  fullName: Winpeak.Client.Modules.CacheData.SetNotificationsPauseFlag
+- uid: Winpeak.Client.Modules.ICacheData.SetNotificationsPauseFlag(System.Boolean)
+  commentId: M:Winpeak.Client.Modules.ICacheData.SetNotificationsPauseFlag(System.Boolean)
+  parent: Winpeak.Client.Modules.ICacheData
+  isExternal: true
+  name: SetNotificationsPauseFlag(Boolean)
+  nameWithType: ICacheData.SetNotificationsPauseFlag(Boolean)
+  fullName: Winpeak.Client.Modules.ICacheData.SetNotificationsPauseFlag(System.Boolean)
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.SetNotificationsPauseFlag(System.Boolean)
+    name: SetNotificationsPauseFlag
+    nameWithType: ICacheData.SetNotificationsPauseFlag
+    fullName: Winpeak.Client.Modules.ICacheData.SetNotificationsPauseFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.SetNotificationsPauseFlag(System.Boolean)
+    name: SetNotificationsPauseFlag
+    nameWithType: ICacheData.SetNotificationsPauseFlag
+    fullName: Winpeak.Client.Modules.ICacheData.SetNotificationsPauseFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.GetNotificationsPauseFlag*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.GetNotificationsPauseFlag
+  name: GetNotificationsPauseFlag
+  nameWithType: CacheData.GetNotificationsPauseFlag
+  fullName: Winpeak.Client.Modules.CacheData.GetNotificationsPauseFlag
+- uid: Winpeak.Client.Modules.ICacheData.GetNotificationsPauseFlag
+  commentId: M:Winpeak.Client.Modules.ICacheData.GetNotificationsPauseFlag
+  parent: Winpeak.Client.Modules.ICacheData
+  name: GetNotificationsPauseFlag()
+  nameWithType: ICacheData.GetNotificationsPauseFlag()
+  fullName: Winpeak.Client.Modules.ICacheData.GetNotificationsPauseFlag()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.GetNotificationsPauseFlag
+    name: GetNotificationsPauseFlag
+    nameWithType: ICacheData.GetNotificationsPauseFlag
+    fullName: Winpeak.Client.Modules.ICacheData.GetNotificationsPauseFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.GetNotificationsPauseFlag
+    name: GetNotificationsPauseFlag
+    nameWithType: ICacheData.GetNotificationsPauseFlag
+    fullName: Winpeak.Client.Modules.ICacheData.GetNotificationsPauseFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.SetNotificationsDisableFlag*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.SetNotificationsDisableFlag
+  name: SetNotificationsDisableFlag
+  nameWithType: CacheData.SetNotificationsDisableFlag
+  fullName: Winpeak.Client.Modules.CacheData.SetNotificationsDisableFlag
+- uid: Winpeak.Client.Modules.ICacheData.SetNotificationsDisableFlag(System.Boolean)
+  commentId: M:Winpeak.Client.Modules.ICacheData.SetNotificationsDisableFlag(System.Boolean)
+  parent: Winpeak.Client.Modules.ICacheData
+  isExternal: true
+  name: SetNotificationsDisableFlag(Boolean)
+  nameWithType: ICacheData.SetNotificationsDisableFlag(Boolean)
+  fullName: Winpeak.Client.Modules.ICacheData.SetNotificationsDisableFlag(System.Boolean)
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.SetNotificationsDisableFlag(System.Boolean)
+    name: SetNotificationsDisableFlag
+    nameWithType: ICacheData.SetNotificationsDisableFlag
+    fullName: Winpeak.Client.Modules.ICacheData.SetNotificationsDisableFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.SetNotificationsDisableFlag(System.Boolean)
+    name: SetNotificationsDisableFlag
+    nameWithType: ICacheData.SetNotificationsDisableFlag
+    fullName: Winpeak.Client.Modules.ICacheData.SetNotificationsDisableFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.GetNotificationsDisableFlag*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.GetNotificationsDisableFlag
+  name: GetNotificationsDisableFlag
+  nameWithType: CacheData.GetNotificationsDisableFlag
+  fullName: Winpeak.Client.Modules.CacheData.GetNotificationsDisableFlag
+- uid: Winpeak.Client.Modules.ICacheData.GetNotificationsDisableFlag
+  commentId: M:Winpeak.Client.Modules.ICacheData.GetNotificationsDisableFlag
+  parent: Winpeak.Client.Modules.ICacheData
+  name: GetNotificationsDisableFlag()
+  nameWithType: ICacheData.GetNotificationsDisableFlag()
+  fullName: Winpeak.Client.Modules.ICacheData.GetNotificationsDisableFlag()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.GetNotificationsDisableFlag
+    name: GetNotificationsDisableFlag
+    nameWithType: ICacheData.GetNotificationsDisableFlag
+    fullName: Winpeak.Client.Modules.ICacheData.GetNotificationsDisableFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.GetNotificationsDisableFlag
+    name: GetNotificationsDisableFlag
+    nameWithType: ICacheData.GetNotificationsDisableFlag
+    fullName: Winpeak.Client.Modules.ICacheData.GetNotificationsDisableFlag
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.SetControlsMode*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.SetControlsMode
+  name: SetControlsMode
+  nameWithType: CacheData.SetControlsMode
+  fullName: Winpeak.Client.Modules.CacheData.SetControlsMode
+- uid: Winpeak.Client.Modules.ICacheData.SetControlsMode(System.Int32)
+  commentId: M:Winpeak.Client.Modules.ICacheData.SetControlsMode(System.Int32)
+  parent: Winpeak.Client.Modules.ICacheData
+  isExternal: true
+  name: SetControlsMode(Int32)
+  nameWithType: ICacheData.SetControlsMode(Int32)
+  fullName: Winpeak.Client.Modules.ICacheData.SetControlsMode(System.Int32)
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.SetControlsMode(System.Int32)
+    name: SetControlsMode
+    nameWithType: ICacheData.SetControlsMode
+    fullName: Winpeak.Client.Modules.ICacheData.SetControlsMode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.SetControlsMode(System.Int32)
+    name: SetControlsMode
+    nameWithType: ICacheData.SetControlsMode
+    fullName: Winpeak.Client.Modules.ICacheData.SetControlsMode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Winpeak.Client.Modules.CacheData.GetControlsMode*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.GetControlsMode
+  name: GetControlsMode
+  nameWithType: CacheData.GetControlsMode
+  fullName: Winpeak.Client.Modules.CacheData.GetControlsMode
+- uid: Winpeak.Client.Modules.ICacheData.GetControlsMode
+  commentId: M:Winpeak.Client.Modules.ICacheData.GetControlsMode
+  parent: Winpeak.Client.Modules.ICacheData
+  name: GetControlsMode()
+  nameWithType: ICacheData.GetControlsMode()
+  fullName: Winpeak.Client.Modules.ICacheData.GetControlsMode()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.GetControlsMode
+    name: GetControlsMode
+    nameWithType: ICacheData.GetControlsMode
+    fullName: Winpeak.Client.Modules.ICacheData.GetControlsMode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.GetControlsMode
+    name: GetControlsMode
+    nameWithType: ICacheData.GetControlsMode
+    fullName: Winpeak.Client.Modules.ICacheData.GetControlsMode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData*
   commentId: Overload:Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData
   name: GetLatestActiveSessionData
@@ -835,13 +1556,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
 - uid: Winpeak.Client.Modules.CacheData.GetActiveSessionLogin*
   commentId: Overload:Winpeak.Client.Modules.CacheData.GetActiveSessionLogin
   name: GetActiveSessionLogin
