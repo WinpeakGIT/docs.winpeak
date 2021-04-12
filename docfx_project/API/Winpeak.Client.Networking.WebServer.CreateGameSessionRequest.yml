@@ -5,7 +5,7 @@ items:
   id: CreateGameSessionRequest
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.#ctor(System.Int32)
+  - Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.#ctor(System.Int64)
   - Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.GenerateData
   langs:
@@ -18,7 +18,7 @@ items:
   source:
     id: CreateGameSessionRequest
     path: ''
-    startLine: 3955
+    startLine: 3966
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -57,30 +57,30 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.#ctor(System.Int32)
-  commentId: M:Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.#ctor(System.Int32)
-  id: '#ctor(System.Int32)'
+- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.#ctor(System.Int64)
+  commentId: M:Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.#ctor(System.Int64)
+  id: '#ctor(System.Int64)'
   parent: Winpeak.Client.Networking.WebServer.CreateGameSessionRequest
   langs:
   - csharp
   - vb
-  name: CreateGameSessionRequest(Int32)
-  nameWithType: CreateGameSessionRequest.CreateGameSessionRequest(Int32)
-  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.CreateGameSessionRequest(System.Int32)
+  name: CreateGameSessionRequest(Int64)
+  nameWithType: CreateGameSessionRequest.CreateGameSessionRequest(Int64)
+  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.CreateGameSessionRequest(System.Int64)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 3961
+    startLine: 3972
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public CreateGameSessionRequest(int gameSessionId)
+    content: public CreateGameSessionRequest(long gameSessionId)
     parameters:
     - id: gameSessionId
-      type: System.Int32
-    content.vb: Public Sub New(gameSessionId As Integer)
+      type: System.Int64
+    content.vb: Public Sub New(gameSessionId As Long)
   overload: Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.#ctor*
   modifiers.csharp:
   - public
@@ -100,7 +100,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 3965
+    startLine: 3976
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -131,7 +131,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 3974
+    startLine: 3985
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -872,13 +872,13 @@ references:
   name: CreateGameSessionRequest
   nameWithType: CreateGameSessionRequest.CreateGameSessionRequest
   fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionRequest.CreateGameSessionRequest
-- uid: System.Int32
-  commentId: T:System.Int32
+- uid: System.Int64
+  commentId: T:System.Int64
   parent: System
   isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   parent: Winpeak.Client.Networking.WebServer.WebRequest

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IWinPeakNetworkClient
    ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.57.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -156,6 +156,39 @@
   </table>
   
   
+  <a id="Winpeak_Client_API_IWinPeakNetworkClient_CloseGameSession_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CloseGameSession*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_CloseGameSession_System_Int64_System_Action_CloseGameSessionResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CloseGameSession(System.Int64,System.Action{CloseGameSessionResult})">CloseGameSession(Int64, Action&lt;CloseGameSessionResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Close game session by specified params</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CloseGameSession(long gameSessionId, Action&lt;CloseGameSessionResult&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">gameSessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">CloseGameSessionResult</span>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_CreateGame_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CreateGame*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_CreateGame_System_Int32_System_Int32_System_Int32_System_Action_CreateGameSessionResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})">CreateGame(Int32, Int32, Int32, Action&lt;CreateGameSessionResult&gt;)</h4>
   <div class="markdown level1 summary"><p>Create game session by specified params</p>
@@ -200,13 +233,13 @@
   
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_CreateGameSessionRequest_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_CreateGameSessionRequest_System_Int32_System_Action_CreateGameSessionRequestResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest(System.Int32,System.Action{CreateGameSessionRequestResult})">CreateGameSessionRequest(Int32, Action&lt;CreateGameSessionRequestResult&gt;)</h4>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_CreateGameSessionRequest_System_Int64_System_Action_CreateGameSessionRequestResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest(System.Int64,System.Action{CreateGameSessionRequestResult})">CreateGameSessionRequest(Int64, Action&lt;CreateGameSessionRequestResult&gt;)</h4>
   <div class="markdown level1 summary"><p>Create game session request for chosen game</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void CreateGameSessionRequest(int gameSessionId, Action&lt;CreateGameSessionRequestResult&gt; callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void CreateGameSessionRequest(long gameSessionId, Action&lt;CreateGameSessionRequestResult&gt; callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -219,7 +252,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">gameSessionId</span></td>
         <td></td>
       </tr>
