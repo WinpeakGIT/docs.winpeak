@@ -1,31 +1,28 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Networking.GameSession
-  commentId: T:Winpeak.Client.Networking.GameSession
-  id: GameSession
-  parent: Winpeak.Client.Networking
+- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data
+  id: CreateGameSessionResult.Data
+  parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.GameSession.#ctor(System.Int64)
-  - Winpeak.Client.Networking.GameSession.Id
-  - Winpeak.Client.Networking.GameSession.IsActive
-  - Winpeak.Client.Networking.GameSession.OnReady
+  - Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data.GameSessionId
   langs:
   - csharp
   - vb
-  name: GameSession
-  nameWithType: GameSession
-  fullName: Winpeak.Client.Networking.GameSession
+  name: CreateGameSessionResult.Data
+  nameWithType: CreateGameSessionResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data
   type: Class
   source:
-    id: GameSession
+    id: Data
     path: ''
-    startLine: 170172
+    startLine: 4495
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Networking
+  namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public class GameSession
-    content.vb: Public Class GameSession
+    content: public class Data
+    content.vb: Public Class Data
   inheritance:
   - System.Object
   inheritedMembers:
@@ -42,130 +39,39 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.GameSession.OnReady
-  commentId: E:Winpeak.Client.Networking.GameSession.OnReady
-  id: OnReady
-  parent: Winpeak.Client.Networking.GameSession
+- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data.GameSessionId
+  commentId: F:Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data.GameSessionId
+  id: GameSessionId
+  parent: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data
   langs:
   - csharp
   - vb
-  name: OnReady
-  nameWithType: GameSession.OnReady
-  fullName: Winpeak.Client.Networking.GameSession.OnReady
-  type: Event
+  name: GameSessionId
+  nameWithType: CreateGameSessionResult.Data.GameSessionId
+  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data.GameSessionId
+  type: Field
   source:
-    id: OnReady
+    id: GameSessionId
     path: ''
-    startLine: 170174
+    startLine: 4498
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Networking
+  namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public event Action OnReady
-    return:
-      type: System.Action
-    content.vb: Public Event OnReady As Action
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Winpeak.Client.Networking.GameSession.Id
-  commentId: P:Winpeak.Client.Networking.GameSession.Id
-  id: Id
-  parent: Winpeak.Client.Networking.GameSession
-  langs:
-  - csharp
-  - vb
-  name: Id
-  nameWithType: GameSession.Id
-  fullName: Winpeak.Client.Networking.GameSession.Id
-  type: Property
-  source:
-    id: Id
-    path: ''
-    startLine: 170175
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public long Id { get; }
-    parameters: []
+    content: public long GameSessionId
     return:
       type: System.Int64
-    content.vb: Public ReadOnly Property Id As Long
-  overload: Winpeak.Client.Networking.GameSession.Id*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Networking.GameSession.IsActive
-  commentId: P:Winpeak.Client.Networking.GameSession.IsActive
-  id: IsActive
-  parent: Winpeak.Client.Networking.GameSession
-  langs:
-  - csharp
-  - vb
-  name: IsActive
-  nameWithType: GameSession.IsActive
-  fullName: Winpeak.Client.Networking.GameSession.IsActive
-  type: Property
-  source:
-    id: IsActive
-    path: ''
-    startLine: 170177
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public bool IsActive { get; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public ReadOnly Property IsActive As Boolean
-  overload: Winpeak.Client.Networking.GameSession.IsActive*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Networking.GameSession.#ctor(System.Int64)
-  commentId: M:Winpeak.Client.Networking.GameSession.#ctor(System.Int64)
-  id: '#ctor(System.Int64)'
-  parent: Winpeak.Client.Networking.GameSession
-  langs:
-  - csharp
-  - vb
-  name: GameSession(Int64)
-  nameWithType: GameSession.GameSession(Int64)
-  fullName: Winpeak.Client.Networking.GameSession.GameSession(System.Int64)
-  type: Constructor
-  source:
-    id: .ctor
-    path: ''
-    startLine: 170179
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking
-  syntax:
-    content: public GameSession(long id)
-    parameters:
-    - id: id
-      type: System.Int64
-    content.vb: Public Sub New(id As Long)
-  overload: Winpeak.Client.Networking.GameSession.#ctor*
+    content.vb: Public GameSessionId As Long
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
 references:
-- uid: Winpeak.Client.Networking
-  commentId: N:Winpeak.Client.Networking
-  name: Winpeak.Client.Networking
-  nameWithType: Winpeak.Client.Networking
-  fullName: Winpeak.Client.Networking
+- uid: Winpeak.Client.Networking.WebServer
+  commentId: N:Winpeak.Client.Networking.WebServer
+  name: Winpeak.Client.Networking.WebServer
+  nameWithType: Winpeak.Client.Networking.WebServer
+  fullName: Winpeak.Client.Networking.WebServer
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -458,18 +364,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Action
-  commentId: T:System.Action
-  parent: System
-  isExternal: true
-  name: Action
-  nameWithType: Action
-  fullName: System.Action
-- uid: Winpeak.Client.Networking.GameSession.Id*
-  commentId: Overload:Winpeak.Client.Networking.GameSession.Id
-  name: Id
-  nameWithType: GameSession.Id
-  fullName: Winpeak.Client.Networking.GameSession.Id
 - uid: System.Int64
   commentId: T:System.Int64
   parent: System
@@ -477,20 +371,3 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
-- uid: Winpeak.Client.Networking.GameSession.IsActive*
-  commentId: Overload:Winpeak.Client.Networking.GameSession.IsActive
-  name: IsActive
-  nameWithType: GameSession.IsActive
-  fullName: Winpeak.Client.Networking.GameSession.IsActive
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
-- uid: Winpeak.Client.Networking.GameSession.#ctor*
-  commentId: Overload:Winpeak.Client.Networking.GameSession.#ctor
-  name: GameSession
-  nameWithType: GameSession.GameSession
-  fullName: Winpeak.Client.Networking.GameSession.GameSession

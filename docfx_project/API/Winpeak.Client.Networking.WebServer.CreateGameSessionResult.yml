@@ -6,6 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.CreateGameSessionResult.HandleResponse(HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Result
   langs:
   - csharp
   - vb
@@ -58,6 +59,37 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Result
+  commentId: P:Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Result
+  id: Result
+  parent: Winpeak.Client.Networking.WebServer.CreateGameSessionResult
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: CreateGameSessionResult.Result
+  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Result
+  type: Property
+  source:
+    id: Result
+    path: ''
+    startLine: 4487
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public CreateGameSessionResult.Data Result { get; }
+    parameters: []
+    return:
+      type: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data
+    content.vb: Public ReadOnly Property Result As CreateGameSessionResult.Data
+  overload: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Result*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.CreateGameSessionResult.HandleResponse(HTTPResponse)
   id: HandleResponse(HTTPResponse)
@@ -72,7 +104,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 4487
+    startLine: 4489
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -511,6 +543,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Result*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Result
+  name: Result
+  nameWithType: CreateGameSessionResult.Result
+  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Result
+- uid: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data
+  parent: Winpeak.Client.Networking.WebServer
+  name: CreateGameSessionResult.Data
+  nameWithType: CreateGameSessionResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.CreateGameSessionResult.Data
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   parent: Winpeak.Client.Networking.WebServer.WebResult
