@@ -10,7 +10,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.CloseGameSession(System.Int64,System.Action{CloseGameSessionResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest(System.Int64,System.Action{CreateGameSessionRequestResult})
-  - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
@@ -159,16 +159,16 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.EditProfile(String, String, String, String, String, String, Action(Of EditProfileResult))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.String, System.String, System.Action(Of EditProfileResult))
   name.vb: EditProfile(String, String, String, String, String, String, Action(Of EditProfileResult))
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
-  id: EditProfile(System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
+  id: EditProfile(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   langs:
   - csharp
   - vb
-  name: EditProfile(String, String, String, String, Int32, Action<EditProfileResult>)
-  nameWithType: IWinPeakNetworkClient.EditProfile(String, String, String, String, Int32, Action<EditProfileResult>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.Int32, System.Action<EditProfileResult>)
+  name: EditProfile(String, String, String, String, String, Int32, Action<EditProfileResult>)
+  nameWithType: IWinPeakNetworkClient.EditProfile(String, String, String, String, String, Int32, Action<EditProfileResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.String, System.Int32, System.Action<EditProfileResult>)
   type: Method
   source:
     id: EditProfile
@@ -180,7 +180,7 @@ items:
   summary: "\nUses for registration form. Edit user profile in the system with specified fields. Returns result of action true - succeeded, false - failed\n"
   example: []
   syntax:
-    content: void EditProfile(string email, string login, string password, string rePassword, int agree, Action<EditProfileResult> callback)
+    content: void EditProfile(string email, string login, string password, string oldPassword, string rePassword, int agree, Action<EditProfileResult> callback)
     parameters:
     - id: email
       type: System.String
@@ -191,6 +191,8 @@ items:
     - id: password
       type: System.String
       description: ''
+    - id: oldPassword
+      type: System.String
     - id: rePassword
       type: System.String
       description: ''
@@ -200,11 +202,11 @@ items:
     - id: callback
       type: System.Action{EditProfileResult}
       description: ''
-    content.vb: Sub EditProfile(email As String, login As String, password As String, rePassword As String, agree As Integer, callback As Action(Of EditProfileResult))
+    content.vb: Sub EditProfile(email As String, login As String, password As String, oldPassword As String, rePassword As String, agree As Integer, callback As Action(Of EditProfileResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile*
-  nameWithType.vb: IWinPeakNetworkClient.EditProfile(String, String, String, String, Int32, Action(Of EditProfileResult))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.Int32, System.Action(Of EditProfileResult))
-  name.vb: EditProfile(String, String, String, String, Int32, Action(Of EditProfileResult))
+  nameWithType.vb: IWinPeakNetworkClient.EditProfile(String, String, String, String, String, Int32, Action(Of EditProfileResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String, System.String, System.String, System.String, System.String, System.Int32, System.Action(Of EditProfileResult))
+  name.vb: EditProfile(String, String, String, String, String, Int32, Action(Of EditProfileResult))
 - uid: Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
   commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
   id: Register(System.Int64,System.Action{RegistrationResult})
