@@ -5,6 +5,7 @@ items:
   id: IWinPeakNetworkClient
   parent: Winpeak.Client.API
   children:
+  - Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest(System.Int64,System.Int64,System.Action{ApproveGameSessionRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CheckAuthorization(System.Action{System.Boolean})
   - Winpeak.Client.API.IWinPeakNetworkClient.CloseGameSession(System.Int64,System.Action{CloseGameSessionResult})
@@ -432,6 +433,43 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.RejectCreateGameSessionRequest(Int64, Int64, Action(Of RejectCreateGameSessionRequestResult))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.RejectCreateGameSessionRequest(System.Int64, System.Int64, System.Action(Of RejectCreateGameSessionRequestResult))
   name.vb: RejectCreateGameSessionRequest(Int64, Int64, Action(Of RejectCreateGameSessionRequestResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest(System.Int64,System.Int64,System.Action{ApproveGameSessionRequestResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest(System.Int64,System.Int64,System.Action{ApproveGameSessionRequestResult})
+  id: ApproveCreateGameSessionRequest(System.Int64,System.Int64,System.Action{ApproveGameSessionRequestResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  langs:
+  - csharp
+  - vb
+  name: ApproveCreateGameSessionRequest(Int64, Int64, Action<ApproveGameSessionRequestResult>)
+  nameWithType: IWinPeakNetworkClient.ApproveCreateGameSessionRequest(Int64, Int64, Action<ApproveGameSessionRequestResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest(System.Int64, System.Int64, System.Action<ApproveGameSessionRequestResult>)
+  type: Method
+  source:
+    id: ApproveCreateGameSessionRequest
+    path: ''
+    startLine: 921
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nApprove create game session request from another user\n"
+  example: []
+  syntax:
+    content: void ApproveCreateGameSessionRequest(long userId, long gameSessionId, Action<ApproveGameSessionRequestResult> callback)
+    parameters:
+    - id: userId
+      type: System.Int64
+      description: ''
+    - id: gameSessionId
+      type: System.Int64
+      description: ''
+    - id: callback
+      type: System.Action{ApproveGameSessionRequestResult}
+      description: ''
+    content.vb: Sub ApproveCreateGameSessionRequest(userId As Long, gameSessionId As Long, callback As Action(Of ApproveGameSessionRequestResult))
+  overload: Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest*
+  nameWithType.vb: IWinPeakNetworkClient.ApproveCreateGameSessionRequest(Int64, Int64, Action(Of ApproveGameSessionRequestResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest(System.Int64, System.Int64, System.Action(Of ApproveGameSessionRequestResult))
+  name.vb: ApproveCreateGameSessionRequest(Int64, Int64, Action(Of ApproveGameSessionRequestResult))
 - uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
   commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
   id: CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
@@ -446,7 +484,7 @@ items:
   source:
     id: CreateGame
     path: ''
-    startLine: 922
+    startLine: 930
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -486,7 +524,7 @@ items:
   source:
     id: GetGameInfo
     path: ''
-    startLine: 930
+    startLine: 938
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -523,7 +561,7 @@ items:
   source:
     id: CloseGameSession
     path: ''
-    startLine: 937
+    startLine: 945
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -1015,6 +1053,55 @@ references:
     name: RejectCreateGameSessionRequestResult
     nameWithType: RejectCreateGameSessionRequestResult
     fullName: RejectCreateGameSessionRequestResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest*
+  commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest
+  name: ApproveCreateGameSessionRequest
+  nameWithType: IWinPeakNetworkClient.ApproveCreateGameSessionRequest
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest
+- uid: System.Action{ApproveGameSessionRequestResult}
+  commentId: T:System.Action{ApproveGameSessionRequestResult}
+  parent: System
+  definition: System.Action`1
+  name: Action<ApproveGameSessionRequestResult>
+  nameWithType: Action<ApproveGameSessionRequestResult>
+  fullName: System.Action<ApproveGameSessionRequestResult>
+  nameWithType.vb: Action(Of ApproveGameSessionRequestResult)
+  fullName.vb: System.Action(Of ApproveGameSessionRequestResult)
+  name.vb: Action(Of ApproveGameSessionRequestResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ApproveGameSessionRequestResult
+    name: ApproveGameSessionRequestResult
+    nameWithType: ApproveGameSessionRequestResult
+    fullName: ApproveGameSessionRequestResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ApproveGameSessionRequestResult
+    name: ApproveGameSessionRequestResult
+    nameWithType: ApproveGameSessionRequestResult
+    fullName: ApproveGameSessionRequestResult
     isExternal: true
   - name: )
     nameWithType: )
