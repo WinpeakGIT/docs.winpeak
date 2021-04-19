@@ -31,7 +31,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 1193
+    startLine: 1204
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -82,6 +82,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CloseGameSession(System.Int64,System.Action{CloseGameSessionResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String,System.Int64,System.Action{PasswordRecoveryRequestResult})
   modifiers.csharp:
   - public
   - interface
@@ -102,7 +103,7 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 1198
+    startLine: 1209
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -127,7 +128,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 1203
+    startLine: 1214
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -152,7 +153,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 1210
+    startLine: 1221
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -183,7 +184,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 1215
+    startLine: 1226
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -207,7 +208,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 1221
+    startLine: 1232
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -235,7 +236,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 1227
+    startLine: 1238
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -263,7 +264,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 1232
+    startLine: 1243
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -293,7 +294,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 1240
+    startLine: 1251
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -327,7 +328,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 1246
+    startLine: 1257
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -355,7 +356,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 1252
+    startLine: 1263
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -383,7 +384,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 1258
+    startLine: 1269
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -411,7 +412,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 1263
+    startLine: 1274
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -438,7 +439,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 1268
+    startLine: 1279
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -462,7 +463,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 1274
+    startLine: 1285
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -490,7 +491,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 1279
+    startLine: 1290
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -514,7 +515,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 1284
+    startLine: 1295
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -2836,6 +2837,102 @@ references:
     name: CloseGameSessionResult
     nameWithType: CloseGameSessionResult
     fullName: CloseGameSessionResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String,System.Int64,System.Action{PasswordRecoveryRequestResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String,System.Int64,System.Action{PasswordRecoveryRequestResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: PasswordRecovery(String, Int64, Action<PasswordRecoveryRequestResult>)
+  nameWithType: IWinPeakNetworkClient.PasswordRecovery(String, Int64, Action<PasswordRecoveryRequestResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String, System.Int64, System.Action<PasswordRecoveryRequestResult>)
+  nameWithType.vb: IWinPeakNetworkClient.PasswordRecovery(String, Int64, Action(Of PasswordRecoveryRequestResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String, System.Int64, System.Action(Of PasswordRecoveryRequestResult))
+  name.vb: PasswordRecovery(String, Int64, Action(Of PasswordRecoveryRequestResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String,System.Int64,System.Action{PasswordRecoveryRequestResult})
+    name: PasswordRecovery
+    nameWithType: IWinPeakNetworkClient.PasswordRecovery
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PasswordRecoveryRequestResult
+    name: PasswordRecoveryRequestResult
+    nameWithType: PasswordRecoveryRequestResult
+    fullName: PasswordRecoveryRequestResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String,System.Int64,System.Action{PasswordRecoveryRequestResult})
+    name: PasswordRecovery
+    nameWithType: IWinPeakNetworkClient.PasswordRecovery
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PasswordRecoveryRequestResult
+    name: PasswordRecoveryRequestResult
+    nameWithType: PasswordRecoveryRequestResult
+    fullName: PasswordRecoveryRequestResult
     isExternal: true
   - name: )
     nameWithType: )
