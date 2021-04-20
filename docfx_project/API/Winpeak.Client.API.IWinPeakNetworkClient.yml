@@ -13,6 +13,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest(System.Int64,System.Action{CreateGameSessionRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Action{EditProfileResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest(System.Int32,System.Action{GetActiveGameSessionsRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
@@ -618,6 +619,40 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.PasswordRecovery(String, Int64, Action(Of PasswordRecoveryRequestResult))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String, System.Int64, System.Action(Of PasswordRecoveryRequestResult))
   name.vb: PasswordRecovery(String, Int64, Action(Of PasswordRecoveryRequestResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest(System.Int32,System.Action{GetActiveGameSessionsRequestResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest(System.Int32,System.Action{GetActiveGameSessionsRequestResult})
+  id: GetActiveGameSessionsRequest(System.Int32,System.Action{GetActiveGameSessionsRequestResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  langs:
+  - csharp
+  - vb
+  name: GetActiveGameSessionsRequest(Int32, Action<GetActiveGameSessionsRequestResult>)
+  nameWithType: IWinPeakNetworkClient.GetActiveGameSessionsRequest(Int32, Action<GetActiveGameSessionsRequestResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest(System.Int32, System.Action<GetActiveGameSessionsRequestResult>)
+  type: Method
+  source:
+    id: GetActiveGameSessionsRequest
+    path: ''
+    startLine: 959
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nGet user active game sessions\n"
+  example: []
+  syntax:
+    content: void GetActiveGameSessionsRequest(int gameId, Action<GetActiveGameSessionsRequestResult> callback)
+    parameters:
+    - id: gameId
+      type: System.Int32
+      description: ''
+    - id: callback
+      type: System.Action{GetActiveGameSessionsRequestResult}
+      description: ''
+    content.vb: Sub GetActiveGameSessionsRequest(gameId As Integer, callback As Action(Of GetActiveGameSessionsRequestResult))
+  overload: Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest*
+  nameWithType.vb: IWinPeakNetworkClient.GetActiveGameSessionsRequest(Int32, Action(Of GetActiveGameSessionsRequestResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest(System.Int32, System.Action(Of GetActiveGameSessionsRequestResult))
+  name.vb: GetActiveGameSessionsRequest(Int32, Action(Of GetActiveGameSessionsRequestResult))
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -1335,6 +1370,55 @@ references:
     name: PasswordRecoveryRequestResult
     nameWithType: PasswordRecoveryRequestResult
     fullName: PasswordRecoveryRequestResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest*
+  commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest
+  name: GetActiveGameSessionsRequest
+  nameWithType: IWinPeakNetworkClient.GetActiveGameSessionsRequest
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest
+- uid: System.Action{GetActiveGameSessionsRequestResult}
+  commentId: T:System.Action{GetActiveGameSessionsRequestResult}
+  parent: System
+  definition: System.Action`1
+  name: Action<GetActiveGameSessionsRequestResult>
+  nameWithType: Action<GetActiveGameSessionsRequestResult>
+  fullName: System.Action<GetActiveGameSessionsRequestResult>
+  nameWithType.vb: Action(Of GetActiveGameSessionsRequestResult)
+  fullName.vb: System.Action(Of GetActiveGameSessionsRequestResult)
+  name.vb: Action(Of GetActiveGameSessionsRequestResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GetActiveGameSessionsRequestResult
+    name: GetActiveGameSessionsRequestResult
+    nameWithType: GetActiveGameSessionsRequestResult
+    fullName: GetActiveGameSessionsRequestResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GetActiveGameSessionsRequestResult
+    name: GetActiveGameSessionsRequestResult
+    nameWithType: GetActiveGameSessionsRequestResult
+    fullName: GetActiveGameSessionsRequestResult
     isExternal: true
   - name: )
     nameWithType: )
