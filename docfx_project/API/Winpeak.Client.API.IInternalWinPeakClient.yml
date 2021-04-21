@@ -31,7 +31,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 1215
+    startLine: 1225
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -84,6 +84,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.CloseGameSession(System.Int64,System.Action{CloseGameSessionResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String,System.Int64,System.Action{PasswordRecoveryRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest(System.Int32,System.Action{GetActiveGameSessionsRequestResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
   modifiers.csharp:
   - public
   - interface
@@ -104,7 +105,7 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 1220
+    startLine: 1230
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -129,7 +130,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 1225
+    startLine: 1235
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -154,7 +155,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 1232
+    startLine: 1242
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -185,7 +186,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 1237
+    startLine: 1247
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -209,7 +210,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 1243
+    startLine: 1253
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -237,7 +238,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 1249
+    startLine: 1259
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -265,7 +266,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 1254
+    startLine: 1264
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -295,7 +296,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 1262
+    startLine: 1272
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -329,7 +330,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 1268
+    startLine: 1278
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -357,7 +358,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 1274
+    startLine: 1284
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -385,7 +386,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 1280
+    startLine: 1290
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -413,7 +414,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 1285
+    startLine: 1295
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -440,7 +441,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 1290
+    startLine: 1300
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -464,7 +465,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 1296
+    startLine: 1306
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -492,7 +493,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 1301
+    startLine: 1311
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -516,7 +517,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 1306
+    startLine: 1316
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -3014,6 +3015,86 @@ references:
     name: GetActiveGameSessionsRequestResult
     nameWithType: GetActiveGameSessionsRequestResult
     fullName: GetActiveGameSessionsRequestResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: RemoveFriend(Int64, Action<RemoveFriendResult>)
+  nameWithType: IWinPeakNetworkClient.RemoveFriend(Int64, Action<RemoveFriendResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64, System.Action<RemoveFriendResult>)
+  nameWithType.vb: IWinPeakNetworkClient.RemoveFriend(Int64, Action(Of RemoveFriendResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64, System.Action(Of RemoveFriendResult))
+  name.vb: RemoveFriend(Int64, Action(Of RemoveFriendResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
+    name: RemoveFriend
+    nameWithType: IWinPeakNetworkClient.RemoveFriend
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RemoveFriendResult
+    name: RemoveFriendResult
+    nameWithType: RemoveFriendResult
+    fullName: RemoveFriendResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
+    name: RemoveFriend
+    nameWithType: IWinPeakNetworkClient.RemoveFriend
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RemoveFriendResult
+    name: RemoveFriendResult
+    nameWithType: RemoveFriendResult
+    fullName: RemoveFriendResult
     isExternal: true
   - name: )
     nameWithType: )

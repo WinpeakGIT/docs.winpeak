@@ -20,6 +20,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String,System.Int64,System.Action{PasswordRecoveryRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.RejectCreateGameSessionRequest(System.Int64,System.Int64,System.Action{RejectCreateGameSessionRequestResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})
   langs:
   - csharp
@@ -653,6 +654,39 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.GetActiveGameSessionsRequest(Int32, Action(Of GetActiveGameSessionsRequestResult))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest(System.Int32, System.Action(Of GetActiveGameSessionsRequestResult))
   name.vb: GetActiveGameSessionsRequest(Int32, Action(Of GetActiveGameSessionsRequestResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
+  id: RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  langs:
+  - csharp
+  - vb
+  name: RemoveFriend(Int64, Action<RemoveFriendResult>)
+  nameWithType: IWinPeakNetworkClient.RemoveFriend(Int64, Action<RemoveFriendResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64, System.Action<RemoveFriendResult>)
+  type: Method
+  source:
+    id: RemoveFriend
+    path: ''
+    startLine: 965
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nRemove user by user Id. Returns result of action true - succeeded, false - failed\n"
+  example: []
+  syntax:
+    content: void RemoveFriend(long userId, Action<RemoveFriendResult> callback)
+    parameters:
+    - id: userId
+      type: System.Int64
+      description: ''
+    - id: callback
+      type: System.Action{RemoveFriendResult}
+    content.vb: Sub RemoveFriend(userId As Long, callback As Action(Of RemoveFriendResult))
+  overload: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend*
+  nameWithType.vb: IWinPeakNetworkClient.RemoveFriend(Int64, Action(Of RemoveFriendResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64, System.Action(Of RemoveFriendResult))
+  name.vb: RemoveFriend(Int64, Action(Of RemoveFriendResult))
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -1419,6 +1453,55 @@ references:
     name: GetActiveGameSessionsRequestResult
     nameWithType: GetActiveGameSessionsRequestResult
     fullName: GetActiveGameSessionsRequestResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend*
+  commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend
+  name: RemoveFriend
+  nameWithType: IWinPeakNetworkClient.RemoveFriend
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend
+- uid: System.Action{RemoveFriendResult}
+  commentId: T:System.Action{RemoveFriendResult}
+  parent: System
+  definition: System.Action`1
+  name: Action<RemoveFriendResult>
+  nameWithType: Action<RemoveFriendResult>
+  fullName: System.Action<RemoveFriendResult>
+  nameWithType.vb: Action(Of RemoveFriendResult)
+  fullName.vb: System.Action(Of RemoveFriendResult)
+  name.vb: Action(Of RemoveFriendResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RemoveFriendResult
+    name: RemoveFriendResult
+    nameWithType: RemoveFriendResult
+    fullName: RemoveFriendResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RemoveFriendResult
+    name: RemoveFriendResult
+    nameWithType: RemoveFriendResult
+    fullName: RemoveFriendResult
     isExternal: true
   - name: )
     nameWithType: )
