@@ -62,10 +62,10 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public string GameLogin
+    content: public long GameLogin
     return:
-      type: System.String
-    content.vb: Public GameLogin As String
+      type: System.Int64
+    content.vb: Public GameLogin As Long
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -422,6 +422,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System.String
   commentId: T:System.String
   parent: System

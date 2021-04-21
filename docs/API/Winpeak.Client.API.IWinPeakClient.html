@@ -194,13 +194,13 @@
   
   
   <a id="Winpeak_Client_API_IWinPeakClient_Auth_" data-uid="Winpeak.Client.API.IWinPeakClient.Auth*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakClient_Auth_System_Action_" data-uid="Winpeak.Client.API.IWinPeakClient.Auth(System.Action)">Auth(Action)</h4>
-  <div class="markdown level1 summary"><p>Authentication user in the system</p>
+  <h4 id="Winpeak_Client_API_IWinPeakClient_Auth_System_Int64_System_String_System_Action_" data-uid="Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)">Auth(Int64, String, Action)</h4>
+  <div class="markdown level1 summary"><p>Authentication user with userId and password</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Auth(Action callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void Auth(long userId, string password, Action callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -212,6 +212,16 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">callback</span></td>

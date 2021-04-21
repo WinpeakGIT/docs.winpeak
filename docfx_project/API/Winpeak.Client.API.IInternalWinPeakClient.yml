@@ -55,7 +55,7 @@ items:
   - Winpeak.Client.API.IWinPeakClient.IsActiveNetwork
   - Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)
   - Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.String,System.Action)
-  - Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
+  - Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)
   - Winpeak.Client.API.IWinPeakClient.Die(System.Action)
   - Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
   - Winpeak.Client.API.IWinPeakClient.Utilize
@@ -722,21 +722,37 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
-  commentId: M:Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
+- uid: Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)
   parent: Winpeak.Client.API.IWinPeakClient
   isExternal: true
-  name: Auth(Action)
-  nameWithType: IWinPeakClient.Auth(Action)
-  fullName: Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
+  name: Auth(Int64, String, Action)
+  nameWithType: IWinPeakClient.Auth(Int64, String, Action)
+  fullName: Winpeak.Client.API.IWinPeakClient.Auth(System.Int64, System.String, System.Action)
   spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
+  - uid: Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)
     name: Auth
     nameWithType: IWinPeakClient.Auth
     fullName: Winpeak.Client.API.IWinPeakClient.Auth
   - name: (
     nameWithType: (
     fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.Action
     name: Action
     nameWithType: Action
@@ -746,13 +762,29 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
+  - uid: Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)
     name: Auth
     nameWithType: IWinPeakClient.Auth
     fullName: Winpeak.Client.API.IWinPeakClient.Auth
   - name: (
     nameWithType: (
     fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.Action
     name: Action
     nameWithType: Action

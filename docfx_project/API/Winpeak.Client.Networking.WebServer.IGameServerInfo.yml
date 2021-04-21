@@ -50,11 +50,11 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: string GetLogin { get; }
+    content: long GetLogin { get; }
     parameters: []
     return:
-      type: System.String
-    content.vb: ReadOnly Property GetLogin As String
+      type: System.Int64
+    content.vb: ReadOnly Property GetLogin As Long
   overload: Winpeak.Client.Networking.WebServer.IGameServerInfo.GetLogin*
   modifiers.csharp:
   - get
@@ -129,13 +129,13 @@ references:
   name: GetLogin
   nameWithType: IGameServerInfo.GetLogin
   fullName: Winpeak.Client.Networking.WebServer.IGameServerInfo.GetLogin
-- uid: System.String
-  commentId: T:System.String
+- uid: System.Int64
+  commentId: T:System.Int64
   parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System
   commentId: N:System
   isExternal: true
@@ -147,6 +147,13 @@ references:
   name: GetPassword
   nameWithType: IGameServerInfo.GetPassword
   fullName: Winpeak.Client.Networking.WebServer.IGameServerInfo.GetPassword
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Winpeak.Client.Networking.WebServer.IGameServerInfo.GetGameNetwork*
   commentId: Overload:Winpeak.Client.Networking.WebServer.IGameServerInfo.GetGameNetwork
   name: GetGameNetwork

@@ -5,7 +5,7 @@ items:
   id: IWinPeakClient
   parent: Winpeak.Client.API
   children:
-  - Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
+  - Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)
   - Winpeak.Client.API.IWinPeakClient.BlockInGameInput(System.Boolean)
   - Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.String,System.Action)
   - Winpeak.Client.API.IWinPeakClient.Die(System.Action)
@@ -445,16 +445,16 @@ items:
       type: System.Action
     content.vb: Sub Connect(server As String, port As String, callback As Action)
   overload: Winpeak.Client.API.IWinPeakClient.Connect*
-- uid: Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
-  commentId: M:Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
-  id: Auth(System.Action)
+- uid: Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)
+  id: Auth(System.Int64,System.String,System.Action)
   parent: Winpeak.Client.API.IWinPeakClient
   langs:
   - csharp
   - vb
-  name: Auth(Action)
-  nameWithType: IWinPeakClient.Auth(Action)
-  fullName: Winpeak.Client.API.IWinPeakClient.Auth(System.Action)
+  name: Auth(Int64, String, Action)
+  nameWithType: IWinPeakClient.Auth(Int64, String, Action)
+  fullName: Winpeak.Client.API.IWinPeakClient.Auth(System.Int64, System.String, System.Action)
   type: Method
   source:
     id: Auth
@@ -463,14 +463,18 @@ items:
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nAuthentication user in the system\n"
+  summary: "\nAuthentication user with userId and password\n"
   example: []
   syntax:
-    content: void Auth(Action callback)
+    content: void Auth(long userId, string password, Action callback)
     parameters:
+    - id: userId
+      type: System.Int64
+    - id: password
+      type: System.String
     - id: callback
       type: System.Action
-    content.vb: Sub Auth(callback As Action)
+    content.vb: Sub Auth(userId As Long, password As String, callback As Action)
   overload: Winpeak.Client.API.IWinPeakClient.Auth*
 - uid: Winpeak.Client.API.IWinPeakClient.Die(System.Action)
   commentId: M:Winpeak.Client.API.IWinPeakClient.Die(System.Action)
@@ -3086,6 +3090,13 @@ references:
   name: Auth
   nameWithType: IWinPeakClient.Auth
   fullName: Winpeak.Client.API.IWinPeakClient.Auth
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: Winpeak.Client.API.IWinPeakClient.Die*
   commentId: Overload:Winpeak.Client.API.IWinPeakClient.Die
   name: Die
@@ -3096,13 +3107,6 @@ references:
   name: Move
   nameWithType: IWinPeakClient.Move
   fullName: Winpeak.Client.API.IWinPeakClient.Move
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
-  isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64
 - uid: System.Single
   commentId: T:System.Single
   parent: System
