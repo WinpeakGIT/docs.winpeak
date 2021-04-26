@@ -6,7 +6,7 @@ items:
   parent: Winpeak.Client.API
   children:
   - Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest(System.Int64,System.Int64,System.Action{ApproveGameSessionRequestResult})
-  - Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Int64,System.Action{AuthorizationResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CheckAuthorization(System.Action{System.Boolean})
   - Winpeak.Client.API.IWinPeakNetworkClient.CloseGameSession(System.Int64,System.Action{CloseGameSessionResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
@@ -75,16 +75,16 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.CheckAuthorization(Action(Of Boolean))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.CheckAuthorization(System.Action(Of System.Boolean))
   name.vb: CheckAuthorization(Action(Of Boolean))
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
-  id: Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Int64,System.Action{AuthorizationResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Int64,System.Action{AuthorizationResult})
+  id: Authenticate(System.String,System.String,System.Boolean,System.Int64,System.Action{AuthorizationResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   langs:
   - csharp
   - vb
-  name: Authenticate(String, String, Boolean, Action<AuthorizationResult>)
-  nameWithType: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Action<AuthorizationResult>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Action<AuthorizationResult>)
+  name: Authenticate(String, String, Boolean, Int64, Action<AuthorizationResult>)
+  nameWithType: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Int64, Action<AuthorizationResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Int64, System.Action<AuthorizationResult>)
   type: Method
   source:
     id: Authenticate
@@ -96,7 +96,7 @@ items:
   summary: "\nAuthenticate user in the system\n"
   example: []
   syntax:
-    content: void Authenticate(string login, string password, bool rememberMe, Action<AuthorizationResult> callback)
+    content: void Authenticate(string login, string password, bool rememberMe, long partnerId, Action<AuthorizationResult> callback)
     parameters:
     - id: login
       type: System.String
@@ -107,14 +107,16 @@ items:
     - id: rememberMe
       type: System.Boolean
       description: ''
+    - id: partnerId
+      type: System.Int64
     - id: callback
       type: System.Action{AuthorizationResult}
       description: ''
-    content.vb: Sub Authenticate(login As String, password As String, rememberMe As Boolean, callback As Action(Of AuthorizationResult))
+    content.vb: Sub Authenticate(login As String, password As String, rememberMe As Boolean, partnerId As Long, callback As Action(Of AuthorizationResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate*
-  nameWithType.vb: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Action(Of AuthorizationResult))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Action(Of AuthorizationResult))
-  name.vb: Authenticate(String, String, Boolean, Action(Of AuthorizationResult))
+  nameWithType.vb: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Int64, Action(Of AuthorizationResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String, System.String, System.Boolean, System.Int64, System.Action(Of AuthorizationResult))
+  name.vb: Authenticate(String, String, Boolean, Int64, Action(Of AuthorizationResult))
 - uid: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
   commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
   id: EditProfile(System.String,System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
@@ -806,6 +808,13 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: System.Action{AuthorizationResult}
   commentId: T:System.Action{AuthorizationResult}
   parent: System
@@ -911,13 +920,6 @@ references:
   name: Register
   nameWithType: IWinPeakNetworkClient.Register
   fullName: Winpeak.Client.API.IWinPeakNetworkClient.Register
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
-  isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64
 - uid: System.Action{RegistrationResult}
   commentId: T:System.Action{RegistrationResult}
   parent: System

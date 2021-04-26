@@ -124,13 +124,13 @@
   
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_Authenticate_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Authenticate*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_Authenticate_System_String_System_String_System_Boolean_System_Action_AuthorizationResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Action{AuthorizationResult})">Authenticate(String, String, Boolean, Action&lt;AuthorizationResult&gt;)</h4>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_Authenticate_System_String_System_String_System_Boolean_System_Int64_System_Action_AuthorizationResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Int64,System.Action{AuthorizationResult})">Authenticate(String, String, Boolean, Int64, Action&lt;AuthorizationResult&gt;)</h4>
   <div class="markdown level1 summary"><p>Authenticate user in the system</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Authenticate(string login, string password, bool rememberMe, Action&lt;AuthorizationResult&gt; callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void Authenticate(string login, string password, bool rememberMe, long partnerId, Action&lt;AuthorizationResult&gt; callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,6 +155,11 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">rememberMe</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">partnerId</span></td>
         <td></td>
       </tr>
       <tr>
