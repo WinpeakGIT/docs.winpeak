@@ -631,6 +631,55 @@ items:
   nameWithType.vb: IWinPeakClient.RequestServers(Action(Of List(Of String)))
   fullName.vb: Winpeak.Client.API.IWinPeakClient.RequestServers(System.Action(Of System.Collections.Generic.List(Of System.String)))
   name.vb: RequestServers(Action(Of List(Of String)))
+- uid: Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
+  id: OnGamePlayersListLoaded
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: OnGamePlayersListLoaded
+  nameWithType: IWinPeakClient.OnGamePlayersListLoaded
+  fullName: Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
+  type: Event
+  source:
+    id: OnGamePlayersListLoaded
+    path: ''
+    startLine: 169948
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nGet active game session players list\n"
+  example: []
+  syntax:
+    content: event Action<GamePlayer[]> OnGamePlayersListLoaded
+    return:
+      type: System.Action{GamePlayer[]}
+    content.vb: Event OnGamePlayersListLoaded As Action(Of GamePlayer())
+- uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+  commentId: M:Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+  id: GetGamePlayersList
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: GetGamePlayersList()
+  nameWithType: IWinPeakClient.GetGamePlayersList()
+  fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList()
+  type: Method
+  source:
+    id: GetGamePlayersList
+    path: ''
+    startLine: 169953
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nGet active game session players info\n"
+  example: []
+  syntax:
+    content: void GetGamePlayersList()
+    content.vb: Sub GetGamePlayersList
+  overload: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList*
 - uid: Winpeak.Client.API.IWinPeakClient.DrawLines
   commentId: M:Winpeak.Client.API.IWinPeakClient.DrawLines
   id: DrawLines
@@ -645,7 +694,7 @@ items:
   source:
     id: DrawLines
     path: ''
-    startLine: 169948
+    startLine: 169958
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -669,7 +718,7 @@ items:
   source:
     id: DrawSingleLine
     path: ''
-    startLine: 169954
+    startLine: 169964
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -693,7 +742,7 @@ items:
   source:
     id: DrawPoint
     path: ''
-    startLine: 169959
+    startLine: 169969
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -717,7 +766,7 @@ items:
   source:
     id: OnDrawPoint
     path: ''
-    startLine: 169962
+    startLine: 169972
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -740,7 +789,7 @@ items:
   source:
     id: OnDrawLine
     path: ''
-    startLine: 169963
+    startLine: 169973
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -763,7 +812,7 @@ items:
   source:
     id: InvokeDrawPoint
     path: ''
-    startLine: 169964
+    startLine: 169974
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -794,7 +843,7 @@ items:
   source:
     id: InvokeDrawLine
     path: ''
-    startLine: 169965
+    startLine: 169975
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -815,55 +864,6 @@ items:
       type: System.Int64
     content.vb: Sub InvokeDrawLine(x1 As Single, y1 As Single, x2 As Single, y2 As Single, width As Single, time As Long)
   overload: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine*
-- uid: Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
-  commentId: E:Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
-  id: OnGamePlayersListLoaded
-  parent: Winpeak.Client.API.IWinPeakClient
-  langs:
-  - csharp
-  - vb
-  name: OnGamePlayersListLoaded
-  nameWithType: IWinPeakClient.OnGamePlayersListLoaded
-  fullName: Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
-  type: Event
-  source:
-    id: OnGamePlayersListLoaded
-    path: ''
-    startLine: 169970
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.API
-  summary: "\n\n"
-  example: []
-  syntax:
-    content: event Action<AtariGameUser[]> OnGamePlayersListLoaded
-    return:
-      type: System.Action{AtariGameUser[]}
-    content.vb: Event OnGamePlayersListLoaded As Action(Of AtariGameUser())
-- uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
-  commentId: M:Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
-  id: GetGamePlayersList
-  parent: Winpeak.Client.API.IWinPeakClient
-  langs:
-  - csharp
-  - vb
-  name: GetGamePlayersList()
-  nameWithType: IWinPeakClient.GetGamePlayersList()
-  fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList()
-  type: Method
-  source:
-    id: GetGamePlayersList
-    path: ''
-    startLine: 169974
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.API
-  summary: "\n\n"
-  example: []
-  syntax:
-    content: void GetGamePlayersList()
-    content.vb: Sub GetGamePlayersList
-  overload: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList*
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -3262,6 +3262,61 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Action{GamePlayer[]}
+  commentId: T:System.Action{GamePlayer[]}
+  parent: System
+  definition: System.Action`1
+  name: Action<GamePlayer[]>
+  nameWithType: Action<GamePlayer[]>
+  fullName: System.Action<GamePlayer[]>
+  nameWithType.vb: Action(Of GamePlayer())
+  fullName.vb: System.Action(Of GamePlayer())
+  name.vb: Action(Of GamePlayer())
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GamePlayer
+    name: GamePlayer
+    nameWithType: GamePlayer
+    fullName: GamePlayer
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GamePlayer
+    name: GamePlayer
+    nameWithType: GamePlayer
+    fullName: GamePlayer
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+  name: GetGamePlayersList
+  nameWithType: IWinPeakClient.GetGamePlayersList
+  fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
 - uid: Winpeak.Client.API.IWinPeakClient.DrawLines*
   commentId: Overload:Winpeak.Client.API.IWinPeakClient.DrawLines
   name: DrawLines
@@ -3677,58 +3732,3 @@ references:
   name: InvokeDrawLine
   nameWithType: IWinPeakClient.InvokeDrawLine
   fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine
-- uid: System.Action{AtariGameUser[]}
-  commentId: T:System.Action{AtariGameUser[]}
-  parent: System
-  definition: System.Action`1
-  name: Action<AtariGameUser[]>
-  nameWithType: Action<AtariGameUser[]>
-  fullName: System.Action<AtariGameUser[]>
-  nameWithType.vb: Action(Of AtariGameUser())
-  fullName.vb: System.Action(Of AtariGameUser())
-  name.vb: Action(Of AtariGameUser())
-  spec.csharp:
-  - uid: System.Action`1
-    name: Action
-    nameWithType: Action
-    fullName: System.Action
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: AtariGameUser
-    name: AtariGameUser
-    nameWithType: AtariGameUser
-    fullName: AtariGameUser
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Action`1
-    name: Action
-    nameWithType: Action
-    fullName: System.Action
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: AtariGameUser
-    name: AtariGameUser
-    nameWithType: AtariGameUser
-    fullName: AtariGameUser
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList*
-  commentId: Overload:Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
-  name: GetGamePlayersList
-  nameWithType: IWinPeakClient.GetGamePlayersList
-  fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList

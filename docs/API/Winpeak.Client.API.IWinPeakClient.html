@@ -360,7 +360,8 @@
   
   <a id="Winpeak_Client_API_IWinPeakClient_GetGamePlayersList_" data-uid="Winpeak.Client.API.IWinPeakClient.GetGamePlayersList*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakClient_GetGamePlayersList" data-uid="Winpeak.Client.API.IWinPeakClient.GetGamePlayersList">GetGamePlayersList()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get active game session players info</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -714,11 +715,12 @@
   
   
   <h4 id="Winpeak_Client_API_IWinPeakClient_OnGamePlayersListLoaded" data-uid="Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded">OnGamePlayersListLoaded</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get active game session players list</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event Action&lt;AtariGameUser[]&gt; OnGamePlayersListLoaded</code></pre>
+    <pre><code class="lang-csharp hljs">event Action&lt;GamePlayer[]&gt; OnGamePlayersListLoaded</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -730,7 +732,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">AtariGameUser</span>[]&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">GamePlayer</span>[]&gt;</td>
         <td></td>
       </tr>
     </tbody>

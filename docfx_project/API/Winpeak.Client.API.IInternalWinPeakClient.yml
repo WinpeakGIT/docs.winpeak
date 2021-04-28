@@ -14,7 +14,7 @@ items:
   - Winpeak.Client.API.IInternalWinPeakClient.HandlePacket(System.Int64)
   - Winpeak.Client.API.IInternalWinPeakClient.InitStartGameCountdown(System.Int32)
   - Winpeak.Client.API.IInternalWinPeakClient.InvokeGameObjectsReady(System.Collections.Generic.List{WinPeakRigidbody})
-  - Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList(AtariGameUser[])
+  - Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList(GamePlayer[])
   - Winpeak.Client.API.IInternalWinPeakClient.OccurConnectionProblem
   - Winpeak.Client.API.IInternalWinPeakClient.OnAnyPacketReceived
   - Winpeak.Client.API.IInternalWinPeakClient.OnBlockInGameInput
@@ -62,6 +62,8 @@ items:
   - Winpeak.Client.API.IWinPeakClient.Utilize
   - Winpeak.Client.API.IWinPeakClient.BlockInGameInput(System.Boolean)
   - Winpeak.Client.API.IWinPeakClient.RequestServers(System.Action{System.Collections.Generic.List{System.String}})
+  - Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
+  - Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
   - Winpeak.Client.API.IWinPeakClient.DrawLines
   - Winpeak.Client.API.IWinPeakClient.DrawSingleLine
   - Winpeak.Client.API.IWinPeakClient.DrawPoint
@@ -69,8 +71,6 @@ items:
   - Winpeak.Client.API.IWinPeakClient.OnDrawLine
   - Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
   - Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64)
-  - Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
-  - Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
   - Winpeak.Client.API.IWinPeakNetworkClient.CheckAuthorization(System.Action{System.Boolean})
   - Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Int64,System.Action{AuthorizationResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
@@ -537,16 +537,16 @@ items:
   - get
   modifiers.vb:
   - ReadOnly
-- uid: Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList(AtariGameUser[])
-  commentId: M:Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList(AtariGameUser[])
-  id: InvokeGamePlayersList(AtariGameUser[])
+- uid: Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList(GamePlayer[])
+  commentId: M:Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList(GamePlayer[])
+  id: InvokeGamePlayersList(GamePlayer[])
   parent: Winpeak.Client.API.IInternalWinPeakClient
   langs:
   - csharp
   - vb
-  name: InvokeGamePlayersList(AtariGameUser[])
-  nameWithType: IInternalWinPeakClient.InvokeGamePlayersList(AtariGameUser[])
-  fullName: Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList(AtariGameUser[])
+  name: InvokeGamePlayersList(GamePlayer[])
+  nameWithType: IInternalWinPeakClient.InvokeGamePlayersList(GamePlayer[])
+  fullName: Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList(GamePlayer[])
   type: Method
   source:
     id: InvokeGamePlayersList
@@ -558,16 +558,16 @@ items:
   summary: "\n\n"
   example: []
   syntax:
-    content: void InvokeGamePlayersList(AtariGameUser[] users)
+    content: void InvokeGamePlayersList(GamePlayer[] users)
     parameters:
     - id: users
-      type: AtariGameUser[]
+      type: GamePlayer[]
       description: ''
-    content.vb: Sub InvokeGamePlayersList(users As AtariGameUser())
+    content.vb: Sub InvokeGamePlayersList(users As GamePlayer())
   overload: Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList*
-  nameWithType.vb: IInternalWinPeakClient.InvokeGamePlayersList(AtariGameUser())
-  fullName.vb: Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList(AtariGameUser())
-  name.vb: InvokeGamePlayersList(AtariGameUser())
+  nameWithType.vb: IInternalWinPeakClient.InvokeGamePlayersList(GamePlayer())
+  fullName.vb: Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList(GamePlayer())
+  name.vb: InvokeGamePlayersList(GamePlayer())
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -1138,6 +1138,40 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
+  parent: Winpeak.Client.API.IWinPeakClient
+  name: OnGamePlayersListLoaded
+  nameWithType: IWinPeakClient.OnGamePlayersListLoaded
+  fullName: Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
+- uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+  commentId: M:Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+  parent: Winpeak.Client.API.IWinPeakClient
+  name: GetGamePlayersList()
+  nameWithType: IWinPeakClient.GetGamePlayersList()
+  fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList()
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+    name: GetGamePlayersList
+    nameWithType: IWinPeakClient.GetGamePlayersList
+    fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+    name: GetGamePlayersList
+    nameWithType: IWinPeakClient.GetGamePlayersList
+    fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Winpeak.Client.API.IWinPeakClient.DrawLines
   commentId: M:Winpeak.Client.API.IWinPeakClient.DrawLines
   parent: Winpeak.Client.API.IWinPeakClient
@@ -1437,40 +1471,6 @@ references:
     nameWithType: Int64
     fullName: System.Int64
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
-  commentId: E:Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
-  parent: Winpeak.Client.API.IWinPeakClient
-  name: OnGamePlayersListLoaded
-  nameWithType: IWinPeakClient.OnGamePlayersListLoaded
-  fullName: Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
-- uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
-  commentId: M:Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
-  parent: Winpeak.Client.API.IWinPeakClient
-  name: GetGamePlayersList()
-  nameWithType: IWinPeakClient.GetGamePlayersList()
-  fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList()
-  spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
-    name: GetGamePlayersList
-    nameWithType: IWinPeakClient.GetGamePlayersList
-    fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
-    name: GetGamePlayersList
-    nameWithType: IWinPeakClient.GetGamePlayersList
-    fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
-  - name: (
-    nameWithType: (
-    fullName: (
   - name: )
     nameWithType: )
     fullName: )
@@ -3695,28 +3695,28 @@ references:
   name: InvokeGamePlayersList
   nameWithType: IInternalWinPeakClient.InvokeGamePlayersList
   fullName: Winpeak.Client.API.IInternalWinPeakClient.InvokeGamePlayersList
-- uid: AtariGameUser[]
+- uid: GamePlayer[]
   isExternal: true
-  name: AtariGameUser[]
-  nameWithType: AtariGameUser[]
-  fullName: AtariGameUser[]
-  nameWithType.vb: AtariGameUser()
-  fullName.vb: AtariGameUser()
-  name.vb: AtariGameUser()
+  name: GamePlayer[]
+  nameWithType: GamePlayer[]
+  fullName: GamePlayer[]
+  nameWithType.vb: GamePlayer()
+  fullName.vb: GamePlayer()
+  name.vb: GamePlayer()
   spec.csharp:
-  - uid: AtariGameUser
-    name: AtariGameUser
-    nameWithType: AtariGameUser
-    fullName: AtariGameUser
+  - uid: GamePlayer
+    name: GamePlayer
+    nameWithType: GamePlayer
+    fullName: GamePlayer
     isExternal: true
   - name: '[]'
     nameWithType: '[]'
     fullName: '[]'
   spec.vb:
-  - uid: AtariGameUser
-    name: AtariGameUser
-    nameWithType: AtariGameUser
-    fullName: AtariGameUser
+  - uid: GamePlayer
+    name: GamePlayer
+    nameWithType: GamePlayer
+    fullName: GamePlayer
     isExternal: true
   - name: ()
     nameWithType: ()
