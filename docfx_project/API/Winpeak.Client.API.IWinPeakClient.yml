@@ -12,6 +12,7 @@ items:
   - Winpeak.Client.API.IWinPeakClient.DrawLines
   - Winpeak.Client.API.IWinPeakClient.DrawPoint
   - Winpeak.Client.API.IWinPeakClient.DrawSingleLine
+  - Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
   - Winpeak.Client.API.IWinPeakClient.InvokeDrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Int64)
   - Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
   - Winpeak.Client.API.IWinPeakClient.IsActiveNetwork
@@ -22,6 +23,7 @@ items:
   - Winpeak.Client.API.IWinPeakClient.OnDrawPoint
   - Winpeak.Client.API.IWinPeakClient.OnGameObjectsReady
   - Winpeak.Client.API.IWinPeakClient.OnGameOver
+  - Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
   - Winpeak.Client.API.IWinPeakClient.OnGameStateChanged
   - Winpeak.Client.API.IWinPeakClient.OnOccurConnectionProblem
   - Winpeak.Client.API.IWinPeakClient.OnPingUpdated
@@ -42,7 +44,7 @@ items:
   source:
     id: IWinPeakClient
     path: ''
-    startLine: 169781
+    startLine: 169835
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -89,7 +91,7 @@ items:
   source:
     id: OnClientDisconnected
     path: ''
-    startLine: 169786
+    startLine: 169840
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -114,7 +116,7 @@ items:
   source:
     id: OnRoundScoreUpdated
     path: ''
-    startLine: 169791
+    startLine: 169845
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -139,7 +141,7 @@ items:
   source:
     id: OnGameOver
     path: ''
-    startLine: 169796
+    startLine: 169850
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -164,7 +166,7 @@ items:
   source:
     id: OnStartGameCountdown
     path: ''
-    startLine: 169801
+    startLine: 169855
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -189,7 +191,7 @@ items:
   source:
     id: OnUserInfoUpdated
     path: ''
-    startLine: 169806
+    startLine: 169860
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -214,7 +216,7 @@ items:
   source:
     id: OnGameObjectsReady
     path: ''
-    startLine: 169811
+    startLine: 169865
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -239,7 +241,7 @@ items:
   source:
     id: OnOccurConnectionProblem
     path: ''
-    startLine: 169816
+    startLine: 169870
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -264,7 +266,7 @@ items:
   source:
     id: OnPingUpdated
     path: ''
-    startLine: 169821
+    startLine: 169875
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -289,7 +291,7 @@ items:
   source:
     id: OnPlayWallHitSound
     path: ''
-    startLine: 169826
+    startLine: 169880
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -314,7 +316,7 @@ items:
   source:
     id: OnGameStateChanged
     path: ''
-    startLine: 169831
+    startLine: 169885
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -339,7 +341,7 @@ items:
   source:
     id: IsConnected
     path: ''
-    startLine: 169836
+    startLine: 169890
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -370,7 +372,7 @@ items:
   source:
     id: IsActiveNetwork
     path: ''
-    startLine: 169841
+    startLine: 169895
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -401,7 +403,7 @@ items:
   source:
     id: SubscribeRigidbody
     path: ''
-    startLine: 169846
+    startLine: 169900
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -428,7 +430,7 @@ items:
   source:
     id: Connect
     path: ''
-    startLine: 169851
+    startLine: 169905
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -459,7 +461,7 @@ items:
   source:
     id: Auth
     path: ''
-    startLine: 169856
+    startLine: 169910
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -490,7 +492,7 @@ items:
   source:
     id: Die
     path: ''
-    startLine: 169861
+    startLine: 169915
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -517,7 +519,7 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 169872
+    startLine: 169926
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -560,7 +562,7 @@ items:
   source:
     id: Utilize
     path: ''
-    startLine: 169877
+    startLine: 169931
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -584,7 +586,7 @@ items:
   source:
     id: BlockInGameInput
     path: ''
-    startLine: 169883
+    startLine: 169937
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -612,7 +614,7 @@ items:
   source:
     id: RequestServers
     path: ''
-    startLine: 169889
+    startLine: 169943
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -643,7 +645,7 @@ items:
   source:
     id: DrawLines
     path: ''
-    startLine: 169894
+    startLine: 169948
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -667,7 +669,7 @@ items:
   source:
     id: DrawSingleLine
     path: ''
-    startLine: 169900
+    startLine: 169954
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -691,7 +693,7 @@ items:
   source:
     id: DrawPoint
     path: ''
-    startLine: 169905
+    startLine: 169959
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -715,7 +717,7 @@ items:
   source:
     id: OnDrawPoint
     path: ''
-    startLine: 169908
+    startLine: 169962
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -738,7 +740,7 @@ items:
   source:
     id: OnDrawLine
     path: ''
-    startLine: 169909
+    startLine: 169963
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -761,7 +763,7 @@ items:
   source:
     id: InvokeDrawPoint
     path: ''
-    startLine: 169910
+    startLine: 169964
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -792,7 +794,7 @@ items:
   source:
     id: InvokeDrawLine
     path: ''
-    startLine: 169911
+    startLine: 169965
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -813,6 +815,55 @@ items:
       type: System.Int64
     content.vb: Sub InvokeDrawLine(x1 As Single, y1 As Single, x2 As Single, y2 As Single, width As Single, time As Long)
   overload: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine*
+- uid: Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
+  id: OnGamePlayersListLoaded
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: OnGamePlayersListLoaded
+  nameWithType: IWinPeakClient.OnGamePlayersListLoaded
+  fullName: Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
+  type: Event
+  source:
+    id: OnGamePlayersListLoaded
+    path: ''
+    startLine: 169970
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: event Action<AtariGameUser[]> OnGamePlayersListLoaded
+    return:
+      type: System.Action{AtariGameUser[]}
+    content.vb: Event OnGamePlayersListLoaded As Action(Of AtariGameUser())
+- uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+  commentId: M:Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+  id: GetGamePlayersList
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: GetGamePlayersList()
+  nameWithType: IWinPeakClient.GetGamePlayersList()
+  fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList()
+  type: Method
+  source:
+    id: GetGamePlayersList
+    path: ''
+    startLine: 169974
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: void GetGamePlayersList()
+    content.vb: Sub GetGamePlayersList
+  overload: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList*
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -3626,3 +3677,58 @@ references:
   name: InvokeDrawLine
   nameWithType: IWinPeakClient.InvokeDrawLine
   fullName: Winpeak.Client.API.IWinPeakClient.InvokeDrawLine
+- uid: System.Action{AtariGameUser[]}
+  commentId: T:System.Action{AtariGameUser[]}
+  parent: System
+  definition: System.Action`1
+  name: Action<AtariGameUser[]>
+  nameWithType: Action<AtariGameUser[]>
+  fullName: System.Action<AtariGameUser[]>
+  nameWithType.vb: Action(Of AtariGameUser())
+  fullName.vb: System.Action(Of AtariGameUser())
+  name.vb: Action(Of AtariGameUser())
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: AtariGameUser
+    name: AtariGameUser
+    nameWithType: AtariGameUser
+    fullName: AtariGameUser
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: AtariGameUser
+    name: AtariGameUser
+    nameWithType: AtariGameUser
+    fullName: AtariGameUser
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
+  name: GetGamePlayersList
+  nameWithType: IWinPeakClient.GetGamePlayersList
+  fullName: Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
