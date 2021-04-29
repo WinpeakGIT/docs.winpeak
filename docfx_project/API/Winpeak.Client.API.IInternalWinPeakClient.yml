@@ -32,7 +32,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 169743
+    startLine: 169795
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -88,6 +88,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String,System.Int64,System.Action{PasswordRecoveryRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest(System.Int32,System.Action{GetActiveGameSessionsRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
   modifiers.csharp:
   - public
   - interface
@@ -108,7 +109,7 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 169748
+    startLine: 169800
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -133,7 +134,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 169753
+    startLine: 169805
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -158,7 +159,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 169760
+    startLine: 169812
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -189,7 +190,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 169765
+    startLine: 169817
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -213,7 +214,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 169771
+    startLine: 169823
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -241,7 +242,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 169777
+    startLine: 169829
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -269,7 +270,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 169782
+    startLine: 169834
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -299,7 +300,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 169790
+    startLine: 169842
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -333,7 +334,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 169796
+    startLine: 169848
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -361,7 +362,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 169802
+    startLine: 169854
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -389,7 +390,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 169808
+    startLine: 169860
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -417,7 +418,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 169813
+    startLine: 169865
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -444,7 +445,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 169818
+    startLine: 169870
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -468,7 +469,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 169824
+    startLine: 169876
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -496,7 +497,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 169829
+    startLine: 169881
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -520,7 +521,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 169834
+    startLine: 169886
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -551,7 +552,7 @@ items:
   source:
     id: InvokeGamePlayersList
     path: ''
-    startLine: 169840
+    startLine: 169892
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -3211,6 +3212,214 @@ references:
     name: RemoveFriendResult
     nameWithType: RemoveFriendResult
     fullName: RemoveFriendResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: SearchUser(Int64, Int32, Int32, String, String, String, String, Int64, Boolean, Action<SearchUserResult>)
+  nameWithType: IWinPeakNetworkClient.SearchUser(Int64, Int32, Int32, String, String, String, String, Int64, Boolean, Action<SearchUserResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64, System.Int32, System.Int32, System.String, System.String, System.String, System.String, System.Int64, System.Boolean, System.Action<SearchUserResult>)
+  nameWithType.vb: IWinPeakNetworkClient.SearchUser(Int64, Int32, Int32, String, String, String, String, Int64, Boolean, Action(Of SearchUserResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64, System.Int32, System.Int32, System.String, System.String, System.String, System.String, System.Int64, System.Boolean, System.Action(Of SearchUserResult))
+  name.vb: SearchUser(Int64, Int32, Int32, String, String, String, String, Int64, Boolean, Action(Of SearchUserResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
+    name: SearchUser
+    nameWithType: IWinPeakNetworkClient.SearchUser
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SearchUserResult
+    name: SearchUserResult
+    nameWithType: SearchUserResult
+    fullName: SearchUserResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
+    name: SearchUser
+    nameWithType: IWinPeakNetworkClient.SearchUser
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SearchUserResult
+    name: SearchUserResult
+    nameWithType: SearchUserResult
+    fullName: SearchUserResult
     isExternal: true
   - name: )
     nameWithType: )

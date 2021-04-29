@@ -5,6 +5,7 @@ items:
   id: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.Account
+  - Winpeak.Client.Networking.WebServer.AccountUser
   - Winpeak.Client.Networking.WebServer.AddFriend
   - Winpeak.Client.Networking.WebServer.AddFriendResult
   - Winpeak.Client.Networking.WebServer.ApproveGameSessionRequest
@@ -38,12 +39,14 @@ items:
   - Winpeak.Client.Networking.WebServer.GetUserInfoResult
   - Winpeak.Client.Networking.WebServer.HTTPRequestFactory
   - Winpeak.Client.Networking.WebServer.IAccount
+  - Winpeak.Client.Networking.WebServer.IAccountUser
   - Winpeak.Client.Networking.WebServer.IGameInfo
   - Winpeak.Client.Networking.WebServer.IGameRequest
   - Winpeak.Client.Networking.WebServer.IGameServerInfo
   - Winpeak.Client.Networking.WebServer.IGameServerNetwork
   - Winpeak.Client.Networking.WebServer.IGameUser
   - Winpeak.Client.Networking.WebServer.InternalAccount
+  - Winpeak.Client.Networking.WebServer.InternalAccountUser
   - Winpeak.Client.Networking.WebServer.InternalGameInfo
   - Winpeak.Client.Networking.WebServer.InternalGameRequest
   - Winpeak.Client.Networking.WebServer.InternalGameServerInfo
@@ -126,6 +129,11 @@ references:
   name: GameRequest
   nameWithType: GameRequest
   fullName: Winpeak.Client.Networking.WebServer.GameRequest
+- uid: Winpeak.Client.Networking.WebServer.AccountUser
+  commentId: T:Winpeak.Client.Networking.WebServer.AccountUser
+  name: AccountUser
+  nameWithType: AccountUser
+  fullName: Winpeak.Client.Networking.WebServer.AccountUser
 - uid: Winpeak.Client.Networking.WebServer.Session
   commentId: T:Winpeak.Client.Networking.WebServer.Session
   name: Session
@@ -155,6 +163,12 @@ references:
   name: InternalGameInfo
   nameWithType: InternalGameInfo
   fullName: Winpeak.Client.Networking.WebServer.InternalGameInfo
+- uid: Winpeak.Client.Networking.WebServer.InternalAccountUser
+  commentId: T:Winpeak.Client.Networking.WebServer.InternalAccountUser
+  parent: Winpeak.Client.Networking.WebServer
+  name: InternalAccountUser
+  nameWithType: InternalAccountUser
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccountUser
 - uid: Winpeak.Client.Networking.WebServer.InternalAccount
   commentId: T:Winpeak.Client.Networking.WebServer.InternalAccount
   parent: Winpeak.Client.Networking.WebServer
@@ -479,6 +493,12 @@ references:
   name: IGameInfo
   nameWithType: IGameInfo
   fullName: Winpeak.Client.Networking.WebServer.IGameInfo
+- uid: Winpeak.Client.Networking.WebServer.IAccountUser
+  commentId: T:Winpeak.Client.Networking.WebServer.IAccountUser
+  parent: Winpeak.Client.Networking.WebServer
+  name: IAccountUser
+  nameWithType: IAccountUser
+  fullName: Winpeak.Client.Networking.WebServer.IAccountUser
 - uid: Winpeak.Client.Networking.WebServer.IAccount
   commentId: T:Winpeak.Client.Networking.WebServer.IAccount
   parent: Winpeak.Client.Networking.WebServer

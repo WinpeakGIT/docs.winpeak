@@ -6,6 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.SearchUserResult.HandleResponse(HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.SearchUserResult.SearchUserList
   langs:
   - csharp
   - vb
@@ -16,7 +17,7 @@ items:
   source:
     id: SearchUserResult
     path: ''
-    startLine: 168245
+    startLine: 168297
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -58,6 +59,37 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: Winpeak.Client.Networking.WebServer.SearchUserResult.SearchUserList
+  commentId: P:Winpeak.Client.Networking.WebServer.SearchUserResult.SearchUserList
+  id: SearchUserList
+  parent: Winpeak.Client.Networking.WebServer.SearchUserResult
+  langs:
+  - csharp
+  - vb
+  name: SearchUserList
+  nameWithType: SearchUserResult.SearchUserList
+  fullName: Winpeak.Client.Networking.WebServer.SearchUserResult.SearchUserList
+  type: Property
+  source:
+    id: SearchUserList
+    path: ''
+    startLine: 168306
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public List<AccountUser> SearchUserList { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.AccountUser}
+    content.vb: Public ReadOnly Property SearchUserList As List(Of AccountUser)
+  overload: Winpeak.Client.Networking.WebServer.SearchUserResult.SearchUserList*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Winpeak.Client.Networking.WebServer.SearchUserResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.SearchUserResult.HandleResponse(HTTPResponse)
   id: HandleResponse(HTTPResponse)
@@ -72,7 +104,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 168256
+    startLine: 168308
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -511,6 +543,98 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Winpeak.Client.Networking.WebServer.SearchUserResult.SearchUserList*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.SearchUserResult.SearchUserList
+  name: SearchUserList
+  nameWithType: SearchUserResult.SearchUserList
+  fullName: Winpeak.Client.Networking.WebServer.SearchUserResult.SearchUserList
+- uid: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.AccountUser}
+  commentId: T:System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.AccountUser}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<AccountUser>
+  nameWithType: List<AccountUser>
+  fullName: System.Collections.Generic.List<Winpeak.Client.Networking.WebServer.AccountUser>
+  nameWithType.vb: List(Of AccountUser)
+  fullName.vb: System.Collections.Generic.List(Of Winpeak.Client.Networking.WebServer.AccountUser)
+  name.vb: List(Of AccountUser)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Winpeak.Client.Networking.WebServer.AccountUser
+    name: AccountUser
+    nameWithType: AccountUser
+    fullName: Winpeak.Client.Networking.WebServer.AccountUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Winpeak.Client.Networking.WebServer.AccountUser
+    name: AccountUser
+    nameWithType: AccountUser
+    fullName: Winpeak.Client.Networking.WebServer.AccountUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   parent: Winpeak.Client.Networking.WebServer.WebResult
