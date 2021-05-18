@@ -32,7 +32,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 169755
+    startLine: 169864
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -90,6 +90,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.AddFriend(System.Int64,System.Action{AddFriendResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
   modifiers.csharp:
   - public
   - interface
@@ -110,7 +111,7 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 169760
+    startLine: 169869
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -135,7 +136,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 169765
+    startLine: 169874
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -160,7 +161,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 169772
+    startLine: 169881
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -191,7 +192,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 169777
+    startLine: 169886
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -215,7 +216,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 169783
+    startLine: 169892
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -243,7 +244,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 169789
+    startLine: 169898
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -271,7 +272,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 169794
+    startLine: 169903
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -301,7 +302,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 169802
+    startLine: 169911
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -335,7 +336,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 169808
+    startLine: 169917
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -363,7 +364,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 169814
+    startLine: 169923
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -391,7 +392,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 169820
+    startLine: 169929
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -419,7 +420,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 169825
+    startLine: 169934
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -446,7 +447,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 169830
+    startLine: 169939
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -470,7 +471,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 169836
+    startLine: 169945
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -498,7 +499,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 169841
+    startLine: 169950
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -522,7 +523,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 169846
+    startLine: 169955
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -553,7 +554,7 @@ items:
   source:
     id: InvokeGamePlayersList
     path: ''
-    startLine: 169852
+    startLine: 169961
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -3517,6 +3518,118 @@ references:
     name: AddFriendResult
     nameWithType: AddFriendResult
     fullName: AddFriendResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: GetLastTournaments(Int32, Int32, Int32, Action<GetLastTournamentsResult>)
+  nameWithType: IWinPeakNetworkClient.GetLastTournaments(Int32, Int32, Int32, Action<GetLastTournamentsResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32, System.Int32, System.Int32, System.Action<GetLastTournamentsResult>)
+  nameWithType.vb: IWinPeakNetworkClient.GetLastTournaments(Int32, Int32, Int32, Action(Of GetLastTournamentsResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32, System.Int32, System.Int32, System.Action(Of GetLastTournamentsResult))
+  name.vb: GetLastTournaments(Int32, Int32, Int32, Action(Of GetLastTournamentsResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
+    name: GetLastTournaments
+    nameWithType: IWinPeakNetworkClient.GetLastTournaments
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GetLastTournamentsResult
+    name: GetLastTournamentsResult
+    nameWithType: GetLastTournamentsResult
+    fullName: GetLastTournamentsResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
+    name: GetLastTournaments
+    nameWithType: IWinPeakNetworkClient.GetLastTournaments
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GetLastTournamentsResult
+    name: GetLastTournamentsResult
+    nameWithType: GetLastTournamentsResult
+    fullName: GetLastTournamentsResult
     isExternal: true
   - name: )
     nameWithType: )
