@@ -5,7 +5,7 @@ items:
   id: GetLastTournaments
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.GetLastTournaments.#ctor(System.Int32,System.Int64,System.Int32,System.Int32)
+  - Winpeak.Client.Networking.WebServer.GetLastTournaments.#ctor(System.Int32,System.Int64,System.Int32,System.Int32,System.Int32)
   - Winpeak.Client.Networking.WebServer.GetLastTournaments.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.GetLastTournaments.GenerateData
   langs:
@@ -57,36 +57,38 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.GetLastTournaments.#ctor(System.Int32,System.Int64,System.Int32,System.Int32)
-  commentId: M:Winpeak.Client.Networking.WebServer.GetLastTournaments.#ctor(System.Int32,System.Int64,System.Int32,System.Int32)
-  id: '#ctor(System.Int32,System.Int64,System.Int32,System.Int32)'
+- uid: Winpeak.Client.Networking.WebServer.GetLastTournaments.#ctor(System.Int32,System.Int64,System.Int32,System.Int32,System.Int32)
+  commentId: M:Winpeak.Client.Networking.WebServer.GetLastTournaments.#ctor(System.Int32,System.Int64,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int64,System.Int32,System.Int32,System.Int32)'
   parent: Winpeak.Client.Networking.WebServer.GetLastTournaments
   langs:
   - csharp
   - vb
-  name: GetLastTournaments(Int32, Int64, Int32, Int32)
-  nameWithType: GetLastTournaments.GetLastTournaments(Int32, Int64, Int32, Int32)
-  fullName: Winpeak.Client.Networking.WebServer.GetLastTournaments.GetLastTournaments(System.Int32, System.Int64, System.Int32, System.Int32)
+  name: GetLastTournaments(Int32, Int64, Int32, Int32, Int32)
+  nameWithType: GetLastTournaments.GetLastTournaments(Int32, Int64, Int32, Int32, Int32)
+  fullName: Winpeak.Client.Networking.WebServer.GetLastTournaments.GetLastTournaments(System.Int32, System.Int64, System.Int32, System.Int32, System.Int32)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 166691
+    startLine: 166692
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public GetLastTournaments(int gameId, long userId, int offset, int size)
+    content: public GetLastTournaments(int gameId, long userId, int win, int offset, int size)
     parameters:
     - id: gameId
       type: System.Int32
     - id: userId
       type: System.Int64
+    - id: win
+      type: System.Int32
     - id: offset
       type: System.Int32
     - id: size
       type: System.Int32
-    content.vb: Public Sub New(gameId As Integer, userId As Long, offset As Integer, size As Integer)
+    content.vb: Public Sub New(gameId As Integer, userId As Long, win As Integer, offset As Integer, size As Integer)
   overload: Winpeak.Client.Networking.WebServer.GetLastTournaments.#ctor*
   modifiers.csharp:
   - public
@@ -106,7 +108,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 166698
+    startLine: 166700
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -137,7 +139,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 166709
+    startLine: 166715
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
