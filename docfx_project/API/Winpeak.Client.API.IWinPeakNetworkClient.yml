@@ -16,7 +16,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest(System.Int32,System.Action{GetActiveGameSessionsRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})
-  - Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int64,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
   - Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String,System.Int64,System.Action{PasswordRecoveryRequestResult})
@@ -35,7 +35,7 @@ items:
   source:
     id: IWinPeakNetworkClient
     path: ''
-    startLine: 168581
+    startLine: 168583
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -62,7 +62,7 @@ items:
   source:
     id: CheckAuthorization
     path: ''
-    startLine: 168586
+    startLine: 168588
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -92,7 +92,7 @@ items:
   source:
     id: Authenticate
     path: ''
-    startLine: 168595
+    startLine: 168597
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -134,7 +134,7 @@ items:
   source:
     id: EditProfile
     path: ''
-    startLine: 168611
+    startLine: 168613
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -182,7 +182,7 @@ items:
   source:
     id: EditProfile
     path: ''
-    startLine: 168622
+    startLine: 168624
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -230,7 +230,7 @@ items:
   source:
     id: Register
     path: ''
-    startLine: 168629
+    startLine: 168631
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -264,7 +264,7 @@ items:
   source:
     id: GetUserInfo
     path: ''
-    startLine: 168638
+    startLine: 168640
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -304,7 +304,7 @@ items:
   source:
     id: Logout
     path: ''
-    startLine: 168644
+    startLine: 168646
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -335,7 +335,7 @@ items:
   source:
     id: SearchGame
     path: ''
-    startLine: 168656
+    startLine: 168658
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -384,7 +384,7 @@ items:
   source:
     id: CreateGameSessionRequest
     path: ''
-    startLine: 168663
+    startLine: 168665
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -418,7 +418,7 @@ items:
   source:
     id: RejectCreateGameSessionRequest
     path: ''
-    startLine: 168671
+    startLine: 168673
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -455,7 +455,7 @@ items:
   source:
     id: ApproveCreateGameSessionRequest
     path: ''
-    startLine: 168679
+    startLine: 168681
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -492,7 +492,7 @@ items:
   source:
     id: CreateGame
     path: ''
-    startLine: 168688
+    startLine: 168690
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -532,7 +532,7 @@ items:
   source:
     id: GetGameInfo
     path: ''
-    startLine: 168696
+    startLine: 168698
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -569,7 +569,7 @@ items:
   source:
     id: CloseGameSession
     path: ''
-    startLine: 168703
+    startLine: 168705
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -603,7 +603,7 @@ items:
   source:
     id: PasswordRecovery
     path: ''
-    startLine: 168710
+    startLine: 168712
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -639,7 +639,7 @@ items:
   source:
     id: GetActiveGameSessionsRequest
     path: ''
-    startLine: 168717
+    startLine: 168719
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -673,7 +673,7 @@ items:
   source:
     id: RemoveFriend
     path: ''
-    startLine: 168723
+    startLine: 168725
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -706,7 +706,7 @@ items:
   source:
     id: SearchUser
     path: ''
-    startLine: 168739
+    startLine: 168741
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -767,7 +767,7 @@ items:
   source:
     id: AddFriend
     path: ''
-    startLine: 168745
+    startLine: 168747
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -786,31 +786,34 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.AddFriend(Int64, Action(Of AddFriendResult))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.AddFriend(System.Int64, System.Action(Of AddFriendResult))
   name.vb: AddFriend(Int64, Action(Of AddFriendResult))
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
-  id: GetLastTournaments(System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int64,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int64,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
+  id: GetLastTournaments(System.Int32,System.Int64,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   langs:
   - csharp
   - vb
-  name: GetLastTournaments(Int32, Int32, Int32, Action<GetLastTournamentsResult>)
-  nameWithType: IWinPeakNetworkClient.GetLastTournaments(Int32, Int32, Int32, Action<GetLastTournamentsResult>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32, System.Int32, System.Int32, System.Action<GetLastTournamentsResult>)
+  name: GetLastTournaments(Int32, Int64, Int32, Int32, Action<GetLastTournamentsResult>)
+  nameWithType: IWinPeakNetworkClient.GetLastTournaments(Int32, Int64, Int32, Int32, Action<GetLastTournamentsResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32, System.Int64, System.Int32, System.Int32, System.Action<GetLastTournamentsResult>)
   type: Method
   source:
     id: GetLastTournaments
     path: ''
-    startLine: 168754
+    startLine: 168757
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   summary: "\nGet the last user tournaments where he participated\n"
   example: []
   syntax:
-    content: void GetLastTournaments(int gameId, int offset, int size, Action<GetLastTournamentsResult> callback)
+    content: void GetLastTournaments(int gameId, long userId, int offset, int size, Action<GetLastTournamentsResult> callback)
     parameters:
     - id: gameId
       type: System.Int32
+      description: ''
+    - id: userId
+      type: System.Int64
       description: ''
     - id: offset
       type: System.Int32
@@ -821,11 +824,11 @@ items:
     - id: callback
       type: System.Action{GetLastTournamentsResult}
       description: ''
-    content.vb: Sub GetLastTournaments(gameId As Integer, offset As Integer, size As Integer, callback As Action(Of GetLastTournamentsResult))
+    content.vb: Sub GetLastTournaments(gameId As Integer, userId As Long, offset As Integer, size As Integer, callback As Action(Of GetLastTournamentsResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments*
-  nameWithType.vb: IWinPeakNetworkClient.GetLastTournaments(Int32, Int32, Int32, Action(Of GetLastTournamentsResult))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32, System.Int32, System.Int32, System.Action(Of GetLastTournamentsResult))
-  name.vb: GetLastTournaments(Int32, Int32, Int32, Action(Of GetLastTournamentsResult))
+  nameWithType.vb: IWinPeakNetworkClient.GetLastTournaments(Int32, Int64, Int32, Int32, Action(Of GetLastTournamentsResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32, System.Int64, System.Int32, System.Int32, System.Action(Of GetLastTournamentsResult))
+  name.vb: GetLastTournaments(Int32, Int64, Int32, Int32, Action(Of GetLastTournamentsResult))
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
