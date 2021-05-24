@@ -32,7 +32,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 168430
+    startLine: 168490
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -92,6 +92,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.AddFriend(System.Int64,System.Action{AddFriendResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames(System.Int32,System.Action{MoreGamesResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64,System.Int64,System.Int32,System.String,System.Action{ReportAbuseUserResult})
   modifiers.csharp:
   - public
   - interface
@@ -112,7 +113,7 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 168435
+    startLine: 168495
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -137,7 +138,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 168440
+    startLine: 168500
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -162,7 +163,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 168447
+    startLine: 168507
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -193,7 +194,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 168452
+    startLine: 168512
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -217,7 +218,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 168458
+    startLine: 168518
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -245,7 +246,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 168464
+    startLine: 168524
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -273,7 +274,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 168469
+    startLine: 168529
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -303,7 +304,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 168477
+    startLine: 168537
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -337,7 +338,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 168483
+    startLine: 168543
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -365,7 +366,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 168489
+    startLine: 168549
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -393,7 +394,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 168495
+    startLine: 168555
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -421,7 +422,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 168500
+    startLine: 168560
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -448,7 +449,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 168505
+    startLine: 168565
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -472,7 +473,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 168511
+    startLine: 168571
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -500,7 +501,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 168516
+    startLine: 168576
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -524,7 +525,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 168521
+    startLine: 168581
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -555,7 +556,7 @@ items:
   source:
     id: InvokeGamePlayersList
     path: ''
-    startLine: 168527
+    startLine: 168587
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -3743,6 +3744,134 @@ references:
     name: MoreGamesResult
     nameWithType: MoreGamesResult
     fullName: MoreGamesResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64,System.Int64,System.Int32,System.String,System.Action{ReportAbuseUserResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64,System.Int64,System.Int32,System.String,System.Action{ReportAbuseUserResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: ReportAbuseUser(Int64, Int64, Int32, String, Action<ReportAbuseUserResult>)
+  nameWithType: IWinPeakNetworkClient.ReportAbuseUser(Int64, Int64, Int32, String, Action<ReportAbuseUserResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64, System.Int64, System.Int32, System.String, System.Action<ReportAbuseUserResult>)
+  nameWithType.vb: IWinPeakNetworkClient.ReportAbuseUser(Int64, Int64, Int32, String, Action(Of ReportAbuseUserResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64, System.Int64, System.Int32, System.String, System.Action(Of ReportAbuseUserResult))
+  name.vb: ReportAbuseUser(Int64, Int64, Int32, String, Action(Of ReportAbuseUserResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64,System.Int64,System.Int32,System.String,System.Action{ReportAbuseUserResult})
+    name: ReportAbuseUser
+    nameWithType: IWinPeakNetworkClient.ReportAbuseUser
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ReportAbuseUserResult
+    name: ReportAbuseUserResult
+    nameWithType: ReportAbuseUserResult
+    fullName: ReportAbuseUserResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64,System.Int64,System.Int32,System.String,System.Action{ReportAbuseUserResult})
+    name: ReportAbuseUser
+    nameWithType: IWinPeakNetworkClient.ReportAbuseUser
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ReportAbuseUserResult
+    name: ReportAbuseUserResult
+    nameWithType: ReportAbuseUserResult
+    fullName: ReportAbuseUserResult
     isExternal: true
   - name: )
     nameWithType: )
