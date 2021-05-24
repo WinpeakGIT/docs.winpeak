@@ -17,6 +17,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest(System.Int32,System.Action{GetActiveGameSessionsRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames(System.Int32,System.Action{MoreGamesResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
   - Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String,System.Int64,System.Action{PasswordRecoveryRequestResult})
@@ -35,7 +36,7 @@ items:
   source:
     id: IWinPeakNetworkClient
     path: ''
-    startLine: 168589
+    startLine: 168663
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -62,7 +63,7 @@ items:
   source:
     id: CheckAuthorization
     path: ''
-    startLine: 168594
+    startLine: 168668
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -92,7 +93,7 @@ items:
   source:
     id: Authenticate
     path: ''
-    startLine: 168603
+    startLine: 168677
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -134,7 +135,7 @@ items:
   source:
     id: EditProfile
     path: ''
-    startLine: 168619
+    startLine: 168693
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -182,7 +183,7 @@ items:
   source:
     id: EditProfile
     path: ''
-    startLine: 168630
+    startLine: 168704
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -230,7 +231,7 @@ items:
   source:
     id: Register
     path: ''
-    startLine: 168637
+    startLine: 168711
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -264,7 +265,7 @@ items:
   source:
     id: GetUserInfo
     path: ''
-    startLine: 168646
+    startLine: 168720
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -304,7 +305,7 @@ items:
   source:
     id: Logout
     path: ''
-    startLine: 168652
+    startLine: 168726
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -335,7 +336,7 @@ items:
   source:
     id: SearchGame
     path: ''
-    startLine: 168664
+    startLine: 168738
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -384,7 +385,7 @@ items:
   source:
     id: CreateGameSessionRequest
     path: ''
-    startLine: 168671
+    startLine: 168745
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -418,7 +419,7 @@ items:
   source:
     id: RejectCreateGameSessionRequest
     path: ''
-    startLine: 168679
+    startLine: 168753
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -455,7 +456,7 @@ items:
   source:
     id: ApproveCreateGameSessionRequest
     path: ''
-    startLine: 168687
+    startLine: 168761
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -492,7 +493,7 @@ items:
   source:
     id: CreateGame
     path: ''
-    startLine: 168696
+    startLine: 168770
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -532,7 +533,7 @@ items:
   source:
     id: GetGameInfo
     path: ''
-    startLine: 168704
+    startLine: 168778
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -569,7 +570,7 @@ items:
   source:
     id: CloseGameSession
     path: ''
-    startLine: 168711
+    startLine: 168785
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -603,7 +604,7 @@ items:
   source:
     id: PasswordRecovery
     path: ''
-    startLine: 168718
+    startLine: 168792
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -639,7 +640,7 @@ items:
   source:
     id: GetActiveGameSessionsRequest
     path: ''
-    startLine: 168725
+    startLine: 168799
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -673,7 +674,7 @@ items:
   source:
     id: RemoveFriend
     path: ''
-    startLine: 168731
+    startLine: 168805
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -706,7 +707,7 @@ items:
   source:
     id: SearchUser
     path: ''
-    startLine: 168747
+    startLine: 168821
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -767,7 +768,7 @@ items:
   source:
     id: AddFriend
     path: ''
-    startLine: 168753
+    startLine: 168827
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -800,7 +801,7 @@ items:
   source:
     id: GetLastTournaments
     path: ''
-    startLine: 168763
+    startLine: 168837
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -831,6 +832,40 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.GetLastTournaments(Int32, Int64, Int32, Int32, Int32, Action(Of GetLastTournamentsResult))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32, System.Int64, System.Int32, System.Int32, System.Int32, System.Action(Of GetLastTournamentsResult))
   name.vb: GetLastTournaments(Int32, Int64, Int32, Int32, Int32, Action(Of GetLastTournamentsResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames(System.Int32,System.Action{MoreGamesResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames(System.Int32,System.Action{MoreGamesResult})
+  id: GetMoreGames(System.Int32,System.Action{MoreGamesResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  langs:
+  - csharp
+  - vb
+  name: GetMoreGames(Int32, Action<MoreGamesResult>)
+  nameWithType: IWinPeakNetworkClient.GetMoreGames(Int32, Action<MoreGamesResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames(System.Int32, System.Action<MoreGamesResult>)
+  type: Method
+  source:
+    id: GetMoreGames
+    path: ''
+    startLine: 168844
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nGet more games info\n"
+  example: []
+  syntax:
+    content: void GetMoreGames(int gameId, Action<MoreGamesResult> callback)
+    parameters:
+    - id: gameId
+      type: System.Int32
+      description: ''
+    - id: callback
+      type: System.Action{MoreGamesResult}
+      description: ''
+    content.vb: Sub GetMoreGames(gameId As Integer, callback As Action(Of MoreGamesResult))
+  overload: Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames*
+  nameWithType.vb: IWinPeakNetworkClient.GetMoreGames(Int32, Action(Of MoreGamesResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames(System.Int32, System.Action(Of MoreGamesResult))
+  name.vb: GetMoreGames(Int32, Action(Of MoreGamesResult))
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -1793,6 +1828,55 @@ references:
     name: GetLastTournamentsResult
     nameWithType: GetLastTournamentsResult
     fullName: GetLastTournamentsResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames*
+  commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames
+  name: GetMoreGames
+  nameWithType: IWinPeakNetworkClient.GetMoreGames
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames
+- uid: System.Action{MoreGamesResult}
+  commentId: T:System.Action{MoreGamesResult}
+  parent: System
+  definition: System.Action`1
+  name: Action<MoreGamesResult>
+  nameWithType: Action<MoreGamesResult>
+  fullName: System.Action<MoreGamesResult>
+  nameWithType.vb: Action(Of MoreGamesResult)
+  fullName.vb: System.Action(Of MoreGamesResult)
+  name.vb: Action(Of MoreGamesResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MoreGamesResult
+    name: MoreGamesResult
+    nameWithType: MoreGamesResult
+    fullName: MoreGamesResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MoreGamesResult
+    name: MoreGamesResult
+    nameWithType: MoreGamesResult
+    fullName: MoreGamesResult
     isExternal: true
   - name: )
     nameWithType: )
