@@ -1,30 +1,30 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.API.WinPeakAPI
-  commentId: T:Winpeak.Client.API.WinPeakAPI
-  id: WinPeakAPI
-  parent: Winpeak.Client.API
+- uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url
+  commentId: T:Winpeak.Client.Networking.WebServer.MoreGamesResult.Url
+  id: MoreGamesResult.Url
+  parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.API.WinPeakAPI.Client
+  - Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformId
+  - Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformName
+  - Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.Value
   langs:
   - csharp
   - vb
-  name: WinPeakAPI
-  nameWithType: WinPeakAPI
-  fullName: Winpeak.Client.API.WinPeakAPI
+  name: MoreGamesResult.Url
+  nameWithType: MoreGamesResult.Url
+  fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url
   type: Class
   source:
-    id: WinPeakAPI
+    id: Url
     path: ''
-    startLine: 168876
+    startLine: 167851
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.API
-  summary: "\nAccess point to WinPeak API\n"
-  example: []
+  namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public static class WinPeakAPI
-    content.vb: Public Module WinPeakAPI
+    content: public class Url
+    content.vb: Public Class Url
   inheritance:
   - System.Object
   inheritedMembers:
@@ -37,50 +37,109 @@ items:
   - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
-  - static
   - class
   modifiers.vb:
   - Public
-  - Module
-- uid: Winpeak.Client.API.WinPeakAPI.Client
-  commentId: P:Winpeak.Client.API.WinPeakAPI.Client
-  id: Client
-  parent: Winpeak.Client.API.WinPeakAPI
+  - Class
+- uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformId
+  commentId: P:Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformId
+  id: PlatformId
+  parent: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url
   langs:
   - csharp
   - vb
-  name: Client
-  nameWithType: WinPeakAPI.Client
-  fullName: Winpeak.Client.API.WinPeakAPI.Client
+  name: PlatformId
+  nameWithType: MoreGamesResult.Url.PlatformId
+  fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformId
   type: Property
   source:
-    id: Client
+    id: PlatformId
     path: ''
-    startLine: 168880
+    startLine: 167852
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.API
+  namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public static IWinPeakClient Client { get; }
+    content: public int PlatformId { get; set; }
     parameters: []
     return:
-      type: Winpeak.Client.API.IWinPeakClient
-    content.vb: Public Shared ReadOnly Property Client As IWinPeakClient
-  overload: Winpeak.Client.API.WinPeakAPI.Client*
+      type: System.Int32
+    content.vb: Public Property PlatformId As Integer
+  overload: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformId*
   modifiers.csharp:
   - public
-  - static
   - get
+  - set
   modifiers.vb:
   - Public
-  - Shared
-  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.Value
+  commentId: P:Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.Value
+  id: Value
+  parent: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: MoreGamesResult.Url.Value
+  fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.Value
+  type: Property
+  source:
+    id: Value
+    path: ''
+    startLine: 167853
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public string Value { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Value As String
+  overload: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.Value*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformName
+  commentId: P:Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformName
+  id: PlatformName
+  parent: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url
+  langs:
+  - csharp
+  - vb
+  name: PlatformName
+  nameWithType: MoreGamesResult.Url.PlatformName
+  fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformName
+  type: Property
+  source:
+    id: PlatformName
+    path: ''
+    startLine: 167854
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public string PlatformName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PlatformName As String
+  overload: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 references:
-- uid: Winpeak.Client.API
-  commentId: N:Winpeak.Client.API
-  name: Winpeak.Client.API
-  nameWithType: Winpeak.Client.API
-  fullName: Winpeak.Client.API
+- uid: Winpeak.Client.Networking.WebServer
+  commentId: N:Winpeak.Client.Networking.WebServer
+  name: Winpeak.Client.Networking.WebServer
+  nameWithType: Winpeak.Client.Networking.WebServer
+  fullName: Winpeak.Client.Networking.WebServer
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -373,14 +432,32 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.API.WinPeakAPI.Client*
-  commentId: Overload:Winpeak.Client.API.WinPeakAPI.Client
-  name: Client
-  nameWithType: WinPeakAPI.Client
-  fullName: Winpeak.Client.API.WinPeakAPI.Client
-- uid: Winpeak.Client.API.IWinPeakClient
-  commentId: T:Winpeak.Client.API.IWinPeakClient
-  parent: Winpeak.Client.API
-  name: IWinPeakClient
-  nameWithType: IWinPeakClient
-  fullName: Winpeak.Client.API.IWinPeakClient
+- uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformId*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformId
+  name: PlatformId
+  nameWithType: MoreGamesResult.Url.PlatformId
+  fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.Value*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.Value
+  name: Value
+  nameWithType: MoreGamesResult.Url.Value
+  fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.Value
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformName*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformName
+  name: PlatformName
+  nameWithType: MoreGamesResult.Url.PlatformName
+  fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url.PlatformName

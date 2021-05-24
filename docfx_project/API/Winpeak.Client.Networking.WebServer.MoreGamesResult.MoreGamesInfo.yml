@@ -12,6 +12,7 @@ items:
   - Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Id
   - Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Image
   - Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Name
+  - Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Urls
   langs:
   - csharp
   - vb
@@ -22,7 +23,7 @@ items:
   source:
     id: MoreGamesInfo
     path: ''
-    startLine: 167824
+    startLine: 167840
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -59,7 +60,7 @@ items:
   source:
     id: Id
     path: ''
-    startLine: 167825
+    startLine: 167841
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -90,7 +91,7 @@ items:
   source:
     id: Name
     path: ''
-    startLine: 167826
+    startLine: 167842
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -121,7 +122,7 @@ items:
   source:
     id: Description
     path: ''
-    startLine: 167827
+    startLine: 167843
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -152,7 +153,7 @@ items:
   source:
     id: CategoryId
     path: ''
-    startLine: 167828
+    startLine: 167844
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -183,7 +184,7 @@ items:
   source:
     id: CategoryName
     path: ''
-    startLine: 167829
+    startLine: 167845
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -214,7 +215,7 @@ items:
   source:
     id: AppScheme
     path: ''
-    startLine: 167830
+    startLine: 167846
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -245,7 +246,7 @@ items:
   source:
     id: Image
     path: ''
-    startLine: 167831
+    startLine: 167847
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -256,6 +257,37 @@ items:
       type: Winpeak.Client.Networking.WebServer.IAvatar
     content.vb: Public Property Image As IAvatar
   overload: Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Image*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Urls
+  commentId: P:Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Urls
+  id: Urls
+  parent: Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo
+  langs:
+  - csharp
+  - vb
+  name: Urls
+  nameWithType: MoreGamesResult.MoreGamesInfo.Urls
+  fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Urls
+  type: Property
+  source:
+    id: Urls
+    path: ''
+    startLine: 167848
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public List<MoreGamesResult.Url> Urls { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.MoreGamesResult.Url}
+    content.vb: Public Property Urls As List(Of MoreGamesResult.Url)
+  overload: Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Urls*
   modifiers.csharp:
   - public
   - get
@@ -615,3 +647,95 @@ references:
   name: IAvatar
   nameWithType: IAvatar
   fullName: Winpeak.Client.Networking.WebServer.IAvatar
+- uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Urls*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Urls
+  name: Urls
+  nameWithType: MoreGamesResult.MoreGamesInfo.Urls
+  fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesInfo.Urls
+- uid: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.MoreGamesResult.Url}
+  commentId: T:System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.MoreGamesResult.Url}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MoreGamesResult.Url>
+  nameWithType: List<MoreGamesResult.Url>
+  fullName: System.Collections.Generic.List<Winpeak.Client.Networking.WebServer.MoreGamesResult.Url>
+  nameWithType.vb: List(Of MoreGamesResult.Url)
+  fullName.vb: System.Collections.Generic.List(Of Winpeak.Client.Networking.WebServer.MoreGamesResult.Url)
+  name.vb: List(Of MoreGamesResult.Url)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url
+    name: MoreGamesResult.Url
+    nameWithType: MoreGamesResult.Url
+    fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url
+    name: MoreGamesResult.Url
+    nameWithType: MoreGamesResult.Url
+    fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.Url
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

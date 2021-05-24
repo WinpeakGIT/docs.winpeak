@@ -7,6 +7,7 @@ items:
   children:
   - Winpeak.Client.Networking.WebServer.MoreGamesResult.HandleResponse(HTTPResponse)
   - Winpeak.Client.Networking.WebServer.MoreGamesResult.MoreGamesList
+  - Winpeak.Client.Networking.WebServer.MoreGamesResult.TotalItems
   langs:
   - csharp
   - vb
@@ -90,6 +91,37 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.TotalItems
+  commentId: P:Winpeak.Client.Networking.WebServer.MoreGamesResult.TotalItems
+  id: TotalItems
+  parent: Winpeak.Client.Networking.WebServer.MoreGamesResult
+  langs:
+  - csharp
+  - vb
+  name: TotalItems
+  nameWithType: MoreGamesResult.TotalItems
+  fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.TotalItems
+  type: Property
+  source:
+    id: TotalItems
+    path: ''
+    startLine: 167803
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public long TotalItems { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property TotalItems As Long
+  overload: Winpeak.Client.Networking.WebServer.MoreGamesResult.TotalItems*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.MoreGamesResult.HandleResponse(HTTPResponse)
   id: HandleResponse(HTTPResponse)
@@ -104,7 +136,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 167804
+    startLine: 167805
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -635,6 +667,18 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
+- uid: Winpeak.Client.Networking.WebServer.MoreGamesResult.TotalItems*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.MoreGamesResult.TotalItems
+  name: TotalItems
+  nameWithType: MoreGamesResult.TotalItems
+  fullName: Winpeak.Client.Networking.WebServer.MoreGamesResult.TotalItems
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
 - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   parent: Winpeak.Client.Networking.WebServer.WebResult
