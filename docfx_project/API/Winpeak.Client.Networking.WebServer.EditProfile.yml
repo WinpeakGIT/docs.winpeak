@@ -6,7 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.String,System.Int32)
-  - Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)
+  - Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,Texture2D)
   - Winpeak.Client.Networking.WebServer.EditProfile.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.EditProfile.GenerateData
   langs:
@@ -19,7 +19,7 @@ items:
   source:
     id: EditProfile
     path: ''
-    startLine: 167029
+    startLine: 167030
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -39,12 +39,15 @@ items:
   - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.EditProfileResult}.Callback
   - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.EditProfileResult}.Send(System.Action{Winpeak.Client.Networking.WebServer.EditProfileResult})
   - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.EditProfileResult}.OnRequestFinished(HTTPRequest,HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.WebRequest.Mod
+  - Winpeak.Client.Networking.WebServer.WebRequest.Act
   - Winpeak.Client.Networking.WebServer.WebRequest.m_url
   - Winpeak.Client.Networking.WebServer.WebRequest.Send
-  - Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
   - Winpeak.Client.Networking.WebServer.WebRequest.Url
   - Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
   - Winpeak.Client.Networking.WebServer.WebRequest.Method
+  - Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+  - Winpeak.Client.Networking.WebServer.WebRequest.Texture
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -58,26 +61,26 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)
-  commentId: M:Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)
-  id: '#ctor(System.String,System.String,System.String,System.String,System.String,System.String)'
+- uid: Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,Texture2D)
+  commentId: M:Winpeak.Client.Networking.WebServer.EditProfile.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,Texture2D)
+  id: '#ctor(System.String,System.String,System.String,System.String,System.String,System.String,Texture2D)'
   parent: Winpeak.Client.Networking.WebServer.EditProfile
   langs:
   - csharp
   - vb
-  name: EditProfile(String, String, String, String, String, String)
-  nameWithType: EditProfile.EditProfile(String, String, String, String, String, String)
-  fullName: Winpeak.Client.Networking.WebServer.EditProfile.EditProfile(System.String, System.String, System.String, System.String, System.String, System.String)
+  name: EditProfile(String, String, String, String, String, String, Texture2D)
+  nameWithType: EditProfile.EditProfile(String, String, String, String, String, String, Texture2D)
+  fullName: Winpeak.Client.Networking.WebServer.EditProfile.EditProfile(System.String, System.String, System.String, System.String, System.String, System.String, Texture2D)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 167048
+    startLine: 167050
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public EditProfile(string email = "", string login = "", string phone = "", string password = "", string oldPassword = "", string rePassword = "")
+    content: public EditProfile(string email = "", string login = "", string phone = "", string password = "", string oldPassword = "", string rePassword = "", Texture2D texture2D = null)
     parameters:
     - id: email
       type: System.String
@@ -91,7 +94,9 @@ items:
       type: System.String
     - id: rePassword
       type: System.String
-    content.vb: Public Sub New(email As String = "", login As String = "", phone As String = "", password As String = "", oldPassword As String = "", rePassword As String = "")
+    - id: texture2D
+      type: Texture2D
+    content.vb: Public Sub New(email As String = "", login As String = "", phone As String = "", password As String = "", oldPassword As String = "", rePassword As String = "", texture2D As Texture2D = Nothing)
   overload: Winpeak.Client.Networking.WebServer.EditProfile.#ctor*
   modifiers.csharp:
   - public
@@ -111,7 +116,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 167071
+    startLine: 167078
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -150,7 +155,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 167090
+    startLine: 167097
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -181,7 +186,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 167096
+    startLine: 167103
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -394,6 +399,18 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Mod
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Mod
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: Mod
+  nameWithType: WebRequest.Mod
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Mod
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Act
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Act
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: Act
+  nameWithType: WebRequest.Act
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Act
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.m_url
   commentId: F:Winpeak.Client.Networking.WebServer.WebRequest.m_url
   parent: Winpeak.Client.Networking.WebServer.WebRequest
@@ -428,34 +445,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-  commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-  parent: Winpeak.Client.Networking.WebServer.WebRequest
-  name: CustomHeaders()
-  nameWithType: WebRequest.CustomHeaders()
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders()
-  spec.csharp:
-  - uid: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-    name: CustomHeaders
-    nameWithType: WebRequest.CustomHeaders
-    fullName: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-    name: CustomHeaders
-    nameWithType: WebRequest.CustomHeaders
-    fullName: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.Url
   commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Url
   parent: Winpeak.Client.Networking.WebServer.WebRequest
@@ -474,6 +463,18 @@ references:
   name: Method
   nameWithType: WebRequest.Method
   fullName: Winpeak.Client.Networking.WebServer.WebRequest.Method
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: HasTextureToSend
+  nameWithType: WebRequest.HasTextureToSend
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Texture
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Texture
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: Texture
+  nameWithType: WebRequest.Texture
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Texture
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -929,6 +930,11 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: Texture2D
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: Texture2D
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

@@ -6,13 +6,16 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.WebRequest.#ctor(System.String,System.String)
+  - Winpeak.Client.Networking.WebServer.WebRequest.Act
   - Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
-  - Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
   - Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
+  - Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
   - Winpeak.Client.Networking.WebServer.WebRequest.m_url
   - Winpeak.Client.Networking.WebServer.WebRequest.Method
+  - Winpeak.Client.Networking.WebServer.WebRequest.Mod
   - Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished(HTTPRequest,HTTPResponse)
   - Winpeak.Client.Networking.WebServer.WebRequest.Send
+  - Winpeak.Client.Networking.WebServer.WebRequest.Texture
   - Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
   - Winpeak.Client.Networking.WebServer.WebRequest.Url
   langs:
@@ -25,7 +28,7 @@ items:
   source:
     id: WebRequest
     path: ''
-    startLine: 167184
+    startLine: 167192
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -56,6 +59,99 @@ items:
   - Public
   - MustInherit
   - Class
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Mod
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Mod
+  id: Mod
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  langs:
+  - csharp
+  - vb
+  name: Mod
+  nameWithType: WebRequest.Mod
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Mod
+  type: Property
+  source:
+    id: Mod
+    path: ''
+    startLine: 167195
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public string Mod { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Mod As String
+  overload: Winpeak.Client.Networking.WebServer.WebRequest.Mod*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IWebRequest.Mod
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Act
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Act
+  id: Act
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  langs:
+  - csharp
+  - vb
+  name: Act
+  nameWithType: WebRequest.Act
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Act
+  type: Property
+  source:
+    id: Act
+    path: ''
+    startLine: 167196
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public string Act { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Act As String
+  overload: Winpeak.Client.Networking.WebServer.WebRequest.Act*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IWebRequest.Act
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.m_url
+  commentId: F:Winpeak.Client.Networking.WebServer.WebRequest.m_url
+  id: m_url
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  langs:
+  - csharp
+  - vb
+  name: m_url
+  nameWithType: WebRequest.m_url
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.m_url
+  type: Field
+  source:
+    id: m_url
+    path: ''
+    startLine: 167197
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: protected string m_url
+    return:
+      type: System.String
+    content.vb: Protected m_url As String
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   id: GenerateData
@@ -70,7 +166,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 167186
+    startLine: 167199
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -102,7 +198,7 @@ items:
   source:
     id: OnRequestFinished
     path: ''
-    startLine: 167198
+    startLine: 167211
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -123,33 +219,6 @@ items:
   modifiers.vb:
   - Public
   - MustOverride
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.m_url
-  commentId: F:Winpeak.Client.Networking.WebServer.WebRequest.m_url
-  id: m_url
-  parent: Winpeak.Client.Networking.WebServer.WebRequest
-  langs:
-  - csharp
-  - vb
-  name: m_url
-  nameWithType: WebRequest.m_url
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.m_url
-  type: Field
-  source:
-    id: m_url
-    path: ''
-    startLine: 167200
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: protected string m_url
-    return:
-      type: System.String
-    content.vb: Protected m_url As String
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.#ctor(System.String,System.String)
   commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.#ctor(System.String,System.String)
   id: '#ctor(System.String,System.String)'
@@ -164,7 +233,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 167204
+    startLine: 167213
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -195,7 +264,7 @@ items:
   source:
     id: Send
     path: ''
-    startLine: 167211
+    startLine: 167220
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -207,38 +276,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-  commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-  id: CustomHeaders
-  parent: Winpeak.Client.Networking.WebServer.WebRequest
-  langs:
-  - csharp
-  - vb
-  name: CustomHeaders()
-  nameWithType: WebRequest.CustomHeaders()
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders()
-  type: Method
-  source:
-    id: CustomHeaders
-    path: ''
-    startLine: 167215
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: public virtual Dictionary<string, string> CustomHeaders()
-    return:
-      type: System.Collections.Generic.Dictionary{System.String,System.String}
-    content.vb: Public Overridable Function CustomHeaders As Dictionary(Of String, String)
-  overload: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IWebRequest.CustomHeaders
-  modifiers.csharp:
-  - public
-  - virtual
-  modifiers.vb:
-  - Public
-  - Overridable
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.Url
   commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Url
   id: Url
@@ -253,25 +290,25 @@ items:
   source:
     id: Url
     path: ''
-    startLine: 167219
+    startLine: 167224
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public string Url { get; set; }
+    content: public string Url { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property Url As String
+    content.vb: Public ReadOnly Property Url As String
   overload: Winpeak.Client.Networking.WebServer.WebRequest.Url*
   implements:
   - Winpeak.Client.Networking.WebServer.IWebRequest.Url
   modifiers.csharp:
   - public
   - get
-  - set
   modifiers.vb:
   - Public
+  - ReadOnly
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
   commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
   id: TimeStamp
@@ -286,7 +323,7 @@ items:
   source:
     id: TimeStamp
     path: ''
-    startLine: 167224
+    startLine: 167226
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -317,7 +354,7 @@ items:
   source:
     id: Method
     path: ''
-    startLine: 167226
+    startLine: 167228
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -352,7 +389,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 167228
+    startLine: 167230
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -373,6 +410,74 @@ items:
   - Public
   - Overridable
   - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+  id: HasTextureToSend
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  langs:
+  - csharp
+  - vb
+  name: HasTextureToSend
+  nameWithType: WebRequest.HasTextureToSend
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+  type: Property
+  source:
+    id: HasTextureToSend
+    path: ''
+    startLine: 167232
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public bool HasTextureToSend { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasTextureToSend As Boolean
+  overload: Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IWebRequest.HasTextureToSend
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Texture
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Texture
+  id: Texture
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  langs:
+  - csharp
+  - vb
+  name: Texture
+  nameWithType: WebRequest.Texture
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Texture
+  type: Property
+  source:
+    id: Texture
+    path: ''
+    startLine: 167233
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public Texture2D Texture { get; protected set; }
+    parameters: []
+    return:
+      type: Texture2D
+    content.vb: Public Property Texture As Texture2D
+  overload: Winpeak.Client.Networking.WebServer.WebRequest.Texture*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IWebRequest.Texture
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
 references:
 - uid: Winpeak.Client.Networking.WebServer
   commentId: N:Winpeak.Client.Networking.WebServer
@@ -677,6 +782,35 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Mod*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.Mod
+  name: Mod
+  nameWithType: WebRequest.Mod
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Mod
+- uid: Winpeak.Client.Networking.WebServer.IWebRequest.Mod
+  commentId: P:Winpeak.Client.Networking.WebServer.IWebRequest.Mod
+  parent: Winpeak.Client.Networking.WebServer.IWebRequest
+  name: Mod
+  nameWithType: IWebRequest.Mod
+  fullName: Winpeak.Client.Networking.WebServer.IWebRequest.Mod
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Act*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.Act
+  name: Act
+  nameWithType: WebRequest.Act
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Act
+- uid: Winpeak.Client.Networking.WebServer.IWebRequest.Act
+  commentId: P:Winpeak.Client.Networking.WebServer.IWebRequest.Act
+  parent: Winpeak.Client.Networking.WebServer.IWebRequest
+  name: Act
+  nameWithType: IWebRequest.Act
+  fullName: Winpeak.Client.Networking.WebServer.IWebRequest.Act
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData*
   commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   name: GenerateData
@@ -897,13 +1031,6 @@ references:
   name: HTTPResponse
   nameWithType: HTTPResponse
   fullName: HTTPResponse
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.#ctor*
   commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.#ctor
   name: WebRequest
@@ -914,99 +1041,6 @@ references:
   name: Send
   nameWithType: WebRequest.Send
   fullName: Winpeak.Client.Networking.WebServer.WebRequest.Send
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-  name: CustomHeaders
-  nameWithType: WebRequest.CustomHeaders
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-- uid: Winpeak.Client.Networking.WebServer.IWebRequest.CustomHeaders
-  commentId: M:Winpeak.Client.Networking.WebServer.IWebRequest.CustomHeaders
-  parent: Winpeak.Client.Networking.WebServer.IWebRequest
-  name: CustomHeaders()
-  nameWithType: IWebRequest.CustomHeaders()
-  fullName: Winpeak.Client.Networking.WebServer.IWebRequest.CustomHeaders()
-  spec.csharp:
-  - uid: Winpeak.Client.Networking.WebServer.IWebRequest.CustomHeaders
-    name: CustomHeaders
-    nameWithType: IWebRequest.CustomHeaders
-    fullName: Winpeak.Client.Networking.WebServer.IWebRequest.CustomHeaders
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.Networking.WebServer.IWebRequest.CustomHeaders
-    name: CustomHeaders
-    nameWithType: IWebRequest.CustomHeaders
-    fullName: Winpeak.Client.Networking.WebServer.IWebRequest.CustomHeaders
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic.Dictionary{System.String,System.String}
-  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.Dictionary`2
-  name: Dictionary<String, String>
-  nameWithType: Dictionary<String, String>
-  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
-  nameWithType.vb: Dictionary(Of String, String)
-  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
-  name.vb: Dictionary(Of String, String)
-  spec.csharp:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.Url*
   commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.Url
   name: Url
@@ -1064,3 +1098,30 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+  name: HasTextureToSend
+  nameWithType: WebRequest.HasTextureToSend
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+- uid: Winpeak.Client.Networking.WebServer.IWebRequest.HasTextureToSend
+  commentId: P:Winpeak.Client.Networking.WebServer.IWebRequest.HasTextureToSend
+  parent: Winpeak.Client.Networking.WebServer.IWebRequest
+  name: HasTextureToSend
+  nameWithType: IWebRequest.HasTextureToSend
+  fullName: Winpeak.Client.Networking.WebServer.IWebRequest.HasTextureToSend
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Texture*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.WebRequest.Texture
+  name: Texture
+  nameWithType: WebRequest.Texture
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Texture
+- uid: Winpeak.Client.Networking.WebServer.IWebRequest.Texture
+  commentId: P:Winpeak.Client.Networking.WebServer.IWebRequest.Texture
+  parent: Winpeak.Client.Networking.WebServer.IWebRequest
+  name: Texture
+  nameWithType: IWebRequest.Texture
+  fullName: Winpeak.Client.Networking.WebServer.IWebRequest.Texture
+- uid: Texture2D
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: Texture2D

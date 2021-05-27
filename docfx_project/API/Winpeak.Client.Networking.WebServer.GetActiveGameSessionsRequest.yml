@@ -38,12 +38,15 @@ items:
   - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetActiveGameSessionsRequestResult}.Callback
   - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetActiveGameSessionsRequestResult}.Send(System.Action{Winpeak.Client.Networking.WebServer.GetActiveGameSessionsRequestResult})
   - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetActiveGameSessionsRequestResult}.OnRequestFinished(HTTPRequest,HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.WebRequest.Mod
+  - Winpeak.Client.Networking.WebServer.WebRequest.Act
   - Winpeak.Client.Networking.WebServer.WebRequest.m_url
   - Winpeak.Client.Networking.WebServer.WebRequest.Send
-  - Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
   - Winpeak.Client.Networking.WebServer.WebRequest.Url
   - Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
   - Winpeak.Client.Networking.WebServer.WebRequest.Method
+  - Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+  - Winpeak.Client.Networking.WebServer.WebRequest.Texture
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -344,6 +347,18 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Mod
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Mod
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: Mod
+  nameWithType: WebRequest.Mod
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Mod
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Act
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Act
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: Act
+  nameWithType: WebRequest.Act
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Act
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.m_url
   commentId: F:Winpeak.Client.Networking.WebServer.WebRequest.m_url
   parent: Winpeak.Client.Networking.WebServer.WebRequest
@@ -378,34 +393,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-  commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-  parent: Winpeak.Client.Networking.WebServer.WebRequest
-  name: CustomHeaders()
-  nameWithType: WebRequest.CustomHeaders()
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders()
-  spec.csharp:
-  - uid: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-    name: CustomHeaders
-    nameWithType: WebRequest.CustomHeaders
-    fullName: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-    name: CustomHeaders
-    nameWithType: WebRequest.CustomHeaders
-    fullName: Winpeak.Client.Networking.WebServer.WebRequest.CustomHeaders
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.Url
   commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Url
   parent: Winpeak.Client.Networking.WebServer.WebRequest
@@ -424,6 +411,18 @@ references:
   name: Method
   nameWithType: WebRequest.Method
   fullName: Winpeak.Client.Networking.WebServer.WebRequest.Method
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: HasTextureToSend
+  nameWithType: WebRequest.HasTextureToSend
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
+- uid: Winpeak.Client.Networking.WebServer.WebRequest.Texture
+  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.Texture
+  parent: Winpeak.Client.Networking.WebServer.WebRequest
+  name: Texture
+  nameWithType: WebRequest.Texture
+  fullName: Winpeak.Client.Networking.WebServer.WebRequest.Texture
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object

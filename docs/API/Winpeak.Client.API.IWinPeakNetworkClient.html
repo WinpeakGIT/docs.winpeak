@@ -400,13 +400,13 @@
   
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_EditProfile_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.EditProfile*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_EditProfile_System_String_System_String_System_String_System_String_System_String_System_String_System_Action_EditProfileResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.String,System.Action{EditProfileResult})">EditProfile(String, String, String, String, String, String, Action&lt;EditProfileResult&gt;)</h4>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_EditProfile_System_String_System_String_System_String_System_String_System_String_System_String_Texture2D_System_Action_EditProfileResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.EditProfile(System.String,System.String,System.String,System.String,System.String,System.String,Texture2D,System.Action{EditProfileResult})">EditProfile(String, String, String, String, String, String, Texture2D, Action&lt;EditProfileResult&gt;)</h4>
   <div class="markdown level1 summary"><p>Uses for profile edit form. Edit user profile in the system. Returns result of action true - succeeded, false - failed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EditProfile(string email, string login, string phone, string password, string oldPassword, string rePassword, Action&lt;EditProfileResult&gt; callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void EditProfile(string email, string login, string phone, string password, string oldPassword, string rePassword, Texture2D texture2D, Action&lt;EditProfileResult&gt; callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -446,6 +446,11 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rePassword</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Texture2D</span></td>
+        <td><span class="parametername">texture2D</span></td>
         <td></td>
       </tr>
       <tr>
