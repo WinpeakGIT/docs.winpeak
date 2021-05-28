@@ -5,10 +5,12 @@ items:
   id: InternalAccount
   parent: Winpeak.Client.Networking.WebServer
   children:
+  - Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
   - Winpeak.Client.Networking.WebServer.InternalAccount.Cash
   - Winpeak.Client.Networking.WebServer.InternalAccount.Email
   - Winpeak.Client.Networking.WebServer.InternalAccount.FirstName
   - Winpeak.Client.Networking.WebServer.InternalAccount.Id
+  - Winpeak.Client.Networking.WebServer.InternalAccount.InternalAdditionalInfo
   - Winpeak.Client.Networking.WebServer.InternalAccount.LastName
   - Winpeak.Client.Networking.WebServer.InternalAccount.Login
   - Winpeak.Client.Networking.WebServer.InternalAccount.Phone
@@ -27,7 +29,7 @@ items:
   source:
     id: InternalAccount
     path: ''
-    startLine: 166207
+    startLine: 166215
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -66,7 +68,7 @@ items:
   source:
     id: Id
     path: ''
-    startLine: 166210
+    startLine: 166218
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -93,7 +95,7 @@ items:
   source:
     id: Login
     path: ''
-    startLine: 166213
+    startLine: 166221
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -120,7 +122,7 @@ items:
   source:
     id: Email
     path: ''
-    startLine: 166217
+    startLine: 166225
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -147,7 +149,7 @@ items:
   source:
     id: FirstName
     path: ''
-    startLine: 166220
+    startLine: 166228
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -174,7 +176,7 @@ items:
   source:
     id: LastName
     path: ''
-    startLine: 166223
+    startLine: 166231
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -201,7 +203,7 @@ items:
   source:
     id: Visibility
     path: ''
-    startLine: 166226
+    startLine: 166234
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -228,7 +230,7 @@ items:
   source:
     id: Type
     path: ''
-    startLine: 166229
+    startLine: 166237
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -255,7 +257,7 @@ items:
   source:
     id: Phone
     path: ''
-    startLine: 166232
+    startLine: 166240
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -282,7 +284,7 @@ items:
   source:
     id: Sex
     path: ''
-    startLine: 166235
+    startLine: 166243
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -309,7 +311,7 @@ items:
   source:
     id: Cash
     path: ''
-    startLine: 166238
+    startLine: 166246
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -336,7 +338,7 @@ items:
   source:
     id: SoftCash
     path: ''
-    startLine: 166241
+    startLine: 166249
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -363,7 +365,7 @@ items:
   source:
     id: Rating
     path: ''
-    startLine: 166244
+    startLine: 166252
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -372,6 +374,60 @@ items:
     return:
       type: System.Int32
     content.vb: Public Rating As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
+  id: Avatar
+  parent: Winpeak.Client.Networking.WebServer.InternalAccount
+  langs:
+  - csharp
+  - vb
+  name: Avatar
+  nameWithType: InternalAccount.Avatar
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
+  type: Field
+  source:
+    id: Avatar
+    path: ''
+    startLine: 166255
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public Avatar Avatar
+    return:
+      type: Winpeak.Client.Networking.WebServer.Avatar
+    content.vb: Public Avatar As Avatar
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.WebServer.InternalAccount.InternalAdditionalInfo
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.InternalAdditionalInfo
+  id: InternalAdditionalInfo
+  parent: Winpeak.Client.Networking.WebServer.InternalAccount
+  langs:
+  - csharp
+  - vb
+  name: InternalAdditionalInfo
+  nameWithType: InternalAccount.InternalAdditionalInfo
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccount.InternalAdditionalInfo
+  type: Field
+  source:
+    id: InternalAdditionalInfo
+    path: ''
+    startLine: 166258
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public AdditionalInfo InternalAdditionalInfo
+    return:
+      type: Winpeak.Client.Networking.WebServer.AdditionalInfo
+    content.vb: Public InternalAdditionalInfo As AdditionalInfo
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -695,3 +751,15 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
+- uid: Winpeak.Client.Networking.WebServer.Avatar
+  commentId: T:Winpeak.Client.Networking.WebServer.Avatar
+  parent: Winpeak.Client.Networking.WebServer
+  name: Avatar
+  nameWithType: Avatar
+  fullName: Winpeak.Client.Networking.WebServer.Avatar
+- uid: Winpeak.Client.Networking.WebServer.AdditionalInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.AdditionalInfo
+  parent: Winpeak.Client.Networking.WebServer
+  name: AdditionalInfo
+  nameWithType: AdditionalInfo
+  fullName: Winpeak.Client.Networking.WebServer.AdditionalInfo

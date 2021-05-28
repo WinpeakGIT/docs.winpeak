@@ -5,6 +5,7 @@ items:
   id: Account
   parent: Winpeak.Client.Networking.WebServer
   children:
+  - Winpeak.Client.Networking.WebServer.Account.AdditionalInfo
   - Winpeak.Client.Networking.WebServer.Account.GetAvatar
   - Winpeak.Client.Networking.WebServer.Account.GetCash
   - Winpeak.Client.Networking.WebServer.Account.GetEmail
@@ -26,7 +27,7 @@ items:
   source:
     id: Account
     path: ''
-    startLine: 166069
+    startLine: 166071
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -54,6 +55,8 @@ items:
   - Winpeak.Client.Networking.WebServer.InternalAccount.Cash
   - Winpeak.Client.Networking.WebServer.InternalAccount.SoftCash
   - Winpeak.Client.Networking.WebServer.InternalAccount.Rating
+  - Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
+  - Winpeak.Client.Networking.WebServer.InternalAccount.InternalAdditionalInfo
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -81,7 +84,7 @@ items:
   source:
     id: GetId
     path: ''
-    startLine: 166071
+    startLine: 166073
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -114,7 +117,7 @@ items:
   source:
     id: GetLogin
     path: ''
-    startLine: 166073
+    startLine: 166075
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -147,7 +150,7 @@ items:
   source:
     id: GetEmail
     path: ''
-    startLine: 166075
+    startLine: 166077
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -180,7 +183,7 @@ items:
   source:
     id: GetFirstName
     path: ''
-    startLine: 166077
+    startLine: 166079
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -213,7 +216,7 @@ items:
   source:
     id: GetLastName
     path: ''
-    startLine: 166079
+    startLine: 166081
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -246,7 +249,7 @@ items:
   source:
     id: GetPhone
     path: ''
-    startLine: 166081
+    startLine: 166083
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -279,7 +282,7 @@ items:
   source:
     id: GetCash
     path: ''
-    startLine: 166083
+    startLine: 166085
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -312,7 +315,7 @@ items:
   source:
     id: GetSoftCash
     path: ''
-    startLine: 166085
+    startLine: 166087
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -345,7 +348,7 @@ items:
   source:
     id: GetRating
     path: ''
-    startLine: 166087
+    startLine: 166089
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -378,7 +381,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 166089
+    startLine: 166091
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -411,7 +414,7 @@ items:
   source:
     id: GetAvatar
     path: ''
-    startLine: 166091
+    startLine: 166093
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -424,6 +427,39 @@ items:
   overload: Winpeak.Client.Networking.WebServer.Account.GetAvatar*
   implements:
   - Winpeak.Client.Networking.WebServer.IAccount.GetAvatar
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.Account.AdditionalInfo
+  commentId: P:Winpeak.Client.Networking.WebServer.Account.AdditionalInfo
+  id: AdditionalInfo
+  parent: Winpeak.Client.Networking.WebServer.Account
+  langs:
+  - csharp
+  - vb
+  name: AdditionalInfo
+  nameWithType: Account.AdditionalInfo
+  fullName: Winpeak.Client.Networking.WebServer.Account.AdditionalInfo
+  type: Property
+  source:
+    id: AdditionalInfo
+    path: ''
+    startLine: 166095
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public IAdditionalInfo AdditionalInfo { get; }
+    parameters: []
+    return:
+      type: Winpeak.Client.Networking.WebServer.IAdditionalInfo
+    content.vb: Public ReadOnly Property AdditionalInfo As IAdditionalInfo
+  overload: Winpeak.Client.Networking.WebServer.Account.AdditionalInfo*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IAccount.AdditionalInfo
   modifiers.csharp:
   - public
   - get
@@ -527,6 +563,18 @@ references:
   name: Rating
   nameWithType: InternalAccount.Rating
   fullName: Winpeak.Client.Networking.WebServer.InternalAccount.Rating
+- uid: Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
+  parent: Winpeak.Client.Networking.WebServer.InternalAccount
+  name: Avatar
+  nameWithType: InternalAccount.Avatar
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
+- uid: Winpeak.Client.Networking.WebServer.InternalAccount.InternalAdditionalInfo
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.InternalAdditionalInfo
+  parent: Winpeak.Client.Networking.WebServer.InternalAccount
+  name: InternalAdditionalInfo
+  nameWithType: InternalAccount.InternalAdditionalInfo
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccount.InternalAdditionalInfo
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -967,3 +1015,20 @@ references:
   name: IAvatar
   nameWithType: IAvatar
   fullName: Winpeak.Client.Networking.WebServer.IAvatar
+- uid: Winpeak.Client.Networking.WebServer.Account.AdditionalInfo*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.Account.AdditionalInfo
+  name: AdditionalInfo
+  nameWithType: Account.AdditionalInfo
+  fullName: Winpeak.Client.Networking.WebServer.Account.AdditionalInfo
+- uid: Winpeak.Client.Networking.WebServer.IAccount.AdditionalInfo
+  commentId: P:Winpeak.Client.Networking.WebServer.IAccount.AdditionalInfo
+  parent: Winpeak.Client.Networking.WebServer.IAccount
+  name: AdditionalInfo
+  nameWithType: IAccount.AdditionalInfo
+  fullName: Winpeak.Client.Networking.WebServer.IAccount.AdditionalInfo
+- uid: Winpeak.Client.Networking.WebServer.IAdditionalInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.IAdditionalInfo
+  parent: Winpeak.Client.Networking.WebServer
+  name: IAdditionalInfo
+  nameWithType: IAdditionalInfo
+  fullName: Winpeak.Client.Networking.WebServer.IAdditionalInfo

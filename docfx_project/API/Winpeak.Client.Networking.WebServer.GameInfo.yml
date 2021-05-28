@@ -6,6 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.GameInfo.GetCash
+  - Winpeak.Client.Networking.WebServer.GameInfo.GetCommission
   - Winpeak.Client.Networking.WebServer.GameInfo.GetGameCreatorAccount
   - Winpeak.Client.Networking.WebServer.GameInfo.GetGameSessionId
   - Winpeak.Client.Networking.WebServer.GameInfo.GetGameState
@@ -285,6 +286,39 @@ items:
   overload: Winpeak.Client.Networking.WebServer.GameInfo.GetGameCreatorAccount*
   implements:
   - Winpeak.Client.Networking.WebServer.IGameInfo.GetGameCreatorAccount
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.GameInfo.GetCommission
+  commentId: P:Winpeak.Client.Networking.WebServer.GameInfo.GetCommission
+  id: GetCommission
+  parent: Winpeak.Client.Networking.WebServer.GameInfo
+  langs:
+  - csharp
+  - vb
+  name: GetCommission
+  nameWithType: GameInfo.GetCommission
+  fullName: Winpeak.Client.Networking.WebServer.GameInfo.GetCommission
+  type: Property
+  source:
+    id: GetCommission
+    path: ''
+    startLine: 166016
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public int GetCommission { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property GetCommission As Integer
+  overload: Winpeak.Client.Networking.WebServer.GameInfo.GetCommission*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IGameInfo.GetCommission
   modifiers.csharp:
   - public
   - get
@@ -745,3 +779,14 @@ references:
   name: IAccount
   nameWithType: IAccount
   fullName: Winpeak.Client.Networking.WebServer.IAccount
+- uid: Winpeak.Client.Networking.WebServer.GameInfo.GetCommission*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GameInfo.GetCommission
+  name: GetCommission
+  nameWithType: GameInfo.GetCommission
+  fullName: Winpeak.Client.Networking.WebServer.GameInfo.GetCommission
+- uid: Winpeak.Client.Networking.WebServer.IGameInfo.GetCommission
+  commentId: P:Winpeak.Client.Networking.WebServer.IGameInfo.GetCommission
+  parent: Winpeak.Client.Networking.WebServer.IGameInfo
+  name: GetCommission
+  nameWithType: IGameInfo.GetCommission
+  fullName: Winpeak.Client.Networking.WebServer.IGameInfo.GetCommission
