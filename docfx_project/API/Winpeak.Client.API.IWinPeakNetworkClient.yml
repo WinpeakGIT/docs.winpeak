@@ -68,7 +68,7 @@ items:
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nCheck user authorization\n"
+  summary: "\nCheck user authorization. Returns result of action true - succeeded, false - failed\n"
   example: []
   syntax:
     content: void CheckAuthorization(Action<bool> callback)
@@ -98,25 +98,25 @@ items:
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nAuthenticate user in the system\n"
+  summary: "\nAuthenticate user in the system. Return user id\n"
   example: []
   syntax:
     content: void Authenticate(string login, string password, bool rememberMe, long partnerId, Action<AuthorizationResult> callback)
     parameters:
     - id: login
       type: System.String
-      description: ''
+      description: user login
     - id: password
       type: System.String
-      description: ''
+      description: user password
     - id: rememberMe
       type: System.Boolean
-      description: ''
+      description: remember user active accession
     - id: partnerId
       type: System.Int64
     - id: callback
       type: System.Action{AuthorizationResult}
-      description: ''
+      description: returns result
     content.vb: Sub Authenticate(login As String, password As String, rememberMe As Boolean, partnerId As Long, callback As Action(Of AuthorizationResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.Authenticate*
   nameWithType.vb: IWinPeakNetworkClient.Authenticate(String, String, Boolean, Int64, Action(Of AuthorizationResult))
@@ -136,7 +136,7 @@ items:
   source:
     id: EditProfile
     path: ''
-    startLine: 168808
+    startLine: 168811
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -147,25 +147,28 @@ items:
     parameters:
     - id: email
       type: System.String
-      description: ''
+      description: user email
     - id: login
       type: System.String
-      description: ''
+      description: user login
     - id: phone
       type: System.String
+      description: user phone
     - id: password
       type: System.String
-      description: ''
+      description: user password
     - id: oldPassword
       type: System.String
-      description: ''
+      description: user old password
     - id: rePassword
       type: System.String
+      description: repeat the password to check the correctness of the input
     - id: texture2D
       type: Texture2D
-      description: ''
+      description: user avatar texture
     - id: callback
       type: System.Action{EditProfileResult}
+      description: returns result of action true - succeeded, false - failed
     content.vb: Sub EditProfile(email As String, login As String, phone As String, password As String, oldPassword As String, rePassword As String, texture2D As Texture2D, callback As Action(Of EditProfileResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile*
   nameWithType.vb: IWinPeakNetworkClient.EditProfile(String, String, String, String, String, String, Texture2D, Action(Of EditProfileResult))
@@ -185,7 +188,7 @@ items:
   source:
     id: EditProfile
     path: ''
-    startLine: 168819
+    startLine: 168823
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -196,24 +199,25 @@ items:
     parameters:
     - id: email
       type: System.String
-      description: ''
+      description: user email
     - id: login
       type: System.String
-      description: ''
+      description: user login
     - id: password
       type: System.String
-      description: ''
+      description: user password
     - id: oldPassword
       type: System.String
+      description: user old password
     - id: rePassword
       type: System.String
-      description: ''
+      description: repeat the password to check the correctness of the input
     - id: agree
       type: System.Int32
-      description: ''
+      description: agree with Terms and Privacy Policy
     - id: callback
       type: System.Action{EditProfileResult}
-      description: ''
+      description: returns result
     content.vb: Sub EditProfile(email As String, login As String, password As String, oldPassword As String, rePassword As String, agree As Integer, callback As Action(Of EditProfileResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.EditProfile*
   nameWithType.vb: IWinPeakNetworkClient.EditProfile(String, String, String, String, String, Int32, Action(Of EditProfileResult))
@@ -233,21 +237,21 @@ items:
   source:
     id: Register
     path: ''
-    startLine: 168826
+    startLine: 168830
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nRegister user in the system. Return user_id, login, password\n"
+  summary: "\nRegister user in the system. Return user id, login, password\n"
   example: []
   syntax:
     content: void Register(long partnerId, Action<RegistrationResult> callback)
     parameters:
     - id: partnerId
       type: System.Int64
-      description: ''
+      description: partner id
     - id: callback
       type: System.Action{RegistrationResult}
-      description: ''
+      description: returns result(user id, login, password)
     content.vb: Sub Register(partnerId As Long, callback As Action(Of RegistrationResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.Register*
   nameWithType.vb: IWinPeakNetworkClient.Register(Int64, Action(Of RegistrationResult))
@@ -267,27 +271,27 @@ items:
   source:
     id: GetUserInfo
     path: ''
-    startLine: 168835
+    startLine: 168839
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nGet actual userinfo\n"
+  summary: "\nGet actual user info. Return user IAccount AccountInfo\n"
   example: []
   syntax:
     content: void GetUserInfo(int appVersion, int gameId, int gameVersion, Action<GetUserInfoResult> callback)
     parameters:
     - id: appVersion
       type: System.Int32
-      description: ''
+      description: application version
     - id: gameId
       type: System.Int32
-      description: ''
+      description: game id
     - id: gameVersion
       type: System.Int32
-      description: ''
+      description: game version
     - id: callback
       type: System.Action{GetUserInfoResult}
-      description: ''
+      description: returns result
     content.vb: Sub GetUserInfo(appVersion As Integer, gameId As Integer, gameVersion As Integer, callback As Action(Of GetUserInfoResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo*
   nameWithType.vb: IWinPeakNetworkClient.GetUserInfo(Int32, Int32, Int32, Action(Of GetUserInfoResult))
@@ -307,18 +311,18 @@ items:
   source:
     id: Logout
     path: ''
-    startLine: 168841
+    startLine: 168845
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nLogout user in the system. Clear session on server side\n"
+  summary: "\nLogout user in the system. Clear session on server side. Returns result of action true - succeeded, false - failed\n"
   example: []
   syntax:
     content: void Logout(Action<bool> callback)
     parameters:
     - id: callback
       type: System.Action{System.Boolean}
-      description: ''
+      description: returns result
     content.vb: Sub Logout(callback As Action(Of Boolean))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.Logout*
   nameWithType.vb: IWinPeakNetworkClient.Logout(Action(Of Boolean))
@@ -338,36 +342,36 @@ items:
   source:
     id: SearchGame
     path: ''
-    startLine: 168853
+    startLine: 168857
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nSearch game session by specified params\n"
+  summary: "\nSearch game session by specified params. Return total count games(type long) and list of games(type <xref href=\"Winpeak.Client.Networking.WebServer.GameInfo\" data-throw-if-not-resolved=\"false\"></xref>)\n"
   example: []
   syntax:
     content: void SearchGame(int offset, int size, int gameId, int state, int tplId, long userId, Action<SearchGameResult> callback)
     parameters:
     - id: offset
       type: System.Int32
-      description: ''
+      description: offset for search, from which position to send items
     - id: size
       type: System.Int32
-      description: ''
+      description: size batch to return
     - id: gameId
       type: System.Int32
-      description: ''
+      description: game id
     - id: state
       type: System.Int32
-      description: ''
+      description: game state => New = 0, Playing = 1, Finished = 2, Cancelled = 3, StartingGame = 4
     - id: tplId
       type: System.Int32
-      description: ''
+      description: current Game Type => None = -1, SinglePlayer = 0, Practice = 1, Tournament = 2
     - id: userId
       type: System.Int64
-      description: ''
+      description: user id
     - id: callback
       type: System.Action{SearchGameResult}
-      description: ''
+      description: returns result
     content.vb: Sub SearchGame(offset As Integer, size As Integer, gameId As Integer, state As Integer, tplId As Integer, userId As Long, callback As Action(Of SearchGameResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame*
   nameWithType.vb: IWinPeakNetworkClient.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, Action(Of SearchGameResult))
@@ -387,21 +391,21 @@ items:
   source:
     id: CreateGameSessionRequest
     path: ''
-    startLine: 168860
+    startLine: 168864
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nCreate game session request for chosen game\n"
+  summary: "\nCreate game session request for chosen game. Result request Id\n"
   example: []
   syntax:
     content: void CreateGameSessionRequest(long gameSessionId, Action<CreateGameSessionRequestResult> callback)
     parameters:
     - id: gameSessionId
       type: System.Int64
-      description: ''
+      description: game session id
     - id: callback
       type: System.Action{CreateGameSessionRequestResult}
-      description: ''
+      description: returns result
     content.vb: Sub CreateGameSessionRequest(gameSessionId As Long, callback As Action(Of CreateGameSessionRequestResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest*
   nameWithType.vb: IWinPeakNetworkClient.CreateGameSessionRequest(Int64, Action(Of CreateGameSessionRequestResult))
@@ -421,24 +425,24 @@ items:
   source:
     id: RejectCreateGameSessionRequest
     path: ''
-    startLine: 168868
+    startLine: 168872
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nReject create game session request for chosen game. Can be rejected by game creator or user who wants to play in this game\n"
+  summary: "\nReject create game session request for chosen game. Can be rejected by game creator or user who wants to play in this game. Returns result of action true - succeeded, false - failed\n"
   example: []
   syntax:
     content: void RejectCreateGameSessionRequest(long userId, long gameSessionId, Action<RejectCreateGameSessionRequestResult> callback)
     parameters:
     - id: userId
       type: System.Int64
-      description: ''
+      description: user id
     - id: gameSessionId
       type: System.Int64
-      description: ''
+      description: game session id
     - id: callback
       type: System.Action{RejectCreateGameSessionRequestResult}
-      description: ''
+      description: returns result
     content.vb: Sub RejectCreateGameSessionRequest(userId As Long, gameSessionId As Long, callback As Action(Of RejectCreateGameSessionRequestResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.RejectCreateGameSessionRequest*
   nameWithType.vb: IWinPeakNetworkClient.RejectCreateGameSessionRequest(Int64, Int64, Action(Of RejectCreateGameSessionRequestResult))
@@ -458,24 +462,24 @@ items:
   source:
     id: ApproveCreateGameSessionRequest
     path: ''
-    startLine: 168876
+    startLine: 168880
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nApprove create game session request from another user\n"
+  summary: "\nApprove create game session request from another user. Returns result of action true - succeeded, false - failed\n"
   example: []
   syntax:
     content: void ApproveCreateGameSessionRequest(long userId, long gameSessionId, Action<ApproveGameSessionRequestResult> callback)
     parameters:
     - id: userId
       type: System.Int64
-      description: ''
+      description: user id
     - id: gameSessionId
       type: System.Int64
-      description: ''
+      description: game session id
     - id: callback
       type: System.Action{ApproveGameSessionRequestResult}
-      description: ''
+      description: returns result
     content.vb: Sub ApproveCreateGameSessionRequest(userId As Long, gameSessionId As Long, callback As Action(Of ApproveGameSessionRequestResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest*
   nameWithType.vb: IWinPeakNetworkClient.ApproveCreateGameSessionRequest(Int64, Int64, Action(Of ApproveGameSessionRequestResult))
@@ -495,27 +499,27 @@ items:
   source:
     id: CreateGame
     path: ''
-    startLine: 168885
+    startLine: 168889
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nCreate game session by specified params\n"
+  summary: "\nCreate game session by specified params. Return game session id\n"
   example: []
   syntax:
     content: void CreateGame(int gameId, int gameType, int cashFee, Action<CreateGameSessionResult> callback)
     parameters:
     - id: gameId
       type: System.Int32
-      description: ''
+      description: game id
     - id: gameType
       type: System.Int32
-      description: ''
+      description: game Type => SoftCash = 1, Cash = 2
     - id: cashFee
       type: System.Int32
-      description: ''
+      description: bet size
     - id: callback
       type: System.Action{CreateGameSessionResult}
-      description: ''
+      description: returns result
     content.vb: Sub CreateGame(gameId As Integer, gameType As Integer, cashFee As Integer, callback As Action(Of CreateGameSessionResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.CreateGame*
   nameWithType.vb: IWinPeakNetworkClient.CreateGame(Int32, Int32, Int32, Action(Of CreateGameSessionResult))
@@ -535,24 +539,24 @@ items:
   source:
     id: GetGameInfo
     path: ''
-    startLine: 168893
+    startLine: 168897
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nGet detailed information about specified game\n"
+  summary: "\nGet detailed information about specified game. Return game info, list of game users, list of game requests and game server info\n"
   example: []
   syntax:
     content: void GetGameInfo(int gameId, long gameSessionId, Action<GetGameInfoResult> callback)
     parameters:
     - id: gameId
       type: System.Int32
-      description: ''
+      description: game id
     - id: gameSessionId
       type: System.Int64
-      description: ''
+      description: game session id
     - id: callback
       type: System.Action{GetGameInfoResult}
-      description: ''
+      description: returns result
     content.vb: Sub GetGameInfo(gameId As Integer, gameSessionId As Long, callback As Action(Of GetGameInfoResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo*
   nameWithType.vb: IWinPeakNetworkClient.GetGameInfo(Int32, Int64, Action(Of GetGameInfoResult))
@@ -572,21 +576,21 @@ items:
   source:
     id: CloseGameSession
     path: ''
-    startLine: 168900
+    startLine: 168904
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nClose game session by specified params\n"
+  summary: "\nClose game session by specified params. Returns result of action true - succeeded, false - failed\n"
   example: []
   syntax:
     content: void CloseGameSession(long gameSessionId, Action<CloseGameSessionResult> callback)
     parameters:
     - id: gameSessionId
       type: System.Int64
-      description: ''
+      description: game session id
     - id: callback
       type: System.Action{CloseGameSessionResult}
-      description: ''
+      description: returns result
     content.vb: Sub CloseGameSession(gameSessionId As Long, callback As Action(Of CloseGameSessionResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.CloseGameSession*
   nameWithType.vb: IWinPeakNetworkClient.CloseGameSession(Int64, Action(Of CloseGameSessionResult))
@@ -606,7 +610,7 @@ items:
   source:
     id: PasswordRecovery
     path: ''
-    startLine: 168907
+    startLine: 168911
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -617,10 +621,10 @@ items:
     parameters:
     - id: email
       type: System.String
-      description: ''
+      description: user email
     - id: partnerId
       type: System.Int64
-      description: ''
+      description: partner id
     - id: callback
       type: System.Action{PasswordRecoveryRequestResult}
     content.vb: Sub PasswordRecovery(email As String, partnerId As Long, callback As Action(Of PasswordRecoveryRequestResult))
@@ -642,21 +646,21 @@ items:
   source:
     id: GetActiveGameSessionsRequest
     path: ''
-    startLine: 168914
+    startLine: 168918
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nGet user active game sessions\n"
+  summary: "\nGet user active game sessions. Return list of active game sessions.\n"
   example: []
   syntax:
     content: void GetActiveGameSessionsRequest(int gameId, Action<GetActiveGameSessionsRequestResult> callback)
     parameters:
     - id: gameId
       type: System.Int32
-      description: ''
+      description: game id
     - id: callback
       type: System.Action{GetActiveGameSessionsRequestResult}
-      description: ''
+      description: returns result
     content.vb: Sub GetActiveGameSessionsRequest(gameId As Integer, callback As Action(Of GetActiveGameSessionsRequestResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest*
   nameWithType.vb: IWinPeakNetworkClient.GetActiveGameSessionsRequest(Int32, Action(Of GetActiveGameSessionsRequestResult))
@@ -676,7 +680,7 @@ items:
   source:
     id: RemoveFriend
     path: ''
-    startLine: 168920
+    startLine: 168925
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -687,9 +691,10 @@ items:
     parameters:
     - id: userId
       type: System.Int64
-      description: ''
+      description: user id
     - id: callback
       type: System.Action{RemoveFriendResult}
+      description: returns result
     content.vb: Sub RemoveFriend(userId As Long, callback As Action(Of RemoveFriendResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend*
   nameWithType.vb: IWinPeakNetworkClient.RemoveFriend(Int64, Action(Of RemoveFriendResult))
@@ -709,48 +714,48 @@ items:
   source:
     id: SearchUser
     path: ''
-    startLine: 168936
+    startLine: 168941
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nSearch users by specified params\n"
+  summary: "\nSearch users by specified params. Return total count users(type long) and list of users(type <xref href=\"Winpeak.Client.Networking.WebServer.AccountUser\" data-throw-if-not-resolved=\"false\"></xref>)\n"
   example: []
   syntax:
     content: void SearchUser(long partnerId, int offset, int size, int gameId, string login, string email, string firstName, string lastName, long userId, bool friends, Action<SearchUserResult> callback)
     parameters:
     - id: partnerId
       type: System.Int64
-      description: ''
+      description: partner id
     - id: offset
       type: System.Int32
-      description: ''
+      description: offset for search, from which position to send items
     - id: size
       type: System.Int32
-      description: ''
+      description: size batch to return
     - id: gameId
       type: System.Int32
-      description: ''
+      description: game id
     - id: login
       type: System.String
-      description: ''
+      description: user login
     - id: email
       type: System.String
-      description: ''
+      description: user email
     - id: firstName
       type: System.String
-      description: ''
+      description: user  first name
     - id: lastName
       type: System.String
-      description: ''
+      description: user  last name
     - id: userId
       type: System.Int64
-      description: ''
+      description: user id
     - id: friends
       type: System.Boolean
-      description: ''
+      description: search among friends
     - id: callback
       type: System.Action{SearchUserResult}
-      description: ''
+      description: returns result
     content.vb: Sub SearchUser(partnerId As Long, offset As Integer, size As Integer, gameId As Integer, login As String, email As String, firstName As String, lastName As String, userId As Long, friends As Boolean, callback As Action(Of SearchUserResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser*
   nameWithType.vb: IWinPeakNetworkClient.SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, Int64, Boolean, Action(Of SearchUserResult))
@@ -770,7 +775,7 @@ items:
   source:
     id: AddFriend
     path: ''
-    startLine: 168942
+    startLine: 168947
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -781,7 +786,7 @@ items:
     parameters:
     - id: userId
       type: System.Int64
-      description: ''
+      description: user id
     - id: callback
       type: System.Action{AddFriendResult}
     content.vb: Sub AddFriend(userId As Long, callback As Action(Of AddFriendResult))
@@ -803,32 +808,32 @@ items:
   source:
     id: GetLastTournaments
     path: ''
-    startLine: 168952
+    startLine: 168957
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nGet the last user tournaments where he participated\n"
+  summary: "\nGet the last user tournaments where he participated. Return total count tournaments(type long) and list of tournaments(type <seealso cref=\"!:Winpeak.Client.Networking.WebServer.TournamentInfo\">TournamentInfo</seealso>)\n"
   example: []
   syntax:
     content: void GetLastTournaments(int gameId, long userId, int win, int offset, int size, Action<GetLastTournamentsResult> callback)
     parameters:
     - id: gameId
       type: System.Int32
-      description: ''
+      description: game id
     - id: userId
       type: System.Int64
-      description: ''
+      description: user id
     - id: win
       type: System.Int32
     - id: offset
       type: System.Int32
-      description: ''
+      description: offset for search, from which position to send items
     - id: size
       type: System.Int32
-      description: ''
+      description: size batch to return
     - id: callback
       type: System.Action{GetLastTournamentsResult}
-      description: ''
+      description: returns result
     content.vb: Sub GetLastTournaments(gameId As Integer, userId As Long, win As Integer, offset As Integer, size As Integer, callback As Action(Of GetLastTournamentsResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments*
   nameWithType.vb: IWinPeakNetworkClient.GetLastTournaments(Int32, Int64, Int32, Int32, Int32, Action(Of GetLastTournamentsResult))
@@ -848,21 +853,21 @@ items:
   source:
     id: GetMoreGames
     path: ''
-    startLine: 168959
+    startLine: 168964
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nGet more games info\n"
+  summary: "\nGet more games info. Return total count more games(type long) and list of more games(type <seealso cref=\"!:Winpeak.Client.Networking.WebServer.MoreGamesInfo\">MoreGamesInfo</seealso>)\n"
   example: []
   syntax:
     content: void GetMoreGames(int gameId, Action<MoreGamesResult> callback)
     parameters:
     - id: gameId
       type: System.Int32
-      description: ''
+      description: game id
     - id: callback
       type: System.Action{MoreGamesResult}
-      description: ''
+      description: returns result
     content.vb: Sub GetMoreGames(gameId As Integer, callback As Action(Of MoreGamesResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames*
   nameWithType.vb: IWinPeakNetworkClient.GetMoreGames(Int32, Action(Of MoreGamesResult))
@@ -882,30 +887,30 @@ items:
   source:
     id: ReportAbuseUser
     path: ''
-    startLine: 168969
+    startLine: 168974
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nReport abuse about other player\n"
+  summary: "\nReport abuse about other player. Return abuse Id\n"
   example: []
   syntax:
     content: void ReportAbuseUser(long abuseUserId, long gameSessionId, int reasonId, string message, Action<ReportAbuseUserResult> callback)
     parameters:
     - id: abuseUserId
       type: System.Int64
-      description: ''
+      description: user id for report
     - id: gameSessionId
       type: System.Int64
-      description: ''
+      description: game session id
     - id: reasonId
       type: System.Int32
-      description: ''
+      description: reason id
     - id: message
       type: System.String
-      description: ''
+      description: message about abuse
     - id: callback
       type: System.Action{ReportAbuseUserResult}
-      description: ''
+      description: returns result
     content.vb: Sub ReportAbuseUser(abuseUserId As Long, gameSessionId As Long, reasonId As Integer, message As String, callback As Action(Of ReportAbuseUserResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser*
   nameWithType.vb: IWinPeakNetworkClient.ReportAbuseUser(Int64, Int64, Int32, String, Action(Of ReportAbuseUserResult))
@@ -1245,6 +1250,12 @@ references:
   name: Logout
   nameWithType: IWinPeakNetworkClient.Logout
   fullName: Winpeak.Client.API.IWinPeakNetworkClient.Logout
+- uid: Winpeak.Client.Networking.WebServer.GameInfo
+  commentId: T:Winpeak.Client.Networking.WebServer.GameInfo
+  parent: Winpeak.Client.Networking.WebServer
+  name: GameInfo
+  nameWithType: GameInfo
+  fullName: Winpeak.Client.Networking.WebServer.GameInfo
 - uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame*
   commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.SearchGame
   name: SearchGame
@@ -1294,6 +1305,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Winpeak.Client.Networking.WebServer
+  commentId: N:Winpeak.Client.Networking.WebServer
+  name: Winpeak.Client.Networking.WebServer
+  nameWithType: Winpeak.Client.Networking.WebServer
+  fullName: Winpeak.Client.Networking.WebServer
 - uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest*
   commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest
   name: CreateGameSessionRequest
@@ -1735,6 +1751,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Winpeak.Client.Networking.WebServer.AccountUser
+  commentId: T:Winpeak.Client.Networking.WebServer.AccountUser
+  name: AccountUser
+  nameWithType: AccountUser
+  fullName: Winpeak.Client.Networking.WebServer.AccountUser
 - uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser*
   commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.SearchUser
   name: SearchUser

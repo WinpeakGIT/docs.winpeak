@@ -107,7 +107,8 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">userId</span></td>
-        <td></td>
+        <td><p>user id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">AddFriendResult</span>&gt;</td>
@@ -120,7 +121,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_ApproveCreateGameSessionRequest_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_ApproveCreateGameSessionRequest_System_Int64_System_Int64_System_Action_ApproveGameSessionRequestResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest(System.Int64,System.Int64,System.Action{ApproveGameSessionRequestResult})">ApproveCreateGameSessionRequest(Int64, Int64, Action&lt;ApproveGameSessionRequestResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Approve create game session request from another user</p>
+  <div class="markdown level1 summary"><p>Approve create game session request from another user. Returns result of action true - succeeded, false - failed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -140,17 +141,20 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">userId</span></td>
-        <td></td>
+        <td><p>user id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">gameSessionId</span></td>
-        <td></td>
+        <td><p>game session id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">ApproveGameSessionRequestResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -158,7 +162,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_Authenticate_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Authenticate*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_Authenticate_System_String_System_String_System_Boolean_System_Int64_System_Action_AuthorizationResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Int64,System.Action{AuthorizationResult})">Authenticate(String, String, Boolean, Int64, Action&lt;AuthorizationResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Authenticate user in the system</p>
+  <div class="markdown level1 summary"><p>Authenticate user in the system. Return user id</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -178,17 +182,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">login</span></td>
-        <td></td>
+        <td><p>user login</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">password</span></td>
-        <td></td>
+        <td><p>user password</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">rememberMe</span></td>
-        <td></td>
+        <td><p>remember user active accession</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
@@ -198,7 +205,8 @@
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">AuthorizationResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -206,7 +214,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_CheckAuthorization_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CheckAuthorization*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_CheckAuthorization_System_Action_System_Boolean__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CheckAuthorization(System.Action{System.Boolean})">CheckAuthorization(Action&lt;Boolean&gt;)</h4>
-  <div class="markdown level1 summary"><p>Check user authorization</p>
+  <div class="markdown level1 summary"><p>Check user authorization. Returns result of action true - succeeded, false - failed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -234,7 +242,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_CloseGameSession_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CloseGameSession*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_CloseGameSession_System_Int64_System_Action_CloseGameSessionResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CloseGameSession(System.Int64,System.Action{CloseGameSessionResult})">CloseGameSession(Int64, Action&lt;CloseGameSessionResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Close game session by specified params</p>
+  <div class="markdown level1 summary"><p>Close game session by specified params. Returns result of action true - succeeded, false - failed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -254,12 +262,14 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">gameSessionId</span></td>
-        <td></td>
+        <td><p>game session id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">CloseGameSessionResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -267,7 +277,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_CreateGame_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CreateGame*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_CreateGame_System_Int32_System_Int32_System_Int32_System_Action_CreateGameSessionResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})">CreateGame(Int32, Int32, Int32, Action&lt;CreateGameSessionResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Create game session by specified params</p>
+  <div class="markdown level1 summary"><p>Create game session by specified params. Return game session id</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -287,22 +297,26 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">gameId</span></td>
-        <td></td>
+        <td><p>game id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">gameType</span></td>
-        <td></td>
+        <td><p>game Type =&gt; SoftCash = 1, Cash = 2</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">cashFee</span></td>
-        <td></td>
+        <td><p>bet size</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">CreateGameSessionResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -310,7 +324,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_CreateGameSessionRequest_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_CreateGameSessionRequest_System_Int64_System_Action_CreateGameSessionRequestResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest(System.Int64,System.Action{CreateGameSessionRequestResult})">CreateGameSessionRequest(Int64, Action&lt;CreateGameSessionRequestResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Create game session request for chosen game</p>
+  <div class="markdown level1 summary"><p>Create game session request for chosen game. Result request Id</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -330,12 +344,14 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">gameSessionId</span></td>
-        <td></td>
+        <td><p>game session id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">CreateGameSessionRequestResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -363,37 +379,44 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">email</span></td>
-        <td></td>
+        <td><p>user email</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">login</span></td>
-        <td></td>
+        <td><p>user login</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">password</span></td>
-        <td></td>
+        <td><p>user password</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">oldPassword</span></td>
-        <td></td>
+        <td><p>user old password</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rePassword</span></td>
-        <td></td>
+        <td><p>repeat the password to check the correctness of the input</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">agree</span></td>
-        <td></td>
+        <td><p>agree with Terms and Privacy Policy</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">EditProfileResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -421,42 +444,50 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">email</span></td>
-        <td></td>
+        <td><p>user email</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">login</span></td>
-        <td></td>
+        <td><p>user login</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">phone</span></td>
-        <td></td>
+        <td><p>user phone</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">password</span></td>
-        <td></td>
+        <td><p>user password</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">oldPassword</span></td>
-        <td></td>
+        <td><p>user old password</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rePassword</span></td>
-        <td></td>
+        <td><p>repeat the password to check the correctness of the input</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Texture2D</span></td>
         <td><span class="parametername">texture2D</span></td>
-        <td></td>
+        <td><p>user avatar texture</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">EditProfileResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result of action true - succeeded, false - failed</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -464,7 +495,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_GetActiveGameSessionsRequest_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_GetActiveGameSessionsRequest_System_Int32_System_Action_GetActiveGameSessionsRequestResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetActiveGameSessionsRequest(System.Int32,System.Action{GetActiveGameSessionsRequestResult})">GetActiveGameSessionsRequest(Int32, Action&lt;GetActiveGameSessionsRequestResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Get user active game sessions</p>
+  <div class="markdown level1 summary"><p>Get user active game sessions. Return list of active game sessions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -484,12 +515,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">gameId</span></td>
-        <td></td>
+        <td><p>game id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">GetActiveGameSessionsRequestResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -497,7 +530,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_GetGameInfo_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_GetGameInfo_System_Int32_System_Int64_System_Action_GetGameInfoResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})">GetGameInfo(Int32, Int64, Action&lt;GetGameInfoResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Get detailed information about specified game</p>
+  <div class="markdown level1 summary"><p>Get detailed information about specified game. Return game info, list of game users, list of game requests and game server info</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -517,17 +550,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">gameId</span></td>
-        <td></td>
+        <td><p>game id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">gameSessionId</span></td>
-        <td></td>
+        <td><p>game session id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">GetGameInfoResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -535,7 +571,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_GetLastTournaments_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_GetLastTournaments_System_Int32_System_Int64_System_Int32_System_Int32_System_Int32_System_Action_GetLastTournamentsResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})">GetLastTournaments(Int32, Int64, Int32, Int32, Int32, Action&lt;GetLastTournamentsResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Get the last user tournaments where he participated</p>
+  <div class="markdown level1 summary"><p>Get the last user tournaments where he participated. Return total count tournaments(type long) and list of tournaments(type <seealso cref="!:Winpeak.Client.Networking.WebServer.TournamentInfo">TournamentInfo</seealso>)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -555,12 +591,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">gameId</span></td>
-        <td></td>
+        <td><p>game id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">userId</span></td>
-        <td></td>
+        <td><p>user id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
@@ -570,17 +608,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>offset for search, from which position to send items</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">size</span></td>
-        <td></td>
+        <td><p>size batch to return</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">GetLastTournamentsResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -588,7 +629,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_GetMoreGames_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_GetMoreGames_System_Int32_System_Action_MoreGamesResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames(System.Int32,System.Action{MoreGamesResult})">GetMoreGames(Int32, Action&lt;MoreGamesResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Get more games info</p>
+  <div class="markdown level1 summary"><p>Get more games info. Return total count more games(type long) and list of more games(type <seealso cref="!:Winpeak.Client.Networking.WebServer.MoreGamesInfo">MoreGamesInfo</seealso>)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -608,12 +649,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">gameId</span></td>
-        <td></td>
+        <td><p>game id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">MoreGamesResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -621,7 +664,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_GetUserInfo_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_GetUserInfo_System_Int32_System_Int32_System_Int32_System_Action_GetUserInfoResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})">GetUserInfo(Int32, Int32, Int32, Action&lt;GetUserInfoResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Get actual userinfo</p>
+  <div class="markdown level1 summary"><p>Get actual user info. Return user IAccount AccountInfo</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -641,22 +684,26 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">appVersion</span></td>
-        <td></td>
+        <td><p>application version</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">gameId</span></td>
-        <td></td>
+        <td><p>game id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">gameVersion</span></td>
-        <td></td>
+        <td><p>game version</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">GetUserInfoResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -664,7 +711,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_Logout_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Logout*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_Logout_System_Action_System_Boolean__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})">Logout(Action&lt;Boolean&gt;)</h4>
-  <div class="markdown level1 summary"><p>Logout user in the system. Clear session on server side</p>
+  <div class="markdown level1 summary"><p>Logout user in the system. Clear session on server side. Returns result of action true - succeeded, false - failed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -684,7 +731,8 @@
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -712,12 +760,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">email</span></td>
-        <td></td>
+        <td><p>user email</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">partnerId</span></td>
-        <td></td>
+        <td><p>partner id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">PasswordRecoveryRequestResult</span>&gt;</td>
@@ -730,7 +780,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_Register_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Register*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_Register_System_Int64_System_Action_RegistrationResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Register(System.Int64,System.Action{RegistrationResult})">Register(Int64, Action&lt;RegistrationResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Register user in the system. Return user_id, login, password</p>
+  <div class="markdown level1 summary"><p>Register user in the system. Return user id, login, password</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -750,12 +800,14 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">partnerId</span></td>
-        <td></td>
+        <td><p>partner id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">RegistrationResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result(user id, login, password)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -763,7 +815,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_RejectCreateGameSessionRequest_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.RejectCreateGameSessionRequest*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_RejectCreateGameSessionRequest_System_Int64_System_Int64_System_Action_RejectCreateGameSessionRequestResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.RejectCreateGameSessionRequest(System.Int64,System.Int64,System.Action{RejectCreateGameSessionRequestResult})">RejectCreateGameSessionRequest(Int64, Int64, Action&lt;RejectCreateGameSessionRequestResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Reject create game session request for chosen game. Can be rejected by game creator or user who wants to play in this game</p>
+  <div class="markdown level1 summary"><p>Reject create game session request for chosen game. Can be rejected by game creator or user who wants to play in this game. Returns result of action true - succeeded, false - failed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -783,17 +835,20 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">userId</span></td>
-        <td></td>
+        <td><p>user id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">gameSessionId</span></td>
-        <td></td>
+        <td><p>game session id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">RejectCreateGameSessionRequestResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -821,12 +876,14 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">userId</span></td>
-        <td></td>
+        <td><p>user id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">RemoveFriendResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -834,7 +891,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_ReportAbuseUser_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_ReportAbuseUser_System_Int64_System_Int64_System_Int32_System_String_System_Action_ReportAbuseUserResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64,System.Int64,System.Int32,System.String,System.Action{ReportAbuseUserResult})">ReportAbuseUser(Int64, Int64, Int32, String, Action&lt;ReportAbuseUserResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Report abuse about other player</p>
+  <div class="markdown level1 summary"><p>Report abuse about other player. Return abuse Id</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -854,27 +911,32 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">abuseUserId</span></td>
-        <td></td>
+        <td><p>user id for report</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">gameSessionId</span></td>
-        <td></td>
+        <td><p>game session id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">reasonId</span></td>
-        <td></td>
+        <td><p>reason id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>message about abuse</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">ReportAbuseUserResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -882,7 +944,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_SearchGame_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.SearchGame*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_SearchGame_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int64_System_Action_SearchGameResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Action{SearchGameResult})">SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, Action&lt;SearchGameResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Search game session by specified params</p>
+  <div class="markdown level1 summary"><p>Search game session by specified params. Return total count games(type long) and list of games(type <a class="xref" href="Winpeak.Client.Networking.WebServer.GameInfo.html">GameInfo</a>)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -902,37 +964,44 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>offset for search, from which position to send items</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">size</span></td>
-        <td></td>
+        <td><p>size batch to return</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">gameId</span></td>
-        <td></td>
+        <td><p>game id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">state</span></td>
-        <td></td>
+        <td><p>game state =&gt; New = 0, Playing = 1, Finished = 2, Cancelled = 3, StartingGame = 4</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">tplId</span></td>
-        <td></td>
+        <td><p>current Game Type =&gt; None = -1, SinglePlayer = 0, Practice = 1, Tournament = 2</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">userId</span></td>
-        <td></td>
+        <td><p>user id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">SearchGameResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -940,7 +1009,7 @@
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_SearchUser_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.SearchUser*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_SearchUser_System_Int64_System_Int32_System_Int32_System_Int32_System_String_System_String_System_String_System_String_System_Int64_System_Boolean_System_Action_SearchUserResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})">SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, Int64, Boolean, Action&lt;SearchUserResult&gt;)</h4>
-  <div class="markdown level1 summary"><p>Search users by specified params</p>
+  <div class="markdown level1 summary"><p>Search users by specified params. Return total count users(type long) and list of users(type <a class="xref" href="Winpeak.Client.Networking.WebServer.AccountUser.html">AccountUser</a>)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -960,57 +1029,68 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">partnerId</span></td>
-        <td></td>
+        <td><p>partner id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>offset for search, from which position to send items</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">size</span></td>
-        <td></td>
+        <td><p>size batch to return</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">gameId</span></td>
-        <td></td>
+        <td><p>game id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">login</span></td>
-        <td></td>
+        <td><p>user login</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">email</span></td>
-        <td></td>
+        <td><p>user email</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">firstName</span></td>
-        <td></td>
+        <td><p>user  first name</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">lastName</span></td>
-        <td></td>
+        <td><p>user  last name</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">userId</span></td>
-        <td></td>
+        <td><p>user id</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">friends</span></td>
-        <td></td>
+        <td><p>search among friends</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">SearchUserResult</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
-        <td></td>
+        <td><p>returns result</p>
+</td>
       </tr>
     </tbody>
   </table>
