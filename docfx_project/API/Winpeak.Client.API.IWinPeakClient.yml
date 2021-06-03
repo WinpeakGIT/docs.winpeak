@@ -45,7 +45,7 @@ items:
   source:
     id: IWinPeakClient
     path: ''
-    startLine: 168640
+    startLine: 168786
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -77,6 +77,8 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames(System.Int32,System.Action{MoreGamesResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64,System.Int64,System.Int32,System.String,System.Action{ReportAbuseUserResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List{System.String},System.Int32,System.Action{GetStaticPagesResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String,System.Collections.Generic.List{System.Int32},System.Action{GetPlatformLanguagesResult})
   modifiers.csharp:
   - public
   - interface
@@ -97,7 +99,7 @@ items:
   source:
     id: OnClientDisconnected
     path: ''
-    startLine: 168645
+    startLine: 168791
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -122,7 +124,7 @@ items:
   source:
     id: OnRoundScoreUpdated
     path: ''
-    startLine: 168650
+    startLine: 168796
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -147,7 +149,7 @@ items:
   source:
     id: OnGameOver
     path: ''
-    startLine: 168655
+    startLine: 168801
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -172,7 +174,7 @@ items:
   source:
     id: OnStartGameCountdown
     path: ''
-    startLine: 168660
+    startLine: 168806
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -197,7 +199,7 @@ items:
   source:
     id: OnUserInfoUpdated
     path: ''
-    startLine: 168665
+    startLine: 168811
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -222,7 +224,7 @@ items:
   source:
     id: OnGameObjectsReady
     path: ''
-    startLine: 168670
+    startLine: 168816
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -247,7 +249,7 @@ items:
   source:
     id: OnOccurConnectionProblem
     path: ''
-    startLine: 168675
+    startLine: 168821
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -272,7 +274,7 @@ items:
   source:
     id: OnPingUpdated
     path: ''
-    startLine: 168680
+    startLine: 168826
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -297,7 +299,7 @@ items:
   source:
     id: OnPlayWallHitSound
     path: ''
-    startLine: 168685
+    startLine: 168831
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -322,7 +324,7 @@ items:
   source:
     id: OnGameStateChanged
     path: ''
-    startLine: 168690
+    startLine: 168836
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -347,7 +349,7 @@ items:
   source:
     id: IsConnected
     path: ''
-    startLine: 168695
+    startLine: 168841
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -378,7 +380,7 @@ items:
   source:
     id: IsActiveNetwork
     path: ''
-    startLine: 168700
+    startLine: 168846
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -409,7 +411,7 @@ items:
   source:
     id: SubscribeRigidbody
     path: ''
-    startLine: 168705
+    startLine: 168851
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -436,7 +438,7 @@ items:
   source:
     id: Init
     path: ''
-    startLine: 168710
+    startLine: 168856
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -463,7 +465,7 @@ items:
   source:
     id: Connect
     path: ''
-    startLine: 168715
+    startLine: 168861
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -494,7 +496,7 @@ items:
   source:
     id: Auth
     path: ''
-    startLine: 168720
+    startLine: 168866
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -525,7 +527,7 @@ items:
   source:
     id: Die
     path: ''
-    startLine: 168725
+    startLine: 168871
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -552,7 +554,7 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 168736
+    startLine: 168882
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -595,7 +597,7 @@ items:
   source:
     id: Utilize
     path: ''
-    startLine: 168741
+    startLine: 168887
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -619,7 +621,7 @@ items:
   source:
     id: BlockInGameInput
     path: ''
-    startLine: 168747
+    startLine: 168893
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -647,7 +649,7 @@ items:
   source:
     id: RequestServers
     path: ''
-    startLine: 168753
+    startLine: 168899
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -678,7 +680,7 @@ items:
   source:
     id: OnGamePlayersListLoaded
     path: ''
-    startLine: 168758
+    startLine: 168904
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -703,7 +705,7 @@ items:
   source:
     id: GetGamePlayersList
     path: ''
-    startLine: 168763
+    startLine: 168909
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -727,7 +729,7 @@ items:
   source:
     id: DrawLines
     path: ''
-    startLine: 168768
+    startLine: 168914
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -751,7 +753,7 @@ items:
   source:
     id: DrawSingleLine
     path: ''
-    startLine: 168774
+    startLine: 168920
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -775,7 +777,7 @@ items:
   source:
     id: DrawPoint
     path: ''
-    startLine: 168779
+    startLine: 168925
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -799,7 +801,7 @@ items:
   source:
     id: OnDrawPoint
     path: ''
-    startLine: 168782
+    startLine: 168928
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -822,7 +824,7 @@ items:
   source:
     id: OnDrawLine
     path: ''
-    startLine: 168783
+    startLine: 168929
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -845,7 +847,7 @@ items:
   source:
     id: InvokeDrawPoint
     path: ''
-    startLine: 168784
+    startLine: 168930
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -876,7 +878,7 @@ items:
   source:
     id: InvokeDrawLine
     path: ''
-    startLine: 168785
+    startLine: 168931
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -3312,6 +3314,242 @@ references:
     name: ReportAbuseUserResult
     nameWithType: ReportAbuseUserResult
     fullName: ReportAbuseUserResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List{System.String},System.Int32,System.Action{GetStaticPagesResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List{System.String},System.Int32,System.Action{GetStaticPagesResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: GetStaticPages(List<String>, Int32, Action<GetStaticPagesResult>)
+  nameWithType: IWinPeakNetworkClient.GetStaticPages(List<String>, Int32, Action<GetStaticPagesResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List<System.String>, System.Int32, System.Action<GetStaticPagesResult>)
+  nameWithType.vb: IWinPeakNetworkClient.GetStaticPages(List(Of String), Int32, Action(Of GetStaticPagesResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List(Of System.String), System.Int32, System.Action(Of GetStaticPagesResult))
+  name.vb: GetStaticPages(List(Of String), Int32, Action(Of GetStaticPagesResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List{System.String},System.Int32,System.Action{GetStaticPagesResult})
+    name: GetStaticPages
+    nameWithType: IWinPeakNetworkClient.GetStaticPages
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GetStaticPagesResult
+    name: GetStaticPagesResult
+    nameWithType: GetStaticPagesResult
+    fullName: GetStaticPagesResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List{System.String},System.Int32,System.Action{GetStaticPagesResult})
+    name: GetStaticPages
+    nameWithType: IWinPeakNetworkClient.GetStaticPages
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GetStaticPagesResult
+    name: GetStaticPagesResult
+    nameWithType: GetStaticPagesResult
+    fullName: GetStaticPagesResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String,System.Collections.Generic.List{System.Int32},System.Action{GetPlatformLanguagesResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String,System.Collections.Generic.List{System.Int32},System.Action{GetPlatformLanguagesResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: GetPlatformLanguages(String, List<Int32>, Action<GetPlatformLanguagesResult>)
+  nameWithType: IWinPeakNetworkClient.GetPlatformLanguages(String, List<Int32>, Action<GetPlatformLanguagesResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String, System.Collections.Generic.List<System.Int32>, System.Action<GetPlatformLanguagesResult>)
+  nameWithType.vb: IWinPeakNetworkClient.GetPlatformLanguages(String, List(Of Int32), Action(Of GetPlatformLanguagesResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String, System.Collections.Generic.List(Of System.Int32), System.Action(Of GetPlatformLanguagesResult))
+  name.vb: GetPlatformLanguages(String, List(Of Int32), Action(Of GetPlatformLanguagesResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String,System.Collections.Generic.List{System.Int32},System.Action{GetPlatformLanguagesResult})
+    name: GetPlatformLanguages
+    nameWithType: IWinPeakNetworkClient.GetPlatformLanguages
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GetPlatformLanguagesResult
+    name: GetPlatformLanguagesResult
+    nameWithType: GetPlatformLanguagesResult
+    fullName: GetPlatformLanguagesResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String,System.Collections.Generic.List{System.Int32},System.Action{GetPlatformLanguagesResult})
+    name: GetPlatformLanguages
+    nameWithType: IWinPeakNetworkClient.GetPlatformLanguages
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GetPlatformLanguagesResult
+    name: GetPlatformLanguagesResult
+    nameWithType: GetPlatformLanguagesResult
+    fullName: GetPlatformLanguagesResult
     isExternal: true
   - name: )
     nameWithType: )

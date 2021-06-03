@@ -18,6 +18,8 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetLastTournaments(System.Int32,System.Int64,System.Int32,System.Int32,System.Int32,System.Action{GetLastTournamentsResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetMoreGames(System.Int32,System.Action{MoreGamesResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String,System.Collections.Generic.List{System.Int32},System.Action{GetPlatformLanguagesResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List{System.String},System.Int32,System.Action{GetStaticPagesResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetUserInfo(System.Int32,System.Int32,System.Int32,System.Action{GetUserInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action{System.Boolean})
   - Winpeak.Client.API.IWinPeakNetworkClient.PasswordRecovery(System.String,System.Int64,System.Action{PasswordRecoveryRequestResult})
@@ -37,7 +39,7 @@ items:
   source:
     id: IWinPeakNetworkClient
     path: ''
-    startLine: 168795
+    startLine: 168941
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -64,7 +66,7 @@ items:
   source:
     id: CheckAuthorization
     path: ''
-    startLine: 168800
+    startLine: 168946
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -94,7 +96,7 @@ items:
   source:
     id: Authenticate
     path: ''
-    startLine: 168809
+    startLine: 168955
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -136,7 +138,7 @@ items:
   source:
     id: EditProfile
     path: ''
-    startLine: 168822
+    startLine: 168968
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -188,7 +190,7 @@ items:
   source:
     id: EditProfile
     path: ''
-    startLine: 168834
+    startLine: 168980
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -237,7 +239,7 @@ items:
   source:
     id: Register
     path: ''
-    startLine: 168841
+    startLine: 168987
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -271,7 +273,7 @@ items:
   source:
     id: GetUserInfo
     path: ''
-    startLine: 168850
+    startLine: 168996
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -311,7 +313,7 @@ items:
   source:
     id: Logout
     path: ''
-    startLine: 168856
+    startLine: 169002
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -342,7 +344,7 @@ items:
   source:
     id: SearchGame
     path: ''
-    startLine: 168868
+    startLine: 169014
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -391,7 +393,7 @@ items:
   source:
     id: CreateGameSessionRequest
     path: ''
-    startLine: 168875
+    startLine: 169021
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -425,7 +427,7 @@ items:
   source:
     id: RejectCreateGameSessionRequest
     path: ''
-    startLine: 168883
+    startLine: 169029
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -462,7 +464,7 @@ items:
   source:
     id: ApproveCreateGameSessionRequest
     path: ''
-    startLine: 168891
+    startLine: 169037
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -499,7 +501,7 @@ items:
   source:
     id: CreateGame
     path: ''
-    startLine: 168900
+    startLine: 169046
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -539,7 +541,7 @@ items:
   source:
     id: GetGameInfo
     path: ''
-    startLine: 168908
+    startLine: 169054
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -576,7 +578,7 @@ items:
   source:
     id: CloseGameSession
     path: ''
-    startLine: 168915
+    startLine: 169061
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -610,7 +612,7 @@ items:
   source:
     id: PasswordRecovery
     path: ''
-    startLine: 168922
+    startLine: 169068
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -646,7 +648,7 @@ items:
   source:
     id: GetActiveGameSessionsRequest
     path: ''
-    startLine: 168929
+    startLine: 169075
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -680,7 +682,7 @@ items:
   source:
     id: RemoveFriend
     path: ''
-    startLine: 168936
+    startLine: 169082
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -714,7 +716,7 @@ items:
   source:
     id: SearchUser
     path: ''
-    startLine: 168952
+    startLine: 169098
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -775,7 +777,7 @@ items:
   source:
     id: AddFriend
     path: ''
-    startLine: 168958
+    startLine: 169104
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -808,7 +810,7 @@ items:
   source:
     id: GetLastTournaments
     path: ''
-    startLine: 168968
+    startLine: 169114
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -853,7 +855,7 @@ items:
   source:
     id: GetMoreGames
     path: ''
-    startLine: 168975
+    startLine: 169121
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -887,7 +889,7 @@ items:
   source:
     id: ReportAbuseUser
     path: ''
-    startLine: 168985
+    startLine: 169131
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -916,6 +918,80 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.ReportAbuseUser(Int64, Int64, Int32, String, Action(Of ReportAbuseUserResult))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64, System.Int64, System.Int32, System.String, System.Action(Of ReportAbuseUserResult))
   name.vb: ReportAbuseUser(Int64, Int64, Int32, String, Action(Of ReportAbuseUserResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List{System.String},System.Int32,System.Action{GetStaticPagesResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List{System.String},System.Int32,System.Action{GetStaticPagesResult})
+  id: GetStaticPages(System.Collections.Generic.List{System.String},System.Int32,System.Action{GetStaticPagesResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  langs:
+  - csharp
+  - vb
+  name: GetStaticPages(List<String>, Int32, Action<GetStaticPagesResult>)
+  nameWithType: IWinPeakNetworkClient.GetStaticPages(List<String>, Int32, Action<GetStaticPagesResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List<System.String>, System.Int32, System.Action<GetStaticPagesResult>)
+  type: Method
+  source:
+    id: GetStaticPages
+    path: ''
+    startLine: 169139
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nGet html pages (type list of StaticPage).\n"
+  example: []
+  syntax:
+    content: void GetStaticPages(List<string> pages, int langId, Action<GetStaticPagesResult> callback)
+    parameters:
+    - id: pages
+      type: System.Collections.Generic.List{System.String}
+      description: ''
+    - id: langId
+      type: System.Int32
+      description: ''
+    - id: callback
+      type: System.Action{GetStaticPagesResult}
+      description: returns result
+    content.vb: Sub GetStaticPages(pages As List(Of String), langId As Integer, callback As Action(Of GetStaticPagesResult))
+  overload: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages*
+  nameWithType.vb: IWinPeakNetworkClient.GetStaticPages(List(Of String), Int32, Action(Of GetStaticPagesResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List(Of System.String), System.Int32, System.Action(Of GetStaticPagesResult))
+  name.vb: GetStaticPages(List(Of String), Int32, Action(Of GetStaticPagesResult))
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String,System.Collections.Generic.List{System.Int32},System.Action{GetPlatformLanguagesResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String,System.Collections.Generic.List{System.Int32},System.Action{GetPlatformLanguagesResult})
+  id: GetPlatformLanguages(System.String,System.Collections.Generic.List{System.Int32},System.Action{GetPlatformLanguagesResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  langs:
+  - csharp
+  - vb
+  name: GetPlatformLanguages(String, List<Int32>, Action<GetPlatformLanguagesResult>)
+  nameWithType: IWinPeakNetworkClient.GetPlatformLanguages(String, List<Int32>, Action<GetPlatformLanguagesResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String, System.Collections.Generic.List<System.Int32>, System.Action<GetPlatformLanguagesResult>)
+  type: Method
+  source:
+    id: GetPlatformLanguages
+    path: ''
+    startLine: 169147
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nGet platform languages. Result languages (type list of WinpeakLanguage) and current language (type WinpeakLanguage)\n"
+  example: []
+  syntax:
+    content: void GetPlatformLanguages(string name, List<int> langId, Action<GetPlatformLanguagesResult> callback)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    - id: langId
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    - id: callback
+      type: System.Action{GetPlatformLanguagesResult}
+      description: returns result
+    content.vb: Sub GetPlatformLanguages(name As String, langId As List(Of Integer), callback As Action(Of GetPlatformLanguagesResult))
+  overload: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages*
+  nameWithType.vb: IWinPeakNetworkClient.GetPlatformLanguages(String, List(Of Int32), Action(Of GetPlatformLanguagesResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String, System.Collections.Generic.List(Of System.Int32), System.Action(Of GetPlatformLanguagesResult))
+  name.vb: GetPlatformLanguages(String, List(Of Int32), Action(Of GetPlatformLanguagesResult))
 references:
 - uid: Winpeak.Client.API
   commentId: N:Winpeak.Client.API
@@ -1997,6 +2073,237 @@ references:
     name: ReportAbuseUserResult
     nameWithType: ReportAbuseUserResult
     fullName: ReportAbuseUserResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages*
+  commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages
+  name: GetStaticPages
+  nameWithType: IWinPeakNetworkClient.GetStaticPages
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{GetStaticPagesResult}
+  commentId: T:System.Action{GetStaticPagesResult}
+  parent: System
+  definition: System.Action`1
+  name: Action<GetStaticPagesResult>
+  nameWithType: Action<GetStaticPagesResult>
+  fullName: System.Action<GetStaticPagesResult>
+  nameWithType.vb: Action(Of GetStaticPagesResult)
+  fullName.vb: System.Action(Of GetStaticPagesResult)
+  name.vb: Action(Of GetStaticPagesResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GetStaticPagesResult
+    name: GetStaticPagesResult
+    nameWithType: GetStaticPagesResult
+    fullName: GetStaticPagesResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GetStaticPagesResult
+    name: GetStaticPagesResult
+    nameWithType: GetStaticPagesResult
+    fullName: GetStaticPagesResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages*
+  commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages
+  name: GetPlatformLanguages
+  nameWithType: IWinPeakNetworkClient.GetPlatformLanguages
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{GetPlatformLanguagesResult}
+  commentId: T:System.Action{GetPlatformLanguagesResult}
+  parent: System
+  definition: System.Action`1
+  name: Action<GetPlatformLanguagesResult>
+  nameWithType: Action<GetPlatformLanguagesResult>
+  fullName: System.Action<GetPlatformLanguagesResult>
+  nameWithType.vb: Action(Of GetPlatformLanguagesResult)
+  fullName.vb: System.Action(Of GetPlatformLanguagesResult)
+  name.vb: Action(Of GetPlatformLanguagesResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GetPlatformLanguagesResult
+    name: GetPlatformLanguagesResult
+    nameWithType: GetPlatformLanguagesResult
+    fullName: GetPlatformLanguagesResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GetPlatformLanguagesResult
+    name: GetPlatformLanguagesResult
+    nameWithType: GetPlatformLanguagesResult
+    fullName: GetPlatformLanguagesResult
     isExternal: true
   - name: )
     nameWithType: )
