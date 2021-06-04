@@ -6,6 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.Cash
+  - Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.Commission
   - Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.GameSessionId
   - Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.TournamentName
   - Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.UsersList
@@ -19,7 +20,7 @@ items:
   source:
     id: TournamentInfo
     path: ''
-    startLine: 167821
+    startLine: 167822
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -56,7 +57,7 @@ items:
   source:
     id: TournamentName
     path: ''
-    startLine: 167822
+    startLine: 167823
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -87,7 +88,7 @@ items:
   source:
     id: GameSessionId
     path: ''
-    startLine: 167823
+    startLine: 167824
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -118,7 +119,7 @@ items:
   source:
     id: Cash
     path: ''
-    startLine: 167824
+    startLine: 167825
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -129,6 +130,37 @@ items:
       type: System.Int32
     content.vb: Public Property Cash As Integer
   overload: Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.Cash*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.Commission
+  commentId: P:Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.Commission
+  id: Commission
+  parent: Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo
+  langs:
+  - csharp
+  - vb
+  name: Commission
+  nameWithType: GetLastTournamentsResult.TournamentInfo.Commission
+  fullName: Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.Commission
+  type: Property
+  source:
+    id: Commission
+    path: ''
+    startLine: 167826
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public int Commission { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Commission As Integer
+  overload: Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.Commission*
   modifiers.csharp:
   - public
   - get
@@ -149,7 +181,7 @@ items:
   source:
     id: UsersList
     path: ''
-    startLine: 167825
+    startLine: 167827
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -496,6 +528,11 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
+- uid: Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.Commission*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.Commission
+  name: Commission
+  nameWithType: GetLastTournamentsResult.TournamentInfo.Commission
+  fullName: Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentInfo.Commission
 - uid: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentPlayer}
   commentId: T:System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GetLastTournamentsResult.TournamentPlayer}
   parent: System.Collections.Generic
