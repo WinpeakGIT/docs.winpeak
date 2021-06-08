@@ -45,7 +45,7 @@ items:
   source:
     id: IWinPeakClient
     path: ''
-    startLine: 168794
+    startLine: 168937
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -66,6 +66,9 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest(System.Int64,System.Action{CreateGameSessionRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.RejectCreateGameSessionRequest(System.Int64,System.Int64,System.Action{RejectCreateGameSessionRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.ApproveCreateGameSessionRequest(System.Int64,System.Int64,System.Action{ApproveGameSessionRequestResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.CreateFriendGameSessionRequest(System.Int64,System.Int64,System.Action{CreateFriendGameSessionRequestResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.ApproveFriendGameSessionRequest(System.Int64,System.Action{ApproveFriendGameSessionRequestResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest(System.Int64,System.Action{RejectFriendGameSessionRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CreateGame(System.Int32,System.Int32,System.Int32,System.Action{CreateGameSessionResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetGameInfo(System.Int32,System.Int64,System.Action{GetGameInfoResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.CloseGameSession(System.Int64,System.Action{CloseGameSessionResult})
@@ -99,7 +102,7 @@ items:
   source:
     id: OnClientDisconnected
     path: ''
-    startLine: 168799
+    startLine: 168942
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -124,7 +127,7 @@ items:
   source:
     id: OnRoundScoreUpdated
     path: ''
-    startLine: 168804
+    startLine: 168947
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -149,7 +152,7 @@ items:
   source:
     id: OnGameOver
     path: ''
-    startLine: 168809
+    startLine: 168952
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -174,7 +177,7 @@ items:
   source:
     id: OnStartGameCountdown
     path: ''
-    startLine: 168814
+    startLine: 168957
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -199,7 +202,7 @@ items:
   source:
     id: OnUserInfoUpdated
     path: ''
-    startLine: 168819
+    startLine: 168962
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -224,7 +227,7 @@ items:
   source:
     id: OnGameObjectsReady
     path: ''
-    startLine: 168824
+    startLine: 168967
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -249,7 +252,7 @@ items:
   source:
     id: OnOccurConnectionProblem
     path: ''
-    startLine: 168829
+    startLine: 168972
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -274,7 +277,7 @@ items:
   source:
     id: OnPingUpdated
     path: ''
-    startLine: 168834
+    startLine: 168977
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -299,7 +302,7 @@ items:
   source:
     id: OnPlayWallHitSound
     path: ''
-    startLine: 168839
+    startLine: 168982
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -324,7 +327,7 @@ items:
   source:
     id: OnGameStateChanged
     path: ''
-    startLine: 168844
+    startLine: 168987
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -349,7 +352,7 @@ items:
   source:
     id: IsConnected
     path: ''
-    startLine: 168849
+    startLine: 168992
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -380,7 +383,7 @@ items:
   source:
     id: IsActiveNetwork
     path: ''
-    startLine: 168854
+    startLine: 168997
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -411,7 +414,7 @@ items:
   source:
     id: SubscribeRigidbody
     path: ''
-    startLine: 168859
+    startLine: 169002
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -438,7 +441,7 @@ items:
   source:
     id: Init
     path: ''
-    startLine: 168864
+    startLine: 169007
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -465,7 +468,7 @@ items:
   source:
     id: Connect
     path: ''
-    startLine: 168869
+    startLine: 169012
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -496,7 +499,7 @@ items:
   source:
     id: Auth
     path: ''
-    startLine: 168874
+    startLine: 169017
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -527,7 +530,7 @@ items:
   source:
     id: Die
     path: ''
-    startLine: 168879
+    startLine: 169022
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -554,7 +557,7 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 168890
+    startLine: 169033
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -597,7 +600,7 @@ items:
   source:
     id: Utilize
     path: ''
-    startLine: 168895
+    startLine: 169038
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -621,7 +624,7 @@ items:
   source:
     id: BlockInGameInput
     path: ''
-    startLine: 168901
+    startLine: 169044
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -649,7 +652,7 @@ items:
   source:
     id: RequestServers
     path: ''
-    startLine: 168907
+    startLine: 169050
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -680,7 +683,7 @@ items:
   source:
     id: OnGamePlayersListLoaded
     path: ''
-    startLine: 168912
+    startLine: 169055
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -705,7 +708,7 @@ items:
   source:
     id: GetGamePlayersList
     path: ''
-    startLine: 168917
+    startLine: 169060
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -729,7 +732,7 @@ items:
   source:
     id: DrawLines
     path: ''
-    startLine: 168922
+    startLine: 169065
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -753,7 +756,7 @@ items:
   source:
     id: DrawSingleLine
     path: ''
-    startLine: 168928
+    startLine: 169071
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -777,7 +780,7 @@ items:
   source:
     id: DrawPoint
     path: ''
-    startLine: 168933
+    startLine: 169076
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -801,7 +804,7 @@ items:
   source:
     id: OnDrawPoint
     path: ''
-    startLine: 168936
+    startLine: 169079
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -824,7 +827,7 @@ items:
   source:
     id: OnDrawLine
     path: ''
-    startLine: 168937
+    startLine: 169080
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -847,7 +850,7 @@ items:
   source:
     id: InvokeDrawPoint
     path: ''
-    startLine: 168938
+    startLine: 169081
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -878,7 +881,7 @@ items:
   source:
     id: InvokeDrawLine
     path: ''
-    startLine: 168939
+    startLine: 169082
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -2114,6 +2117,262 @@ references:
     name: ApproveGameSessionRequestResult
     nameWithType: ApproveGameSessionRequestResult
     fullName: ApproveGameSessionRequestResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateFriendGameSessionRequest(System.Int64,System.Int64,System.Action{CreateFriendGameSessionRequestResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.CreateFriendGameSessionRequest(System.Int64,System.Int64,System.Action{CreateFriendGameSessionRequestResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: CreateFriendGameSessionRequest(Int64, Int64, Action<CreateFriendGameSessionRequestResult>)
+  nameWithType: IWinPeakNetworkClient.CreateFriendGameSessionRequest(Int64, Int64, Action<CreateFriendGameSessionRequestResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.CreateFriendGameSessionRequest(System.Int64, System.Int64, System.Action<CreateFriendGameSessionRequestResult>)
+  nameWithType.vb: IWinPeakNetworkClient.CreateFriendGameSessionRequest(Int64, Int64, Action(Of CreateFriendGameSessionRequestResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.CreateFriendGameSessionRequest(System.Int64, System.Int64, System.Action(Of CreateFriendGameSessionRequestResult))
+  name.vb: CreateFriendGameSessionRequest(Int64, Int64, Action(Of CreateFriendGameSessionRequestResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateFriendGameSessionRequest(System.Int64,System.Int64,System.Action{CreateFriendGameSessionRequestResult})
+    name: CreateFriendGameSessionRequest
+    nameWithType: IWinPeakNetworkClient.CreateFriendGameSessionRequest
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.CreateFriendGameSessionRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CreateFriendGameSessionRequestResult
+    name: CreateFriendGameSessionRequestResult
+    nameWithType: CreateFriendGameSessionRequestResult
+    fullName: CreateFriendGameSessionRequestResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateFriendGameSessionRequest(System.Int64,System.Int64,System.Action{CreateFriendGameSessionRequestResult})
+    name: CreateFriendGameSessionRequest
+    nameWithType: IWinPeakNetworkClient.CreateFriendGameSessionRequest
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.CreateFriendGameSessionRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CreateFriendGameSessionRequestResult
+    name: CreateFriendGameSessionRequestResult
+    nameWithType: CreateFriendGameSessionRequestResult
+    fullName: CreateFriendGameSessionRequestResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.ApproveFriendGameSessionRequest(System.Int64,System.Action{ApproveFriendGameSessionRequestResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.ApproveFriendGameSessionRequest(System.Int64,System.Action{ApproveFriendGameSessionRequestResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: ApproveFriendGameSessionRequest(Int64, Action<ApproveFriendGameSessionRequestResult>)
+  nameWithType: IWinPeakNetworkClient.ApproveFriendGameSessionRequest(Int64, Action<ApproveFriendGameSessionRequestResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.ApproveFriendGameSessionRequest(System.Int64, System.Action<ApproveFriendGameSessionRequestResult>)
+  nameWithType.vb: IWinPeakNetworkClient.ApproveFriendGameSessionRequest(Int64, Action(Of ApproveFriendGameSessionRequestResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.ApproveFriendGameSessionRequest(System.Int64, System.Action(Of ApproveFriendGameSessionRequestResult))
+  name.vb: ApproveFriendGameSessionRequest(Int64, Action(Of ApproveFriendGameSessionRequestResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.ApproveFriendGameSessionRequest(System.Int64,System.Action{ApproveFriendGameSessionRequestResult})
+    name: ApproveFriendGameSessionRequest
+    nameWithType: IWinPeakNetworkClient.ApproveFriendGameSessionRequest
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.ApproveFriendGameSessionRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ApproveFriendGameSessionRequestResult
+    name: ApproveFriendGameSessionRequestResult
+    nameWithType: ApproveFriendGameSessionRequestResult
+    fullName: ApproveFriendGameSessionRequestResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.ApproveFriendGameSessionRequest(System.Int64,System.Action{ApproveFriendGameSessionRequestResult})
+    name: ApproveFriendGameSessionRequest
+    nameWithType: IWinPeakNetworkClient.ApproveFriendGameSessionRequest
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.ApproveFriendGameSessionRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ApproveFriendGameSessionRequestResult
+    name: ApproveFriendGameSessionRequestResult
+    nameWithType: ApproveFriendGameSessionRequestResult
+    fullName: ApproveFriendGameSessionRequestResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest(System.Int64,System.Action{RejectFriendGameSessionRequestResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest(System.Int64,System.Action{RejectFriendGameSessionRequestResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: RejectFriendGameSessionRequest(Int64, Action<RejectFriendGameSessionRequestResult>)
+  nameWithType: IWinPeakNetworkClient.RejectFriendGameSessionRequest(Int64, Action<RejectFriendGameSessionRequestResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest(System.Int64, System.Action<RejectFriendGameSessionRequestResult>)
+  nameWithType.vb: IWinPeakNetworkClient.RejectFriendGameSessionRequest(Int64, Action(Of RejectFriendGameSessionRequestResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest(System.Int64, System.Action(Of RejectFriendGameSessionRequestResult))
+  name.vb: RejectFriendGameSessionRequest(Int64, Action(Of RejectFriendGameSessionRequestResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest(System.Int64,System.Action{RejectFriendGameSessionRequestResult})
+    name: RejectFriendGameSessionRequest
+    nameWithType: IWinPeakNetworkClient.RejectFriendGameSessionRequest
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RejectFriendGameSessionRequestResult
+    name: RejectFriendGameSessionRequestResult
+    nameWithType: RejectFriendGameSessionRequestResult
+    fullName: RejectFriendGameSessionRequestResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest(System.Int64,System.Action{RejectFriendGameSessionRequestResult})
+    name: RejectFriendGameSessionRequest
+    nameWithType: IWinPeakNetworkClient.RejectFriendGameSessionRequest
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RejectFriendGameSessionRequestResult
+    name: RejectFriendGameSessionRequestResult
+    nameWithType: RejectFriendGameSessionRequestResult
+    fullName: RejectFriendGameSessionRequestResult
     isExternal: true
   - name: )
     nameWithType: )

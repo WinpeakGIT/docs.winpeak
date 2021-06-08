@@ -160,6 +160,39 @@
   </table>
   
   
+  <a id="Winpeak_Client_API_IWinPeakNetworkClient_ApproveFriendGameSessionRequest_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.ApproveFriendGameSessionRequest*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_ApproveFriendGameSessionRequest_System_Int64_System_Action_ApproveFriendGameSessionRequestResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.ApproveFriendGameSessionRequest(System.Int64,System.Action{ApproveFriendGameSessionRequestResult})">ApproveFriendGameSessionRequest(Int64, Action&lt;ApproveFriendGameSessionRequestResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Approve friend create game session request by invited user. Returns result of action true - succeeded, false - failed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ApproveFriendGameSessionRequest(long gameSessionId, Action&lt;ApproveFriendGameSessionRequestResult&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">gameSessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">ApproveFriendGameSessionRequestResult</span>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_Authenticate_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Authenticate*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_Authenticate_System_String_System_String_System_Boolean_System_Int64_System_Action_AuthorizationResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.Authenticate(System.String,System.String,System.Boolean,System.Int64,System.Action{AuthorizationResult})">Authenticate(String, String, Boolean, Int64, Action&lt;AuthorizationResult&gt;)</h4>
   <div class="markdown level1 summary"><p>Authenticate user in the system. Return user id</p>
@@ -270,6 +303,44 @@
         <td><span class="parametername">callback</span></td>
         <td><p>returns result</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Winpeak_Client_API_IWinPeakNetworkClient_CreateFriendGameSessionRequest_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CreateFriendGameSessionRequest*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_CreateFriendGameSessionRequest_System_Int64_System_Int64_System_Action_CreateFriendGameSessionRequestResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.CreateFriendGameSessionRequest(System.Int64,System.Int64,System.Action{CreateFriendGameSessionRequestResult})">CreateFriendGameSessionRequest(Int64, Int64, Action&lt;CreateFriendGameSessionRequestResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create friend game session request for the game. Result request Id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateFriendGameSessionRequest(long userId, long gameSessionId, Action&lt;CreateFriendGameSessionRequestResult&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">gameSessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">CreateFriendGameSessionRequestResult</span>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -927,6 +998,39 @@
         <td><span class="parametername">callback</span></td>
         <td><p>returns result</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Winpeak_Client_API_IWinPeakNetworkClient_RejectFriendGameSessionRequest_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_RejectFriendGameSessionRequest_System_Int64_System_Action_RejectFriendGameSessionRequestResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest(System.Int64,System.Action{RejectFriendGameSessionRequestResult})">RejectFriendGameSessionRequest(Int64, Action&lt;RejectFriendGameSessionRequestResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>Reject friend game session request for the game. Can be rejected by game creator or user who wants to play in this game. Returns result of action true - succeeded, false - failed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RejectFriendGameSessionRequest(long gameSessionId, Action&lt;RejectFriendGameSessionRequestResult&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">gameSessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">RejectFriendGameSessionRequestResult</span>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
