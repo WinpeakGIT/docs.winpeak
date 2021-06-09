@@ -16,6 +16,7 @@ items:
   - Winpeak.Client.Networking.WebServer.Account.GetPhone
   - Winpeak.Client.Networking.WebServer.Account.GetRating
   - Winpeak.Client.Networking.WebServer.Account.GetSoftCash
+  - Winpeak.Client.Networking.WebServer.Account.InviteInfo
   - Winpeak.Client.Networking.WebServer.Account.IsValid
   langs:
   - csharp
@@ -27,7 +28,7 @@ items:
   source:
     id: Account
     path: ''
-    startLine: 166077
+    startLine: 166079
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -57,6 +58,7 @@ items:
   - Winpeak.Client.Networking.WebServer.InternalAccount.Rating
   - Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
   - Winpeak.Client.Networking.WebServer.InternalAccount.InternalAdditionalInfo
+  - Winpeak.Client.Networking.WebServer.InternalAccount.InternalInviteInfo
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -84,7 +86,7 @@ items:
   source:
     id: GetId
     path: ''
-    startLine: 166079
+    startLine: 166081
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -117,7 +119,7 @@ items:
   source:
     id: GetLogin
     path: ''
-    startLine: 166081
+    startLine: 166083
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -150,7 +152,7 @@ items:
   source:
     id: GetEmail
     path: ''
-    startLine: 166083
+    startLine: 166085
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -183,7 +185,7 @@ items:
   source:
     id: GetFirstName
     path: ''
-    startLine: 166085
+    startLine: 166087
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -216,7 +218,7 @@ items:
   source:
     id: GetLastName
     path: ''
-    startLine: 166087
+    startLine: 166089
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -249,7 +251,7 @@ items:
   source:
     id: GetPhone
     path: ''
-    startLine: 166089
+    startLine: 166091
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -282,7 +284,7 @@ items:
   source:
     id: GetCash
     path: ''
-    startLine: 166091
+    startLine: 166093
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -315,7 +317,7 @@ items:
   source:
     id: GetSoftCash
     path: ''
-    startLine: 166093
+    startLine: 166095
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -348,7 +350,7 @@ items:
   source:
     id: GetRating
     path: ''
-    startLine: 166095
+    startLine: 166097
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -381,7 +383,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 166097
+    startLine: 166099
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -414,7 +416,7 @@ items:
   source:
     id: GetAvatar
     path: ''
-    startLine: 166099
+    startLine: 166101
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -447,7 +449,7 @@ items:
   source:
     id: AdditionalInfo
     path: ''
-    startLine: 166101
+    startLine: 166103
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -460,6 +462,39 @@ items:
   overload: Winpeak.Client.Networking.WebServer.Account.AdditionalInfo*
   implements:
   - Winpeak.Client.Networking.WebServer.IAccount.AdditionalInfo
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.Account.InviteInfo
+  commentId: P:Winpeak.Client.Networking.WebServer.Account.InviteInfo
+  id: InviteInfo
+  parent: Winpeak.Client.Networking.WebServer.Account
+  langs:
+  - csharp
+  - vb
+  name: InviteInfo
+  nameWithType: Account.InviteInfo
+  fullName: Winpeak.Client.Networking.WebServer.Account.InviteInfo
+  type: Property
+  source:
+    id: InviteInfo
+    path: ''
+    startLine: 166104
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public List<IInviteInfo> InviteInfo { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.IInviteInfo}
+    content.vb: Public ReadOnly Property InviteInfo As List(Of IInviteInfo)
+  overload: Winpeak.Client.Networking.WebServer.Account.InviteInfo*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IAccount.InviteInfo
   modifiers.csharp:
   - public
   - get
@@ -575,6 +610,12 @@ references:
   name: InternalAdditionalInfo
   nameWithType: InternalAccount.InternalAdditionalInfo
   fullName: Winpeak.Client.Networking.WebServer.InternalAccount.InternalAdditionalInfo
+- uid: Winpeak.Client.Networking.WebServer.InternalAccount.InternalInviteInfo
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.InternalInviteInfo
+  parent: Winpeak.Client.Networking.WebServer.InternalAccount
+  name: InternalInviteInfo
+  nameWithType: InternalAccount.InternalInviteInfo
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccount.InternalInviteInfo
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -1032,3 +1073,101 @@ references:
   name: IAdditionalInfo
   nameWithType: IAdditionalInfo
   fullName: Winpeak.Client.Networking.WebServer.IAdditionalInfo
+- uid: Winpeak.Client.Networking.WebServer.Account.InviteInfo*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.Account.InviteInfo
+  name: InviteInfo
+  nameWithType: Account.InviteInfo
+  fullName: Winpeak.Client.Networking.WebServer.Account.InviteInfo
+- uid: Winpeak.Client.Networking.WebServer.IAccount.InviteInfo
+  commentId: P:Winpeak.Client.Networking.WebServer.IAccount.InviteInfo
+  parent: Winpeak.Client.Networking.WebServer.IAccount
+  name: InviteInfo
+  nameWithType: IAccount.InviteInfo
+  fullName: Winpeak.Client.Networking.WebServer.IAccount.InviteInfo
+- uid: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.IInviteInfo}
+  commentId: T:System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.IInviteInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IInviteInfo>
+  nameWithType: List<IInviteInfo>
+  fullName: System.Collections.Generic.List<Winpeak.Client.Networking.WebServer.IInviteInfo>
+  nameWithType.vb: List(Of IInviteInfo)
+  fullName.vb: System.Collections.Generic.List(Of Winpeak.Client.Networking.WebServer.IInviteInfo)
+  name.vb: List(Of IInviteInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Winpeak.Client.Networking.WebServer.IInviteInfo
+    name: IInviteInfo
+    nameWithType: IInviteInfo
+    fullName: Winpeak.Client.Networking.WebServer.IInviteInfo
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Winpeak.Client.Networking.WebServer.IInviteInfo
+    name: IInviteInfo
+    nameWithType: IInviteInfo
+    fullName: Winpeak.Client.Networking.WebServer.IInviteInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
