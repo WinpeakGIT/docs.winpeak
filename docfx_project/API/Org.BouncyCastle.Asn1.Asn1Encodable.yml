@@ -257,7 +257,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Asn1
   syntax:
-    content: public override sealed int GetHashCode()
+    content: public sealed override int GetHashCode()
     return:
       type: System.Int32
     content.vb: Public NotOverridable Overrides Function GetHashCode As Integer
@@ -265,8 +265,8 @@ items:
   overload: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   modifiers.vb:
   - Public
   - Overrides
@@ -290,7 +290,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Asn1
   syntax:
-    content: public override sealed bool Equals(object obj)
+    content: public sealed override bool Equals(object obj)
     parameters:
     - id: obj
       type: System.Object
@@ -301,8 +301,8 @@ items:
   overload: Org.BouncyCastle.Asn1.Asn1Encodable.Equals*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   modifiers.vb:
   - Public
   - Overrides

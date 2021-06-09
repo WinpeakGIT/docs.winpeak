@@ -66,7 +66,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.IO
   syntax:
-    content: public override sealed bool CanRead { get; }
+    content: public sealed override bool CanRead { get; }
     parameters: []
     return:
       type: System.Boolean
@@ -74,8 +74,8 @@ items:
   overload: Org.BouncyCastle.Utilities.IO.BaseInputStream.CanRead*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   - get
   modifiers.vb:
   - Public
@@ -101,7 +101,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.IO
   syntax:
-    content: public override sealed bool CanSeek { get; }
+    content: public sealed override bool CanSeek { get; }
     parameters: []
     return:
       type: System.Boolean
@@ -109,8 +109,8 @@ items:
   overload: Org.BouncyCastle.Utilities.IO.BaseInputStream.CanSeek*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   - get
   modifiers.vb:
   - Public
@@ -136,7 +136,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.IO
   syntax:
-    content: public override sealed bool CanWrite { get; }
+    content: public sealed override bool CanWrite { get; }
     parameters: []
     return:
       type: System.Boolean
@@ -144,8 +144,8 @@ items:
   overload: Org.BouncyCastle.Utilities.IO.BaseInputStream.CanWrite*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   - get
   modifiers.vb:
   - Public
@@ -199,13 +199,13 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.IO
   syntax:
-    content: public override sealed void Flush()
+    content: public sealed override void Flush()
     content.vb: Public NotOverridable Overrides Sub Flush
   overload: Org.BouncyCastle.Utilities.IO.BaseInputStream.Flush*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   modifiers.vb:
   - Public
   - Overrides
@@ -229,7 +229,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.IO
   syntax:
-    content: public override sealed long Length { get; }
+    content: public sealed override long Length { get; }
     parameters: []
     return:
       type: System.Int64
@@ -237,8 +237,8 @@ items:
   overload: Org.BouncyCastle.Utilities.IO.BaseInputStream.Length*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   - get
   modifiers.vb:
   - Public
@@ -264,7 +264,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.IO
   syntax:
-    content: public override sealed long Position { get; set; }
+    content: public sealed override long Position { get; set; }
     parameters: []
     return:
       type: System.Int64
@@ -272,8 +272,8 @@ items:
   overload: Org.BouncyCastle.Utilities.IO.BaseInputStream.Position*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   - get
   - set
   modifiers.vb:
@@ -339,7 +339,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.IO
   syntax:
-    content: public override sealed long Seek(long offset, SeekOrigin origin)
+    content: public sealed override long Seek(long offset, SeekOrigin origin)
     parameters:
     - id: offset
       type: System.Int64
@@ -351,8 +351,8 @@ items:
   overload: Org.BouncyCastle.Utilities.IO.BaseInputStream.Seek*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   modifiers.vb:
   - Public
   - Overrides
@@ -376,7 +376,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.IO
   syntax:
-    content: public override sealed void SetLength(long value)
+    content: public sealed override void SetLength(long value)
     parameters:
     - id: value
       type: System.Int64
@@ -384,8 +384,8 @@ items:
   overload: Org.BouncyCastle.Utilities.IO.BaseInputStream.SetLength*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   modifiers.vb:
   - Public
   - Overrides
@@ -409,7 +409,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.IO
   syntax:
-    content: public override sealed void Write(byte[] buffer, int offset, int count)
+    content: public sealed override void Write(byte[] buffer, int offset, int count)
     parameters:
     - id: buffer
       type: System.Byte[]
@@ -422,8 +422,8 @@ items:
   nameWithType.vb: BaseInputStream.Write(Byte(), Int32, Int32)
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   modifiers.vb:
   - Public
   - Overrides

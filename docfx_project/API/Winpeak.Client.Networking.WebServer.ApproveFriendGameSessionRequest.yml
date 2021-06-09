@@ -5,7 +5,7 @@ items:
   id: ApproveFriendGameSessionRequest
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest.#ctor(System.Int64)
+  - Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest.#ctor(System.Int64,System.Int64)
   - Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest.GenerateData
   langs:
@@ -18,7 +18,7 @@ items:
   source:
     id: ApproveFriendGameSessionRequest
     path: ''
-    startLine: 167142
+    startLine: 167148
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -60,30 +60,32 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest.#ctor(System.Int64)
-  commentId: M:Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest.#ctor(System.Int64)
-  id: '#ctor(System.Int64)'
+- uid: Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest.#ctor(System.Int64,System.Int64)
+  commentId: M:Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest.#ctor(System.Int64,System.Int64)
+  id: '#ctor(System.Int64,System.Int64)'
   parent: Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest
   langs:
   - csharp
   - vb
-  name: ApproveFriendGameSessionRequest(Int64)
-  nameWithType: ApproveFriendGameSessionRequest.ApproveFriendGameSessionRequest(Int64)
-  fullName: Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest.ApproveFriendGameSessionRequest(System.Int64)
+  name: ApproveFriendGameSessionRequest(Int64, Int64)
+  nameWithType: ApproveFriendGameSessionRequest.ApproveFriendGameSessionRequest(Int64, Int64)
+  fullName: Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest.ApproveFriendGameSessionRequest(System.Int64, System.Int64)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 167148
+    startLine: 167155
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public ApproveFriendGameSessionRequest(long gameSessionId)
+    content: public ApproveFriendGameSessionRequest(long gameSessionId, long approveUserId)
     parameters:
     - id: gameSessionId
       type: System.Int64
-    content.vb: Public Sub New(gameSessionId As Long)
+    - id: approveUserId
+      type: System.Int64
+    content.vb: Public Sub New(gameSessionId As Long, approveUserId As Long)
   overload: Winpeak.Client.Networking.WebServer.ApproveFriendGameSessionRequest.#ctor*
   modifiers.csharp:
   - public
@@ -103,7 +105,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 167152
+    startLine: 167160
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -134,7 +136,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 167158
+    startLine: 167169
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer

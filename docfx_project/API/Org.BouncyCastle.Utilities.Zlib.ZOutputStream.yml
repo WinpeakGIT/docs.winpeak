@@ -424,7 +424,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.Zlib
   syntax:
-    content: public override sealed bool CanRead { get; }
+    content: public sealed override bool CanRead { get; }
     parameters: []
     return:
       type: System.Boolean
@@ -432,8 +432,8 @@ items:
   overload: Org.BouncyCastle.Utilities.Zlib.ZOutputStream.CanRead*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   - get
   modifiers.vb:
   - Public
@@ -459,7 +459,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.Zlib
   syntax:
-    content: public override sealed bool CanSeek { get; }
+    content: public sealed override bool CanSeek { get; }
     parameters: []
     return:
       type: System.Boolean
@@ -467,8 +467,8 @@ items:
   overload: Org.BouncyCastle.Utilities.Zlib.ZOutputStream.CanSeek*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   - get
   modifiers.vb:
   - Public
@@ -494,7 +494,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.Zlib
   syntax:
-    content: public override sealed bool CanWrite { get; }
+    content: public sealed override bool CanWrite { get; }
     parameters: []
     return:
       type: System.Boolean
@@ -502,8 +502,8 @@ items:
   overload: Org.BouncyCastle.Utilities.Zlib.ZOutputStream.CanWrite*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   - get
   modifiers.vb:
   - Public
@@ -674,7 +674,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.Zlib
   syntax:
-    content: public override sealed long Length { get; }
+    content: public sealed override long Length { get; }
     parameters: []
     return:
       type: System.Int64
@@ -682,8 +682,8 @@ items:
   overload: Org.BouncyCastle.Utilities.Zlib.ZOutputStream.Length*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   - get
   modifiers.vb:
   - Public
@@ -709,7 +709,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.Zlib
   syntax:
-    content: public override sealed long Position { get; set; }
+    content: public sealed override long Position { get; set; }
     parameters: []
     return:
       type: System.Int64
@@ -717,8 +717,8 @@ items:
   overload: Org.BouncyCastle.Utilities.Zlib.ZOutputStream.Position*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   - get
   - set
   modifiers.vb:
@@ -744,7 +744,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.Zlib
   syntax:
-    content: public override sealed int Read(byte[] buffer, int offset, int count)
+    content: public sealed override int Read(byte[] buffer, int offset, int count)
     parameters:
     - id: buffer
       type: System.Byte[]
@@ -759,8 +759,8 @@ items:
   nameWithType.vb: ZOutputStream.Read(Byte(), Int32, Int32)
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   modifiers.vb:
   - Public
   - Overrides
@@ -786,7 +786,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.Zlib
   syntax:
-    content: public override sealed long Seek(long offset, SeekOrigin origin)
+    content: public sealed override long Seek(long offset, SeekOrigin origin)
     parameters:
     - id: offset
       type: System.Int64
@@ -798,8 +798,8 @@ items:
   overload: Org.BouncyCastle.Utilities.Zlib.ZOutputStream.Seek*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   modifiers.vb:
   - Public
   - Overrides
@@ -823,7 +823,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Utilities.Zlib
   syntax:
-    content: public override sealed void SetLength(long value)
+    content: public sealed override void SetLength(long value)
     parameters:
     - id: value
       type: System.Int64
@@ -831,8 +831,8 @@ items:
   overload: Org.BouncyCastle.Utilities.Zlib.ZOutputStream.SetLength*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   modifiers.vb:
   - Public
   - Overrides

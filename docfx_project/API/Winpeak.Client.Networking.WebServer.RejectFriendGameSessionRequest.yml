@@ -5,7 +5,7 @@ items:
   id: RejectFriendGameSessionRequest
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor(System.Int64)
+  - Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor(System.Int64,System.Int64)
   - Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.GenerateData
   langs:
@@ -60,30 +60,32 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor(System.Int64)
-  commentId: M:Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor(System.Int64)
-  id: '#ctor(System.Int64)'
+- uid: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor(System.Int64,System.Int64)
+  commentId: M:Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor(System.Int64,System.Int64)
+  id: '#ctor(System.Int64,System.Int64)'
   parent: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest
   langs:
   - csharp
   - vb
-  name: RejectFriendGameSessionRequest(Int64)
-  nameWithType: RejectFriendGameSessionRequest.RejectFriendGameSessionRequest(Int64)
-  fullName: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.RejectFriendGameSessionRequest(System.Int64)
+  name: RejectFriendGameSessionRequest(Int64, Int64)
+  nameWithType: RejectFriendGameSessionRequest.RejectFriendGameSessionRequest(Int64, Int64)
+  fullName: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.RejectFriendGameSessionRequest(System.Int64, System.Int64)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 167125
+    startLine: 167126
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public RejectFriendGameSessionRequest(long gameSessionId)
+    content: public RejectFriendGameSessionRequest(long gameSessionId, long rejectUserId)
     parameters:
     - id: gameSessionId
       type: System.Int64
-    content.vb: Public Sub New(gameSessionId As Long)
+    - id: rejectUserId
+      type: System.Int64
+    content.vb: Public Sub New(gameSessionId As Long, rejectUserId As Long)
   overload: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor*
   modifiers.csharp:
   - public
@@ -103,7 +105,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 167129
+    startLine: 167131
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -134,7 +136,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 167135
+    startLine: 167141
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer

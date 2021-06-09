@@ -112,7 +112,7 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public override sealed void GetItems(int offset, int size, Action<List<T>> callback)
+    content: public sealed override void GetItems(int offset, int size, Action<List<T>> callback)
     parameters:
     - id: offset
       type: System.Int32
@@ -128,8 +128,8 @@ items:
   nameWithType.vb: WebCallbackPaginatedRequest(Of T).GetItems(Int32, Int32, Action(Of List(Of T)))
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   modifiers.vb:
   - Public
   - Overrides

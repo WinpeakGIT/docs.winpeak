@@ -167,7 +167,7 @@ items:
   - cs.temp.dll
   namespace: Org.BouncyCastle.Asn1
   syntax:
-    content: public override sealed Asn1Object ToAsn1Object()
+    content: public sealed override Asn1Object ToAsn1Object()
     return:
       type: Org.BouncyCastle.Asn1.Asn1Object
     content.vb: Public NotOverridable Overrides Function ToAsn1Object As Asn1Object
@@ -175,8 +175,8 @@ items:
   overload: Org.BouncyCastle.Asn1.Asn1Object.ToAsn1Object*
   modifiers.csharp:
   - public
-  - override
   - sealed
+  - override
   modifiers.vb:
   - Public
   - Overrides
