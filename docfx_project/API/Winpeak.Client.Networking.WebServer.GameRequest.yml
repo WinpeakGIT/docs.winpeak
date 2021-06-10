@@ -136,11 +136,11 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public IAccount GetGameUserInfo { get; }
+    content: public IAccountSimple GetGameUserInfo { get; }
     parameters: []
     return:
-      type: Winpeak.Client.Networking.WebServer.IAccount
-    content.vb: Public ReadOnly Property GetGameUserInfo As IAccount
+      type: Winpeak.Client.Networking.WebServer.IAccountSimple
+    content.vb: Public ReadOnly Property GetGameUserInfo As IAccountSimple
   overload: Winpeak.Client.Networking.WebServer.GameRequest.GetGameUserInfo*
   implements:
   - Winpeak.Client.Networking.WebServer.IGameRequest.GetGameUserInfo
@@ -531,9 +531,9 @@ references:
   name: GetGameUserInfo
   nameWithType: IGameRequest.GetGameUserInfo
   fullName: Winpeak.Client.Networking.WebServer.IGameRequest.GetGameUserInfo
-- uid: Winpeak.Client.Networking.WebServer.IAccount
-  commentId: T:Winpeak.Client.Networking.WebServer.IAccount
+- uid: Winpeak.Client.Networking.WebServer.IAccountSimple
+  commentId: T:Winpeak.Client.Networking.WebServer.IAccountSimple
   parent: Winpeak.Client.Networking.WebServer
-  name: IAccount
-  nameWithType: IAccount
-  fullName: Winpeak.Client.Networking.WebServer.IAccount
+  name: IAccountSimple
+  nameWithType: IAccountSimple
+  fullName: Winpeak.Client.Networking.WebServer.IAccountSimple

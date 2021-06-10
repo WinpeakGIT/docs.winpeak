@@ -32,7 +32,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 168897
+    startLine: 168943
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -119,7 +119,7 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 168902
+    startLine: 168948
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -144,7 +144,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 168907
+    startLine: 168953
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -169,7 +169,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 168914
+    startLine: 168960
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -180,7 +180,7 @@ items:
     parameters:
     - id: currentTime
       type: System.Int64
-      description: ''
+      description: current time
     - id: callback
       type: System.Action
       description: ''
@@ -200,7 +200,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 168919
+    startLine: 168965
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -224,7 +224,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 168925
+    startLine: 168971
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -235,7 +235,7 @@ items:
     parameters:
     - id: packetId
       type: System.Int64
-      description: ''
+      description: packet id
     content.vb: Sub HandlePacket(packetId As Long)
   overload: Winpeak.Client.API.IInternalWinPeakClient.HandlePacket*
 - uid: Winpeak.Client.API.IInternalWinPeakClient.Confirm(System.Int64)
@@ -252,7 +252,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 168931
+    startLine: 168977
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -263,7 +263,7 @@ items:
     parameters:
     - id: packetId
       type: System.Int64
-      description: ''
+      description: packet id
     content.vb: Sub Confirm(packetId As Long)
   overload: Winpeak.Client.API.IInternalWinPeakClient.Confirm*
 - uid: Winpeak.Client.API.IInternalWinPeakClient.InvokeGameObjectsReady(System.Collections.Generic.List{WinPeakRigidbody})
@@ -280,7 +280,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 168936
+    startLine: 168982
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -310,7 +310,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 168944
+    startLine: 168989
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -321,10 +321,10 @@ items:
     parameters:
     - id: playerObject
       type: System.String
-      description: ''
+      description: player object
     - id: functions
       type: System.Collections.Generic.Dictionary{System.String,System.String[]}
-      description: ''
+      description: functions list
     content.vb: Sub UserInfoUpdated(playerObject As String, functions As Dictionary(Of String, String()))
   overload: Winpeak.Client.API.IInternalWinPeakClient.UserInfoUpdated*
   nameWithType.vb: IInternalWinPeakClient.UserInfoUpdated(String, Dictionary(Of String, String()))
@@ -344,7 +344,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 168950
+    startLine: 168995
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -355,7 +355,7 @@ items:
     parameters:
     - id: result
       type: RoundResult
-      description: ''
+      description: result
     content.vb: Sub RoundScoreUpdate(result As RoundResult)
   overload: Winpeak.Client.API.IInternalWinPeakClient.RoundScoreUpdate*
 - uid: Winpeak.Client.API.IInternalWinPeakClient.GameOver(MatchResult)
@@ -372,7 +372,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 168956
+    startLine: 169001
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -383,7 +383,7 @@ items:
     parameters:
     - id: result
       type: MatchResult
-      description: ''
+      description: result
     content.vb: Sub GameOver(result As MatchResult)
   overload: Winpeak.Client.API.IInternalWinPeakClient.GameOver*
 - uid: Winpeak.Client.API.IInternalWinPeakClient.InitStartGameCountdown(System.Int32)
@@ -400,7 +400,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 168962
+    startLine: 169007
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -411,7 +411,7 @@ items:
     parameters:
     - id: countdown
       type: System.Int32
-      description: ''
+      description: countdown
     content.vb: Sub InitStartGameCountdown(countdown As Integer)
   overload: Winpeak.Client.API.IInternalWinPeakClient.InitStartGameCountdown*
 - uid: Winpeak.Client.API.IInternalWinPeakClient.ChangeGameState(WpGameState)
@@ -428,7 +428,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 168967
+    startLine: 169012
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -455,7 +455,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 168972
+    startLine: 169017
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -479,7 +479,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 168978
+    startLine: 169023
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -507,7 +507,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 168983
+    startLine: 169028
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -531,7 +531,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 168988
+    startLine: 169033
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -562,7 +562,7 @@ items:
   source:
     id: InvokeGamePlayersList
     path: ''
-    startLine: 168994
+    startLine: 169039
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
