@@ -5,7 +5,6 @@ items:
   id: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.Account
-  - Winpeak.Client.Networking.WebServer.AccountUser
   - Winpeak.Client.Networking.WebServer.AddFriend
   - Winpeak.Client.Networking.WebServer.AddFriendResult
   - Winpeak.Client.Networking.WebServer.AdditionalInfo
@@ -55,7 +54,6 @@ items:
   - Winpeak.Client.Networking.WebServer.HtmlPage
   - Winpeak.Client.Networking.WebServer.HTTPRequestFactory
   - Winpeak.Client.Networking.WebServer.IAccount
-  - Winpeak.Client.Networking.WebServer.IAccountUser
   - Winpeak.Client.Networking.WebServer.IAdditionalInfo
   - Winpeak.Client.Networking.WebServer.IAvatar
   - Winpeak.Client.Networking.WebServer.IGameInfo
@@ -76,6 +74,7 @@ items:
   - Winpeak.Client.Networking.WebServer.InternalInviteInfo
   - Winpeak.Client.Networking.WebServer.InviteInfo
   - Winpeak.Client.Networking.WebServer.IPaginatedDataSource`1
+  - Winpeak.Client.Networking.WebServer.ISimpleAccount
   - Winpeak.Client.Networking.WebServer.ITemplate
   - Winpeak.Client.Networking.WebServer.IWebRequest
   - Winpeak.Client.Networking.WebServer.IWebResult
@@ -105,6 +104,7 @@ items:
   - Winpeak.Client.Networking.WebServer.SearchUser
   - Winpeak.Client.Networking.WebServer.SearchUserResult
   - Winpeak.Client.Networking.WebServer.Session
+  - Winpeak.Client.Networking.WebServer.SimpleAccount
   - Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1
   - Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest`1.RequestData
   - Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1
@@ -128,23 +128,23 @@ references:
   name: IWebResult
   nameWithType: IWebResult
   fullName: Winpeak.Client.Networking.WebServer.IWebResult
-- uid: Winpeak.Client.Networking.WebServer.AccountUser
-  commentId: T:Winpeak.Client.Networking.WebServer.AccountUser
-  name: AccountUser
-  nameWithType: AccountUser
-  fullName: Winpeak.Client.Networking.WebServer.AccountUser
-- uid: Winpeak.Client.Networking.WebServer.Avatar
-  commentId: T:Winpeak.Client.Networking.WebServer.Avatar
-  parent: Winpeak.Client.Networking.WebServer
-  name: Avatar
-  nameWithType: Avatar
-  fullName: Winpeak.Client.Networking.WebServer.Avatar
 - uid: Winpeak.Client.Networking.WebServer.GameInfo
   commentId: T:Winpeak.Client.Networking.WebServer.GameInfo
   parent: Winpeak.Client.Networking.WebServer
   name: GameInfo
   nameWithType: GameInfo
   fullName: Winpeak.Client.Networking.WebServer.GameInfo
+- uid: Winpeak.Client.Networking.WebServer.SimpleAccount
+  commentId: T:Winpeak.Client.Networking.WebServer.SimpleAccount
+  name: SimpleAccount
+  nameWithType: SimpleAccount
+  fullName: Winpeak.Client.Networking.WebServer.SimpleAccount
+- uid: Winpeak.Client.Networking.WebServer.Avatar
+  commentId: T:Winpeak.Client.Networking.WebServer.Avatar
+  parent: Winpeak.Client.Networking.WebServer
+  name: Avatar
+  nameWithType: Avatar
+  fullName: Winpeak.Client.Networking.WebServer.Avatar
 - uid: Winpeak.Client.Networking.WebServer.GameServerNetwork
   commentId: T:Winpeak.Client.Networking.WebServer.GameServerNetwork
   name: GameServerNetwork
@@ -167,7 +167,6 @@ references:
   fullName: Winpeak.Client.Networking.WebServer.GameUser
 - uid: Winpeak.Client.Networking.WebServer.Account
   commentId: T:Winpeak.Client.Networking.WebServer.Account
-  parent: Winpeak.Client.Networking.WebServer
   name: Account
   nameWithType: Account
   fullName: Winpeak.Client.Networking.WebServer.Account
@@ -589,24 +588,24 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.IAccountUser
-  commentId: T:Winpeak.Client.Networking.WebServer.IAccountUser
-  parent: Winpeak.Client.Networking.WebServer
-  name: IAccountUser
-  nameWithType: IAccountUser
-  fullName: Winpeak.Client.Networking.WebServer.IAccountUser
-- uid: Winpeak.Client.Networking.WebServer.IAvatar
-  commentId: T:Winpeak.Client.Networking.WebServer.IAvatar
-  parent: Winpeak.Client.Networking.WebServer
-  name: IAvatar
-  nameWithType: IAvatar
-  fullName: Winpeak.Client.Networking.WebServer.IAvatar
 - uid: Winpeak.Client.Networking.WebServer.IGameInfo
   commentId: T:Winpeak.Client.Networking.WebServer.IGameInfo
   parent: Winpeak.Client.Networking.WebServer
   name: IGameInfo
   nameWithType: IGameInfo
   fullName: Winpeak.Client.Networking.WebServer.IGameInfo
+- uid: Winpeak.Client.Networking.WebServer.ISimpleAccount
+  commentId: T:Winpeak.Client.Networking.WebServer.ISimpleAccount
+  parent: Winpeak.Client.Networking.WebServer
+  name: ISimpleAccount
+  nameWithType: ISimpleAccount
+  fullName: Winpeak.Client.Networking.WebServer.ISimpleAccount
+- uid: Winpeak.Client.Networking.WebServer.IAvatar
+  commentId: T:Winpeak.Client.Networking.WebServer.IAvatar
+  parent: Winpeak.Client.Networking.WebServer
+  name: IAvatar
+  nameWithType: IAvatar
+  fullName: Winpeak.Client.Networking.WebServer.IAvatar
 - uid: Winpeak.Client.Networking.WebServer.IAccount
   commentId: T:Winpeak.Client.Networking.WebServer.IAccount
   parent: Winpeak.Client.Networking.WebServer

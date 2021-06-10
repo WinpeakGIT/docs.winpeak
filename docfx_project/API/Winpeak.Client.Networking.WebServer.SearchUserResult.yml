@@ -18,7 +18,7 @@ items:
   source:
     id: SearchUserResult
     path: ''
-    startLine: 168186
+    startLine: 168185
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -74,7 +74,7 @@ items:
   source:
     id: TotalItems
     path: ''
-    startLine: 168194
+    startLine: 168193
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -105,16 +105,16 @@ items:
   source:
     id: SearchUserList
     path: ''
-    startLine: 168195
+    startLine: 168194
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public List<AccountUser> SearchUserList { get; }
+    content: public List<SimpleAccount> SearchUserList { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.AccountUser}
-    content.vb: Public ReadOnly Property SearchUserList As List(Of AccountUser)
+      type: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.SimpleAccount}
+    content.vb: Public ReadOnly Property SearchUserList As List(Of SimpleAccount)
   overload: Winpeak.Client.Networking.WebServer.SearchUserResult.SearchUserList*
   modifiers.csharp:
   - public
@@ -136,7 +136,7 @@ items:
   source:
     id: HandleResponse
     path: ''
-    startLine: 168197
+    startLine: 168196
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -592,16 +592,16 @@ references:
   name: SearchUserList
   nameWithType: SearchUserResult.SearchUserList
   fullName: Winpeak.Client.Networking.WebServer.SearchUserResult.SearchUserList
-- uid: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.AccountUser}
-  commentId: T:System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.AccountUser}
+- uid: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.SimpleAccount}
+  commentId: T:System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.SimpleAccount}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
-  name: List<AccountUser>
-  nameWithType: List<AccountUser>
-  fullName: System.Collections.Generic.List<Winpeak.Client.Networking.WebServer.AccountUser>
-  nameWithType.vb: List(Of AccountUser)
-  fullName.vb: System.Collections.Generic.List(Of Winpeak.Client.Networking.WebServer.AccountUser)
-  name.vb: List(Of AccountUser)
+  name: List<SimpleAccount>
+  nameWithType: List<SimpleAccount>
+  fullName: System.Collections.Generic.List<Winpeak.Client.Networking.WebServer.SimpleAccount>
+  nameWithType.vb: List(Of SimpleAccount)
+  fullName.vb: System.Collections.Generic.List(Of Winpeak.Client.Networking.WebServer.SimpleAccount)
+  name.vb: List(Of SimpleAccount)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
@@ -611,10 +611,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: Winpeak.Client.Networking.WebServer.AccountUser
-    name: AccountUser
-    nameWithType: AccountUser
-    fullName: Winpeak.Client.Networking.WebServer.AccountUser
+  - uid: Winpeak.Client.Networking.WebServer.SimpleAccount
+    name: SimpleAccount
+    nameWithType: SimpleAccount
+    fullName: Winpeak.Client.Networking.WebServer.SimpleAccount
   - name: '>'
     nameWithType: '>'
     fullName: '>'
@@ -627,10 +627,10 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: Winpeak.Client.Networking.WebServer.AccountUser
-    name: AccountUser
-    nameWithType: AccountUser
-    fullName: Winpeak.Client.Networking.WebServer.AccountUser
+  - uid: Winpeak.Client.Networking.WebServer.SimpleAccount
+    name: SimpleAccount
+    nameWithType: SimpleAccount
+    fullName: Winpeak.Client.Networking.WebServer.SimpleAccount
   - name: )
     nameWithType: )
     fullName: )

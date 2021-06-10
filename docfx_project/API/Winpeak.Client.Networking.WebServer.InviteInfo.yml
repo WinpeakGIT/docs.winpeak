@@ -174,11 +174,11 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public Account GetUserInfo { get; }
+    content: public ISimpleAccount GetUserInfo { get; }
     parameters: []
     return:
-      type: Winpeak.Client.Networking.WebServer.Account
-    content.vb: Public ReadOnly Property GetUserInfo As Account
+      type: Winpeak.Client.Networking.WebServer.ISimpleAccount
+    content.vb: Public ReadOnly Property GetUserInfo As ISimpleAccount
   overload: Winpeak.Client.Networking.WebServer.InviteInfo.GetUserInfo*
   implements:
   - Winpeak.Client.Networking.WebServer.IInviteInfo.GetUserInfo
@@ -207,11 +207,11 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public Account GetInviteUserInfo { get; }
+    content: public ISimpleAccount GetInviteUserInfo { get; }
     parameters: []
     return:
-      type: Winpeak.Client.Networking.WebServer.Account
-    content.vb: Public ReadOnly Property GetInviteUserInfo As Account
+      type: Winpeak.Client.Networking.WebServer.ISimpleAccount
+    content.vb: Public ReadOnly Property GetInviteUserInfo As ISimpleAccount
   overload: Winpeak.Client.Networking.WebServer.InviteInfo.GetInviteUserInfo*
   implements:
   - Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteUserInfo
@@ -651,12 +651,12 @@ references:
   name: GetUserInfo
   nameWithType: IInviteInfo.GetUserInfo
   fullName: Winpeak.Client.Networking.WebServer.IInviteInfo.GetUserInfo
-- uid: Winpeak.Client.Networking.WebServer.Account
-  commentId: T:Winpeak.Client.Networking.WebServer.Account
+- uid: Winpeak.Client.Networking.WebServer.ISimpleAccount
+  commentId: T:Winpeak.Client.Networking.WebServer.ISimpleAccount
   parent: Winpeak.Client.Networking.WebServer
-  name: Account
-  nameWithType: Account
-  fullName: Winpeak.Client.Networking.WebServer.Account
+  name: ISimpleAccount
+  nameWithType: ISimpleAccount
+  fullName: Winpeak.Client.Networking.WebServer.ISimpleAccount
 - uid: Winpeak.Client.Networking.WebServer.InviteInfo.GetInviteUserInfo*
   commentId: Overload:Winpeak.Client.Networking.WebServer.InviteInfo.GetInviteUserInfo
   name: GetInviteUserInfo

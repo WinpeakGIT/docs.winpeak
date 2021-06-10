@@ -23,7 +23,7 @@ items:
   source:
     id: IGameInfo
     path: ''
-    startLine: 167555
+    startLine: 167531
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -50,7 +50,7 @@ items:
   source:
     id: GetGameSessionId
     path: ''
-    startLine: 167557
+    startLine: 167533
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -79,7 +79,7 @@ items:
   source:
     id: GetGameType
     path: ''
-    startLine: 167558
+    startLine: 167534
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -108,7 +108,7 @@ items:
   source:
     id: GetGameState
     path: ''
-    startLine: 167559
+    startLine: 167535
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -137,7 +137,7 @@ items:
   source:
     id: GetCash
     path: ''
-    startLine: 167560
+    startLine: 167536
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -166,7 +166,7 @@ items:
   source:
     id: GetMaxUsersCount
     path: ''
-    startLine: 167561
+    startLine: 167537
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -195,7 +195,7 @@ items:
   source:
     id: GetUsersCount
     path: ''
-    startLine: 167562
+    startLine: 167538
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -224,16 +224,16 @@ items:
   source:
     id: GetGameCreatorAccount
     path: ''
-    startLine: 167563
+    startLine: 167539
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: IAccount GetGameCreatorAccount { get; }
+    content: ISimpleAccount GetGameCreatorAccount { get; }
     parameters: []
     return:
-      type: Winpeak.Client.Networking.WebServer.IAccount
-    content.vb: ReadOnly Property GetGameCreatorAccount As IAccount
+      type: Winpeak.Client.Networking.WebServer.ISimpleAccount
+    content.vb: ReadOnly Property GetGameCreatorAccount As ISimpleAccount
   overload: Winpeak.Client.Networking.WebServer.IGameInfo.GetGameCreatorAccount*
   modifiers.csharp:
   - get
@@ -253,7 +253,7 @@ items:
   source:
     id: GetCommission
     path: ''
-    startLine: 167564
+    startLine: 167540
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -322,12 +322,12 @@ references:
   name: GetGameCreatorAccount
   nameWithType: IGameInfo.GetGameCreatorAccount
   fullName: Winpeak.Client.Networking.WebServer.IGameInfo.GetGameCreatorAccount
-- uid: Winpeak.Client.Networking.WebServer.IAccount
-  commentId: T:Winpeak.Client.Networking.WebServer.IAccount
+- uid: Winpeak.Client.Networking.WebServer.ISimpleAccount
+  commentId: T:Winpeak.Client.Networking.WebServer.ISimpleAccount
   parent: Winpeak.Client.Networking.WebServer
-  name: IAccount
-  nameWithType: IAccount
-  fullName: Winpeak.Client.Networking.WebServer.IAccount
+  name: ISimpleAccount
+  nameWithType: ISimpleAccount
+  fullName: Winpeak.Client.Networking.WebServer.ISimpleAccount
 - uid: Winpeak.Client.Networking.WebServer.IGameInfo.GetCommission*
   commentId: Overload:Winpeak.Client.Networking.WebServer.IGameInfo.GetCommission
   name: GetCommission

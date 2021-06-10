@@ -146,10 +146,10 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public Account UserInfo
+    content: public ISimpleAccount UserInfo
     return:
-      type: Winpeak.Client.Networking.WebServer.Account
-    content.vb: Public UserInfo As Account
+      type: Winpeak.Client.Networking.WebServer.ISimpleAccount
+    content.vb: Public UserInfo As ISimpleAccount
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -173,10 +173,10 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public Account InviteUserInfo
+    content: public ISimpleAccount InviteUserInfo
     return:
-      type: Winpeak.Client.Networking.WebServer.Account
-    content.vb: Public InviteUserInfo As Account
+      type: Winpeak.Client.Networking.WebServer.ISimpleAccount
+    content.vb: Public InviteUserInfo As ISimpleAccount
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -513,12 +513,12 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
-- uid: Winpeak.Client.Networking.WebServer.Account
-  commentId: T:Winpeak.Client.Networking.WebServer.Account
+- uid: Winpeak.Client.Networking.WebServer.ISimpleAccount
+  commentId: T:Winpeak.Client.Networking.WebServer.ISimpleAccount
   parent: Winpeak.Client.Networking.WebServer
-  name: Account
-  nameWithType: Account
-  fullName: Winpeak.Client.Networking.WebServer.Account
+  name: ISimpleAccount
+  nameWithType: ISimpleAccount
+  fullName: Winpeak.Client.Networking.WebServer.ISimpleAccount
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
