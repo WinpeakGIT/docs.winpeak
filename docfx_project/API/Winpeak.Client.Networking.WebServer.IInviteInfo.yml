@@ -7,6 +7,7 @@ items:
   children:
   - Winpeak.Client.Networking.WebServer.IInviteInfo.GetGameSessionId
   - Winpeak.Client.Networking.WebServer.IInviteInfo.GetGameSessionUserId
+  - Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteState
   - Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteUserId
   - Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteUserInfo
   - Winpeak.Client.Networking.WebServer.IInviteInfo.GetUserInfo
@@ -20,7 +21,7 @@ items:
   source:
     id: IInviteInfo
     path: ''
-    startLine: 167580
+    startLine: 167585
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -47,7 +48,7 @@ items:
   source:
     id: GetGameSessionId
     path: ''
-    startLine: 167582
+    startLine: 167587
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -76,7 +77,7 @@ items:
   source:
     id: GetGameSessionUserId
     path: ''
-    startLine: 167583
+    startLine: 167588
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -105,7 +106,7 @@ items:
   source:
     id: GetInviteUserId
     path: ''
-    startLine: 167584
+    startLine: 167589
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -134,7 +135,7 @@ items:
   source:
     id: GetUserInfo
     path: ''
-    startLine: 167585
+    startLine: 167590
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -163,7 +164,7 @@ items:
   source:
     id: GetInviteUserInfo
     path: ''
-    startLine: 167586
+    startLine: 167591
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -174,6 +175,35 @@ items:
       type: Winpeak.Client.Networking.WebServer.Account
     content.vb: ReadOnly Property GetInviteUserInfo As Account
   overload: Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteUserInfo*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteState
+  commentId: P:Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteState
+  id: GetInviteState
+  parent: Winpeak.Client.Networking.WebServer.IInviteInfo
+  langs:
+  - csharp
+  - vb
+  name: GetInviteState
+  nameWithType: IInviteInfo.GetInviteState
+  fullName: Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteState
+  type: Property
+  source:
+    id: GetInviteState
+    path: ''
+    startLine: 167592
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: int GetInviteState { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property GetInviteState As Integer
+  overload: Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteState*
   modifiers.csharp:
   - get
   modifiers.vb:
@@ -228,3 +258,15 @@ references:
   name: GetInviteUserInfo
   nameWithType: IInviteInfo.GetInviteUserInfo
   fullName: Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteUserInfo
+- uid: Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteState*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteState
+  name: GetInviteState
+  nameWithType: IInviteInfo.GetInviteState
+  fullName: Winpeak.Client.Networking.WebServer.IInviteInfo.GetInviteState
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

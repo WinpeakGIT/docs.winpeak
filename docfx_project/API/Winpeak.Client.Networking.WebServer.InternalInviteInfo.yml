@@ -7,6 +7,7 @@ items:
   children:
   - Winpeak.Client.Networking.WebServer.InternalInviteInfo.GameSessionId
   - Winpeak.Client.Networking.WebServer.InternalInviteInfo.GameSessionUserId
+  - Winpeak.Client.Networking.WebServer.InternalInviteInfo.InviteState
   - Winpeak.Client.Networking.WebServer.InternalInviteInfo.InviteUserId
   - Winpeak.Client.Networking.WebServer.InternalInviteInfo.InviteUserInfo
   - Winpeak.Client.Networking.WebServer.InternalInviteInfo.UserInfo
@@ -20,7 +21,7 @@ items:
   source:
     id: InternalInviteInfo
     path: ''
-    startLine: 166293
+    startLine: 166295
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -59,7 +60,7 @@ items:
   source:
     id: GameSessionId
     path: ''
-    startLine: 166296
+    startLine: 166298
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -86,7 +87,7 @@ items:
   source:
     id: GameSessionUserId
     path: ''
-    startLine: 166299
+    startLine: 166301
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -113,7 +114,7 @@ items:
   source:
     id: InviteUserId
     path: ''
-    startLine: 166302
+    startLine: 166304
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -140,7 +141,7 @@ items:
   source:
     id: UserInfo
     path: ''
-    startLine: 166305
+    startLine: 166307
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -167,7 +168,7 @@ items:
   source:
     id: InviteUserInfo
     path: ''
-    startLine: 166308
+    startLine: 166310
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -176,6 +177,33 @@ items:
     return:
       type: Winpeak.Client.Networking.WebServer.Account
     content.vb: Public InviteUserInfo As Account
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.WebServer.InternalInviteInfo.InviteState
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalInviteInfo.InviteState
+  id: InviteState
+  parent: Winpeak.Client.Networking.WebServer.InternalInviteInfo
+  langs:
+  - csharp
+  - vb
+  name: InviteState
+  nameWithType: InternalInviteInfo.InviteState
+  fullName: Winpeak.Client.Networking.WebServer.InternalInviteInfo.InviteState
+  type: Field
+  source:
+    id: InviteState
+    path: ''
+    startLine: 166313
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public int InviteState
+    return:
+      type: System.Int32
+    content.vb: Public InviteState As Integer
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -491,3 +519,10 @@ references:
   name: Account
   nameWithType: Account
   fullName: Winpeak.Client.Networking.WebServer.Account
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
