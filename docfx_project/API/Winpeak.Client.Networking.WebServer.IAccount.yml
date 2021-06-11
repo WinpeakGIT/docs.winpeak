@@ -16,6 +16,7 @@ items:
   - Winpeak.Client.Networking.WebServer.IAccount.GetPhone
   - Winpeak.Client.Networking.WebServer.IAccount.GetRating
   - Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
+  - Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions
   - Winpeak.Client.Networking.WebServer.IAccount.InviteInfo
   - Winpeak.Client.Networking.WebServer.IAccount.IsValid
   langs:
@@ -28,7 +29,7 @@ items:
   source:
     id: IAccount
     path: ''
-    startLine: 167573
+    startLine: 167582
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -55,7 +56,7 @@ items:
   source:
     id: GetId
     path: ''
-    startLine: 167575
+    startLine: 167584
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -84,7 +85,7 @@ items:
   source:
     id: GetLogin
     path: ''
-    startLine: 167576
+    startLine: 167585
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -113,7 +114,7 @@ items:
   source:
     id: GetEmail
     path: ''
-    startLine: 167577
+    startLine: 167586
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -142,7 +143,7 @@ items:
   source:
     id: GetFirstName
     path: ''
-    startLine: 167578
+    startLine: 167587
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -171,7 +172,7 @@ items:
   source:
     id: GetLastName
     path: ''
-    startLine: 167579
+    startLine: 167588
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -200,7 +201,7 @@ items:
   source:
     id: GetPhone
     path: ''
-    startLine: 167580
+    startLine: 167589
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -229,7 +230,7 @@ items:
   source:
     id: GetCash
     path: ''
-    startLine: 167581
+    startLine: 167590
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -258,7 +259,7 @@ items:
   source:
     id: GetSoftCash
     path: ''
-    startLine: 167582
+    startLine: 167591
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -287,7 +288,7 @@ items:
   source:
     id: GetRating
     path: ''
-    startLine: 167583
+    startLine: 167592
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -298,6 +299,35 @@ items:
       type: System.Int32
     content.vb: ReadOnly Property GetRating As Integer
   overload: Winpeak.Client.Networking.WebServer.IAccount.GetRating*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions
+  commentId: P:Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions
+  id: GetTotalSessions
+  parent: Winpeak.Client.Networking.WebServer.IAccount
+  langs:
+  - csharp
+  - vb
+  name: GetTotalSessions
+  nameWithType: IAccount.GetTotalSessions
+  fullName: Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions
+  type: Property
+  source:
+    id: GetTotalSessions
+    path: ''
+    startLine: 167593
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: int GetTotalSessions { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property GetTotalSessions As Integer
+  overload: Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions*
   modifiers.csharp:
   - get
   modifiers.vb:
@@ -316,7 +346,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 167584
+    startLine: 167594
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -345,7 +375,7 @@ items:
   source:
     id: GetAvatar
     path: ''
-    startLine: 167585
+    startLine: 167595
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -374,7 +404,7 @@ items:
   source:
     id: AdditionalInfo
     path: ''
-    startLine: 167586
+    startLine: 167596
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -403,7 +433,7 @@ items:
   source:
     id: InviteInfo
     path: ''
-    startLine: 167587
+    startLine: 167597
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -496,6 +526,11 @@ references:
   name: GetRating
   nameWithType: IAccount.GetRating
   fullName: Winpeak.Client.Networking.WebServer.IAccount.GetRating
+- uid: Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions
+  name: GetTotalSessions
+  nameWithType: IAccount.GetTotalSessions
+  fullName: Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions
 - uid: Winpeak.Client.Networking.WebServer.IAccount.IsValid*
   commentId: Overload:Winpeak.Client.Networking.WebServer.IAccount.IsValid
   name: IsValid

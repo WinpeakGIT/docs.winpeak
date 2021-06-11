@@ -282,6 +282,8 @@ items:
       type: System.Boolean
     content.vb: Public ReadOnly Property IsOnline As Boolean
   overload: Winpeak.Client.Networking.WebServer.SimpleAccount.IsOnline*
+  implements:
+  - Winpeak.Client.Networking.WebServer.ISimpleAccount.IsOnline
   modifiers.csharp:
   - public
   - get
@@ -313,6 +315,8 @@ items:
       type: System.Int32
     content.vb: Public ReadOnly Property GetTotalSessions As Integer
   overload: Winpeak.Client.Networking.WebServer.SimpleAccount.GetTotalSessions*
+  implements:
+  - Winpeak.Client.Networking.WebServer.ISimpleAccount.GetTotalSessions
   modifiers.csharp:
   - public
   - get
@@ -769,6 +773,12 @@ references:
   name: IsOnline
   nameWithType: SimpleAccount.IsOnline
   fullName: Winpeak.Client.Networking.WebServer.SimpleAccount.IsOnline
+- uid: Winpeak.Client.Networking.WebServer.ISimpleAccount.IsOnline
+  commentId: P:Winpeak.Client.Networking.WebServer.ISimpleAccount.IsOnline
+  parent: Winpeak.Client.Networking.WebServer.ISimpleAccount
+  name: IsOnline
+  nameWithType: ISimpleAccount.IsOnline
+  fullName: Winpeak.Client.Networking.WebServer.ISimpleAccount.IsOnline
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -781,3 +791,9 @@ references:
   name: GetTotalSessions
   nameWithType: SimpleAccount.GetTotalSessions
   fullName: Winpeak.Client.Networking.WebServer.SimpleAccount.GetTotalSessions
+- uid: Winpeak.Client.Networking.WebServer.ISimpleAccount.GetTotalSessions
+  commentId: P:Winpeak.Client.Networking.WebServer.ISimpleAccount.GetTotalSessions
+  parent: Winpeak.Client.Networking.WebServer.ISimpleAccount
+  name: GetTotalSessions
+  nameWithType: ISimpleAccount.GetTotalSessions
+  fullName: Winpeak.Client.Networking.WebServer.ISimpleAccount.GetTotalSessions

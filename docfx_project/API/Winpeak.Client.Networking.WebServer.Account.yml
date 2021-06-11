@@ -16,6 +16,7 @@ items:
   - Winpeak.Client.Networking.WebServer.Account.GetPhone
   - Winpeak.Client.Networking.WebServer.Account.GetRating
   - Winpeak.Client.Networking.WebServer.Account.GetSoftCash
+  - Winpeak.Client.Networking.WebServer.Account.GetTotalSessions
   - Winpeak.Client.Networking.WebServer.Account.InviteInfo
   - Winpeak.Client.Networking.WebServer.Account.IsValid
   langs:
@@ -56,6 +57,7 @@ items:
   - Winpeak.Client.Networking.WebServer.InternalAccount.Cash
   - Winpeak.Client.Networking.WebServer.InternalAccount.SoftCash
   - Winpeak.Client.Networking.WebServer.InternalAccount.Rating
+  - Winpeak.Client.Networking.WebServer.InternalAccount.TotalSessions
   - Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
   - Winpeak.Client.Networking.WebServer.InternalAccount.InternalAdditionalInfo
   - Winpeak.Client.Networking.WebServer.InternalAccount.InternalInviteInfo
@@ -369,6 +371,39 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.Account.GetTotalSessions
+  commentId: P:Winpeak.Client.Networking.WebServer.Account.GetTotalSessions
+  id: GetTotalSessions
+  parent: Winpeak.Client.Networking.WebServer.Account
+  langs:
+  - csharp
+  - vb
+  name: GetTotalSessions
+  nameWithType: Account.GetTotalSessions
+  fullName: Winpeak.Client.Networking.WebServer.Account.GetTotalSessions
+  type: Property
+  source:
+    id: GetTotalSessions
+    path: ''
+    startLine: 166103
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public int GetTotalSessions { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property GetTotalSessions As Integer
+  overload: Winpeak.Client.Networking.WebServer.Account.GetTotalSessions*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Winpeak.Client.Networking.WebServer.Account.IsValid
   commentId: P:Winpeak.Client.Networking.WebServer.Account.IsValid
   id: IsValid
@@ -383,7 +418,7 @@ items:
   source:
     id: IsValid
     path: ''
-    startLine: 166103
+    startLine: 166105
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -416,7 +451,7 @@ items:
   source:
     id: GetAvatar
     path: ''
-    startLine: 166105
+    startLine: 166107
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -449,7 +484,7 @@ items:
   source:
     id: AdditionalInfo
     path: ''
-    startLine: 166107
+    startLine: 166109
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -482,7 +517,7 @@ items:
   source:
     id: InviteInfo
     path: ''
-    startLine: 166108
+    startLine: 166110
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -598,6 +633,12 @@ references:
   name: Rating
   nameWithType: InternalAccount.Rating
   fullName: Winpeak.Client.Networking.WebServer.InternalAccount.Rating
+- uid: Winpeak.Client.Networking.WebServer.InternalAccount.TotalSessions
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.TotalSessions
+  parent: Winpeak.Client.Networking.WebServer.InternalAccount
+  name: TotalSessions
+  nameWithType: InternalAccount.TotalSessions
+  fullName: Winpeak.Client.Networking.WebServer.InternalAccount.TotalSessions
 - uid: Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
   commentId: F:Winpeak.Client.Networking.WebServer.InternalAccount.Avatar
   parent: Winpeak.Client.Networking.WebServer.InternalAccount
@@ -1021,6 +1062,17 @@ references:
   name: GetRating
   nameWithType: IAccount.GetRating
   fullName: Winpeak.Client.Networking.WebServer.IAccount.GetRating
+- uid: Winpeak.Client.Networking.WebServer.Account.GetTotalSessions*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.Account.GetTotalSessions
+  name: GetTotalSessions
+  nameWithType: Account.GetTotalSessions
+  fullName: Winpeak.Client.Networking.WebServer.Account.GetTotalSessions
+- uid: Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions
+  commentId: P:Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions
+  parent: Winpeak.Client.Networking.WebServer.IAccount
+  name: GetTotalSessions
+  nameWithType: IAccount.GetTotalSessions
+  fullName: Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions
 - uid: Winpeak.Client.Networking.WebServer.Account.IsValid*
   commentId: Overload:Winpeak.Client.Networking.WebServer.Account.IsValid
   name: IsValid
