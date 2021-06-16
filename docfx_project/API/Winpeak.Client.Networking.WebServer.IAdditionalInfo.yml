@@ -6,6 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetCommission
+  - Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter
   langs:
   - csharp
   - vb
@@ -16,7 +17,7 @@ items:
   source:
     id: IAdditionalInfo
     path: ''
-    startLine: 167624
+    startLine: 167628
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -43,7 +44,7 @@ items:
   source:
     id: GetCommission
     path: ''
-    startLine: 167626
+    startLine: 167630
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -54,6 +55,35 @@ items:
       type: System.Int32
     content.vb: ReadOnly Property GetCommission As Integer
   overload: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetCommission*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter
+  commentId: P:Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter
+  id: GetOnlineFriendsCounter
+  parent: Winpeak.Client.Networking.WebServer.IAdditionalInfo
+  langs:
+  - csharp
+  - vb
+  name: GetOnlineFriendsCounter
+  nameWithType: IAdditionalInfo.GetOnlineFriendsCounter
+  fullName: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter
+  type: Property
+  source:
+    id: GetOnlineFriendsCounter
+    path: ''
+    startLine: 167631
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: int GetOnlineFriendsCounter { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property GetOnlineFriendsCounter As Integer
+  overload: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter*
   modifiers.csharp:
   - get
   modifiers.vb:
@@ -82,3 +112,8 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter
+  name: GetOnlineFriendsCounter
+  nameWithType: IAdditionalInfo.GetOnlineFriendsCounter
+  fullName: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter

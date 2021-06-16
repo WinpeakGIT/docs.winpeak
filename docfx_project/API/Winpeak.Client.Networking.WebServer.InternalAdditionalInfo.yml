@@ -6,6 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.Commission
+  - Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.OnlineFriendsCounter
   langs:
   - csharp
   - vb
@@ -16,7 +17,7 @@ items:
   source:
     id: InternalAdditionalInfo
     path: ''
-    startLine: 166328
+    startLine: 166329
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -55,7 +56,7 @@ items:
   source:
     id: Commission
     path: ''
-    startLine: 166331
+    startLine: 166332
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -64,6 +65,33 @@ items:
     return:
       type: System.Int32
     content.vb: Public Commission As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.OnlineFriendsCounter
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.OnlineFriendsCounter
+  id: OnlineFriendsCounter
+  parent: Winpeak.Client.Networking.WebServer.InternalAdditionalInfo
+  langs:
+  - csharp
+  - vb
+  name: OnlineFriendsCounter
+  nameWithType: InternalAdditionalInfo.OnlineFriendsCounter
+  fullName: Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.OnlineFriendsCounter
+  type: Field
+  source:
+    id: OnlineFriendsCounter
+    path: ''
+    startLine: 166335
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public int OnlineFriendsCounter
+    return:
+      type: System.Int32
+    content.vb: Public OnlineFriendsCounter As Integer
   modifiers.csharp:
   - public
   modifiers.vb:
