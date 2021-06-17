@@ -31,7 +31,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64,System.Int64,System.Int32,System.String,System.Action{ReportAbuseUserResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String,System.Action{SearchGameResult})
-  - Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
   langs:
   - csharp
   - vb
@@ -822,28 +822,28 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.RemoveFriend(Int64, Action(Of RemoveFriendResult))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64, System.Action(Of RemoveFriendResult))
   name.vb: RemoveFriend(Int64, Action(Of RemoveFriendResult))
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
-  id: SearchUser(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
+  id: SearchUser(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   langs:
   - csharp
   - vb
-  name: SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, Int64, Boolean, Action<SearchUserResult>)
-  nameWithType: IWinPeakNetworkClient.SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, Int64, Boolean, Action<SearchUserResult>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64, System.Int32, System.Int32, System.Int32, System.String, System.String, System.String, System.String, System.Int64, System.Boolean, System.Action<SearchUserResult>)
+  name: SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, String, Int64, Boolean, Action<SearchUserResult>)
+  nameWithType: IWinPeakNetworkClient.SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, String, Int64, Boolean, Action<SearchUserResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64, System.Int32, System.Int32, System.Int32, System.String, System.String, System.String, System.String, System.String, System.Int64, System.Boolean, System.Action<SearchUserResult>)
   type: Method
   source:
     id: SearchUser
     path: ''
-    startLine: 1488
+    startLine: 1489
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   summary: "\nSearch users by specified params. Return total count users(type long) and list of users(type <seealso cref=\"!:SimpleAccount\">AccountUser</seealso>)\n"
   example: []
   syntax:
-    content: void SearchUser(long partnerId, int offset, int size, int gameId, string login, string email, string firstName, string lastName, long userId, bool friends, Action<SearchUserResult> callback)
+    content: void SearchUser(long partnerId, int offset, int size, int gameId, string login, string email, string tel, string firstName, string lastName, long userId, bool friends, Action<SearchUserResult> callback)
     parameters:
     - id: partnerId
       type: System.Int64
@@ -863,6 +863,9 @@ items:
     - id: email
       type: System.String
       description: user email
+    - id: tel
+      type: System.String
+      description: ''
     - id: firstName
       type: System.String
       description: user  first name
@@ -878,11 +881,11 @@ items:
     - id: callback
       type: System.Action{SearchUserResult}
       description: returns result
-    content.vb: Sub SearchUser(partnerId As Long, offset As Integer, size As Integer, gameId As Integer, login As String, email As String, firstName As String, lastName As String, userId As Long, friends As Boolean, callback As Action(Of SearchUserResult))
+    content.vb: Sub SearchUser(partnerId As Long, offset As Integer, size As Integer, gameId As Integer, login As String, email As String, tel As String, firstName As String, lastName As String, userId As Long, friends As Boolean, callback As Action(Of SearchUserResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser*
-  nameWithType.vb: IWinPeakNetworkClient.SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, Int64, Boolean, Action(Of SearchUserResult))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64, System.Int32, System.Int32, System.Int32, System.String, System.String, System.String, System.String, System.Int64, System.Boolean, System.Action(Of SearchUserResult))
-  name.vb: SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, Int64, Boolean, Action(Of SearchUserResult))
+  nameWithType.vb: IWinPeakNetworkClient.SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, String, Int64, Boolean, Action(Of SearchUserResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64, System.Int32, System.Int32, System.Int32, System.String, System.String, System.String, System.String, System.String, System.Int64, System.Boolean, System.Action(Of SearchUserResult))
+  name.vb: SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, String, Int64, Boolean, Action(Of SearchUserResult))
 - uid: Winpeak.Client.API.IWinPeakNetworkClient.AddFriend(System.Int64,System.Action{AddFriendResult})
   commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.AddFriend(System.Int64,System.Action{AddFriendResult})
   id: AddFriend(System.Int64,System.Action{AddFriendResult})
@@ -897,7 +900,7 @@ items:
   source:
     id: AddFriend
     path: ''
-    startLine: 1494
+    startLine: 1495
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -930,7 +933,7 @@ items:
   source:
     id: GetLastTournaments
     path: ''
-    startLine: 1504
+    startLine: 1505
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -975,7 +978,7 @@ items:
   source:
     id: GetMoreGames
     path: ''
-    startLine: 1511
+    startLine: 1512
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -1009,7 +1012,7 @@ items:
   source:
     id: ReportAbuseUser
     path: ''
-    startLine: 1521
+    startLine: 1522
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -1052,7 +1055,7 @@ items:
   source:
     id: GetStaticPages
     path: ''
-    startLine: 1529
+    startLine: 1530
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -1089,7 +1092,7 @@ items:
   source:
     id: GetPlatformLanguages
     path: ''
-    startLine: 1537
+    startLine: 1538
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API

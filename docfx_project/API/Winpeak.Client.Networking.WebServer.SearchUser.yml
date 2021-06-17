@@ -5,7 +5,7 @@ items:
   id: SearchUser
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.SearchUser.#ctor(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean)
+  - Winpeak.Client.Networking.WebServer.SearchUser.#ctor(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Boolean)
   - Winpeak.Client.Networking.WebServer.SearchUser.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.SearchUser.GenerateData
   langs:
@@ -18,7 +18,7 @@ items:
   source:
     id: SearchUser
     path: ''
-    startLine: 4558
+    startLine: 4559
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -60,26 +60,26 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.SearchUser.#ctor(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean)
-  commentId: M:Winpeak.Client.Networking.WebServer.SearchUser.#ctor(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean)
-  id: '#ctor(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int64,System.Boolean)'
+- uid: Winpeak.Client.Networking.WebServer.SearchUser.#ctor(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Boolean)
+  commentId: M:Winpeak.Client.Networking.WebServer.SearchUser.#ctor(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Boolean)
+  id: '#ctor(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Boolean)'
   parent: Winpeak.Client.Networking.WebServer.SearchUser
   langs:
   - csharp
   - vb
-  name: SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, Int64, Boolean)
-  nameWithType: SearchUser.SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, Int64, Boolean)
-  fullName: Winpeak.Client.Networking.WebServer.SearchUser.SearchUser(System.Int64, System.Int32, System.Int32, System.Int32, System.String, System.String, System.String, System.String, System.Int64, System.Boolean)
+  name: SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, String, Int64, Boolean)
+  nameWithType: SearchUser.SearchUser(Int64, Int32, Int32, Int32, String, String, String, String, String, Int64, Boolean)
+  fullName: Winpeak.Client.Networking.WebServer.SearchUser.SearchUser(System.Int64, System.Int32, System.Int32, System.Int32, System.String, System.String, System.String, System.String, System.String, System.Int64, System.Boolean)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 4573
+    startLine: 4575
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public SearchUser(long partnerId, int offset, int size, int gameId, string login = "", string email = "", string firstName = "", string lastName = "", long userId = 0L, bool friends = false)
+    content: public SearchUser(long partnerId, int offset, int size, int gameId, string login = "", string email = "", string tel = "", string firstName = "", string lastName = "", long userId = 0L, bool friends = false)
     parameters:
     - id: partnerId
       type: System.Int64
@@ -93,6 +93,8 @@ items:
       type: System.String
     - id: email
       type: System.String
+    - id: tel
+      type: System.String
     - id: firstName
       type: System.String
     - id: lastName
@@ -101,7 +103,7 @@ items:
       type: System.Int64
     - id: friends
       type: System.Boolean
-    content.vb: Public Sub New(partnerId As Long, offset As Integer, size As Integer, gameId As Integer, login As String = "", email As String = "", firstName As String = "", lastName As String = "", userId As Long = 0L, friends As Boolean = False)
+    content.vb: Public Sub New(partnerId As Long, offset As Integer, size As Integer, gameId As Integer, login As String = "", email As String = "", tel As String = "", firstName As String = "", lastName As String = "", userId As Long = 0L, friends As Boolean = False)
   overload: Winpeak.Client.Networking.WebServer.SearchUser.#ctor*
   modifiers.csharp:
   - public
@@ -121,7 +123,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 4586
+    startLine: 4589
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -152,7 +154,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 4607
+    startLine: 4611
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
