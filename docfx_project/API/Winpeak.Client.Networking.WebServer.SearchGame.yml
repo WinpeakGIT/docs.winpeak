@@ -5,7 +5,7 @@ items:
   id: SearchGame
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64)
+  - Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String)
   - Winpeak.Client.Networking.WebServer.SearchGame.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.SearchGame.GenerateData
   langs:
@@ -18,7 +18,7 @@ items:
   source:
     id: SearchGame
     path: ''
-    startLine: 4357
+    startLine: 4359
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -60,26 +60,26 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64)
-  commentId: M:Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64)
-  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64)'
+- uid: Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String)
+  commentId: M:Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String)'
   parent: Winpeak.Client.Networking.WebServer.SearchGame
   langs:
   - csharp
   - vb
-  name: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64)
-  nameWithType: SearchGame.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64)
-  fullName: Winpeak.Client.Networking.WebServer.SearchGame.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64)
+  name: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, String, String)
+  nameWithType: SearchGame.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, String, String)
+  fullName: Winpeak.Client.Networking.WebServer.SearchGame.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.String, System.String)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 4369
+    startLine: 4373
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public SearchGame(int offset, int size, int gameId, int state, int gameType, long userId)
+    content: public SearchGame(int offset, int size, int gameId, int state, int gameType, long userId, string searchField, string searchDirection)
     parameters:
     - id: offset
       type: System.Int32
@@ -93,7 +93,11 @@ items:
       type: System.Int32
     - id: userId
       type: System.Int64
-    content.vb: Public Sub New(offset As Integer, size As Integer, gameId As Integer, state As Integer, gameType As Integer, userId As Long)
+    - id: searchField
+      type: System.String
+    - id: searchDirection
+      type: System.String
+    content.vb: Public Sub New(offset As Integer, size As Integer, gameId As Integer, state As Integer, gameType As Integer, userId As Long, searchField As String, searchDirection As String)
   overload: Winpeak.Client.Networking.WebServer.SearchGame.#ctor*
   modifiers.csharp:
   - public
@@ -113,7 +117,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 4378
+    startLine: 4384
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -144,7 +148,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 4398
+    startLine: 4412
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -895,6 +899,13 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   parent: Winpeak.Client.Networking.WebServer.WebRequest
