@@ -6,6 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.AdditionalInfo.GetCommission
+  - Winpeak.Client.Networking.WebServer.AdditionalInfo.GetNewsLine
   - Winpeak.Client.Networking.WebServer.AdditionalInfo.GetOnlineFriendsCounter
   langs:
   - csharp
@@ -35,6 +36,7 @@ items:
   inheritedMembers:
   - Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.Commission
   - Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.OnlineFriendsCounter
+  - Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.NewsLine
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -114,6 +116,39 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.AdditionalInfo.GetNewsLine
+  commentId: P:Winpeak.Client.Networking.WebServer.AdditionalInfo.GetNewsLine
+  id: GetNewsLine
+  parent: Winpeak.Client.Networking.WebServer.AdditionalInfo
+  langs:
+  - csharp
+  - vb
+  name: GetNewsLine
+  nameWithType: AdditionalInfo.GetNewsLine
+  fullName: Winpeak.Client.Networking.WebServer.AdditionalInfo.GetNewsLine
+  type: Property
+  source:
+    id: GetNewsLine
+    path: ''
+    startLine: 3499
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: public string GetNewsLine { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property GetNewsLine As String
+  overload: Winpeak.Client.Networking.WebServer.AdditionalInfo.GetNewsLine*
+  implements:
+  - Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 references:
 - uid: Winpeak.Client.Networking.WebServer
   commentId: N:Winpeak.Client.Networking.WebServer
@@ -151,6 +186,12 @@ references:
   name: OnlineFriendsCounter
   nameWithType: InternalAdditionalInfo.OnlineFriendsCounter
   fullName: Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.OnlineFriendsCounter
+- uid: Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.NewsLine
+  commentId: F:Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.NewsLine
+  parent: Winpeak.Client.Networking.WebServer.InternalAdditionalInfo
+  name: NewsLine
+  nameWithType: InternalAdditionalInfo.NewsLine
+  fullName: Winpeak.Client.Networking.WebServer.InternalAdditionalInfo.NewsLine
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -465,3 +506,21 @@ references:
   name: GetOnlineFriendsCounter
   nameWithType: IAdditionalInfo.GetOnlineFriendsCounter
   fullName: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter
+- uid: Winpeak.Client.Networking.WebServer.AdditionalInfo.GetNewsLine*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.AdditionalInfo.GetNewsLine
+  name: GetNewsLine
+  nameWithType: AdditionalInfo.GetNewsLine
+  fullName: Winpeak.Client.Networking.WebServer.AdditionalInfo.GetNewsLine
+- uid: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine
+  commentId: P:Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine
+  parent: Winpeak.Client.Networking.WebServer.IAdditionalInfo
+  name: GetNewsLine
+  nameWithType: IAdditionalInfo.GetNewsLine
+  fullName: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

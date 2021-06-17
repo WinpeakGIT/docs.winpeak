@@ -6,6 +6,7 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetCommission
+  - Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine
   - Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter
   langs:
   - csharp
@@ -17,7 +18,7 @@ items:
   source:
     id: IAdditionalInfo
     path: ''
-    startLine: 5103
+    startLine: 5107
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -44,7 +45,7 @@ items:
   source:
     id: GetCommission
     path: ''
-    startLine: 5105
+    startLine: 5109
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -73,7 +74,7 @@ items:
   source:
     id: GetOnlineFriendsCounter
     path: ''
-    startLine: 5106
+    startLine: 5110
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -84,6 +85,35 @@ items:
       type: System.Int32
     content.vb: ReadOnly Property GetOnlineFriendsCounter As Integer
   overload: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine
+  commentId: P:Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine
+  id: GetNewsLine
+  parent: Winpeak.Client.Networking.WebServer.IAdditionalInfo
+  langs:
+  - csharp
+  - vb
+  name: GetNewsLine
+  nameWithType: IAdditionalInfo.GetNewsLine
+  fullName: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine
+  type: Property
+  source:
+    id: GetNewsLine
+    path: ''
+    startLine: 5111
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.WebServer
+  syntax:
+    content: string GetNewsLine { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property GetNewsLine As String
+  overload: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine*
   modifiers.csharp:
   - get
   modifiers.vb:
@@ -117,3 +147,15 @@ references:
   name: GetOnlineFriendsCounter
   nameWithType: IAdditionalInfo.GetOnlineFriendsCounter
   fullName: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetOnlineFriendsCounter
+- uid: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine
+  name: GetNewsLine
+  nameWithType: IAdditionalInfo.GetNewsLine
+  fullName: Winpeak.Client.Networking.WebServer.IAdditionalInfo.GetNewsLine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
