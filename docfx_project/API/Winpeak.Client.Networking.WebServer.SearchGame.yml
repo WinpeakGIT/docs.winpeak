@@ -5,7 +5,7 @@ items:
   id: SearchGame
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String)
+  - Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Collections.Generic.List{System.Collections.Generic.List{System.String}})
   - Winpeak.Client.Networking.WebServer.SearchGame.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.SearchGame.GenerateData
   langs:
@@ -60,26 +60,26 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String)
-  commentId: M:Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String)
-  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String)'
+- uid: Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Collections.Generic.List{System.Collections.Generic.List{System.String}})
+  commentId: M:Winpeak.Client.Networking.WebServer.SearchGame.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Collections.Generic.List{System.Collections.Generic.List{System.String}})
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Collections.Generic.List{System.Collections.Generic.List{System.String}})'
   parent: Winpeak.Client.Networking.WebServer.SearchGame
   langs:
   - csharp
   - vb
-  name: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, String, String)
-  nameWithType: SearchGame.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, String, String)
-  fullName: Winpeak.Client.Networking.WebServer.SearchGame.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.String, System.String)
+  name: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, List<List<String>>)
+  nameWithType: SearchGame.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, List<List<String>>)
+  fullName: Winpeak.Client.Networking.WebServer.SearchGame.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.Collections.Generic.List<System.Collections.Generic.List<System.String>>)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 4378
+    startLine: 4379
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public SearchGame(int offset, int size, int gameId, int state, int gameType, long userId, string searchField, string searchDirection)
+    content: public SearchGame(int offset, int size, int gameId, int state, int gameType, long userId, List<List<string>> sortList)
     parameters:
     - id: offset
       type: System.Int32
@@ -93,16 +93,17 @@ items:
       type: System.Int32
     - id: userId
       type: System.Int64
-    - id: searchField
-      type: System.String
-    - id: searchDirection
-      type: System.String
-    content.vb: Public Sub New(offset As Integer, size As Integer, gameId As Integer, state As Integer, gameType As Integer, userId As Long, searchField As String, searchDirection As String)
+    - id: sortList
+      type: System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+    content.vb: Public Sub New(offset As Integer, size As Integer, gameId As Integer, state As Integer, gameType As Integer, userId As Long, sortList As List(Of List(Of String)))
   overload: Winpeak.Client.Networking.WebServer.SearchGame.#ctor*
+  nameWithType.vb: SearchGame.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, List(Of List(Of String)))
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
+  fullName.vb: Winpeak.Client.Networking.WebServer.SearchGame.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.Collections.Generic.List(Of System.Collections.Generic.List(Of System.String)))
+  name.vb: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, List(Of List(Of String)))
 - uid: Winpeak.Client.Networking.WebServer.SearchGame.GenerateData
   commentId: M:Winpeak.Client.Networking.WebServer.SearchGame.GenerateData
   id: GenerateData
@@ -148,7 +149,7 @@ items:
   source:
     id: AuthenticationRequired
     path: ''
-    startLine: 4417
+    startLine: 4418
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -899,13 +900,117 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
-- uid: System.String
-  commentId: T:System.String
-  parent: System
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<List<String>>
+  nameWithType: List<List<String>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<System.String>>
+  nameWithType.vb: List(Of List(Of String))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of System.String))
+  name.vb: List(Of List(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   parent: Winpeak.Client.Networking.WebServer.WebRequest
@@ -1050,12 +1155,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
   commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
   parent: Winpeak.Client.Networking.WebServer.WebRequest

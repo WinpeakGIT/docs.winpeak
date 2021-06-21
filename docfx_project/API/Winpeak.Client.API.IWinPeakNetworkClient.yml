@@ -30,7 +30,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.RejectFriendGameSessionRequest(System.Int64,System.Int64,System.Action{RejectFriendGameSessionRequestResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.RemoveFriend(System.Int64,System.Action{RemoveFriendResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.ReportAbuseUser(System.Int64,System.Int64,System.Int32,System.String,System.Action{ReportAbuseUserResult})
-  - Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String,System.Action{SearchGameResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Action{SearchGameResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.SearchUser(System.Int64,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Boolean,System.Action{SearchUserResult})
   langs:
   - csharp
@@ -333,28 +333,28 @@ items:
   nameWithType.vb: IWinPeakNetworkClient.Logout(Action(Of Boolean))
   fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.Logout(System.Action(Of System.Boolean))
   name.vb: Logout(Action(Of Boolean))
-- uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String,System.Action{SearchGameResult})
-  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String,System.Action{SearchGameResult})
-  id: SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String,System.Action{SearchGameResult})
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Action{SearchGameResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Action{SearchGameResult})
+  id: SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Action{SearchGameResult})
   parent: Winpeak.Client.API.IWinPeakNetworkClient
   langs:
   - csharp
   - vb
-  name: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, String, String, Action<SearchGameResult>)
-  nameWithType: IWinPeakNetworkClient.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, String, String, Action<SearchGameResult>)
-  fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.String, System.String, System.Action<SearchGameResult>)
+  name: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, List<List<String>>, Action<SearchGameResult>)
+  nameWithType: IWinPeakNetworkClient.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, List<List<String>>, Action<SearchGameResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.Collections.Generic.List<System.Collections.Generic.List<System.String>>, System.Action<SearchGameResult>)
   type: Method
   source:
     id: SearchGame
     path: ''
-    startLine: 1380
+    startLine: 1379
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   summary: "\nSearch game session by specified params. Return total count games(type long) and list of games(type <xref href=\"Winpeak.Client.Networking.WebServer.GameInfo\" data-throw-if-not-resolved=\"false\"></xref>)\n"
   example: []
   syntax:
-    content: void SearchGame(int offset, int size, int gameId, int state, int tplId, long userId, string searchField, string searchDirection, Action<SearchGameResult> callback)
+    content: void SearchGame(int offset, int size, int gameId, int state, int tplId, long userId, List<List<string>> sortList, Action<SearchGameResult> callback)
     parameters:
     - id: offset
       type: System.Int32
@@ -374,20 +374,17 @@ items:
     - id: userId
       type: System.Int64
       description: user id
-    - id: searchField
-      type: System.String
-      description: ''
-    - id: searchDirection
-      type: System.String
-      description: ''
+    - id: sortList
+      type: System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+      description: list of values {sortType, direction}
     - id: callback
       type: System.Action{SearchGameResult}
       description: returns result
-    content.vb: Sub SearchGame(offset As Integer, size As Integer, gameId As Integer, state As Integer, tplId As Integer, userId As Long, searchField As String, searchDirection As String, callback As Action(Of SearchGameResult))
+    content.vb: Sub SearchGame(offset As Integer, size As Integer, gameId As Integer, state As Integer, tplId As Integer, userId As Long, sortList As List(Of List(Of String)), callback As Action(Of SearchGameResult))
   overload: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame*
-  nameWithType.vb: IWinPeakNetworkClient.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, String, String, Action(Of SearchGameResult))
-  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.String, System.String, System.Action(Of SearchGameResult))
-  name.vb: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, String, String, Action(Of SearchGameResult))
+  nameWithType.vb: IWinPeakNetworkClient.SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, List(Of List(Of String)), Action(Of SearchGameResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, System.Int64, System.Collections.Generic.List(Of System.Collections.Generic.List(Of System.String)), System.Action(Of SearchGameResult))
+  name.vb: SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, List(Of List(Of String)), Action(Of SearchGameResult))
 - uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest(System.Int64,System.Action{CreateGameSessionRequestResult})
   commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest(System.Int64,System.Action{CreateGameSessionRequestResult})
   id: CreateGameSessionRequest(System.Int64,System.Action{CreateGameSessionRequestResult})
@@ -402,7 +399,7 @@ items:
   source:
     id: CreateGameSessionRequest
     path: ''
-    startLine: 1387
+    startLine: 1386
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -436,7 +433,7 @@ items:
   source:
     id: RejectCreateGameSessionRequest
     path: ''
-    startLine: 1395
+    startLine: 1394
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -473,7 +470,7 @@ items:
   source:
     id: ApproveCreateGameSessionRequest
     path: ''
-    startLine: 1403
+    startLine: 1402
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -510,7 +507,7 @@ items:
   source:
     id: CreateFriendGameSessionRequest
     path: ''
-    startLine: 1411
+    startLine: 1410
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -547,7 +544,7 @@ items:
   source:
     id: ApproveFriendGameSessionRequest
     path: ''
-    startLine: 1419
+    startLine: 1418
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -584,7 +581,7 @@ items:
   source:
     id: RejectFriendGameSessionRequest
     path: ''
-    startLine: 1427
+    startLine: 1426
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -621,7 +618,7 @@ items:
   source:
     id: CreateGame
     path: ''
-    startLine: 1436
+    startLine: 1435
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -661,7 +658,7 @@ items:
   source:
     id: GetGameInfo
     path: ''
-    startLine: 1444
+    startLine: 1443
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -698,7 +695,7 @@ items:
   source:
     id: CloseGameSession
     path: ''
-    startLine: 1451
+    startLine: 1450
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -732,7 +729,7 @@ items:
   source:
     id: PasswordRecovery
     path: ''
-    startLine: 1458
+    startLine: 1457
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -768,7 +765,7 @@ items:
   source:
     id: GetActiveGameSessionsRequest
     path: ''
-    startLine: 1465
+    startLine: 1464
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -802,7 +799,7 @@ items:
   source:
     id: RemoveFriend
     path: ''
-    startLine: 1472
+    startLine: 1471
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -836,7 +833,7 @@ items:
   source:
     id: SearchUser
     path: ''
-    startLine: 1489
+    startLine: 1488
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -900,7 +897,7 @@ items:
   source:
     id: AddFriend
     path: ''
-    startLine: 1495
+    startLine: 1494
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -933,7 +930,7 @@ items:
   source:
     id: GetLastTournaments
     path: ''
-    startLine: 1505
+    startLine: 1504
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -978,7 +975,7 @@ items:
   source:
     id: GetMoreGames
     path: ''
-    startLine: 1512
+    startLine: 1511
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -1012,7 +1009,7 @@ items:
   source:
     id: ReportAbuseUser
     path: ''
-    startLine: 1522
+    startLine: 1521
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -1055,7 +1052,7 @@ items:
   source:
     id: GetStaticPages
     path: ''
-    startLine: 1530
+    startLine: 1529
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -1092,7 +1089,7 @@ items:
   source:
     id: GetPlatformLanguages
     path: ''
-    startLine: 1538
+    startLine: 1537
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -1460,6 +1457,72 @@ references:
   name: SearchGame
   nameWithType: IWinPeakNetworkClient.SearchGame
   fullName: Winpeak.Client.API.IWinPeakNetworkClient.SearchGame
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<List<String>>
+  nameWithType: List<List<String>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<System.String>>
+  nameWithType.vb: List(Of List(Of String))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of System.String))
+  name.vb: List(Of List(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Action{SearchGameResult}
   commentId: T:System.Action{SearchGameResult}
   parent: System
@@ -1509,6 +1572,51 @@ references:
   name: Winpeak.Client.Networking.WebServer
   nameWithType: Winpeak.Client.Networking.WebServer
   fullName: Winpeak.Client.Networking.WebServer
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
 - uid: Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest*
   commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.CreateGameSessionRequest
   name: CreateGameSessionRequest
@@ -2435,51 +2543,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
 - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages*
   commentId: Overload:Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages
   name: GetPlatformLanguages

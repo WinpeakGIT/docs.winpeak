@@ -1135,13 +1135,13 @@
   
   
   <a id="Winpeak_Client_API_IWinPeakNetworkClient_SearchGame_" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.SearchGame*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_SearchGame_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int64_System_String_System_String_System_Action_SearchGameResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.String,System.String,System.Action{SearchGameResult})">SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, String, String, Action&lt;SearchGameResult&gt;)</h4>
+  <h4 id="Winpeak_Client_API_IWinPeakNetworkClient_SearchGame_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int64_System_Collections_Generic_List_System_Collections_Generic_List_System_String___System_Action_SearchGameResult__" data-uid="Winpeak.Client.API.IWinPeakNetworkClient.SearchGame(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int64,System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Action{SearchGameResult})">SearchGame(Int32, Int32, Int32, Int32, Int32, Int64, List&lt;List&lt;String&gt;&gt;, Action&lt;SearchGameResult&gt;)</h4>
   <div class="markdown level1 summary"><p>Search game session by specified params. Return total count games(type long) and list of games(type <a class="xref" href="Winpeak.Client.Networking.WebServer.GameInfo.html">GameInfo</a>)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SearchGame(int offset, int size, int gameId, int state, int tplId, long userId, string searchField, string searchDirection, Action&lt;SearchGameResult&gt; callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void SearchGame(int offset, int size, int gameId, int state, int tplId, long userId, List&lt;List&lt;string&gt;&gt; sortList, Action&lt;SearchGameResult&gt; callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1190,14 +1190,10 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">searchField</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">searchDirection</span></td>
-        <td></td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">sortList</span></td>
+        <td><p>list of values {sortType, direction}</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">SearchGameResult</span>&gt;</td>
