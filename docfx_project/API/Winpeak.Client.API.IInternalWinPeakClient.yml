@@ -20,7 +20,7 @@ items:
   - Winpeak.Client.API.IInternalWinPeakClient.OnBlockInGameInput
   - Winpeak.Client.API.IInternalWinPeakClient.PlayWallHitSound
   - Winpeak.Client.API.IInternalWinPeakClient.RoundScoreUpdate(RoundResult)
-  - Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64,System.Action)
+  - Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64)
   - Winpeak.Client.API.IInternalWinPeakClient.UserInfoUpdated(System.String,System.Collections.Generic.Dictionary{System.String,System.String[]})
   langs:
   - csharp
@@ -32,7 +32,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 2869
+    startLine: 2863
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -62,7 +62,6 @@ items:
   - Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
   - Winpeak.Client.API.IWinPeakClient.Utilize
   - Winpeak.Client.API.IWinPeakClient.BlockInGameInput(System.Boolean)
-  - Winpeak.Client.API.IWinPeakClient.RequestServers(System.Action{System.Collections.Generic.List{System.String}})
   - Winpeak.Client.API.IWinPeakClient.OnGamePlayersListLoaded
   - Winpeak.Client.API.IWinPeakClient.GetGamePlayersList
   - Winpeak.Client.API.IWinPeakClient.DrawLines
@@ -119,7 +118,7 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 2874
+    startLine: 2868
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -144,7 +143,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 2879
+    startLine: 2873
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -155,36 +154,33 @@ items:
     return:
       type: System.Action{System.Boolean}
     content.vb: Event OnBlockInGameInput As Action(Of Boolean)
-- uid: Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64,System.Action)
-  commentId: M:Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64,System.Action)
-  id: Sync(System.Int64,System.Action)
+- uid: Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64)
+  commentId: M:Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64)
+  id: Sync(System.Int64)
   parent: Winpeak.Client.API.IInternalWinPeakClient
   langs:
   - csharp
   - vb
-  name: Sync(Int64, Action)
-  nameWithType: IInternalWinPeakClient.Sync(Int64, Action)
-  fullName: Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64, System.Action)
+  name: Sync(Int64)
+  nameWithType: IInternalWinPeakClient.Sync(Int64)
+  fullName: Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64)
   type: Method
   source:
     id: Sync
     path: ''
-    startLine: 2886
+    startLine: 2879
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   summary: "\nSync what?\n"
   example: []
   syntax:
-    content: void Sync(long currentTime, Action callback)
+    content: void Sync(long currentTime)
     parameters:
     - id: currentTime
       type: System.Int64
       description: ''
-    - id: callback
-      type: System.Action
-      description: ''
-    content.vb: Sub Sync(currentTime As Long, callback As Action)
+    content.vb: Sub Sync(currentTime As Long)
   overload: Winpeak.Client.API.IInternalWinPeakClient.Sync*
 - uid: Winpeak.Client.API.IInternalWinPeakClient.Disconnect
   commentId: M:Winpeak.Client.API.IInternalWinPeakClient.Disconnect
@@ -200,7 +196,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 2891
+    startLine: 2884
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -224,7 +220,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 2897
+    startLine: 2890
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -252,7 +248,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 2903
+    startLine: 2896
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -280,7 +276,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 2908
+    startLine: 2901
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -310,7 +306,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 2916
+    startLine: 2909
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -344,7 +340,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 2922
+    startLine: 2915
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -372,7 +368,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 2928
+    startLine: 2921
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -400,7 +396,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 2934
+    startLine: 2927
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -428,7 +424,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 2939
+    startLine: 2932
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -455,7 +451,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 2944
+    startLine: 2937
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -479,7 +475,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 2950
+    startLine: 2943
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -507,7 +503,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 2955
+    startLine: 2948
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -531,7 +527,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 2960
+    startLine: 2953
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -562,7 +558,7 @@ items:
   source:
     id: InvokeGamePlayersList
     path: ''
-    startLine: 2966
+    startLine: 2959
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -1099,92 +1095,6 @@ references:
     nameWithType: Boolean
     fullName: System.Boolean
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.API.IWinPeakClient.RequestServers(System.Action{System.Collections.Generic.List{System.String}})
-  commentId: M:Winpeak.Client.API.IWinPeakClient.RequestServers(System.Action{System.Collections.Generic.List{System.String}})
-  parent: Winpeak.Client.API.IWinPeakClient
-  isExternal: true
-  name: RequestServers(Action<List<String>>)
-  nameWithType: IWinPeakClient.RequestServers(Action<List<String>>)
-  fullName: Winpeak.Client.API.IWinPeakClient.RequestServers(System.Action<System.Collections.Generic.List<System.String>>)
-  nameWithType.vb: IWinPeakClient.RequestServers(Action(Of List(Of String)))
-  fullName.vb: Winpeak.Client.API.IWinPeakClient.RequestServers(System.Action(Of System.Collections.Generic.List(Of System.String)))
-  name.vb: RequestServers(Action(Of List(Of String)))
-  spec.csharp:
-  - uid: Winpeak.Client.API.IWinPeakClient.RequestServers(System.Action{System.Collections.Generic.List{System.String}})
-    name: RequestServers
-    nameWithType: IWinPeakClient.RequestServers
-    fullName: Winpeak.Client.API.IWinPeakClient.RequestServers
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Action`1
-    name: Action
-    nameWithType: Action
-    fullName: System.Action
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.API.IWinPeakClient.RequestServers(System.Action{System.Collections.Generic.List{System.String}})
-    name: RequestServers
-    nameWithType: IWinPeakClient.RequestServers
-    fullName: Winpeak.Client.API.IWinPeakClient.RequestServers
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Action`1
-    name: Action
-    nameWithType: Action
-    fullName: System.Action
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
   - name: )
     nameWithType: )
     fullName: )
@@ -4697,13 +4607,6 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
-- uid: System.Action
-  commentId: T:System.Action
-  parent: System
-  isExternal: true
-  name: Action
-  nameWithType: Action
-  fullName: System.Action
 - uid: Winpeak.Client.API.IInternalWinPeakClient.Disconnect*
   commentId: Overload:Winpeak.Client.API.IInternalWinPeakClient.Disconnect
   name: Disconnect

@@ -22,7 +22,7 @@ items:
   source:
     id: UdpAsyncStateController
     path: ''
-    startLine: 171181
+    startLine: 171022
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -64,20 +64,20 @@ items:
   source:
     id: UdpClient
     path: ''
-    startLine: 171183
+    startLine: 171024
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
   syntax:
-    content: public readonly UdpClient UdpClient
+    content: protected readonly UdpClient UdpClient
     return:
       type: UdpClient
-    content.vb: Public ReadOnly UdpClient As UdpClient
+    content.vb: Protected ReadOnly UdpClient As UdpClient
   modifiers.csharp:
-  - public
+  - protected
   - readonly
   modifiers.vb:
-  - Public
+  - Protected
   - ReadOnly
 - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController._controlIpEndPoint
   commentId: F:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController._controlIpEndPoint
@@ -93,7 +93,7 @@ items:
   source:
     id: _controlIpEndPoint
     path: ''
-    startLine: 171184
+    startLine: 171025
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -120,25 +120,23 @@ items:
   source:
     id: IsOperationDone
     path: ''
-    startLine: 171185
+    startLine: 171026
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
   syntax:
-    content: public bool IsOperationDone { get; protected set; }
+    content: protected bool IsOperationDone { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property IsOperationDone As Boolean
+    content.vb: Protected Property IsOperationDone As Boolean
   overload: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.IsOperationDone*
   modifiers.csharp:
-  - public
+  - protected
   - get
-  - protected set
+  - set
   modifiers.vb:
-  - Public
-  - Get
-  - Protected Set
+  - Protected
 - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.operationResult
   commentId: F:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.operationResult
   id: operationResult
@@ -153,7 +151,7 @@ items:
   source:
     id: operationResult
     path: ''
-    startLine: 171186
+    startLine: 171027
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -180,27 +178,25 @@ items:
   source:
     id: IsOperationProceedBytes
     path: ''
-    startLine: 171191
+    startLine: 171032
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
   summary: "\nIf more than 0 bytes were proceeded, than this flag is true;\n"
   example: []
   syntax:
-    content: public bool IsOperationProceedBytes { get; protected set; }
+    content: protected bool IsOperationProceedBytes { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property IsOperationProceedBytes As Boolean
+    content.vb: Protected Property IsOperationProceedBytes As Boolean
   overload: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.IsOperationProceedBytes*
   modifiers.csharp:
-  - public
+  - protected
   - get
-  - protected set
+  - set
   modifiers.vb:
-  - Public
-  - Get
-  - Protected Set
+  - Protected
 - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.#ctor(UdpClient,IPEndPoint)
   commentId: M:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.#ctor(UdpClient,IPEndPoint)
   id: '#ctor(UdpClient,IPEndPoint)'
@@ -215,7 +211,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 171193
+    startLine: 171034
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -246,7 +242,7 @@ items:
   source:
     id: GetResult
     path: ''
-    startLine: 171208
+    startLine: 171049
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
