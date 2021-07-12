@@ -20,7 +20,7 @@ items:
   source:
     id: WebCallbackPaginatedRequest
     path: ''
-    startLine: 3594
+    startLine: 170848
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -78,7 +78,7 @@ items:
   source:
     id: m_excludedItems
     path: ''
-    startLine: 3600
+    startLine: 170854
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -107,7 +107,7 @@ items:
   source:
     id: GetItems
     path: ''
-    startLine: 3602
+    startLine: 170856
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -150,21 +150,21 @@ items:
   source:
     id: Clear
     path: ''
-    startLine: 3634
+    startLine: 170888
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public override void Clear()
-    content.vb: Public Overrides Sub Clear
+    content: protected override void Clear()
+    content.vb: Protected Overrides Sub Clear
   overridden: Winpeak.Client.Networking.WebServer.WebBasePaginatedRequest{{T}}.Clear
   overload: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.Clear*
   nameWithType.vb: WebCallbackPaginatedRequest(Of T).Clear()
   modifiers.csharp:
-  - public
+  - protected
   - override
   modifiers.vb:
-  - Public
+  - Protected
   - Overrides
   fullName.vb: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest(Of T).Clear()
 - uid: Winpeak.Client.Networking.WebServer.WebCallbackPaginatedRequest`1.SendRequest(System.Int32,System.Int32)
@@ -181,7 +181,7 @@ items:
   source:
     id: SendRequest
     path: ''
-    startLine: 3641
+    startLine: 170895
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -216,7 +216,7 @@ items:
   source:
     id: HandleReceivedItems
     path: ''
-    startLine: 3643
+    startLine: 170897
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer

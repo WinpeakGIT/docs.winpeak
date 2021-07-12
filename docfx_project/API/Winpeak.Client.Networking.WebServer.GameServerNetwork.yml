@@ -18,21 +18,18 @@ items:
   source:
     id: GameServerNetwork
     path: ''
-    startLine: 3547
+    startLine: 170522
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: 'public class GameServerNetwork : InternalGameServerNetwork, IGameServerNetwork'
+    content: 'public class GameServerNetwork : InternalGameServerNetwork'
     content.vb: >-
       Public Class GameServerNetwork
           Inherits InternalGameServerNetwork
-          Implements IGameServerNetwork
   inheritance:
   - System.Object
   - Winpeak.Client.Networking.WebServer.InternalGameServerNetwork
-  implements:
-  - Winpeak.Client.Networking.WebServer.IGameServerNetwork
   inheritedMembers:
   - Winpeak.Client.Networking.WebServer.InternalGameServerNetwork.Host
   - Winpeak.Client.Networking.WebServer.InternalGameServerNetwork.Port
@@ -64,7 +61,7 @@ items:
   source:
     id: GetHost
     path: ''
-    startLine: 3549
+    startLine: 170524
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -75,8 +72,6 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property GetHost As String
   overload: Winpeak.Client.Networking.WebServer.GameServerNetwork.GetHost*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetHost
   modifiers.csharp:
   - public
   - get
@@ -97,7 +92,7 @@ items:
   source:
     id: GetPort
     path: ''
-    startLine: 3550
+    startLine: 170525
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -108,8 +103,6 @@ items:
       type: System.Int32
     content.vb: Public ReadOnly Property GetPort As Integer
   overload: Winpeak.Client.Networking.WebServer.GameServerNetwork.GetPort*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetPort
   modifiers.csharp:
   - public
   - get
@@ -130,7 +123,7 @@ items:
   source:
     id: GetProtocol
     path: ''
-    startLine: 3551
+    startLine: 170526
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -141,8 +134,6 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property GetProtocol As String
   overload: Winpeak.Client.Networking.WebServer.GameServerNetwork.GetProtocol*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetProtocol
   modifiers.csharp:
   - public
   - get
@@ -168,12 +159,6 @@ references:
   name: InternalGameServerNetwork
   nameWithType: InternalGameServerNetwork
   fullName: Winpeak.Client.Networking.WebServer.InternalGameServerNetwork
-- uid: Winpeak.Client.Networking.WebServer.IGameServerNetwork
-  commentId: T:Winpeak.Client.Networking.WebServer.IGameServerNetwork
-  parent: Winpeak.Client.Networking.WebServer
-  name: IGameServerNetwork
-  nameWithType: IGameServerNetwork
-  fullName: Winpeak.Client.Networking.WebServer.IGameServerNetwork
 - uid: Winpeak.Client.Networking.WebServer.InternalGameServerNetwork.Host
   commentId: F:Winpeak.Client.Networking.WebServer.InternalGameServerNetwork.Host
   parent: Winpeak.Client.Networking.WebServer.InternalGameServerNetwork
@@ -482,12 +467,6 @@ references:
   name: GetHost
   nameWithType: GameServerNetwork.GetHost
   fullName: Winpeak.Client.Networking.WebServer.GameServerNetwork.GetHost
-- uid: Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetHost
-  commentId: P:Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetHost
-  parent: Winpeak.Client.Networking.WebServer.IGameServerNetwork
-  name: GetHost
-  nameWithType: IGameServerNetwork.GetHost
-  fullName: Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetHost
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -500,12 +479,6 @@ references:
   name: GetPort
   nameWithType: GameServerNetwork.GetPort
   fullName: Winpeak.Client.Networking.WebServer.GameServerNetwork.GetPort
-- uid: Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetPort
-  commentId: P:Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetPort
-  parent: Winpeak.Client.Networking.WebServer.IGameServerNetwork
-  name: GetPort
-  nameWithType: IGameServerNetwork.GetPort
-  fullName: Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetPort
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -518,9 +491,3 @@ references:
   name: GetProtocol
   nameWithType: GameServerNetwork.GetProtocol
   fullName: Winpeak.Client.Networking.WebServer.GameServerNetwork.GetProtocol
-- uid: Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetProtocol
-  commentId: P:Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetProtocol
-  parent: Winpeak.Client.Networking.WebServer.IGameServerNetwork
-  name: GetProtocol
-  nameWithType: IGameServerNetwork.GetProtocol
-  fullName: Winpeak.Client.Networking.WebServer.IGameServerNetwork.GetProtocol

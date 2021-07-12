@@ -6,7 +6,6 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.IWebRequest.Act
-  - Winpeak.Client.Networking.WebServer.IWebRequest.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.IWebRequest.GenerateData
   - Winpeak.Client.Networking.WebServer.IWebRequest.HasTextureToSend
   - Winpeak.Client.Networking.WebServer.IWebRequest.Method
@@ -24,7 +23,7 @@ items:
   source:
     id: IWebRequest
     path: ''
-    startLine: 4965
+    startLine: 170277
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -51,7 +50,7 @@ items:
   source:
     id: Url
     path: ''
-    startLine: 4967
+    startLine: 170279
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -80,7 +79,7 @@ items:
   source:
     id: Method
     path: ''
-    startLine: 4968
+    startLine: 170280
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -91,35 +90,6 @@ items:
       type: HTTPMethods
     content.vb: ReadOnly Property Method As HTTPMethods
   overload: Winpeak.Client.Networking.WebServer.IWebRequest.Method*
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.IWebRequest.AuthenticationRequired
-  commentId: P:Winpeak.Client.Networking.WebServer.IWebRequest.AuthenticationRequired
-  id: AuthenticationRequired
-  parent: Winpeak.Client.Networking.WebServer.IWebRequest
-  langs:
-  - csharp
-  - vb
-  name: AuthenticationRequired
-  nameWithType: IWebRequest.AuthenticationRequired
-  fullName: Winpeak.Client.Networking.WebServer.IWebRequest.AuthenticationRequired
-  type: Property
-  source:
-    id: AuthenticationRequired
-    path: ''
-    startLine: 4969
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: bool AuthenticationRequired { get; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: ReadOnly Property AuthenticationRequired As Boolean
-  overload: Winpeak.Client.Networking.WebServer.IWebRequest.AuthenticationRequired*
   modifiers.csharp:
   - get
   modifiers.vb:
@@ -138,7 +108,7 @@ items:
   source:
     id: HasTextureToSend
     path: ''
-    startLine: 4970
+    startLine: 170281
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -167,7 +137,7 @@ items:
   source:
     id: Texture
     path: ''
-    startLine: 4971
+    startLine: 170282
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -196,7 +166,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 4972
+    startLine: 170283
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -220,7 +190,7 @@ items:
   source:
     id: OnRequestFinished
     path: ''
-    startLine: 4973
+    startLine: 170284
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -247,7 +217,7 @@ items:
   source:
     id: Act
     path: ''
-    startLine: 4974
+    startLine: 170285
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -276,7 +246,7 @@ items:
   source:
     id: Mod
     path: ''
-    startLine: 4975
+    startLine: 170286
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -325,11 +295,11 @@ references:
   name: HTTPMethods
   nameWithType: HTTPMethods
   fullName: HTTPMethods
-- uid: Winpeak.Client.Networking.WebServer.IWebRequest.AuthenticationRequired*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.IWebRequest.AuthenticationRequired
-  name: AuthenticationRequired
-  nameWithType: IWebRequest.AuthenticationRequired
-  fullName: Winpeak.Client.Networking.WebServer.IWebRequest.AuthenticationRequired
+- uid: Winpeak.Client.Networking.WebServer.IWebRequest.HasTextureToSend*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.IWebRequest.HasTextureToSend
+  name: HasTextureToSend
+  nameWithType: IWebRequest.HasTextureToSend
+  fullName: Winpeak.Client.Networking.WebServer.IWebRequest.HasTextureToSend
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -337,11 +307,6 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: Winpeak.Client.Networking.WebServer.IWebRequest.HasTextureToSend*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.IWebRequest.HasTextureToSend
-  name: HasTextureToSend
-  nameWithType: IWebRequest.HasTextureToSend
-  fullName: Winpeak.Client.Networking.WebServer.IWebRequest.HasTextureToSend
 - uid: Winpeak.Client.Networking.WebServer.IWebRequest.Texture*
   commentId: Overload:Winpeak.Client.Networking.WebServer.IWebRequest.Texture
   name: Texture

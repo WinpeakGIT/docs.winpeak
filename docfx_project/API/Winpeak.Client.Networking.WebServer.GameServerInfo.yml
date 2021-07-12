@@ -18,21 +18,20 @@ items:
   source:
     id: GameServerInfo
     path: ''
-    startLine: 3558
+    startLine: 170533
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: 'public class GameServerInfo : InternalGameServerInfo, IGameServerInfo, ITemplate'
+    content: 'public class GameServerInfo : InternalGameServerInfo, ITemplate'
     content.vb: >-
       Public Class GameServerInfo
           Inherits InternalGameServerInfo
-          Implements IGameServerInfo, ITemplate
+          Implements ITemplate
   inheritance:
   - System.Object
   - Winpeak.Client.Networking.WebServer.InternalGameServerInfo
   implements:
-  - Winpeak.Client.Networking.WebServer.IGameServerInfo
   - Winpeak.Client.Networking.WebServer.ITemplate
   inheritedMembers:
   - Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GameLogin
@@ -65,7 +64,7 @@ items:
   source:
     id: GetLogin
     path: ''
-    startLine: 3560
+    startLine: 170535
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -76,8 +75,6 @@ items:
       type: System.Int64
     content.vb: Public ReadOnly Property GetLogin As Long
   overload: Winpeak.Client.Networking.WebServer.GameServerInfo.GetLogin*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IGameServerInfo.GetLogin
   modifiers.csharp:
   - public
   - get
@@ -98,7 +95,7 @@ items:
   source:
     id: GetPassword
     path: ''
-    startLine: 3561
+    startLine: 170536
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -109,8 +106,6 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property GetPassword As String
   overload: Winpeak.Client.Networking.WebServer.GameServerInfo.GetPassword*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IGameServerInfo.GetPassword
   modifiers.csharp:
   - public
   - get
@@ -131,7 +126,7 @@ items:
   source:
     id: GetGameNetwork
     path: ''
-    startLine: 3562
+    startLine: 170537
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -142,8 +137,6 @@ items:
       type: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameServerNetwork}
     content.vb: Public ReadOnly Property GetGameNetwork As List(Of GameServerNetwork)
   overload: Winpeak.Client.Networking.WebServer.GameServerInfo.GetGameNetwork*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IGameServerInfo.GetGameNetwork
   modifiers.csharp:
   - public
   - get
@@ -169,12 +162,6 @@ references:
   name: InternalGameServerInfo
   nameWithType: InternalGameServerInfo
   fullName: Winpeak.Client.Networking.WebServer.InternalGameServerInfo
-- uid: Winpeak.Client.Networking.WebServer.IGameServerInfo
-  commentId: T:Winpeak.Client.Networking.WebServer.IGameServerInfo
-  parent: Winpeak.Client.Networking.WebServer
-  name: IGameServerInfo
-  nameWithType: IGameServerInfo
-  fullName: Winpeak.Client.Networking.WebServer.IGameServerInfo
 - uid: Winpeak.Client.Networking.WebServer.ITemplate
   commentId: T:Winpeak.Client.Networking.WebServer.ITemplate
   parent: Winpeak.Client.Networking.WebServer
@@ -489,12 +476,6 @@ references:
   name: GetLogin
   nameWithType: GameServerInfo.GetLogin
   fullName: Winpeak.Client.Networking.WebServer.GameServerInfo.GetLogin
-- uid: Winpeak.Client.Networking.WebServer.IGameServerInfo.GetLogin
-  commentId: P:Winpeak.Client.Networking.WebServer.IGameServerInfo.GetLogin
-  parent: Winpeak.Client.Networking.WebServer.IGameServerInfo
-  name: GetLogin
-  nameWithType: IGameServerInfo.GetLogin
-  fullName: Winpeak.Client.Networking.WebServer.IGameServerInfo.GetLogin
 - uid: System.Int64
   commentId: T:System.Int64
   parent: System
@@ -507,12 +488,6 @@ references:
   name: GetPassword
   nameWithType: GameServerInfo.GetPassword
   fullName: Winpeak.Client.Networking.WebServer.GameServerInfo.GetPassword
-- uid: Winpeak.Client.Networking.WebServer.IGameServerInfo.GetPassword
-  commentId: P:Winpeak.Client.Networking.WebServer.IGameServerInfo.GetPassword
-  parent: Winpeak.Client.Networking.WebServer.IGameServerInfo
-  name: GetPassword
-  nameWithType: IGameServerInfo.GetPassword
-  fullName: Winpeak.Client.Networking.WebServer.IGameServerInfo.GetPassword
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -525,12 +500,6 @@ references:
   name: GetGameNetwork
   nameWithType: GameServerInfo.GetGameNetwork
   fullName: Winpeak.Client.Networking.WebServer.GameServerInfo.GetGameNetwork
-- uid: Winpeak.Client.Networking.WebServer.IGameServerInfo.GetGameNetwork
-  commentId: P:Winpeak.Client.Networking.WebServer.IGameServerInfo.GetGameNetwork
-  parent: Winpeak.Client.Networking.WebServer.IGameServerInfo
-  name: GetGameNetwork
-  nameWithType: IGameServerInfo.GetGameNetwork
-  fullName: Winpeak.Client.Networking.WebServer.IGameServerInfo.GetGameNetwork
 - uid: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameServerNetwork}
   commentId: T:System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameServerNetwork}
   parent: System.Collections.Generic

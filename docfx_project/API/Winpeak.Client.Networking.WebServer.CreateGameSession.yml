@@ -6,7 +6,6 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.CreateGameSession.#ctor(System.Int32,System.Int32,System.Int32)
-  - Winpeak.Client.Networking.WebServer.CreateGameSession.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.CreateGameSession.GenerateData
   langs:
   - csharp
@@ -18,7 +17,7 @@ items:
   source:
     id: CreateGameSession
     path: ''
-    startLine: 4709
+    startLine: 169792
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -35,12 +34,10 @@ items:
   implements:
   - Winpeak.Client.Networking.WebServer.IWebRequest
   inheritedMembers:
-  - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.CreateGameSessionResult}.Callback
   - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.CreateGameSessionResult}.Send(System.Action{Winpeak.Client.Networking.WebServer.CreateGameSessionResult})
   - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.CreateGameSessionResult}.OnRequestFinished(HTTPRequest,HTTPResponse)
   - Winpeak.Client.Networking.WebServer.WebRequest.Mod
   - Winpeak.Client.Networking.WebServer.WebRequest.Act
-  - Winpeak.Client.Networking.WebServer.WebRequest.m_url
   - Winpeak.Client.Networking.WebServer.WebRequest.Send
   - Winpeak.Client.Networking.WebServer.WebRequest.Url
   - Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
@@ -74,7 +71,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 4717
+    startLine: 169800
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -107,7 +104,7 @@ items:
   source:
     id: GenerateData
     path: ''
-    startLine: 4723
+    startLine: 169806
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -124,40 +121,6 @@ items:
   modifiers.vb:
   - Public
   - Overrides
-- uid: Winpeak.Client.Networking.WebServer.CreateGameSession.AuthenticationRequired
-  commentId: P:Winpeak.Client.Networking.WebServer.CreateGameSession.AuthenticationRequired
-  id: AuthenticationRequired
-  parent: Winpeak.Client.Networking.WebServer.CreateGameSession
-  langs:
-  - csharp
-  - vb
-  name: AuthenticationRequired
-  nameWithType: CreateGameSession.AuthenticationRequired
-  fullName: Winpeak.Client.Networking.WebServer.CreateGameSession.AuthenticationRequired
-  type: Property
-  source:
-    id: AuthenticationRequired
-    path: ''
-    startLine: 4734
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: public override bool AuthenticationRequired { get; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Overrides ReadOnly Property AuthenticationRequired As Boolean
-  overridden: Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
-  overload: Winpeak.Client.Networking.WebServer.CreateGameSession.AuthenticationRequired*
-  modifiers.csharp:
-  - public
-  - override
-  - get
-  modifiers.vb:
-  - Public
-  - Overrides
-  - ReadOnly
 references:
 - uid: Winpeak.Client.Networking.WebServer
   commentId: N:Winpeak.Client.Networking.WebServer
@@ -223,15 +186,6 @@ references:
   name: IWebRequest
   nameWithType: IWebRequest
   fullName: Winpeak.Client.Networking.WebServer.IWebRequest
-- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.CreateGameSessionResult}.Callback
-  commentId: F:Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.CreateGameSessionResult}.Callback
-  parent: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.CreateGameSessionResult}
-  definition: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Callback
-  name: Callback
-  nameWithType: BaseWebPackage<CreateGameSessionResult>.Callback
-  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<Winpeak.Client.Networking.WebServer.CreateGameSessionResult>.Callback
-  nameWithType.vb: BaseWebPackage(Of CreateGameSessionResult).Callback
-  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of Winpeak.Client.Networking.WebServer.CreateGameSessionResult).Callback
 - uid: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.CreateGameSessionResult}.Send(System.Action{Winpeak.Client.Networking.WebServer.CreateGameSessionResult})
   commentId: M:Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.CreateGameSessionResult}.Send(System.Action{Winpeak.Client.Networking.WebServer.CreateGameSessionResult})
   parent: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.CreateGameSessionResult}
@@ -363,12 +317,6 @@ references:
   name: Act
   nameWithType: WebRequest.Act
   fullName: Winpeak.Client.Networking.WebServer.WebRequest.Act
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.m_url
-  commentId: F:Winpeak.Client.Networking.WebServer.WebRequest.m_url
-  parent: Winpeak.Client.Networking.WebServer.WebRequest
-  name: m_url
-  nameWithType: WebRequest.m_url
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.m_url
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.Send
   commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.Send
   parent: Winpeak.Client.Networking.WebServer.WebRequest
@@ -748,13 +696,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Callback
-  commentId: F:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Callback
-  name: Callback
-  nameWithType: BaseWebPackage<T>.Callback
-  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.Callback
-  nameWithType.vb: BaseWebPackage(Of T).Callback
-  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).Callback
 - uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send(System.Action{`0})
   commentId: M:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send(System.Action{`0})
   isExternal: true
@@ -1032,21 +973,3 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
-  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
-  parent: Winpeak.Client.Networking.WebServer.WebRequest
-  name: AuthenticationRequired
-  nameWithType: WebRequest.AuthenticationRequired
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
-- uid: Winpeak.Client.Networking.WebServer.CreateGameSession.AuthenticationRequired*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.CreateGameSession.AuthenticationRequired
-  name: AuthenticationRequired
-  nameWithType: CreateGameSession.AuthenticationRequired
-  fullName: Winpeak.Client.Networking.WebServer.CreateGameSession.AuthenticationRequired
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean

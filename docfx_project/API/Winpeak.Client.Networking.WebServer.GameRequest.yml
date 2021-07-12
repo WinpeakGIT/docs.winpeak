@@ -18,21 +18,20 @@ items:
   source:
     id: GameRequest
     path: ''
-    startLine: 3430
+    startLine: 170498
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: 'public class GameRequest : InternalGameRequest, IGameRequest, ITemplate'
+    content: 'public class GameRequest : InternalGameRequest, ITemplate'
     content.vb: >-
       Public Class GameRequest
           Inherits InternalGameRequest
-          Implements IGameRequest, ITemplate
+          Implements ITemplate
   inheritance:
   - System.Object
   - Winpeak.Client.Networking.WebServer.InternalGameRequest
   implements:
-  - Winpeak.Client.Networking.WebServer.IGameRequest
   - Winpeak.Client.Networking.WebServer.ITemplate
   inheritedMembers:
   - Winpeak.Client.Networking.WebServer.InternalGameRequest.RequestState
@@ -65,7 +64,7 @@ items:
   source:
     id: GetRequestState
     path: ''
-    startLine: 3432
+    startLine: 170500
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -76,8 +75,6 @@ items:
       type: System.Int32
     content.vb: Public ReadOnly Property GetRequestState As Integer
   overload: Winpeak.Client.Networking.WebServer.GameRequest.GetRequestState*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IGameRequest.GetRequestState
   modifiers.csharp:
   - public
   - get
@@ -98,7 +95,7 @@ items:
   source:
     id: GetRequestStatusUpdateTime
     path: ''
-    startLine: 3433
+    startLine: 170501
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -109,8 +106,6 @@ items:
       type: System.Int64
     content.vb: Public ReadOnly Property GetRequestStatusUpdateTime As Long
   overload: Winpeak.Client.Networking.WebServer.GameRequest.GetRequestStatusUpdateTime*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IGameRequest.GetRequestStatusUpdateTime
   modifiers.csharp:
   - public
   - get
@@ -131,7 +126,7 @@ items:
   source:
     id: GetGameUserInfo
     path: ''
-    startLine: 3434
+    startLine: 170502
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -142,8 +137,6 @@ items:
       type: Winpeak.Client.Networking.WebServer.ISimpleAccount
     content.vb: Public ReadOnly Property GetGameUserInfo As ISimpleAccount
   overload: Winpeak.Client.Networking.WebServer.GameRequest.GetGameUserInfo*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IGameRequest.GetGameUserInfo
   modifiers.csharp:
   - public
   - get
@@ -169,12 +162,6 @@ references:
   name: InternalGameRequest
   nameWithType: InternalGameRequest
   fullName: Winpeak.Client.Networking.WebServer.InternalGameRequest
-- uid: Winpeak.Client.Networking.WebServer.IGameRequest
-  commentId: T:Winpeak.Client.Networking.WebServer.IGameRequest
-  parent: Winpeak.Client.Networking.WebServer
-  name: IGameRequest
-  nameWithType: IGameRequest
-  fullName: Winpeak.Client.Networking.WebServer.IGameRequest
 - uid: Winpeak.Client.Networking.WebServer.ITemplate
   commentId: T:Winpeak.Client.Networking.WebServer.ITemplate
   parent: Winpeak.Client.Networking.WebServer
@@ -489,12 +476,6 @@ references:
   name: GetRequestState
   nameWithType: GameRequest.GetRequestState
   fullName: Winpeak.Client.Networking.WebServer.GameRequest.GetRequestState
-- uid: Winpeak.Client.Networking.WebServer.IGameRequest.GetRequestState
-  commentId: P:Winpeak.Client.Networking.WebServer.IGameRequest.GetRequestState
-  parent: Winpeak.Client.Networking.WebServer.IGameRequest
-  name: GetRequestState
-  nameWithType: IGameRequest.GetRequestState
-  fullName: Winpeak.Client.Networking.WebServer.IGameRequest.GetRequestState
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -507,12 +488,6 @@ references:
   name: GetRequestStatusUpdateTime
   nameWithType: GameRequest.GetRequestStatusUpdateTime
   fullName: Winpeak.Client.Networking.WebServer.GameRequest.GetRequestStatusUpdateTime
-- uid: Winpeak.Client.Networking.WebServer.IGameRequest.GetRequestStatusUpdateTime
-  commentId: P:Winpeak.Client.Networking.WebServer.IGameRequest.GetRequestStatusUpdateTime
-  parent: Winpeak.Client.Networking.WebServer.IGameRequest
-  name: GetRequestStatusUpdateTime
-  nameWithType: IGameRequest.GetRequestStatusUpdateTime
-  fullName: Winpeak.Client.Networking.WebServer.IGameRequest.GetRequestStatusUpdateTime
 - uid: System.Int64
   commentId: T:System.Int64
   parent: System
@@ -525,12 +500,6 @@ references:
   name: GetGameUserInfo
   nameWithType: GameRequest.GetGameUserInfo
   fullName: Winpeak.Client.Networking.WebServer.GameRequest.GetGameUserInfo
-- uid: Winpeak.Client.Networking.WebServer.IGameRequest.GetGameUserInfo
-  commentId: P:Winpeak.Client.Networking.WebServer.IGameRequest.GetGameUserInfo
-  parent: Winpeak.Client.Networking.WebServer.IGameRequest
-  name: GetGameUserInfo
-  nameWithType: IGameRequest.GetGameUserInfo
-  fullName: Winpeak.Client.Networking.WebServer.IGameRequest.GetGameUserInfo
 - uid: Winpeak.Client.Networking.WebServer.ISimpleAccount
   commentId: T:Winpeak.Client.Networking.WebServer.ISimpleAccount
   parent: Winpeak.Client.Networking.WebServer

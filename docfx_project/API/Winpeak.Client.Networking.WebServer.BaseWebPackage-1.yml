@@ -6,7 +6,6 @@ items:
   parent: Winpeak.Client.Networking.WebServer
   children:
   - Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor(System.String,System.String)
-  - Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Callback
   - Winpeak.Client.Networking.WebServer.BaseWebPackage`1.OnRequestFinished(HTTPRequest,HTTPResponse)
   - Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send(System.Action{`0})
   langs:
@@ -19,7 +18,7 @@ items:
   source:
     id: BaseWebPackage
     path: ''
-    startLine: 4984
+    startLine: 170295
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -65,13 +64,11 @@ items:
   inheritedMembers:
   - Winpeak.Client.Networking.WebServer.WebRequest.Mod
   - Winpeak.Client.Networking.WebServer.WebRequest.Act
-  - Winpeak.Client.Networking.WebServer.WebRequest.m_url
   - Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   - Winpeak.Client.Networking.WebServer.WebRequest.Send
   - Winpeak.Client.Networking.WebServer.WebRequest.Url
   - Winpeak.Client.Networking.WebServer.WebRequest.TimeStamp
   - Winpeak.Client.Networking.WebServer.WebRequest.Method
-  - Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
   - Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
   - Winpeak.Client.Networking.WebServer.WebRequest.Texture
   - System.Object.Equals(System.Object)
@@ -92,35 +89,6 @@ items:
   - Class
   fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T)
   name.vb: BaseWebPackage(Of T)
-- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Callback
-  commentId: F:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Callback
-  id: Callback
-  parent: Winpeak.Client.Networking.WebServer.BaseWebPackage`1
-  langs:
-  - csharp
-  - vb
-  name: Callback
-  nameWithType: BaseWebPackage<T>.Callback
-  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.Callback
-  type: Field
-  source:
-    id: Callback
-    path: ''
-    startLine: 4986
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: public Action<T> Callback
-    return:
-      type: System.Action{{T}}
-    content.vb: Public Callback As Action(Of T)
-  nameWithType.vb: BaseWebPackage(Of T).Callback
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).Callback
 - uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor(System.String,System.String)
   commentId: M:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor(System.String,System.String)
   id: '#ctor(System.String,System.String)'
@@ -135,7 +103,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 4989
+    startLine: 170300
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -168,7 +136,7 @@ items:
   source:
     id: Send
     path: ''
-    startLine: 4991
+    startLine: 170302
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -200,7 +168,7 @@ items:
   source:
     id: OnRequestFinished
     path: ''
-    startLine: 4996
+    startLine: 170307
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -259,12 +227,6 @@ references:
   name: Act
   nameWithType: WebRequest.Act
   fullName: Winpeak.Client.Networking.WebServer.WebRequest.Act
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.m_url
-  commentId: F:Winpeak.Client.Networking.WebServer.WebRequest.m_url
-  parent: Winpeak.Client.Networking.WebServer.WebRequest
-  name: m_url
-  nameWithType: WebRequest.m_url
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.m_url
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
   parent: Winpeak.Client.Networking.WebServer.WebRequest
@@ -339,12 +301,6 @@ references:
   name: Method
   nameWithType: WebRequest.Method
   fullName: Winpeak.Client.Networking.WebServer.WebRequest.Method
-- uid: Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
-  commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
-  parent: Winpeak.Client.Networking.WebServer.WebRequest
-  name: AuthenticationRequired
-  nameWithType: WebRequest.AuthenticationRequired
-  fullName: Winpeak.Client.Networking.WebServer.WebRequest.AuthenticationRequired
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
   commentId: P:Winpeak.Client.Networking.WebServer.WebRequest.HasTextureToSend
   parent: Winpeak.Client.Networking.WebServer.WebRequest
@@ -642,6 +598,27 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor
+  name: BaseWebPackage
+  nameWithType: BaseWebPackage<T>.BaseWebPackage
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.BaseWebPackage
+  nameWithType.vb: BaseWebPackage(Of T).BaseWebPackage
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).BaseWebPackage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send
+  name: Send
+  nameWithType: BaseWebPackage<T>.Send
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.Send
+  nameWithType.vb: BaseWebPackage(Of T).Send
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).Send
 - uid: System.Action{{T}}
   commentId: T:System.Action{`0}
   parent: System
@@ -721,27 +698,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.#ctor
-  name: BaseWebPackage
-  nameWithType: BaseWebPackage<T>.BaseWebPackage
-  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.BaseWebPackage
-  nameWithType.vb: BaseWebPackage(Of T).BaseWebPackage
-  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).BaseWebPackage
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send
-  name: Send
-  nameWithType: BaseWebPackage<T>.Send
-  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<T>.Send
-  nameWithType.vb: BaseWebPackage(Of T).Send
-  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of T).Send
 - uid: Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished(HTTPRequest,HTTPResponse)
   commentId: M:Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished(HTTPRequest,HTTPResponse)
   parent: Winpeak.Client.Networking.WebServer.WebRequest
