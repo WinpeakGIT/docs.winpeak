@@ -32,7 +32,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 2863
+    startLine: 2862
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -118,11 +118,11 @@ items:
   source:
     id: OnAnyPacketReceived
     path: ''
-    startLine: 2868
+    startLine: 2867
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nFire event when any package is received\n"
+  summary: "\nFire event when any package is received. It&apos;s needed to notify server that package with specified id(long) was received\n"
   example: []
   syntax:
     content: event Action<long> OnAnyPacketReceived
@@ -143,11 +143,11 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 2873
+    startLine: 2872
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nBlock in game input(e.g. add local waypoint to move object before or after game)\n"
+  summary: "\nBlock in game input(e.g. add local waypoints to move object before or after game)\n"
   example: []
   syntax:
     content: event Action<bool> OnBlockInGameInput
@@ -168,11 +168,11 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 2879
+    startLine: 2878
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nSync what?\n"
+  summary: "\nSyncing client with server. Send sync package each 250 ms\n"
   example: []
   syntax:
     content: void Sync(long currentTime)
@@ -196,7 +196,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 2884
+    startLine: 2883
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -220,7 +220,7 @@ items:
   source:
     id: HandlePacket
     path: ''
-    startLine: 2890
+    startLine: 2889
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -248,7 +248,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 2896
+    startLine: 2895
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -276,7 +276,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 2901
+    startLine: 2900
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -306,7 +306,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 2909
+    startLine: 2908
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -340,7 +340,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 2915
+    startLine: 2914
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -368,7 +368,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 2921
+    startLine: 2920
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -396,7 +396,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 2927
+    startLine: 2926
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -424,7 +424,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 2932
+    startLine: 2931
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -451,7 +451,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 2937
+    startLine: 2936
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -475,7 +475,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 2943
+    startLine: 2942
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -503,7 +503,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 2948
+    startLine: 2947
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -527,7 +527,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 2953
+    startLine: 2952
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -558,7 +558,7 @@ items:
   source:
     id: InvokeGamePlayersList
     path: ''
-    startLine: 2959
+    startLine: 2958
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API

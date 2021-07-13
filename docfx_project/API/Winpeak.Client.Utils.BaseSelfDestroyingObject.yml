@@ -5,9 +5,7 @@ items:
   id: BaseSelfDestroyingObject
   parent: Winpeak.Client.Utils
   children:
-  - Winpeak.Client.Utils.BaseSelfDestroyingObject.ForceDestroyGo
   - Winpeak.Client.Utils.BaseSelfDestroyingObject.Init(System.Int64)
-  - Winpeak.Client.Utils.BaseSelfDestroyingObject.s_queue
   langs:
   - csharp
   - vb
@@ -39,37 +37,6 @@ items:
   - Public
   - MustInherit
   - Class
-- uid: Winpeak.Client.Utils.BaseSelfDestroyingObject.s_queue
-  commentId: F:Winpeak.Client.Utils.BaseSelfDestroyingObject.s_queue
-  id: s_queue
-  parent: Winpeak.Client.Utils.BaseSelfDestroyingObject
-  langs:
-  - csharp
-  - vb
-  name: s_queue
-  nameWithType: BaseSelfDestroyingObject.s_queue
-  fullName: Winpeak.Client.Utils.BaseSelfDestroyingObject.s_queue
-  type: Field
-  source:
-    id: s_queue
-    path: ''
-    startLine: 2052
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Utils
-  syntax:
-    content: protected static readonly ListQueue<BaseSelfDestroyingObject> s_queue
-    return:
-      type: ListQueue{Winpeak.Client.Utils.BaseSelfDestroyingObject}
-    content.vb: Protected Shared ReadOnly s_queue As ListQueue(Of BaseSelfDestroyingObject)
-  modifiers.csharp:
-  - protected
-  - static
-  - readonly
-  modifiers.vb:
-  - Protected
-  - Shared
-  - ReadOnly
 - uid: Winpeak.Client.Utils.BaseSelfDestroyingObject.Init(System.Int64)
   commentId: M:Winpeak.Client.Utils.BaseSelfDestroyingObject.Init(System.Int64)
   id: Init(System.Int64)
@@ -99,32 +66,6 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: Winpeak.Client.Utils.BaseSelfDestroyingObject.ForceDestroyGo
-  commentId: M:Winpeak.Client.Utils.BaseSelfDestroyingObject.ForceDestroyGo
-  id: ForceDestroyGo
-  parent: Winpeak.Client.Utils.BaseSelfDestroyingObject
-  langs:
-  - csharp
-  - vb
-  name: ForceDestroyGo()
-  nameWithType: BaseSelfDestroyingObject.ForceDestroyGo()
-  fullName: Winpeak.Client.Utils.BaseSelfDestroyingObject.ForceDestroyGo()
-  type: Method
-  source:
-    id: ForceDestroyGo
-    path: ''
-    startLine: 2066
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Utils
-  syntax:
-    content: protected void ForceDestroyGo()
-    content.vb: Protected Sub ForceDestroyGo
-  overload: Winpeak.Client.Utils.BaseSelfDestroyingObject.ForceDestroyGo*
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
 references:
 - uid: Winpeak.Client.Utils
   commentId: N:Winpeak.Client.Utils
@@ -144,86 +85,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: ListQueue{Winpeak.Client.Utils.BaseSelfDestroyingObject}
-  commentId: '!:ListQueue{Winpeak.Client.Utils.BaseSelfDestroyingObject}'
-  definition: ListQueue`1
-  name: ListQueue<BaseSelfDestroyingObject>
-  nameWithType: ListQueue<BaseSelfDestroyingObject>
-  fullName: ListQueue<Winpeak.Client.Utils.BaseSelfDestroyingObject>
-  nameWithType.vb: ListQueue(Of BaseSelfDestroyingObject)
-  fullName.vb: ListQueue(Of Winpeak.Client.Utils.BaseSelfDestroyingObject)
-  name.vb: ListQueue(Of BaseSelfDestroyingObject)
-  spec.csharp:
-  - uid: ListQueue`1
-    name: ListQueue
-    nameWithType: ListQueue
-    fullName: ListQueue
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: Winpeak.Client.Utils.BaseSelfDestroyingObject
-    name: BaseSelfDestroyingObject
-    nameWithType: BaseSelfDestroyingObject
-    fullName: Winpeak.Client.Utils.BaseSelfDestroyingObject
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: ListQueue`1
-    name: ListQueue
-    nameWithType: ListQueue
-    fullName: ListQueue
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: Winpeak.Client.Utils.BaseSelfDestroyingObject
-    name: BaseSelfDestroyingObject
-    nameWithType: BaseSelfDestroyingObject
-    fullName: Winpeak.Client.Utils.BaseSelfDestroyingObject
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: ListQueue`1
-  commentId: '!:ListQueue`1'
-  isExternal: true
-  name: ListQueue<>
-  nameWithType: ListQueue<>
-  fullName: ListQueue<>
-  nameWithType.vb: ListQueue(Of )
-  fullName.vb: ListQueue(Of )
-  name.vb: ListQueue(Of )
-  spec.csharp:
-  - uid: ListQueue`1
-    name: ListQueue
-    nameWithType: ListQueue
-    fullName: ListQueue
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: ListQueue`1
-    name: ListQueue
-    nameWithType: ListQueue
-    fullName: ListQueue
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: Winpeak.Client.Utils.BaseSelfDestroyingObject.Init*
   commentId: Overload:Winpeak.Client.Utils.BaseSelfDestroyingObject.Init
   name: Init
@@ -236,8 +97,3 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
-- uid: Winpeak.Client.Utils.BaseSelfDestroyingObject.ForceDestroyGo*
-  commentId: Overload:Winpeak.Client.Utils.BaseSelfDestroyingObject.ForceDestroyGo
-  name: ForceDestroyGo
-  nameWithType: BaseSelfDestroyingObject.ForceDestroyGo
-  fullName: Winpeak.Client.Utils.BaseSelfDestroyingObject.ForceDestroyGo

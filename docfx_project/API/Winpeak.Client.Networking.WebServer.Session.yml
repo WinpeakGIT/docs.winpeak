@@ -8,8 +8,6 @@ items:
   - Winpeak.Client.Networking.WebServer.Session.Clear
   - Winpeak.Client.Networking.WebServer.Session.HasId
   - Winpeak.Client.Networking.WebServer.Session.Id
-  - Winpeak.Client.Networking.WebServer.Session.IsAnonymous
-  - Winpeak.Client.Networking.WebServer.Session.IsNewUser
   - Winpeak.Client.Networking.WebServer.Session.SetSessionId(System.String)
   langs:
   - csharp
@@ -21,7 +19,7 @@ items:
   source:
     id: Session
     path: ''
-    startLine: 170316
+    startLine: 170302
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -45,39 +43,6 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: Winpeak.Client.Networking.WebServer.Session.IsAnonymous
-  commentId: P:Winpeak.Client.Networking.WebServer.Session.IsAnonymous
-  id: IsAnonymous
-  parent: Winpeak.Client.Networking.WebServer.Session
-  langs:
-  - csharp
-  - vb
-  name: IsAnonymous
-  nameWithType: Session.IsAnonymous
-  fullName: Winpeak.Client.Networking.WebServer.Session.IsAnonymous
-  type: Property
-  source:
-    id: IsAnonymous
-    path: ''
-    startLine: 170318
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: public static bool IsAnonymous { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Shared Property IsAnonymous As Boolean
-  overload: Winpeak.Client.Networking.WebServer.Session.IsAnonymous*
-  modifiers.csharp:
-  - public
-  - static
-  - get
-  - set
-  modifiers.vb:
-  - Public
-  - Shared
 - uid: Winpeak.Client.Networking.WebServer.Session.Id
   commentId: P:Winpeak.Client.Networking.WebServer.Session.Id
   id: Id
@@ -92,7 +57,7 @@ items:
   source:
     id: Id
     path: ''
-    startLine: 170319
+    startLine: 170304
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -111,39 +76,6 @@ items:
   - Public
   - Shared
   - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.Session.IsNewUser
-  commentId: P:Winpeak.Client.Networking.WebServer.Session.IsNewUser
-  id: IsNewUser
-  parent: Winpeak.Client.Networking.WebServer.Session
-  langs:
-  - csharp
-  - vb
-  name: IsNewUser
-  nameWithType: Session.IsNewUser
-  fullName: Winpeak.Client.Networking.WebServer.Session.IsNewUser
-  type: Property
-  source:
-    id: IsNewUser
-    path: ''
-    startLine: 170321
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: public static bool IsNewUser { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Shared Property IsNewUser As Boolean
-  overload: Winpeak.Client.Networking.WebServer.Session.IsNewUser*
-  modifiers.csharp:
-  - public
-  - static
-  - get
-  - set
-  modifiers.vb:
-  - Public
-  - Shared
 - uid: Winpeak.Client.Networking.WebServer.Session.HasId
   commentId: M:Winpeak.Client.Networking.WebServer.Session.HasId
   id: HasId
@@ -158,7 +90,7 @@ items:
   source:
     id: HasId
     path: ''
-    startLine: 170323
+    startLine: 170306
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -188,7 +120,7 @@ items:
   source:
     id: SetSessionId
     path: ''
-    startLine: 170327
+    startLine: 170310
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -219,7 +151,7 @@ items:
   source:
     id: Clear
     path: ''
-    startLine: 170332
+    startLine: 170314
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -531,18 +463,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Networking.WebServer.Session.IsAnonymous*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.Session.IsAnonymous
-  name: IsAnonymous
-  nameWithType: Session.IsAnonymous
-  fullName: Winpeak.Client.Networking.WebServer.Session.IsAnonymous
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
 - uid: Winpeak.Client.Networking.WebServer.Session.Id*
   commentId: Overload:Winpeak.Client.Networking.WebServer.Session.Id
   name: Id
@@ -555,16 +475,18 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: Winpeak.Client.Networking.WebServer.Session.IsNewUser*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.Session.IsNewUser
-  name: IsNewUser
-  nameWithType: Session.IsNewUser
-  fullName: Winpeak.Client.Networking.WebServer.Session.IsNewUser
 - uid: Winpeak.Client.Networking.WebServer.Session.HasId*
   commentId: Overload:Winpeak.Client.Networking.WebServer.Session.HasId
   name: HasId
   nameWithType: Session.HasId
   fullName: Winpeak.Client.Networking.WebServer.Session.HasId
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Winpeak.Client.Networking.WebServer.Session.SetSessionId*
   commentId: Overload:Winpeak.Client.Networking.WebServer.Session.SetSessionId
   name: SetSessionId
