@@ -24,7 +24,7 @@ items:
   source:
     id: ILocalStorage
     path: ''
-    startLine: 1745
+    startLine: 1832
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -51,17 +51,21 @@ items:
   source:
     id: HasKey
     path: ''
-    startLine: 1747
+    startLine: 1839
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nCheck if playerprefs has the specified key\n"
+  example: []
   syntax:
     content: bool HasKey(string key)
     parameters:
     - id: key
       type: System.String
+      description: ''
     return:
       type: System.Boolean
+      description: ''
     content.vb: Function HasKey(key As String) As Boolean
   overload: Winpeak.Client.Modules.ILocalStorage.HasKey*
 - uid: Winpeak.Client.Modules.ILocalStorage.GetInt(System.String)
@@ -78,17 +82,21 @@ items:
   source:
     id: GetInt
     path: ''
-    startLine: 1748
+    startLine: 1846
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet int value from the playerprefs of the specified key\n"
+  example: []
   syntax:
     content: int GetInt(string key)
     parameters:
     - id: key
       type: System.String
+      description: ''
     return:
       type: System.Int32
+      description: ''
     content.vb: Function GetInt(key As String) As Integer
   overload: Winpeak.Client.Modules.ILocalStorage.GetInt*
 - uid: Winpeak.Client.Modules.ILocalStorage.SetInt(System.String,System.Int32)
@@ -105,17 +113,21 @@ items:
   source:
     id: SetInt
     path: ''
-    startLine: 1749
+    startLine: 1853
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nSet int value to the playerprefs by specified key\n"
+  example: []
   syntax:
     content: void SetInt(string key, int value)
     parameters:
     - id: key
       type: System.String
+      description: ''
     - id: value
       type: System.Int32
+      description: ''
     content.vb: Sub SetInt(key As String, value As Integer)
   overload: Winpeak.Client.Modules.ILocalStorage.SetInt*
 - uid: Winpeak.Client.Modules.ILocalStorage.GetString(System.String)
@@ -132,17 +144,21 @@ items:
   source:
     id: GetString
     path: ''
-    startLine: 1750
+    startLine: 1860
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet string value from the playerprefs of the specified key\n"
+  example: []
   syntax:
     content: string GetString(string key)
     parameters:
     - id: key
       type: System.String
+      description: ''
     return:
       type: System.String
+      description: ''
     content.vb: Function GetString(key As String) As String
   overload: Winpeak.Client.Modules.ILocalStorage.GetString*
 - uid: Winpeak.Client.Modules.ILocalStorage.SetString(System.String,System.String)
@@ -159,17 +175,21 @@ items:
   source:
     id: SetString
     path: ''
-    startLine: 1751
+    startLine: 1867
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nSet string value to the playerprefs by specified key\n"
+  example: []
   syntax:
     content: void SetString(string key, string value)
     parameters:
     - id: key
       type: System.String
+      description: ''
     - id: value
       type: System.String
+      description: ''
     content.vb: Sub SetString(key As String, value As String)
   overload: Winpeak.Client.Modules.ILocalStorage.SetString*
 - uid: Winpeak.Client.Modules.ILocalStorage.GetFloat(System.String)
@@ -186,17 +206,21 @@ items:
   source:
     id: GetFloat
     path: ''
-    startLine: 1752
+    startLine: 1874
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet float value from the playerprefs of the specified key\n"
+  example: []
   syntax:
     content: float GetFloat(string key)
     parameters:
     - id: key
       type: System.String
+      description: ''
     return:
       type: System.Single
+      description: ''
     content.vb: Function GetFloat(key As String) As Single
   overload: Winpeak.Client.Modules.ILocalStorage.GetFloat*
 - uid: Winpeak.Client.Modules.ILocalStorage.SetFloat(System.String,System.Single)
@@ -213,17 +237,21 @@ items:
   source:
     id: SetFloat
     path: ''
-    startLine: 1753
+    startLine: 1881
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nSet float value to the playerprefs by specified key\n"
+  example: []
   syntax:
     content: void SetFloat(string key, float value)
     parameters:
     - id: key
       type: System.String
+      description: ''
     - id: value
       type: System.Single
+      description: ''
     content.vb: Sub SetFloat(key As String, value As Single)
   overload: Winpeak.Client.Modules.ILocalStorage.SetFloat*
 - uid: Winpeak.Client.Modules.ILocalStorage.DeleteKey(System.String)
@@ -240,15 +268,18 @@ items:
   source:
     id: DeleteKey
     path: ''
-    startLine: 1754
+    startLine: 1887
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nDelete value from the playerprefs by specified key\n"
+  example: []
   syntax:
     content: void DeleteKey(string key)
     parameters:
     - id: key
       type: System.String
+      description: ''
     content.vb: Sub DeleteKey(key As String)
   overload: Winpeak.Client.Modules.ILocalStorage.DeleteKey*
 - uid: Winpeak.Client.Modules.ILocalStorage.DeleteAll
@@ -265,10 +296,12 @@ items:
   source:
     id: DeleteAll
     path: ''
-    startLine: 1755
+    startLine: 1892
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nDelete all record from the playerprefs\n"
+  example: []
   syntax:
     content: void DeleteAll()
     content.vb: Sub DeleteAll

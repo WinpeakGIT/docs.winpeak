@@ -17,7 +17,7 @@ items:
   source:
     id: IWinPeakSubscriber
     path: ''
-    startLine: 2585
+    startLine: 3164
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -44,17 +44,21 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 2587
+    startLine: 3171
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
+  summary: "\nMove object relative on waypoints\n"
+  example: []
   syntax:
     content: void Move(Waypoint[] waypoints, long moveCount)
     parameters:
     - id: waypoints
       type: Waypoint[]
+      description: ''
     - id: moveCount
       type: System.Int64
+      description: ''
     content.vb: Sub Move(waypoints As Waypoint(), moveCount As Long)
   overload: Winpeak.Client.Scene.IWinPeakSubscriber.Move*
   nameWithType.vb: IWinPeakSubscriber.Move(Waypoint(), Int64)
@@ -74,10 +78,12 @@ items:
   source:
     id: Clear
     path: ''
-    startLine: 2588
+    startLine: 3176
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
+  summary: "\nClear subscribed object from previous game\n"
+  example: []
   syntax:
     content: void Clear()
     content.vb: Sub Clear

@@ -19,7 +19,7 @@ items:
   source:
     id: IWpSceneObjectService
     path: ''
-    startLine: 170989
+    startLine: 171288
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -46,15 +46,18 @@ items:
   source:
     id: Init
     path: ''
-    startLine: 170991
+    startLine: 171294
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
+  summary: "\nInit necessary services that handle udp game process\n"
+  example: []
   syntax:
     content: void Init(ServerConnectionStatusController connectionStatusController)
     parameters:
     - id: connectionStatusController
       type: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+      description: ''
     content.vb: Sub Init(connectionStatusController As ServerConnectionStatusController)
   overload: Winpeak.Client.Networking.SocketServer.IWpSceneObjectService.Init*
 - uid: Winpeak.Client.Networking.SocketServer.IWpSceneObjectService.ServerConnectionStatus
@@ -71,10 +74,12 @@ items:
   source:
     id: ServerConnectionStatus
     path: ''
-    startLine: 170992
+    startLine: 171299
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
+  summary: "\nActive server connection status\n"
+  example: []
   syntax:
     content: ServerConnectionStatusController ServerConnectionStatus { get; }
     parameters: []
@@ -100,17 +105,21 @@ items:
   source:
     id: GetWpRigidbody
     path: ''
-    startLine: 170993
+    startLine: 171306
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
+  summary: "\nGet scene object by name\n"
+  example: []
   syntax:
     content: WinPeakRigidbody GetWpRigidbody(string rName)
     parameters:
     - id: rName
       type: System.String
+      description: ''
     return:
       type: WinPeakRigidbody
+      description: ''
     content.vb: Function GetWpRigidbody(rName As String) As WinPeakRigidbody
   overload: Winpeak.Client.Networking.SocketServer.IWpSceneObjectService.GetWpRigidbody*
 - uid: Winpeak.Client.Networking.SocketServer.IWpSceneObjectService.Clear(Winpeak.Client.Networking.SocketServer.MatchResult)
@@ -127,15 +136,18 @@ items:
   source:
     id: Clear
     path: ''
-    startLine: 170994
+    startLine: 171312
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
+  summary: "\nClear active wp objects\n"
+  example: []
   syntax:
     content: void Clear(MatchResult result = null)
     parameters:
     - id: result
       type: Winpeak.Client.Networking.SocketServer.MatchResult
+      description: ''
     content.vb: Sub Clear(result As MatchResult = Nothing)
   overload: Winpeak.Client.Networking.SocketServer.IWpSceneObjectService.Clear*
 references:

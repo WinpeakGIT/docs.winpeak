@@ -16,7 +16,6 @@ items:
   - Winpeak.Client.Scene.WinPeakRigidbody.Positions
   - Winpeak.Client.Scene.WinPeakRigidbody.Speed
   - Winpeak.Client.Scene.WinPeakRigidbody.UsedNetwork
-  - Winpeak.Client.Scene.WinPeakRigidbody.Waypoints
   langs:
   - csharp
   - vb
@@ -27,7 +26,7 @@ items:
   source:
     id: WinPeakRigidbody
     path: ''
-    startLine: 2209
+    startLine: 2337
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -47,37 +46,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Scene.WinPeakRigidbody.Waypoints
-  commentId: P:Winpeak.Client.Scene.WinPeakRigidbody.Waypoints
-  id: Waypoints
-  parent: Winpeak.Client.Scene.WinPeakRigidbody
-  langs:
-  - csharp
-  - vb
-  name: Waypoints
-  nameWithType: WinPeakRigidbody.Waypoints
-  fullName: Winpeak.Client.Scene.WinPeakRigidbody.Waypoints
-  type: Property
-  source:
-    id: Waypoints
-    path: ''
-    startLine: 2233
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Scene
-  syntax:
-    content: public List<Waypoint> Waypoints { get; set; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.List{Waypoint}
-    content.vb: Public Property Waypoints As List(Of Waypoint)
-  overload: Winpeak.Client.Scene.WinPeakRigidbody.Waypoints*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: Winpeak.Client.Scene.WinPeakRigidbody.Init(ServerConnectionStatusController)
   commentId: M:Winpeak.Client.Scene.WinPeakRigidbody.Init(ServerConnectionStatusController)
   id: Init(ServerConnectionStatusController)
@@ -92,15 +60,18 @@ items:
   source:
     id: Init
     path: ''
-    startLine: 2298
+    startLine: 2425
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
+  summary: "\nInit scene object, get server connection status to handle movements\n"
+  example: []
   syntax:
     content: public void Init(ServerConnectionStatusController statusController)
     parameters:
     - id: statusController
       type: ServerConnectionStatusController
+      description: ''
     content.vb: Public Sub Init(statusController As ServerConnectionStatusController)
   overload: Winpeak.Client.Scene.WinPeakRigidbody.Init*
   modifiers.csharp:
@@ -121,15 +92,18 @@ items:
   source:
     id: InitializeFromConfig
     path: ''
-    startLine: 2304
+    startLine: 2443
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
+  summary: "\nCurrently unused initializing from config\n"
+  example: []
   syntax:
     content: public void InitializeFromConfig(JToken data)
     parameters:
     - id: data
       type: JToken
+      description: ''
     content.vb: Public Sub InitializeFromConfig(data As JToken)
   overload: Winpeak.Client.Scene.WinPeakRigidbody.InitializeFromConfig*
   modifiers.csharp:
@@ -150,7 +124,7 @@ items:
   source:
     id: Positions
     path: ''
-    startLine: 2321
+    startLine: 2460
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -181,7 +155,7 @@ items:
   source:
     id: ColliderParams
     path: ''
-    startLine: 2323
+    startLine: 2462
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -212,7 +186,7 @@ items:
   source:
     id: Speed
     path: ''
-    startLine: 2325
+    startLine: 2464
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -243,7 +217,7 @@ items:
   source:
     id: Fence
     path: ''
-    startLine: 2327
+    startLine: 2466
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -274,7 +248,7 @@ items:
   source:
     id: LastNetworkPoints
     path: ''
-    startLine: 2342
+    startLine: 2481
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -305,7 +279,7 @@ items:
   source:
     id: AddWaypoints
     path: ''
-    startLine: 2359
+    startLine: 2498
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -340,7 +314,7 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 2372
+    startLine: 2511
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -380,7 +354,7 @@ items:
   source:
     id: UsedNetwork
     path: ''
-    startLine: 2462
+    startLine: 2610
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
@@ -411,10 +385,12 @@ items:
   source:
     id: Clear
     path: ''
-    startLine: 2472
+    startLine: 2626
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Scene
+  summary: "\nDestroy scene object when game is over\n"
+  example: []
   syntax:
     content: public void Clear()
     content.vb: Public Sub Clear
@@ -450,11 +426,85 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Scene.WinPeakRigidbody.Waypoints*
-  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.Waypoints
-  name: Waypoints
-  nameWithType: WinPeakRigidbody.Waypoints
-  fullName: Winpeak.Client.Scene.WinPeakRigidbody.Waypoints
+- uid: Winpeak.Client.Scene.WinPeakRigidbody.Init*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.Init
+  name: Init
+  nameWithType: WinPeakRigidbody.Init
+  fullName: Winpeak.Client.Scene.WinPeakRigidbody.Init
+- uid: ServerConnectionStatusController
+  isExternal: true
+  name: ServerConnectionStatusController
+  nameWithType: ServerConnectionStatusController
+  fullName: ServerConnectionStatusController
+- uid: Winpeak.Client.Scene.WinPeakRigidbody.InitializeFromConfig*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.InitializeFromConfig
+  name: InitializeFromConfig
+  nameWithType: WinPeakRigidbody.InitializeFromConfig
+  fullName: Winpeak.Client.Scene.WinPeakRigidbody.InitializeFromConfig
+- uid: JToken
+  commentId: '!:JToken'
+  isExternal: true
+  name: JToken
+  nameWithType: JToken
+  fullName: JToken
+- uid: Winpeak.Client.Scene.WinPeakRigidbody.Positions*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.Positions
+  name: Positions
+  nameWithType: WinPeakRigidbody.Positions
+  fullName: Winpeak.Client.Scene.WinPeakRigidbody.Positions
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Winpeak.Client.Scene.WinPeakRigidbody.ColliderParams*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.ColliderParams
+  name: ColliderParams
+  nameWithType: WinPeakRigidbody.ColliderParams
+  fullName: Winpeak.Client.Scene.WinPeakRigidbody.ColliderParams
+- uid: Winpeak.Client.Scene.WinPeakRigidbody.Speed*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.Speed
+  name: Speed
+  nameWithType: WinPeakRigidbody.Speed
+  fullName: Winpeak.Client.Scene.WinPeakRigidbody.Speed
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Winpeak.Client.Scene.WinPeakRigidbody.Fence*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.Fence
+  name: Fence
+  nameWithType: WinPeakRigidbody.Fence
+  fullName: Winpeak.Client.Scene.WinPeakRigidbody.Fence
+- uid: Winpeak.Client.Scene.WinPeakRigidbody.LastNetworkPoints*
+  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.LastNetworkPoints
+  name: LastNetworkPoints
+  nameWithType: WinPeakRigidbody.LastNetworkPoints
+  fullName: Winpeak.Client.Scene.WinPeakRigidbody.LastNetworkPoints
 - uid: System.Collections.Generic.List{Waypoint}
   commentId: T:System.Collections.Generic.List{Waypoint}
   parent: System.Collections.Generic
@@ -544,85 +594,6 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: Winpeak.Client.Scene.WinPeakRigidbody.Init*
-  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.Init
-  name: Init
-  nameWithType: WinPeakRigidbody.Init
-  fullName: Winpeak.Client.Scene.WinPeakRigidbody.Init
-- uid: ServerConnectionStatusController
-  isExternal: true
-  name: ServerConnectionStatusController
-  nameWithType: ServerConnectionStatusController
-  fullName: ServerConnectionStatusController
-- uid: Winpeak.Client.Scene.WinPeakRigidbody.InitializeFromConfig*
-  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.InitializeFromConfig
-  name: InitializeFromConfig
-  nameWithType: WinPeakRigidbody.InitializeFromConfig
-  fullName: Winpeak.Client.Scene.WinPeakRigidbody.InitializeFromConfig
-- uid: JToken
-  commentId: '!:JToken'
-  isExternal: true
-  name: JToken
-  nameWithType: JToken
-  fullName: JToken
-- uid: Winpeak.Client.Scene.WinPeakRigidbody.Positions*
-  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.Positions
-  name: Positions
-  nameWithType: WinPeakRigidbody.Positions
-  fullName: Winpeak.Client.Scene.WinPeakRigidbody.Positions
-- uid: System.Single[]
-  isExternal: true
-  name: Single[]
-  nameWithType: Single[]
-  fullName: System.Single[]
-  nameWithType.vb: Single()
-  fullName.vb: System.Single()
-  name.vb: Single()
-  spec.csharp:
-  - uid: System.Single
-    name: Single
-    nameWithType: Single
-    fullName: System.Single
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: System.Single
-    name: Single
-    nameWithType: Single
-    fullName: System.Single
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
-- uid: Winpeak.Client.Scene.WinPeakRigidbody.ColliderParams*
-  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.ColliderParams
-  name: ColliderParams
-  nameWithType: WinPeakRigidbody.ColliderParams
-  fullName: Winpeak.Client.Scene.WinPeakRigidbody.ColliderParams
-- uid: Winpeak.Client.Scene.WinPeakRigidbody.Speed*
-  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.Speed
-  name: Speed
-  nameWithType: WinPeakRigidbody.Speed
-  fullName: Winpeak.Client.Scene.WinPeakRigidbody.Speed
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  name: Single
-  nameWithType: Single
-  fullName: System.Single
-- uid: Winpeak.Client.Scene.WinPeakRigidbody.Fence*
-  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.Fence
-  name: Fence
-  nameWithType: WinPeakRigidbody.Fence
-  fullName: Winpeak.Client.Scene.WinPeakRigidbody.Fence
-- uid: Winpeak.Client.Scene.WinPeakRigidbody.LastNetworkPoints*
-  commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.LastNetworkPoints
-  name: LastNetworkPoints
-  nameWithType: WinPeakRigidbody.LastNetworkPoints
-  fullName: Winpeak.Client.Scene.WinPeakRigidbody.LastNetworkPoints
 - uid: Winpeak.Client.Scene.WinPeakRigidbody.AddWaypoints*
   commentId: Overload:Winpeak.Client.Scene.WinPeakRigidbody.AddWaypoints
   name: AddWaypoints

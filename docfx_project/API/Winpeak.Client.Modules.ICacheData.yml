@@ -33,7 +33,7 @@ items:
   source:
     id: ICacheData
     path: ''
-    startLine: 1547
+    startLine: 1551
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -60,19 +60,24 @@ items:
   source:
     id: SetActiveSessionData
     path: ''
-    startLine: 1549
+    startLine: 1559
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nSet current active session data\n"
+  example: []
   syntax:
     content: void SetActiveSessionData(string login, string password, string sessionId)
     parameters:
     - id: login
       type: System.String
+      description: ''
     - id: password
       type: System.String
+      description: ''
     - id: sessionId
       type: System.String
+      description: ''
     content.vb: Sub SetActiveSessionData(login As String, password As String, sessionId As String)
   overload: Winpeak.Client.Modules.ICacheData.SetActiveSessionData*
 - uid: Winpeak.Client.Modules.ICacheData.SetVolumeValue(System.Single)
@@ -89,15 +94,18 @@ items:
   source:
     id: SetVolumeValue
     path: ''
-    startLine: 1551
+    startLine: 1565
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nChange volume value\n"
+  example: []
   syntax:
     content: void SetVolumeValue(float value)
     parameters:
     - id: value
       type: System.Single
+      description: ''
     content.vb: Sub SetVolumeValue(value As Single)
   overload: Winpeak.Client.Modules.ICacheData.SetVolumeValue*
 - uid: Winpeak.Client.Modules.ICacheData.GetVolumeValue
@@ -114,14 +122,17 @@ items:
   source:
     id: GetVolumeValue
     path: ''
-    startLine: 1552
+    startLine: 1571
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet current volume value\n"
+  example: []
   syntax:
     content: float GetVolumeValue()
     return:
       type: System.Single
+      description: ''
     content.vb: Function GetVolumeValue As Single
   overload: Winpeak.Client.Modules.ICacheData.GetVolumeValue*
 - uid: Winpeak.Client.Modules.ICacheData.SetSoundsFlag(System.Boolean)
@@ -138,15 +149,18 @@ items:
   source:
     id: SetSoundsFlag
     path: ''
-    startLine: 1554
+    startLine: 1577
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nChange sound state\n"
+  example: []
   syntax:
     content: void SetSoundsFlag(bool value)
     parameters:
     - id: value
       type: System.Boolean
+      description: ''
     content.vb: Sub SetSoundsFlag(value As Boolean)
   overload: Winpeak.Client.Modules.ICacheData.SetSoundsFlag*
 - uid: Winpeak.Client.Modules.ICacheData.GetSoundsFlag
@@ -163,14 +177,17 @@ items:
   source:
     id: GetSoundsFlag
     path: ''
-    startLine: 1555
+    startLine: 1583
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet sound state\n"
+  example: []
   syntax:
     content: bool GetSoundsFlag()
     return:
       type: System.Boolean
+      description: ''
     content.vb: Function GetSoundsFlag As Boolean
   overload: Winpeak.Client.Modules.ICacheData.GetSoundsFlag*
 - uid: Winpeak.Client.Modules.ICacheData.SetNotificationsPauseFlag(System.Boolean)
@@ -187,15 +204,18 @@ items:
   source:
     id: SetNotificationsPauseFlag
     path: ''
-    startLine: 1557
+    startLine: 1589
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nChange notifications pause state\n"
+  example: []
   syntax:
     content: void SetNotificationsPauseFlag(bool value)
     parameters:
     - id: value
       type: System.Boolean
+      description: ''
     content.vb: Sub SetNotificationsPauseFlag(value As Boolean)
   overload: Winpeak.Client.Modules.ICacheData.SetNotificationsPauseFlag*
 - uid: Winpeak.Client.Modules.ICacheData.GetNotificationsPauseFlag
@@ -212,14 +232,17 @@ items:
   source:
     id: GetNotificationsPauseFlag
     path: ''
-    startLine: 1558
+    startLine: 1595
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet notifications pause state\n"
+  example: []
   syntax:
     content: bool GetNotificationsPauseFlag()
     return:
       type: System.Boolean
+      description: ''
     content.vb: Function GetNotificationsPauseFlag As Boolean
   overload: Winpeak.Client.Modules.ICacheData.GetNotificationsPauseFlag*
 - uid: Winpeak.Client.Modules.ICacheData.SetNotificationsDisableFlag(System.Boolean)
@@ -236,15 +259,18 @@ items:
   source:
     id: SetNotificationsDisableFlag
     path: ''
-    startLine: 1560
+    startLine: 1601
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nDisable notification state\n"
+  example: []
   syntax:
     content: void SetNotificationsDisableFlag(bool value)
     parameters:
     - id: value
       type: System.Boolean
+      description: ''
     content.vb: Sub SetNotificationsDisableFlag(value As Boolean)
   overload: Winpeak.Client.Modules.ICacheData.SetNotificationsDisableFlag*
 - uid: Winpeak.Client.Modules.ICacheData.GetNotificationsDisableFlag
@@ -261,14 +287,17 @@ items:
   source:
     id: GetNotificationsDisableFlag
     path: ''
-    startLine: 1561
+    startLine: 1607
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet disable notification state\n"
+  example: []
   syntax:
     content: bool GetNotificationsDisableFlag()
     return:
       type: System.Boolean
+      description: ''
     content.vb: Function GetNotificationsDisableFlag As Boolean
   overload: Winpeak.Client.Modules.ICacheData.GetNotificationsDisableFlag*
 - uid: Winpeak.Client.Modules.ICacheData.SetControlsMode(System.Int32)
@@ -285,15 +314,18 @@ items:
   source:
     id: SetControlsMode
     path: ''
-    startLine: 1563
+    startLine: 1613
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nSet current controls mode\n"
+  example: []
   syntax:
     content: void SetControlsMode(int mode)
     parameters:
     - id: mode
       type: System.Int32
+      description: ''
     content.vb: Sub SetControlsMode(mode As Integer)
   overload: Winpeak.Client.Modules.ICacheData.SetControlsMode*
 - uid: Winpeak.Client.Modules.ICacheData.GetControlsMode
@@ -310,14 +342,17 @@ items:
   source:
     id: GetControlsMode
     path: ''
-    startLine: 1564
+    startLine: 1619
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet current controls mode\n"
+  example: []
   syntax:
     content: int GetControlsMode()
     return:
       type: System.Int32
+      description: ''
     content.vb: Function GetControlsMode As Integer
   overload: Winpeak.Client.Modules.ICacheData.GetControlsMode*
 - uid: Winpeak.Client.Modules.ICacheData.ClearActiveSessionData
@@ -334,10 +369,12 @@ items:
   source:
     id: ClearActiveSessionData
     path: ''
-    startLine: 1566
+    startLine: 1624
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nClear current active session data\n"
+  example: []
   syntax:
     content: void ClearActiveSessionData()
     content.vb: Sub ClearActiveSessionData
@@ -356,14 +393,17 @@ items:
   source:
     id: GetLatestActiveSessionData
     path: ''
-    startLine: 1567
+    startLine: 1630
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet latest active session data\n"
+  example: []
   syntax:
     content: string[] GetLatestActiveSessionData()
     return:
       type: System.String[]
+      description: ''
     content.vb: Function GetLatestActiveSessionData As String()
   overload: Winpeak.Client.Modules.ICacheData.GetLatestActiveSessionData*
 - uid: Winpeak.Client.Modules.ICacheData.HasActiveSessionData
@@ -380,14 +420,17 @@ items:
   source:
     id: HasActiveSessionData
     path: ''
-    startLine: 1568
+    startLine: 1636
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nCheck if user has active session data\n"
+  example: []
   syntax:
     content: bool HasActiveSessionData()
     return:
       type: System.Boolean
+      description: ''
     content.vb: Function HasActiveSessionData As Boolean
   overload: Winpeak.Client.Modules.ICacheData.HasActiveSessionData*
 - uid: Winpeak.Client.Modules.ICacheData.Clear
@@ -404,10 +447,12 @@ items:
   source:
     id: Clear
     path: ''
-    startLine: 1569
+    startLine: 1641
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nDebug feature to clear all saved data\n"
+  example: []
   syntax:
     content: void Clear()
     content.vb: Sub Clear
@@ -426,14 +471,17 @@ items:
   source:
     id: GetActiveSessionLogin
     path: ''
-    startLine: 1570
+    startLine: 1647
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet active session login\n"
+  example: []
   syntax:
     content: string GetActiveSessionLogin()
     return:
       type: System.String
+      description: ''
     content.vb: Function GetActiveSessionLogin As String
   overload: Winpeak.Client.Modules.ICacheData.GetActiveSessionLogin*
 - uid: Winpeak.Client.Modules.ICacheData.GetActiveSessionPassword
@@ -450,14 +498,17 @@ items:
   source:
     id: GetActiveSessionPassword
     path: ''
-    startLine: 1571
+    startLine: 1653
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet active session password\n"
+  example: []
   syntax:
     content: string GetActiveSessionPassword()
     return:
       type: System.String
+      description: ''
     content.vb: Function GetActiveSessionPassword As String
   overload: Winpeak.Client.Modules.ICacheData.GetActiveSessionPassword*
 - uid: Winpeak.Client.Modules.ICacheData.GetActiveSession
@@ -474,14 +525,17 @@ items:
   source:
     id: GetActiveSession
     path: ''
-    startLine: 1572
+    startLine: 1659
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
+  summary: "\nGet active session\n"
+  example: []
   syntax:
     content: string GetActiveSession()
     return:
       type: System.String
+      description: ''
     content.vb: Function GetActiveSession As String
   overload: Winpeak.Client.Modules.ICacheData.GetActiveSession*
 references:
