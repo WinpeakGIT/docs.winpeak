@@ -7,6 +7,8 @@ items:
   children:
   - Winpeak.Client.Models.Waypoint.#ctor
   - Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
+  - Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single,System.Boolean)
+  - Winpeak.Client.Models.Waypoint.Local
   - Winpeak.Client.Models.Waypoint.R
   - Winpeak.Client.Models.Waypoint.Time
   - Winpeak.Client.Models.Waypoint.ToString
@@ -170,6 +172,35 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Winpeak.Client.Models.Waypoint.Local
+  commentId: F:Winpeak.Client.Models.Waypoint.Local
+  id: Local
+  parent: Winpeak.Client.Models.Waypoint
+  langs:
+  - csharp
+  - vb
+  name: Local
+  nameWithType: Waypoint.Local
+  fullName: Winpeak.Client.Models.Waypoint.Local
+  type: Field
+  source:
+    id: Local
+    path: ''
+    startLine: 1931
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Models
+  syntax:
+    content: public readonly bool Local
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Local As Boolean
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
   commentId: M:Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)
   id: '#ctor(System.Int64,System.Single,System.Single,System.Single)'
@@ -184,7 +215,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 1931
+    startLine: 1933
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -205,6 +236,43 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single,System.Boolean)
+  commentId: M:Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single,System.Boolean)
+  id: '#ctor(System.Int64,System.Single,System.Single,System.Single,System.Boolean)'
+  parent: Winpeak.Client.Models.Waypoint
+  langs:
+  - csharp
+  - vb
+  name: Waypoint(Int64, Single, Single, Single, Boolean)
+  nameWithType: Waypoint.Waypoint(Int64, Single, Single, Single, Boolean)
+  fullName: Winpeak.Client.Models.Waypoint.Waypoint(System.Int64, System.Single, System.Single, System.Single, System.Boolean)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1940
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Models
+  syntax:
+    content: public Waypoint(long time, float x, float y, float r, bool local)
+    parameters:
+    - id: time
+      type: System.Int64
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: r
+      type: System.Single
+    - id: local
+      type: System.Boolean
+    content.vb: Public Sub New(time As Long, x As Single, y As Single, r As Single, local As Boolean)
+  overload: Winpeak.Client.Models.Waypoint.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Winpeak.Client.Models.Waypoint.#ctor
   commentId: M:Winpeak.Client.Models.Waypoint.#ctor
   id: '#ctor'
@@ -219,7 +287,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 1938
+    startLine: 1948
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -245,7 +313,7 @@ items:
   source:
     id: ToString
     path: ''
-    startLine: 1940
+    startLine: 1950
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -543,6 +611,13 @@ references:
   name: Single
   nameWithType: Single
   fullName: System.Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Winpeak.Client.Models.Waypoint.#ctor*
   commentId: Overload:Winpeak.Client.Models.Waypoint.#ctor
   name: Waypoint
