@@ -8,8 +8,6 @@ items:
   - Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.Dispose
   - Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.PACKET_LIVE_TIME
   - Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.PACKET_MIN_SEND_TIME
-  - Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync(JObject,System.Action)
-  - Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync(System.String,System.Action)
   - Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.StatusController
   langs:
   - csharp
@@ -21,7 +19,7 @@ items:
   source:
     id: ServerConnectionImportantWrapper
     path: ''
-    startLine: 4299
+    startLine: 4751
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -62,7 +60,7 @@ items:
   source:
     id: PACKET_LIVE_TIME
     path: ''
-    startLine: 4301
+    startLine: 4753
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -91,7 +89,7 @@ items:
   source:
     id: PACKET_MIN_SEND_TIME
     path: ''
-    startLine: 4302
+    startLine: 4754
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -106,68 +104,6 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync(JObject,System.Action)
-  commentId: M:Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync(JObject,System.Action)
-  id: SendMessageAsync(JObject,System.Action)
-  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
-  langs:
-  - csharp
-  - vb
-  name: SendMessageAsync(JObject, Action)
-  nameWithType: ServerConnectionImportantWrapper.SendMessageAsync(JObject, Action)
-  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync(JObject, System.Action)
-  type: Method
-  source:
-    id: SendMessageAsync
-    path: ''
-    startLine: 4368
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.SocketServer
-  syntax:
-    content: public void SendMessageAsync(JObject json, Action onMessageSend = null)
-    parameters:
-    - id: json
-      type: JObject
-    - id: onMessageSend
-      type: System.Action
-    content.vb: Public Sub SendMessageAsync(json As JObject, onMessageSend As Action = Nothing)
-  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync(System.String,System.Action)
-  commentId: M:Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync(System.String,System.Action)
-  id: SendMessageAsync(System.String,System.Action)
-  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
-  langs:
-  - csharp
-  - vb
-  name: SendMessageAsync(String, Action)
-  nameWithType: ServerConnectionImportantWrapper.SendMessageAsync(String, Action)
-  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync(System.String, System.Action)
-  type: Method
-  source:
-    id: SendMessageAsync
-    path: ''
-    startLine: 4378
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.SocketServer
-  syntax:
-    content: public void SendMessageAsync(string msg, Action onMessageSend = null)
-    parameters:
-    - id: msg
-      type: System.String
-    - id: onMessageSend
-      type: System.Action
-    content.vb: Public Sub SendMessageAsync(msg As String, onMessageSend As Action = Nothing)
-  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.Dispose
   commentId: M:Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.Dispose
   id: Dispose
@@ -182,7 +118,7 @@ items:
   source:
     id: Dispose
     path: ''
-    startLine: 4383
+    startLine: 4826
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -210,7 +146,7 @@ items:
   source:
     id: StatusController
     path: ''
-    startLine: 4387
+    startLine: 4830
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -539,31 +475,6 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync*
-  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync
-  name: SendMessageAsync
-  nameWithType: ServerConnectionImportantWrapper.SendMessageAsync
-  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.SendMessageAsync
-- uid: JObject
-  commentId: '!:JObject'
-  isExternal: true
-  name: JObject
-  nameWithType: JObject
-  fullName: JObject
-- uid: System.Action
-  commentId: T:System.Action
-  parent: System
-  isExternal: true
-  name: Action
-  nameWithType: Action
-  fullName: System.Action
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
 - uid: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.Dispose*
   commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper.Dispose
   name: Dispose

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IInternalWinPeakClient
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -105,6 +105,9 @@
       <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_OnPlayWallHitSound">IWinPeakClient.OnPlayWallHitSound</a>
     </div>
     <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_OnCollisionEvent">IWinPeakClient.OnCollisionEvent</a>
+    </div>
+    <div>
       <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_OnGameStateChanged">IWinPeakClient.OnGameStateChanged</a>
     </div>
     <div>
@@ -117,16 +120,22 @@
       <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_SubscribeRigidbody_WinPeakRigidbody_">IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)</a>
     </div>
     <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_SubscribeResponseHandler__1_System_String_">IWinPeakClient.SubscribeResponseHandler&lt;T&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Init_System_String_">IWinPeakClient.Init(String)</a>
     </div>
     <div>
       <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Connect_System_String_System_String_System_Action_">IWinPeakClient.Connect(String, String, Action)</a>
     </div>
     <div>
-      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Auth_System_Int64_System_String_System_Action_">IWinPeakClient.Auth(Int64, String, Action)</a>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Auth_System_Int64_System_String_">IWinPeakClient.Auth(Int64, String)</a>
     </div>
     <div>
       <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Die_System_Action_">IWinPeakClient.Die(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_MassPacket_System_Int32_System_Int32_">IWinPeakClient.MassPacket(Int32, Int32)</a>
     </div>
     <div>
       <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_Move_System_Int64_System_String_System_Single_System_Single_System_Single_System_Single_">IWinPeakClient.Move(Int64, String, Single, Single, Single, Single)</a>
@@ -151,6 +160,9 @@
     </div>
     <div>
       <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_DrawPoint">IWinPeakClient.DrawPoint()</a>
+    </div>
+    <div>
+      <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_ResetMoveCount">IWinPeakClient.ResetMoveCount()</a>
     </div>
     <div>
       <a class="xref" href="Winpeak.Client.API.IWinPeakClient.html#Winpeak_Client_API_IWinPeakClient_OnDrawPoint">IWinPeakClient.OnDrawPoint</a>
@@ -407,34 +419,6 @@
   </table>
   
   
-  <a id="Winpeak_Client_API_IInternalWinPeakClient_HandlePacket_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.HandlePacket*"></a>
-  <h4 id="Winpeak_Client_API_IInternalWinPeakClient_HandlePacket_System_Int64_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.HandlePacket(System.Int64)">HandlePacket(Int64)</h4>
-  <div class="markdown level1 summary"><p>Fire when any packet has been received</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void HandlePacket(long packetId)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">packetId</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="Winpeak_Client_API_IInternalWinPeakClient_InitStartGameCountdown_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.InitStartGameCountdown*"></a>
   <h4 id="Winpeak_Client_API_IInternalWinPeakClient_InitStartGameCountdown_System_Int32_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.InitStartGameCountdown(System.Int32)">InitStartGameCountdown(Int32)</h4>
   <div class="markdown level1 summary"><p>Notify user about start game countdown</p>
@@ -528,6 +512,39 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void OccurConnectionProblem()</code></pre>
   </div>
+  
+  
+  <a id="Winpeak_Client_API_IInternalWinPeakClient_OnCollision_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.OnCollision*"></a>
+  <h4 id="Winpeak_Client_API_IInternalWinPeakClient_OnCollision_System_String_System_String_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.OnCollision(System.String,System.String)">OnCollision(String, String)</h4>
+  <div class="markdown level1 summary"><p>Fires collision event between objectFrom and objectTo</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnCollision(string objectFrom, string objectTo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">objectFrom</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">objectTo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Winpeak_Client_API_IInternalWinPeakClient_PlayWallHitSound_" data-uid="Winpeak.Client.API.IInternalWinPeakClient.PlayWallHitSound*"></a>
@@ -630,31 +647,6 @@
   </table>
   <h3 id="events">Events
   </h3>
-  
-  
-  <h4 id="Winpeak_Client_API_IInternalWinPeakClient_OnAnyPacketReceived" data-uid="Winpeak.Client.API.IInternalWinPeakClient.OnAnyPacketReceived">OnAnyPacketReceived</h4>
-  <div class="markdown level1 summary"><p>Fire event when any package is received. It&apos;s needed to notify server that package with specified id(long) was received</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event Action&lt;long&gt; OnAnyPacketReceived</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <h4 id="Winpeak_Client_API_IInternalWinPeakClient_OnBlockInGameInput" data-uid="Winpeak.Client.API.IInternalWinPeakClient.OnBlockInGameInput">OnBlockInGameInput</h4>

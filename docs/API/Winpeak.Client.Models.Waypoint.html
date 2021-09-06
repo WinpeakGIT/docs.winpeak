@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Waypoint
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -123,54 +123,12 @@ public class Waypoint</code></pre>
   
   
   <a id="Winpeak_Client_Models_Waypoint__ctor_" data-uid="Winpeak.Client.Models.Waypoint.#ctor*"></a>
-  <h4 id="Winpeak_Client_Models_Waypoint__ctor_System_Int64_System_Single_System_Single_System_Single_" data-uid="Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single)">Waypoint(Int64, Single, Single, Single)</h4>
+  <h4 id="Winpeak_Client_Models_Waypoint__ctor_System_Int64_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_" data-uid="Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single,System.Boolean,System.Boolean)">Waypoint(Int64, Single, Single, Single, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Waypoint(long time, float x, float y, float r)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">time</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">x</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">y</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">r</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Winpeak_Client_Models_Waypoint__ctor_" data-uid="Winpeak.Client.Models.Waypoint.#ctor*"></a>
-  <h4 id="Winpeak_Client_Models_Waypoint__ctor_System_Int64_System_Single_System_Single_System_Single_System_Boolean_" data-uid="Winpeak.Client.Models.Waypoint.#ctor(System.Int64,System.Single,System.Single,System.Single,System.Boolean)">Waypoint(Int64, Single, Single, Single, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Waypoint(long time, float x, float y, float r, bool local)</code></pre>
+    <pre><code class="lang-csharp hljs">public Waypoint(long time, float x, float y, float r, bool local = false, bool teleport = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,10 +165,39 @@ public class Waypoint</code></pre>
         <td><span class="parametername">local</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">teleport</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
   </h3>
+  
+  
+  <h4 id="Winpeak_Client_Models_Waypoint_Generation" data-uid="Winpeak.Client.Models.Waypoint.Generation">Generation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Generation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <h4 id="Winpeak_Client_Models_Waypoint_Local" data-uid="Winpeak.Client.Models.Waypoint.Local">Local</h4>
@@ -255,6 +242,30 @@ public class Waypoint</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Winpeak_Client_Models_Waypoint_Teleport" data-uid="Winpeak.Client.Models.Waypoint.Teleport">Teleport</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Teleport</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

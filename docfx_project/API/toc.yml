@@ -1738,8 +1738,6 @@
   items:
   - uid: Winpeak.Client.Networking.SocketServer.GamePlayer
     name: GamePlayer
-  - uid: Winpeak.Client.Networking.SocketServer.IWpSceneObjectService
-    name: IWpSceneObjectService
   - uid: Winpeak.Client.Networking.SocketServer.MatchResult
     name: MatchResult
   - uid: Winpeak.Client.Networking.SocketServer.PlayersStats
@@ -1750,12 +1748,17 @@
     name: ServerConnectionImportantWrapper
   - uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
     name: ServerConnectionStatusController
-  - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
-    name: UdpAsyncReceiveState
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+    name: SocketEventHandler<T>
+    name.vb: SocketEventHandler(Of T)
   - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncSendState
     name: UdpAsyncSendState
   - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
     name: UdpAsyncStateController
+  - uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+    name: WpSocketEventResponse
+  - uid: Winpeak.Client.Networking.SocketServer.WpSocketResponse
+    name: WpSocketResponse
 - uid: Winpeak.Client.Networking.WebServer
   name: Winpeak.Client.Networking.WebServer
   items:
@@ -1981,8 +1984,6 @@
     name: DrawLineData
   - uid: Winpeak.Client.Scene.DrawPointData
     name: DrawPointData
-  - uid: Winpeak.Client.Scene.IWinPeakSubscriber
-    name: IWinPeakSubscriber
   - uid: Winpeak.Client.Scene.ObjPhysType
     name: ObjPhysType
   - uid: Winpeak.Client.Scene.WinPeakRigidbody
@@ -2002,6 +2003,8 @@
     name: DateTimeHelper
   - uid: Winpeak.Client.Utils.DebugPointRenderer
     name: DebugPointRenderer
+  - uid: Winpeak.Client.Utils.FileWriterService
+    name: FileWriterService
   - uid: Winpeak.Client.Utils.GlobalConsts
     name: GlobalConsts
   - uid: Winpeak.Client.Utils.SelfDestroyingGameObject

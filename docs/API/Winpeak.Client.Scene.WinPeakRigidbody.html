@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WinPeakRigidbody
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -80,16 +80,38 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">WinPeakRigidbody</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Winpeak.Client.Scene.IWinPeakSubscriber.html">IWinPeakSubscriber</a></div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Winpeak.Client.Scene.html">Winpeak.Client.Scene</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="Winpeak_Client_Scene_WinPeakRigidbody_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WinPeakRigidbody : MonoBehaviour, IWinPeakSubscriber</code></pre>
+    <pre><code class="lang-csharp hljs">public class WinPeakRigidbody : MonoBehaviour</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Winpeak_Client_Scene_WinPeakRigidbody_StatusControllerInited" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.StatusControllerInited">StatusControllerInited</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StatusControllerInited</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -138,31 +160,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Winpeak_Client_Scene_WinPeakRigidbody_LastNetworkPoints_" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.LastNetworkPoints*"></a>
-  <h4 id="Winpeak_Client_Scene_WinPeakRigidbody_LastNetworkPoints" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.LastNetworkPoints">LastNetworkPoints</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;Waypoint&gt; LastNetworkPoints { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Waypoint</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -242,18 +239,43 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Winpeak_Client_Scene_WinPeakRigidbody_Waypoints_" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.Waypoints*"></a>
+  <h4 id="Winpeak_Client_Scene_WinPeakRigidbody_Waypoints" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.Waypoints">Waypoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Waypoint&gt; Waypoints { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Waypoint</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="Winpeak_Client_Scene_WinPeakRigidbody_AddWaypoints_" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.AddWaypoints*"></a>
-  <h4 id="Winpeak_Client_Scene_WinPeakRigidbody_AddWaypoints_System_Collections_Generic_List_Waypoint__" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.AddWaypoints(System.Collections.Generic.List{Waypoint})">AddWaypoints(List&lt;Waypoint&gt;)</h4>
+  <a id="Winpeak_Client_Scene_WinPeakRigidbody_AddLocalWaypoints_" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.AddLocalWaypoints*"></a>
+  <h4 id="Winpeak_Client_Scene_WinPeakRigidbody_AddLocalWaypoints_System_Collections_Generic_List_Waypoint__" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.AddLocalWaypoints(System.Collections.Generic.List{Waypoint})">AddLocalWaypoints(List&lt;Waypoint&gt;)</h4>
   <div class="markdown level1 summary"><p>Add local client waypoints(from scene object controller) or Restore behavior from file</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddWaypoints(List&lt;Waypoint&gt; newWaypoints)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddLocalWaypoints(List&lt;Waypoint&gt; newWaypoints)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -276,13 +298,70 @@
   
   <a id="Winpeak_Client_Scene_WinPeakRigidbody_Clear_" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.Clear*"></a>
   <h4 id="Winpeak_Client_Scene_WinPeakRigidbody_Clear" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.Clear">Clear()</h4>
-  <div class="markdown level1 summary"><p>Destroy scene object when game is over</p>
+  <div class="markdown level1 summary"><p>Clear subscribed object from previous game</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
   </div>
+  
+  
+  <a id="Winpeak_Client_Scene_WinPeakRigidbody_Damage_" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.Damage*"></a>
+  <h4 id="Winpeak_Client_Scene_WinPeakRigidbody_Damage_System_String_System_String_System_Int32_System_Int32_System_Boolean_System_Int64_System_Int32_" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.Damage(System.String,System.String,System.Int32,System.Int32,System.Boolean,System.Int64,System.Int32)">Damage(String, String, Int32, Int32, Boolean, Int64, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Damage(string objectId, string from, int damage, int health, bool dead, long time, int r)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">objectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">damage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">health</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dead</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">r</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Winpeak_Client_Scene_WinPeakRigidbody_Init_" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.Init*"></a>
@@ -342,13 +421,13 @@
   
   
   <a id="Winpeak_Client_Scene_WinPeakRigidbody_Move_" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.Move*"></a>
-  <h4 id="Winpeak_Client_Scene_WinPeakRigidbody_Move_Waypoint___System_Int64_" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.Move(Waypoint[],System.Int64)">Move(Waypoint[], Int64)</h4>
-  <div class="markdown level1 summary"><p>Update waypoints by server</p>
+  <h4 id="Winpeak_Client_Scene_WinPeakRigidbody_Move_System_Collections_Generic_List_Waypoint__System_Int64_" data-uid="Winpeak.Client.Scene.WinPeakRigidbody.Move(System.Collections.Generic.List{Waypoint},System.Int64)">Move(List&lt;Waypoint&gt;, Int64)</h4>
+  <div class="markdown level1 summary"><p>Move object relative on waypoints</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Move(Waypoint[] waypoints, long moveCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Move(List&lt;Waypoint&gt; waypoints, long moveCount)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -361,7 +440,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Waypoint</span>[]</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Waypoint</span>&gt;</td>
         <td><span class="parametername">waypoints</span></td>
         <td></td>
       </tr>
@@ -381,10 +460,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
-  </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Winpeak.Client.Scene.IWinPeakSubscriber.html">IWinPeakSubscriber</a>
   </div>
 </article>
           </div>

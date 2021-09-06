@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IWinPeakSubscriber
+    <title>Class WpSocketEventResponse
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IWinPeakSubscriber
+    <meta name="title" content="Class WpSocketEventResponse
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,42 +68,61 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Winpeak.Client.Scene.IWinPeakSubscriber">
+            <article class="content wrap" id="_content" data-uid="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse">
   
   
-  <h1 id="Winpeak_Client_Scene_IWinPeakSubscriber" data-uid="Winpeak.Client.Scene.IWinPeakSubscriber" class="text-break">Interface IWinPeakSubscriber
+  <h1 id="Winpeak_Client_Networking_SocketServer_WpSocketEventResponse" data-uid="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse" class="text-break">Class WpSocketEventResponse
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Winpeak.Client.Scene.html">Winpeak.Client.Scene</a></h6>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Winpeak.Client.Networking.SocketServer.WpSocketResponse.html">WpSocketResponse</a></div>
+    <div class="level2"><span class="xref">WpSocketEventResponse</span></div>
+      <div class="level3"><a class="xref" href="Winpeak.Client.Networking.SocketServer.SocketEventHandler-1.html">SocketEventHandler&lt;T&gt;</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Winpeak.Client.Networking.SocketServer.html">Winpeak.Client.Networking.SocketServer</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Winpeak_Client_Scene_IWinPeakSubscriber_syntax">Syntax</h5>
+  <h5 id="Winpeak_Client_Networking_SocketServer_WpSocketEventResponse_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IWinPeakSubscriber</code></pre>
+    <pre><code class="lang-csharp hljs">public class WpSocketEventResponse : WpSocketResponse</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="Winpeak_Client_Scene_IWinPeakSubscriber_Clear_" data-uid="Winpeak.Client.Scene.IWinPeakSubscriber.Clear*"></a>
-  <h4 id="Winpeak_Client_Scene_IWinPeakSubscriber_Clear" data-uid="Winpeak.Client.Scene.IWinPeakSubscriber.Clear">Clear()</h4>
-  <div class="markdown level1 summary"><p>Clear subscribed object from previous game</p>
-</div>
+  <a id="Winpeak_Client_Networking_SocketServer_WpSocketEventResponse_HandleResponse_" data-uid="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse*"></a>
+  <h4 id="Winpeak_Client_Networking_SocketServer_WpSocketEventResponse_HandleResponse_JToken_System_Int64_System_Int64_" data-uid="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,System.Int64,System.Int64)">HandleResponse(JToken, Int64, Int64)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Clear()</code></pre>
-  </div>
-  
-  
-  <a id="Winpeak_Client_Scene_IWinPeakSubscriber_Move_" data-uid="Winpeak.Client.Scene.IWinPeakSubscriber.Move*"></a>
-  <h4 id="Winpeak_Client_Scene_IWinPeakSubscriber_Move_Waypoint___System_Int64_" data-uid="Winpeak.Client.Scene.IWinPeakSubscriber.Move(Waypoint[],System.Int64)">Move(Waypoint[], Int64)</h4>
-  <div class="markdown level1 summary"><p>Move object relative on waypoints</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Move(Waypoint[] waypoints, long moveCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void HandleResponse(JToken data, long serverPId, long serverTime)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -116,13 +135,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Waypoint</span>[]</td>
-        <td><span class="parametername">waypoints</span></td>
+        <td><span class="xref">JToken</span></td>
+        <td><span class="parametername">data</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">moveCount</span></td>
+        <td><span class="parametername">serverPId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">serverTime</span></td>
         <td></td>
       </tr>
     </tbody>

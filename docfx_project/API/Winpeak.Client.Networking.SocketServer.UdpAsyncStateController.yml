@@ -8,9 +8,8 @@ items:
   - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.#ctor(UdpClient,IPEndPoint)
   - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_controlIpEndPoint
   - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationDone
-  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes
   - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_operationResult
-  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
+  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_udpClient
   langs:
   - csharp
   - vb
@@ -21,7 +20,7 @@ items:
   source:
     id: UdpAsyncStateController
     path: ''
-    startLine: 171602
+    startLine: 6033
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -31,7 +30,6 @@ items:
   inheritance:
   - System.Object
   derivedClasses:
-  - Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
   - Winpeak.Client.Networking.SocketServer.UdpAsyncSendState
   inheritedMembers:
   - System.Object.Equals(System.Object)
@@ -49,29 +47,29 @@ items:
   - Public
   - MustInherit
   - Class
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
-  commentId: F:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
-  id: UdpClient
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_udpClient
+  commentId: F:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_udpClient
+  id: m_udpClient
   parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
   langs:
   - csharp
   - vb
-  name: UdpClient
-  nameWithType: UdpAsyncStateController.UdpClient
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
+  name: m_udpClient
+  nameWithType: UdpAsyncStateController.m_udpClient
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_udpClient
   type: Field
   source:
-    id: UdpClient
+    id: m_udpClient
     path: ''
-    startLine: 171604
+    startLine: 6035
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
   syntax:
-    content: protected readonly UdpClient UdpClient
+    content: protected readonly UdpClient m_udpClient
     return:
       type: UdpClient
-    content.vb: Protected ReadOnly UdpClient As UdpClient
+    content.vb: Protected ReadOnly m_udpClient As UdpClient
   modifiers.csharp:
   - protected
   - readonly
@@ -92,7 +90,7 @@ items:
   source:
     id: m_controlIpEndPoint
     path: ''
-    startLine: 171605
+    startLine: 6036
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -119,7 +117,7 @@ items:
   source:
     id: m_isOperationDone
     path: ''
-    startLine: 171606
+    startLine: 6037
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -150,7 +148,7 @@ items:
   source:
     id: m_operationResult
     path: ''
-    startLine: 171607
+    startLine: 6038
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -161,39 +159,6 @@ items:
     content.vb: Protected m_operationResult As String
   modifiers.csharp:
   - protected
-  modifiers.vb:
-  - Protected
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes
-  commentId: P:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes
-  id: m_isOperationProceedBytes
-  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
-  langs:
-  - csharp
-  - vb
-  name: m_isOperationProceedBytes
-  nameWithType: UdpAsyncStateController.m_isOperationProceedBytes
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes
-  type: Property
-  source:
-    id: m_isOperationProceedBytes
-    path: ''
-    startLine: 171612
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.SocketServer
-  summary: "\nIf more than 0 bytes were proceeded, than this flag is true;\n"
-  example: []
-  syntax:
-    content: protected bool m_isOperationProceedBytes { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Protected Property m_isOperationProceedBytes As Boolean
-  overload: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes*
-  modifiers.csharp:
-  - protected
-  - get
-  - set
   modifiers.vb:
   - Protected
 - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.#ctor(UdpClient,IPEndPoint)
@@ -210,7 +175,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 171614
+    startLine: 6040
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -554,11 +519,6 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes*
-  commentId: Overload:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes
-  name: m_isOperationProceedBytes
-  nameWithType: UdpAsyncStateController.m_isOperationProceedBytes
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes
 - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.#ctor*
   commentId: Overload:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.#ctor
   name: UdpAsyncStateController

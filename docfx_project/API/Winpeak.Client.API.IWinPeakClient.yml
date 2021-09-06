@@ -5,7 +5,7 @@ items:
   id: IWinPeakClient
   parent: Winpeak.Client.API
   children:
-  - Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)
+  - Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String)
   - Winpeak.Client.API.IWinPeakClient.BlockInGameInput(System.Boolean)
   - Winpeak.Client.API.IWinPeakClient.Connect(System.String,System.String,System.Action)
   - Winpeak.Client.API.IWinPeakClient.Die(System.Action)
@@ -18,8 +18,10 @@ items:
   - Winpeak.Client.API.IWinPeakClient.InvokeDrawPoint(System.Single,System.Single,System.Single,System.Int64)
   - Winpeak.Client.API.IWinPeakClient.IsActiveNetwork
   - Winpeak.Client.API.IWinPeakClient.IsConnected
+  - Winpeak.Client.API.IWinPeakClient.MassPacket(System.Int32,System.Int32)
   - Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
   - Winpeak.Client.API.IWinPeakClient.OnClientDisconnected
+  - Winpeak.Client.API.IWinPeakClient.OnCollisionEvent
   - Winpeak.Client.API.IWinPeakClient.OnDrawLine
   - Winpeak.Client.API.IWinPeakClient.OnDrawPoint
   - Winpeak.Client.API.IWinPeakClient.OnGameObjectsReady
@@ -32,6 +34,8 @@ items:
   - Winpeak.Client.API.IWinPeakClient.OnRoundScoreUpdated
   - Winpeak.Client.API.IWinPeakClient.OnStartGameCountdown
   - Winpeak.Client.API.IWinPeakClient.OnUserInfoUpdated
+  - Winpeak.Client.API.IWinPeakClient.ResetMoveCount
+  - Winpeak.Client.API.IWinPeakClient.SubscribeResponseHandler``1(System.String)
   - Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody(WinPeakRigidbody)
   - Winpeak.Client.API.IWinPeakClient.Utilize
   langs:
@@ -44,7 +48,7 @@ items:
   source:
     id: IWinPeakClient
     path: ''
-    startLine: 4111
+    startLine: 4161
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -101,7 +105,7 @@ items:
   source:
     id: OnClientDisconnected
     path: ''
-    startLine: 4116
+    startLine: 4166
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -126,7 +130,7 @@ items:
   source:
     id: OnRoundScoreUpdated
     path: ''
-    startLine: 4121
+    startLine: 4171
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -151,7 +155,7 @@ items:
   source:
     id: OnGameOver
     path: ''
-    startLine: 4126
+    startLine: 4176
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -176,7 +180,7 @@ items:
   source:
     id: OnStartGameCountdown
     path: ''
-    startLine: 4131
+    startLine: 4181
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -201,7 +205,7 @@ items:
   source:
     id: OnUserInfoUpdated
     path: ''
-    startLine: 4136
+    startLine: 4186
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -226,7 +230,7 @@ items:
   source:
     id: OnGameObjectsReady
     path: ''
-    startLine: 4141
+    startLine: 4191
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -251,7 +255,7 @@ items:
   source:
     id: OnOccurConnectionProblem
     path: ''
-    startLine: 4146
+    startLine: 4196
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -276,7 +280,7 @@ items:
   source:
     id: OnPingUpdated
     path: ''
-    startLine: 4151
+    startLine: 4201
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -301,7 +305,7 @@ items:
   source:
     id: OnPlayWallHitSound
     path: ''
-    startLine: 4156
+    startLine: 4206
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -312,6 +316,31 @@ items:
     return:
       type: System.Action
     content.vb: Event OnPlayWallHitSound As Action
+- uid: Winpeak.Client.API.IWinPeakClient.OnCollisionEvent
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnCollisionEvent
+  id: OnCollisionEvent
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: OnCollisionEvent
+  nameWithType: IWinPeakClient.OnCollisionEvent
+  fullName: Winpeak.Client.API.IWinPeakClient.OnCollisionEvent
+  type: Event
+  source:
+    id: OnCollisionEvent
+    path: ''
+    startLine: 4211
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nFires when collision occured\n"
+  example: []
+  syntax:
+    content: event Action<string, string> OnCollisionEvent
+    return:
+      type: System.Action{System.String,System.String}
+    content.vb: Event OnCollisionEvent As Action(Of String, String)
 - uid: Winpeak.Client.API.IWinPeakClient.OnGameStateChanged
   commentId: E:Winpeak.Client.API.IWinPeakClient.OnGameStateChanged
   id: OnGameStateChanged
@@ -326,7 +355,7 @@ items:
   source:
     id: OnGameStateChanged
     path: ''
-    startLine: 4161
+    startLine: 4216
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -351,7 +380,7 @@ items:
   source:
     id: IsConnected
     path: ''
-    startLine: 4166
+    startLine: 4221
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -382,7 +411,7 @@ items:
   source:
     id: IsActiveNetwork
     path: ''
-    startLine: 4171
+    startLine: 4226
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -413,7 +442,7 @@ items:
   source:
     id: SubscribeRigidbody
     path: ''
-    startLine: 4176
+    startLine: 4231
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -426,6 +455,42 @@ items:
       type: WinPeakRigidbody
     content.vb: Sub SubscribeRigidbody(rigidbody As WinPeakRigidbody)
   overload: Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody*
+- uid: Winpeak.Client.API.IWinPeakClient.SubscribeResponseHandler``1(System.String)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.SubscribeResponseHandler``1(System.String)
+  id: SubscribeResponseHandler``1(System.String)
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: SubscribeResponseHandler<T>(String)
+  nameWithType: IWinPeakClient.SubscribeResponseHandler<T>(String)
+  fullName: Winpeak.Client.API.IWinPeakClient.SubscribeResponseHandler<T>(System.String)
+  type: Method
+  source:
+    id: SubscribeResponseHandler
+    path: ''
+    startLine: 4238
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nSubscribe custom Response handler\n"
+  example: []
+  syntax:
+    content: >-
+      void SubscribeResponseHandler<T>(string actionName)
+          where T : WpSocketEventResponse
+    parameters:
+    - id: actionName
+      type: System.String
+      description: Name of &apos;action&apos; field in json string
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Sub SubscribeResponseHandler(Of T As WpSocketEventResponse)(actionName As String)
+  overload: Winpeak.Client.API.IWinPeakClient.SubscribeResponseHandler*
+  nameWithType.vb: IWinPeakClient.SubscribeResponseHandler(Of T)(String)
+  fullName.vb: Winpeak.Client.API.IWinPeakClient.SubscribeResponseHandler(Of T)(System.String)
+  name.vb: SubscribeResponseHandler(Of T)(String)
 - uid: Winpeak.Client.API.IWinPeakClient.Init(System.String)
   commentId: M:Winpeak.Client.API.IWinPeakClient.Init(System.String)
   id: Init(System.String)
@@ -440,7 +505,7 @@ items:
   source:
     id: Init
     path: ''
-    startLine: 4181
+    startLine: 4243
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -467,7 +532,7 @@ items:
   source:
     id: Connect
     path: ''
-    startLine: 4186
+    startLine: 4248
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -484,36 +549,34 @@ items:
       type: System.Action
     content.vb: Sub Connect(server As String, port As String, callback As Action)
   overload: Winpeak.Client.API.IWinPeakClient.Connect*
-- uid: Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)
-  commentId: M:Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)
-  id: Auth(System.Int64,System.String,System.Action)
+- uid: Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String)
+  id: Auth(System.Int64,System.String)
   parent: Winpeak.Client.API.IWinPeakClient
   langs:
   - csharp
   - vb
-  name: Auth(Int64, String, Action)
-  nameWithType: IWinPeakClient.Auth(Int64, String, Action)
-  fullName: Winpeak.Client.API.IWinPeakClient.Auth(System.Int64, System.String, System.Action)
+  name: Auth(Int64, String)
+  nameWithType: IWinPeakClient.Auth(Int64, String)
+  fullName: Winpeak.Client.API.IWinPeakClient.Auth(System.Int64, System.String)
   type: Method
   source:
     id: Auth
     path: ''
-    startLine: 4191
+    startLine: 4253
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
   summary: "\nAuthentication user with userId and password\n"
   example: []
   syntax:
-    content: void Auth(long userId, string password, Action callback)
+    content: void Auth(long userId, string password)
     parameters:
     - id: userId
       type: System.Int64
     - id: password
       type: System.String
-    - id: callback
-      type: System.Action
-    content.vb: Sub Auth(userId As Long, password As String, callback As Action)
+    content.vb: Sub Auth(userId As Long, password As String)
   overload: Winpeak.Client.API.IWinPeakClient.Auth*
 - uid: Winpeak.Client.API.IWinPeakClient.Die(System.Action)
   commentId: M:Winpeak.Client.API.IWinPeakClient.Die(System.Action)
@@ -529,7 +592,7 @@ items:
   source:
     id: Die
     path: ''
-    startLine: 4196
+    startLine: 4258
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -542,6 +605,33 @@ items:
       type: System.Action
     content.vb: Sub Die(callback As Action)
   overload: Winpeak.Client.API.IWinPeakClient.Die*
+- uid: Winpeak.Client.API.IWinPeakClient.MassPacket(System.Int32,System.Int32)
+  commentId: M:Winpeak.Client.API.IWinPeakClient.MassPacket(System.Int32,System.Int32)
+  id: MassPacket(System.Int32,System.Int32)
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: MassPacket(Int32, Int32)
+  nameWithType: IWinPeakClient.MassPacket(Int32, Int32)
+  fullName: Winpeak.Client.API.IWinPeakClient.MassPacket(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: MassPacket
+    path: ''
+    startLine: 4260
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  syntax:
+    content: void MassPacket(int rows, int repeat)
+    parameters:
+    - id: rows
+      type: System.Int32
+    - id: repeat
+      type: System.Int32
+    content.vb: Sub MassPacket(rows As Integer, repeat As Integer)
+  overload: Winpeak.Client.API.IWinPeakClient.MassPacket*
 - uid: Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
   commentId: M:Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
   id: Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
@@ -556,7 +646,7 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 4207
+    startLine: 4271
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -599,7 +689,7 @@ items:
   source:
     id: Utilize
     path: ''
-    startLine: 4212
+    startLine: 4276
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -623,7 +713,7 @@ items:
   source:
     id: BlockInGameInput
     path: ''
-    startLine: 4218
+    startLine: 4282
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -651,7 +741,7 @@ items:
   source:
     id: OnGamePlayersListLoaded
     path: ''
-    startLine: 4223
+    startLine: 4287
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -676,7 +766,7 @@ items:
   source:
     id: GetGamePlayersList
     path: ''
-    startLine: 4228
+    startLine: 4292
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -700,7 +790,7 @@ items:
   source:
     id: DrawLines
     path: ''
-    startLine: 4233
+    startLine: 4297
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -724,7 +814,7 @@ items:
   source:
     id: DrawSingleLine
     path: ''
-    startLine: 4239
+    startLine: 4303
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -748,7 +838,7 @@ items:
   source:
     id: DrawPoint
     path: ''
-    startLine: 4244
+    startLine: 4308
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -758,6 +848,30 @@ items:
     content: void DrawPoint()
     content.vb: Sub DrawPoint
   overload: Winpeak.Client.API.IWinPeakClient.DrawPoint*
+- uid: Winpeak.Client.API.IWinPeakClient.ResetMoveCount
+  commentId: M:Winpeak.Client.API.IWinPeakClient.ResetMoveCount
+  id: ResetMoveCount
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: ResetMoveCount()
+  nameWithType: IWinPeakClient.ResetMoveCount()
+  fullName: Winpeak.Client.API.IWinPeakClient.ResetMoveCount()
+  type: Method
+  source:
+    id: ResetMoveCount
+    path: ''
+    startLine: 4313
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nSet MoveCounts to 0\n"
+  example: []
+  syntax:
+    content: void ResetMoveCount()
+    content.vb: Sub ResetMoveCount
+  overload: Winpeak.Client.API.IWinPeakClient.ResetMoveCount*
 - uid: Winpeak.Client.API.IWinPeakClient.OnDrawPoint
   commentId: E:Winpeak.Client.API.IWinPeakClient.OnDrawPoint
   id: OnDrawPoint
@@ -772,7 +886,7 @@ items:
   source:
     id: OnDrawPoint
     path: ''
-    startLine: 4247
+    startLine: 4316
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -795,7 +909,7 @@ items:
   source:
     id: OnDrawLine
     path: ''
-    startLine: 4248
+    startLine: 4317
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -818,7 +932,7 @@ items:
   source:
     id: InvokeDrawPoint
     path: ''
-    startLine: 4249
+    startLine: 4318
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -849,7 +963,7 @@ items:
   source:
     id: InvokeDrawLine
     path: ''
-    startLine: 4250
+    startLine: 4319
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -4347,6 +4461,66 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Action{System.String,System.String}
+  commentId: T:System.Action{System.String,System.String}
+  parent: System
+  definition: System.Action`2
+  name: Action<String, String>
+  nameWithType: Action<String, String>
+  fullName: System.Action<System.String, System.String>
+  nameWithType.vb: Action(Of String, String)
+  fullName.vb: System.Action(Of System.String, System.String)
+  name.vb: Action(Of String, String)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Action{WpGameState}
   commentId: T:System.Action{WpGameState}
   parent: System
@@ -4414,15 +4588,16 @@ references:
   nameWithType: IWinPeakClient.SubscribeRigidbody
   fullName: Winpeak.Client.API.IWinPeakClient.SubscribeRigidbody
 - uid: WinPeakRigidbody
+  commentId: '!:WinPeakRigidbody'
   isExternal: true
   name: WinPeakRigidbody
   nameWithType: WinPeakRigidbody
   fullName: WinPeakRigidbody
-- uid: Winpeak.Client.API.IWinPeakClient.Init*
-  commentId: Overload:Winpeak.Client.API.IWinPeakClient.Init
-  name: Init
-  nameWithType: IWinPeakClient.Init
-  fullName: Winpeak.Client.API.IWinPeakClient.Init
+- uid: Winpeak.Client.API.IWinPeakClient.SubscribeResponseHandler*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.SubscribeResponseHandler
+  name: SubscribeResponseHandler
+  nameWithType: IWinPeakClient.SubscribeResponseHandler
+  fullName: Winpeak.Client.API.IWinPeakClient.SubscribeResponseHandler
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -4430,6 +4605,11 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: Winpeak.Client.API.IWinPeakClient.Init*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.Init
+  name: Init
+  nameWithType: IWinPeakClient.Init
+  fullName: Winpeak.Client.API.IWinPeakClient.Init
 - uid: Winpeak.Client.API.IWinPeakClient.Connect*
   commentId: Overload:Winpeak.Client.API.IWinPeakClient.Connect
   name: Connect
@@ -4452,6 +4632,18 @@ references:
   name: Die
   nameWithType: IWinPeakClient.Die
   fullName: Winpeak.Client.API.IWinPeakClient.Die
+- uid: Winpeak.Client.API.IWinPeakClient.MassPacket*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.MassPacket
+  name: MassPacket
+  nameWithType: IWinPeakClient.MassPacket
+  fullName: Winpeak.Client.API.IWinPeakClient.MassPacket
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Winpeak.Client.API.IWinPeakClient.Move*
   commentId: Overload:Winpeak.Client.API.IWinPeakClient.Move
   name: Move
@@ -4544,6 +4736,11 @@ references:
   name: DrawPoint
   nameWithType: IWinPeakClient.DrawPoint
   fullName: Winpeak.Client.API.IWinPeakClient.DrawPoint
+- uid: Winpeak.Client.API.IWinPeakClient.ResetMoveCount*
+  commentId: Overload:Winpeak.Client.API.IWinPeakClient.ResetMoveCount
+  name: ResetMoveCount
+  nameWithType: IWinPeakClient.ResetMoveCount
+  fullName: Winpeak.Client.API.IWinPeakClient.ResetMoveCount
 - uid: System.Action{System.Single,System.Single,System.Single,System.Int64}
   commentId: T:System.Action{System.Single,System.Single,System.Single,System.Int64}
   parent: System

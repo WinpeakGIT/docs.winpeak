@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IWinPeakClient
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -224,13 +224,13 @@
   
   
   <a id="Winpeak_Client_API_IWinPeakClient_Auth_" data-uid="Winpeak.Client.API.IWinPeakClient.Auth*"></a>
-  <h4 id="Winpeak_Client_API_IWinPeakClient_Auth_System_Int64_System_String_System_Action_" data-uid="Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String,System.Action)">Auth(Int64, String, Action)</h4>
+  <h4 id="Winpeak_Client_API_IWinPeakClient_Auth_System_Int64_System_String_" data-uid="Winpeak.Client.API.IWinPeakClient.Auth(System.Int64,System.String)">Auth(Int64, String)</h4>
   <div class="markdown level1 summary"><p>Authentication user with userId and password</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Auth(long userId, string password, Action callback)</code></pre>
+    <pre><code class="lang-csharp hljs">void Auth(long userId, string password)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -250,11 +250,6 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">password</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Action</span></td>
-        <td><span class="parametername">callback</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -521,6 +516,38 @@
   </table>
   
   
+  <a id="Winpeak_Client_API_IWinPeakClient_MassPacket_" data-uid="Winpeak.Client.API.IWinPeakClient.MassPacket*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakClient_MassPacket_System_Int32_System_Int32_" data-uid="Winpeak.Client.API.IWinPeakClient.MassPacket(System.Int32,System.Int32)">MassPacket(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MassPacket(int rows, int repeat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">repeat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Winpeak_Client_API_IWinPeakClient_Move_" data-uid="Winpeak.Client.API.IWinPeakClient.Move*"></a>
   <h4 id="Winpeak_Client_API_IWinPeakClient_Move_System_Int64_System_String_System_Single_System_Single_System_Single_System_Single_" data-uid="Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)">Move(Int64, String, Single, Single, Single, Single)</h4>
   <div class="markdown level1 summary"><p>Notify server that actor moves</p>
@@ -575,6 +602,62 @@
         <td><span class="parametername">zPos</span></td>
         <td><p>position z</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Winpeak_Client_API_IWinPeakClient_ResetMoveCount_" data-uid="Winpeak.Client.API.IWinPeakClient.ResetMoveCount*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakClient_ResetMoveCount" data-uid="Winpeak.Client.API.IWinPeakClient.ResetMoveCount">ResetMoveCount()</h4>
+  <div class="markdown level1 summary"><p>Set MoveCounts to 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ResetMoveCount()</code></pre>
+  </div>
+  
+  
+  <a id="Winpeak_Client_API_IWinPeakClient_SubscribeResponseHandler_" data-uid="Winpeak.Client.API.IWinPeakClient.SubscribeResponseHandler*"></a>
+  <h4 id="Winpeak_Client_API_IWinPeakClient_SubscribeResponseHandler__1_System_String_" data-uid="Winpeak.Client.API.IWinPeakClient.SubscribeResponseHandler``1(System.String)">SubscribeResponseHandler&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>Subscribe custom Response handler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SubscribeResponseHandler&lt;T&gt;(string actionName)
+    where T : WpSocketEventResponse</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">actionName</span></td>
+        <td><p>Name of &apos;action&apos; field in json string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -640,6 +723,31 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Winpeak_Client_API_IWinPeakClient_OnCollisionEvent" data-uid="Winpeak.Client.API.IWinPeakClient.OnCollisionEvent">OnCollisionEvent</h4>
+  <div class="markdown level1 summary"><p>Fires when collision occured</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;string, string&gt; OnCollisionEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

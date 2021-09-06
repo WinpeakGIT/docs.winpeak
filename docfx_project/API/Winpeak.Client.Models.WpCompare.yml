@@ -16,7 +16,7 @@ items:
   source:
     id: WpCompare
     path: ''
-    startLine: 1956
+    startLine: 696
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
@@ -57,20 +57,20 @@ items:
   source:
     id: Compare
     path: ''
-    startLine: 1958
+    startLine: 698
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Models
   syntax:
-    content: public int Compare(Waypoint x, Waypoint y)
+    content: public int Compare(Waypoint waypoint1, Waypoint waypoint2)
     parameters:
-    - id: x
+    - id: waypoint1
       type: Winpeak.Client.Models.Waypoint
-    - id: y
+    - id: waypoint2
       type: Winpeak.Client.Models.Waypoint
     return:
       type: System.Int32
-    content.vb: Public Function Compare(x As Waypoint, y As Waypoint) As Integer
+    content.vb: Public Function Compare(waypoint1 As Waypoint, waypoint2 As Waypoint) As Integer
   overload: Winpeak.Client.Models.WpCompare.Compare*
   implements:
   - System.Collections.Generic.IComparer{Winpeak.Client.Models.Waypoint}.Compare(Winpeak.Client.Models.Waypoint,Winpeak.Client.Models.Waypoint)

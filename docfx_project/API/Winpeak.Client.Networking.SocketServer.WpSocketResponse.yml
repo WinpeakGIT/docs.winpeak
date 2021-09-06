@@ -1,40 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
-  commentId: T:Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
-  id: UdpAsyncReceiveState
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketResponse
+  commentId: T:Winpeak.Client.Networking.SocketServer.WpSocketResponse
+  id: WpSocketResponse
   parent: Winpeak.Client.Networking.SocketServer
-  children:
-  - Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor(UdpClient,IPEndPoint)
-  - Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult(System.IAsyncResult@)
+  children: []
   langs:
   - csharp
   - vb
-  name: UdpAsyncReceiveState
-  nameWithType: UdpAsyncReceiveState
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
+  name: WpSocketResponse
+  nameWithType: WpSocketResponse
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketResponse
   type: Class
   source:
-    id: UdpAsyncReceiveState
+    id: WpSocketResponse
     path: ''
-    startLine: 171640
+    startLine: 6017
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
   syntax:
-    content: 'public class UdpAsyncReceiveState : UdpAsyncStateController'
-    content.vb: >-
-      Public Class UdpAsyncReceiveState
-          Inherits UdpAsyncStateController
+    content: public class WpSocketResponse
+    content.vb: Public Class WpSocketResponse
   inheritance:
   - System.Object
-  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  derivedClasses:
+  - Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
   inheritedMembers:
-  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
-  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_controlIpEndPoint
-  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationDone
-  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_operationResult
-  - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -48,71 +40,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor(UdpClient,IPEndPoint)
-  commentId: M:Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor(UdpClient,IPEndPoint)
-  id: '#ctor(UdpClient,IPEndPoint)'
-  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
-  langs:
-  - csharp
-  - vb
-  name: UdpAsyncReceiveState(UdpClient, IPEndPoint)
-  nameWithType: UdpAsyncReceiveState.UdpAsyncReceiveState(UdpClient, IPEndPoint)
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.UdpAsyncReceiveState(UdpClient, IPEndPoint)
-  type: Constructor
-  source:
-    id: .ctor
-    path: ''
-    startLine: 171642
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.SocketServer
-  syntax:
-    content: public UdpAsyncReceiveState(UdpClient sender, IPEndPoint controlEndPoint)
-    parameters:
-    - id: sender
-      type: UdpClient
-    - id: controlEndPoint
-      type: IPEndPoint
-    content.vb: Public Sub New(sender As UdpClient, controlEndPoint As IPEndPoint)
-  overload: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult(System.IAsyncResult@)
-  commentId: M:Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult(System.IAsyncResult@)
-  id: GetResult(System.IAsyncResult@)
-  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState
-  langs:
-  - csharp
-  - vb
-  name: GetResult(ref IAsyncResult)
-  nameWithType: UdpAsyncReceiveState.GetResult(ref IAsyncResult)
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult(ref System.IAsyncResult)
-  type: Method
-  source:
-    id: GetResult
-    path: ''
-    startLine: 171644
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.SocketServer
-  syntax:
-    content: public string GetResult(ref IAsyncResult result)
-    parameters:
-    - id: result
-      type: System.IAsyncResult
-    return:
-      type: System.String
-    content.vb: Public Function GetResult(ByRef result As IAsyncResult) As String
-  overload: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult*
-  nameWithType.vb: UdpAsyncReceiveState.GetResult(ByRef IAsyncResult)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult(ByRef System.IAsyncResult)
-  name.vb: GetResult(ByRef IAsyncResult)
 references:
 - uid: Winpeak.Client.Networking.SocketServer
   commentId: N:Winpeak.Client.Networking.SocketServer
@@ -126,42 +53,6 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
-  commentId: T:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
-  parent: Winpeak.Client.Networking.SocketServer
-  name: UdpAsyncStateController
-  nameWithType: UdpAsyncStateController
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
-  commentId: F:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
-  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
-  name: UdpClient
-  nameWithType: UdpAsyncStateController.UdpClient
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.UdpClient
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_controlIpEndPoint
-  commentId: F:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_controlIpEndPoint
-  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
-  name: m_controlIpEndPoint
-  nameWithType: UdpAsyncStateController.m_controlIpEndPoint
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_controlIpEndPoint
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationDone
-  commentId: P:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationDone
-  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
-  name: m_isOperationDone
-  nameWithType: UdpAsyncStateController.m_isOperationDone
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationDone
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_operationResult
-  commentId: F:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_operationResult
-  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
-  name: m_operationResult
-  nameWithType: UdpAsyncStateController.m_operationResult
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_operationResult
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes
-  commentId: P:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes
-  parent: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
-  name: m_isOperationProceedBytes
-  nameWithType: UdpAsyncStateController.m_isOperationProceedBytes
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.m_isOperationProceedBytes
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -447,37 +338,3 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor*
-  commentId: Overload:Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.#ctor
-  name: UdpAsyncReceiveState
-  nameWithType: UdpAsyncReceiveState.UdpAsyncReceiveState
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.UdpAsyncReceiveState
-- uid: UdpClient
-  isExternal: true
-  name: UdpClient
-  nameWithType: UdpClient
-  fullName: UdpClient
-- uid: IPEndPoint
-  isExternal: true
-  name: IPEndPoint
-  nameWithType: IPEndPoint
-  fullName: IPEndPoint
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult*
-  commentId: Overload:Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult
-  name: GetResult
-  nameWithType: UdpAsyncReceiveState.GetResult
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncReceiveState.GetResult
-- uid: System.IAsyncResult
-  commentId: T:System.IAsyncResult
-  parent: System
-  isExternal: true
-  name: IAsyncResult
-  nameWithType: IAsyncResult
-  fullName: System.IAsyncResult
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String

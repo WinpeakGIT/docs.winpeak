@@ -7,12 +7,14 @@ items:
   children:
   - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.#ctor
   - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
   - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.DeltaMinPing
   - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.GetEstimatedServerTime
   - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime
   - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastPing
   - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MaxPing
   - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MinPing
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
   - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.ServerTimeDelta
   - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.SetStatus(System.Int64)
   - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.StartTimeReal
@@ -26,7 +28,7 @@ items:
   source:
     id: ServerConnectionStatusController
     path: ''
-    startLine: 4666
+    startLine: 4865
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -65,7 +67,7 @@ items:
   source:
     id: ServerTimeDelta
     path: ''
-    startLine: 4669
+    startLine: 4868
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -96,7 +98,7 @@ items:
   source:
     id: StartTimeReal
     path: ''
-    startLine: 4670
+    startLine: 4869
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -127,7 +129,7 @@ items:
   source:
     id: MinPing
     path: ''
-    startLine: 4671
+    startLine: 4870
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -158,7 +160,7 @@ items:
   source:
     id: MaxPing
     path: ''
-    startLine: 4672
+    startLine: 4871
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -189,7 +191,7 @@ items:
   source:
     id: LastPing
     path: ''
-    startLine: 4673
+    startLine: 4872
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -206,31 +208,31 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
-  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
-  id: AveragePing
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
+  id: AverageServerDeltaTime
   parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
   langs:
   - csharp
   - vb
-  name: AveragePing
-  nameWithType: ServerConnectionStatusController.AveragePing
-  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+  name: AverageServerDeltaTime
+  nameWithType: ServerConnectionStatusController.AverageServerDeltaTime
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
   type: Property
   source:
-    id: AveragePing
+    id: AverageServerDeltaTime
     path: ''
-    startLine: 4674
+    startLine: 4873
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
   syntax:
-    content: public float AveragePing { get; }
+    content: public float AverageServerDeltaTime { get; }
     parameters: []
     return:
       type: System.Single
-    content.vb: Public ReadOnly Property AveragePing As Single
-  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing*
+    content.vb: Public ReadOnly Property AverageServerDeltaTime As Single
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime*
   modifiers.csharp:
   - public
   - get
@@ -251,7 +253,7 @@ items:
   source:
     id: LastDiffWithServerTime
     path: ''
-    startLine: 4675
+    startLine: 4874
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -262,6 +264,68 @@ items:
       type: System.Single
     content.vb: Public ReadOnly Property LastDiffWithServerTime As Single
   overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+  id: AveragePing
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: AveragePing
+  nameWithType: ServerConnectionStatusController.AveragePing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+  type: Property
+  source:
+    id: AveragePing
+    path: ''
+    startLine: 4875
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public float AveragePing { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property AveragePing As Single
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
+  id: PingCount
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: PingCount
+  nameWithType: ServerConnectionStatusController.PingCount
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
+  type: Property
+  source:
+    id: PingCount
+    path: ''
+    startLine: 4876
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public long PingCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property PingCount As Long
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount*
   modifiers.csharp:
   - public
   - get
@@ -282,7 +346,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 4678
+    startLine: 4879
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -308,7 +372,7 @@ items:
   source:
     id: DeltaMinPing
     path: ''
-    startLine: 4683
+    startLine: 4886
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -339,7 +403,7 @@ items:
   source:
     id: GetEstimatedServerTime
     path: ''
-    startLine: 4685
+    startLine: 4888
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -367,7 +431,7 @@ items:
   source:
     id: SetStatus
     path: ''
-    startLine: 4689
+    startLine: 4892
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -719,16 +783,26 @@ references:
   name: LastPing
   nameWithType: ServerConnectionStatusController.LastPing
   fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastPing
-- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing*
-  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
-  name: AveragePing
-  nameWithType: ServerConnectionStatusController.AveragePing
-  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
+  name: AverageServerDeltaTime
+  nameWithType: ServerConnectionStatusController.AverageServerDeltaTime
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
 - uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime*
   commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime
   name: LastDiffWithServerTime
   nameWithType: ServerConnectionStatusController.LastDiffWithServerTime
   fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+  name: AveragePing
+  nameWithType: ServerConnectionStatusController.AveragePing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
+  name: PingCount
+  nameWithType: ServerConnectionStatusController.PingCount
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
 - uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.#ctor*
   commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.#ctor
   name: ServerConnectionStatusController
