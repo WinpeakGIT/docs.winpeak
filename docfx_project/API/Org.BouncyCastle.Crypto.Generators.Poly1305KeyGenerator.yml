@@ -1,0 +1,716 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator
+  commentId: T:Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator
+  id: Poly1305KeyGenerator
+  parent: Org.BouncyCastle.Crypto.Generators
+  children:
+  - Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.CheckKey(System.Byte[])
+  - Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp(System.Byte[])
+  - Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineGenerateKey
+  - Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineInit(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  langs:
+  - csharp
+  - vb
+  name: Poly1305KeyGenerator
+  nameWithType: Poly1305KeyGenerator
+  fullName: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator
+  type: Class
+  source:
+    id: Poly1305KeyGenerator
+    path: ''
+    startLine: 101757
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Generators
+  summary: "\nGenerates keys for the Poly1305 MAC.\n"
+  remarks: "\nPoly1305 keys are 256 bit keys consisting of a 128 bit secret key used for the underlying block\ncipher followed by a 128 bit {@code r} value used for the polynomial portion of the Mac. <br />\nThe {@code r} value has a specific format with some bits required to be cleared, resulting in an\neffective 106 bit key. <br />\nA separately generated 256 bit key can be modified to fit the Poly1305 key format by using the\n{@link #clamp(byte[])} method to clear the required bits.\n"
+  example: []
+  syntax:
+    content: 'public class Poly1305KeyGenerator : CipherKeyGenerator'
+    content.vb: >-
+      Public Class Poly1305KeyGenerator
+          Inherits CipherKeyGenerator
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Crypto.CipherKeyGenerator
+  inheritedMembers:
+  - Org.BouncyCastle.Crypto.CipherKeyGenerator.random
+  - Org.BouncyCastle.Crypto.CipherKeyGenerator.strength
+  - Org.BouncyCastle.Crypto.CipherKeyGenerator.DefaultStrength
+  - Org.BouncyCastle.Crypto.CipherKeyGenerator.Init(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  - Org.BouncyCastle.Crypto.CipherKeyGenerator.GenerateKey
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineInit(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineInit(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  id: engineInit(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  parent: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator
+  langs:
+  - csharp
+  - vb
+  name: engineInit(KeyGenerationParameters)
+  nameWithType: Poly1305KeyGenerator.engineInit(KeyGenerationParameters)
+  fullName: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineInit(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  type: Method
+  source:
+    id: engineInit
+    path: ''
+    startLine: 101769
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Generators
+  summary: "\nInitialises the key generator.\n"
+  remarks: "\nPoly1305 keys are always 256 bits, so the key length in the provided parameters is ignored.\n"
+  example: []
+  syntax:
+    content: protected override void engineInit(KeyGenerationParameters param)
+    parameters:
+    - id: param
+      type: Org.BouncyCastle.Crypto.KeyGenerationParameters
+    content.vb: Protected Overrides Sub engineInit(param As KeyGenerationParameters)
+  overridden: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineInit(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  overload: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineInit*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineGenerateKey
+  commentId: M:Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineGenerateKey
+  id: engineGenerateKey
+  parent: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator
+  langs:
+  - csharp
+  - vb
+  name: engineGenerateKey()
+  nameWithType: Poly1305KeyGenerator.engineGenerateKey()
+  fullName: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineGenerateKey()
+  type: Method
+  source:
+    id: engineGenerateKey
+    path: ''
+    startLine: 101781
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Generators
+  summary: "\nGenerates a 256 bit key in the format required for Poly1305 - e.g.\n<pre><code>k[0] ... k[15], r[0] ... r[15]</code></pre> with the required bits in <pre><code>r</code></pre> cleared\nas per <xref href=\"Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp(System.Byte%5b%5d)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: protected override byte[] engineGenerateKey()
+    return:
+      type: System.Byte[]
+    content.vb: Protected Overrides Function engineGenerateKey As Byte()
+  overridden: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineGenerateKey
+  overload: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineGenerateKey*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp(System.Byte[])
+  id: Clamp(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator
+  langs:
+  - csharp
+  - vb
+  name: Clamp(Byte[])
+  nameWithType: Poly1305KeyGenerator.Clamp(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp(System.Byte[])
+  type: Method
+  source:
+    id: Clamp
+    path: ''
+    startLine: 101798
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Generators
+  summary: "\nModifies an existing 32 byte key value to comply with the requirements of the Poly1305 key by\nclearing required bits in the <pre><code>r</code></pre> (second 16 bytes) portion of the key.<br />\nSpecifically:\n<ul>\n<li>r[3], r[7], r[11], r[15] have top four bits clear (i.e., are {0, 1, . . . , 15})</li>\n<li>r[4], r[8], r[12] have bottom two bits clear (i.e., are in {0, 4, 8, . . . , 252})</li>\n</ul>\n"
+  example: []
+  syntax:
+    content: public static void Clamp(byte[] key)
+    parameters:
+    - id: key
+      type: System.Byte[]
+      description: a 32 byte key value <pre><code>k[0] ... k[15], r[0] ... r[15]</code></pre>
+    content.vb: Public Shared Sub Clamp(key As Byte())
+  overload: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp*
+  nameWithType.vb: Poly1305KeyGenerator.Clamp(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp(System.Byte())
+  name.vb: Clamp(Byte())
+- uid: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.CheckKey(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.CheckKey(System.Byte[])
+  id: CheckKey(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator
+  langs:
+  - csharp
+  - vb
+  name: CheckKey(Byte[])
+  nameWithType: Poly1305KeyGenerator.CheckKey(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.CheckKey(System.Byte[])
+  type: Method
+  source:
+    id: CheckKey
+    path: ''
+    startLine: 101830
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Generators
+  summary: "\nChecks a 32 byte key for compliance with the Poly1305 key requirements, e.g.\n<pre><code>k[0] ... k[15], r[0] ... r[15]</code></pre> with the required bits in <pre><code>r</code></pre> cleared\nas per <xref href=\"Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp(System.Byte%5b%5d)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static void CheckKey(byte[] key)
+    parameters:
+    - id: key
+      type: System.Byte[]
+      description: Key.
+    content.vb: Public Shared Sub CheckKey(key As Byte())
+  overload: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.CheckKey*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      if the key is of the wrong length, or has invalid bits set
+                in the <pre><code>r</code></pre> portion of the key.
+  nameWithType.vb: Poly1305KeyGenerator.CheckKey(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.CheckKey(System.Byte())
+  name.vb: CheckKey(Byte())
+references:
+- uid: Org.BouncyCastle.Crypto.Generators
+  commentId: N:Org.BouncyCastle.Crypto.Generators
+  name: Org.BouncyCastle.Crypto.Generators
+  nameWithType: Org.BouncyCastle.Crypto.Generators
+  fullName: Org.BouncyCastle.Crypto.Generators
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.CipherKeyGenerator
+  commentId: T:Org.BouncyCastle.Crypto.CipherKeyGenerator
+  parent: Org.BouncyCastle.Crypto
+  name: CipherKeyGenerator
+  nameWithType: CipherKeyGenerator
+  fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator
+- uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.random
+  commentId: F:Org.BouncyCastle.Crypto.CipherKeyGenerator.random
+  parent: Org.BouncyCastle.Crypto.CipherKeyGenerator
+  name: random
+  nameWithType: CipherKeyGenerator.random
+  fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.random
+- uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.strength
+  commentId: F:Org.BouncyCastle.Crypto.CipherKeyGenerator.strength
+  parent: Org.BouncyCastle.Crypto.CipherKeyGenerator
+  name: strength
+  nameWithType: CipherKeyGenerator.strength
+  fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.strength
+- uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.DefaultStrength
+  commentId: P:Org.BouncyCastle.Crypto.CipherKeyGenerator.DefaultStrength
+  parent: Org.BouncyCastle.Crypto.CipherKeyGenerator
+  name: DefaultStrength
+  nameWithType: CipherKeyGenerator.DefaultStrength
+  fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.DefaultStrength
+- uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.Init(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  commentId: M:Org.BouncyCastle.Crypto.CipherKeyGenerator.Init(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  parent: Org.BouncyCastle.Crypto.CipherKeyGenerator
+  name: Init(KeyGenerationParameters)
+  nameWithType: CipherKeyGenerator.Init(KeyGenerationParameters)
+  fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.Init(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.Init(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+    name: Init
+    nameWithType: CipherKeyGenerator.Init
+    fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.KeyGenerationParameters
+    name: KeyGenerationParameters
+    nameWithType: KeyGenerationParameters
+    fullName: Org.BouncyCastle.Crypto.KeyGenerationParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.Init(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+    name: Init
+    nameWithType: CipherKeyGenerator.Init
+    fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.KeyGenerationParameters
+    name: KeyGenerationParameters
+    nameWithType: KeyGenerationParameters
+    fullName: Org.BouncyCastle.Crypto.KeyGenerationParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.GenerateKey
+  commentId: M:Org.BouncyCastle.Crypto.CipherKeyGenerator.GenerateKey
+  parent: Org.BouncyCastle.Crypto.CipherKeyGenerator
+  name: GenerateKey()
+  nameWithType: CipherKeyGenerator.GenerateKey()
+  fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.GenerateKey()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.GenerateKey
+    name: GenerateKey
+    nameWithType: CipherKeyGenerator.GenerateKey
+    fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.GenerateKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.GenerateKey
+    name: GenerateKey
+    nameWithType: CipherKeyGenerator.GenerateKey
+    fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.GenerateKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineInit(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  commentId: M:Org.BouncyCastle.Crypto.CipherKeyGenerator.engineInit(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  parent: Org.BouncyCastle.Crypto.CipherKeyGenerator
+  name: engineInit(KeyGenerationParameters)
+  nameWithType: CipherKeyGenerator.engineInit(KeyGenerationParameters)
+  fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineInit(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineInit(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+    name: engineInit
+    nameWithType: CipherKeyGenerator.engineInit
+    fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineInit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.KeyGenerationParameters
+    name: KeyGenerationParameters
+    nameWithType: KeyGenerationParameters
+    fullName: Org.BouncyCastle.Crypto.KeyGenerationParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineInit(Org.BouncyCastle.Crypto.KeyGenerationParameters)
+    name: engineInit
+    nameWithType: CipherKeyGenerator.engineInit
+    fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineInit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.KeyGenerationParameters
+    name: KeyGenerationParameters
+    nameWithType: KeyGenerationParameters
+    fullName: Org.BouncyCastle.Crypto.KeyGenerationParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineInit*
+  commentId: Overload:Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineInit
+  name: engineInit
+  nameWithType: Poly1305KeyGenerator.engineInit
+  fullName: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineInit
+- uid: Org.BouncyCastle.Crypto.KeyGenerationParameters
+  commentId: T:Org.BouncyCastle.Crypto.KeyGenerationParameters
+  parent: Org.BouncyCastle.Crypto
+  name: KeyGenerationParameters
+  nameWithType: KeyGenerationParameters
+  fullName: Org.BouncyCastle.Crypto.KeyGenerationParameters
+- uid: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp(System.Byte[])
+  isExternal: true
+- uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineGenerateKey
+  commentId: M:Org.BouncyCastle.Crypto.CipherKeyGenerator.engineGenerateKey
+  parent: Org.BouncyCastle.Crypto.CipherKeyGenerator
+  name: engineGenerateKey()
+  nameWithType: CipherKeyGenerator.engineGenerateKey()
+  fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineGenerateKey()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineGenerateKey
+    name: engineGenerateKey
+    nameWithType: CipherKeyGenerator.engineGenerateKey
+    fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineGenerateKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineGenerateKey
+    name: engineGenerateKey
+    nameWithType: CipherKeyGenerator.engineGenerateKey
+    fullName: Org.BouncyCastle.Crypto.CipherKeyGenerator.engineGenerateKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineGenerateKey*
+  commentId: Overload:Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineGenerateKey
+  name: engineGenerateKey
+  nameWithType: Poly1305KeyGenerator.engineGenerateKey
+  fullName: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.engineGenerateKey
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp*
+  commentId: Overload:Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp
+  name: Clamp
+  nameWithType: Poly1305KeyGenerator.Clamp
+  fullName: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.Clamp
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.CheckKey*
+  commentId: Overload:Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.CheckKey
+  name: CheckKey
+  nameWithType: Poly1305KeyGenerator.CheckKey
+  fullName: Org.BouncyCastle.Crypto.Generators.Poly1305KeyGenerator.CheckKey

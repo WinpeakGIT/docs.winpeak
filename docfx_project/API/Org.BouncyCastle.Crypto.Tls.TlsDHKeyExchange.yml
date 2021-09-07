@@ -1,0 +1,1688 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  id: TlsDHKeyExchange
+  parent: Org.BouncyCastle.Crypto.Tls
+  children:
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.#ctor(System.Int32,System.Collections.IList,DHParameters)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GenerateClientKeyExchange(Stream)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GeneratePremasterSecret
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mAgreementCredentials
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHAgreePrivateKey
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHAgreePublicKey
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHParameters
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.MinimumPrimeBits
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mServerPublicKey
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mTlsSigner
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientKeyExchange(Stream)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.RequiresServerKeyExchange
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.SkipServerCredentials
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateCertificateRequest(Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateDHParameters(DHParameters)
+  langs:
+  - csharp
+  - vb
+  name: TlsDHKeyExchange
+  nameWithType: TlsDHKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  type: Class
+  source:
+    id: TlsDHKeyExchange
+    path: ''
+    startLine: 112367
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  summary: (D)TLS DH key exchange.
+  example: []
+  syntax:
+    content: 'public class TlsDHKeyExchange : AbstractTlsKeyExchange, TlsKeyExchange'
+    content.vb: >-
+      Public Class TlsDHKeyExchange
+          Inherits AbstractTlsKeyExchange
+          Implements TlsKeyExchange
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  derivedClasses:
+  - Org.BouncyCastle.Crypto.Tls.TlsDheKeyExchange
+  implements:
+  - Org.BouncyCastle.Crypto.Tls.TlsKeyExchange
+  inheritedMembers:
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mKeyExchange
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mSupportedSignatureAlgorithms
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mContext
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ParseSignature(Stream)
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateServerKeyExchange
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerKeyExchange
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerKeyExchange(Stream)
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipClientCredentials
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mTlsSigner
+  commentId: F:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mTlsSigner
+  id: mTlsSigner
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: mTlsSigner
+  nameWithType: TlsDHKeyExchange.mTlsSigner
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mTlsSigner
+  type: Field
+  source:
+    id: mTlsSigner
+    path: ''
+    startLine: 112370
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected TlsSigner mTlsSigner
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.TlsSigner
+    content.vb: Protected mTlsSigner As TlsSigner
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHParameters
+  commentId: F:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHParameters
+  id: mDHParameters
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: mDHParameters
+  nameWithType: TlsDHKeyExchange.mDHParameters
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHParameters
+  type: Field
+  source:
+    id: mDHParameters
+    path: ''
+    startLine: 112371
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected DHParameters mDHParameters
+    return:
+      type: DHParameters
+    content.vb: Protected mDHParameters As DHParameters
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mServerPublicKey
+  commentId: F:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mServerPublicKey
+  id: mServerPublicKey
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: mServerPublicKey
+  nameWithType: TlsDHKeyExchange.mServerPublicKey
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mServerPublicKey
+  type: Field
+  source:
+    id: mServerPublicKey
+    path: ''
+    startLine: 112373
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected AsymmetricKeyParameter mServerPublicKey
+    return:
+      type: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    content.vb: Protected mServerPublicKey As AsymmetricKeyParameter
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mAgreementCredentials
+  commentId: F:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mAgreementCredentials
+  id: mAgreementCredentials
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: mAgreementCredentials
+  nameWithType: TlsDHKeyExchange.mAgreementCredentials
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mAgreementCredentials
+  type: Field
+  source:
+    id: mAgreementCredentials
+    path: ''
+    startLine: 112374
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected TlsAgreementCredentials mAgreementCredentials
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.TlsAgreementCredentials
+    content.vb: Protected mAgreementCredentials As TlsAgreementCredentials
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHAgreePrivateKey
+  commentId: F:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHAgreePrivateKey
+  id: mDHAgreePrivateKey
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: mDHAgreePrivateKey
+  nameWithType: TlsDHKeyExchange.mDHAgreePrivateKey
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHAgreePrivateKey
+  type: Field
+  source:
+    id: mDHAgreePrivateKey
+    path: ''
+    startLine: 112376
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected DHPrivateKeyParameters mDHAgreePrivateKey
+    return:
+      type: DHPrivateKeyParameters
+    content.vb: Protected mDHAgreePrivateKey As DHPrivateKeyParameters
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHAgreePublicKey
+  commentId: F:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHAgreePublicKey
+  id: mDHAgreePublicKey
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: mDHAgreePublicKey
+  nameWithType: TlsDHKeyExchange.mDHAgreePublicKey
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.mDHAgreePublicKey
+  type: Field
+  source:
+    id: mDHAgreePublicKey
+    path: ''
+    startLine: 112377
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected DHPublicKeyParameters mDHAgreePublicKey
+    return:
+      type: DHPublicKeyParameters
+    content.vb: Protected mDHAgreePublicKey As DHPublicKeyParameters
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.#ctor(System.Int32,System.Collections.IList,DHParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.#ctor(System.Int32,System.Collections.IList,DHParameters)
+  id: '#ctor(System.Int32,System.Collections.IList,DHParameters)'
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: TlsDHKeyExchange(Int32, IList, DHParameters)
+  nameWithType: TlsDHKeyExchange.TlsDHKeyExchange(Int32, IList, DHParameters)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.TlsDHKeyExchange(System.Int32, System.Collections.IList, DHParameters)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 112379
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public TlsDHKeyExchange(int keyExchange, IList supportedSignatureAlgorithms, DHParameters dhParameters)
+    parameters:
+    - id: keyExchange
+      type: System.Int32
+    - id: supportedSignatureAlgorithms
+      type: System.Collections.IList
+    - id: dhParameters
+      type: DHParameters
+    content.vb: Public Sub New(keyExchange As Integer, supportedSignatureAlgorithms As IList, dhParameters As DHParameters)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  id: Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: Init(TlsContext)
+  nameWithType: TlsDHKeyExchange.Init(TlsContext)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 112401
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override void Init(TlsContext context)
+    parameters:
+    - id: context
+      type: Org.BouncyCastle.Crypto.Tls.TlsContext
+    content.vb: Public Overrides Sub Init(context As TlsContext)
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.Init*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.SkipServerCredentials
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.SkipServerCredentials
+  id: SkipServerCredentials
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: SkipServerCredentials()
+  nameWithType: TlsDHKeyExchange.SkipServerCredentials()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.SkipServerCredentials()
+  type: Method
+  source:
+    id: SkipServerCredentials
+    path: ''
+    startLine: 112411
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override void SkipServerCredentials()
+    content.vb: Public Overrides Sub SkipServerCredentials
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerCredentials
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.SkipServerCredentials*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  id: ProcessServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: ProcessServerCertificate(Certificate)
+  nameWithType: TlsDHKeyExchange.ProcessServerCertificate(Certificate)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  type: Method
+  source:
+    id: ProcessServerCertificate
+    path: ''
+    startLine: 112416
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override void ProcessServerCertificate(Certificate serverCertificate)
+    parameters:
+    - id: serverCertificate
+      type: Org.BouncyCastle.Crypto.Tls.Certificate
+    content.vb: Public Overrides Sub ProcessServerCertificate(serverCertificate As Certificate)
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessServerCertificate*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.RequiresServerKeyExchange
+  commentId: P:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.RequiresServerKeyExchange
+  id: RequiresServerKeyExchange
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: RequiresServerKeyExchange
+  nameWithType: TlsDHKeyExchange.RequiresServerKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.RequiresServerKeyExchange
+  type: Property
+  source:
+    id: RequiresServerKeyExchange
+    path: ''
+    startLine: 112460
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override bool RequiresServerKeyExchange { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property RequiresServerKeyExchange As Boolean
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.RequiresServerKeyExchange
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.RequiresServerKeyExchange*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateCertificateRequest(Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateCertificateRequest(Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  id: ValidateCertificateRequest(Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: ValidateCertificateRequest(CertificateRequest)
+  nameWithType: TlsDHKeyExchange.ValidateCertificateRequest(CertificateRequest)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateCertificateRequest(Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  type: Method
+  source:
+    id: ValidateCertificateRequest
+    path: ''
+    startLine: 112476
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override void ValidateCertificateRequest(CertificateRequest certificateRequest)
+    parameters:
+    - id: certificateRequest
+      type: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+    content.vb: Public Overrides Sub ValidateCertificateRequest(certificateRequest As CertificateRequest)
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ValidateCertificateRequest(Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateCertificateRequest*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  id: ProcessClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: ProcessClientCredentials(TlsCredentials)
+  nameWithType: TlsDHKeyExchange.ProcessClientCredentials(TlsCredentials)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  type: Method
+  source:
+    id: ProcessClientCredentials
+    path: ''
+    startLine: 112495
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override void ProcessClientCredentials(TlsCredentials clientCredentials)
+    parameters:
+    - id: clientCredentials
+      type: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+    content.vb: Public Overrides Sub ProcessClientCredentials(clientCredentials As TlsCredentials)
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCredentials*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GenerateClientKeyExchange(Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GenerateClientKeyExchange(Stream)
+  id: GenerateClientKeyExchange(Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: GenerateClientKeyExchange(Stream)
+  nameWithType: TlsDHKeyExchange.GenerateClientKeyExchange(Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GenerateClientKeyExchange(Stream)
+  type: Method
+  source:
+    id: GenerateClientKeyExchange
+    path: ''
+    startLine: 112513
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override void GenerateClientKeyExchange(Stream output)
+    parameters:
+    - id: output
+      type: Stream
+    content.vb: Public Overrides Sub GenerateClientKeyExchange(output As Stream)
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateClientKeyExchange(Stream)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GenerateClientKeyExchange*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  id: ProcessClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: ProcessClientCertificate(Certificate)
+  nameWithType: TlsDHKeyExchange.ProcessClientCertificate(Certificate)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  type: Method
+  source:
+    id: ProcessClientCertificate
+    path: ''
+    startLine: 112527
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override void ProcessClientCertificate(Certificate clientCertificate)
+    parameters:
+    - id: clientCertificate
+      type: Org.BouncyCastle.Crypto.Tls.Certificate
+    content.vb: Public Overrides Sub ProcessClientCertificate(clientCertificate As Certificate)
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCertificate*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientKeyExchange(Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientKeyExchange(Stream)
+  id: ProcessClientKeyExchange(Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: ProcessClientKeyExchange(Stream)
+  nameWithType: TlsDHKeyExchange.ProcessClientKeyExchange(Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientKeyExchange(Stream)
+  type: Method
+  source:
+    id: ProcessClientKeyExchange
+    path: ''
+    startLine: 112537
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override void ProcessClientKeyExchange(Stream input)
+    parameters:
+    - id: input
+      type: Stream
+    content.vb: Public Overrides Sub ProcessClientKeyExchange(input As Stream)
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientKeyExchange(Stream)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientKeyExchange*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GeneratePremasterSecret
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GeneratePremasterSecret
+  id: GeneratePremasterSecret
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: GeneratePremasterSecret()
+  nameWithType: TlsDHKeyExchange.GeneratePremasterSecret()
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GeneratePremasterSecret()
+  type: Method
+  source:
+    id: GeneratePremasterSecret
+    path: ''
+    startLine: 112550
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override byte[] GeneratePremasterSecret()
+    return:
+      type: System.Byte[]
+    content.vb: Public Overrides Function GeneratePremasterSecret As Byte()
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GeneratePremasterSecret
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GeneratePremasterSecret*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.MinimumPrimeBits
+  commentId: P:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.MinimumPrimeBits
+  id: MinimumPrimeBits
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: MinimumPrimeBits
+  nameWithType: TlsDHKeyExchange.MinimumPrimeBits
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.MinimumPrimeBits
+  type: Property
+  source:
+    id: MinimumPrimeBits
+    path: ''
+    startLine: 112565
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected virtual int MinimumPrimeBits { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Protected Overridable ReadOnly Property MinimumPrimeBits As Integer
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.MinimumPrimeBits*
+  modifiers.csharp:
+  - protected
+  - virtual
+  - get
+  modifiers.vb:
+  - Protected
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateDHParameters(DHParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateDHParameters(DHParameters)
+  id: ValidateDHParameters(DHParameters)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange
+  langs:
+  - csharp
+  - vb
+  name: ValidateDHParameters(DHParameters)
+  nameWithType: TlsDHKeyExchange.ValidateDHParameters(DHParameters)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateDHParameters(DHParameters)
+  type: Method
+  source:
+    id: ValidateDHParameters
+    path: ''
+    startLine: 112570
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected virtual DHParameters ValidateDHParameters(DHParameters parameters)
+    parameters:
+    - id: parameters
+      type: DHParameters
+    return:
+      type: DHParameters
+    content.vb: Protected Overridable Function ValidateDHParameters(parameters As DHParameters) As DHParameters
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateDHParameters*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Org.BouncyCastle.Crypto.Tls
+  commentId: N:Org.BouncyCastle.Crypto.Tls
+  name: Org.BouncyCastle.Crypto.Tls
+  nameWithType: Org.BouncyCastle.Crypto.Tls
+  fullName: Org.BouncyCastle.Crypto.Tls
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  commentId: T:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: AbstractTlsKeyExchange
+  nameWithType: AbstractTlsKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+- uid: Org.BouncyCastle.Crypto.Tls.TlsKeyExchange
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsKeyExchange
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsKeyExchange
+  nameWithType: TlsKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsKeyExchange
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mKeyExchange
+  commentId: F:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mKeyExchange
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: mKeyExchange
+  nameWithType: AbstractTlsKeyExchange.mKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mKeyExchange
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mSupportedSignatureAlgorithms
+  commentId: F:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mSupportedSignatureAlgorithms
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: mSupportedSignatureAlgorithms
+  nameWithType: AbstractTlsKeyExchange.mSupportedSignatureAlgorithms
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mSupportedSignatureAlgorithms
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mContext
+  commentId: F:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mContext
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: mContext
+  nameWithType: AbstractTlsKeyExchange.mContext
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.mContext
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ParseSignature(Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ParseSignature(Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  isExternal: true
+  name: ParseSignature(Stream)
+  nameWithType: AbstractTlsKeyExchange.ParseSignature(Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ParseSignature(Stream)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ParseSignature(Stream)
+    name: ParseSignature
+    nameWithType: AbstractTlsKeyExchange.ParseSignature
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ParseSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ParseSignature(Stream)
+    name: ParseSignature
+    nameWithType: AbstractTlsKeyExchange.ParseSignature
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ParseSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: ProcessServerCredentials(TlsCredentials)
+  nameWithType: AbstractTlsKeyExchange.ProcessServerCredentials(TlsCredentials)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+    name: ProcessServerCredentials
+    nameWithType: AbstractTlsKeyExchange.ProcessServerCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCredentials
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+    name: TlsCredentials
+    nameWithType: TlsCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+    name: ProcessServerCredentials
+    nameWithType: AbstractTlsKeyExchange.ProcessServerCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCredentials
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+    name: TlsCredentials
+    nameWithType: TlsCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateServerKeyExchange
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateServerKeyExchange
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: GenerateServerKeyExchange()
+  nameWithType: AbstractTlsKeyExchange.GenerateServerKeyExchange()
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateServerKeyExchange()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateServerKeyExchange
+    name: GenerateServerKeyExchange
+    nameWithType: AbstractTlsKeyExchange.GenerateServerKeyExchange
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateServerKeyExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateServerKeyExchange
+    name: GenerateServerKeyExchange
+    nameWithType: AbstractTlsKeyExchange.GenerateServerKeyExchange
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateServerKeyExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerKeyExchange
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerKeyExchange
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: SkipServerKeyExchange()
+  nameWithType: AbstractTlsKeyExchange.SkipServerKeyExchange()
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerKeyExchange()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerKeyExchange
+    name: SkipServerKeyExchange
+    nameWithType: AbstractTlsKeyExchange.SkipServerKeyExchange
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerKeyExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerKeyExchange
+    name: SkipServerKeyExchange
+    nameWithType: AbstractTlsKeyExchange.SkipServerKeyExchange
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerKeyExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerKeyExchange(Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerKeyExchange(Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  isExternal: true
+  name: ProcessServerKeyExchange(Stream)
+  nameWithType: AbstractTlsKeyExchange.ProcessServerKeyExchange(Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerKeyExchange(Stream)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerKeyExchange(Stream)
+    name: ProcessServerKeyExchange
+    nameWithType: AbstractTlsKeyExchange.ProcessServerKeyExchange
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerKeyExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerKeyExchange(Stream)
+    name: ProcessServerKeyExchange
+    nameWithType: AbstractTlsKeyExchange.ProcessServerKeyExchange
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerKeyExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipClientCredentials
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipClientCredentials
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: SkipClientCredentials()
+  nameWithType: AbstractTlsKeyExchange.SkipClientCredentials()
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipClientCredentials()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipClientCredentials
+    name: SkipClientCredentials
+    nameWithType: AbstractTlsKeyExchange.SkipClientCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipClientCredentials
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipClientCredentials
+    name: SkipClientCredentials
+    nameWithType: AbstractTlsKeyExchange.SkipClientCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipClientCredentials
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.Tls.TlsSigner
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsSigner
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsSigner
+  nameWithType: TlsSigner
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsSigner
+- uid: DHParameters
+  isExternal: true
+  name: DHParameters
+  nameWithType: DHParameters
+  fullName: DHParameters
+- uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  commentId: T:Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  parent: Org.BouncyCastle.Crypto
+  name: AsymmetricKeyParameter
+  nameWithType: AsymmetricKeyParameter
+  fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Tls.TlsAgreementCredentials
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsAgreementCredentials
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsAgreementCredentials
+  nameWithType: TlsAgreementCredentials
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsAgreementCredentials
+- uid: DHPrivateKeyParameters
+  isExternal: true
+  name: DHPrivateKeyParameters
+  nameWithType: DHPrivateKeyParameters
+  fullName: DHPrivateKeyParameters
+- uid: DHPublicKeyParameters
+  isExternal: true
+  name: DHPublicKeyParameters
+  nameWithType: DHPublicKeyParameters
+  fullName: DHPublicKeyParameters
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.#ctor
+  name: TlsDHKeyExchange
+  nameWithType: TlsDHKeyExchange.TlsDHKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.TlsDHKeyExchange
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: Init(TlsContext)
+  nameWithType: AbstractTlsKeyExchange.Init(TlsContext)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+    name: Init
+    nameWithType: AbstractTlsKeyExchange.Init
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsContext
+    name: TlsContext
+    nameWithType: TlsContext
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+    name: Init
+    nameWithType: AbstractTlsKeyExchange.Init
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsContext
+    name: TlsContext
+    nameWithType: TlsContext
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.Init*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.Init
+  name: Init
+  nameWithType: TlsDHKeyExchange.Init
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.Init
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsContext
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsContext
+  nameWithType: TlsContext
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerCredentials
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerCredentials
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: SkipServerCredentials()
+  nameWithType: AbstractTlsKeyExchange.SkipServerCredentials()
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerCredentials()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerCredentials
+    name: SkipServerCredentials
+    nameWithType: AbstractTlsKeyExchange.SkipServerCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerCredentials
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerCredentials
+    name: SkipServerCredentials
+    nameWithType: AbstractTlsKeyExchange.SkipServerCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.SkipServerCredentials
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.SkipServerCredentials*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.SkipServerCredentials
+  name: SkipServerCredentials
+  nameWithType: TlsDHKeyExchange.SkipServerCredentials
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.SkipServerCredentials
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: ProcessServerCertificate(Certificate)
+  nameWithType: AbstractTlsKeyExchange.ProcessServerCertificate(Certificate)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+    name: ProcessServerCertificate
+    nameWithType: AbstractTlsKeyExchange.ProcessServerCertificate
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCertificate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.Certificate
+    name: Certificate
+    nameWithType: Certificate
+    fullName: Org.BouncyCastle.Crypto.Tls.Certificate
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+    name: ProcessServerCertificate
+    nameWithType: AbstractTlsKeyExchange.ProcessServerCertificate
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessServerCertificate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.Certificate
+    name: Certificate
+    nameWithType: Certificate
+    fullName: Org.BouncyCastle.Crypto.Tls.Certificate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessServerCertificate*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessServerCertificate
+  name: ProcessServerCertificate
+  nameWithType: TlsDHKeyExchange.ProcessServerCertificate
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessServerCertificate
+- uid: Org.BouncyCastle.Crypto.Tls.Certificate
+  commentId: T:Org.BouncyCastle.Crypto.Tls.Certificate
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: Certificate
+  nameWithType: Certificate
+  fullName: Org.BouncyCastle.Crypto.Tls.Certificate
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.RequiresServerKeyExchange
+  commentId: P:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.RequiresServerKeyExchange
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: RequiresServerKeyExchange
+  nameWithType: AbstractTlsKeyExchange.RequiresServerKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.RequiresServerKeyExchange
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.RequiresServerKeyExchange*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.RequiresServerKeyExchange
+  name: RequiresServerKeyExchange
+  nameWithType: TlsDHKeyExchange.RequiresServerKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.RequiresServerKeyExchange
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ValidateCertificateRequest(Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ValidateCertificateRequest(Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: ValidateCertificateRequest(CertificateRequest)
+  nameWithType: AbstractTlsKeyExchange.ValidateCertificateRequest(CertificateRequest)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ValidateCertificateRequest(Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ValidateCertificateRequest(Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+    name: ValidateCertificateRequest
+    nameWithType: AbstractTlsKeyExchange.ValidateCertificateRequest
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ValidateCertificateRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+    name: CertificateRequest
+    nameWithType: CertificateRequest
+    fullName: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ValidateCertificateRequest(Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+    name: ValidateCertificateRequest
+    nameWithType: AbstractTlsKeyExchange.ValidateCertificateRequest
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ValidateCertificateRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+    name: CertificateRequest
+    nameWithType: CertificateRequest
+    fullName: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateCertificateRequest*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateCertificateRequest
+  name: ValidateCertificateRequest
+  nameWithType: TlsDHKeyExchange.ValidateCertificateRequest
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateCertificateRequest
+- uid: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+  commentId: T:Org.BouncyCastle.Crypto.Tls.CertificateRequest
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: CertificateRequest
+  nameWithType: CertificateRequest
+  fullName: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: ProcessClientCredentials(TlsCredentials)
+  nameWithType: AbstractTlsKeyExchange.ProcessClientCredentials(TlsCredentials)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+    name: ProcessClientCredentials
+    nameWithType: AbstractTlsKeyExchange.ProcessClientCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCredentials
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+    name: TlsCredentials
+    nameWithType: TlsCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsCredentials)
+    name: ProcessClientCredentials
+    nameWithType: AbstractTlsKeyExchange.ProcessClientCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCredentials
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+    name: TlsCredentials
+    nameWithType: TlsCredentials
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCredentials*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCredentials
+  name: ProcessClientCredentials
+  nameWithType: TlsDHKeyExchange.ProcessClientCredentials
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCredentials
+- uid: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsCredentials
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsCredentials
+  nameWithType: TlsCredentials
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateClientKeyExchange(Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateClientKeyExchange(Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  isExternal: true
+  name: GenerateClientKeyExchange(Stream)
+  nameWithType: AbstractTlsKeyExchange.GenerateClientKeyExchange(Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateClientKeyExchange(Stream)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateClientKeyExchange(Stream)
+    name: GenerateClientKeyExchange
+    nameWithType: AbstractTlsKeyExchange.GenerateClientKeyExchange
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateClientKeyExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateClientKeyExchange(Stream)
+    name: GenerateClientKeyExchange
+    nameWithType: AbstractTlsKeyExchange.GenerateClientKeyExchange
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GenerateClientKeyExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GenerateClientKeyExchange*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GenerateClientKeyExchange
+  name: GenerateClientKeyExchange
+  nameWithType: TlsDHKeyExchange.GenerateClientKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GenerateClientKeyExchange
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: ProcessClientCertificate(Certificate)
+  nameWithType: AbstractTlsKeyExchange.ProcessClientCertificate(Certificate)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+    name: ProcessClientCertificate
+    nameWithType: AbstractTlsKeyExchange.ProcessClientCertificate
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCertificate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.Certificate
+    name: Certificate
+    nameWithType: Certificate
+    fullName: Org.BouncyCastle.Crypto.Tls.Certificate
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+    name: ProcessClientCertificate
+    nameWithType: AbstractTlsKeyExchange.ProcessClientCertificate
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientCertificate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.Certificate
+    name: Certificate
+    nameWithType: Certificate
+    fullName: Org.BouncyCastle.Crypto.Tls.Certificate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCertificate*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCertificate
+  name: ProcessClientCertificate
+  nameWithType: TlsDHKeyExchange.ProcessClientCertificate
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientCertificate
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientKeyExchange(Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientKeyExchange(Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  isExternal: true
+  name: ProcessClientKeyExchange(Stream)
+  nameWithType: AbstractTlsKeyExchange.ProcessClientKeyExchange(Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientKeyExchange(Stream)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientKeyExchange(Stream)
+    name: ProcessClientKeyExchange
+    nameWithType: AbstractTlsKeyExchange.ProcessClientKeyExchange
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientKeyExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientKeyExchange(Stream)
+    name: ProcessClientKeyExchange
+    nameWithType: AbstractTlsKeyExchange.ProcessClientKeyExchange
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.ProcessClientKeyExchange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientKeyExchange*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientKeyExchange
+  name: ProcessClientKeyExchange
+  nameWithType: TlsDHKeyExchange.ProcessClientKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ProcessClientKeyExchange
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GeneratePremasterSecret
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GeneratePremasterSecret
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange
+  name: GeneratePremasterSecret()
+  nameWithType: AbstractTlsKeyExchange.GeneratePremasterSecret()
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GeneratePremasterSecret()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GeneratePremasterSecret
+    name: GeneratePremasterSecret
+    nameWithType: AbstractTlsKeyExchange.GeneratePremasterSecret
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GeneratePremasterSecret
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GeneratePremasterSecret
+    name: GeneratePremasterSecret
+    nameWithType: AbstractTlsKeyExchange.GeneratePremasterSecret
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsKeyExchange.GeneratePremasterSecret
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GeneratePremasterSecret*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GeneratePremasterSecret
+  name: GeneratePremasterSecret
+  nameWithType: TlsDHKeyExchange.GeneratePremasterSecret
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.GeneratePremasterSecret
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.MinimumPrimeBits*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.MinimumPrimeBits
+  name: MinimumPrimeBits
+  nameWithType: TlsDHKeyExchange.MinimumPrimeBits
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.MinimumPrimeBits
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateDHParameters*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateDHParameters
+  name: ValidateDHParameters
+  nameWithType: TlsDHKeyExchange.ValidateDHParameters
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHKeyExchange.ValidateDHParameters

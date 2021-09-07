@@ -1,0 +1,1357 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner
+  id: TlsDsaSigner
+  parent: Org.BouncyCastle.Crypto.Tls
+  children:
+  - Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateDsaImpl(System.Byte)
+  - Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  - Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateVerifyer(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  - Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  - Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeInitParameters(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  - Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Boolean,System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  - Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.SignatureAlgorithm
+  - Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: TlsDsaSigner
+  nameWithType: TlsDsaSigner
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner
+  type: Class
+  source:
+    id: TlsDsaSigner
+    path: ''
+    startLine: 111668
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: 'public abstract class TlsDsaSigner : AbstractTlsSigner, TlsSigner'
+    content.vb: >-
+      Public MustInherit Class TlsDsaSigner
+          Inherits AbstractTlsSigner
+          Implements TlsSigner
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  derivedClasses:
+  - Org.BouncyCastle.Crypto.Tls.TlsDssSigner
+  - Org.BouncyCastle.Crypto.Tls.TlsECDsaSigner
+  implements:
+  - Org.BouncyCastle.Crypto.Tls.TlsSigner
+  inheritedMembers:
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.mContext
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  - Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.IsValidPublicKey(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  id: GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner
+  langs:
+  - csharp
+  - vb
+  name: GenerateRawSignature(SignatureAndHashAlgorithm, AsymmetricKeyParameter, Byte[])
+  nameWithType: TlsDsaSigner.GenerateRawSignature(SignatureAndHashAlgorithm, AsymmetricKeyParameter, Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte[])
+  type: Method
+  source:
+    id: GenerateRawSignature
+    path: ''
+    startLine: 111671
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override byte[] GenerateRawSignature(SignatureAndHashAlgorithm algorithm, AsymmetricKeyParameter privateKey, byte[] hash)
+    parameters:
+    - id: algorithm
+      type: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    - id: privateKey
+      type: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    - id: hash
+      type: System.Byte[]
+    return:
+      type: System.Byte[]
+    content.vb: Public Overrides Function GenerateRawSignature(algorithm As SignatureAndHashAlgorithm, privateKey As AsymmetricKeyParameter, hash As Byte()) As Byte()
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.GenerateRawSignature*
+  nameWithType.vb: TlsDsaSigner.GenerateRawSignature(SignatureAndHashAlgorithm, AsymmetricKeyParameter, Byte())
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte())
+  name.vb: GenerateRawSignature(SignatureAndHashAlgorithm, AsymmetricKeyParameter, Byte())
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  id: VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner
+  langs:
+  - csharp
+  - vb
+  name: VerifyRawSignature(SignatureAndHashAlgorithm, Byte[], AsymmetricKeyParameter, Byte[])
+  nameWithType: TlsDsaSigner.VerifyRawSignature(SignatureAndHashAlgorithm, Byte[], AsymmetricKeyParameter, Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, System.Byte[], Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte[])
+  type: Method
+  source:
+    id: VerifyRawSignature
+    path: ''
+    startLine: 111688
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override bool VerifyRawSignature(SignatureAndHashAlgorithm algorithm, byte[] sigBytes, AsymmetricKeyParameter publicKey, byte[] hash)
+    parameters:
+    - id: algorithm
+      type: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    - id: sigBytes
+      type: System.Byte[]
+    - id: publicKey
+      type: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    - id: hash
+      type: System.Byte[]
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function VerifyRawSignature(algorithm As SignatureAndHashAlgorithm, sigBytes As Byte(), publicKey As AsymmetricKeyParameter, hash As Byte()) As Boolean
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.VerifyRawSignature*
+  nameWithType.vb: TlsDsaSigner.VerifyRawSignature(SignatureAndHashAlgorithm, Byte(), AsymmetricKeyParameter, Byte())
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, System.Byte(), Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte())
+  name.vb: VerifyRawSignature(SignatureAndHashAlgorithm, Byte(), AsymmetricKeyParameter, Byte())
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  id: CreateSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner
+  langs:
+  - csharp
+  - vb
+  name: CreateSigner(SignatureAndHashAlgorithm, AsymmetricKeyParameter)
+  nameWithType: TlsDsaSigner.CreateSigner(SignatureAndHashAlgorithm, AsymmetricKeyParameter)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  type: Method
+  source:
+    id: CreateSigner
+    path: ''
+    startLine: 111704
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override ISigner CreateSigner(SignatureAndHashAlgorithm algorithm, AsymmetricKeyParameter privateKey)
+    parameters:
+    - id: algorithm
+      type: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    - id: privateKey
+      type: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    return:
+      type: Org.BouncyCastle.Crypto.ISigner
+    content.vb: Public Overrides Function CreateSigner(algorithm As SignatureAndHashAlgorithm, privateKey As AsymmetricKeyParameter) As ISigner
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateSigner*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateVerifyer(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateVerifyer(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  id: CreateVerifyer(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner
+  langs:
+  - csharp
+  - vb
+  name: CreateVerifyer(SignatureAndHashAlgorithm, AsymmetricKeyParameter)
+  nameWithType: TlsDsaSigner.CreateVerifyer(SignatureAndHashAlgorithm, AsymmetricKeyParameter)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateVerifyer(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  type: Method
+  source:
+    id: CreateVerifyer
+    path: ''
+    startLine: 111709
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public override ISigner CreateVerifyer(SignatureAndHashAlgorithm algorithm, AsymmetricKeyParameter publicKey)
+    parameters:
+    - id: algorithm
+      type: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    - id: publicKey
+      type: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    return:
+      type: Org.BouncyCastle.Crypto.ISigner
+    content.vb: Public Overrides Function CreateVerifyer(algorithm As SignatureAndHashAlgorithm, publicKey As AsymmetricKeyParameter) As ISigner
+  overridden: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateVerifyer*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeInitParameters(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeInitParameters(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  id: MakeInitParameters(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner
+  langs:
+  - csharp
+  - vb
+  name: MakeInitParameters(Boolean, ICipherParameters)
+  nameWithType: TlsDsaSigner.MakeInitParameters(Boolean, ICipherParameters)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeInitParameters(System.Boolean, Org.BouncyCastle.Crypto.ICipherParameters)
+  type: Method
+  source:
+    id: MakeInitParameters
+    path: ''
+    startLine: 111714
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected virtual ICipherParameters MakeInitParameters(bool forSigning, ICipherParameters cp)
+    parameters:
+    - id: forSigning
+      type: System.Boolean
+    - id: cp
+      type: Org.BouncyCastle.Crypto.ICipherParameters
+    return:
+      type: Org.BouncyCastle.Crypto.ICipherParameters
+    content.vb: Protected Overridable Function MakeInitParameters(forSigning As Boolean, cp As ICipherParameters) As ICipherParameters
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeInitParameters*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Boolean,System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Boolean,System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  id: MakeSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Boolean,System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner
+  langs:
+  - csharp
+  - vb
+  name: MakeSigner(SignatureAndHashAlgorithm, Boolean, Boolean, ICipherParameters)
+  nameWithType: TlsDsaSigner.MakeSigner(SignatureAndHashAlgorithm, Boolean, Boolean, ICipherParameters)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, System.Boolean, System.Boolean, Org.BouncyCastle.Crypto.ICipherParameters)
+  type: Method
+  source:
+    id: MakeSigner
+    path: ''
+    startLine: 111719
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected virtual ISigner MakeSigner(SignatureAndHashAlgorithm algorithm, bool raw, bool forSigning, ICipherParameters cp)
+    parameters:
+    - id: algorithm
+      type: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    - id: raw
+      type: System.Boolean
+    - id: forSigning
+      type: System.Boolean
+    - id: cp
+      type: Org.BouncyCastle.Crypto.ICipherParameters
+    return:
+      type: Org.BouncyCastle.Crypto.ISigner
+    content.vb: Protected Overridable Function MakeSigner(algorithm As SignatureAndHashAlgorithm, raw As Boolean, forSigning As Boolean, cp As ICipherParameters) As ISigner
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeSigner*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.SignatureAlgorithm
+  commentId: P:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.SignatureAlgorithm
+  id: SignatureAlgorithm
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner
+  langs:
+  - csharp
+  - vb
+  name: SignatureAlgorithm
+  nameWithType: TlsDsaSigner.SignatureAlgorithm
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.SignatureAlgorithm
+  type: Property
+  source:
+    id: SignatureAlgorithm
+    path: ''
+    startLine: 111736
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected abstract byte SignatureAlgorithm { get; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Protected MustOverride ReadOnly Property SignatureAlgorithm As Byte
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.SignatureAlgorithm*
+  modifiers.csharp:
+  - protected
+  - abstract
+  - get
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateDsaImpl(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateDsaImpl(System.Byte)
+  id: CreateDsaImpl(System.Byte)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner
+  langs:
+  - csharp
+  - vb
+  name: CreateDsaImpl(Byte)
+  nameWithType: TlsDsaSigner.CreateDsaImpl(Byte)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateDsaImpl(System.Byte)
+  type: Method
+  source:
+    id: CreateDsaImpl
+    path: ''
+    startLine: 111738
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected abstract IDsa CreateDsaImpl(byte hashAlgorithm)
+    parameters:
+    - id: hashAlgorithm
+      type: System.Byte
+    return:
+      type: Org.BouncyCastle.Crypto.IDsa
+    content.vb: Protected MustOverride Function CreateDsaImpl(hashAlgorithm As Byte) As IDsa
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateDsaImpl*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+references:
+- uid: Org.BouncyCastle.Crypto.Tls
+  commentId: N:Org.BouncyCastle.Crypto.Tls
+  name: Org.BouncyCastle.Crypto.Tls
+  nameWithType: Org.BouncyCastle.Crypto.Tls
+  fullName: Org.BouncyCastle.Crypto.Tls
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  commentId: T:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: AbstractTlsSigner
+  nameWithType: AbstractTlsSigner
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+- uid: Org.BouncyCastle.Crypto.Tls.TlsSigner
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsSigner
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsSigner
+  nameWithType: TlsSigner
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsSigner
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.mContext
+  commentId: F:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.mContext
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  name: mContext
+  nameWithType: AbstractTlsSigner.mContext
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.mContext
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  name: Init(TlsContext)
+  nameWithType: AbstractTlsSigner.Init(TlsContext)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+    name: Init
+    nameWithType: AbstractTlsSigner.Init
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsContext
+    name: TlsContext
+    nameWithType: TlsContext
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.Init(Org.BouncyCastle.Crypto.Tls.TlsContext)
+    name: Init
+    nameWithType: AbstractTlsSigner.Init
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.TlsContext
+    name: TlsContext
+    nameWithType: TlsContext
+    fullName: Org.BouncyCastle.Crypto.Tls.TlsContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  isExternal: true
+  name: GenerateRawSignature(AsymmetricKeyParameter, Byte[])
+  nameWithType: AbstractTlsSigner.GenerateRawSignature(AsymmetricKeyParameter, Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte[])
+  nameWithType.vb: AbstractTlsSigner.GenerateRawSignature(AsymmetricKeyParameter, Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte())
+  name.vb: GenerateRawSignature(AsymmetricKeyParameter, Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+    name: GenerateRawSignature
+    nameWithType: AbstractTlsSigner.GenerateRawSignature
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+    name: GenerateRawSignature
+    nameWithType: AbstractTlsSigner.GenerateRawSignature
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  isExternal: true
+  name: VerifyRawSignature(Byte[], AsymmetricKeyParameter, Byte[])
+  nameWithType: AbstractTlsSigner.VerifyRawSignature(Byte[], AsymmetricKeyParameter, Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(System.Byte[], Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte[])
+  nameWithType.vb: AbstractTlsSigner.VerifyRawSignature(Byte(), AsymmetricKeyParameter, Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(System.Byte(), Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte())
+  name.vb: VerifyRawSignature(Byte(), AsymmetricKeyParameter, Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+    name: VerifyRawSignature
+    nameWithType: AbstractTlsSigner.VerifyRawSignature
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+    name: VerifyRawSignature
+    nameWithType: AbstractTlsSigner.VerifyRawSignature
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  name: CreateSigner(AsymmetricKeyParameter)
+  nameWithType: AbstractTlsSigner.CreateSigner(AsymmetricKeyParameter)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: CreateSigner
+    nameWithType: AbstractTlsSigner.CreateSigner
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: CreateSigner
+    nameWithType: AbstractTlsSigner.CreateSigner
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  name: CreateVerifyer(AsymmetricKeyParameter)
+  nameWithType: AbstractTlsSigner.CreateVerifyer(AsymmetricKeyParameter)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: CreateVerifyer
+    nameWithType: AbstractTlsSigner.CreateVerifyer
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: CreateVerifyer
+    nameWithType: AbstractTlsSigner.CreateVerifyer
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.IsValidPublicKey(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.IsValidPublicKey(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  name: IsValidPublicKey(AsymmetricKeyParameter)
+  nameWithType: AbstractTlsSigner.IsValidPublicKey(AsymmetricKeyParameter)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.IsValidPublicKey(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.IsValidPublicKey(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: IsValidPublicKey
+    nameWithType: AbstractTlsSigner.IsValidPublicKey
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.IsValidPublicKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.IsValidPublicKey(Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: IsValidPublicKey
+    nameWithType: AbstractTlsSigner.IsValidPublicKey
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.IsValidPublicKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  isExternal: true
+  name: GenerateRawSignature(SignatureAndHashAlgorithm, AsymmetricKeyParameter, Byte[])
+  nameWithType: AbstractTlsSigner.GenerateRawSignature(SignatureAndHashAlgorithm, AsymmetricKeyParameter, Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte[])
+  nameWithType.vb: AbstractTlsSigner.GenerateRawSignature(SignatureAndHashAlgorithm, AsymmetricKeyParameter, Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte())
+  name.vb: GenerateRawSignature(SignatureAndHashAlgorithm, AsymmetricKeyParameter, Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+    name: GenerateRawSignature
+    nameWithType: AbstractTlsSigner.GenerateRawSignature
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    name: SignatureAndHashAlgorithm
+    nameWithType: SignatureAndHashAlgorithm
+    fullName: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+    name: GenerateRawSignature
+    nameWithType: AbstractTlsSigner.GenerateRawSignature
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.GenerateRawSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    name: SignatureAndHashAlgorithm
+    nameWithType: SignatureAndHashAlgorithm
+    fullName: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.GenerateRawSignature*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.GenerateRawSignature
+  name: GenerateRawSignature
+  nameWithType: TlsDsaSigner.GenerateRawSignature
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.GenerateRawSignature
+- uid: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+  commentId: T:Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: SignatureAndHashAlgorithm
+  nameWithType: SignatureAndHashAlgorithm
+  fullName: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+- uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  commentId: T:Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  parent: Org.BouncyCastle.Crypto
+  name: AsymmetricKeyParameter
+  nameWithType: AsymmetricKeyParameter
+  fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  isExternal: true
+  name: VerifyRawSignature(SignatureAndHashAlgorithm, Byte[], AsymmetricKeyParameter, Byte[])
+  nameWithType: AbstractTlsSigner.VerifyRawSignature(SignatureAndHashAlgorithm, Byte[], AsymmetricKeyParameter, Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, System.Byte[], Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte[])
+  nameWithType.vb: AbstractTlsSigner.VerifyRawSignature(SignatureAndHashAlgorithm, Byte(), AsymmetricKeyParameter, Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, System.Byte(), Org.BouncyCastle.Crypto.AsymmetricKeyParameter, System.Byte())
+  name.vb: VerifyRawSignature(SignatureAndHashAlgorithm, Byte(), AsymmetricKeyParameter, Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+    name: VerifyRawSignature
+    nameWithType: AbstractTlsSigner.VerifyRawSignature
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    name: SignatureAndHashAlgorithm
+    nameWithType: SignatureAndHashAlgorithm
+    fullName: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,System.Byte[],Org.BouncyCastle.Crypto.AsymmetricKeyParameter,System.Byte[])
+    name: VerifyRawSignature
+    nameWithType: AbstractTlsSigner.VerifyRawSignature
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.VerifyRawSignature
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    name: SignatureAndHashAlgorithm
+    nameWithType: SignatureAndHashAlgorithm
+    fullName: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.VerifyRawSignature*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.VerifyRawSignature
+  name: VerifyRawSignature
+  nameWithType: TlsDsaSigner.VerifyRawSignature
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.VerifyRawSignature
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  name: CreateSigner(SignatureAndHashAlgorithm, AsymmetricKeyParameter)
+  nameWithType: AbstractTlsSigner.CreateSigner(SignatureAndHashAlgorithm, AsymmetricKeyParameter)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: CreateSigner
+    nameWithType: AbstractTlsSigner.CreateSigner
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    name: SignatureAndHashAlgorithm
+    nameWithType: SignatureAndHashAlgorithm
+    fullName: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: CreateSigner
+    nameWithType: AbstractTlsSigner.CreateSigner
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateSigner
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    name: SignatureAndHashAlgorithm
+    nameWithType: SignatureAndHashAlgorithm
+    fullName: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateSigner*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateSigner
+  name: CreateSigner
+  nameWithType: TlsDsaSigner.CreateSigner
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateSigner
+- uid: Org.BouncyCastle.Crypto.ISigner
+  commentId: T:Org.BouncyCastle.Crypto.ISigner
+  parent: Org.BouncyCastle.Crypto
+  name: ISigner
+  nameWithType: ISigner
+  fullName: Org.BouncyCastle.Crypto.ISigner
+- uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  parent: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner
+  name: CreateVerifyer(SignatureAndHashAlgorithm, AsymmetricKeyParameter)
+  nameWithType: AbstractTlsSigner.CreateVerifyer(SignatureAndHashAlgorithm, AsymmetricKeyParameter)
+  fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm, Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: CreateVerifyer
+    nameWithType: AbstractTlsSigner.CreateVerifyer
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    name: SignatureAndHashAlgorithm
+    nameWithType: SignatureAndHashAlgorithm
+    fullName: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer(Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+    name: CreateVerifyer
+    nameWithType: AbstractTlsSigner.CreateVerifyer
+    fullName: Org.BouncyCastle.Crypto.Tls.AbstractTlsSigner.CreateVerifyer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+    name: SignatureAndHashAlgorithm
+    nameWithType: SignatureAndHashAlgorithm
+    fullName: Org.BouncyCastle.Crypto.Tls.SignatureAndHashAlgorithm
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    name: AsymmetricKeyParameter
+    nameWithType: AsymmetricKeyParameter
+    fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateVerifyer*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateVerifyer
+  name: CreateVerifyer
+  nameWithType: TlsDsaSigner.CreateVerifyer
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateVerifyer
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeInitParameters*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeInitParameters
+  name: MakeInitParameters
+  nameWithType: TlsDsaSigner.MakeInitParameters
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeInitParameters
+- uid: Org.BouncyCastle.Crypto.ICipherParameters
+  commentId: T:Org.BouncyCastle.Crypto.ICipherParameters
+  parent: Org.BouncyCastle.Crypto
+  name: ICipherParameters
+  nameWithType: ICipherParameters
+  fullName: Org.BouncyCastle.Crypto.ICipherParameters
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeSigner*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeSigner
+  name: MakeSigner
+  nameWithType: TlsDsaSigner.MakeSigner
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.MakeSigner
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.SignatureAlgorithm*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.SignatureAlgorithm
+  name: SignatureAlgorithm
+  nameWithType: TlsDsaSigner.SignatureAlgorithm
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.SignatureAlgorithm
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateDsaImpl*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateDsaImpl
+  name: CreateDsaImpl
+  nameWithType: TlsDsaSigner.CreateDsaImpl
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDsaSigner.CreateDsaImpl
+- uid: Org.BouncyCastle.Crypto.IDsa
+  commentId: T:Org.BouncyCastle.Crypto.IDsa
+  parent: Org.BouncyCastle.Crypto
+  name: IDsa
+  nameWithType: IDsa
+  fullName: Org.BouncyCastle.Crypto.IDsa

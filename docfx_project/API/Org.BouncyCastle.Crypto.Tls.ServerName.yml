@@ -1,0 +1,700 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName
+  commentId: T:Org.BouncyCastle.Crypto.Tls.ServerName
+  id: ServerName
+  parent: Org.BouncyCastle.Crypto.Tls
+  children:
+  - Org.BouncyCastle.Crypto.Tls.ServerName.#ctor(System.Byte,System.Object)
+  - Org.BouncyCastle.Crypto.Tls.ServerName.Encode(Stream)
+  - Org.BouncyCastle.Crypto.Tls.ServerName.GetHostName
+  - Org.BouncyCastle.Crypto.Tls.ServerName.IsCorrectType(System.Byte,System.Object)
+  - Org.BouncyCastle.Crypto.Tls.ServerName.mName
+  - Org.BouncyCastle.Crypto.Tls.ServerName.mNameType
+  - Org.BouncyCastle.Crypto.Tls.ServerName.Name
+  - Org.BouncyCastle.Crypto.Tls.ServerName.NameType
+  - Org.BouncyCastle.Crypto.Tls.ServerName.Parse(Stream)
+  langs:
+  - csharp
+  - vb
+  name: ServerName
+  nameWithType: ServerName
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName
+  type: Class
+  source:
+    id: ServerName
+    path: ''
+    startLine: 124007
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public class ServerName
+    content.vb: Public Class ServerName
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.mNameType
+  commentId: F:Org.BouncyCastle.Crypto.Tls.ServerName.mNameType
+  id: mNameType
+  parent: Org.BouncyCastle.Crypto.Tls.ServerName
+  langs:
+  - csharp
+  - vb
+  name: mNameType
+  nameWithType: ServerName.mNameType
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.mNameType
+  type: Field
+  source:
+    id: mNameType
+    path: ''
+    startLine: 124009
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected readonly byte mNameType
+    return:
+      type: System.Byte
+    content.vb: Protected ReadOnly mNameType As Byte
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.mName
+  commentId: F:Org.BouncyCastle.Crypto.Tls.ServerName.mName
+  id: mName
+  parent: Org.BouncyCastle.Crypto.Tls.ServerName
+  langs:
+  - csharp
+  - vb
+  name: mName
+  nameWithType: ServerName.mName
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.mName
+  type: Field
+  source:
+    id: mName
+    path: ''
+    startLine: 124010
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected readonly object mName
+    return:
+      type: System.Object
+    content.vb: Protected ReadOnly mName As Object
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.#ctor(System.Byte,System.Object)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.ServerName.#ctor(System.Byte,System.Object)
+  id: '#ctor(System.Byte,System.Object)'
+  parent: Org.BouncyCastle.Crypto.Tls.ServerName
+  langs:
+  - csharp
+  - vb
+  name: ServerName(Byte, Object)
+  nameWithType: ServerName.ServerName(Byte, Object)
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.ServerName(System.Byte, System.Object)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 124012
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public ServerName(byte nameType, object name)
+    parameters:
+    - id: nameType
+      type: System.Byte
+    - id: name
+      type: System.Object
+    content.vb: Public Sub New(nameType As Byte, name As Object)
+  overload: Org.BouncyCastle.Crypto.Tls.ServerName.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.NameType
+  commentId: P:Org.BouncyCastle.Crypto.Tls.ServerName.NameType
+  id: NameType
+  parent: Org.BouncyCastle.Crypto.Tls.ServerName
+  langs:
+  - csharp
+  - vb
+  name: NameType
+  nameWithType: ServerName.NameType
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.NameType
+  type: Property
+  source:
+    id: NameType
+    path: ''
+    startLine: 124021
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public virtual byte NameType { get; }
+    parameters: []
+    return:
+      type: System.Byte
+    content.vb: Public Overridable ReadOnly Property NameType As Byte
+  overload: Org.BouncyCastle.Crypto.Tls.ServerName.NameType*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.Name
+  commentId: P:Org.BouncyCastle.Crypto.Tls.ServerName.Name
+  id: Name
+  parent: Org.BouncyCastle.Crypto.Tls.ServerName
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ServerName.Name
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.Name
+  type: Property
+  source:
+    id: Name
+    path: ''
+    startLine: 124026
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public virtual object Name { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Overridable ReadOnly Property Name As Object
+  overload: Org.BouncyCastle.Crypto.Tls.ServerName.Name*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.GetHostName
+  commentId: M:Org.BouncyCastle.Crypto.Tls.ServerName.GetHostName
+  id: GetHostName
+  parent: Org.BouncyCastle.Crypto.Tls.ServerName
+  langs:
+  - csharp
+  - vb
+  name: GetHostName()
+  nameWithType: ServerName.GetHostName()
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.GetHostName()
+  type: Method
+  source:
+    id: GetHostName
+    path: ''
+    startLine: 124031
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public virtual string GetHostName()
+    return:
+      type: System.String
+    content.vb: Public Overridable Function GetHostName As String
+  overload: Org.BouncyCastle.Crypto.Tls.ServerName.GetHostName*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.Encode(Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.ServerName.Encode(Stream)
+  id: Encode(Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.ServerName
+  langs:
+  - csharp
+  - vb
+  name: Encode(Stream)
+  nameWithType: ServerName.Encode(Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.Encode(Stream)
+  type: Method
+  source:
+    id: Encode
+    path: ''
+    startLine: 124046
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: public virtual void Encode(Stream output)
+    parameters:
+    - id: output
+      type: Stream
+    content.vb: Public Overridable Sub Encode(output As Stream)
+  overload: Org.BouncyCastle.Crypto.Tls.ServerName.Encode*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.Parse(Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.ServerName.Parse(Stream)
+  id: Parse(Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.ServerName
+  langs:
+  - csharp
+  - vb
+  name: Parse(Stream)
+  nameWithType: ServerName.Parse(Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.Parse(Stream)
+  type: Method
+  source:
+    id: Parse
+    path: ''
+    startLine: 124071
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: public static ServerName Parse(Stream input)
+    parameters:
+    - id: input
+      type: Stream
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.ServerName
+    content.vb: Public Shared Function Parse(input As Stream) As ServerName
+  overload: Org.BouncyCastle.Crypto.Tls.ServerName.Parse*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.IsCorrectType(System.Byte,System.Object)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.ServerName.IsCorrectType(System.Byte,System.Object)
+  id: IsCorrectType(System.Byte,System.Object)
+  parent: Org.BouncyCastle.Crypto.Tls.ServerName
+  langs:
+  - csharp
+  - vb
+  name: IsCorrectType(Byte, Object)
+  nameWithType: ServerName.IsCorrectType(Byte, Object)
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.IsCorrectType(System.Byte, System.Object)
+  type: Method
+  source:
+    id: IsCorrectType
+    path: ''
+    startLine: 124093
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: protected static bool IsCorrectType(byte nameType, object name)
+    parameters:
+    - id: nameType
+      type: System.Byte
+    - id: name
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Protected Shared Function IsCorrectType(nameType As Byte, name As Object) As Boolean
+  overload: Org.BouncyCastle.Crypto.Tls.ServerName.IsCorrectType*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+references:
+- uid: Org.BouncyCastle.Crypto.Tls
+  commentId: N:Org.BouncyCastle.Crypto.Tls
+  name: Org.BouncyCastle.Crypto.Tls
+  nameWithType: Org.BouncyCastle.Crypto.Tls
+  fullName: Org.BouncyCastle.Crypto.Tls
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.ServerName.#ctor
+  name: ServerName
+  nameWithType: ServerName.ServerName
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.ServerName
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.NameType*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.ServerName.NameType
+  name: NameType
+  nameWithType: ServerName.NameType
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.NameType
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.Name*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.ServerName.Name
+  name: Name
+  nameWithType: ServerName.Name
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.Name
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.GetHostName*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.ServerName.GetHostName
+  name: GetHostName
+  nameWithType: ServerName.GetHostName
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.GetHostName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.Encode*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.ServerName.Encode
+  name: Encode
+  nameWithType: ServerName.Encode
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.Encode
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.Parse*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.ServerName.Parse
+  name: Parse
+  nameWithType: ServerName.Parse
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.Parse
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName
+  commentId: T:Org.BouncyCastle.Crypto.Tls.ServerName
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: ServerName
+  nameWithType: ServerName
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName
+- uid: Org.BouncyCastle.Crypto.Tls.ServerName.IsCorrectType*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.ServerName.IsCorrectType
+  name: IsCorrectType
+  nameWithType: ServerName.IsCorrectType
+  fullName: Org.BouncyCastle.Crypto.Tls.ServerName.IsCorrectType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

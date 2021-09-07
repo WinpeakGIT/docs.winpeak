@@ -1,0 +1,546 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.ServerSentEvents.Message
+  commentId: T:BestHTTP.ServerSentEvents.Message
+  id: Message
+  parent: BestHTTP.ServerSentEvents
+  children:
+  - BestHTTP.ServerSentEvents.Message.Data
+  - BestHTTP.ServerSentEvents.Message.Event
+  - BestHTTP.ServerSentEvents.Message.Id
+  - BestHTTP.ServerSentEvents.Message.Retry
+  - BestHTTP.ServerSentEvents.Message.ToString
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: Message
+  fullName: BestHTTP.ServerSentEvents.Message
+  type: Class
+  source:
+    id: Message
+    path: ''
+    startLine: 28289
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  syntax:
+    content: public sealed class Message
+    content.vb: Public NotInheritable Class Message
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: BestHTTP.ServerSentEvents.Message.Id
+  commentId: P:BestHTTP.ServerSentEvents.Message.Id
+  id: Id
+  parent: BestHTTP.ServerSentEvents.Message
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Message.Id
+  fullName: BestHTTP.ServerSentEvents.Message.Id
+  type: Property
+  source:
+    id: Id
+    path: ''
+    startLine: 28294
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nEvent Id of the message. If it&apos;s null, then it&apos;s not present.\n"
+  example: []
+  syntax:
+    content: public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Id As String
+  overload: BestHTTP.ServerSentEvents.Message.Id*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.ServerSentEvents.Message.Event
+  commentId: P:BestHTTP.ServerSentEvents.Message.Event
+  id: Event
+  parent: BestHTTP.ServerSentEvents.Message
+  langs:
+  - csharp
+  - vb
+  name: Event
+  nameWithType: Message.Event
+  fullName: BestHTTP.ServerSentEvents.Message.Event
+  type: Property
+  source:
+    id: Event
+    path: ''
+    startLine: 28299
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nName of the event, or an empty string.\n"
+  example: []
+  syntax:
+    content: public string Event { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Event As String
+  overload: BestHTTP.ServerSentEvents.Message.Event*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.ServerSentEvents.Message.Data
+  commentId: P:BestHTTP.ServerSentEvents.Message.Data
+  id: Data
+  parent: BestHTTP.ServerSentEvents.Message
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: Message.Data
+  fullName: BestHTTP.ServerSentEvents.Message.Data
+  type: Property
+  source:
+    id: Data
+    path: ''
+    startLine: 28304
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nThe actual payload of the message.\n"
+  example: []
+  syntax:
+    content: public string Data { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Data As String
+  overload: BestHTTP.ServerSentEvents.Message.Data*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.ServerSentEvents.Message.Retry
+  commentId: P:BestHTTP.ServerSentEvents.Message.Retry
+  id: Retry
+  parent: BestHTTP.ServerSentEvents.Message
+  langs:
+  - csharp
+  - vb
+  name: Retry
+  nameWithType: Message.Retry
+  fullName: BestHTTP.ServerSentEvents.Message.Retry
+  type: Property
+  source:
+    id: Retry
+    path: ''
+    startLine: 28309
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nA reconnection time, in milliseconds. This must initially be a user-agent-defined value, probably in the region of a few seconds.\n"
+  example: []
+  syntax:
+    content: public TimeSpan Retry { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public ReadOnly Property Retry As TimeSpan
+  overload: BestHTTP.ServerSentEvents.Message.Retry*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.ServerSentEvents.Message.ToString
+  commentId: M:BestHTTP.ServerSentEvents.Message.ToString
+  id: ToString
+  parent: BestHTTP.ServerSentEvents.Message
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Message.ToString()
+  fullName: BestHTTP.ServerSentEvents.Message.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 28311
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: BestHTTP.ServerSentEvents.Message.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: BestHTTP.ServerSentEvents
+  commentId: N:BestHTTP.ServerSentEvents
+  name: BestHTTP.ServerSentEvents
+  nameWithType: BestHTTP.ServerSentEvents
+  fullName: BestHTTP.ServerSentEvents
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.ServerSentEvents.Message.Id*
+  commentId: Overload:BestHTTP.ServerSentEvents.Message.Id
+  name: Id
+  nameWithType: Message.Id
+  fullName: BestHTTP.ServerSentEvents.Message.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BestHTTP.ServerSentEvents.Message.Event*
+  commentId: Overload:BestHTTP.ServerSentEvents.Message.Event
+  name: Event
+  nameWithType: Message.Event
+  fullName: BestHTTP.ServerSentEvents.Message.Event
+- uid: BestHTTP.ServerSentEvents.Message.Data*
+  commentId: Overload:BestHTTP.ServerSentEvents.Message.Data
+  name: Data
+  nameWithType: Message.Data
+  fullName: BestHTTP.ServerSentEvents.Message.Data
+- uid: BestHTTP.ServerSentEvents.Message.Retry*
+  commentId: Overload:BestHTTP.ServerSentEvents.Message.Retry
+  name: Retry
+  nameWithType: Message.Retry
+  fullName: BestHTTP.ServerSentEvents.Message.Retry
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.ServerSentEvents.Message.ToString*
+  commentId: Overload:BestHTTP.ServerSentEvents.Message.ToString
+  name: ToString
+  nameWithType: Message.ToString
+  fullName: BestHTTP.ServerSentEvents.Message.ToString

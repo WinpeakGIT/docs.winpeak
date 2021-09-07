@@ -1,0 +1,636 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.Statistics.GeneralStatistics
+  commentId: T:BestHTTP.Statistics.GeneralStatistics
+  id: GeneralStatistics
+  parent: BestHTTP.Statistics
+  children:
+  - BestHTTP.Statistics.GeneralStatistics.ActiveConnections
+  - BestHTTP.Statistics.GeneralStatistics.CacheEntityCount
+  - BestHTTP.Statistics.GeneralStatistics.CacheSize
+  - BestHTTP.Statistics.GeneralStatistics.Connections
+  - BestHTTP.Statistics.GeneralStatistics.CookieCount
+  - BestHTTP.Statistics.GeneralStatistics.CookieJarSize
+  - BestHTTP.Statistics.GeneralStatistics.FreeConnections
+  - BestHTTP.Statistics.GeneralStatistics.QueryFlags
+  - BestHTTP.Statistics.GeneralStatistics.RecycledConnections
+  - BestHTTP.Statistics.GeneralStatistics.RequestsInQueue
+  langs:
+  - csharp
+  - vb
+  name: GeneralStatistics
+  nameWithType: GeneralStatistics
+  fullName: BestHTTP.Statistics.GeneralStatistics
+  type: Struct
+  source:
+    id: GeneralStatistics
+    path: ''
+    startLine: 29421
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Statistics
+  syntax:
+    content: public struct GeneralStatistics
+    content.vb: Public Structure GeneralStatistics
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: BestHTTP.Statistics.GeneralStatistics.QueryFlags
+  commentId: F:BestHTTP.Statistics.GeneralStatistics.QueryFlags
+  id: QueryFlags
+  parent: BestHTTP.Statistics.GeneralStatistics
+  langs:
+  - csharp
+  - vb
+  name: QueryFlags
+  nameWithType: GeneralStatistics.QueryFlags
+  fullName: BestHTTP.Statistics.GeneralStatistics.QueryFlags
+  type: Field
+  source:
+    id: QueryFlags
+    path: ''
+    startLine: 29423
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Statistics
+  syntax:
+    content: public StatisticsQueryFlags QueryFlags
+    return:
+      type: BestHTTP.Statistics.StatisticsQueryFlags
+    content.vb: Public QueryFlags As StatisticsQueryFlags
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Statistics.GeneralStatistics.Connections
+  commentId: F:BestHTTP.Statistics.GeneralStatistics.Connections
+  id: Connections
+  parent: BestHTTP.Statistics.GeneralStatistics
+  langs:
+  - csharp
+  - vb
+  name: Connections
+  nameWithType: GeneralStatistics.Connections
+  fullName: BestHTTP.Statistics.GeneralStatistics.Connections
+  type: Field
+  source:
+    id: Connections
+    path: ''
+    startLine: 29430
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Statistics
+  summary: "\nNumber of HTTPConnection instances\n"
+  example: []
+  syntax:
+    content: public int Connections
+    return:
+      type: System.Int32
+    content.vb: Public Connections As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Statistics.GeneralStatistics.ActiveConnections
+  commentId: F:BestHTTP.Statistics.GeneralStatistics.ActiveConnections
+  id: ActiveConnections
+  parent: BestHTTP.Statistics.GeneralStatistics
+  langs:
+  - csharp
+  - vb
+  name: ActiveConnections
+  nameWithType: GeneralStatistics.ActiveConnections
+  fullName: BestHTTP.Statistics.GeneralStatistics.ActiveConnections
+  type: Field
+  source:
+    id: ActiveConnections
+    path: ''
+    startLine: 29435
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Statistics
+  summary: "\nNumber of active connections. These connections are currently processing a request.\n"
+  example: []
+  syntax:
+    content: public int ActiveConnections
+    return:
+      type: System.Int32
+    content.vb: Public ActiveConnections As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Statistics.GeneralStatistics.FreeConnections
+  commentId: F:BestHTTP.Statistics.GeneralStatistics.FreeConnections
+  id: FreeConnections
+  parent: BestHTTP.Statistics.GeneralStatistics
+  langs:
+  - csharp
+  - vb
+  name: FreeConnections
+  nameWithType: GeneralStatistics.FreeConnections
+  fullName: BestHTTP.Statistics.GeneralStatistics.FreeConnections
+  type: Field
+  source:
+    id: FreeConnections
+    path: ''
+    startLine: 29440
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Statistics
+  summary: "\nNumber of free connections. These connections are finished with there requests and waiting for another request or to recycle.\n"
+  example: []
+  syntax:
+    content: public int FreeConnections
+    return:
+      type: System.Int32
+    content.vb: Public FreeConnections As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Statistics.GeneralStatistics.RecycledConnections
+  commentId: F:BestHTTP.Statistics.GeneralStatistics.RecycledConnections
+  id: RecycledConnections
+  parent: BestHTTP.Statistics.GeneralStatistics
+  langs:
+  - csharp
+  - vb
+  name: RecycledConnections
+  nameWithType: GeneralStatistics.RecycledConnections
+  fullName: BestHTTP.Statistics.GeneralStatistics.RecycledConnections
+  type: Field
+  source:
+    id: RecycledConnections
+    path: ''
+    startLine: 29445
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Statistics
+  summary: "\nNumber of recycled connections. These connections will be removed as soon as possible.\n"
+  example: []
+  syntax:
+    content: public int RecycledConnections
+    return:
+      type: System.Int32
+    content.vb: Public RecycledConnections As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Statistics.GeneralStatistics.RequestsInQueue
+  commentId: F:BestHTTP.Statistics.GeneralStatistics.RequestsInQueue
+  id: RequestsInQueue
+  parent: BestHTTP.Statistics.GeneralStatistics
+  langs:
+  - csharp
+  - vb
+  name: RequestsInQueue
+  nameWithType: GeneralStatistics.RequestsInQueue
+  fullName: BestHTTP.Statistics.GeneralStatistics.RequestsInQueue
+  type: Field
+  source:
+    id: RequestsInQueue
+    path: ''
+    startLine: 29450
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Statistics
+  summary: "\nNumber of requests that are waiting in the queue for a free connection.\n"
+  example: []
+  syntax:
+    content: public int RequestsInQueue
+    return:
+      type: System.Int32
+    content.vb: Public RequestsInQueue As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Statistics.GeneralStatistics.CacheEntityCount
+  commentId: F:BestHTTP.Statistics.GeneralStatistics.CacheEntityCount
+  id: CacheEntityCount
+  parent: BestHTTP.Statistics.GeneralStatistics
+  langs:
+  - csharp
+  - vb
+  name: CacheEntityCount
+  nameWithType: GeneralStatistics.CacheEntityCount
+  fullName: BestHTTP.Statistics.GeneralStatistics.CacheEntityCount
+  type: Field
+  source:
+    id: CacheEntityCount
+    path: ''
+    startLine: 29459
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Statistics
+  summary: "\nNumber of cached responses.\n"
+  example: []
+  syntax:
+    content: public int CacheEntityCount
+    return:
+      type: System.Int32
+    content.vb: Public CacheEntityCount As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Statistics.GeneralStatistics.CacheSize
+  commentId: F:BestHTTP.Statistics.GeneralStatistics.CacheSize
+  id: CacheSize
+  parent: BestHTTP.Statistics.GeneralStatistics
+  langs:
+  - csharp
+  - vb
+  name: CacheSize
+  nameWithType: GeneralStatistics.CacheSize
+  fullName: BestHTTP.Statistics.GeneralStatistics.CacheSize
+  type: Field
+  source:
+    id: CacheSize
+    path: ''
+    startLine: 29464
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Statistics
+  summary: "\nSum size of the cached responses in bytes.\n"
+  example: []
+  syntax:
+    content: public ulong CacheSize
+    return:
+      type: System.UInt64
+    content.vb: Public CacheSize As ULong
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Statistics.GeneralStatistics.CookieCount
+  commentId: F:BestHTTP.Statistics.GeneralStatistics.CookieCount
+  id: CookieCount
+  parent: BestHTTP.Statistics.GeneralStatistics
+  langs:
+  - csharp
+  - vb
+  name: CookieCount
+  nameWithType: GeneralStatistics.CookieCount
+  fullName: BestHTTP.Statistics.GeneralStatistics.CookieCount
+  type: Field
+  source:
+    id: CookieCount
+    path: ''
+    startLine: 29473
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Statistics
+  summary: "\nNumber of cookies in the Cookie Jar.\n"
+  example: []
+  syntax:
+    content: public int CookieCount
+    return:
+      type: System.Int32
+    content.vb: Public CookieCount As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.Statistics.GeneralStatistics.CookieJarSize
+  commentId: F:BestHTTP.Statistics.GeneralStatistics.CookieJarSize
+  id: CookieJarSize
+  parent: BestHTTP.Statistics.GeneralStatistics
+  langs:
+  - csharp
+  - vb
+  name: CookieJarSize
+  nameWithType: GeneralStatistics.CookieJarSize
+  fullName: BestHTTP.Statistics.GeneralStatistics.CookieJarSize
+  type: Field
+  source:
+    id: CookieJarSize
+    path: ''
+    startLine: 29478
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Statistics
+  summary: "\nSum size of the stored cookies in bytes.\n"
+  example: []
+  syntax:
+    content: public uint CookieJarSize
+    return:
+      type: System.UInt32
+    content.vb: Public CookieJarSize As UInteger
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BestHTTP.Statistics
+  commentId: N:BestHTTP.Statistics
+  name: BestHTTP.Statistics
+  nameWithType: BestHTTP.Statistics
+  fullName: BestHTTP.Statistics
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.Statistics.StatisticsQueryFlags
+  commentId: T:BestHTTP.Statistics.StatisticsQueryFlags
+  parent: BestHTTP.Statistics
+  name: StatisticsQueryFlags
+  nameWithType: StatisticsQueryFlags
+  fullName: BestHTTP.Statistics.StatisticsQueryFlags
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32

@@ -1,0 +1,561 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory
+  commentId: T:Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory
+  id: Asn1VerifierFactory
+  parent: Org.BouncyCastle.Crypto.Operators
+  children:
+  - Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.#ctor(AlgorithmIdentifier,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  - Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.#ctor(System.String,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  - Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.AlgorithmDetails
+  - Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.CreateCalculator
+  langs:
+  - csharp
+  - vb
+  name: Asn1VerifierFactory
+  nameWithType: Asn1VerifierFactory
+  fullName: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory
+  type: Class
+  source:
+    id: Asn1VerifierFactory
+    path: ''
+    startLine: 139688
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Operators
+  summary: "\nVerifier class for signature verification in ASN.1 based profiles that use an AlgorithmIdentifier to preserve\nsignature algorithm details.\n"
+  example: []
+  syntax:
+    content: 'public class Asn1VerifierFactory : IVerifierFactory'
+    content.vb: >-
+      Public Class Asn1VerifierFactory
+          Implements IVerifierFactory
+  inheritance:
+  - System.Object
+  implements:
+  - Org.BouncyCastle.Crypto.IVerifierFactory
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.#ctor(System.String,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  commentId: M:Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.#ctor(System.String,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  id: '#ctor(System.String,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)'
+  parent: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory
+  langs:
+  - csharp
+  - vb
+  name: Asn1VerifierFactory(String, AsymmetricKeyParameter)
+  nameWithType: Asn1VerifierFactory.Asn1VerifierFactory(String, AsymmetricKeyParameter)
+  fullName: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.Asn1VerifierFactory(System.String, Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 139698
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Operators
+  summary: "\nBase constructor.\n"
+  example: []
+  syntax:
+    content: public Asn1VerifierFactory(string algorithm, AsymmetricKeyParameter publicKey)
+    parameters:
+    - id: algorithm
+      type: System.String
+      description: The name of the signature algorithm to use.
+    - id: publicKey
+      type: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+      description: The public key to be used in the verification operation.
+    content.vb: Public Sub New(algorithm As String, publicKey As AsymmetricKeyParameter)
+  overload: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.#ctor(AlgorithmIdentifier,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  commentId: M:Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.#ctor(AlgorithmIdentifier,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  id: '#ctor(AlgorithmIdentifier,Org.BouncyCastle.Crypto.AsymmetricKeyParameter)'
+  parent: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory
+  langs:
+  - csharp
+  - vb
+  name: Asn1VerifierFactory(AlgorithmIdentifier, AsymmetricKeyParameter)
+  nameWithType: Asn1VerifierFactory.Asn1VerifierFactory(AlgorithmIdentifier, AsymmetricKeyParameter)
+  fullName: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.Asn1VerifierFactory(AlgorithmIdentifier, Org.BouncyCastle.Crypto.AsymmetricKeyParameter)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 139706
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Operators
+  syntax:
+    content: public Asn1VerifierFactory(AlgorithmIdentifier algorithm, AsymmetricKeyParameter publicKey)
+    parameters:
+    - id: algorithm
+      type: AlgorithmIdentifier
+    - id: publicKey
+      type: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+    content.vb: Public Sub New(algorithm As AlgorithmIdentifier, publicKey As AsymmetricKeyParameter)
+  overload: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.AlgorithmDetails
+  commentId: P:Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.AlgorithmDetails
+  id: AlgorithmDetails
+  parent: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory
+  langs:
+  - csharp
+  - vb
+  name: AlgorithmDetails
+  nameWithType: Asn1VerifierFactory.AlgorithmDetails
+  fullName: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.AlgorithmDetails
+  type: Property
+  source:
+    id: AlgorithmDetails
+    path: ''
+    startLine: 139712
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Operators
+  syntax:
+    content: public object AlgorithmDetails { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property AlgorithmDetails As Object
+  overload: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.AlgorithmDetails*
+  implements:
+  - Org.BouncyCastle.Crypto.IVerifierFactory.AlgorithmDetails
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.CreateCalculator
+  commentId: M:Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.CreateCalculator
+  id: CreateCalculator
+  parent: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateCalculator()
+  nameWithType: Asn1VerifierFactory.CreateCalculator()
+  fullName: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.CreateCalculator()
+  type: Method
+  source:
+    id: CreateCalculator
+    path: ''
+    startLine: 139717
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Operators
+  syntax:
+    content: public IStreamCalculator CreateCalculator()
+    return:
+      type: Org.BouncyCastle.Crypto.IStreamCalculator
+    content.vb: Public Function CreateCalculator As IStreamCalculator
+  overload: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.CreateCalculator*
+  implements:
+  - Org.BouncyCastle.Crypto.IVerifierFactory.CreateCalculator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Org.BouncyCastle.Crypto.Operators
+  commentId: N:Org.BouncyCastle.Crypto.Operators
+  name: Org.BouncyCastle.Crypto.Operators
+  nameWithType: Org.BouncyCastle.Crypto.Operators
+  fullName: Org.BouncyCastle.Crypto.Operators
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.IVerifierFactory
+  commentId: T:Org.BouncyCastle.Crypto.IVerifierFactory
+  parent: Org.BouncyCastle.Crypto
+  name: IVerifierFactory
+  nameWithType: IVerifierFactory
+  fullName: Org.BouncyCastle.Crypto.IVerifierFactory
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.#ctor
+  name: Asn1VerifierFactory
+  nameWithType: Asn1VerifierFactory.Asn1VerifierFactory
+  fullName: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.Asn1VerifierFactory
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  commentId: T:Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+  parent: Org.BouncyCastle.Crypto
+  name: AsymmetricKeyParameter
+  nameWithType: AsymmetricKeyParameter
+  fullName: Org.BouncyCastle.Crypto.AsymmetricKeyParameter
+- uid: AlgorithmIdentifier
+  isExternal: true
+  name: AlgorithmIdentifier
+  nameWithType: AlgorithmIdentifier
+  fullName: AlgorithmIdentifier
+- uid: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.AlgorithmDetails*
+  commentId: Overload:Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.AlgorithmDetails
+  name: AlgorithmDetails
+  nameWithType: Asn1VerifierFactory.AlgorithmDetails
+  fullName: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.AlgorithmDetails
+- uid: Org.BouncyCastle.Crypto.IVerifierFactory.AlgorithmDetails
+  commentId: P:Org.BouncyCastle.Crypto.IVerifierFactory.AlgorithmDetails
+  parent: Org.BouncyCastle.Crypto.IVerifierFactory
+  name: AlgorithmDetails
+  nameWithType: IVerifierFactory.AlgorithmDetails
+  fullName: Org.BouncyCastle.Crypto.IVerifierFactory.AlgorithmDetails
+- uid: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.CreateCalculator*
+  commentId: Overload:Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.CreateCalculator
+  name: CreateCalculator
+  nameWithType: Asn1VerifierFactory.CreateCalculator
+  fullName: Org.BouncyCastle.Crypto.Operators.Asn1VerifierFactory.CreateCalculator
+- uid: Org.BouncyCastle.Crypto.IVerifierFactory.CreateCalculator
+  commentId: M:Org.BouncyCastle.Crypto.IVerifierFactory.CreateCalculator
+  parent: Org.BouncyCastle.Crypto.IVerifierFactory
+  name: CreateCalculator()
+  nameWithType: IVerifierFactory.CreateCalculator()
+  fullName: Org.BouncyCastle.Crypto.IVerifierFactory.CreateCalculator()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IVerifierFactory.CreateCalculator
+    name: CreateCalculator
+    nameWithType: IVerifierFactory.CreateCalculator
+    fullName: Org.BouncyCastle.Crypto.IVerifierFactory.CreateCalculator
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IVerifierFactory.CreateCalculator
+    name: CreateCalculator
+    nameWithType: IVerifierFactory.CreateCalculator
+    fullName: Org.BouncyCastle.Crypto.IVerifierFactory.CreateCalculator
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.IStreamCalculator
+  commentId: T:Org.BouncyCastle.Crypto.IStreamCalculator
+  parent: Org.BouncyCastle.Crypto
+  name: IStreamCalculator
+  nameWithType: IStreamCalculator
+  fullName: Org.BouncyCastle.Crypto.IStreamCalculator

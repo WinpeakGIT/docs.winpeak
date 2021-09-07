@@ -1,0 +1,1414 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TlsExtensionsUtilities
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TlsExtensionsUtilities
+   ">
+    <meta name="generator" content="docfx 2.58.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo_rect_blue.png" height="46" width="46" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities">
+  
+  
+  <h1 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities" class="text-break">Class TlsExtensionsUtilities
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TlsExtensionsUtilities</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Org.BouncyCastle.Crypto.Tls.html">Org.BouncyCastle.Crypto.Tls</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class TlsExtensionsUtilities</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddEncryptThenMacExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddEncryptThenMacExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddEncryptThenMacExtension_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddEncryptThenMacExtension(System.Collections.IDictionary)">AddEncryptThenMacExtension(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddEncryptThenMacExtension(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddExtendedMasterSecretExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddExtendedMasterSecretExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddExtendedMasterSecretExtension_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddExtendedMasterSecretExtension(System.Collections.IDictionary)">AddExtendedMasterSecretExtension(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddExtendedMasterSecretExtension(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddHeartbeatExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddHeartbeatExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddHeartbeatExtension_System_Collections_IDictionary_Org_BouncyCastle_Crypto_Tls_HeartbeatExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddHeartbeatExtension(System.Collections.IDictionary,Org.BouncyCastle.Crypto.Tls.HeartbeatExtension)">AddHeartbeatExtension(IDictionary, HeartbeatExtension)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddHeartbeatExtension(IDictionary extensions, HeartbeatExtension heartbeatExtension)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.HeartbeatExtension.html">HeartbeatExtension</a></td>
+        <td><span class="parametername">heartbeatExtension</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddMaxFragmentLengthExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddMaxFragmentLengthExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddMaxFragmentLengthExtension_System_Collections_IDictionary_System_Byte_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddMaxFragmentLengthExtension(System.Collections.IDictionary,System.Byte)">AddMaxFragmentLengthExtension(IDictionary, Byte)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddMaxFragmentLengthExtension(IDictionary extensions, byte maxFragmentLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">maxFragmentLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddPaddingExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddPaddingExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddPaddingExtension_System_Collections_IDictionary_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddPaddingExtension(System.Collections.IDictionary,System.Int32)">AddPaddingExtension(IDictionary, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPaddingExtension(IDictionary extensions, int dataLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dataLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddServerNameExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddServerNameExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddServerNameExtension_System_Collections_IDictionary_Org_BouncyCastle_Crypto_Tls_ServerNameList_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddServerNameExtension(System.Collections.IDictionary,Org.BouncyCastle.Crypto.Tls.ServerNameList)">AddServerNameExtension(IDictionary, ServerNameList)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddServerNameExtension(IDictionary extensions, ServerNameList serverNameList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.ServerNameList.html">ServerNameList</a></td>
+        <td><span class="parametername">serverNameList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddStatusRequestExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddStatusRequestExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddStatusRequestExtension_System_Collections_IDictionary_Org_BouncyCastle_Crypto_Tls_CertificateStatusRequest_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddStatusRequestExtension(System.Collections.IDictionary,Org.BouncyCastle.Crypto.Tls.CertificateStatusRequest)">AddStatusRequestExtension(IDictionary, CertificateStatusRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddStatusRequestExtension(IDictionary extensions, CertificateStatusRequest statusRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.CertificateStatusRequest.html">CertificateStatusRequest</a></td>
+        <td><span class="parametername">statusRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddTruncatedHMacExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddTruncatedHMacExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_AddTruncatedHMacExtension_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.AddTruncatedHMacExtension(System.Collections.IDictionary)">AddTruncatedHMacExtension(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddTruncatedHMacExtension(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateEmptyExtensionData_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateEmptyExtensionData*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateEmptyExtensionData" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateEmptyExtensionData">CreateEmptyExtensionData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] CreateEmptyExtensionData()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateEncryptThenMacExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateEncryptThenMacExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateEncryptThenMacExtension" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateEncryptThenMacExtension">CreateEncryptThenMacExtension()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] CreateEncryptThenMacExtension()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateExtendedMasterSecretExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateExtendedMasterSecretExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateExtendedMasterSecretExtension" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateExtendedMasterSecretExtension">CreateExtendedMasterSecretExtension()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] CreateExtendedMasterSecretExtension()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateHeartbeatExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateHeartbeatExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateHeartbeatExtension_Org_BouncyCastle_Crypto_Tls_HeartbeatExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateHeartbeatExtension(Org.BouncyCastle.Crypto.Tls.HeartbeatExtension)">CreateHeartbeatExtension(HeartbeatExtension)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] CreateHeartbeatExtension(HeartbeatExtension heartbeatExtension)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.HeartbeatExtension.html">HeartbeatExtension</a></td>
+        <td><span class="parametername">heartbeatExtension</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateMaxFragmentLengthExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateMaxFragmentLengthExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateMaxFragmentLengthExtension_System_Byte_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateMaxFragmentLengthExtension(System.Byte)">CreateMaxFragmentLengthExtension(Byte)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] CreateMaxFragmentLengthExtension(byte maxFragmentLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">maxFragmentLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreatePaddingExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreatePaddingExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreatePaddingExtension_System_Int32_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreatePaddingExtension(System.Int32)">CreatePaddingExtension(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] CreatePaddingExtension(int dataLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dataLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateServerNameExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateServerNameExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateServerNameExtension_Org_BouncyCastle_Crypto_Tls_ServerNameList_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateServerNameExtension(Org.BouncyCastle.Crypto.Tls.ServerNameList)">CreateServerNameExtension(ServerNameList)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] CreateServerNameExtension(ServerNameList serverNameList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.ServerNameList.html">ServerNameList</a></td>
+        <td><span class="parametername">serverNameList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateStatusRequestExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateStatusRequestExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateStatusRequestExtension_Org_BouncyCastle_Crypto_Tls_CertificateStatusRequest_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateStatusRequestExtension(Org.BouncyCastle.Crypto.Tls.CertificateStatusRequest)">CreateStatusRequestExtension(CertificateStatusRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] CreateStatusRequestExtension(CertificateStatusRequest statusRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.CertificateStatusRequest.html">CertificateStatusRequest</a></td>
+        <td><span class="parametername">statusRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateTruncatedHMacExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateTruncatedHMacExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_CreateTruncatedHMacExtension" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.CreateTruncatedHMacExtension">CreateTruncatedHMacExtension()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] CreateTruncatedHMacExtension()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_EnsureExtensionsInitialised_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.EnsureExtensionsInitialised*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_EnsureExtensionsInitialised_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.EnsureExtensionsInitialised(System.Collections.IDictionary)">EnsureExtensionsInitialised(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDictionary EnsureExtensionsInitialised(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_GetHeartbeatExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.GetHeartbeatExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_GetHeartbeatExtension_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.GetHeartbeatExtension(System.Collections.IDictionary)">GetHeartbeatExtension(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HeartbeatExtension GetHeartbeatExtension(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.HeartbeatExtension.html">HeartbeatExtension</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_GetMaxFragmentLengthExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.GetMaxFragmentLengthExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_GetMaxFragmentLengthExtension_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.GetMaxFragmentLengthExtension(System.Collections.IDictionary)">GetMaxFragmentLengthExtension(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static short GetMaxFragmentLengthExtension(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_GetPaddingExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.GetPaddingExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_GetPaddingExtension_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.GetPaddingExtension(System.Collections.IDictionary)">GetPaddingExtension(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetPaddingExtension(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_GetServerNameExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.GetServerNameExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_GetServerNameExtension_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.GetServerNameExtension(System.Collections.IDictionary)">GetServerNameExtension(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ServerNameList GetServerNameExtension(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.ServerNameList.html">ServerNameList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_GetStatusRequestExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.GetStatusRequestExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_GetStatusRequestExtension_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.GetStatusRequestExtension(System.Collections.IDictionary)">GetStatusRequestExtension(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CertificateStatusRequest GetStatusRequestExtension(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.CertificateStatusRequest.html">CertificateStatusRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_HasEncryptThenMacExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.HasEncryptThenMacExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_HasEncryptThenMacExtension_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.HasEncryptThenMacExtension(System.Collections.IDictionary)">HasEncryptThenMacExtension(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEncryptThenMacExtension(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_HasExtendedMasterSecretExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.HasExtendedMasterSecretExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_HasExtendedMasterSecretExtension_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.HasExtendedMasterSecretExtension(System.Collections.IDictionary)">HasExtendedMasterSecretExtension(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasExtendedMasterSecretExtension(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_HasTruncatedHMacExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.HasTruncatedHMacExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_HasTruncatedHMacExtension_System_Collections_IDictionary_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.HasTruncatedHMacExtension(System.Collections.IDictionary)">HasTruncatedHMacExtension(IDictionary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasTruncatedHMacExtension(IDictionary extensions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IDictionary</span></td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadEncryptThenMacExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadEncryptThenMacExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadEncryptThenMacExtension_System_Byte___" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadEncryptThenMacExtension(System.Byte[])">ReadEncryptThenMacExtension(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ReadEncryptThenMacExtension(byte[] extensionData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">extensionData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadExtendedMasterSecretExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadExtendedMasterSecretExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadExtendedMasterSecretExtension_System_Byte___" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadExtendedMasterSecretExtension(System.Byte[])">ReadExtendedMasterSecretExtension(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ReadExtendedMasterSecretExtension(byte[] extensionData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">extensionData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadHeartbeatExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadHeartbeatExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadHeartbeatExtension_System_Byte___" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadHeartbeatExtension(System.Byte[])">ReadHeartbeatExtension(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HeartbeatExtension ReadHeartbeatExtension(byte[] extensionData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">extensionData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.HeartbeatExtension.html">HeartbeatExtension</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadMaxFragmentLengthExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadMaxFragmentLengthExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadMaxFragmentLengthExtension_System_Byte___" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadMaxFragmentLengthExtension(System.Byte[])">ReadMaxFragmentLengthExtension(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static short ReadMaxFragmentLengthExtension(byte[] extensionData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">extensionData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadPaddingExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadPaddingExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadPaddingExtension_System_Byte___" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadPaddingExtension(System.Byte[])">ReadPaddingExtension(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ReadPaddingExtension(byte[] extensionData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">extensionData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadServerNameExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadServerNameExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadServerNameExtension_System_Byte___" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadServerNameExtension(System.Byte[])">ReadServerNameExtension(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ServerNameList ReadServerNameExtension(byte[] extensionData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">extensionData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.ServerNameList.html">ServerNameList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadStatusRequestExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadStatusRequestExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadStatusRequestExtension_System_Byte___" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadStatusRequestExtension(System.Byte[])">ReadStatusRequestExtension(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CertificateStatusRequest ReadStatusRequestExtension(byte[] extensionData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">extensionData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Org.BouncyCastle.Crypto.Tls.CertificateStatusRequest.html">CertificateStatusRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadTruncatedHMacExtension_" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadTruncatedHMacExtension*"></a>
+  <h4 id="Org_BouncyCastle_Crypto_Tls_TlsExtensionsUtilities_ReadTruncatedHMacExtension_System_Byte___" data-uid="Org.BouncyCastle.Crypto.Tls.TlsExtensionsUtilities.ReadTruncatedHMacExtension(System.Byte[])">ReadTruncatedHMacExtension(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ReadTruncatedHMacExtension(byte[] extensionData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">extensionData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

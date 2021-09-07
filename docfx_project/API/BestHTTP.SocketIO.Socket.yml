@@ -1,0 +1,1712 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.SocketIO.Socket
+  commentId: T:BestHTTP.SocketIO.Socket
+  id: Socket
+  parent: BestHTTP.SocketIO
+  children:
+  - BestHTTP.SocketIO.Socket.AutoDecodePayload
+  - BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Disconnect(System.Boolean)
+  - BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+  - BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+  - BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitEvent(System.String,System.Object[])
+  - BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#OnPacket(BestHTTP.SocketIO.Packet)
+  - BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Open
+  - BestHTTP.SocketIO.Socket.Disconnect
+  - BestHTTP.SocketIO.Socket.Emit(System.String,BestHTTP.SocketIO.Events.SocketIOAckCallback,System.Object[])
+  - BestHTTP.SocketIO.Socket.Emit(System.String,System.Object[])
+  - BestHTTP.SocketIO.Socket.EmitAck(BestHTTP.SocketIO.Packet,System.Object[])
+  - BestHTTP.SocketIO.Socket.IsOpen
+  - BestHTTP.SocketIO.Socket.Manager
+  - BestHTTP.SocketIO.Socket.Namespace
+  - BestHTTP.SocketIO.Socket.Off
+  - BestHTTP.SocketIO.Socket.Off(BestHTTP.SocketIO.SocketIOEventTypes)
+  - BestHTTP.SocketIO.Socket.Off(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  - BestHTTP.SocketIO.Socket.Off(System.String)
+  - BestHTTP.SocketIO.Socket.Off(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  - BestHTTP.SocketIO.Socket.On(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  - BestHTTP.SocketIO.Socket.On(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  - BestHTTP.SocketIO.Socket.On(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  - BestHTTP.SocketIO.Socket.On(System.String,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  - BestHTTP.SocketIO.Socket.Once(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  - BestHTTP.SocketIO.Socket.Once(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  - BestHTTP.SocketIO.Socket.Once(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  - BestHTTP.SocketIO.Socket.Once(System.String,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: Socket
+  nameWithType: Socket
+  fullName: BestHTTP.SocketIO.Socket
+  type: Class
+  source:
+    id: Socket
+    path: ''
+    startLine: 34752
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nThis class represents a Socket.IO namespace.\n"
+  example: []
+  syntax:
+    content: 'public sealed class Socket : ISocket'
+    content.vb: >-
+      Public NotInheritable Class Socket
+          Implements ISocket
+  inheritance:
+  - System.Object
+  implements:
+  - BestHTTP.SocketIO.ISocket
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: BestHTTP.SocketIO.Socket.Manager
+  commentId: P:BestHTTP.SocketIO.Socket.Manager
+  id: Manager
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Manager
+  nameWithType: Socket.Manager
+  fullName: BestHTTP.SocketIO.Socket.Manager
+  type: Property
+  source:
+    id: Manager
+    path: ''
+    startLine: 34759
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nThe SocketManager instance that created this socket.\n"
+  example: []
+  syntax:
+    content: public SocketManager Manager { get; }
+    parameters: []
+    return:
+      type: BestHTTP.SocketIO.SocketManager
+    content.vb: Public ReadOnly Property Manager As SocketManager
+  overload: BestHTTP.SocketIO.Socket.Manager*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Socket.Namespace
+  commentId: P:BestHTTP.SocketIO.Socket.Namespace
+  id: Namespace
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Namespace
+  nameWithType: Socket.Namespace
+  fullName: BestHTTP.SocketIO.Socket.Namespace
+  type: Property
+  source:
+    id: Namespace
+    path: ''
+    startLine: 34764
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nThe namespace that this socket is bound to.\n"
+  example: []
+  syntax:
+    content: public string Namespace { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Namespace As String
+  overload: BestHTTP.SocketIO.Socket.Namespace*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Socket.IsOpen
+  commentId: P:BestHTTP.SocketIO.Socket.IsOpen
+  id: IsOpen
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: IsOpen
+  nameWithType: Socket.IsOpen
+  fullName: BestHTTP.SocketIO.Socket.IsOpen
+  type: Property
+  source:
+    id: IsOpen
+    path: ''
+    startLine: 34769
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nTrue if the socket is connected and open to the server. False otherwise.\n"
+  example: []
+  syntax:
+    content: public bool IsOpen { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsOpen As Boolean
+  overload: BestHTTP.SocketIO.Socket.IsOpen*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Socket.AutoDecodePayload
+  commentId: P:BestHTTP.SocketIO.Socket.AutoDecodePayload
+  id: AutoDecodePayload
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: AutoDecodePayload
+  nameWithType: Socket.AutoDecodePayload
+  fullName: BestHTTP.SocketIO.Socket.AutoDecodePayload
+  type: Property
+  source:
+    id: AutoDecodePayload
+    path: ''
+    startLine: 34774
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nWhile this property is True, the socket will decode the Packet&apos;s Payload data using the parent SocketManager&apos;s Encoder. You must set this property before any event subscription! Its default value is True;\n"
+  example: []
+  syntax:
+    content: public bool AutoDecodePayload { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AutoDecodePayload As Boolean
+  overload: BestHTTP.SocketIO.Socket.AutoDecodePayload*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Open
+  commentId: M:BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Open
+  id: BestHTTP#SocketIO#ISocket#Open
+  isEii: true
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: ISocket.Open()
+  nameWithType: Socket.ISocket.Open()
+  fullName: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.Open()
+  type: Method
+  source:
+    id: BestHTTP.SocketIO.ISocket.Open
+    path: ''
+    startLine: 34814
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nInternal function to start opening the socket.\n"
+  example: []
+  syntax:
+    content: void ISocket.Open()
+    content.vb: Sub BestHTTP.SocketIO.ISocket.Open Implements ISocket.Open
+  overload: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Open*
+  implements:
+  - BestHTTP.SocketIO.ISocket.Open
+  nameWithType.vb: Socket.BestHTTP.SocketIO.ISocket.Open()
+  name.vb: BestHTTP.SocketIO.ISocket.Open()
+- uid: BestHTTP.SocketIO.Socket.Disconnect
+  commentId: M:BestHTTP.SocketIO.Socket.Disconnect
+  id: Disconnect
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Disconnect()
+  nameWithType: Socket.Disconnect()
+  fullName: BestHTTP.SocketIO.Socket.Disconnect()
+  type: Method
+  source:
+    id: Disconnect
+    path: ''
+    startLine: 34833
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nDisconnects this socket/namespace.\n"
+  example: []
+  syntax:
+    content: public void Disconnect()
+    content.vb: Public Sub Disconnect
+  overload: BestHTTP.SocketIO.Socket.Disconnect*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Disconnect(System.Boolean)
+  commentId: M:BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Disconnect(System.Boolean)
+  id: BestHTTP#SocketIO#ISocket#Disconnect(System.Boolean)
+  isEii: true
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: ISocket.Disconnect(Boolean)
+  nameWithType: Socket.ISocket.Disconnect(Boolean)
+  fullName: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.Disconnect(System.Boolean)
+  type: Method
+  source:
+    id: BestHTTP.SocketIO.ISocket.Disconnect
+    path: ''
+    startLine: 34841
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nDisconnects this socket/namespace.\n"
+  example: []
+  syntax:
+    content: void ISocket.Disconnect(bool remove)
+    parameters:
+    - id: remove
+      type: System.Boolean
+    content.vb: Sub BestHTTP.SocketIO.ISocket.Disconnect(remove As Boolean) Implements ISocket.Disconnect
+  overload: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Disconnect*
+  implements:
+  - BestHTTP.SocketIO.ISocket.Disconnect(System.Boolean)
+  nameWithType.vb: Socket.BestHTTP.SocketIO.ISocket.Disconnect(Boolean)
+  name.vb: BestHTTP.SocketIO.ISocket.Disconnect(Boolean)
+- uid: BestHTTP.SocketIO.Socket.Emit(System.String,System.Object[])
+  commentId: M:BestHTTP.SocketIO.Socket.Emit(System.String,System.Object[])
+  id: Emit(System.String,System.Object[])
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Emit(String, Object[])
+  nameWithType: Socket.Emit(String, Object[])
+  fullName: BestHTTP.SocketIO.Socket.Emit(System.String, System.Object[])
+  type: Method
+  source:
+    id: Emit
+    path: ''
+    startLine: 34869
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public Socket Emit(string eventName, params object[] args)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: args
+      type: System.Object[]
+    return:
+      type: BestHTTP.SocketIO.Socket
+    content.vb: Public Function Emit(eventName As String, ParamArray args As Object()) As Socket
+  overload: BestHTTP.SocketIO.Socket.Emit*
+  nameWithType.vb: Socket.Emit(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BestHTTP.SocketIO.Socket.Emit(System.String, System.Object())
+  name.vb: Emit(String, Object())
+- uid: BestHTTP.SocketIO.Socket.Emit(System.String,BestHTTP.SocketIO.Events.SocketIOAckCallback,System.Object[])
+  commentId: M:BestHTTP.SocketIO.Socket.Emit(System.String,BestHTTP.SocketIO.Events.SocketIOAckCallback,System.Object[])
+  id: Emit(System.String,BestHTTP.SocketIO.Events.SocketIOAckCallback,System.Object[])
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Emit(String, SocketIOAckCallback, Object[])
+  nameWithType: Socket.Emit(String, SocketIOAckCallback, Object[])
+  fullName: BestHTTP.SocketIO.Socket.Emit(System.String, BestHTTP.SocketIO.Events.SocketIOAckCallback, System.Object[])
+  type: Method
+  source:
+    id: Emit
+    path: ''
+    startLine: 34874
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public Socket Emit(string eventName, SocketIOAckCallback callback, params object[] args)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: callback
+      type: BestHTTP.SocketIO.Events.SocketIOAckCallback
+    - id: args
+      type: System.Object[]
+    return:
+      type: BestHTTP.SocketIO.Socket
+    content.vb: Public Function Emit(eventName As String, callback As SocketIOAckCallback, ParamArray args As Object()) As Socket
+  overload: BestHTTP.SocketIO.Socket.Emit*
+  nameWithType.vb: Socket.Emit(String, SocketIOAckCallback, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BestHTTP.SocketIO.Socket.Emit(System.String, BestHTTP.SocketIO.Events.SocketIOAckCallback, System.Object())
+  name.vb: Emit(String, SocketIOAckCallback, Object())
+- uid: BestHTTP.SocketIO.Socket.EmitAck(BestHTTP.SocketIO.Packet,System.Object[])
+  commentId: M:BestHTTP.SocketIO.Socket.EmitAck(BestHTTP.SocketIO.Packet,System.Object[])
+  id: EmitAck(BestHTTP.SocketIO.Packet,System.Object[])
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: EmitAck(Packet, Object[])
+  nameWithType: Socket.EmitAck(Packet, Object[])
+  fullName: BestHTTP.SocketIO.Socket.EmitAck(BestHTTP.SocketIO.Packet, System.Object[])
+  type: Method
+  source:
+    id: EmitAck
+    path: ''
+    startLine: 34956
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public Socket EmitAck(Packet originalPacket, params object[] args)
+    parameters:
+    - id: originalPacket
+      type: BestHTTP.SocketIO.Packet
+    - id: args
+      type: System.Object[]
+    return:
+      type: BestHTTP.SocketIO.Socket
+    content.vb: Public Function EmitAck(originalPacket As Packet, ParamArray args As Object()) As Socket
+  overload: BestHTTP.SocketIO.Socket.EmitAck*
+  nameWithType.vb: Socket.EmitAck(Packet, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BestHTTP.SocketIO.Socket.EmitAck(BestHTTP.SocketIO.Packet, System.Object())
+  name.vb: EmitAck(Packet, Object())
+- uid: BestHTTP.SocketIO.Socket.On(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  commentId: M:BestHTTP.SocketIO.Socket.On(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  id: On(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: On(String, SocketIOCallback)
+  nameWithType: Socket.On(String, SocketIOCallback)
+  fullName: BestHTTP.SocketIO.Socket.On(System.String, BestHTTP.SocketIO.Events.SocketIOCallback)
+  type: Method
+  source:
+    id: On
+    path: ''
+    startLine: 35003
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nRegister a callback for a given name\n"
+  example: []
+  syntax:
+    content: public void On(string eventName, SocketIOCallback callback)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: callback
+      type: BestHTTP.SocketIO.Events.SocketIOCallback
+    content.vb: Public Sub On(eventName As String, callback As SocketIOCallback)
+  overload: BestHTTP.SocketIO.Socket.On*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.On(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  commentId: M:BestHTTP.SocketIO.Socket.On(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  id: On(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: On(SocketIOEventTypes, SocketIOCallback)
+  nameWithType: Socket.On(SocketIOEventTypes, SocketIOCallback)
+  fullName: BestHTTP.SocketIO.Socket.On(BestHTTP.SocketIO.SocketIOEventTypes, BestHTTP.SocketIO.Events.SocketIOCallback)
+  type: Method
+  source:
+    id: On
+    path: ''
+    startLine: 35008
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public void On(SocketIOEventTypes type, SocketIOCallback callback)
+    parameters:
+    - id: type
+      type: BestHTTP.SocketIO.SocketIOEventTypes
+    - id: callback
+      type: BestHTTP.SocketIO.Events.SocketIOCallback
+    content.vb: Public Sub On(type As SocketIOEventTypes, callback As SocketIOCallback)
+  overload: BestHTTP.SocketIO.Socket.On*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.On(System.String,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  commentId: M:BestHTTP.SocketIO.Socket.On(System.String,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  id: On(System.String,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: On(String, SocketIOCallback, Boolean)
+  nameWithType: Socket.On(String, SocketIOCallback, Boolean)
+  fullName: BestHTTP.SocketIO.Socket.On(System.String, BestHTTP.SocketIO.Events.SocketIOCallback, System.Boolean)
+  type: Method
+  source:
+    id: On
+    path: ''
+    startLine: 35015
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public void On(string eventName, SocketIOCallback callback, bool autoDecodePayload)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: callback
+      type: BestHTTP.SocketIO.Events.SocketIOCallback
+    - id: autoDecodePayload
+      type: System.Boolean
+    content.vb: Public Sub On(eventName As String, callback As SocketIOCallback, autoDecodePayload As Boolean)
+  overload: BestHTTP.SocketIO.Socket.On*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.On(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  commentId: M:BestHTTP.SocketIO.Socket.On(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  id: On(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: On(SocketIOEventTypes, SocketIOCallback, Boolean)
+  nameWithType: Socket.On(SocketIOEventTypes, SocketIOCallback, Boolean)
+  fullName: BestHTTP.SocketIO.Socket.On(BestHTTP.SocketIO.SocketIOEventTypes, BestHTTP.SocketIO.Events.SocketIOCallback, System.Boolean)
+  type: Method
+  source:
+    id: On
+    path: ''
+    startLine: 35020
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public void On(SocketIOEventTypes type, SocketIOCallback callback, bool autoDecodePayload)
+    parameters:
+    - id: type
+      type: BestHTTP.SocketIO.SocketIOEventTypes
+    - id: callback
+      type: BestHTTP.SocketIO.Events.SocketIOCallback
+    - id: autoDecodePayload
+      type: System.Boolean
+    content.vb: Public Sub On(type As SocketIOEventTypes, callback As SocketIOCallback, autoDecodePayload As Boolean)
+  overload: BestHTTP.SocketIO.Socket.On*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.Once(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  commentId: M:BestHTTP.SocketIO.Socket.Once(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  id: Once(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Once(String, SocketIOCallback)
+  nameWithType: Socket.Once(String, SocketIOCallback)
+  fullName: BestHTTP.SocketIO.Socket.Once(System.String, BestHTTP.SocketIO.Events.SocketIOCallback)
+  type: Method
+  source:
+    id: Once
+    path: ''
+    startLine: 35031
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public void Once(string eventName, SocketIOCallback callback)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: callback
+      type: BestHTTP.SocketIO.Events.SocketIOCallback
+    content.vb: Public Sub Once(eventName As String, callback As SocketIOCallback)
+  overload: BestHTTP.SocketIO.Socket.Once*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.Once(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  commentId: M:BestHTTP.SocketIO.Socket.Once(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  id: Once(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Once(SocketIOEventTypes, SocketIOCallback)
+  nameWithType: Socket.Once(SocketIOEventTypes, SocketIOCallback)
+  fullName: BestHTTP.SocketIO.Socket.Once(BestHTTP.SocketIO.SocketIOEventTypes, BestHTTP.SocketIO.Events.SocketIOCallback)
+  type: Method
+  source:
+    id: Once
+    path: ''
+    startLine: 35036
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public void Once(SocketIOEventTypes type, SocketIOCallback callback)
+    parameters:
+    - id: type
+      type: BestHTTP.SocketIO.SocketIOEventTypes
+    - id: callback
+      type: BestHTTP.SocketIO.Events.SocketIOCallback
+    content.vb: Public Sub Once(type As SocketIOEventTypes, callback As SocketIOCallback)
+  overload: BestHTTP.SocketIO.Socket.Once*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.Once(System.String,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  commentId: M:BestHTTP.SocketIO.Socket.Once(System.String,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  id: Once(System.String,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Once(String, SocketIOCallback, Boolean)
+  nameWithType: Socket.Once(String, SocketIOCallback, Boolean)
+  fullName: BestHTTP.SocketIO.Socket.Once(System.String, BestHTTP.SocketIO.Events.SocketIOCallback, System.Boolean)
+  type: Method
+  source:
+    id: Once
+    path: ''
+    startLine: 35041
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public void Once(string eventName, SocketIOCallback callback, bool autoDecodePayload)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: callback
+      type: BestHTTP.SocketIO.Events.SocketIOCallback
+    - id: autoDecodePayload
+      type: System.Boolean
+    content.vb: Public Sub Once(eventName As String, callback As SocketIOCallback, autoDecodePayload As Boolean)
+  overload: BestHTTP.SocketIO.Socket.Once*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.Once(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  commentId: M:BestHTTP.SocketIO.Socket.Once(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  id: Once(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback,System.Boolean)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Once(SocketIOEventTypes, SocketIOCallback, Boolean)
+  nameWithType: Socket.Once(SocketIOEventTypes, SocketIOCallback, Boolean)
+  fullName: BestHTTP.SocketIO.Socket.Once(BestHTTP.SocketIO.SocketIOEventTypes, BestHTTP.SocketIO.Events.SocketIOCallback, System.Boolean)
+  type: Method
+  source:
+    id: Once
+    path: ''
+    startLine: 35046
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public void Once(SocketIOEventTypes type, SocketIOCallback callback, bool autoDecodePayload)
+    parameters:
+    - id: type
+      type: BestHTTP.SocketIO.SocketIOEventTypes
+    - id: callback
+      type: BestHTTP.SocketIO.Events.SocketIOCallback
+    - id: autoDecodePayload
+      type: System.Boolean
+    content.vb: Public Sub Once(type As SocketIOEventTypes, callback As SocketIOCallback, autoDecodePayload As Boolean)
+  overload: BestHTTP.SocketIO.Socket.Once*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.Off
+  commentId: M:BestHTTP.SocketIO.Socket.Off
+  id: Off
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Off()
+  nameWithType: Socket.Off()
+  fullName: BestHTTP.SocketIO.Socket.Off()
+  type: Method
+  source:
+    id: Off
+    path: ''
+    startLine: 35058
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nRemove all callbacks for all events.\n"
+  example: []
+  syntax:
+    content: public void Off()
+    content.vb: Public Sub Off
+  overload: BestHTTP.SocketIO.Socket.Off*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.Off(System.String)
+  commentId: M:BestHTTP.SocketIO.Socket.Off(System.String)
+  id: Off(System.String)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Off(String)
+  nameWithType: Socket.Off(String)
+  fullName: BestHTTP.SocketIO.Socket.Off(System.String)
+  type: Method
+  source:
+    id: Off
+    path: ''
+    startLine: 35066
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nRemoves all callbacks to the given event.\n"
+  example: []
+  syntax:
+    content: public void Off(string eventName)
+    parameters:
+    - id: eventName
+      type: System.String
+    content.vb: Public Sub Off(eventName As String)
+  overload: BestHTTP.SocketIO.Socket.Off*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.Off(BestHTTP.SocketIO.SocketIOEventTypes)
+  commentId: M:BestHTTP.SocketIO.Socket.Off(BestHTTP.SocketIO.SocketIOEventTypes)
+  id: Off(BestHTTP.SocketIO.SocketIOEventTypes)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Off(SocketIOEventTypes)
+  nameWithType: Socket.Off(SocketIOEventTypes)
+  fullName: BestHTTP.SocketIO.Socket.Off(BestHTTP.SocketIO.SocketIOEventTypes)
+  type: Method
+  source:
+    id: Off
+    path: ''
+    startLine: 35074
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nRemoves all callbacks to the given event.\n"
+  example: []
+  syntax:
+    content: public void Off(SocketIOEventTypes type)
+    parameters:
+    - id: type
+      type: BestHTTP.SocketIO.SocketIOEventTypes
+    content.vb: Public Sub Off(type As SocketIOEventTypes)
+  overload: BestHTTP.SocketIO.Socket.Off*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.Off(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  commentId: M:BestHTTP.SocketIO.Socket.Off(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  id: Off(System.String,BestHTTP.SocketIO.Events.SocketIOCallback)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Off(String, SocketIOCallback)
+  nameWithType: Socket.Off(String, SocketIOCallback)
+  fullName: BestHTTP.SocketIO.Socket.Off(System.String, BestHTTP.SocketIO.Events.SocketIOCallback)
+  type: Method
+  source:
+    id: Off
+    path: ''
+    startLine: 35082
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nRemove the specified callback.\n"
+  example: []
+  syntax:
+    content: public void Off(string eventName, SocketIOCallback callback)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: callback
+      type: BestHTTP.SocketIO.Events.SocketIOCallback
+    content.vb: Public Sub Off(eventName As String, callback As SocketIOCallback)
+  overload: BestHTTP.SocketIO.Socket.Off*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.Off(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  commentId: M:BestHTTP.SocketIO.Socket.Off(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  id: Off(BestHTTP.SocketIO.SocketIOEventTypes,BestHTTP.SocketIO.Events.SocketIOCallback)
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: Off(SocketIOEventTypes, SocketIOCallback)
+  nameWithType: Socket.Off(SocketIOEventTypes, SocketIOCallback)
+  fullName: BestHTTP.SocketIO.Socket.Off(BestHTTP.SocketIO.SocketIOEventTypes, BestHTTP.SocketIO.Events.SocketIOCallback)
+  type: Method
+  source:
+    id: Off
+    path: ''
+    startLine: 35090
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nRemove the specified callback.\n"
+  example: []
+  syntax:
+    content: public void Off(SocketIOEventTypes type, SocketIOCallback callback)
+    parameters:
+    - id: type
+      type: BestHTTP.SocketIO.SocketIOEventTypes
+    - id: callback
+      type: BestHTTP.SocketIO.Events.SocketIOCallback
+    content.vb: Public Sub Off(type As SocketIOEventTypes, callback As SocketIOCallback)
+  overload: BestHTTP.SocketIO.Socket.Off*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#OnPacket(BestHTTP.SocketIO.Packet)
+  commentId: M:BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#OnPacket(BestHTTP.SocketIO.Packet)
+  id: BestHTTP#SocketIO#ISocket#OnPacket(BestHTTP.SocketIO.Packet)
+  isEii: true
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: ISocket.OnPacket(Packet)
+  nameWithType: Socket.ISocket.OnPacket(Packet)
+  fullName: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.OnPacket(BestHTTP.SocketIO.Packet)
+  type: Method
+  source:
+    id: BestHTTP.SocketIO.ISocket.OnPacket
+    path: ''
+    startLine: 35102
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nLast call of the OnPacket chain(Transport -> Manager -> Socket), we will dispatch the event if there is any callback\n"
+  example: []
+  syntax:
+    content: void ISocket.OnPacket(Packet packet)
+    parameters:
+    - id: packet
+      type: BestHTTP.SocketIO.Packet
+    content.vb: Sub BestHTTP.SocketIO.ISocket.OnPacket(packet As Packet) Implements ISocket.OnPacket
+  overload: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#OnPacket*
+  implements:
+  - BestHTTP.SocketIO.ISocket.OnPacket(BestHTTP.SocketIO.Packet)
+  nameWithType.vb: Socket.BestHTTP.SocketIO.ISocket.OnPacket(Packet)
+  name.vb: BestHTTP.SocketIO.ISocket.OnPacket(Packet)
+- uid: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+  commentId: M:BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+  id: BestHTTP#SocketIO#ISocket#EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+  isEii: true
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: ISocket.EmitEvent(SocketIOEventTypes, Object[])
+  nameWithType: Socket.ISocket.EmitEvent(SocketIOEventTypes, Object[])
+  fullName: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes, System.Object[])
+  type: Method
+  source:
+    id: BestHTTP.SocketIO.ISocket.EmitEvent
+    path: ''
+    startLine: 35166
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nEmits an internal packet-less event to the user level.\n"
+  example: []
+  syntax:
+    content: void ISocket.EmitEvent(SocketIOEventTypes type, params object[] args)
+    parameters:
+    - id: type
+      type: BestHTTP.SocketIO.SocketIOEventTypes
+    - id: args
+      type: System.Object[]
+    content.vb: Sub BestHTTP.SocketIO.ISocket.EmitEvent(type As SocketIOEventTypes, ParamArray args As Object()) Implements ISocket.EmitEvent
+  overload: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitEvent*
+  implements:
+  - BestHTTP.SocketIO.ISocket.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+  nameWithType.vb: Socket.BestHTTP.SocketIO.ISocket.EmitEvent(SocketIOEventTypes, Object())
+  fullName.vb: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes, System.Object())
+  name.vb: BestHTTP.SocketIO.ISocket.EmitEvent(SocketIOEventTypes, Object())
+- uid: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitEvent(System.String,System.Object[])
+  commentId: M:BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitEvent(System.String,System.Object[])
+  id: BestHTTP#SocketIO#ISocket#EmitEvent(System.String,System.Object[])
+  isEii: true
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: ISocket.EmitEvent(String, Object[])
+  nameWithType: Socket.ISocket.EmitEvent(String, Object[])
+  fullName: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.EmitEvent(System.String, System.Object[])
+  type: Method
+  source:
+    id: BestHTTP.SocketIO.ISocket.EmitEvent
+    path: ''
+    startLine: 35174
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nEmits an internal packet-less event to the user level.\n"
+  example: []
+  syntax:
+    content: void ISocket.EmitEvent(string eventName, params object[] args)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: args
+      type: System.Object[]
+    content.vb: Sub BestHTTP.SocketIO.ISocket.EmitEvent(eventName As String, ParamArray args As Object()) Implements ISocket.EmitEvent
+  overload: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitEvent*
+  implements:
+  - BestHTTP.SocketIO.ISocket.EmitEvent(System.String,System.Object[])
+  nameWithType.vb: Socket.BestHTTP.SocketIO.ISocket.EmitEvent(String, Object())
+  fullName.vb: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.EmitEvent(System.String, System.Object())
+  name.vb: BestHTTP.SocketIO.ISocket.EmitEvent(String, Object())
+- uid: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+  commentId: M:BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+  id: BestHTTP#SocketIO#ISocket#EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+  isEii: true
+  parent: BestHTTP.SocketIO.Socket
+  langs:
+  - csharp
+  - vb
+  name: ISocket.EmitError(SocketIOErrors, String)
+  nameWithType: Socket.ISocket.EmitError(SocketIOErrors, String)
+  fullName: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.EmitError(BestHTTP.SocketIO.SocketIOErrors, System.String)
+  type: Method
+  source:
+    id: BestHTTP.SocketIO.ISocket.EmitError
+    path: ''
+    startLine: 35180
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void ISocket.EmitError(SocketIOErrors errCode, string msg)
+    parameters:
+    - id: errCode
+      type: BestHTTP.SocketIO.SocketIOErrors
+    - id: msg
+      type: System.String
+    content.vb: Sub BestHTTP.SocketIO.ISocket.EmitError(errCode As SocketIOErrors, msg As String) Implements ISocket.EmitError
+  overload: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitError*
+  implements:
+  - BestHTTP.SocketIO.ISocket.EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+  nameWithType.vb: Socket.BestHTTP.SocketIO.ISocket.EmitError(SocketIOErrors, String)
+  name.vb: BestHTTP.SocketIO.ISocket.EmitError(SocketIOErrors, String)
+references:
+- uid: BestHTTP.SocketIO
+  commentId: N:BestHTTP.SocketIO
+  name: BestHTTP.SocketIO
+  nameWithType: BestHTTP.SocketIO
+  fullName: BestHTTP.SocketIO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BestHTTP.SocketIO.ISocket
+  commentId: T:BestHTTP.SocketIO.ISocket
+  parent: BestHTTP.SocketIO
+  name: ISocket
+  nameWithType: ISocket
+  fullName: BestHTTP.SocketIO.ISocket
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.SocketIO.Socket.Manager*
+  commentId: Overload:BestHTTP.SocketIO.Socket.Manager
+  name: Manager
+  nameWithType: Socket.Manager
+  fullName: BestHTTP.SocketIO.Socket.Manager
+- uid: BestHTTP.SocketIO.SocketManager
+  commentId: T:BestHTTP.SocketIO.SocketManager
+  parent: BestHTTP.SocketIO
+  name: SocketManager
+  nameWithType: SocketManager
+  fullName: BestHTTP.SocketIO.SocketManager
+- uid: BestHTTP.SocketIO.Socket.Namespace*
+  commentId: Overload:BestHTTP.SocketIO.Socket.Namespace
+  name: Namespace
+  nameWithType: Socket.Namespace
+  fullName: BestHTTP.SocketIO.Socket.Namespace
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BestHTTP.SocketIO.Socket.IsOpen*
+  commentId: Overload:BestHTTP.SocketIO.Socket.IsOpen
+  name: IsOpen
+  nameWithType: Socket.IsOpen
+  fullName: BestHTTP.SocketIO.Socket.IsOpen
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BestHTTP.SocketIO.Socket.AutoDecodePayload*
+  commentId: Overload:BestHTTP.SocketIO.Socket.AutoDecodePayload
+  name: AutoDecodePayload
+  nameWithType: Socket.AutoDecodePayload
+  fullName: BestHTTP.SocketIO.Socket.AutoDecodePayload
+- uid: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Open*
+  commentId: Overload:BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Open
+  name: ISocket.Open
+  nameWithType: Socket.ISocket.Open
+  fullName: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.Open
+  nameWithType.vb: Socket.BestHTTP.SocketIO.ISocket.Open
+  name.vb: BestHTTP.SocketIO.ISocket.Open
+- uid: BestHTTP.SocketIO.ISocket.Open
+  commentId: M:BestHTTP.SocketIO.ISocket.Open
+  parent: BestHTTP.SocketIO.ISocket
+  name: Open()
+  nameWithType: ISocket.Open()
+  fullName: BestHTTP.SocketIO.ISocket.Open()
+  spec.csharp:
+  - uid: BestHTTP.SocketIO.ISocket.Open
+    name: Open
+    nameWithType: ISocket.Open
+    fullName: BestHTTP.SocketIO.ISocket.Open
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SocketIO.ISocket.Open
+    name: Open
+    nameWithType: ISocket.Open
+    fullName: BestHTTP.SocketIO.ISocket.Open
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SocketIO.Socket.Disconnect*
+  commentId: Overload:BestHTTP.SocketIO.Socket.Disconnect
+  name: Disconnect
+  nameWithType: Socket.Disconnect
+  fullName: BestHTTP.SocketIO.Socket.Disconnect
+- uid: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Disconnect*
+  commentId: Overload:BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#Disconnect
+  name: ISocket.Disconnect
+  nameWithType: Socket.ISocket.Disconnect
+  fullName: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.Disconnect
+  nameWithType.vb: Socket.BestHTTP.SocketIO.ISocket.Disconnect
+  name.vb: BestHTTP.SocketIO.ISocket.Disconnect
+- uid: BestHTTP.SocketIO.ISocket.Disconnect(System.Boolean)
+  commentId: M:BestHTTP.SocketIO.ISocket.Disconnect(System.Boolean)
+  parent: BestHTTP.SocketIO.ISocket
+  isExternal: true
+  name: Disconnect(Boolean)
+  nameWithType: ISocket.Disconnect(Boolean)
+  fullName: BestHTTP.SocketIO.ISocket.Disconnect(System.Boolean)
+  spec.csharp:
+  - uid: BestHTTP.SocketIO.ISocket.Disconnect(System.Boolean)
+    name: Disconnect
+    nameWithType: ISocket.Disconnect
+    fullName: BestHTTP.SocketIO.ISocket.Disconnect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SocketIO.ISocket.Disconnect(System.Boolean)
+    name: Disconnect
+    nameWithType: ISocket.Disconnect
+    fullName: BestHTTP.SocketIO.ISocket.Disconnect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SocketIO.Socket.Emit*
+  commentId: Overload:BestHTTP.SocketIO.Socket.Emit
+  name: Emit
+  nameWithType: Socket.Emit
+  fullName: BestHTTP.SocketIO.Socket.Emit
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BestHTTP.SocketIO.Socket
+  commentId: T:BestHTTP.SocketIO.Socket
+  parent: BestHTTP.SocketIO
+  name: Socket
+  nameWithType: Socket
+  fullName: BestHTTP.SocketIO.Socket
+- uid: BestHTTP.SocketIO.Events.SocketIOAckCallback
+  commentId: T:BestHTTP.SocketIO.Events.SocketIOAckCallback
+  parent: BestHTTP.SocketIO.Events
+  name: SocketIOAckCallback
+  nameWithType: SocketIOAckCallback
+  fullName: BestHTTP.SocketIO.Events.SocketIOAckCallback
+- uid: BestHTTP.SocketIO.Events
+  commentId: N:BestHTTP.SocketIO.Events
+  name: BestHTTP.SocketIO.Events
+  nameWithType: BestHTTP.SocketIO.Events
+  fullName: BestHTTP.SocketIO.Events
+- uid: BestHTTP.SocketIO.Socket.EmitAck*
+  commentId: Overload:BestHTTP.SocketIO.Socket.EmitAck
+  name: EmitAck
+  nameWithType: Socket.EmitAck
+  fullName: BestHTTP.SocketIO.Socket.EmitAck
+- uid: BestHTTP.SocketIO.Packet
+  commentId: T:BestHTTP.SocketIO.Packet
+  parent: BestHTTP.SocketIO
+  name: Packet
+  nameWithType: Packet
+  fullName: BestHTTP.SocketIO.Packet
+- uid: BestHTTP.SocketIO.Socket.On*
+  commentId: Overload:BestHTTP.SocketIO.Socket.On
+  name: On
+  nameWithType: Socket.On
+  fullName: BestHTTP.SocketIO.Socket.On
+- uid: BestHTTP.SocketIO.Events.SocketIOCallback
+  commentId: T:BestHTTP.SocketIO.Events.SocketIOCallback
+  parent: BestHTTP.SocketIO.Events
+  name: SocketIOCallback
+  nameWithType: SocketIOCallback
+  fullName: BestHTTP.SocketIO.Events.SocketIOCallback
+- uid: BestHTTP.SocketIO.SocketIOEventTypes
+  commentId: T:BestHTTP.SocketIO.SocketIOEventTypes
+  parent: BestHTTP.SocketIO
+  name: SocketIOEventTypes
+  nameWithType: SocketIOEventTypes
+  fullName: BestHTTP.SocketIO.SocketIOEventTypes
+- uid: BestHTTP.SocketIO.Socket.Once*
+  commentId: Overload:BestHTTP.SocketIO.Socket.Once
+  name: Once
+  nameWithType: Socket.Once
+  fullName: BestHTTP.SocketIO.Socket.Once
+- uid: BestHTTP.SocketIO.Socket.Off*
+  commentId: Overload:BestHTTP.SocketIO.Socket.Off
+  name: Off
+  nameWithType: Socket.Off
+  fullName: BestHTTP.SocketIO.Socket.Off
+- uid: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#OnPacket*
+  commentId: Overload:BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#OnPacket
+  name: ISocket.OnPacket
+  nameWithType: Socket.ISocket.OnPacket
+  fullName: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.OnPacket
+  nameWithType.vb: Socket.BestHTTP.SocketIO.ISocket.OnPacket
+  name.vb: BestHTTP.SocketIO.ISocket.OnPacket
+- uid: BestHTTP.SocketIO.ISocket.OnPacket(BestHTTP.SocketIO.Packet)
+  commentId: M:BestHTTP.SocketIO.ISocket.OnPacket(BestHTTP.SocketIO.Packet)
+  parent: BestHTTP.SocketIO.ISocket
+  name: OnPacket(Packet)
+  nameWithType: ISocket.OnPacket(Packet)
+  fullName: BestHTTP.SocketIO.ISocket.OnPacket(BestHTTP.SocketIO.Packet)
+  spec.csharp:
+  - uid: BestHTTP.SocketIO.ISocket.OnPacket(BestHTTP.SocketIO.Packet)
+    name: OnPacket
+    nameWithType: ISocket.OnPacket
+    fullName: BestHTTP.SocketIO.ISocket.OnPacket
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.SocketIO.Packet
+    name: Packet
+    nameWithType: Packet
+    fullName: BestHTTP.SocketIO.Packet
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SocketIO.ISocket.OnPacket(BestHTTP.SocketIO.Packet)
+    name: OnPacket
+    nameWithType: ISocket.OnPacket
+    fullName: BestHTTP.SocketIO.ISocket.OnPacket
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.SocketIO.Packet
+    name: Packet
+    nameWithType: Packet
+    fullName: BestHTTP.SocketIO.Packet
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitEvent*
+  commentId: Overload:BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitEvent
+  name: ISocket.EmitEvent
+  nameWithType: Socket.ISocket.EmitEvent
+  fullName: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.EmitEvent
+  nameWithType.vb: Socket.BestHTTP.SocketIO.ISocket.EmitEvent
+  name.vb: BestHTTP.SocketIO.ISocket.EmitEvent
+- uid: BestHTTP.SocketIO.ISocket.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+  commentId: M:BestHTTP.SocketIO.ISocket.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+  parent: BestHTTP.SocketIO.ISocket
+  isExternal: true
+  name: EmitEvent(SocketIOEventTypes, Object[])
+  nameWithType: ISocket.EmitEvent(SocketIOEventTypes, Object[])
+  fullName: BestHTTP.SocketIO.ISocket.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes, System.Object[])
+  nameWithType.vb: ISocket.EmitEvent(SocketIOEventTypes, Object())
+  fullName.vb: BestHTTP.SocketIO.ISocket.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes, System.Object())
+  name.vb: EmitEvent(SocketIOEventTypes, Object())
+  spec.csharp:
+  - uid: BestHTTP.SocketIO.ISocket.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+    name: EmitEvent
+    nameWithType: ISocket.EmitEvent
+    fullName: BestHTTP.SocketIO.ISocket.EmitEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.SocketIO.SocketIOEventTypes
+    name: SocketIOEventTypes
+    nameWithType: SocketIOEventTypes
+    fullName: BestHTTP.SocketIO.SocketIOEventTypes
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SocketIO.ISocket.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+    name: EmitEvent
+    nameWithType: ISocket.EmitEvent
+    fullName: BestHTTP.SocketIO.ISocket.EmitEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.SocketIO.SocketIOEventTypes
+    name: SocketIOEventTypes
+    nameWithType: SocketIOEventTypes
+    fullName: BestHTTP.SocketIO.SocketIOEventTypes
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SocketIO.ISocket.EmitEvent(System.String,System.Object[])
+  commentId: M:BestHTTP.SocketIO.ISocket.EmitEvent(System.String,System.Object[])
+  parent: BestHTTP.SocketIO.ISocket
+  isExternal: true
+  name: EmitEvent(String, Object[])
+  nameWithType: ISocket.EmitEvent(String, Object[])
+  fullName: BestHTTP.SocketIO.ISocket.EmitEvent(System.String, System.Object[])
+  nameWithType.vb: ISocket.EmitEvent(String, Object())
+  fullName.vb: BestHTTP.SocketIO.ISocket.EmitEvent(System.String, System.Object())
+  name.vb: EmitEvent(String, Object())
+  spec.csharp:
+  - uid: BestHTTP.SocketIO.ISocket.EmitEvent(System.String,System.Object[])
+    name: EmitEvent
+    nameWithType: ISocket.EmitEvent
+    fullName: BestHTTP.SocketIO.ISocket.EmitEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SocketIO.ISocket.EmitEvent(System.String,System.Object[])
+    name: EmitEvent
+    nameWithType: ISocket.EmitEvent
+    fullName: BestHTTP.SocketIO.ISocket.EmitEvent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitError*
+  commentId: Overload:BestHTTP.SocketIO.Socket.BestHTTP#SocketIO#ISocket#EmitError
+  name: ISocket.EmitError
+  nameWithType: Socket.ISocket.EmitError
+  fullName: BestHTTP.SocketIO.Socket.BestHTTP.SocketIO.ISocket.EmitError
+  nameWithType.vb: Socket.BestHTTP.SocketIO.ISocket.EmitError
+  name.vb: BestHTTP.SocketIO.ISocket.EmitError
+- uid: BestHTTP.SocketIO.ISocket.EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+  commentId: M:BestHTTP.SocketIO.ISocket.EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+  parent: BestHTTP.SocketIO.ISocket
+  isExternal: true
+  name: EmitError(SocketIOErrors, String)
+  nameWithType: ISocket.EmitError(SocketIOErrors, String)
+  fullName: BestHTTP.SocketIO.ISocket.EmitError(BestHTTP.SocketIO.SocketIOErrors, System.String)
+  spec.csharp:
+  - uid: BestHTTP.SocketIO.ISocket.EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+    name: EmitError
+    nameWithType: ISocket.EmitError
+    fullName: BestHTTP.SocketIO.ISocket.EmitError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.SocketIO.SocketIOErrors
+    name: SocketIOErrors
+    nameWithType: SocketIOErrors
+    fullName: BestHTTP.SocketIO.SocketIOErrors
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SocketIO.ISocket.EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+    name: EmitError
+    nameWithType: ISocket.EmitError
+    fullName: BestHTTP.SocketIO.ISocket.EmitError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.SocketIO.SocketIOErrors
+    name: SocketIOErrors
+    nameWithType: SocketIOErrors
+    fullName: BestHTTP.SocketIO.SocketIOErrors
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SocketIO.SocketIOErrors
+  commentId: T:BestHTTP.SocketIO.SocketIOErrors
+  parent: BestHTTP.SocketIO
+  name: SocketIOErrors
+  nameWithType: SocketIOErrors
+  fullName: BestHTTP.SocketIO.SocketIOErrors

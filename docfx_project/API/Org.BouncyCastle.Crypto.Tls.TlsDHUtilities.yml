@@ -1,0 +1,1283 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  id: TlsDHUtilities
+  parent: Org.BouncyCastle.Crypto.Tls
+  children:
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsClientExtension(System.Collections.IDictionary,System.Byte[])
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsServerExtension(System.Collections.IDictionary,System.Byte)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AreCompatibleParameters(DHParameters,DHParameters)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CalculateDHBasicAgreement(DHPublicKeyParameters,DHPrivateKeyParameters)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ContainsDheCipherSuites(System.Int32[])
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension(System.Byte[])
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsServerExtension(System.Byte)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateDHKeyPair(SecureRandom,DHParameters)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralClientKeyExchange(SecureRandom,DHParameters,Stream)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralServerKeyExchange(SecureRandom,DHParameters,Stream)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsClientExtension(System.Collections.IDictionary)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsServerExtension(System.Collections.IDictionary)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetParametersForDHEGroup(System.Int16)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.IsDheCipherSuite(System.Int32)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadDHParameter(Stream)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension(System.Byte[])
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension(System.Byte[])
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHParameters(DHParameters)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHPublicKey(DHPublicKeyParameters)
+  - Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.WriteDHParameter(BigInteger,Stream)
+  langs:
+  - csharp
+  - vb
+  name: TlsDHUtilities
+  nameWithType: TlsDHUtilities
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  type: Class
+  source:
+    id: TlsDHUtilities
+    path: ''
+    startLine: 114305
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public abstract class TlsDHUtilities
+    content.vb: Public MustInherit Class TlsDHUtilities
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsClientExtension(System.Collections.IDictionary,System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsClientExtension(System.Collections.IDictionary,System.Byte[])
+  id: AddNegotiatedDheGroupsClientExtension(System.Collections.IDictionary,System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: AddNegotiatedDheGroupsClientExtension(IDictionary, Byte[])
+  nameWithType: TlsDHUtilities.AddNegotiatedDheGroupsClientExtension(IDictionary, Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsClientExtension(System.Collections.IDictionary, System.Byte[])
+  type: Method
+  source:
+    id: AddNegotiatedDheGroupsClientExtension
+    path: ''
+    startLine: 114465
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static void AddNegotiatedDheGroupsClientExtension(IDictionary extensions, byte[] dheGroups)
+    parameters:
+    - id: extensions
+      type: System.Collections.IDictionary
+    - id: dheGroups
+      type: System.Byte[]
+    content.vb: Public Shared Sub AddNegotiatedDheGroupsClientExtension(extensions As IDictionary, dheGroups As Byte())
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsClientExtension*
+  nameWithType.vb: TlsDHUtilities.AddNegotiatedDheGroupsClientExtension(IDictionary, Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsClientExtension(System.Collections.IDictionary, System.Byte())
+  name.vb: AddNegotiatedDheGroupsClientExtension(IDictionary, Byte())
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsServerExtension(System.Collections.IDictionary,System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsServerExtension(System.Collections.IDictionary,System.Byte)
+  id: AddNegotiatedDheGroupsServerExtension(System.Collections.IDictionary,System.Byte)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: AddNegotiatedDheGroupsServerExtension(IDictionary, Byte)
+  nameWithType: TlsDHUtilities.AddNegotiatedDheGroupsServerExtension(IDictionary, Byte)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsServerExtension(System.Collections.IDictionary, System.Byte)
+  type: Method
+  source:
+    id: AddNegotiatedDheGroupsServerExtension
+    path: ''
+    startLine: 114470
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static void AddNegotiatedDheGroupsServerExtension(IDictionary extensions, byte dheGroup)
+    parameters:
+    - id: extensions
+      type: System.Collections.IDictionary
+    - id: dheGroup
+      type: System.Byte
+    content.vb: Public Shared Sub AddNegotiatedDheGroupsServerExtension(extensions As IDictionary, dheGroup As Byte)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsServerExtension*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsClientExtension(System.Collections.IDictionary)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsClientExtension(System.Collections.IDictionary)
+  id: GetNegotiatedDheGroupsClientExtension(System.Collections.IDictionary)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetNegotiatedDheGroupsClientExtension(IDictionary)
+  nameWithType: TlsDHUtilities.GetNegotiatedDheGroupsClientExtension(IDictionary)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsClientExtension(System.Collections.IDictionary)
+  type: Method
+  source:
+    id: GetNegotiatedDheGroupsClientExtension
+    path: ''
+    startLine: 114475
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static byte[] GetNegotiatedDheGroupsClientExtension(IDictionary extensions)
+    parameters:
+    - id: extensions
+      type: System.Collections.IDictionary
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function GetNegotiatedDheGroupsClientExtension(extensions As IDictionary) As Byte()
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsClientExtension*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsServerExtension(System.Collections.IDictionary)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsServerExtension(System.Collections.IDictionary)
+  id: GetNegotiatedDheGroupsServerExtension(System.Collections.IDictionary)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetNegotiatedDheGroupsServerExtension(IDictionary)
+  nameWithType: TlsDHUtilities.GetNegotiatedDheGroupsServerExtension(IDictionary)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsServerExtension(System.Collections.IDictionary)
+  type: Method
+  source:
+    id: GetNegotiatedDheGroupsServerExtension
+    path: ''
+    startLine: 114481
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static short GetNegotiatedDheGroupsServerExtension(IDictionary extensions)
+    parameters:
+    - id: extensions
+      type: System.Collections.IDictionary
+    return:
+      type: System.Int16
+    content.vb: Public Shared Function GetNegotiatedDheGroupsServerExtension(extensions As IDictionary) As Short
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsServerExtension*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension(System.Byte[])
+  id: CreateNegotiatedDheGroupsClientExtension(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: CreateNegotiatedDheGroupsClientExtension(Byte[])
+  nameWithType: TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension(System.Byte[])
+  type: Method
+  source:
+    id: CreateNegotiatedDheGroupsClientExtension
+    path: ''
+    startLine: 114487
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static byte[] CreateNegotiatedDheGroupsClientExtension(byte[] dheGroups)
+    parameters:
+    - id: dheGroups
+      type: System.Byte[]
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function CreateNegotiatedDheGroupsClientExtension(dheGroups As Byte()) As Byte()
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension*
+  nameWithType.vb: TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension(System.Byte())
+  name.vb: CreateNegotiatedDheGroupsClientExtension(Byte())
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsServerExtension(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsServerExtension(System.Byte)
+  id: CreateNegotiatedDheGroupsServerExtension(System.Byte)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: CreateNegotiatedDheGroupsServerExtension(Byte)
+  nameWithType: TlsDHUtilities.CreateNegotiatedDheGroupsServerExtension(Byte)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsServerExtension(System.Byte)
+  type: Method
+  source:
+    id: CreateNegotiatedDheGroupsServerExtension
+    path: ''
+    startLine: 114495
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static byte[] CreateNegotiatedDheGroupsServerExtension(byte dheGroup)
+    parameters:
+    - id: dheGroup
+      type: System.Byte
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function CreateNegotiatedDheGroupsServerExtension(dheGroup As Byte) As Byte()
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsServerExtension*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension(System.Byte[])
+  id: ReadNegotiatedDheGroupsClientExtension(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: ReadNegotiatedDheGroupsClientExtension(Byte[])
+  nameWithType: TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension(System.Byte[])
+  type: Method
+  source:
+    id: ReadNegotiatedDheGroupsClientExtension
+    path: ''
+    startLine: 114500
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static byte[] ReadNegotiatedDheGroupsClientExtension(byte[] extensionData)
+    parameters:
+    - id: extensionData
+      type: System.Byte[]
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function ReadNegotiatedDheGroupsClientExtension(extensionData As Byte()) As Byte()
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension*
+  nameWithType.vb: TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension(System.Byte())
+  name.vb: ReadNegotiatedDheGroupsClientExtension(Byte())
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension(System.Byte[])
+  id: ReadNegotiatedDheGroupsServerExtension(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: ReadNegotiatedDheGroupsServerExtension(Byte[])
+  nameWithType: TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension(Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension(System.Byte[])
+  type: Method
+  source:
+    id: ReadNegotiatedDheGroupsServerExtension
+    path: ''
+    startLine: 114518
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static byte ReadNegotiatedDheGroupsServerExtension(byte[] extensionData)
+    parameters:
+    - id: extensionData
+      type: System.Byte[]
+    return:
+      type: System.Byte
+    content.vb: Public Shared Function ReadNegotiatedDheGroupsServerExtension(extensionData As Byte()) As Byte
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension*
+  nameWithType.vb: TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension(System.Byte())
+  name.vb: ReadNegotiatedDheGroupsServerExtension(Byte())
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetParametersForDHEGroup(System.Int16)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetParametersForDHEGroup(System.Int16)
+  id: GetParametersForDHEGroup(System.Int16)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetParametersForDHEGroup(Int16)
+  nameWithType: TlsDHUtilities.GetParametersForDHEGroup(Int16)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetParametersForDHEGroup(System.Int16)
+  type: Method
+  source:
+    id: GetParametersForDHEGroup
+    path: ''
+    startLine: 114529
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static DHParameters GetParametersForDHEGroup(short dheGroup)
+    parameters:
+    - id: dheGroup
+      type: System.Int16
+    return:
+      type: DHParameters
+    content.vb: Public Shared Function GetParametersForDHEGroup(dheGroup As Short) As DHParameters
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetParametersForDHEGroup*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ContainsDheCipherSuites(System.Int32[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ContainsDheCipherSuites(System.Int32[])
+  id: ContainsDheCipherSuites(System.Int32[])
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: ContainsDheCipherSuites(Int32[])
+  nameWithType: TlsDHUtilities.ContainsDheCipherSuites(Int32[])
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ContainsDheCipherSuites(System.Int32[])
+  type: Method
+  source:
+    id: ContainsDheCipherSuites
+    path: ''
+    startLine: 114548
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static bool ContainsDheCipherSuites(int[] cipherSuites)
+    parameters:
+    - id: cipherSuites
+      type: System.Int32[]
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ContainsDheCipherSuites(cipherSuites As Integer()) As Boolean
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ContainsDheCipherSuites*
+  nameWithType.vb: TlsDHUtilities.ContainsDheCipherSuites(Int32())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ContainsDheCipherSuites(System.Int32())
+  name.vb: ContainsDheCipherSuites(Int32())
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.IsDheCipherSuite(System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.IsDheCipherSuite(System.Int32)
+  id: IsDheCipherSuite(System.Int32)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: IsDheCipherSuite(Int32)
+  nameWithType: TlsDHUtilities.IsDheCipherSuite(Int32)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.IsDheCipherSuite(System.Int32)
+  type: Method
+  source:
+    id: IsDheCipherSuite
+    path: ''
+    startLine: 114558
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static bool IsDheCipherSuite(int cipherSuite)
+    parameters:
+    - id: cipherSuite
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsDheCipherSuite(cipherSuite As Integer) As Boolean
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.IsDheCipherSuite*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AreCompatibleParameters(DHParameters,DHParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AreCompatibleParameters(DHParameters,DHParameters)
+  id: AreCompatibleParameters(DHParameters,DHParameters)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: AreCompatibleParameters(DHParameters, DHParameters)
+  nameWithType: TlsDHUtilities.AreCompatibleParameters(DHParameters, DHParameters)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AreCompatibleParameters(DHParameters, DHParameters)
+  type: Method
+  source:
+    id: AreCompatibleParameters
+    path: ''
+    startLine: 114682
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static bool AreCompatibleParameters(DHParameters a, DHParameters b)
+    parameters:
+    - id: a
+      type: DHParameters
+    - id: b
+      type: DHParameters
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function AreCompatibleParameters(a As DHParameters, b As DHParameters) As Boolean
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AreCompatibleParameters*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CalculateDHBasicAgreement(DHPublicKeyParameters,DHPrivateKeyParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CalculateDHBasicAgreement(DHPublicKeyParameters,DHPrivateKeyParameters)
+  id: CalculateDHBasicAgreement(DHPublicKeyParameters,DHPrivateKeyParameters)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: CalculateDHBasicAgreement(DHPublicKeyParameters, DHPrivateKeyParameters)
+  nameWithType: TlsDHUtilities.CalculateDHBasicAgreement(DHPublicKeyParameters, DHPrivateKeyParameters)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CalculateDHBasicAgreement(DHPublicKeyParameters, DHPrivateKeyParameters)
+  type: Method
+  source:
+    id: CalculateDHBasicAgreement
+    path: ''
+    startLine: 114688
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static byte[] CalculateDHBasicAgreement(DHPublicKeyParameters publicKey, DHPrivateKeyParameters privateKey)
+    parameters:
+    - id: publicKey
+      type: DHPublicKeyParameters
+    - id: privateKey
+      type: DHPrivateKeyParameters
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function CalculateDHBasicAgreement(publicKey As DHPublicKeyParameters, privateKey As DHPrivateKeyParameters) As Byte()
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CalculateDHBasicAgreement*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateDHKeyPair(SecureRandom,DHParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateDHKeyPair(SecureRandom,DHParameters)
+  id: GenerateDHKeyPair(SecureRandom,DHParameters)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: GenerateDHKeyPair(SecureRandom, DHParameters)
+  nameWithType: TlsDHUtilities.GenerateDHKeyPair(SecureRandom, DHParameters)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateDHKeyPair(SecureRandom, DHParameters)
+  type: Method
+  source:
+    id: GenerateDHKeyPair
+    path: ''
+    startLine: 114702
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static AsymmetricCipherKeyPair GenerateDHKeyPair(SecureRandom random, DHParameters dhParams)
+    parameters:
+    - id: random
+      type: SecureRandom
+    - id: dhParams
+      type: DHParameters
+    return:
+      type: Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair
+    content.vb: Public Shared Function GenerateDHKeyPair(random As SecureRandom, dhParams As DHParameters) As AsymmetricCipherKeyPair
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateDHKeyPair*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralClientKeyExchange(SecureRandom,DHParameters,Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralClientKeyExchange(SecureRandom,DHParameters,Stream)
+  id: GenerateEphemeralClientKeyExchange(SecureRandom,DHParameters,Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: GenerateEphemeralClientKeyExchange(SecureRandom, DHParameters, Stream)
+  nameWithType: TlsDHUtilities.GenerateEphemeralClientKeyExchange(SecureRandom, DHParameters, Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralClientKeyExchange(SecureRandom, DHParameters, Stream)
+  type: Method
+  source:
+    id: GenerateEphemeralClientKeyExchange
+    path: ''
+    startLine: 114709
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static DHPrivateKeyParameters GenerateEphemeralClientKeyExchange(SecureRandom random, DHParameters dhParams, Stream output)
+    parameters:
+    - id: random
+      type: SecureRandom
+    - id: dhParams
+      type: DHParameters
+    - id: output
+      type: Stream
+    return:
+      type: DHPrivateKeyParameters
+    content.vb: Public Shared Function GenerateEphemeralClientKeyExchange(random As SecureRandom, dhParams As DHParameters, output As Stream) As DHPrivateKeyParameters
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralClientKeyExchange*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralServerKeyExchange(SecureRandom,DHParameters,Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralServerKeyExchange(SecureRandom,DHParameters,Stream)
+  id: GenerateEphemeralServerKeyExchange(SecureRandom,DHParameters,Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: GenerateEphemeralServerKeyExchange(SecureRandom, DHParameters, Stream)
+  nameWithType: TlsDHUtilities.GenerateEphemeralServerKeyExchange(SecureRandom, DHParameters, Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralServerKeyExchange(SecureRandom, DHParameters, Stream)
+  type: Method
+  source:
+    id: GenerateEphemeralServerKeyExchange
+    path: ''
+    startLine: 114720
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static DHPrivateKeyParameters GenerateEphemeralServerKeyExchange(SecureRandom random, DHParameters dhParams, Stream output)
+    parameters:
+    - id: random
+      type: SecureRandom
+    - id: dhParams
+      type: DHParameters
+    - id: output
+      type: Stream
+    return:
+      type: DHPrivateKeyParameters
+    content.vb: Public Shared Function GenerateEphemeralServerKeyExchange(random As SecureRandom, dhParams As DHParameters, output As Stream) As DHPrivateKeyParameters
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralServerKeyExchange*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHParameters(DHParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHParameters(DHParameters)
+  id: ValidateDHParameters(DHParameters)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: ValidateDHParameters(DHParameters)
+  nameWithType: TlsDHUtilities.ValidateDHParameters(DHParameters)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHParameters(DHParameters)
+  type: Method
+  source:
+    id: ValidateDHParameters
+    path: ''
+    startLine: 114731
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static DHParameters ValidateDHParameters(DHParameters parameters)
+    parameters:
+    - id: parameters
+      type: DHParameters
+    return:
+      type: DHParameters
+    content.vb: Public Shared Function ValidateDHParameters(parameters As DHParameters) As DHParameters
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHParameters*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHPublicKey(DHPublicKeyParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHPublicKey(DHPublicKeyParameters)
+  id: ValidateDHPublicKey(DHPublicKeyParameters)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: ValidateDHPublicKey(DHPublicKeyParameters)
+  nameWithType: TlsDHUtilities.ValidateDHPublicKey(DHPublicKeyParameters)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHPublicKey(DHPublicKeyParameters)
+  type: Method
+  source:
+    id: ValidateDHPublicKey
+    path: ''
+    startLine: 114745
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static DHPublicKeyParameters ValidateDHPublicKey(DHPublicKeyParameters key)
+    parameters:
+    - id: key
+      type: DHPublicKeyParameters
+    return:
+      type: DHPublicKeyParameters
+    content.vb: Public Shared Function ValidateDHPublicKey(key As DHPublicKeyParameters) As DHPublicKeyParameters
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHPublicKey*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadDHParameter(Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadDHParameter(Stream)
+  id: ReadDHParameter(Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: ReadDHParameter(Stream)
+  nameWithType: TlsDHUtilities.ReadDHParameter(Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadDHParameter(Stream)
+  type: Method
+  source:
+    id: ReadDHParameter
+    path: ''
+    startLine: 114758
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static BigInteger ReadDHParameter(Stream input)
+    parameters:
+    - id: input
+      type: Stream
+    return:
+      type: BigInteger
+    content.vb: Public Shared Function ReadDHParameter(input As Stream) As BigInteger
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadDHParameter*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.WriteDHParameter(BigInteger,Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.WriteDHParameter(BigInteger,Stream)
+  id: WriteDHParameter(BigInteger,Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities
+  langs:
+  - csharp
+  - vb
+  name: WriteDHParameter(BigInteger, Stream)
+  nameWithType: TlsDHUtilities.WriteDHParameter(BigInteger, Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.WriteDHParameter(BigInteger, Stream)
+  type: Method
+  source:
+    id: WriteDHParameter
+    path: ''
+    startLine: 114763
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static void WriteDHParameter(BigInteger x, Stream output)
+    parameters:
+    - id: x
+      type: BigInteger
+    - id: output
+      type: Stream
+    content.vb: Public Shared Sub WriteDHParameter(x As BigInteger, output As Stream)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.WriteDHParameter*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Org.BouncyCastle.Crypto.Tls
+  commentId: N:Org.BouncyCastle.Crypto.Tls
+  name: Org.BouncyCastle.Crypto.Tls
+  nameWithType: Org.BouncyCastle.Crypto.Tls
+  fullName: Org.BouncyCastle.Crypto.Tls
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsClientExtension*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsClientExtension
+  name: AddNegotiatedDheGroupsClientExtension
+  nameWithType: TlsDHUtilities.AddNegotiatedDheGroupsClientExtension
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsClientExtension
+- uid: System.Collections.IDictionary
+  commentId: T:System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsServerExtension*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsServerExtension
+  name: AddNegotiatedDheGroupsServerExtension
+  nameWithType: TlsDHUtilities.AddNegotiatedDheGroupsServerExtension
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AddNegotiatedDheGroupsServerExtension
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsClientExtension*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsClientExtension
+  name: GetNegotiatedDheGroupsClientExtension
+  nameWithType: TlsDHUtilities.GetNegotiatedDheGroupsClientExtension
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsClientExtension
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsServerExtension*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsServerExtension
+  name: GetNegotiatedDheGroupsServerExtension
+  nameWithType: TlsDHUtilities.GetNegotiatedDheGroupsServerExtension
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetNegotiatedDheGroupsServerExtension
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  name: Int16
+  nameWithType: Int16
+  fullName: System.Int16
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension
+  name: CreateNegotiatedDheGroupsClientExtension
+  nameWithType: TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsClientExtension
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsServerExtension*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsServerExtension
+  name: CreateNegotiatedDheGroupsServerExtension
+  nameWithType: TlsDHUtilities.CreateNegotiatedDheGroupsServerExtension
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CreateNegotiatedDheGroupsServerExtension
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension
+  name: ReadNegotiatedDheGroupsClientExtension
+  nameWithType: TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsClientExtension
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension
+  name: ReadNegotiatedDheGroupsServerExtension
+  nameWithType: TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadNegotiatedDheGroupsServerExtension
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetParametersForDHEGroup*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetParametersForDHEGroup
+  name: GetParametersForDHEGroup
+  nameWithType: TlsDHUtilities.GetParametersForDHEGroup
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GetParametersForDHEGroup
+- uid: DHParameters
+  isExternal: true
+  name: DHParameters
+  nameWithType: DHParameters
+  fullName: DHParameters
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ContainsDheCipherSuites*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ContainsDheCipherSuites
+  name: ContainsDheCipherSuites
+  nameWithType: TlsDHUtilities.ContainsDheCipherSuites
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ContainsDheCipherSuites
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.IsDheCipherSuite*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.IsDheCipherSuite
+  name: IsDheCipherSuite
+  nameWithType: TlsDHUtilities.IsDheCipherSuite
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.IsDheCipherSuite
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AreCompatibleParameters*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AreCompatibleParameters
+  name: AreCompatibleParameters
+  nameWithType: TlsDHUtilities.AreCompatibleParameters
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.AreCompatibleParameters
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CalculateDHBasicAgreement*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CalculateDHBasicAgreement
+  name: CalculateDHBasicAgreement
+  nameWithType: TlsDHUtilities.CalculateDHBasicAgreement
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.CalculateDHBasicAgreement
+- uid: DHPublicKeyParameters
+  isExternal: true
+  name: DHPublicKeyParameters
+  nameWithType: DHPublicKeyParameters
+  fullName: DHPublicKeyParameters
+- uid: DHPrivateKeyParameters
+  isExternal: true
+  name: DHPrivateKeyParameters
+  nameWithType: DHPrivateKeyParameters
+  fullName: DHPrivateKeyParameters
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateDHKeyPair*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateDHKeyPair
+  name: GenerateDHKeyPair
+  nameWithType: TlsDHUtilities.GenerateDHKeyPair
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateDHKeyPair
+- uid: SecureRandom
+  isExternal: true
+  name: SecureRandom
+  nameWithType: SecureRandom
+  fullName: SecureRandom
+- uid: Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair
+  commentId: T:Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair
+  parent: Org.BouncyCastle.Crypto
+  name: AsymmetricCipherKeyPair
+  nameWithType: AsymmetricCipherKeyPair
+  fullName: Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralClientKeyExchange*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralClientKeyExchange
+  name: GenerateEphemeralClientKeyExchange
+  nameWithType: TlsDHUtilities.GenerateEphemeralClientKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralClientKeyExchange
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralServerKeyExchange*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralServerKeyExchange
+  name: GenerateEphemeralServerKeyExchange
+  nameWithType: TlsDHUtilities.GenerateEphemeralServerKeyExchange
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.GenerateEphemeralServerKeyExchange
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHParameters*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHParameters
+  name: ValidateDHParameters
+  nameWithType: TlsDHUtilities.ValidateDHParameters
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHParameters
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHPublicKey*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHPublicKey
+  name: ValidateDHPublicKey
+  nameWithType: TlsDHUtilities.ValidateDHPublicKey
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ValidateDHPublicKey
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadDHParameter*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadDHParameter
+  name: ReadDHParameter
+  nameWithType: TlsDHUtilities.ReadDHParameter
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.ReadDHParameter
+- uid: BigInteger
+  isExternal: true
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: BigInteger
+- uid: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.WriteDHParameter*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.WriteDHParameter
+  name: WriteDHParameter
+  nameWithType: TlsDHUtilities.WriteDHParameter
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsDHUtilities.WriteDHParameter

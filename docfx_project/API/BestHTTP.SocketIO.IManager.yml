@@ -1,0 +1,504 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.SocketIO.IManager
+  commentId: T:BestHTTP.SocketIO.IManager
+  id: IManager
+  parent: BestHTTP.SocketIO
+  children:
+  - BestHTTP.SocketIO.IManager.Close(System.Boolean)
+  - BestHTTP.SocketIO.IManager.EmitAll(System.String,System.Object[])
+  - BestHTTP.SocketIO.IManager.EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+  - BestHTTP.SocketIO.IManager.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+  - BestHTTP.SocketIO.IManager.EmitEvent(System.String,System.Object[])
+  - BestHTTP.SocketIO.IManager.OnPacket(BestHTTP.SocketIO.Packet)
+  - BestHTTP.SocketIO.IManager.OnTransportConnected(BestHTTP.SocketIO.Transports.ITransport)
+  - BestHTTP.SocketIO.IManager.OnTransportError(BestHTTP.SocketIO.Transports.ITransport,System.String)
+  - BestHTTP.SocketIO.IManager.OnTransportProbed(BestHTTP.SocketIO.Transports.ITransport)
+  - BestHTTP.SocketIO.IManager.Remove(BestHTTP.SocketIO.Socket)
+  - BestHTTP.SocketIO.IManager.SendPacket(BestHTTP.SocketIO.Packet)
+  - BestHTTP.SocketIO.IManager.TryToReconnect
+  langs:
+  - csharp
+  - vb
+  name: IManager
+  nameWithType: IManager
+  fullName: BestHTTP.SocketIO.IManager
+  type: Interface
+  source:
+    id: IManager
+    path: ''
+    startLine: 36880
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nInterface to hide internal functions from the user by implementing it as an explicit interface.\n"
+  example: []
+  syntax:
+    content: public interface IManager
+    content.vb: Public Interface IManager
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: BestHTTP.SocketIO.IManager.Remove(BestHTTP.SocketIO.Socket)
+  commentId: M:BestHTTP.SocketIO.IManager.Remove(BestHTTP.SocketIO.Socket)
+  id: Remove(BestHTTP.SocketIO.Socket)
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: Remove(Socket)
+  nameWithType: IManager.Remove(Socket)
+  fullName: BestHTTP.SocketIO.IManager.Remove(BestHTTP.SocketIO.Socket)
+  type: Method
+  source:
+    id: Remove
+    path: ''
+    startLine: 36882
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void Remove(Socket socket)
+    parameters:
+    - id: socket
+      type: BestHTTP.SocketIO.Socket
+    content.vb: Sub Remove(socket As Socket)
+  overload: BestHTTP.SocketIO.IManager.Remove*
+- uid: BestHTTP.SocketIO.IManager.Close(System.Boolean)
+  commentId: M:BestHTTP.SocketIO.IManager.Close(System.Boolean)
+  id: Close(System.Boolean)
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: Close(Boolean)
+  nameWithType: IManager.Close(Boolean)
+  fullName: BestHTTP.SocketIO.IManager.Close(System.Boolean)
+  type: Method
+  source:
+    id: Close
+    path: ''
+    startLine: 36883
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void Close(bool removeSockets = true)
+    parameters:
+    - id: removeSockets
+      type: System.Boolean
+    content.vb: Sub Close(removeSockets As Boolean = True)
+  overload: BestHTTP.SocketIO.IManager.Close*
+- uid: BestHTTP.SocketIO.IManager.TryToReconnect
+  commentId: M:BestHTTP.SocketIO.IManager.TryToReconnect
+  id: TryToReconnect
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: TryToReconnect()
+  nameWithType: IManager.TryToReconnect()
+  fullName: BestHTTP.SocketIO.IManager.TryToReconnect()
+  type: Method
+  source:
+    id: TryToReconnect
+    path: ''
+    startLine: 36884
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void TryToReconnect()
+    content.vb: Sub TryToReconnect
+  overload: BestHTTP.SocketIO.IManager.TryToReconnect*
+- uid: BestHTTP.SocketIO.IManager.OnTransportConnected(BestHTTP.SocketIO.Transports.ITransport)
+  commentId: M:BestHTTP.SocketIO.IManager.OnTransportConnected(BestHTTP.SocketIO.Transports.ITransport)
+  id: OnTransportConnected(BestHTTP.SocketIO.Transports.ITransport)
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: OnTransportConnected(ITransport)
+  nameWithType: IManager.OnTransportConnected(ITransport)
+  fullName: BestHTTP.SocketIO.IManager.OnTransportConnected(BestHTTP.SocketIO.Transports.ITransport)
+  type: Method
+  source:
+    id: OnTransportConnected
+    path: ''
+    startLine: 36885
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: bool OnTransportConnected(ITransport transport)
+    parameters:
+    - id: transport
+      type: BestHTTP.SocketIO.Transports.ITransport
+    return:
+      type: System.Boolean
+    content.vb: Function OnTransportConnected(transport As ITransport) As Boolean
+  overload: BestHTTP.SocketIO.IManager.OnTransportConnected*
+- uid: BestHTTP.SocketIO.IManager.OnTransportError(BestHTTP.SocketIO.Transports.ITransport,System.String)
+  commentId: M:BestHTTP.SocketIO.IManager.OnTransportError(BestHTTP.SocketIO.Transports.ITransport,System.String)
+  id: OnTransportError(BestHTTP.SocketIO.Transports.ITransport,System.String)
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: OnTransportError(ITransport, String)
+  nameWithType: IManager.OnTransportError(ITransport, String)
+  fullName: BestHTTP.SocketIO.IManager.OnTransportError(BestHTTP.SocketIO.Transports.ITransport, System.String)
+  type: Method
+  source:
+    id: OnTransportError
+    path: ''
+    startLine: 36886
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void OnTransportError(ITransport trans, string err)
+    parameters:
+    - id: trans
+      type: BestHTTP.SocketIO.Transports.ITransport
+    - id: err
+      type: System.String
+    content.vb: Sub OnTransportError(trans As ITransport, err As String)
+  overload: BestHTTP.SocketIO.IManager.OnTransportError*
+- uid: BestHTTP.SocketIO.IManager.OnTransportProbed(BestHTTP.SocketIO.Transports.ITransport)
+  commentId: M:BestHTTP.SocketIO.IManager.OnTransportProbed(BestHTTP.SocketIO.Transports.ITransport)
+  id: OnTransportProbed(BestHTTP.SocketIO.Transports.ITransport)
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: OnTransportProbed(ITransport)
+  nameWithType: IManager.OnTransportProbed(ITransport)
+  fullName: BestHTTP.SocketIO.IManager.OnTransportProbed(BestHTTP.SocketIO.Transports.ITransport)
+  type: Method
+  source:
+    id: OnTransportProbed
+    path: ''
+    startLine: 36887
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void OnTransportProbed(ITransport trans)
+    parameters:
+    - id: trans
+      type: BestHTTP.SocketIO.Transports.ITransport
+    content.vb: Sub OnTransportProbed(trans As ITransport)
+  overload: BestHTTP.SocketIO.IManager.OnTransportProbed*
+- uid: BestHTTP.SocketIO.IManager.SendPacket(BestHTTP.SocketIO.Packet)
+  commentId: M:BestHTTP.SocketIO.IManager.SendPacket(BestHTTP.SocketIO.Packet)
+  id: SendPacket(BestHTTP.SocketIO.Packet)
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: SendPacket(Packet)
+  nameWithType: IManager.SendPacket(Packet)
+  fullName: BestHTTP.SocketIO.IManager.SendPacket(BestHTTP.SocketIO.Packet)
+  type: Method
+  source:
+    id: SendPacket
+    path: ''
+    startLine: 36888
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void SendPacket(Packet packet)
+    parameters:
+    - id: packet
+      type: BestHTTP.SocketIO.Packet
+    content.vb: Sub SendPacket(packet As Packet)
+  overload: BestHTTP.SocketIO.IManager.SendPacket*
+- uid: BestHTTP.SocketIO.IManager.OnPacket(BestHTTP.SocketIO.Packet)
+  commentId: M:BestHTTP.SocketIO.IManager.OnPacket(BestHTTP.SocketIO.Packet)
+  id: OnPacket(BestHTTP.SocketIO.Packet)
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: OnPacket(Packet)
+  nameWithType: IManager.OnPacket(Packet)
+  fullName: BestHTTP.SocketIO.IManager.OnPacket(BestHTTP.SocketIO.Packet)
+  type: Method
+  source:
+    id: OnPacket
+    path: ''
+    startLine: 36889
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void OnPacket(Packet packet)
+    parameters:
+    - id: packet
+      type: BestHTTP.SocketIO.Packet
+    content.vb: Sub OnPacket(packet As Packet)
+  overload: BestHTTP.SocketIO.IManager.OnPacket*
+- uid: BestHTTP.SocketIO.IManager.EmitEvent(System.String,System.Object[])
+  commentId: M:BestHTTP.SocketIO.IManager.EmitEvent(System.String,System.Object[])
+  id: EmitEvent(System.String,System.Object[])
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: EmitEvent(String, Object[])
+  nameWithType: IManager.EmitEvent(String, Object[])
+  fullName: BestHTTP.SocketIO.IManager.EmitEvent(System.String, System.Object[])
+  type: Method
+  source:
+    id: EmitEvent
+    path: ''
+    startLine: 36890
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void EmitEvent(string eventName, params object[] args)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: args
+      type: System.Object[]
+    content.vb: Sub EmitEvent(eventName As String, ParamArray args As Object())
+  overload: BestHTTP.SocketIO.IManager.EmitEvent*
+  nameWithType.vb: IManager.EmitEvent(String, Object())
+  fullName.vb: BestHTTP.SocketIO.IManager.EmitEvent(System.String, System.Object())
+  name.vb: EmitEvent(String, Object())
+- uid: BestHTTP.SocketIO.IManager.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+  commentId: M:BestHTTP.SocketIO.IManager.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+  id: EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes,System.Object[])
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: EmitEvent(SocketIOEventTypes, Object[])
+  nameWithType: IManager.EmitEvent(SocketIOEventTypes, Object[])
+  fullName: BestHTTP.SocketIO.IManager.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes, System.Object[])
+  type: Method
+  source:
+    id: EmitEvent
+    path: ''
+    startLine: 36891
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void EmitEvent(SocketIOEventTypes type, params object[] args)
+    parameters:
+    - id: type
+      type: BestHTTP.SocketIO.SocketIOEventTypes
+    - id: args
+      type: System.Object[]
+    content.vb: Sub EmitEvent(type As SocketIOEventTypes, ParamArray args As Object())
+  overload: BestHTTP.SocketIO.IManager.EmitEvent*
+  nameWithType.vb: IManager.EmitEvent(SocketIOEventTypes, Object())
+  fullName.vb: BestHTTP.SocketIO.IManager.EmitEvent(BestHTTP.SocketIO.SocketIOEventTypes, System.Object())
+  name.vb: EmitEvent(SocketIOEventTypes, Object())
+- uid: BestHTTP.SocketIO.IManager.EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+  commentId: M:BestHTTP.SocketIO.IManager.EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+  id: EmitError(BestHTTP.SocketIO.SocketIOErrors,System.String)
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: EmitError(SocketIOErrors, String)
+  nameWithType: IManager.EmitError(SocketIOErrors, String)
+  fullName: BestHTTP.SocketIO.IManager.EmitError(BestHTTP.SocketIO.SocketIOErrors, System.String)
+  type: Method
+  source:
+    id: EmitError
+    path: ''
+    startLine: 36892
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void EmitError(SocketIOErrors errCode, string msg)
+    parameters:
+    - id: errCode
+      type: BestHTTP.SocketIO.SocketIOErrors
+    - id: msg
+      type: System.String
+    content.vb: Sub EmitError(errCode As SocketIOErrors, msg As String)
+  overload: BestHTTP.SocketIO.IManager.EmitError*
+- uid: BestHTTP.SocketIO.IManager.EmitAll(System.String,System.Object[])
+  commentId: M:BestHTTP.SocketIO.IManager.EmitAll(System.String,System.Object[])
+  id: EmitAll(System.String,System.Object[])
+  parent: BestHTTP.SocketIO.IManager
+  langs:
+  - csharp
+  - vb
+  name: EmitAll(String, Object[])
+  nameWithType: IManager.EmitAll(String, Object[])
+  fullName: BestHTTP.SocketIO.IManager.EmitAll(System.String, System.Object[])
+  type: Method
+  source:
+    id: EmitAll
+    path: ''
+    startLine: 36893
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: void EmitAll(string eventName, params object[] args)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: args
+      type: System.Object[]
+    content.vb: Sub EmitAll(eventName As String, ParamArray args As Object())
+  overload: BestHTTP.SocketIO.IManager.EmitAll*
+  nameWithType.vb: IManager.EmitAll(String, Object())
+  fullName.vb: BestHTTP.SocketIO.IManager.EmitAll(System.String, System.Object())
+  name.vb: EmitAll(String, Object())
+references:
+- uid: BestHTTP.SocketIO
+  commentId: N:BestHTTP.SocketIO
+  name: BestHTTP.SocketIO
+  nameWithType: BestHTTP.SocketIO
+  fullName: BestHTTP.SocketIO
+- uid: BestHTTP.SocketIO.IManager.Remove*
+  commentId: Overload:BestHTTP.SocketIO.IManager.Remove
+  name: Remove
+  nameWithType: IManager.Remove
+  fullName: BestHTTP.SocketIO.IManager.Remove
+- uid: BestHTTP.SocketIO.Socket
+  commentId: T:BestHTTP.SocketIO.Socket
+  parent: BestHTTP.SocketIO
+  name: Socket
+  nameWithType: Socket
+  fullName: BestHTTP.SocketIO.Socket
+- uid: BestHTTP.SocketIO.IManager.Close*
+  commentId: Overload:BestHTTP.SocketIO.IManager.Close
+  name: Close
+  nameWithType: IManager.Close
+  fullName: BestHTTP.SocketIO.IManager.Close
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.SocketIO.IManager.TryToReconnect*
+  commentId: Overload:BestHTTP.SocketIO.IManager.TryToReconnect
+  name: TryToReconnect
+  nameWithType: IManager.TryToReconnect
+  fullName: BestHTTP.SocketIO.IManager.TryToReconnect
+- uid: BestHTTP.SocketIO.IManager.OnTransportConnected*
+  commentId: Overload:BestHTTP.SocketIO.IManager.OnTransportConnected
+  name: OnTransportConnected
+  nameWithType: IManager.OnTransportConnected
+  fullName: BestHTTP.SocketIO.IManager.OnTransportConnected
+- uid: BestHTTP.SocketIO.Transports.ITransport
+  commentId: T:BestHTTP.SocketIO.Transports.ITransport
+  parent: BestHTTP.SocketIO.Transports
+  name: ITransport
+  nameWithType: ITransport
+  fullName: BestHTTP.SocketIO.Transports.ITransport
+- uid: BestHTTP.SocketIO.Transports
+  commentId: N:BestHTTP.SocketIO.Transports
+  name: BestHTTP.SocketIO.Transports
+  nameWithType: BestHTTP.SocketIO.Transports
+  fullName: BestHTTP.SocketIO.Transports
+- uid: BestHTTP.SocketIO.IManager.OnTransportError*
+  commentId: Overload:BestHTTP.SocketIO.IManager.OnTransportError
+  name: OnTransportError
+  nameWithType: IManager.OnTransportError
+  fullName: BestHTTP.SocketIO.IManager.OnTransportError
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BestHTTP.SocketIO.IManager.OnTransportProbed*
+  commentId: Overload:BestHTTP.SocketIO.IManager.OnTransportProbed
+  name: OnTransportProbed
+  nameWithType: IManager.OnTransportProbed
+  fullName: BestHTTP.SocketIO.IManager.OnTransportProbed
+- uid: BestHTTP.SocketIO.IManager.SendPacket*
+  commentId: Overload:BestHTTP.SocketIO.IManager.SendPacket
+  name: SendPacket
+  nameWithType: IManager.SendPacket
+  fullName: BestHTTP.SocketIO.IManager.SendPacket
+- uid: BestHTTP.SocketIO.Packet
+  commentId: T:BestHTTP.SocketIO.Packet
+  parent: BestHTTP.SocketIO
+  name: Packet
+  nameWithType: Packet
+  fullName: BestHTTP.SocketIO.Packet
+- uid: BestHTTP.SocketIO.IManager.OnPacket*
+  commentId: Overload:BestHTTP.SocketIO.IManager.OnPacket
+  name: OnPacket
+  nameWithType: IManager.OnPacket
+  fullName: BestHTTP.SocketIO.IManager.OnPacket
+- uid: BestHTTP.SocketIO.IManager.EmitEvent*
+  commentId: Overload:BestHTTP.SocketIO.IManager.EmitEvent
+  name: EmitEvent
+  nameWithType: IManager.EmitEvent
+  fullName: BestHTTP.SocketIO.IManager.EmitEvent
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BestHTTP.SocketIO.SocketIOEventTypes
+  commentId: T:BestHTTP.SocketIO.SocketIOEventTypes
+  parent: BestHTTP.SocketIO
+  name: SocketIOEventTypes
+  nameWithType: SocketIOEventTypes
+  fullName: BestHTTP.SocketIO.SocketIOEventTypes
+- uid: BestHTTP.SocketIO.IManager.EmitError*
+  commentId: Overload:BestHTTP.SocketIO.IManager.EmitError
+  name: EmitError
+  nameWithType: IManager.EmitError
+  fullName: BestHTTP.SocketIO.IManager.EmitError
+- uid: BestHTTP.SocketIO.SocketIOErrors
+  commentId: T:BestHTTP.SocketIO.SocketIOErrors
+  parent: BestHTTP.SocketIO
+  name: SocketIOErrors
+  nameWithType: SocketIOErrors
+  fullName: BestHTTP.SocketIO.SocketIOErrors
+- uid: BestHTTP.SocketIO.IManager.EmitAll*
+  commentId: Overload:BestHTTP.SocketIO.IManager.EmitAll
+  name: EmitAll
+  nameWithType: IManager.EmitAll
+  fullName: BestHTTP.SocketIO.IManager.EmitAll

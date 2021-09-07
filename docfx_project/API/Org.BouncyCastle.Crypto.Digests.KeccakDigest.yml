@@ -1,0 +1,1533 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  commentId: T:Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  id: KeccakDigest
+  parent: Org.BouncyCastle.Crypto.Digests
+  children:
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor(Org.BouncyCastle.Crypto.Digests.KeccakDigest)
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor(System.Int32)
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.Absorb(System.Byte[],System.Int32,System.Int64)
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.AlgorithmName
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.bitsAvailableForSqueezing
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.bitsInQueue
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.chunk
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.Copy
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.dataQueue
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal(System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal(System.Byte[],System.Int32,System.Byte,System.Int32)
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.fixedOutputLength
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetByteLength
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetDigestSize
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.oneByte
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.rate
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset(IMemoable)
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.Squeeze(System.Byte[],System.Int32,System.Int64)
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.squeezing
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.state
+  - Org.BouncyCastle.Crypto.Digests.KeccakDigest.Update(System.Byte)
+  langs:
+  - csharp
+  - vb
+  name: KeccakDigest
+  nameWithType: KeccakDigest
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  type: Class
+  source:
+    id: KeccakDigest
+    path: ''
+    startLine: 130941
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  summary: "\nImplementation of Keccak based on following KeccakNISTInterface.c from http://keccak.noekeon.org/\n"
+  remarks: "\nFollowing the naming conventions used in the C source code to enable easy review of the implementation.\n"
+  example: []
+  syntax:
+    content: 'public class KeccakDigest : IDigest, IMemoable'
+    content.vb: >-
+      Public Class KeccakDigest
+          Implements IDigest, IMemoable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Org.BouncyCastle.Crypto.Digests.Sha3Digest
+  - Org.BouncyCastle.Crypto.Digests.ShakeDigest
+  implements:
+  - Org.BouncyCastle.Crypto.IDigest
+  - IMemoable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.state
+  commentId: F:Org.BouncyCastle.Crypto.Digests.KeccakDigest.state
+  id: state
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: state
+  nameWithType: KeccakDigest.state
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.state
+  type: Field
+  source:
+    id: state
+    path: ''
+    startLine: 131004
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected byte[] state
+    return:
+      type: System.Byte[]
+    content.vb: Protected state As Byte()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.dataQueue
+  commentId: F:Org.BouncyCastle.Crypto.Digests.KeccakDigest.dataQueue
+  id: dataQueue
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: dataQueue
+  nameWithType: KeccakDigest.dataQueue
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.dataQueue
+  type: Field
+  source:
+    id: dataQueue
+    path: ''
+    startLine: 131005
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected byte[] dataQueue
+    return:
+      type: System.Byte[]
+    content.vb: Protected dataQueue As Byte()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.rate
+  commentId: F:Org.BouncyCastle.Crypto.Digests.KeccakDigest.rate
+  id: rate
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: rate
+  nameWithType: KeccakDigest.rate
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.rate
+  type: Field
+  source:
+    id: rate
+    path: ''
+    startLine: 131006
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected int rate
+    return:
+      type: System.Int32
+    content.vb: Protected rate As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.bitsInQueue
+  commentId: F:Org.BouncyCastle.Crypto.Digests.KeccakDigest.bitsInQueue
+  id: bitsInQueue
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: bitsInQueue
+  nameWithType: KeccakDigest.bitsInQueue
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.bitsInQueue
+  type: Field
+  source:
+    id: bitsInQueue
+    path: ''
+    startLine: 131007
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected int bitsInQueue
+    return:
+      type: System.Int32
+    content.vb: Protected bitsInQueue As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.fixedOutputLength
+  commentId: F:Org.BouncyCastle.Crypto.Digests.KeccakDigest.fixedOutputLength
+  id: fixedOutputLength
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: fixedOutputLength
+  nameWithType: KeccakDigest.fixedOutputLength
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.fixedOutputLength
+  type: Field
+  source:
+    id: fixedOutputLength
+    path: ''
+    startLine: 131008
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected int fixedOutputLength
+    return:
+      type: System.Int32
+    content.vb: Protected fixedOutputLength As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.squeezing
+  commentId: F:Org.BouncyCastle.Crypto.Digests.KeccakDigest.squeezing
+  id: squeezing
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: squeezing
+  nameWithType: KeccakDigest.squeezing
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.squeezing
+  type: Field
+  source:
+    id: squeezing
+    path: ''
+    startLine: 131009
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected bool squeezing
+    return:
+      type: System.Boolean
+    content.vb: Protected squeezing As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.bitsAvailableForSqueezing
+  commentId: F:Org.BouncyCastle.Crypto.Digests.KeccakDigest.bitsAvailableForSqueezing
+  id: bitsAvailableForSqueezing
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: bitsAvailableForSqueezing
+  nameWithType: KeccakDigest.bitsAvailableForSqueezing
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.bitsAvailableForSqueezing
+  type: Field
+  source:
+    id: bitsAvailableForSqueezing
+    path: ''
+    startLine: 131010
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected int bitsAvailableForSqueezing
+    return:
+      type: System.Int32
+    content.vb: Protected bitsAvailableForSqueezing As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.chunk
+  commentId: F:Org.BouncyCastle.Crypto.Digests.KeccakDigest.chunk
+  id: chunk
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: chunk
+  nameWithType: KeccakDigest.chunk
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.chunk
+  type: Field
+  source:
+    id: chunk
+    path: ''
+    startLine: 131011
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected byte[] chunk
+    return:
+      type: System.Byte[]
+    content.vb: Protected chunk As Byte()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.oneByte
+  commentId: F:Org.BouncyCastle.Crypto.Digests.KeccakDigest.oneByte
+  id: oneByte
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: oneByte
+  nameWithType: KeccakDigest.oneByte
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.oneByte
+  type: Field
+  source:
+    id: oneByte
+    path: ''
+    startLine: 131012
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected byte[] oneByte
+    return:
+      type: System.Byte[]
+    content.vb: Protected oneByte As Byte()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor
+  id: '#ctor'
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: KeccakDigest()
+  nameWithType: KeccakDigest.KeccakDigest()
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.KeccakDigest()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 131022
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: public KeccakDigest()
+    content.vb: Public Sub New
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor(System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: KeccakDigest(Int32)
+  nameWithType: KeccakDigest.KeccakDigest(Int32)
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.KeccakDigest(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 131027
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: public KeccakDigest(int bitLength)
+    parameters:
+    - id: bitLength
+      type: System.Int32
+    content.vb: Public Sub New(bitLength As Integer)
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor(Org.BouncyCastle.Crypto.Digests.KeccakDigest)
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor(Org.BouncyCastle.Crypto.Digests.KeccakDigest)
+  id: '#ctor(Org.BouncyCastle.Crypto.Digests.KeccakDigest)'
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: KeccakDigest(KeccakDigest)
+  nameWithType: KeccakDigest.KeccakDigest(KeccakDigest)
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.KeccakDigest(Org.BouncyCastle.Crypto.Digests.KeccakDigest)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 131032
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: public KeccakDigest(KeccakDigest source)
+    parameters:
+    - id: source
+      type: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+    content.vb: Public Sub New(source As KeccakDigest)
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.Digests.KeccakDigest.AlgorithmName
+  id: AlgorithmName
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: AlgorithmName
+  nameWithType: KeccakDigest.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.AlgorithmName
+  type: Property
+  source:
+    id: AlgorithmName
+    path: ''
+    startLine: 131050
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: public virtual string AlgorithmName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property AlgorithmName As String
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.AlgorithmName*
+  implements:
+  - Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetDigestSize
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetDigestSize
+  id: GetDigestSize
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: GetDigestSize()
+  nameWithType: KeccakDigest.GetDigestSize()
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetDigestSize()
+  type: Method
+  source:
+    id: GetDigestSize
+    path: ''
+    startLine: 131055
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: public virtual int GetDigestSize()
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Function GetDigestSize As Integer
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetDigestSize*
+  implements:
+  - Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Update(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.Update(System.Byte)
+  id: Update(System.Byte)
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: Update(Byte)
+  nameWithType: KeccakDigest.Update(Byte)
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Update(System.Byte)
+  type: Method
+  source:
+    id: Update
+    path: ''
+    startLine: 131060
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: public virtual void Update(byte input)
+    parameters:
+    - id: input
+      type: System.Byte
+    content.vb: Public Overridable Sub Update(input As Byte)
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Update*
+  implements:
+  - Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  id: BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: BlockUpdate(Byte[], Int32, Int32)
+  nameWithType: KeccakDigest.BlockUpdate(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.BlockUpdate(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: BlockUpdate
+    path: ''
+    startLine: 131067
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: public virtual void BlockUpdate(byte[] input, int inOff, int len)
+    parameters:
+    - id: input
+      type: System.Byte[]
+    - id: inOff
+      type: System.Int32
+    - id: len
+      type: System.Int32
+    content.vb: Public Overridable Sub BlockUpdate(input As Byte(), inOff As Integer, len As Integer)
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.BlockUpdate*
+  implements:
+  - Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  nameWithType.vb: KeccakDigest.BlockUpdate(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Digests.KeccakDigest.BlockUpdate(System.Byte(), System.Int32, System.Int32)
+  name.vb: BlockUpdate(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal(System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal(System.Byte[],System.Int32)
+  id: DoFinal(System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: DoFinal(Byte[], Int32)
+  nameWithType: KeccakDigest.DoFinal(Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal(System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: DoFinal
+    path: ''
+    startLine: 131072
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: public virtual int DoFinal(byte[] output, int outOff)
+    parameters:
+    - id: output
+      type: System.Byte[]
+    - id: outOff
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Function DoFinal(output As Byte(), outOff As Integer) As Integer
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal*
+  implements:
+  - Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+  nameWithType.vb: KeccakDigest.DoFinal(Byte(), Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal(System.Byte(), System.Int32)
+  name.vb: DoFinal(Byte(), Int32)
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal(System.Byte[],System.Int32,System.Byte,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal(System.Byte[],System.Int32,System.Byte,System.Int32)
+  id: DoFinal(System.Byte[],System.Int32,System.Byte,System.Int32)
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: DoFinal(Byte[], Int32, Byte, Int32)
+  nameWithType: KeccakDigest.DoFinal(Byte[], Int32, Byte, Int32)
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal(System.Byte[], System.Int32, System.Byte, System.Int32)
+  type: Method
+  source:
+    id: DoFinal
+    path: ''
+    startLine: 131084
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected virtual int DoFinal(byte[] output, int outOff, byte partialByte, int partialBits)
+    parameters:
+    - id: output
+      type: System.Byte[]
+    - id: outOff
+      type: System.Int32
+    - id: partialByte
+      type: System.Byte
+    - id: partialBits
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Protected Overridable Function DoFinal(output As Byte(), outOff As Integer, partialByte As Byte, partialBits As Integer) As Integer
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal*
+  nameWithType.vb: KeccakDigest.DoFinal(Byte(), Int32, Byte, Int32)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal(System.Byte(), System.Int32, System.Byte, System.Int32)
+  name.vb: DoFinal(Byte(), Int32, Byte, Int32)
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset
+  id: Reset
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: KeccakDigest.Reset()
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset()
+  type: Method
+  source:
+    id: Reset
+    path: ''
+    startLine: 131099
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: public virtual void Reset()
+    content.vb: Public Overridable Sub Reset
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset*
+  implements:
+  - Org.BouncyCastle.Crypto.IDigest.Reset
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetByteLength
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetByteLength
+  id: GetByteLength
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: GetByteLength()
+  nameWithType: KeccakDigest.GetByteLength()
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetByteLength()
+  type: Method
+  source:
+    id: GetByteLength
+    path: ''
+    startLine: 131109
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  example: []
+  syntax:
+    content: public virtual int GetByteLength()
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Function GetByteLength As Integer
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetByteLength*
+  implements:
+  - Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Absorb(System.Byte[],System.Int32,System.Int64)
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.Absorb(System.Byte[],System.Int32,System.Int64)
+  id: Absorb(System.Byte[],System.Int32,System.Int64)
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: Absorb(Byte[], Int32, Int64)
+  nameWithType: KeccakDigest.Absorb(Byte[], Int32, Int64)
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Absorb(System.Byte[], System.Int32, System.Int64)
+  type: Method
+  source:
+    id: Absorb
+    path: ''
+    startLine: 131173
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected virtual void Absorb(byte[] data, int off, long databitlen)
+    parameters:
+    - id: data
+      type: System.Byte[]
+    - id: off
+      type: System.Int32
+    - id: databitlen
+      type: System.Int64
+    content.vb: Protected Overridable Sub Absorb(data As Byte(), off As Integer, databitlen As Long)
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Absorb*
+  nameWithType.vb: KeccakDigest.Absorb(Byte(), Int32, Int64)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Absorb(System.Byte(), System.Int32, System.Int64)
+  name.vb: Absorb(Byte(), Int32, Int64)
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Squeeze(System.Byte[],System.Int32,System.Int64)
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.Squeeze(System.Byte[],System.Int32,System.Int64)
+  id: Squeeze(System.Byte[],System.Int32,System.Int64)
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: Squeeze(Byte[], Int32, Int64)
+  nameWithType: KeccakDigest.Squeeze(Byte[], Int32, Int64)
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Squeeze(System.Byte[], System.Int32, System.Int64)
+  type: Method
+  source:
+    id: Squeeze
+    path: ''
+    startLine: 131260
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: protected virtual void Squeeze(byte[] output, int offset, long outputLength)
+    parameters:
+    - id: output
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: outputLength
+      type: System.Int64
+    content.vb: Protected Overridable Sub Squeeze(output As Byte(), offset As Integer, outputLength As Long)
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Squeeze*
+  nameWithType.vb: KeccakDigest.Squeeze(Byte(), Int32, Int64)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Squeeze(System.Byte(), System.Int32, System.Int64)
+  name.vb: Squeeze(Byte(), Int32, Int64)
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Copy
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.Copy
+  id: Copy
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: Copy()
+  nameWithType: KeccakDigest.Copy()
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Copy()
+  type: Method
+  source:
+    id: Copy
+    path: ''
+    startLine: 131450
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: public virtual IMemoable Copy()
+    return:
+      type: IMemoable
+    content.vb: Public Overridable Function Copy As IMemoable
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Copy*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset(IMemoable)
+  commentId: M:Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset(IMemoable)
+  id: Reset(IMemoable)
+  parent: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  langs:
+  - csharp
+  - vb
+  name: Reset(IMemoable)
+  nameWithType: KeccakDigest.Reset(IMemoable)
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset(IMemoable)
+  type: Method
+  source:
+    id: Reset
+    path: ''
+    startLine: 131455
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Digests
+  syntax:
+    content: public virtual void Reset(IMemoable other)
+    parameters:
+    - id: other
+      type: IMemoable
+    content.vb: Public Overridable Sub Reset(other As IMemoable)
+  overload: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Org.BouncyCastle.Crypto.Digests
+  commentId: N:Org.BouncyCastle.Crypto.Digests
+  name: Org.BouncyCastle.Crypto.Digests
+  nameWithType: Org.BouncyCastle.Crypto.Digests
+  fullName: Org.BouncyCastle.Crypto.Digests
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.IDigest
+  commentId: T:Org.BouncyCastle.Crypto.IDigest
+  parent: Org.BouncyCastle.Crypto
+  name: IDigest
+  nameWithType: IDigest
+  fullName: Org.BouncyCastle.Crypto.IDigest
+- uid: IMemoable
+  isExternal: true
+  name: IMemoable
+  nameWithType: IMemoable
+  fullName: IMemoable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Digests.KeccakDigest.#ctor
+  name: KeccakDigest
+  nameWithType: KeccakDigest.KeccakDigest
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.KeccakDigest
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  commentId: T:Org.BouncyCastle.Crypto.Digests.KeccakDigest
+  parent: Org.BouncyCastle.Crypto.Digests
+  name: KeccakDigest
+  nameWithType: KeccakDigest
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.AlgorithmName*
+  commentId: Overload:Org.BouncyCastle.Crypto.Digests.KeccakDigest.AlgorithmName
+  name: AlgorithmName
+  nameWithType: KeccakDigest.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.AlgorithmName
+- uid: Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: AlgorithmName
+  nameWithType: IDigest.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.IDigest.AlgorithmName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetDigestSize*
+  commentId: Overload:Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetDigestSize
+  name: GetDigestSize
+  nameWithType: KeccakDigest.GetDigestSize
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetDigestSize
+- uid: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: GetDigestSize()
+  nameWithType: IDigest.GetDigestSize()
+  fullName: Org.BouncyCastle.Crypto.IDigest.GetDigestSize()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+    name: GetDigestSize
+    nameWithType: IDigest.GetDigestSize
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+    name: GetDigestSize
+    nameWithType: IDigest.GetDigestSize
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetDigestSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Update*
+  commentId: Overload:Org.BouncyCastle.Crypto.Digests.KeccakDigest.Update
+  name: Update
+  nameWithType: KeccakDigest.Update
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Update
+- uid: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  parent: Org.BouncyCastle.Crypto.IDigest
+  isExternal: true
+  name: Update(Byte)
+  nameWithType: IDigest.Update(Byte)
+  fullName: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+    name: Update
+    nameWithType: IDigest.Update
+    fullName: Org.BouncyCastle.Crypto.IDigest.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Update(System.Byte)
+    name: Update
+    nameWithType: IDigest.Update
+    fullName: Org.BouncyCastle.Crypto.IDigest.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.BlockUpdate*
+  commentId: Overload:Org.BouncyCastle.Crypto.Digests.KeccakDigest.BlockUpdate
+  name: BlockUpdate
+  nameWithType: KeccakDigest.BlockUpdate
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.BlockUpdate
+- uid: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.IDigest
+  isExternal: true
+  name: BlockUpdate(Byte[], Int32, Int32)
+  nameWithType: IDigest.BlockUpdate(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: IDigest.BlockUpdate(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte(), System.Int32, System.Int32)
+  name.vb: BlockUpdate(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+    name: BlockUpdate
+    nameWithType: IDigest.BlockUpdate
+    fullName: Org.BouncyCastle.Crypto.IDigest.BlockUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.BlockUpdate(System.Byte[],System.Int32,System.Int32)
+    name: BlockUpdate
+    nameWithType: IDigest.BlockUpdate
+    fullName: Org.BouncyCastle.Crypto.IDigest.BlockUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal*
+  commentId: Overload:Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal
+  name: DoFinal
+  nameWithType: KeccakDigest.DoFinal
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.DoFinal
+- uid: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.IDigest
+  isExternal: true
+  name: DoFinal(Byte[], Int32)
+  nameWithType: IDigest.DoFinal(Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[], System.Int32)
+  nameWithType.vb: IDigest.DoFinal(Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte(), System.Int32)
+  name.vb: DoFinal(Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: IDigest.DoFinal
+    fullName: Org.BouncyCastle.Crypto.IDigest.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.DoFinal(System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: IDigest.DoFinal
+    fullName: Org.BouncyCastle.Crypto.IDigest.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset*
+  commentId: Overload:Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset
+  name: Reset
+  nameWithType: KeccakDigest.Reset
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Reset
+- uid: Org.BouncyCastle.Crypto.IDigest.Reset
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.Reset
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: Reset()
+  nameWithType: IDigest.Reset()
+  fullName: Org.BouncyCastle.Crypto.IDigest.Reset()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Reset
+    name: Reset
+    nameWithType: IDigest.Reset
+    fullName: Org.BouncyCastle.Crypto.IDigest.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.Reset
+    name: Reset
+    nameWithType: IDigest.Reset
+    fullName: Org.BouncyCastle.Crypto.IDigest.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetByteLength*
+  commentId: Overload:Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetByteLength
+  name: GetByteLength
+  nameWithType: KeccakDigest.GetByteLength
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.GetByteLength
+- uid: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  commentId: M:Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  parent: Org.BouncyCastle.Crypto.IDigest
+  name: GetByteLength()
+  nameWithType: IDigest.GetByteLength()
+  fullName: Org.BouncyCastle.Crypto.IDigest.GetByteLength()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+    name: GetByteLength
+    nameWithType: IDigest.GetByteLength
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+    name: GetByteLength
+    nameWithType: IDigest.GetByteLength
+    fullName: Org.BouncyCastle.Crypto.IDigest.GetByteLength
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Absorb*
+  commentId: Overload:Org.BouncyCastle.Crypto.Digests.KeccakDigest.Absorb
+  name: Absorb
+  nameWithType: KeccakDigest.Absorb
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Absorb
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Squeeze*
+  commentId: Overload:Org.BouncyCastle.Crypto.Digests.KeccakDigest.Squeeze
+  name: Squeeze
+  nameWithType: KeccakDigest.Squeeze
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Squeeze
+- uid: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Copy*
+  commentId: Overload:Org.BouncyCastle.Crypto.Digests.KeccakDigest.Copy
+  name: Copy
+  nameWithType: KeccakDigest.Copy
+  fullName: Org.BouncyCastle.Crypto.Digests.KeccakDigest.Copy

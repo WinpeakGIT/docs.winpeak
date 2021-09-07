@@ -1,0 +1,2071 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  commentId: T:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  id: BufferedAeadBlockCipher
+  parent: Org.BouncyCastle.Crypto
+  children:
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.#ctor(IAeadBlockCipher)
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.AlgorithmName
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetBlockSize
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetOutputSize(System.Int32)
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetUpdateOutputSize(System.Int32)
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte)
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte,System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Reset
+  langs:
+  - csharp
+  - vb
+  name: BufferedAeadBlockCipher
+  nameWithType: BufferedAeadBlockCipher
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  type: Class
+  source:
+    id: BufferedAeadBlockCipher
+    path: ''
+    startLine: 98984
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  example: []
+  syntax:
+    content: 'public class BufferedAeadBlockCipher : BufferedCipherBase, IBufferedCipher'
+    content.vb: >-
+      Public Class BufferedAeadBlockCipher
+          Inherits BufferedCipherBase
+          Implements IBufferedCipher
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Crypto.BufferedCipherBase
+  implements:
+  - Org.BouncyCastle.Crypto.IBufferedCipher
+  inheritedMembers:
+  - Org.BouncyCastle.Crypto.BufferedCipherBase.EmptyBuffer
+  - Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[])
+  - Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[])
+  - Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Byte[],System.Int32)
+  - Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.#ctor(IAeadBlockCipher)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.#ctor(IAeadBlockCipher)
+  id: '#ctor(IAeadBlockCipher)'
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: BufferedAeadBlockCipher(IAeadBlockCipher)
+  nameWithType: BufferedAeadBlockCipher.BufferedAeadBlockCipher(IAeadBlockCipher)
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.BufferedAeadBlockCipher(IAeadBlockCipher)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 98989
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  syntax:
+    content: public BufferedAeadBlockCipher(IAeadBlockCipher cipher)
+    parameters:
+    - id: cipher
+      type: IAeadBlockCipher
+    content.vb: Public Sub New(cipher As IAeadBlockCipher)
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.AlgorithmName
+  id: AlgorithmName
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: AlgorithmName
+  nameWithType: BufferedAeadBlockCipher.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.AlgorithmName
+  type: Property
+  source:
+    id: AlgorithmName
+    path: ''
+    startLine: 98998
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  syntax:
+    content: public override string AlgorithmName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property AlgorithmName As String
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.AlgorithmName
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.AlgorithmName*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  id: Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: Init(Boolean, ICipherParameters)
+  nameWithType: BufferedAeadBlockCipher.Init(Boolean, ICipherParameters)
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Init(System.Boolean, Org.BouncyCastle.Crypto.ICipherParameters)
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 99012
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  example: []
+  syntax:
+    content: public override void Init(bool forEncryption, ICipherParameters parameters)
+    parameters:
+    - id: forEncryption
+      type: System.Boolean
+    - id: parameters
+      type: Org.BouncyCastle.Crypto.ICipherParameters
+    content.vb: Public Overrides Sub Init(forEncryption As Boolean, parameters As ICipherParameters)
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Init*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetBlockSize
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetBlockSize
+  id: GetBlockSize
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: GetBlockSize()
+  nameWithType: BufferedAeadBlockCipher.GetBlockSize()
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetBlockSize()
+  type: Method
+  source:
+    id: GetBlockSize
+    path: ''
+    startLine: 99029
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  example: []
+  syntax:
+    content: public override int GetBlockSize()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetBlockSize As Integer
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.GetBlockSize
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetBlockSize*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetUpdateOutputSize(System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetUpdateOutputSize(System.Int32)
+  id: GetUpdateOutputSize(System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: GetUpdateOutputSize(Int32)
+  nameWithType: BufferedAeadBlockCipher.GetUpdateOutputSize(Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetUpdateOutputSize(System.Int32)
+  type: Method
+  source:
+    id: GetUpdateOutputSize
+    path: ''
+    startLine: 99042
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  example: []
+  syntax:
+    content: public override int GetUpdateOutputSize(int length)
+    parameters:
+    - id: length
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetUpdateOutputSize(length As Integer) As Integer
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.GetUpdateOutputSize(System.Int32)
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetUpdateOutputSize*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetOutputSize(System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetOutputSize(System.Int32)
+  id: GetOutputSize(System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: GetOutputSize(Int32)
+  nameWithType: BufferedAeadBlockCipher.GetOutputSize(Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetOutputSize(System.Int32)
+  type: Method
+  source:
+    id: GetOutputSize
+    path: ''
+    startLine: 99056
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  example: []
+  syntax:
+    content: public override int GetOutputSize(int length)
+    parameters:
+    - id: length
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetOutputSize(length As Integer) As Integer
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.GetOutputSize(System.Int32)
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetOutputSize*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte,System.Byte[],System.Int32)
+  id: ProcessByte(System.Byte,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: ProcessByte(Byte, Byte[], Int32)
+  nameWithType: BufferedAeadBlockCipher.ProcessByte(Byte, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte, System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: ProcessByte
+    path: ''
+    startLine: 99072
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  example: []
+  syntax:
+    content: public override int ProcessByte(byte input, byte[] output, int outOff)
+    parameters:
+    - id: input
+      type: System.Byte
+    - id: output
+      type: System.Byte[]
+    - id: outOff
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function ProcessByte(input As Byte, output As Byte(), outOff As Integer) As Integer
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte,System.Byte[],System.Int32)
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte*
+  nameWithType.vb: BufferedAeadBlockCipher.ProcessByte(Byte, Byte(), Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte, System.Byte(), System.Int32)
+  name.vb: ProcessByte(Byte, Byte(), Int32)
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte)
+  id: ProcessByte(System.Byte)
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: ProcessByte(Byte)
+  nameWithType: BufferedAeadBlockCipher.ProcessByte(Byte)
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte(System.Byte)
+  type: Method
+  source:
+    id: ProcessByte
+    path: ''
+    startLine: 99080
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  syntax:
+    content: public override byte[] ProcessByte(byte input)
+    parameters:
+    - id: input
+      type: System.Byte
+    return:
+      type: System.Byte[]
+    content.vb: Public Overrides Function ProcessByte(input As Byte) As Byte()
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte)
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32)
+  id: ProcessBytes(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: ProcessBytes(Byte[], Int32, Int32)
+  nameWithType: BufferedAeadBlockCipher.ProcessBytes(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: ProcessBytes
+    path: ''
+    startLine: 99099
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  syntax:
+    content: public override byte[] ProcessBytes(byte[] input, int inOff, int length)
+    parameters:
+    - id: input
+      type: System.Byte[]
+    - id: inOff
+      type: System.Int32
+    - id: length
+      type: System.Int32
+    return:
+      type: System.Byte[]
+    content.vb: Public Overrides Function ProcessBytes(input As Byte(), inOff As Integer, length As Integer) As Byte()
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Int32,System.Int32)
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes*
+  nameWithType.vb: BufferedAeadBlockCipher.ProcessBytes(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte(), System.Int32, System.Int32)
+  name.vb: ProcessBytes(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  id: ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: ProcessBytes(Byte[], Int32, Int32, Byte[], Int32)
+  nameWithType: BufferedAeadBlockCipher.ProcessBytes(Byte[], Int32, Int32, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte[], System.Int32, System.Int32, System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: ProcessBytes
+    path: ''
+    startLine: 99137
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  example: []
+  syntax:
+    content: public override int ProcessBytes(byte[] input, int inOff, int length, byte[] output, int outOff)
+    parameters:
+    - id: input
+      type: System.Byte[]
+    - id: inOff
+      type: System.Int32
+    - id: length
+      type: System.Int32
+    - id: output
+      type: System.Byte[]
+    - id: outOff
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function ProcessBytes(input As Byte(), inOff As Integer, length As Integer, output As Byte(), outOff As Integer) As Integer
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes*
+  nameWithType.vb: BufferedAeadBlockCipher.ProcessBytes(Byte(), Int32, Int32, Byte(), Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes(System.Byte(), System.Int32, System.Int32, System.Byte(), System.Int32)
+  name.vb: ProcessBytes(Byte(), Int32, Int32, Byte(), Int32)
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal
+  id: DoFinal
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: DoFinal()
+  nameWithType: BufferedAeadBlockCipher.DoFinal()
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal()
+  type: Method
+  source:
+    id: DoFinal
+    path: ''
+    startLine: 99147
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  syntax:
+    content: public override byte[] DoFinal()
+    return:
+      type: System.Byte[]
+    content.vb: Public Overrides Function DoFinal As Byte()
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte[],System.Int32,System.Int32)
+  id: DoFinal(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: DoFinal(Byte[], Int32, Int32)
+  nameWithType: BufferedAeadBlockCipher.DoFinal(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: DoFinal
+    path: ''
+    startLine: 99163
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  syntax:
+    content: public override byte[] DoFinal(byte[] input, int inOff, int inLen)
+    parameters:
+    - id: input
+      type: System.Byte[]
+    - id: inOff
+      type: System.Int32
+    - id: inLen
+      type: System.Int32
+    return:
+      type: System.Byte[]
+    content.vb: Public Overrides Function DoFinal(input As Byte(), inOff As Integer, inLen As Integer) As Byte()
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32,System.Int32)
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal*
+  nameWithType.vb: BufferedAeadBlockCipher.DoFinal(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte(), System.Int32, System.Int32)
+  name.vb: DoFinal(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte[],System.Int32)
+  id: DoFinal(System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: DoFinal(Byte[], Int32)
+  nameWithType: BufferedAeadBlockCipher.DoFinal(Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte[], System.Int32)
+  type: Method
+  source:
+    id: DoFinal
+    path: ''
+    startLine: 99203
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  example: []
+  syntax:
+    content: public override int DoFinal(byte[] output, int outOff)
+    parameters:
+    - id: output
+      type: System.Byte[]
+    - id: outOff
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function DoFinal(output As Byte(), outOff As Integer) As Integer
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32)
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal*
+  nameWithType.vb: BufferedAeadBlockCipher.DoFinal(Byte(), Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal(System.Byte(), System.Int32)
+  name.vb: DoFinal(Byte(), Int32)
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Reset
+  commentId: M:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Reset
+  id: Reset
+  parent: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: BufferedAeadBlockCipher.Reset()
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Reset()
+  type: Method
+  source:
+    id: Reset
+    path: ''
+    startLine: 99214
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto
+  example: []
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset
+  overridden: Org.BouncyCastle.Crypto.BufferedCipherBase.Reset
+  overload: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Reset*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase
+  commentId: T:Org.BouncyCastle.Crypto.BufferedCipherBase
+  parent: Org.BouncyCastle.Crypto
+  name: BufferedCipherBase
+  nameWithType: BufferedCipherBase
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase
+- uid: Org.BouncyCastle.Crypto.IBufferedCipher
+  commentId: T:Org.BouncyCastle.Crypto.IBufferedCipher
+  parent: Org.BouncyCastle.Crypto
+  name: IBufferedCipher
+  nameWithType: IBufferedCipher
+  fullName: Org.BouncyCastle.Crypto.IBufferedCipher
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.EmptyBuffer
+  commentId: F:Org.BouncyCastle.Crypto.BufferedCipherBase.EmptyBuffer
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  name: EmptyBuffer
+  nameWithType: BufferedCipherBase.EmptyBuffer
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.EmptyBuffer
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: ProcessBytes(Byte[])
+  nameWithType: BufferedCipherBase.ProcessBytes(Byte[])
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[])
+  nameWithType.vb: BufferedCipherBase.ProcessBytes(Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte())
+  name.vb: ProcessBytes(Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[])
+    name: ProcessBytes
+    nameWithType: BufferedCipherBase.ProcessBytes
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[])
+    name: ProcessBytes
+    nameWithType: BufferedCipherBase.ProcessBytes
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: ProcessBytes(Byte[], Byte[], Int32)
+  nameWithType: BufferedCipherBase.ProcessBytes(Byte[], Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[], System.Byte[], System.Int32)
+  nameWithType.vb: BufferedCipherBase.ProcessBytes(Byte(), Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte(), System.Byte(), System.Int32)
+  name.vb: ProcessBytes(Byte(), Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Byte[],System.Int32)
+    name: ProcessBytes
+    nameWithType: BufferedCipherBase.ProcessBytes
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Byte[],System.Int32)
+    name: ProcessBytes
+    nameWithType: BufferedCipherBase.ProcessBytes
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[])
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: DoFinal(Byte[])
+  nameWithType: BufferedCipherBase.DoFinal(Byte[])
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[])
+  nameWithType.vb: BufferedCipherBase.DoFinal(Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte())
+  name.vb: DoFinal(Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[])
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[])
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: DoFinal(Byte[], Byte[], Int32)
+  nameWithType: BufferedCipherBase.DoFinal(Byte[], Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[], System.Byte[], System.Int32)
+  nameWithType.vb: BufferedCipherBase.DoFinal(Byte(), Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte(), System.Byte(), System.Int32)
+  name.vb: DoFinal(Byte(), Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: DoFinal(Byte[], Int32, Int32, Byte[], Int32)
+  nameWithType: BufferedCipherBase.DoFinal(Byte[], Int32, Int32, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[], System.Int32, System.Int32, System.Byte[], System.Int32)
+  nameWithType.vb: BufferedCipherBase.DoFinal(Byte(), Int32, Int32, Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte(), System.Int32, System.Int32, System.Byte(), System.Int32)
+  name.vb: DoFinal(Byte(), Int32, Int32, Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.#ctor
+  name: BufferedAeadBlockCipher
+  nameWithType: BufferedAeadBlockCipher.BufferedAeadBlockCipher
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.BufferedAeadBlockCipher
+- uid: IAeadBlockCipher
+  isExternal: true
+  name: IAeadBlockCipher
+  nameWithType: IAeadBlockCipher
+  fullName: IAeadBlockCipher
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.AlgorithmName
+  commentId: P:Org.BouncyCastle.Crypto.BufferedCipherBase.AlgorithmName
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  name: AlgorithmName
+  nameWithType: BufferedCipherBase.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.AlgorithmName
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.AlgorithmName*
+  commentId: Overload:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.AlgorithmName
+  name: AlgorithmName
+  nameWithType: BufferedAeadBlockCipher.AlgorithmName
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.AlgorithmName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: Init(Boolean, ICipherParameters)
+  nameWithType: BufferedCipherBase.Init(Boolean, ICipherParameters)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.Init(System.Boolean, Org.BouncyCastle.Crypto.ICipherParameters)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+    name: Init
+    nameWithType: BufferedCipherBase.Init
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.ICipherParameters
+    name: ICipherParameters
+    nameWithType: ICipherParameters
+    fullName: Org.BouncyCastle.Crypto.ICipherParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.Init(System.Boolean,Org.BouncyCastle.Crypto.ICipherParameters)
+    name: Init
+    nameWithType: BufferedCipherBase.Init
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Crypto.ICipherParameters
+    name: ICipherParameters
+    nameWithType: ICipherParameters
+    fullName: Org.BouncyCastle.Crypto.ICipherParameters
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Init*
+  commentId: Overload:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Init
+  name: Init
+  nameWithType: BufferedAeadBlockCipher.Init
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Init
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.ICipherParameters
+  commentId: T:Org.BouncyCastle.Crypto.ICipherParameters
+  parent: Org.BouncyCastle.Crypto
+  name: ICipherParameters
+  nameWithType: ICipherParameters
+  fullName: Org.BouncyCastle.Crypto.ICipherParameters
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.GetBlockSize
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.GetBlockSize
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  name: GetBlockSize()
+  nameWithType: BufferedCipherBase.GetBlockSize()
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.GetBlockSize()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.GetBlockSize
+    name: GetBlockSize
+    nameWithType: BufferedCipherBase.GetBlockSize
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.GetBlockSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.GetBlockSize
+    name: GetBlockSize
+    nameWithType: BufferedCipherBase.GetBlockSize
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.GetBlockSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetBlockSize*
+  commentId: Overload:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetBlockSize
+  name: GetBlockSize
+  nameWithType: BufferedAeadBlockCipher.GetBlockSize
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetBlockSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.GetUpdateOutputSize(System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.GetUpdateOutputSize(System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: GetUpdateOutputSize(Int32)
+  nameWithType: BufferedCipherBase.GetUpdateOutputSize(Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.GetUpdateOutputSize(System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.GetUpdateOutputSize(System.Int32)
+    name: GetUpdateOutputSize
+    nameWithType: BufferedCipherBase.GetUpdateOutputSize
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.GetUpdateOutputSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.GetUpdateOutputSize(System.Int32)
+    name: GetUpdateOutputSize
+    nameWithType: BufferedCipherBase.GetUpdateOutputSize
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.GetUpdateOutputSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetUpdateOutputSize*
+  commentId: Overload:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetUpdateOutputSize
+  name: GetUpdateOutputSize
+  nameWithType: BufferedAeadBlockCipher.GetUpdateOutputSize
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetUpdateOutputSize
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.GetOutputSize(System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.GetOutputSize(System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: GetOutputSize(Int32)
+  nameWithType: BufferedCipherBase.GetOutputSize(Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.GetOutputSize(System.Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.GetOutputSize(System.Int32)
+    name: GetOutputSize
+    nameWithType: BufferedCipherBase.GetOutputSize
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.GetOutputSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.GetOutputSize(System.Int32)
+    name: GetOutputSize
+    nameWithType: BufferedCipherBase.GetOutputSize
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.GetOutputSize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetOutputSize*
+  commentId: Overload:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetOutputSize
+  name: GetOutputSize
+  nameWithType: BufferedAeadBlockCipher.GetOutputSize
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.GetOutputSize
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: ProcessByte(Byte, Byte[], Int32)
+  nameWithType: BufferedCipherBase.ProcessByte(Byte, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte, System.Byte[], System.Int32)
+  nameWithType.vb: BufferedCipherBase.ProcessByte(Byte, Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte, System.Byte(), System.Int32)
+  name.vb: ProcessByte(Byte, Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte,System.Byte[],System.Int32)
+    name: ProcessByte
+    nameWithType: BufferedCipherBase.ProcessByte
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte,System.Byte[],System.Int32)
+    name: ProcessByte
+    nameWithType: BufferedCipherBase.ProcessByte
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte*
+  commentId: Overload:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte
+  name: ProcessByte
+  nameWithType: BufferedAeadBlockCipher.ProcessByte
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessByte
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: ProcessByte(Byte)
+  nameWithType: BufferedCipherBase.ProcessByte(Byte)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte)
+    name: ProcessByte
+    nameWithType: BufferedCipherBase.ProcessByte
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte(System.Byte)
+    name: ProcessByte
+    nameWithType: BufferedCipherBase.ProcessByte
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessByte
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: ProcessBytes(Byte[], Int32, Int32)
+  nameWithType: BufferedCipherBase.ProcessBytes(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: BufferedCipherBase.ProcessBytes(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte(), System.Int32, System.Int32)
+  name.vb: ProcessBytes(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Int32,System.Int32)
+    name: ProcessBytes
+    nameWithType: BufferedCipherBase.ProcessBytes
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Int32,System.Int32)
+    name: ProcessBytes
+    nameWithType: BufferedCipherBase.ProcessBytes
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes*
+  commentId: Overload:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes
+  name: ProcessBytes
+  nameWithType: BufferedAeadBlockCipher.ProcessBytes
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.ProcessBytes
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: ProcessBytes(Byte[], Int32, Int32, Byte[], Int32)
+  nameWithType: BufferedCipherBase.ProcessBytes(Byte[], Int32, Int32, Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[], System.Int32, System.Int32, System.Byte[], System.Int32)
+  nameWithType.vb: BufferedCipherBase.ProcessBytes(Byte(), Int32, Int32, Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte(), System.Int32, System.Int32, System.Byte(), System.Int32)
+  name.vb: ProcessBytes(Byte(), Int32, Int32, Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: ProcessBytes
+    nameWithType: BufferedCipherBase.ProcessBytes
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
+    name: ProcessBytes
+    nameWithType: BufferedCipherBase.ProcessBytes
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.ProcessBytes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  name: DoFinal()
+  nameWithType: BufferedCipherBase.DoFinal()
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal*
+  commentId: Overload:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal
+  name: DoFinal
+  nameWithType: BufferedAeadBlockCipher.DoFinal
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.DoFinal
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: DoFinal(Byte[], Int32, Int32)
+  nameWithType: BufferedCipherBase.DoFinal(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: BufferedCipherBase.DoFinal(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte(), System.Int32, System.Int32)
+  name.vb: DoFinal(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32,System.Int32)
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32,System.Int32)
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32)
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  isExternal: true
+  name: DoFinal(Byte[], Int32)
+  nameWithType: BufferedCipherBase.DoFinal(Byte[], Int32)
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[], System.Int32)
+  nameWithType.vb: BufferedCipherBase.DoFinal(Byte(), Int32)
+  fullName.vb: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte(), System.Int32)
+  name.vb: DoFinal(Byte(), Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal(System.Byte[],System.Int32)
+    name: DoFinal
+    nameWithType: BufferedCipherBase.DoFinal
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.DoFinal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedCipherBase.Reset
+  commentId: M:Org.BouncyCastle.Crypto.BufferedCipherBase.Reset
+  parent: Org.BouncyCastle.Crypto.BufferedCipherBase
+  name: Reset()
+  nameWithType: BufferedCipherBase.Reset()
+  fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.Reset()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.Reset
+    name: Reset
+    nameWithType: BufferedCipherBase.Reset
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.BufferedCipherBase.Reset
+    name: Reset
+    nameWithType: BufferedCipherBase.Reset
+    fullName: Org.BouncyCastle.Crypto.BufferedCipherBase.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Reset*
+  commentId: Overload:Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Reset
+  name: Reset
+  nameWithType: BufferedAeadBlockCipher.Reset
+  fullName: Org.BouncyCastle.Crypto.BufferedAeadBlockCipher.Reset

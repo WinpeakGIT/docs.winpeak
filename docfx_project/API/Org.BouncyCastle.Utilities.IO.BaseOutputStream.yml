@@ -1,0 +1,591 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  commentId: T:Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  id: BaseOutputStream
+  parent: Org.BouncyCastle.Utilities.IO
+  children:
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek(System.Int64,SeekOrigin)
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength(System.Int64)
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[])
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[],System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: BaseOutputStream
+  nameWithType: BaseOutputStream
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  type: Class
+  source:
+    id: BaseOutputStream
+    path: ''
+    startLine: 47867
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: 'public abstract class BaseOutputStream : Stream'
+    content.vb: >-
+      Public MustInherit Class BaseOutputStream
+          Inherits Stream
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Org.BouncyCastle.Utilities.IO.TeeOutputStream
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead
+  commentId: P:Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead
+  id: CanRead
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: CanRead
+  nameWithType: BaseOutputStream.CanRead
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead
+  type: Property
+  source:
+    id: CanRead
+    path: ''
+    startLine: 47871
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public sealed override bool CanRead { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public NotOverridable Overrides ReadOnly Property CanRead As Boolean
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead*
+  modifiers.csharp:
+  - public
+  - sealed
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek
+  commentId: P:Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek
+  id: CanSeek
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: CanSeek
+  nameWithType: BaseOutputStream.CanSeek
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek
+  type: Property
+  source:
+    id: CanSeek
+    path: ''
+    startLine: 47872
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public sealed override bool CanSeek { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public NotOverridable Overrides ReadOnly Property CanSeek As Boolean
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek*
+  modifiers.csharp:
+  - public
+  - sealed
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite
+  commentId: P:Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite
+  id: CanWrite
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: CanWrite
+  nameWithType: BaseOutputStream.CanWrite
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite
+  type: Property
+  source:
+    id: CanWrite
+    path: ''
+    startLine: 47873
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public sealed override bool CanWrite { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public NotOverridable Overrides ReadOnly Property CanWrite As Boolean
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite*
+  modifiers.csharp:
+  - public
+  - sealed
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+  id: Close
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: BaseOutputStream.Close()
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close()
+  type: Method
+  source:
+    id: Close
+    path: ''
+    startLine: 47885
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public override void Close()
+    content.vb: Public Overrides Sub Close
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+  id: Flush
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: BaseOutputStream.Flush()
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush()
+  type: Method
+  source:
+    id: Flush
+    path: ''
+    startLine: 47892
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public override void Flush()
+    content.vb: Public Overrides Sub Flush
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length
+  commentId: P:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length
+  id: Length
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: BaseOutputStream.Length
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length
+  type: Property
+  source:
+    id: Length
+    path: ''
+    startLine: 47893
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public sealed override long Length { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public NotOverridable Overrides ReadOnly Property Length As Long
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length*
+  modifiers.csharp:
+  - public
+  - sealed
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position
+  commentId: P:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position
+  id: Position
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: BaseOutputStream.Position
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position
+  type: Property
+  source:
+    id: Position
+    path: ''
+    startLine: 47894
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public sealed override long Position { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public NotOverridable Overrides Property Position As Long
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position*
+  modifiers.csharp:
+  - public
+  - sealed
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte[],System.Int32,System.Int32)
+  id: Read(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: Read(Byte[], Int32, Int32)
+  nameWithType: BaseOutputStream.Read(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Read
+    path: ''
+    startLine: 47899
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public sealed override int Read(byte[] buffer, int offset, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public NotOverridable Overrides Function Read(buffer As Byte(), offset As Integer, count As Integer) As Integer
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read*
+  nameWithType.vb: BaseOutputStream.Read(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - sealed
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  fullName.vb: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte(), System.Int32, System.Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek(System.Int64,SeekOrigin)
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek(System.Int64,SeekOrigin)
+  id: Seek(System.Int64,SeekOrigin)
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: Seek(Int64, SeekOrigin)
+  nameWithType: BaseOutputStream.Seek(Int64, SeekOrigin)
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek(System.Int64, SeekOrigin)
+  type: Method
+  source:
+    id: Seek
+    path: ''
+    startLine: 47900
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public sealed override long Seek(long offset, SeekOrigin origin)
+    parameters:
+    - id: offset
+      type: System.Int64
+    - id: origin
+      type: SeekOrigin
+    return:
+      type: System.Int64
+    content.vb: Public NotOverridable Overrides Function Seek(offset As Long, origin As SeekOrigin) As Long
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek*
+  modifiers.csharp:
+  - public
+  - sealed
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength(System.Int64)
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength(System.Int64)
+  id: SetLength(System.Int64)
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: SetLength(Int64)
+  nameWithType: BaseOutputStream.SetLength(Int64)
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength(System.Int64)
+  type: Method
+  source:
+    id: SetLength
+    path: ''
+    startLine: 47901
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public sealed override void SetLength(long value)
+    parameters:
+    - id: value
+      type: System.Int64
+    content.vb: Public NotOverridable Overrides Sub SetLength(value As Long)
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength*
+  modifiers.csharp:
+  - public
+  - sealed
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: Write(Byte[], Int32, Int32)
+  nameWithType: BaseOutputStream.Write(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Write
+    path: ''
+    startLine: 47903
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public override void Write(byte[] buffer, int offset, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    content.vb: Public Overrides Sub Write(buffer As Byte(), offset As Integer, count As Integer)
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write*
+  nameWithType.vb: BaseOutputStream.Write(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte(), System.Int32, System.Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[])
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[])
+  id: Write(System.Byte[])
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  langs:
+  - csharp
+  - vb
+  name: Write(Byte[])
+  nameWithType: BaseOutputStream.Write(Byte[])
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[])
+  type: Method
+  source:
+    id: Write
+    path: ''
+    startLine: 47919
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public virtual void Write(params byte[] buffer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    content.vb: Public Overridable Sub Write(ParamArray buffer As Byte())
+  overload: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write*
+  nameWithType.vb: BaseOutputStream.Write(Byte())
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte())
+  name.vb: Write(Byte())
+references:
+- uid: Org.BouncyCastle.Utilities.IO
+  commentId: N:Org.BouncyCastle.Utilities.IO
+  name: Org.BouncyCastle.Utilities.IO
+  nameWithType: Org.BouncyCastle.Utilities.IO
+  fullName: Org.BouncyCastle.Utilities.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead
+  name: CanRead
+  nameWithType: BaseOutputStream.CanRead
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek
+  name: CanSeek
+  nameWithType: BaseOutputStream.CanSeek
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite
+  name: CanWrite
+  nameWithType: BaseOutputStream.CanWrite
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+  name: Close
+  nameWithType: BaseOutputStream.Close
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+  name: Flush
+  nameWithType: BaseOutputStream.Flush
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length
+  name: Length
+  nameWithType: BaseOutputStream.Length
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position
+  name: Position
+  nameWithType: BaseOutputStream.Position
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read
+  name: Read
+  nameWithType: BaseOutputStream.Read
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek
+  name: Seek
+  nameWithType: BaseOutputStream.Seek
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek
+- uid: SeekOrigin
+  isExternal: true
+  name: SeekOrigin
+  nameWithType: SeekOrigin
+  fullName: SeekOrigin
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength
+  name: SetLength
+  nameWithType: BaseOutputStream.SetLength
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write
+  name: Write
+  nameWithType: BaseOutputStream.Write
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write

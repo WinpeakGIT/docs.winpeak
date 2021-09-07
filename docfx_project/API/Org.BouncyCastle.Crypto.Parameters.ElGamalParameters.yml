@@ -1,0 +1,669 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  id: ElGamalParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  children:
+  - Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.#ctor(BigInteger,BigInteger)
+  - Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.#ctor(BigInteger,BigInteger,System.Int32)
+  - Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals(Org.BouncyCastle.Crypto.Parameters.ElGamalParameters)
+  - Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals(System.Object)
+  - Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.G
+  - Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.GetHashCode
+  - Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.L
+  - Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.P
+  langs:
+  - csharp
+  - vb
+  name: ElGamalParameters
+  nameWithType: ElGamalParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  type: Class
+  source:
+    id: ElGamalParameters
+    path: ''
+    startLine: 125132
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: 'public class ElGamalParameters : ICipherParameters'
+    content.vb: >-
+      Public Class ElGamalParameters
+          Implements ICipherParameters
+  inheritance:
+  - System.Object
+  implements:
+  - Org.BouncyCastle.Crypto.ICipherParameters
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.#ctor(BigInteger,BigInteger)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.#ctor(BigInteger,BigInteger)
+  id: '#ctor(BigInteger,BigInteger)'
+  parent: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  langs:
+  - csharp
+  - vb
+  name: ElGamalParameters(BigInteger, BigInteger)
+  nameWithType: ElGamalParameters.ElGamalParameters(BigInteger, BigInteger)
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.ElGamalParameters(BigInteger, BigInteger)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 125138
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public ElGamalParameters(BigInteger p, BigInteger g)
+    parameters:
+    - id: p
+      type: BigInteger
+    - id: g
+      type: BigInteger
+    content.vb: Public Sub New(p As BigInteger, g As BigInteger)
+  overload: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.#ctor(BigInteger,BigInteger,System.Int32)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.#ctor(BigInteger,BigInteger,System.Int32)
+  id: '#ctor(BigInteger,BigInteger,System.Int32)'
+  parent: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  langs:
+  - csharp
+  - vb
+  name: ElGamalParameters(BigInteger, BigInteger, Int32)
+  nameWithType: ElGamalParameters.ElGamalParameters(BigInteger, BigInteger, Int32)
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.ElGamalParameters(BigInteger, BigInteger, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 125145
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public ElGamalParameters(BigInteger p, BigInteger g, int l)
+    parameters:
+    - id: p
+      type: BigInteger
+    - id: g
+      type: BigInteger
+    - id: l
+      type: System.Int32
+    content.vb: Public Sub New(p As BigInteger, g As BigInteger, l As Integer)
+  overload: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.P
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.P
+  id: P
+  parent: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  langs:
+  - csharp
+  - vb
+  name: P
+  nameWithType: ElGamalParameters.P
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.P
+  type: Property
+  source:
+    id: P
+    path: ''
+    startLine: 125160
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public BigInteger P { get; }
+    parameters: []
+    return:
+      type: BigInteger
+    content.vb: Public ReadOnly Property P As BigInteger
+  overload: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.P*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.G
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.G
+  id: G
+  parent: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  langs:
+  - csharp
+  - vb
+  name: G
+  nameWithType: ElGamalParameters.G
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.G
+  type: Property
+  source:
+    id: G
+    path: ''
+    startLine: 125168
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  example: []
+  syntax:
+    content: public BigInteger G { get; }
+    parameters: []
+    return:
+      type: BigInteger
+    content.vb: Public ReadOnly Property G As BigInteger
+  overload: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.G*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.L
+  commentId: P:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.L
+  id: L
+  parent: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  langs:
+  - csharp
+  - vb
+  name: L
+  nameWithType: ElGamalParameters.L
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.L
+  type: Property
+  source:
+    id: L
+    path: ''
+    startLine: 125176
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  example: []
+  syntax:
+    content: public int L { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property L As Integer
+  overload: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.L*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals(System.Object)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: ElGamalParameters.Equals(Object)
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 125181
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals(Org.BouncyCastle.Crypto.Parameters.ElGamalParameters)
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals(Org.BouncyCastle.Crypto.Parameters.ElGamalParameters)
+  id: Equals(Org.BouncyCastle.Crypto.Parameters.ElGamalParameters)
+  parent: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  langs:
+  - csharp
+  - vb
+  name: Equals(ElGamalParameters)
+  nameWithType: ElGamalParameters.Equals(ElGamalParameters)
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals(Org.BouncyCastle.Crypto.Parameters.ElGamalParameters)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 125195
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: protected bool Equals(ElGamalParameters other)
+    parameters:
+    - id: other
+      type: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+    return:
+      type: System.Boolean
+    content.vb: Protected Function Equals(other As ElGamalParameters) As Boolean
+  overload: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.GetHashCode
+  commentId: M:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.GetHashCode
+  id: GetHashCode
+  parent: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ElGamalParameters.GetHashCode()
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: ''
+    startLine: 125201
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Parameters
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Org.BouncyCastle.Crypto.Parameters
+  commentId: N:Org.BouncyCastle.Crypto.Parameters
+  name: Org.BouncyCastle.Crypto.Parameters
+  nameWithType: Org.BouncyCastle.Crypto.Parameters
+  fullName: Org.BouncyCastle.Crypto.Parameters
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.ICipherParameters
+  commentId: T:Org.BouncyCastle.Crypto.ICipherParameters
+  parent: Org.BouncyCastle.Crypto
+  name: ICipherParameters
+  nameWithType: ICipherParameters
+  fullName: Org.BouncyCastle.Crypto.ICipherParameters
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.#ctor
+  name: ElGamalParameters
+  nameWithType: ElGamalParameters.ElGamalParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.ElGamalParameters
+- uid: BigInteger
+  isExternal: true
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: BigInteger
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.P*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.P
+  name: P
+  nameWithType: ElGamalParameters.P
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.P
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.G*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.G
+  name: G
+  nameWithType: ElGamalParameters.G
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.G
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.L*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.L
+  name: L
+  nameWithType: ElGamalParameters.L
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.L
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals
+  name: Equals
+  nameWithType: ElGamalParameters.Equals
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  commentId: T:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+  parent: Org.BouncyCastle.Crypto.Parameters
+  name: ElGamalParameters
+  nameWithType: ElGamalParameters
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.GetHashCode*
+  commentId: Overload:Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.GetHashCode
+  name: GetHashCode
+  nameWithType: ElGamalParameters.GetHashCode
+  fullName: Org.BouncyCastle.Crypto.Parameters.ElGamalParameters.GetHashCode

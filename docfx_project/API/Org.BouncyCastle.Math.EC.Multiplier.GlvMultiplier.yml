@@ -1,0 +1,629 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier
+  commentId: T:Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier
+  id: GlvMultiplier
+  parent: Org.BouncyCastle.Math.EC.Multiplier
+  children:
+  - Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.#ctor(Org.BouncyCastle.Math.EC.ECCurve,GlvEndomorphism)
+  - Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.curve
+  - Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.glvEndomorphism
+  - Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  langs:
+  - csharp
+  - vb
+  name: GlvMultiplier
+  nameWithType: GlvMultiplier
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier
+  type: Class
+  source:
+    id: GlvMultiplier
+    path: ''
+    startLine: 96346
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: 'public class GlvMultiplier : AbstractECMultiplier, ECMultiplier'
+    content.vb: >-
+      Public Class GlvMultiplier
+          Inherits AbstractECMultiplier
+          Implements ECMultiplier
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+  implements:
+  - Org.BouncyCastle.Math.EC.Multiplier.ECMultiplier
+  inheritedMembers:
+  - Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.curve
+  commentId: F:Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.curve
+  id: curve
+  parent: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier
+  langs:
+  - csharp
+  - vb
+  name: curve
+  nameWithType: GlvMultiplier.curve
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.curve
+  type: Field
+  source:
+    id: curve
+    path: ''
+    startLine: 96349
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: protected readonly ECCurve curve
+    return:
+      type: Org.BouncyCastle.Math.EC.ECCurve
+    content.vb: Protected ReadOnly curve As ECCurve
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.glvEndomorphism
+  commentId: F:Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.glvEndomorphism
+  id: glvEndomorphism
+  parent: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier
+  langs:
+  - csharp
+  - vb
+  name: glvEndomorphism
+  nameWithType: GlvMultiplier.glvEndomorphism
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.glvEndomorphism
+  type: Field
+  source:
+    id: glvEndomorphism
+    path: ''
+    startLine: 96350
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: protected readonly GlvEndomorphism glvEndomorphism
+    return:
+      type: GlvEndomorphism
+    content.vb: Protected ReadOnly glvEndomorphism As GlvEndomorphism
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.#ctor(Org.BouncyCastle.Math.EC.ECCurve,GlvEndomorphism)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.#ctor(Org.BouncyCastle.Math.EC.ECCurve,GlvEndomorphism)
+  id: '#ctor(Org.BouncyCastle.Math.EC.ECCurve,GlvEndomorphism)'
+  parent: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier
+  langs:
+  - csharp
+  - vb
+  name: GlvMultiplier(ECCurve, GlvEndomorphism)
+  nameWithType: GlvMultiplier.GlvMultiplier(ECCurve, GlvEndomorphism)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.GlvMultiplier(Org.BouncyCastle.Math.EC.ECCurve, GlvEndomorphism)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 96352
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: public GlvMultiplier(ECCurve curve, GlvEndomorphism glvEndomorphism)
+    parameters:
+    - id: curve
+      type: Org.BouncyCastle.Math.EC.ECCurve
+    - id: glvEndomorphism
+      type: GlvEndomorphism
+    content.vb: Public Sub New(curve As ECCurve, glvEndomorphism As GlvEndomorphism)
+  overload: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  id: MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier
+  langs:
+  - csharp
+  - vb
+  name: MultiplyPositive(ECPoint, BigInteger)
+  nameWithType: GlvMultiplier.MultiplyPositive(ECPoint, BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint, Org.BouncyCastle.Math.BigInteger)
+  type: Method
+  source:
+    id: MultiplyPositive
+    path: ''
+    startLine: 96361
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: protected override ECPoint MultiplyPositive(ECPoint p, BigInteger k)
+    parameters:
+    - id: p
+      type: Org.BouncyCastle.Math.EC.ECPoint
+    - id: k
+      type: Org.BouncyCastle.Math.BigInteger
+    return:
+      type: Org.BouncyCastle.Math.EC.ECPoint
+    content.vb: Protected Overrides Function MultiplyPositive(p As ECPoint, k As BigInteger) As ECPoint
+  overridden: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  overload: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.MultiplyPositive*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Org.BouncyCastle.Math.EC.Multiplier
+  commentId: N:Org.BouncyCastle.Math.EC.Multiplier
+  name: Org.BouncyCastle.Math.EC.Multiplier
+  nameWithType: Org.BouncyCastle.Math.EC.Multiplier
+  fullName: Org.BouncyCastle.Math.EC.Multiplier
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+  commentId: T:Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+  parent: Org.BouncyCastle.Math.EC.Multiplier
+  name: AbstractECMultiplier
+  nameWithType: AbstractECMultiplier
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+- uid: Org.BouncyCastle.Math.EC.Multiplier.ECMultiplier
+  commentId: T:Org.BouncyCastle.Math.EC.Multiplier.ECMultiplier
+  parent: Org.BouncyCastle.Math.EC.Multiplier
+  name: ECMultiplier
+  nameWithType: ECMultiplier
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.ECMultiplier
+- uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+  name: Multiply(ECPoint, BigInteger)
+  nameWithType: AbstractECMultiplier.Multiply(ECPoint, BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint, Org.BouncyCastle.Math.BigInteger)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+    name: Multiply
+    nameWithType: AbstractECMultiplier.Multiply
+    fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Math.EC.ECPoint
+    name: ECPoint
+    nameWithType: ECPoint
+    fullName: Org.BouncyCastle.Math.EC.ECPoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Math.BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: Org.BouncyCastle.Math.BigInteger
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+    name: Multiply
+    nameWithType: AbstractECMultiplier.Multiply
+    fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Math.EC.ECPoint
+    name: ECPoint
+    nameWithType: ECPoint
+    fullName: Org.BouncyCastle.Math.EC.ECPoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Math.BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: Org.BouncyCastle.Math.BigInteger
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Math.EC.ECCurve
+  commentId: T:Org.BouncyCastle.Math.EC.ECCurve
+  parent: Org.BouncyCastle.Math.EC
+  name: ECCurve
+  nameWithType: ECCurve
+  fullName: Org.BouncyCastle.Math.EC.ECCurve
+- uid: Org.BouncyCastle.Math.EC
+  commentId: N:Org.BouncyCastle.Math.EC
+  name: Org.BouncyCastle.Math.EC
+  nameWithType: Org.BouncyCastle.Math.EC
+  fullName: Org.BouncyCastle.Math.EC
+- uid: GlvEndomorphism
+  isExternal: true
+  name: GlvEndomorphism
+  nameWithType: GlvEndomorphism
+  fullName: GlvEndomorphism
+- uid: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.#ctor*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.#ctor
+  name: GlvMultiplier
+  nameWithType: GlvMultiplier.GlvMultiplier
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.GlvMultiplier
+- uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+  name: MultiplyPositive(ECPoint, BigInteger)
+  nameWithType: AbstractECMultiplier.MultiplyPositive(ECPoint, BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint, Org.BouncyCastle.Math.BigInteger)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+    name: MultiplyPositive
+    nameWithType: AbstractECMultiplier.MultiplyPositive
+    fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Math.EC.ECPoint
+    name: ECPoint
+    nameWithType: ECPoint
+    fullName: Org.BouncyCastle.Math.EC.ECPoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Math.BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: Org.BouncyCastle.Math.BigInteger
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+    name: MultiplyPositive
+    nameWithType: AbstractECMultiplier.MultiplyPositive
+    fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Math.EC.ECPoint
+    name: ECPoint
+    nameWithType: ECPoint
+    fullName: Org.BouncyCastle.Math.EC.ECPoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Math.BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: Org.BouncyCastle.Math.BigInteger
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.MultiplyPositive*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.MultiplyPositive
+  name: MultiplyPositive
+  nameWithType: GlvMultiplier.MultiplyPositive
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.GlvMultiplier.MultiplyPositive
+- uid: Org.BouncyCastle.Math.EC.ECPoint
+  commentId: T:Org.BouncyCastle.Math.EC.ECPoint
+  parent: Org.BouncyCastle.Math.EC
+  name: ECPoint
+  nameWithType: ECPoint
+  fullName: Org.BouncyCastle.Math.EC.ECPoint
+- uid: Org.BouncyCastle.Math.BigInteger
+  commentId: T:Org.BouncyCastle.Math.BigInteger
+  parent: Org.BouncyCastle.Math
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: Org.BouncyCastle.Math.BigInteger
+- uid: Org.BouncyCastle.Math
+  commentId: N:Org.BouncyCastle.Math
+  name: Org.BouncyCastle.Math
+  nameWithType: Org.BouncyCastle.Math
+  fullName: Org.BouncyCastle.Math

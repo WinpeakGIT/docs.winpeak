@@ -1,0 +1,1092 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.SignalR.Transports.PollingTransport
+  commentId: T:BestHTTP.SignalR.Transports.PollingTransport
+  id: PollingTransport
+  parent: BestHTTP.SignalR.Transports
+  children:
+  - BestHTTP.SignalR.Transports.PollingTransport.#ctor(BestHTTP.SignalR.Connection)
+  - BestHTTP.SignalR.Transports.PollingTransport.Aborted
+  - BestHTTP.SignalR.Transports.PollingTransport.Connect
+  - BestHTTP.SignalR.Transports.PollingTransport.Started
+  - BestHTTP.SignalR.Transports.PollingTransport.Stop
+  - BestHTTP.SignalR.Transports.PollingTransport.SupportsKeepAlive
+  - BestHTTP.SignalR.Transports.PollingTransport.Type
+  langs:
+  - csharp
+  - vb
+  name: PollingTransport
+  nameWithType: PollingTransport
+  fullName: BestHTTP.SignalR.Transports.PollingTransport
+  type: Class
+  source:
+    id: PollingTransport
+    path: ''
+    startLine: 26541
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Transports
+  syntax:
+    content: 'public sealed class PollingTransport : PostSendTransportBase, IHeartbeat'
+    content.vb: >-
+      Public NotInheritable Class PollingTransport
+          Inherits PostSendTransportBase
+          Implements IHeartbeat
+  inheritance:
+  - System.Object
+  - BestHTTP.SignalR.Transports.TransportBase
+  - BestHTTP.SignalR.Transports.PostSendTransportBase
+  implements:
+  - IHeartbeat
+  inheritedMembers:
+  - BestHTTP.SignalR.Transports.PostSendTransportBase.sendRequestQueue
+  - BestHTTP.SignalR.Transports.PostSendTransportBase.SendImpl(System.String)
+  - BestHTTP.SignalR.Transports.TransportBase.Name
+  - BestHTTP.SignalR.Transports.TransportBase.Connection
+  - BestHTTP.SignalR.Transports.TransportBase.State
+  - BestHTTP.SignalR.Transports.TransportBase._state
+  - BestHTTP.SignalR.Transports.TransportBase.OnStateChanged
+  - BestHTTP.SignalR.Transports.TransportBase.OnConnected
+  - BestHTTP.SignalR.Transports.TransportBase.Start
+  - BestHTTP.SignalR.Transports.TransportBase.Abort
+  - BestHTTP.SignalR.Transports.TransportBase.AbortFinished
+  - BestHTTP.SignalR.Transports.TransportBase.Send(System.String)
+  - BestHTTP.SignalR.Transports.TransportBase.Reconnect
+  - BestHTTP.SignalR.Transports.TransportBase.Parse(IJsonEncoder,System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: BestHTTP.SignalR.Transports.PollingTransport.SupportsKeepAlive
+  commentId: P:BestHTTP.SignalR.Transports.PollingTransport.SupportsKeepAlive
+  id: SupportsKeepAlive
+  parent: BestHTTP.SignalR.Transports.PollingTransport
+  langs:
+  - csharp
+  - vb
+  name: SupportsKeepAlive
+  nameWithType: PollingTransport.SupportsKeepAlive
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.SupportsKeepAlive
+  type: Property
+  source:
+    id: SupportsKeepAlive
+    path: ''
+    startLine: 26545
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Transports
+  syntax:
+    content: public override bool SupportsKeepAlive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property SupportsKeepAlive As Boolean
+  overridden: BestHTTP.SignalR.Transports.TransportBase.SupportsKeepAlive
+  overload: BestHTTP.SignalR.Transports.PollingTransport.SupportsKeepAlive*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: BestHTTP.SignalR.Transports.PollingTransport.Type
+  commentId: P:BestHTTP.SignalR.Transports.PollingTransport.Type
+  id: Type
+  parent: BestHTTP.SignalR.Transports.PollingTransport
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: PollingTransport.Type
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.Type
+  type: Property
+  source:
+    id: Type
+    path: ''
+    startLine: 26546
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Transports
+  syntax:
+    content: public override TransportTypes Type { get; }
+    parameters: []
+    return:
+      type: BestHTTP.SignalR.TransportTypes
+    content.vb: Public Overrides ReadOnly Property Type As TransportTypes
+  overridden: BestHTTP.SignalR.Transports.TransportBase.Type
+  overload: BestHTTP.SignalR.Transports.PollingTransport.Type*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: BestHTTP.SignalR.Transports.PollingTransport.#ctor(BestHTTP.SignalR.Connection)
+  commentId: M:BestHTTP.SignalR.Transports.PollingTransport.#ctor(BestHTTP.SignalR.Connection)
+  id: '#ctor(BestHTTP.SignalR.Connection)'
+  parent: BestHTTP.SignalR.Transports.PollingTransport
+  langs:
+  - csharp
+  - vb
+  name: PollingTransport(Connection)
+  nameWithType: PollingTransport.PollingTransport(Connection)
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.PollingTransport(BestHTTP.SignalR.Connection)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 26574
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Transports
+  syntax:
+    content: public PollingTransport(Connection connection)
+    parameters:
+    - id: connection
+      type: BestHTTP.SignalR.Connection
+    content.vb: Public Sub New(connection As Connection)
+  overload: BestHTTP.SignalR.Transports.PollingTransport.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SignalR.Transports.PollingTransport.Connect
+  commentId: M:BestHTTP.SignalR.Transports.PollingTransport.Connect
+  id: Connect
+  parent: BestHTTP.SignalR.Transports.PollingTransport
+  langs:
+  - csharp
+  - vb
+  name: Connect()
+  nameWithType: PollingTransport.Connect()
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.Connect()
+  type: Method
+  source:
+    id: Connect
+    path: ''
+    startLine: 26586
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Transports
+  summary: "\nPolling transport specific connection logic. It&apos;s a regular GET request to the /connect path.\n"
+  example: []
+  syntax:
+    content: public override void Connect()
+    content.vb: Public Overrides Sub Connect
+  overridden: BestHTTP.SignalR.Transports.TransportBase.Connect
+  overload: BestHTTP.SignalR.Transports.PollingTransport.Connect*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: BestHTTP.SignalR.Transports.PollingTransport.Stop
+  commentId: M:BestHTTP.SignalR.Transports.PollingTransport.Stop
+  id: Stop
+  parent: BestHTTP.SignalR.Transports.PollingTransport
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: PollingTransport.Stop()
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.Stop()
+  type: Method
+  source:
+    id: Stop
+    path: ''
+    startLine: 26603
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Transports
+  syntax:
+    content: public override void Stop()
+    content.vb: Public Overrides Sub Stop
+  overridden: BestHTTP.SignalR.Transports.TransportBase.Stop
+  overload: BestHTTP.SignalR.Transports.PollingTransport.Stop*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: BestHTTP.SignalR.Transports.PollingTransport.Started
+  commentId: M:BestHTTP.SignalR.Transports.PollingTransport.Started
+  id: Started
+  parent: BestHTTP.SignalR.Transports.PollingTransport
+  langs:
+  - csharp
+  - vb
+  name: Started()
+  nameWithType: PollingTransport.Started()
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.Started()
+  type: Method
+  source:
+    id: Started
+    path: ''
+    startLine: 26616
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Transports
+  syntax:
+    content: protected override void Started()
+    content.vb: Protected Overrides Sub Started
+  overridden: BestHTTP.SignalR.Transports.TransportBase.Started
+  overload: BestHTTP.SignalR.Transports.PollingTransport.Started*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: BestHTTP.SignalR.Transports.PollingTransport.Aborted
+  commentId: M:BestHTTP.SignalR.Transports.PollingTransport.Aborted
+  id: Aborted
+  parent: BestHTTP.SignalR.Transports.PollingTransport
+  langs:
+  - csharp
+  - vb
+  name: Aborted()
+  nameWithType: PollingTransport.Aborted()
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.Aborted()
+  type: Method
+  source:
+    id: Aborted
+    path: ''
+    startLine: 26622
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR.Transports
+  syntax:
+    content: protected override void Aborted()
+    content.vb: Protected Overrides Sub Aborted
+  overridden: BestHTTP.SignalR.Transports.TransportBase.Aborted
+  overload: BestHTTP.SignalR.Transports.PollingTransport.Aborted*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: BestHTTP.SignalR.Transports
+  commentId: N:BestHTTP.SignalR.Transports
+  name: BestHTTP.SignalR.Transports
+  nameWithType: BestHTTP.SignalR.Transports
+  fullName: BestHTTP.SignalR.Transports
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BestHTTP.SignalR.Transports.TransportBase
+  commentId: T:BestHTTP.SignalR.Transports.TransportBase
+  parent: BestHTTP.SignalR.Transports
+  name: TransportBase
+  nameWithType: TransportBase
+  fullName: BestHTTP.SignalR.Transports.TransportBase
+- uid: BestHTTP.SignalR.Transports.PostSendTransportBase
+  commentId: T:BestHTTP.SignalR.Transports.PostSendTransportBase
+  parent: BestHTTP.SignalR.Transports
+  name: PostSendTransportBase
+  nameWithType: PostSendTransportBase
+  fullName: BestHTTP.SignalR.Transports.PostSendTransportBase
+- uid: IHeartbeat
+  isExternal: true
+  name: IHeartbeat
+  nameWithType: IHeartbeat
+  fullName: IHeartbeat
+- uid: BestHTTP.SignalR.Transports.PostSendTransportBase.sendRequestQueue
+  commentId: F:BestHTTP.SignalR.Transports.PostSendTransportBase.sendRequestQueue
+  parent: BestHTTP.SignalR.Transports.PostSendTransportBase
+  name: sendRequestQueue
+  nameWithType: PostSendTransportBase.sendRequestQueue
+  fullName: BestHTTP.SignalR.Transports.PostSendTransportBase.sendRequestQueue
+- uid: BestHTTP.SignalR.Transports.PostSendTransportBase.SendImpl(System.String)
+  commentId: M:BestHTTP.SignalR.Transports.PostSendTransportBase.SendImpl(System.String)
+  parent: BestHTTP.SignalR.Transports.PostSendTransportBase
+  isExternal: true
+  name: SendImpl(String)
+  nameWithType: PostSendTransportBase.SendImpl(String)
+  fullName: BestHTTP.SignalR.Transports.PostSendTransportBase.SendImpl(System.String)
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.PostSendTransportBase.SendImpl(System.String)
+    name: SendImpl
+    nameWithType: PostSendTransportBase.SendImpl
+    fullName: BestHTTP.SignalR.Transports.PostSendTransportBase.SendImpl
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.PostSendTransportBase.SendImpl(System.String)
+    name: SendImpl
+    nameWithType: PostSendTransportBase.SendImpl
+    fullName: BestHTTP.SignalR.Transports.PostSendTransportBase.SendImpl
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Transports.TransportBase.Name
+  commentId: P:BestHTTP.SignalR.Transports.TransportBase.Name
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: Name
+  nameWithType: TransportBase.Name
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Name
+- uid: BestHTTP.SignalR.Transports.TransportBase.Connection
+  commentId: P:BestHTTP.SignalR.Transports.TransportBase.Connection
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: Connection
+  nameWithType: TransportBase.Connection
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Connection
+- uid: BestHTTP.SignalR.Transports.TransportBase.State
+  commentId: P:BestHTTP.SignalR.Transports.TransportBase.State
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: State
+  nameWithType: TransportBase.State
+  fullName: BestHTTP.SignalR.Transports.TransportBase.State
+- uid: BestHTTP.SignalR.Transports.TransportBase._state
+  commentId: F:BestHTTP.SignalR.Transports.TransportBase._state
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: _state
+  nameWithType: TransportBase._state
+  fullName: BestHTTP.SignalR.Transports.TransportBase._state
+- uid: BestHTTP.SignalR.Transports.TransportBase.OnStateChanged
+  commentId: E:BestHTTP.SignalR.Transports.TransportBase.OnStateChanged
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: OnStateChanged
+  nameWithType: TransportBase.OnStateChanged
+  fullName: BestHTTP.SignalR.Transports.TransportBase.OnStateChanged
+- uid: BestHTTP.SignalR.Transports.TransportBase.OnConnected
+  commentId: M:BestHTTP.SignalR.Transports.TransportBase.OnConnected
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: OnConnected()
+  nameWithType: TransportBase.OnConnected()
+  fullName: BestHTTP.SignalR.Transports.TransportBase.OnConnected()
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.OnConnected
+    name: OnConnected
+    nameWithType: TransportBase.OnConnected
+    fullName: BestHTTP.SignalR.Transports.TransportBase.OnConnected
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.OnConnected
+    name: OnConnected
+    nameWithType: TransportBase.OnConnected
+    fullName: BestHTTP.SignalR.Transports.TransportBase.OnConnected
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Transports.TransportBase.Start
+  commentId: M:BestHTTP.SignalR.Transports.TransportBase.Start
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: Start()
+  nameWithType: TransportBase.Start()
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Start()
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Start
+    name: Start
+    nameWithType: TransportBase.Start
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Start
+    name: Start
+    nameWithType: TransportBase.Start
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Transports.TransportBase.Abort
+  commentId: M:BestHTTP.SignalR.Transports.TransportBase.Abort
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: Abort()
+  nameWithType: TransportBase.Abort()
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Abort()
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Abort
+    name: Abort
+    nameWithType: TransportBase.Abort
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Abort
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Abort
+    name: Abort
+    nameWithType: TransportBase.Abort
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Abort
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Transports.TransportBase.AbortFinished
+  commentId: M:BestHTTP.SignalR.Transports.TransportBase.AbortFinished
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: AbortFinished()
+  nameWithType: TransportBase.AbortFinished()
+  fullName: BestHTTP.SignalR.Transports.TransportBase.AbortFinished()
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.AbortFinished
+    name: AbortFinished
+    nameWithType: TransportBase.AbortFinished
+    fullName: BestHTTP.SignalR.Transports.TransportBase.AbortFinished
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.AbortFinished
+    name: AbortFinished
+    nameWithType: TransportBase.AbortFinished
+    fullName: BestHTTP.SignalR.Transports.TransportBase.AbortFinished
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Transports.TransportBase.Send(System.String)
+  commentId: M:BestHTTP.SignalR.Transports.TransportBase.Send(System.String)
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  isExternal: true
+  name: Send(String)
+  nameWithType: TransportBase.Send(String)
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Send(System.String)
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Send(System.String)
+    name: Send
+    nameWithType: TransportBase.Send
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Send(System.String)
+    name: Send
+    nameWithType: TransportBase.Send
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Transports.TransportBase.Reconnect
+  commentId: M:BestHTTP.SignalR.Transports.TransportBase.Reconnect
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: Reconnect()
+  nameWithType: TransportBase.Reconnect()
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Reconnect()
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Reconnect
+    name: Reconnect
+    nameWithType: TransportBase.Reconnect
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Reconnect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Reconnect
+    name: Reconnect
+    nameWithType: TransportBase.Reconnect
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Reconnect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Transports.TransportBase.Parse(IJsonEncoder,System.String)
+  commentId: M:BestHTTP.SignalR.Transports.TransportBase.Parse(IJsonEncoder,System.String)
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  isExternal: true
+  name: Parse(IJsonEncoder, String)
+  nameWithType: TransportBase.Parse(IJsonEncoder, String)
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Parse(IJsonEncoder, System.String)
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Parse(IJsonEncoder,System.String)
+    name: Parse
+    nameWithType: TransportBase.Parse
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Parse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IJsonEncoder
+    name: IJsonEncoder
+    nameWithType: IJsonEncoder
+    fullName: IJsonEncoder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Parse(IJsonEncoder,System.String)
+    name: Parse
+    nameWithType: TransportBase.Parse
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Parse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IJsonEncoder
+    name: IJsonEncoder
+    nameWithType: IJsonEncoder
+    fullName: IJsonEncoder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.SignalR.Transports.TransportBase.SupportsKeepAlive
+  commentId: P:BestHTTP.SignalR.Transports.TransportBase.SupportsKeepAlive
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: SupportsKeepAlive
+  nameWithType: TransportBase.SupportsKeepAlive
+  fullName: BestHTTP.SignalR.Transports.TransportBase.SupportsKeepAlive
+- uid: BestHTTP.SignalR.Transports.PollingTransport.SupportsKeepAlive*
+  commentId: Overload:BestHTTP.SignalR.Transports.PollingTransport.SupportsKeepAlive
+  name: SupportsKeepAlive
+  nameWithType: PollingTransport.SupportsKeepAlive
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.SupportsKeepAlive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BestHTTP.SignalR.Transports.TransportBase.Type
+  commentId: P:BestHTTP.SignalR.Transports.TransportBase.Type
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: Type
+  nameWithType: TransportBase.Type
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Type
+- uid: BestHTTP.SignalR.Transports.PollingTransport.Type*
+  commentId: Overload:BestHTTP.SignalR.Transports.PollingTransport.Type
+  name: Type
+  nameWithType: PollingTransport.Type
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.Type
+- uid: BestHTTP.SignalR.TransportTypes
+  commentId: T:BestHTTP.SignalR.TransportTypes
+  parent: BestHTTP.SignalR
+  name: TransportTypes
+  nameWithType: TransportTypes
+  fullName: BestHTTP.SignalR.TransportTypes
+- uid: BestHTTP.SignalR
+  commentId: N:BestHTTP.SignalR
+  name: BestHTTP.SignalR
+  nameWithType: BestHTTP.SignalR
+  fullName: BestHTTP.SignalR
+- uid: BestHTTP.SignalR.Transports.PollingTransport.#ctor*
+  commentId: Overload:BestHTTP.SignalR.Transports.PollingTransport.#ctor
+  name: PollingTransport
+  nameWithType: PollingTransport.PollingTransport
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.PollingTransport
+- uid: BestHTTP.SignalR.Connection
+  commentId: T:BestHTTP.SignalR.Connection
+  parent: BestHTTP.SignalR
+  name: Connection
+  nameWithType: Connection
+  fullName: BestHTTP.SignalR.Connection
+- uid: BestHTTP.SignalR.Transports.TransportBase.Connect
+  commentId: M:BestHTTP.SignalR.Transports.TransportBase.Connect
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: Connect()
+  nameWithType: TransportBase.Connect()
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Connect()
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Connect
+    name: Connect
+    nameWithType: TransportBase.Connect
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Connect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Connect
+    name: Connect
+    nameWithType: TransportBase.Connect
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Connect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Transports.PollingTransport.Connect*
+  commentId: Overload:BestHTTP.SignalR.Transports.PollingTransport.Connect
+  name: Connect
+  nameWithType: PollingTransport.Connect
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.Connect
+- uid: BestHTTP.SignalR.Transports.TransportBase.Stop
+  commentId: M:BestHTTP.SignalR.Transports.TransportBase.Stop
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: Stop()
+  nameWithType: TransportBase.Stop()
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Stop()
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Stop
+    name: Stop
+    nameWithType: TransportBase.Stop
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Stop
+    name: Stop
+    nameWithType: TransportBase.Stop
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Transports.PollingTransport.Stop*
+  commentId: Overload:BestHTTP.SignalR.Transports.PollingTransport.Stop
+  name: Stop
+  nameWithType: PollingTransport.Stop
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.Stop
+- uid: BestHTTP.SignalR.Transports.TransportBase.Started
+  commentId: M:BestHTTP.SignalR.Transports.TransportBase.Started
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: Started()
+  nameWithType: TransportBase.Started()
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Started()
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Started
+    name: Started
+    nameWithType: TransportBase.Started
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Started
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Started
+    name: Started
+    nameWithType: TransportBase.Started
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Started
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Transports.PollingTransport.Started*
+  commentId: Overload:BestHTTP.SignalR.Transports.PollingTransport.Started
+  name: Started
+  nameWithType: PollingTransport.Started
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.Started
+- uid: BestHTTP.SignalR.Transports.TransportBase.Aborted
+  commentId: M:BestHTTP.SignalR.Transports.TransportBase.Aborted
+  parent: BestHTTP.SignalR.Transports.TransportBase
+  name: Aborted()
+  nameWithType: TransportBase.Aborted()
+  fullName: BestHTTP.SignalR.Transports.TransportBase.Aborted()
+  spec.csharp:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Aborted
+    name: Aborted
+    nameWithType: TransportBase.Aborted
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Aborted
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.SignalR.Transports.TransportBase.Aborted
+    name: Aborted
+    nameWithType: TransportBase.Aborted
+    fullName: BestHTTP.SignalR.Transports.TransportBase.Aborted
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SignalR.Transports.PollingTransport.Aborted*
+  commentId: Overload:BestHTTP.SignalR.Transports.PollingTransport.Aborted
+  name: Aborted
+  nameWithType: PollingTransport.Aborted
+  fullName: BestHTTP.SignalR.Transports.PollingTransport.Aborted

@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.Authentication.AuthenticationTypes
+  commentId: T:BestHTTP.Authentication.AuthenticationTypes
+  id: AuthenticationTypes
+  parent: BestHTTP.Authentication
+  children:
+  - BestHTTP.Authentication.AuthenticationTypes.Basic
+  - BestHTTP.Authentication.AuthenticationTypes.Digest
+  - BestHTTP.Authentication.AuthenticationTypes.Unknown
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationTypes
+  nameWithType: AuthenticationTypes
+  fullName: BestHTTP.Authentication.AuthenticationTypes
+  type: Enum
+  source:
+    id: AuthenticationTypes
+    path: ''
+    startLine: 30270
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Authentication
+  summary: "\nAuthentication types that supported by BestHTTP.\nThe authentication is defined by the server, so the Basic and Digest are not interchangeable. If you don&apos;t know what to use, the preferred way is to choose Unknow.\n"
+  example: []
+  syntax:
+    content: public enum AuthenticationTypes
+    content.vb: Public Enum AuthenticationTypes
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: BestHTTP.Authentication.AuthenticationTypes.Unknown
+  commentId: F:BestHTTP.Authentication.AuthenticationTypes.Unknown
+  id: Unknown
+  parent: BestHTTP.Authentication.AuthenticationTypes
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: AuthenticationTypes.Unknown
+  fullName: BestHTTP.Authentication.AuthenticationTypes.Unknown
+  type: Field
+  source:
+    id: Unknown
+    path: ''
+    startLine: 30275
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Authentication
+  summary: "\nIf the authentication type is not known this will do a challenge turn to receive what methode should be choosen.\n"
+  example: []
+  syntax:
+    content: Unknown = 0
+    return:
+      type: BestHTTP.Authentication.AuthenticationTypes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.Authentication.AuthenticationTypes.Basic
+  commentId: F:BestHTTP.Authentication.AuthenticationTypes.Basic
+  id: Basic
+  parent: BestHTTP.Authentication.AuthenticationTypes
+  langs:
+  - csharp
+  - vb
+  name: Basic
+  nameWithType: AuthenticationTypes.Basic
+  fullName: BestHTTP.Authentication.AuthenticationTypes.Basic
+  type: Field
+  source:
+    id: Basic
+    path: ''
+    startLine: 30280
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Authentication
+  summary: "\nThe most basic authentication type. It&apos;s easy to do, and easy to crack. ;)\n"
+  example: []
+  syntax:
+    content: Basic = 1
+    return:
+      type: BestHTTP.Authentication.AuthenticationTypes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.Authentication.AuthenticationTypes.Digest
+  commentId: F:BestHTTP.Authentication.AuthenticationTypes.Digest
+  id: Digest
+  parent: BestHTTP.Authentication.AuthenticationTypes
+  langs:
+  - csharp
+  - vb
+  name: Digest
+  nameWithType: AuthenticationTypes.Digest
+  fullName: BestHTTP.Authentication.AuthenticationTypes.Digest
+  type: Field
+  source:
+    id: Digest
+    path: ''
+    startLine: 30285
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Authentication
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: Digest = 2
+    return:
+      type: BestHTTP.Authentication.AuthenticationTypes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: BestHTTP.Authentication
+  commentId: N:BestHTTP.Authentication
+  name: BestHTTP.Authentication
+  nameWithType: BestHTTP.Authentication
+  fullName: BestHTTP.Authentication
+- uid: BestHTTP.Authentication.AuthenticationTypes
+  commentId: T:BestHTTP.Authentication.AuthenticationTypes
+  parent: BestHTTP.Authentication
+  name: AuthenticationTypes
+  nameWithType: AuthenticationTypes
+  fullName: BestHTTP.Authentication.AuthenticationTypes

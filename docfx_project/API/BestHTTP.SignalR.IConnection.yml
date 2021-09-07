@@ -1,0 +1,483 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.SignalR.IConnection
+  commentId: T:BestHTTP.SignalR.IConnection
+  id: IConnection
+  parent: BestHTTP.SignalR
+  children:
+  - BestHTTP.SignalR.IConnection.BuildUri(BestHTTP.SignalR.RequestTypes)
+  - BestHTTP.SignalR.IConnection.BuildUri(BestHTTP.SignalR.RequestTypes,TransportBase)
+  - BestHTTP.SignalR.IConnection.Error(System.String)
+  - BestHTTP.SignalR.IConnection.JsonEncoder
+  - BestHTTP.SignalR.IConnection.NegotiationResult
+  - BestHTTP.SignalR.IConnection.OnMessage(IServerMessage)
+  - BestHTTP.SignalR.IConnection.ParseResponse(System.String)
+  - BestHTTP.SignalR.IConnection.PrepareRequest(BestHTTP.HTTPRequest,BestHTTP.SignalR.RequestTypes)
+  - BestHTTP.SignalR.IConnection.Protocol
+  - BestHTTP.SignalR.IConnection.TransportAborted
+  - BestHTTP.SignalR.IConnection.TransportReconnected
+  - BestHTTP.SignalR.IConnection.TransportStarted
+  langs:
+  - csharp
+  - vb
+  name: IConnection
+  nameWithType: IConnection
+  fullName: BestHTTP.SignalR.IConnection
+  type: Interface
+  source:
+    id: IConnection
+    path: ''
+    startLine: 24627
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  summary: "\nInterface to be able to hide internally used functions and properties.\n"
+  example: []
+  syntax:
+    content: public interface IConnection
+    content.vb: Public Interface IConnection
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: BestHTTP.SignalR.IConnection.Protocol
+  commentId: P:BestHTTP.SignalR.IConnection.Protocol
+  id: Protocol
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: Protocol
+  nameWithType: IConnection.Protocol
+  fullName: BestHTTP.SignalR.IConnection.Protocol
+  type: Property
+  source:
+    id: Protocol
+    path: ''
+    startLine: 24629
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: ProtocolVersions Protocol { get; }
+    parameters: []
+    return:
+      type: BestHTTP.SignalR.ProtocolVersions
+    content.vb: ReadOnly Property Protocol As ProtocolVersions
+  overload: BestHTTP.SignalR.IConnection.Protocol*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: BestHTTP.SignalR.IConnection.NegotiationResult
+  commentId: P:BestHTTP.SignalR.IConnection.NegotiationResult
+  id: NegotiationResult
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: NegotiationResult
+  nameWithType: IConnection.NegotiationResult
+  fullName: BestHTTP.SignalR.IConnection.NegotiationResult
+  type: Property
+  source:
+    id: NegotiationResult
+    path: ''
+    startLine: 24630
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: NegotiationData NegotiationResult { get; }
+    parameters: []
+    return:
+      type: BestHTTP.SignalR.NegotiationData
+    content.vb: ReadOnly Property NegotiationResult As NegotiationData
+  overload: BestHTTP.SignalR.IConnection.NegotiationResult*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: BestHTTP.SignalR.IConnection.JsonEncoder
+  commentId: P:BestHTTP.SignalR.IConnection.JsonEncoder
+  id: JsonEncoder
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: JsonEncoder
+  nameWithType: IConnection.JsonEncoder
+  fullName: BestHTTP.SignalR.IConnection.JsonEncoder
+  type: Property
+  source:
+    id: JsonEncoder
+    path: ''
+    startLine: 24631
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: IJsonEncoder JsonEncoder { get; set; }
+    parameters: []
+    return:
+      type: IJsonEncoder
+    content.vb: Property JsonEncoder As IJsonEncoder
+  overload: BestHTTP.SignalR.IConnection.JsonEncoder*
+  modifiers.csharp:
+  - get
+  - set
+- uid: BestHTTP.SignalR.IConnection.OnMessage(IServerMessage)
+  commentId: M:BestHTTP.SignalR.IConnection.OnMessage(IServerMessage)
+  id: OnMessage(IServerMessage)
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: OnMessage(IServerMessage)
+  nameWithType: IConnection.OnMessage(IServerMessage)
+  fullName: BestHTTP.SignalR.IConnection.OnMessage(IServerMessage)
+  type: Method
+  source:
+    id: OnMessage
+    path: ''
+    startLine: 24633
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: void OnMessage(IServerMessage msg)
+    parameters:
+    - id: msg
+      type: IServerMessage
+    content.vb: Sub OnMessage(msg As IServerMessage)
+  overload: BestHTTP.SignalR.IConnection.OnMessage*
+- uid: BestHTTP.SignalR.IConnection.TransportStarted
+  commentId: M:BestHTTP.SignalR.IConnection.TransportStarted
+  id: TransportStarted
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: TransportStarted()
+  nameWithType: IConnection.TransportStarted()
+  fullName: BestHTTP.SignalR.IConnection.TransportStarted()
+  type: Method
+  source:
+    id: TransportStarted
+    path: ''
+    startLine: 24634
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: void TransportStarted()
+    content.vb: Sub TransportStarted
+  overload: BestHTTP.SignalR.IConnection.TransportStarted*
+- uid: BestHTTP.SignalR.IConnection.TransportReconnected
+  commentId: M:BestHTTP.SignalR.IConnection.TransportReconnected
+  id: TransportReconnected
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: TransportReconnected()
+  nameWithType: IConnection.TransportReconnected()
+  fullName: BestHTTP.SignalR.IConnection.TransportReconnected()
+  type: Method
+  source:
+    id: TransportReconnected
+    path: ''
+    startLine: 24635
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: void TransportReconnected()
+    content.vb: Sub TransportReconnected
+  overload: BestHTTP.SignalR.IConnection.TransportReconnected*
+- uid: BestHTTP.SignalR.IConnection.TransportAborted
+  commentId: M:BestHTTP.SignalR.IConnection.TransportAborted
+  id: TransportAborted
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: TransportAborted()
+  nameWithType: IConnection.TransportAborted()
+  fullName: BestHTTP.SignalR.IConnection.TransportAborted()
+  type: Method
+  source:
+    id: TransportAborted
+    path: ''
+    startLine: 24636
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: void TransportAborted()
+    content.vb: Sub TransportAborted
+  overload: BestHTTP.SignalR.IConnection.TransportAborted*
+- uid: BestHTTP.SignalR.IConnection.Error(System.String)
+  commentId: M:BestHTTP.SignalR.IConnection.Error(System.String)
+  id: Error(System.String)
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: Error(String)
+  nameWithType: IConnection.Error(String)
+  fullName: BestHTTP.SignalR.IConnection.Error(System.String)
+  type: Method
+  source:
+    id: Error
+    path: ''
+    startLine: 24637
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: void Error(string reason)
+    parameters:
+    - id: reason
+      type: System.String
+    content.vb: Sub Error(reason As String)
+  overload: BestHTTP.SignalR.IConnection.Error*
+- uid: BestHTTP.SignalR.IConnection.BuildUri(BestHTTP.SignalR.RequestTypes)
+  commentId: M:BestHTTP.SignalR.IConnection.BuildUri(BestHTTP.SignalR.RequestTypes)
+  id: BuildUri(BestHTTP.SignalR.RequestTypes)
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: BuildUri(RequestTypes)
+  nameWithType: IConnection.BuildUri(RequestTypes)
+  fullName: BestHTTP.SignalR.IConnection.BuildUri(BestHTTP.SignalR.RequestTypes)
+  type: Method
+  source:
+    id: BuildUri
+    path: ''
+    startLine: 24638
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: Uri BuildUri(RequestTypes type)
+    parameters:
+    - id: type
+      type: BestHTTP.SignalR.RequestTypes
+    return:
+      type: System.Uri
+    content.vb: Function BuildUri(type As RequestTypes) As Uri
+  overload: BestHTTP.SignalR.IConnection.BuildUri*
+- uid: BestHTTP.SignalR.IConnection.BuildUri(BestHTTP.SignalR.RequestTypes,TransportBase)
+  commentId: M:BestHTTP.SignalR.IConnection.BuildUri(BestHTTP.SignalR.RequestTypes,TransportBase)
+  id: BuildUri(BestHTTP.SignalR.RequestTypes,TransportBase)
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: BuildUri(RequestTypes, TransportBase)
+  nameWithType: IConnection.BuildUri(RequestTypes, TransportBase)
+  fullName: BestHTTP.SignalR.IConnection.BuildUri(BestHTTP.SignalR.RequestTypes, TransportBase)
+  type: Method
+  source:
+    id: BuildUri
+    path: ''
+    startLine: 24639
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: Uri BuildUri(RequestTypes type, TransportBase transport)
+    parameters:
+    - id: type
+      type: BestHTTP.SignalR.RequestTypes
+    - id: transport
+      type: TransportBase
+    return:
+      type: System.Uri
+    content.vb: Function BuildUri(type As RequestTypes, transport As TransportBase) As Uri
+  overload: BestHTTP.SignalR.IConnection.BuildUri*
+- uid: BestHTTP.SignalR.IConnection.PrepareRequest(BestHTTP.HTTPRequest,BestHTTP.SignalR.RequestTypes)
+  commentId: M:BestHTTP.SignalR.IConnection.PrepareRequest(BestHTTP.HTTPRequest,BestHTTP.SignalR.RequestTypes)
+  id: PrepareRequest(BestHTTP.HTTPRequest,BestHTTP.SignalR.RequestTypes)
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: PrepareRequest(HTTPRequest, RequestTypes)
+  nameWithType: IConnection.PrepareRequest(HTTPRequest, RequestTypes)
+  fullName: BestHTTP.SignalR.IConnection.PrepareRequest(BestHTTP.HTTPRequest, BestHTTP.SignalR.RequestTypes)
+  type: Method
+  source:
+    id: PrepareRequest
+    path: ''
+    startLine: 24640
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: HTTPRequest PrepareRequest(HTTPRequest req, RequestTypes type)
+    parameters:
+    - id: req
+      type: BestHTTP.HTTPRequest
+    - id: type
+      type: BestHTTP.SignalR.RequestTypes
+    return:
+      type: BestHTTP.HTTPRequest
+    content.vb: Function PrepareRequest(req As HTTPRequest, type As RequestTypes) As HTTPRequest
+  overload: BestHTTP.SignalR.IConnection.PrepareRequest*
+- uid: BestHTTP.SignalR.IConnection.ParseResponse(System.String)
+  commentId: M:BestHTTP.SignalR.IConnection.ParseResponse(System.String)
+  id: ParseResponse(System.String)
+  parent: BestHTTP.SignalR.IConnection
+  langs:
+  - csharp
+  - vb
+  name: ParseResponse(String)
+  nameWithType: IConnection.ParseResponse(String)
+  fullName: BestHTTP.SignalR.IConnection.ParseResponse(System.String)
+  type: Method
+  source:
+    id: ParseResponse
+    path: ''
+    startLine: 24641
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SignalR
+  syntax:
+    content: string ParseResponse(string responseStr)
+    parameters:
+    - id: responseStr
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function ParseResponse(responseStr As String) As String
+  overload: BestHTTP.SignalR.IConnection.ParseResponse*
+references:
+- uid: BestHTTP.SignalR
+  commentId: N:BestHTTP.SignalR
+  name: BestHTTP.SignalR
+  nameWithType: BestHTTP.SignalR
+  fullName: BestHTTP.SignalR
+- uid: BestHTTP.SignalR.IConnection.Protocol*
+  commentId: Overload:BestHTTP.SignalR.IConnection.Protocol
+  name: Protocol
+  nameWithType: IConnection.Protocol
+  fullName: BestHTTP.SignalR.IConnection.Protocol
+- uid: BestHTTP.SignalR.ProtocolVersions
+  commentId: T:BestHTTP.SignalR.ProtocolVersions
+  parent: BestHTTP.SignalR
+  name: ProtocolVersions
+  nameWithType: ProtocolVersions
+  fullName: BestHTTP.SignalR.ProtocolVersions
+- uid: BestHTTP.SignalR.IConnection.NegotiationResult*
+  commentId: Overload:BestHTTP.SignalR.IConnection.NegotiationResult
+  name: NegotiationResult
+  nameWithType: IConnection.NegotiationResult
+  fullName: BestHTTP.SignalR.IConnection.NegotiationResult
+- uid: BestHTTP.SignalR.NegotiationData
+  commentId: T:BestHTTP.SignalR.NegotiationData
+  parent: BestHTTP.SignalR
+  name: NegotiationData
+  nameWithType: NegotiationData
+  fullName: BestHTTP.SignalR.NegotiationData
+- uid: BestHTTP.SignalR.IConnection.JsonEncoder*
+  commentId: Overload:BestHTTP.SignalR.IConnection.JsonEncoder
+  name: JsonEncoder
+  nameWithType: IConnection.JsonEncoder
+  fullName: BestHTTP.SignalR.IConnection.JsonEncoder
+- uid: IJsonEncoder
+  isExternal: true
+  name: IJsonEncoder
+  nameWithType: IJsonEncoder
+  fullName: IJsonEncoder
+- uid: BestHTTP.SignalR.IConnection.OnMessage*
+  commentId: Overload:BestHTTP.SignalR.IConnection.OnMessage
+  name: OnMessage
+  nameWithType: IConnection.OnMessage
+  fullName: BestHTTP.SignalR.IConnection.OnMessage
+- uid: IServerMessage
+  isExternal: true
+  name: IServerMessage
+  nameWithType: IServerMessage
+  fullName: IServerMessage
+- uid: BestHTTP.SignalR.IConnection.TransportStarted*
+  commentId: Overload:BestHTTP.SignalR.IConnection.TransportStarted
+  name: TransportStarted
+  nameWithType: IConnection.TransportStarted
+  fullName: BestHTTP.SignalR.IConnection.TransportStarted
+- uid: BestHTTP.SignalR.IConnection.TransportReconnected*
+  commentId: Overload:BestHTTP.SignalR.IConnection.TransportReconnected
+  name: TransportReconnected
+  nameWithType: IConnection.TransportReconnected
+  fullName: BestHTTP.SignalR.IConnection.TransportReconnected
+- uid: BestHTTP.SignalR.IConnection.TransportAborted*
+  commentId: Overload:BestHTTP.SignalR.IConnection.TransportAborted
+  name: TransportAborted
+  nameWithType: IConnection.TransportAborted
+  fullName: BestHTTP.SignalR.IConnection.TransportAborted
+- uid: BestHTTP.SignalR.IConnection.Error*
+  commentId: Overload:BestHTTP.SignalR.IConnection.Error
+  name: Error
+  nameWithType: IConnection.Error
+  fullName: BestHTTP.SignalR.IConnection.Error
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.SignalR.IConnection.BuildUri*
+  commentId: Overload:BestHTTP.SignalR.IConnection.BuildUri
+  name: BuildUri
+  nameWithType: IConnection.BuildUri
+  fullName: BestHTTP.SignalR.IConnection.BuildUri
+- uid: BestHTTP.SignalR.RequestTypes
+  commentId: T:BestHTTP.SignalR.RequestTypes
+  parent: BestHTTP.SignalR
+  name: RequestTypes
+  nameWithType: RequestTypes
+  fullName: BestHTTP.SignalR.RequestTypes
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: TransportBase
+  isExternal: true
+  name: TransportBase
+  nameWithType: TransportBase
+  fullName: TransportBase
+- uid: BestHTTP.SignalR.IConnection.PrepareRequest*
+  commentId: Overload:BestHTTP.SignalR.IConnection.PrepareRequest
+  name: PrepareRequest
+  nameWithType: IConnection.PrepareRequest
+  fullName: BestHTTP.SignalR.IConnection.PrepareRequest
+- uid: BestHTTP.HTTPRequest
+  commentId: T:BestHTTP.HTTPRequest
+  parent: BestHTTP
+  name: HTTPRequest
+  nameWithType: HTTPRequest
+  fullName: BestHTTP.HTTPRequest
+- uid: BestHTTP
+  commentId: N:BestHTTP
+  name: BestHTTP
+  nameWithType: BestHTTP
+  fullName: BestHTTP
+- uid: BestHTTP.SignalR.IConnection.ParseResponse*
+  commentId: Overload:BestHTTP.SignalR.IConnection.ParseResponse
+  name: ParseResponse
+  nameWithType: IConnection.ParseResponse
+  fullName: BestHTTP.SignalR.IConnection.ParseResponse

@@ -1,0 +1,1233 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.SocketIO.Packet
+  commentId: T:BestHTTP.SocketIO.Packet
+  id: Packet
+  parent: BestHTTP.SocketIO
+  children:
+  - BestHTTP.SocketIO.Packet.#ctor(BestHTTP.SocketIO.TransportEventTypes,BestHTTP.SocketIO.SocketIOEventTypes,System.String,System.String,System.Int32,System.Int32)
+  - BestHTTP.SocketIO.Packet.AttachmentCount
+  - BestHTTP.SocketIO.Packet.Attachments
+  - BestHTTP.SocketIO.Packet.Decode(BestHTTP.SocketIO.JsonEncoders.IJsonEncoder)
+  - BestHTTP.SocketIO.Packet.DecodedArgs
+  - BestHTTP.SocketIO.Packet.DecodeEventName
+  - BestHTTP.SocketIO.Packet.EventName
+  - BestHTTP.SocketIO.Packet.HasAllAttachment
+  - BestHTTP.SocketIO.Packet.Id
+  - BestHTTP.SocketIO.Packet.IsDecoded
+  - BestHTTP.SocketIO.Packet.Namespace
+  - BestHTTP.SocketIO.Packet.Payload
+  - BestHTTP.SocketIO.Packet.Placeholder
+  - BestHTTP.SocketIO.Packet.ReconstructAttachmentAsBase64
+  - BestHTTP.SocketIO.Packet.ReconstructAttachmentAsIndex
+  - BestHTTP.SocketIO.Packet.RemoveEventName(System.Boolean)
+  - BestHTTP.SocketIO.Packet.SocketIOEvent
+  - BestHTTP.SocketIO.Packet.ToString
+  - BestHTTP.SocketIO.Packet.TransportEvent
+  langs:
+  - csharp
+  - vb
+  name: Packet
+  nameWithType: Packet
+  fullName: BestHTTP.SocketIO.Packet
+  type: Class
+  source:
+    id: Packet
+    path: ''
+    startLine: 35396
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public sealed class Packet
+    content.vb: Public NotInheritable Class Packet
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: BestHTTP.SocketIO.Packet.Placeholder
+  commentId: F:BestHTTP.SocketIO.Packet.Placeholder
+  id: Placeholder
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: Placeholder
+  nameWithType: Packet.Placeholder
+  fullName: BestHTTP.SocketIO.Packet.Placeholder
+  type: Field
+  source:
+    id: Placeholder
+    path: ''
+    startLine: 35404
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public const string Placeholder = "_placeholder"
+    return:
+      type: System.String
+    content.vb: Public Const Placeholder As String = "_placeholder"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.SocketIO.Packet.TransportEvent
+  commentId: P:BestHTTP.SocketIO.Packet.TransportEvent
+  id: TransportEvent
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: TransportEvent
+  nameWithType: Packet.TransportEvent
+  fullName: BestHTTP.SocketIO.Packet.TransportEvent
+  type: Property
+  source:
+    id: TransportEvent
+    path: ''
+    startLine: 35411
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nEvent type of this packet on the transport layer.\n"
+  example: []
+  syntax:
+    content: public TransportEventTypes TransportEvent { get; }
+    parameters: []
+    return:
+      type: BestHTTP.SocketIO.TransportEventTypes
+    content.vb: Public ReadOnly Property TransportEvent As TransportEventTypes
+  overload: BestHTTP.SocketIO.Packet.TransportEvent*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Packet.SocketIOEvent
+  commentId: P:BestHTTP.SocketIO.Packet.SocketIOEvent
+  id: SocketIOEvent
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: SocketIOEvent
+  nameWithType: Packet.SocketIOEvent
+  fullName: BestHTTP.SocketIO.Packet.SocketIOEvent
+  type: Property
+  source:
+    id: SocketIOEvent
+    path: ''
+    startLine: 35416
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nThe packet&apos;s type in the Socket.IO protocol.\n"
+  example: []
+  syntax:
+    content: public SocketIOEventTypes SocketIOEvent { get; }
+    parameters: []
+    return:
+      type: BestHTTP.SocketIO.SocketIOEventTypes
+    content.vb: Public ReadOnly Property SocketIOEvent As SocketIOEventTypes
+  overload: BestHTTP.SocketIO.Packet.SocketIOEvent*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Packet.AttachmentCount
+  commentId: P:BestHTTP.SocketIO.Packet.AttachmentCount
+  id: AttachmentCount
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: AttachmentCount
+  nameWithType: Packet.AttachmentCount
+  fullName: BestHTTP.SocketIO.Packet.AttachmentCount
+  type: Property
+  source:
+    id: AttachmentCount
+    path: ''
+    startLine: 35421
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nHow many attachment should have this packet.\n"
+  example: []
+  syntax:
+    content: public int AttachmentCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property AttachmentCount As Integer
+  overload: BestHTTP.SocketIO.Packet.AttachmentCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Packet.Id
+  commentId: P:BestHTTP.SocketIO.Packet.Id
+  id: Id
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Packet.Id
+  fullName: BestHTTP.SocketIO.Packet.Id
+  type: Property
+  source:
+    id: Id
+    path: ''
+    startLine: 35426
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nThe internal ack-id of this packet.\n"
+  example: []
+  syntax:
+    content: public int Id { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Id As Integer
+  overload: BestHTTP.SocketIO.Packet.Id*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Packet.Namespace
+  commentId: P:BestHTTP.SocketIO.Packet.Namespace
+  id: Namespace
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: Namespace
+  nameWithType: Packet.Namespace
+  fullName: BestHTTP.SocketIO.Packet.Namespace
+  type: Property
+  source:
+    id: Namespace
+    path: ''
+    startLine: 35431
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nThe sender namespace&apos;s name.\n"
+  example: []
+  syntax:
+    content: public string Namespace { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Namespace As String
+  overload: BestHTTP.SocketIO.Packet.Namespace*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Packet.Payload
+  commentId: P:BestHTTP.SocketIO.Packet.Payload
+  id: Payload
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: Payload
+  nameWithType: Packet.Payload
+  fullName: BestHTTP.SocketIO.Packet.Payload
+  type: Property
+  source:
+    id: Payload
+    path: ''
+    startLine: 35436
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nThe payload as a Json string.\n"
+  example: []
+  syntax:
+    content: public string Payload { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Payload As String
+  overload: BestHTTP.SocketIO.Packet.Payload*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Packet.EventName
+  commentId: P:BestHTTP.SocketIO.Packet.EventName
+  id: EventName
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: EventName
+  nameWithType: Packet.EventName
+  fullName: BestHTTP.SocketIO.Packet.EventName
+  type: Property
+  source:
+    id: EventName
+    path: ''
+    startLine: 35441
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nThe decoded event name from the payload string.\n"
+  example: []
+  syntax:
+    content: public string EventName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property EventName As String
+  overload: BestHTTP.SocketIO.Packet.EventName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Packet.Attachments
+  commentId: P:BestHTTP.SocketIO.Packet.Attachments
+  id: Attachments
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: Attachments
+  nameWithType: Packet.Attachments
+  fullName: BestHTTP.SocketIO.Packet.Attachments
+  type: Property
+  source:
+    id: Attachments
+    path: ''
+    startLine: 35446
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nAll binary data attached to this event.\n"
+  example: []
+  syntax:
+    content: public List<byte[]> Attachments { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Byte[]}
+    content.vb: Public Property Attachments As List(Of Byte())
+  overload: BestHTTP.SocketIO.Packet.Attachments*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Packet.HasAllAttachment
+  commentId: P:BestHTTP.SocketIO.Packet.HasAllAttachment
+  id: HasAllAttachment
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: HasAllAttachment
+  nameWithType: Packet.HasAllAttachment
+  fullName: BestHTTP.SocketIO.Packet.HasAllAttachment
+  type: Property
+  source:
+    id: HasAllAttachment
+    path: ''
+    startLine: 35452
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nProperty to check whether all attachments are received to this packet.\n"
+  example: []
+  syntax:
+    content: public bool HasAllAttachment { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasAllAttachment As Boolean
+  overload: BestHTTP.SocketIO.Packet.HasAllAttachment*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Packet.IsDecoded
+  commentId: P:BestHTTP.SocketIO.Packet.IsDecoded
+  id: IsDecoded
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: IsDecoded
+  nameWithType: Packet.IsDecoded
+  fullName: BestHTTP.SocketIO.Packet.IsDecoded
+  type: Property
+  source:
+    id: IsDecoded
+    path: ''
+    startLine: 35457
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nTrue if it&apos;s already decoded. The DecodedArgs still can be null after the Decode call.\n"
+  example: []
+  syntax:
+    content: public bool IsDecoded { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDecoded As Boolean
+  overload: BestHTTP.SocketIO.Packet.IsDecoded*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Packet.DecodedArgs
+  commentId: P:BestHTTP.SocketIO.Packet.DecodedArgs
+  id: DecodedArgs
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: DecodedArgs
+  nameWithType: Packet.DecodedArgs
+  fullName: BestHTTP.SocketIO.Packet.DecodedArgs
+  type: Property
+  source:
+    id: DecodedArgs
+    path: ''
+    startLine: 35462
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nThe decoded arguments from the result of a Json string -> c# object convert.\n"
+  example: []
+  syntax:
+    content: public object[] DecodedArgs { get; }
+    parameters: []
+    return:
+      type: System.Object[]
+    content.vb: Public ReadOnly Property DecodedArgs As Object()
+  overload: BestHTTP.SocketIO.Packet.DecodedArgs*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.Packet.#ctor(BestHTTP.SocketIO.TransportEventTypes,BestHTTP.SocketIO.SocketIOEventTypes,System.String,System.String,System.Int32,System.Int32)
+  commentId: M:BestHTTP.SocketIO.Packet.#ctor(BestHTTP.SocketIO.TransportEventTypes,BestHTTP.SocketIO.SocketIOEventTypes,System.String,System.String,System.Int32,System.Int32)
+  id: '#ctor(BestHTTP.SocketIO.TransportEventTypes,BestHTTP.SocketIO.SocketIOEventTypes,System.String,System.String,System.Int32,System.Int32)'
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: Packet(TransportEventTypes, SocketIOEventTypes, String, String, Int32, Int32)
+  nameWithType: Packet.Packet(TransportEventTypes, SocketIOEventTypes, String, String, Int32, Int32)
+  fullName: BestHTTP.SocketIO.Packet.Packet(BestHTTP.SocketIO.TransportEventTypes, BestHTTP.SocketIO.SocketIOEventTypes, System.String, System.String, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 35489
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nInternal constructor. Don&apos;t use it directly!\n"
+  example: []
+  syntax:
+    content: public Packet(TransportEventTypes transportEvent, SocketIOEventTypes packetType, string nsp, string payload, int attachment = 0, int id = 0)
+    parameters:
+    - id: transportEvent
+      type: BestHTTP.SocketIO.TransportEventTypes
+    - id: packetType
+      type: BestHTTP.SocketIO.SocketIOEventTypes
+    - id: nsp
+      type: System.String
+    - id: payload
+      type: System.String
+    - id: attachment
+      type: System.Int32
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub New(transportEvent As TransportEventTypes, packetType As SocketIOEventTypes, nsp As String, payload As String, attachment As Integer = 0, id As Integer = 0)
+  overload: BestHTTP.SocketIO.Packet.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Packet.Decode(BestHTTP.SocketIO.JsonEncoders.IJsonEncoder)
+  commentId: M:BestHTTP.SocketIO.Packet.Decode(BestHTTP.SocketIO.JsonEncoders.IJsonEncoder)
+  id: Decode(BestHTTP.SocketIO.JsonEncoders.IJsonEncoder)
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: Decode(IJsonEncoder)
+  nameWithType: Packet.Decode(IJsonEncoder)
+  fullName: BestHTTP.SocketIO.Packet.Decode(BestHTTP.SocketIO.JsonEncoders.IJsonEncoder)
+  type: Method
+  source:
+    id: Decode
+    path: ''
+    startLine: 35503
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public object[] Decode(IJsonEncoder encoder)
+    parameters:
+    - id: encoder
+      type: BestHTTP.SocketIO.JsonEncoders.IJsonEncoder
+    return:
+      type: System.Object[]
+    content.vb: Public Function Decode(encoder As IJsonEncoder) As Object()
+  overload: BestHTTP.SocketIO.Packet.Decode*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Packet.DecodeEventName
+  commentId: M:BestHTTP.SocketIO.Packet.DecodeEventName
+  id: DecodeEventName
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: DecodeEventName()
+  nameWithType: Packet.DecodeEventName()
+  fullName: BestHTTP.SocketIO.Packet.DecodeEventName()
+  type: Method
+  source:
+    id: DecodeEventName
+    path: ''
+    startLine: 35533
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nWill set and return with the EventName from the packet&apos;s Payload string.\n"
+  example: []
+  syntax:
+    content: public string DecodeEventName()
+    return:
+      type: System.String
+    content.vb: Public Function DecodeEventName As String
+  overload: BestHTTP.SocketIO.Packet.DecodeEventName*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Packet.RemoveEventName(System.Boolean)
+  commentId: M:BestHTTP.SocketIO.Packet.RemoveEventName(System.Boolean)
+  id: RemoveEventName(System.Boolean)
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: RemoveEventName(Boolean)
+  nameWithType: Packet.RemoveEventName(Boolean)
+  fullName: BestHTTP.SocketIO.Packet.RemoveEventName(System.Boolean)
+  type: Method
+  source:
+    id: RemoveEventName
+    path: ''
+    startLine: 35570
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public string RemoveEventName(bool removeArrayMarks)
+    parameters:
+    - id: removeArrayMarks
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Public Function RemoveEventName(removeArrayMarks As Boolean) As String
+  overload: BestHTTP.SocketIO.Packet.RemoveEventName*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Packet.ReconstructAttachmentAsIndex
+  commentId: M:BestHTTP.SocketIO.Packet.ReconstructAttachmentAsIndex
+  id: ReconstructAttachmentAsIndex
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: ReconstructAttachmentAsIndex()
+  nameWithType: Packet.ReconstructAttachmentAsIndex()
+  fullName: BestHTTP.SocketIO.Packet.ReconstructAttachmentAsIndex()
+  type: Method
+  source:
+    id: ReconstructAttachmentAsIndex
+    path: ''
+    startLine: 35612
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nWill switch the &quot;{&apos;_placeholder&apos;:true,&apos;num&apos;:X}&quot; to a the index num X.\n"
+  example: []
+  syntax:
+    content: public bool ReconstructAttachmentAsIndex()
+    return:
+      type: System.Boolean
+      description: True if successfully reconstructed, false otherwise.
+    content.vb: Public Function ReconstructAttachmentAsIndex As Boolean
+  overload: BestHTTP.SocketIO.Packet.ReconstructAttachmentAsIndex*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Packet.ReconstructAttachmentAsBase64
+  commentId: M:BestHTTP.SocketIO.Packet.ReconstructAttachmentAsBase64
+  id: ReconstructAttachmentAsBase64
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: ReconstructAttachmentAsBase64()
+  nameWithType: Packet.ReconstructAttachmentAsBase64()
+  fullName: BestHTTP.SocketIO.Packet.ReconstructAttachmentAsBase64()
+  type: Method
+  source:
+    id: ReconstructAttachmentAsBase64
+    path: ''
+    startLine: 35628
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nWill switch the &quot;{&apos;_placeholder&apos;:true,&apos;num&apos;:X}&quot; to a the data as a base64 encoded string.\n"
+  example: []
+  syntax:
+    content: public bool ReconstructAttachmentAsBase64()
+    return:
+      type: System.Boolean
+      description: True if successfully reconstructed, false otherwise.
+    content.vb: Public Function ReconstructAttachmentAsBase64 As Boolean
+  overload: BestHTTP.SocketIO.Packet.ReconstructAttachmentAsBase64*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.SocketIO.Packet.ToString
+  commentId: M:BestHTTP.SocketIO.Packet.ToString
+  id: ToString
+  parent: BestHTTP.SocketIO.Packet
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Packet.ToString()
+  fullName: BestHTTP.SocketIO.Packet.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 35960
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nReturns with the Payload of this packet.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: BestHTTP.SocketIO.Packet.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: BestHTTP.SocketIO
+  commentId: N:BestHTTP.SocketIO
+  name: BestHTTP.SocketIO
+  nameWithType: BestHTTP.SocketIO
+  fullName: BestHTTP.SocketIO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BestHTTP.SocketIO.Packet.TransportEvent*
+  commentId: Overload:BestHTTP.SocketIO.Packet.TransportEvent
+  name: TransportEvent
+  nameWithType: Packet.TransportEvent
+  fullName: BestHTTP.SocketIO.Packet.TransportEvent
+- uid: BestHTTP.SocketIO.TransportEventTypes
+  commentId: T:BestHTTP.SocketIO.TransportEventTypes
+  parent: BestHTTP.SocketIO
+  name: TransportEventTypes
+  nameWithType: TransportEventTypes
+  fullName: BestHTTP.SocketIO.TransportEventTypes
+- uid: BestHTTP.SocketIO.Packet.SocketIOEvent*
+  commentId: Overload:BestHTTP.SocketIO.Packet.SocketIOEvent
+  name: SocketIOEvent
+  nameWithType: Packet.SocketIOEvent
+  fullName: BestHTTP.SocketIO.Packet.SocketIOEvent
+- uid: BestHTTP.SocketIO.SocketIOEventTypes
+  commentId: T:BestHTTP.SocketIO.SocketIOEventTypes
+  parent: BestHTTP.SocketIO
+  name: SocketIOEventTypes
+  nameWithType: SocketIOEventTypes
+  fullName: BestHTTP.SocketIO.SocketIOEventTypes
+- uid: BestHTTP.SocketIO.Packet.AttachmentCount*
+  commentId: Overload:BestHTTP.SocketIO.Packet.AttachmentCount
+  name: AttachmentCount
+  nameWithType: Packet.AttachmentCount
+  fullName: BestHTTP.SocketIO.Packet.AttachmentCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: BestHTTP.SocketIO.Packet.Id*
+  commentId: Overload:BestHTTP.SocketIO.Packet.Id
+  name: Id
+  nameWithType: Packet.Id
+  fullName: BestHTTP.SocketIO.Packet.Id
+- uid: BestHTTP.SocketIO.Packet.Namespace*
+  commentId: Overload:BestHTTP.SocketIO.Packet.Namespace
+  name: Namespace
+  nameWithType: Packet.Namespace
+  fullName: BestHTTP.SocketIO.Packet.Namespace
+- uid: BestHTTP.SocketIO.Packet.Payload*
+  commentId: Overload:BestHTTP.SocketIO.Packet.Payload
+  name: Payload
+  nameWithType: Packet.Payload
+  fullName: BestHTTP.SocketIO.Packet.Payload
+- uid: BestHTTP.SocketIO.Packet.EventName*
+  commentId: Overload:BestHTTP.SocketIO.Packet.EventName
+  name: EventName
+  nameWithType: Packet.EventName
+  fullName: BestHTTP.SocketIO.Packet.EventName
+- uid: BestHTTP.SocketIO.Packet.Attachments*
+  commentId: Overload:BestHTTP.SocketIO.Packet.Attachments
+  name: Attachments
+  nameWithType: Packet.Attachments
+  fullName: BestHTTP.SocketIO.Packet.Attachments
+- uid: System.Collections.Generic.List{System.Byte[]}
+  commentId: T:System.Collections.Generic.List{System.Byte[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Byte[]>
+  nameWithType: List<Byte[]>
+  fullName: System.Collections.Generic.List<System.Byte[]>
+  nameWithType.vb: List(Of Byte())
+  fullName.vb: System.Collections.Generic.List(Of System.Byte())
+  name.vb: List(Of Byte())
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: BestHTTP.SocketIO.Packet.HasAllAttachment*
+  commentId: Overload:BestHTTP.SocketIO.Packet.HasAllAttachment
+  name: HasAllAttachment
+  nameWithType: Packet.HasAllAttachment
+  fullName: BestHTTP.SocketIO.Packet.HasAllAttachment
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BestHTTP.SocketIO.Packet.IsDecoded*
+  commentId: Overload:BestHTTP.SocketIO.Packet.IsDecoded
+  name: IsDecoded
+  nameWithType: Packet.IsDecoded
+  fullName: BestHTTP.SocketIO.Packet.IsDecoded
+- uid: BestHTTP.SocketIO.Packet.DecodedArgs*
+  commentId: Overload:BestHTTP.SocketIO.Packet.DecodedArgs
+  name: DecodedArgs
+  nameWithType: Packet.DecodedArgs
+  fullName: BestHTTP.SocketIO.Packet.DecodedArgs
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BestHTTP.SocketIO.Packet.#ctor*
+  commentId: Overload:BestHTTP.SocketIO.Packet.#ctor
+  name: Packet
+  nameWithType: Packet.Packet
+  fullName: BestHTTP.SocketIO.Packet.Packet
+- uid: BestHTTP.SocketIO.Packet.Decode*
+  commentId: Overload:BestHTTP.SocketIO.Packet.Decode
+  name: Decode
+  nameWithType: Packet.Decode
+  fullName: BestHTTP.SocketIO.Packet.Decode
+- uid: BestHTTP.SocketIO.JsonEncoders.IJsonEncoder
+  commentId: T:BestHTTP.SocketIO.JsonEncoders.IJsonEncoder
+  parent: BestHTTP.SocketIO.JsonEncoders
+  name: IJsonEncoder
+  nameWithType: IJsonEncoder
+  fullName: BestHTTP.SocketIO.JsonEncoders.IJsonEncoder
+- uid: BestHTTP.SocketIO.JsonEncoders
+  commentId: N:BestHTTP.SocketIO.JsonEncoders
+  name: BestHTTP.SocketIO.JsonEncoders
+  nameWithType: BestHTTP.SocketIO.JsonEncoders
+  fullName: BestHTTP.SocketIO.JsonEncoders
+- uid: BestHTTP.SocketIO.Packet.DecodeEventName*
+  commentId: Overload:BestHTTP.SocketIO.Packet.DecodeEventName
+  name: DecodeEventName
+  nameWithType: Packet.DecodeEventName
+  fullName: BestHTTP.SocketIO.Packet.DecodeEventName
+- uid: BestHTTP.SocketIO.Packet.RemoveEventName*
+  commentId: Overload:BestHTTP.SocketIO.Packet.RemoveEventName
+  name: RemoveEventName
+  nameWithType: Packet.RemoveEventName
+  fullName: BestHTTP.SocketIO.Packet.RemoveEventName
+- uid: BestHTTP.SocketIO.Packet.ReconstructAttachmentAsIndex*
+  commentId: Overload:BestHTTP.SocketIO.Packet.ReconstructAttachmentAsIndex
+  name: ReconstructAttachmentAsIndex
+  nameWithType: Packet.ReconstructAttachmentAsIndex
+  fullName: BestHTTP.SocketIO.Packet.ReconstructAttachmentAsIndex
+- uid: BestHTTP.SocketIO.Packet.ReconstructAttachmentAsBase64*
+  commentId: Overload:BestHTTP.SocketIO.Packet.ReconstructAttachmentAsBase64
+  name: ReconstructAttachmentAsBase64
+  nameWithType: Packet.ReconstructAttachmentAsBase64
+  fullName: BestHTTP.SocketIO.Packet.ReconstructAttachmentAsBase64
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.SocketIO.Packet.ToString*
+  commentId: Overload:BestHTTP.SocketIO.Packet.ToString
+  name: ToString
+  nameWithType: Packet.ToString
+  fullName: BestHTTP.SocketIO.Packet.ToString

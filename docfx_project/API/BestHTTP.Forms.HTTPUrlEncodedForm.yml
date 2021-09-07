@@ -1,0 +1,1016 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.Forms.HTTPUrlEncodedForm
+  commentId: T:BestHTTP.Forms.HTTPUrlEncodedForm
+  id: HTTPUrlEncodedForm
+  parent: BestHTTP.Forms
+  children:
+  - BestHTTP.Forms.HTTPUrlEncodedForm.EscapeString(System.String)
+  - BestHTTP.Forms.HTTPUrlEncodedForm.GetData
+  - BestHTTP.Forms.HTTPUrlEncodedForm.PrepareRequest(BestHTTP.HTTPRequest)
+  langs:
+  - csharp
+  - vb
+  name: HTTPUrlEncodedForm
+  nameWithType: HTTPUrlEncodedForm
+  fullName: BestHTTP.Forms.HTTPUrlEncodedForm
+  type: Class
+  source:
+    id: HTTPUrlEncodedForm
+    path: ''
+    startLine: 29334
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Forms
+  summary: "\nA HTTP Form implementation to send textual values.\n"
+  example: []
+  syntax:
+    content: 'public sealed class HTTPUrlEncodedForm : HTTPFormBase'
+    content.vb: >-
+      Public NotInheritable Class HTTPUrlEncodedForm
+          Inherits HTTPFormBase
+  inheritance:
+  - System.Object
+  - BestHTTP.Forms.HTTPFormBase
+  inheritedMembers:
+  - BestHTTP.Forms.HTTPFormBase.Fields
+  - BestHTTP.Forms.HTTPFormBase.IsEmpty
+  - BestHTTP.Forms.HTTPFormBase.IsChanged
+  - BestHTTP.Forms.HTTPFormBase.HasBinary
+  - BestHTTP.Forms.HTTPFormBase.HasLongValue
+  - BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[])
+  - BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[],System.String)
+  - BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[],System.String,System.String)
+  - BestHTTP.Forms.HTTPFormBase.AddField(System.String,System.String)
+  - BestHTTP.Forms.HTTPFormBase.AddField(System.String,System.String,System.Text.Encoding)
+  - BestHTTP.Forms.HTTPFormBase.CopyFrom(BestHTTP.Forms.HTTPFormBase)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: BestHTTP.Forms.HTTPUrlEncodedForm.PrepareRequest(BestHTTP.HTTPRequest)
+  commentId: M:BestHTTP.Forms.HTTPUrlEncodedForm.PrepareRequest(BestHTTP.HTTPRequest)
+  id: PrepareRequest(BestHTTP.HTTPRequest)
+  parent: BestHTTP.Forms.HTTPUrlEncodedForm
+  langs:
+  - csharp
+  - vb
+  name: PrepareRequest(HTTPRequest)
+  nameWithType: HTTPUrlEncodedForm.PrepareRequest(HTTPRequest)
+  fullName: BestHTTP.Forms.HTTPUrlEncodedForm.PrepareRequest(BestHTTP.HTTPRequest)
+  type: Method
+  source:
+    id: PrepareRequest
+    path: ''
+    startLine: 29340
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Forms
+  syntax:
+    content: public override void PrepareRequest(HTTPRequest request)
+    parameters:
+    - id: request
+      type: BestHTTP.HTTPRequest
+    content.vb: Public Overrides Sub PrepareRequest(request As HTTPRequest)
+  overridden: BestHTTP.Forms.HTTPFormBase.PrepareRequest(BestHTTP.HTTPRequest)
+  overload: BestHTTP.Forms.HTTPUrlEncodedForm.PrepareRequest*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: BestHTTP.Forms.HTTPUrlEncodedForm.GetData
+  commentId: M:BestHTTP.Forms.HTTPUrlEncodedForm.GetData
+  id: GetData
+  parent: BestHTTP.Forms.HTTPUrlEncodedForm
+  langs:
+  - csharp
+  - vb
+  name: GetData()
+  nameWithType: HTTPUrlEncodedForm.GetData()
+  fullName: BestHTTP.Forms.HTTPUrlEncodedForm.GetData()
+  type: Method
+  source:
+    id: GetData
+    path: ''
+    startLine: 29345
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Forms
+  syntax:
+    content: public override byte[] GetData()
+    return:
+      type: System.Byte[]
+    content.vb: Public Overrides Function GetData As Byte()
+  overridden: BestHTTP.Forms.HTTPFormBase.GetData
+  overload: BestHTTP.Forms.HTTPUrlEncodedForm.GetData*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: BestHTTP.Forms.HTTPUrlEncodedForm.EscapeString(System.String)
+  commentId: M:BestHTTP.Forms.HTTPUrlEncodedForm.EscapeString(System.String)
+  id: EscapeString(System.String)
+  parent: BestHTTP.Forms.HTTPUrlEncodedForm
+  langs:
+  - csharp
+  - vb
+  name: EscapeString(String)
+  nameWithType: HTTPUrlEncodedForm.EscapeString(String)
+  fullName: BestHTTP.Forms.HTTPUrlEncodedForm.EscapeString(System.String)
+  type: Method
+  source:
+    id: EscapeString
+    path: ''
+    startLine: 29374
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.Forms
+  syntax:
+    content: public static string EscapeString(string originalString)
+    parameters:
+    - id: originalString
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function EscapeString(originalString As String) As String
+  overload: BestHTTP.Forms.HTTPUrlEncodedForm.EscapeString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: BestHTTP.Forms
+  commentId: N:BestHTTP.Forms
+  name: BestHTTP.Forms
+  nameWithType: BestHTTP.Forms
+  fullName: BestHTTP.Forms
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BestHTTP.Forms.HTTPFormBase
+  commentId: T:BestHTTP.Forms.HTTPFormBase
+  parent: BestHTTP.Forms
+  name: HTTPFormBase
+  nameWithType: HTTPFormBase
+  fullName: BestHTTP.Forms.HTTPFormBase
+- uid: BestHTTP.Forms.HTTPFormBase.Fields
+  commentId: P:BestHTTP.Forms.HTTPFormBase.Fields
+  parent: BestHTTP.Forms.HTTPFormBase
+  name: Fields
+  nameWithType: HTTPFormBase.Fields
+  fullName: BestHTTP.Forms.HTTPFormBase.Fields
+- uid: BestHTTP.Forms.HTTPFormBase.IsEmpty
+  commentId: P:BestHTTP.Forms.HTTPFormBase.IsEmpty
+  parent: BestHTTP.Forms.HTTPFormBase
+  name: IsEmpty
+  nameWithType: HTTPFormBase.IsEmpty
+  fullName: BestHTTP.Forms.HTTPFormBase.IsEmpty
+- uid: BestHTTP.Forms.HTTPFormBase.IsChanged
+  commentId: P:BestHTTP.Forms.HTTPFormBase.IsChanged
+  parent: BestHTTP.Forms.HTTPFormBase
+  name: IsChanged
+  nameWithType: HTTPFormBase.IsChanged
+  fullName: BestHTTP.Forms.HTTPFormBase.IsChanged
+- uid: BestHTTP.Forms.HTTPFormBase.HasBinary
+  commentId: P:BestHTTP.Forms.HTTPFormBase.HasBinary
+  parent: BestHTTP.Forms.HTTPFormBase
+  name: HasBinary
+  nameWithType: HTTPFormBase.HasBinary
+  fullName: BestHTTP.Forms.HTTPFormBase.HasBinary
+- uid: BestHTTP.Forms.HTTPFormBase.HasLongValue
+  commentId: P:BestHTTP.Forms.HTTPFormBase.HasLongValue
+  parent: BestHTTP.Forms.HTTPFormBase
+  name: HasLongValue
+  nameWithType: HTTPFormBase.HasLongValue
+  fullName: BestHTTP.Forms.HTTPFormBase.HasLongValue
+- uid: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[])
+  commentId: M:BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[])
+  parent: BestHTTP.Forms.HTTPFormBase
+  isExternal: true
+  name: AddBinaryData(String, Byte[])
+  nameWithType: HTTPFormBase.AddBinaryData(String, Byte[])
+  fullName: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String, System.Byte[])
+  nameWithType.vb: HTTPFormBase.AddBinaryData(String, Byte())
+  fullName.vb: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String, System.Byte())
+  name.vb: AddBinaryData(String, Byte())
+  spec.csharp:
+  - uid: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[])
+    name: AddBinaryData
+    nameWithType: HTTPFormBase.AddBinaryData
+    fullName: BestHTTP.Forms.HTTPFormBase.AddBinaryData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[])
+    name: AddBinaryData
+    nameWithType: HTTPFormBase.AddBinaryData
+    fullName: BestHTTP.Forms.HTTPFormBase.AddBinaryData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[],System.String)
+  commentId: M:BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[],System.String)
+  parent: BestHTTP.Forms.HTTPFormBase
+  isExternal: true
+  name: AddBinaryData(String, Byte[], String)
+  nameWithType: HTTPFormBase.AddBinaryData(String, Byte[], String)
+  fullName: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String, System.Byte[], System.String)
+  nameWithType.vb: HTTPFormBase.AddBinaryData(String, Byte(), String)
+  fullName.vb: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String, System.Byte(), System.String)
+  name.vb: AddBinaryData(String, Byte(), String)
+  spec.csharp:
+  - uid: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[],System.String)
+    name: AddBinaryData
+    nameWithType: HTTPFormBase.AddBinaryData
+    fullName: BestHTTP.Forms.HTTPFormBase.AddBinaryData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[],System.String)
+    name: AddBinaryData
+    nameWithType: HTTPFormBase.AddBinaryData
+    fullName: BestHTTP.Forms.HTTPFormBase.AddBinaryData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[],System.String,System.String)
+  commentId: M:BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[],System.String,System.String)
+  parent: BestHTTP.Forms.HTTPFormBase
+  isExternal: true
+  name: AddBinaryData(String, Byte[], String, String)
+  nameWithType: HTTPFormBase.AddBinaryData(String, Byte[], String, String)
+  fullName: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String, System.Byte[], System.String, System.String)
+  nameWithType.vb: HTTPFormBase.AddBinaryData(String, Byte(), String, String)
+  fullName.vb: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String, System.Byte(), System.String, System.String)
+  name.vb: AddBinaryData(String, Byte(), String, String)
+  spec.csharp:
+  - uid: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[],System.String,System.String)
+    name: AddBinaryData
+    nameWithType: HTTPFormBase.AddBinaryData
+    fullName: BestHTTP.Forms.HTTPFormBase.AddBinaryData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Forms.HTTPFormBase.AddBinaryData(System.String,System.Byte[],System.String,System.String)
+    name: AddBinaryData
+    nameWithType: HTTPFormBase.AddBinaryData
+    fullName: BestHTTP.Forms.HTTPFormBase.AddBinaryData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.Forms.HTTPFormBase.AddField(System.String,System.String)
+  commentId: M:BestHTTP.Forms.HTTPFormBase.AddField(System.String,System.String)
+  parent: BestHTTP.Forms.HTTPFormBase
+  isExternal: true
+  name: AddField(String, String)
+  nameWithType: HTTPFormBase.AddField(String, String)
+  fullName: BestHTTP.Forms.HTTPFormBase.AddField(System.String, System.String)
+  spec.csharp:
+  - uid: BestHTTP.Forms.HTTPFormBase.AddField(System.String,System.String)
+    name: AddField
+    nameWithType: HTTPFormBase.AddField
+    fullName: BestHTTP.Forms.HTTPFormBase.AddField
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Forms.HTTPFormBase.AddField(System.String,System.String)
+    name: AddField
+    nameWithType: HTTPFormBase.AddField
+    fullName: BestHTTP.Forms.HTTPFormBase.AddField
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.Forms.HTTPFormBase.AddField(System.String,System.String,System.Text.Encoding)
+  commentId: M:BestHTTP.Forms.HTTPFormBase.AddField(System.String,System.String,System.Text.Encoding)
+  parent: BestHTTP.Forms.HTTPFormBase
+  isExternal: true
+  name: AddField(String, String, Encoding)
+  nameWithType: HTTPFormBase.AddField(String, String, Encoding)
+  fullName: BestHTTP.Forms.HTTPFormBase.AddField(System.String, System.String, System.Text.Encoding)
+  spec.csharp:
+  - uid: BestHTTP.Forms.HTTPFormBase.AddField(System.String,System.String,System.Text.Encoding)
+    name: AddField
+    nameWithType: HTTPFormBase.AddField
+    fullName: BestHTTP.Forms.HTTPFormBase.AddField
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Forms.HTTPFormBase.AddField(System.String,System.String,System.Text.Encoding)
+    name: AddField
+    nameWithType: HTTPFormBase.AddField
+    fullName: BestHTTP.Forms.HTTPFormBase.AddField
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.Forms.HTTPFormBase.CopyFrom(BestHTTP.Forms.HTTPFormBase)
+  commentId: M:BestHTTP.Forms.HTTPFormBase.CopyFrom(BestHTTP.Forms.HTTPFormBase)
+  parent: BestHTTP.Forms.HTTPFormBase
+  name: CopyFrom(HTTPFormBase)
+  nameWithType: HTTPFormBase.CopyFrom(HTTPFormBase)
+  fullName: BestHTTP.Forms.HTTPFormBase.CopyFrom(BestHTTP.Forms.HTTPFormBase)
+  spec.csharp:
+  - uid: BestHTTP.Forms.HTTPFormBase.CopyFrom(BestHTTP.Forms.HTTPFormBase)
+    name: CopyFrom
+    nameWithType: HTTPFormBase.CopyFrom
+    fullName: BestHTTP.Forms.HTTPFormBase.CopyFrom
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.Forms.HTTPFormBase
+    name: HTTPFormBase
+    nameWithType: HTTPFormBase
+    fullName: BestHTTP.Forms.HTTPFormBase
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Forms.HTTPFormBase.CopyFrom(BestHTTP.Forms.HTTPFormBase)
+    name: CopyFrom
+    nameWithType: HTTPFormBase.CopyFrom
+    fullName: BestHTTP.Forms.HTTPFormBase.CopyFrom
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.Forms.HTTPFormBase
+    name: HTTPFormBase
+    nameWithType: HTTPFormBase
+    fullName: BestHTTP.Forms.HTTPFormBase
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.Forms.HTTPFormBase.PrepareRequest(BestHTTP.HTTPRequest)
+  commentId: M:BestHTTP.Forms.HTTPFormBase.PrepareRequest(BestHTTP.HTTPRequest)
+  parent: BestHTTP.Forms.HTTPFormBase
+  name: PrepareRequest(HTTPRequest)
+  nameWithType: HTTPFormBase.PrepareRequest(HTTPRequest)
+  fullName: BestHTTP.Forms.HTTPFormBase.PrepareRequest(BestHTTP.HTTPRequest)
+  spec.csharp:
+  - uid: BestHTTP.Forms.HTTPFormBase.PrepareRequest(BestHTTP.HTTPRequest)
+    name: PrepareRequest
+    nameWithType: HTTPFormBase.PrepareRequest
+    fullName: BestHTTP.Forms.HTTPFormBase.PrepareRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.HTTPRequest
+    name: HTTPRequest
+    nameWithType: HTTPRequest
+    fullName: BestHTTP.HTTPRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Forms.HTTPFormBase.PrepareRequest(BestHTTP.HTTPRequest)
+    name: PrepareRequest
+    nameWithType: HTTPFormBase.PrepareRequest
+    fullName: BestHTTP.Forms.HTTPFormBase.PrepareRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BestHTTP.HTTPRequest
+    name: HTTPRequest
+    nameWithType: HTTPRequest
+    fullName: BestHTTP.HTTPRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.Forms.HTTPUrlEncodedForm.PrepareRequest*
+  commentId: Overload:BestHTTP.Forms.HTTPUrlEncodedForm.PrepareRequest
+  name: PrepareRequest
+  nameWithType: HTTPUrlEncodedForm.PrepareRequest
+  fullName: BestHTTP.Forms.HTTPUrlEncodedForm.PrepareRequest
+- uid: BestHTTP.HTTPRequest
+  commentId: T:BestHTTP.HTTPRequest
+  parent: BestHTTP
+  name: HTTPRequest
+  nameWithType: HTTPRequest
+  fullName: BestHTTP.HTTPRequest
+- uid: BestHTTP
+  commentId: N:BestHTTP
+  name: BestHTTP
+  nameWithType: BestHTTP
+  fullName: BestHTTP
+- uid: BestHTTP.Forms.HTTPFormBase.GetData
+  commentId: M:BestHTTP.Forms.HTTPFormBase.GetData
+  parent: BestHTTP.Forms.HTTPFormBase
+  name: GetData()
+  nameWithType: HTTPFormBase.GetData()
+  fullName: BestHTTP.Forms.HTTPFormBase.GetData()
+  spec.csharp:
+  - uid: BestHTTP.Forms.HTTPFormBase.GetData
+    name: GetData
+    nameWithType: HTTPFormBase.GetData
+    fullName: BestHTTP.Forms.HTTPFormBase.GetData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BestHTTP.Forms.HTTPFormBase.GetData
+    name: GetData
+    nameWithType: HTTPFormBase.GetData
+    fullName: BestHTTP.Forms.HTTPFormBase.GetData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BestHTTP.Forms.HTTPUrlEncodedForm.GetData*
+  commentId: Overload:BestHTTP.Forms.HTTPUrlEncodedForm.GetData
+  name: GetData
+  nameWithType: HTTPUrlEncodedForm.GetData
+  fullName: BestHTTP.Forms.HTTPUrlEncodedForm.GetData
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BestHTTP.Forms.HTTPUrlEncodedForm.EscapeString*
+  commentId: Overload:BestHTTP.Forms.HTTPUrlEncodedForm.EscapeString
+  name: EscapeString
+  nameWithType: HTTPUrlEncodedForm.EscapeString
+  fullName: BestHTTP.Forms.HTTPUrlEncodedForm.EscapeString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

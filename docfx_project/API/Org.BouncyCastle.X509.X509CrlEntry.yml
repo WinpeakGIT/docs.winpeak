@@ -1,0 +1,952 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.X509.X509CrlEntry
+  commentId: T:Org.BouncyCastle.X509.X509CrlEntry
+  id: X509CrlEntry
+  parent: Org.BouncyCastle.X509
+  children:
+  - Org.BouncyCastle.X509.X509CrlEntry.#ctor(CrlEntry)
+  - Org.BouncyCastle.X509.X509CrlEntry.#ctor(CrlEntry,System.Boolean,X509Name)
+  - Org.BouncyCastle.X509.X509CrlEntry.GetCertificateIssuer
+  - Org.BouncyCastle.X509.X509CrlEntry.GetEncoded
+  - Org.BouncyCastle.X509.X509CrlEntry.GetX509Extensions
+  - Org.BouncyCastle.X509.X509CrlEntry.HasExtensions
+  - Org.BouncyCastle.X509.X509CrlEntry.RevocationDate
+  - Org.BouncyCastle.X509.X509CrlEntry.SerialNumber
+  - Org.BouncyCastle.X509.X509CrlEntry.ToString
+  langs:
+  - csharp
+  - vb
+  name: X509CrlEntry
+  nameWithType: X509CrlEntry
+  fullName: Org.BouncyCastle.X509.X509CrlEntry
+  type: Class
+  source:
+    id: X509CrlEntry
+    path: ''
+    startLine: 50586
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.X509
+  example: []
+  syntax:
+    content: 'public class X509CrlEntry : X509ExtensionBase, IX509Extension'
+    content.vb: >-
+      Public Class X509CrlEntry
+          Inherits X509ExtensionBase
+          Implements IX509Extension
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.X509.X509ExtensionBase
+  implements:
+  - Org.BouncyCastle.X509.IX509Extension
+  inheritedMembers:
+  - Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionOids(System.Boolean)
+  - Org.BouncyCastle.X509.X509ExtensionBase.GetNonCriticalExtensionOids
+  - Org.BouncyCastle.X509.X509ExtensionBase.GetCriticalExtensionOids
+  - Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(System.String)
+  - Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(DerObjectIdentifier)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.X509.X509CrlEntry.#ctor(CrlEntry)
+  commentId: M:Org.BouncyCastle.X509.X509CrlEntry.#ctor(CrlEntry)
+  id: '#ctor(CrlEntry)'
+  parent: Org.BouncyCastle.X509.X509CrlEntry
+  langs:
+  - csharp
+  - vb
+  name: X509CrlEntry(CrlEntry)
+  nameWithType: X509CrlEntry.X509CrlEntry(CrlEntry)
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.X509CrlEntry(CrlEntry)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 50594
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.X509
+  syntax:
+    content: public X509CrlEntry(CrlEntry c)
+    parameters:
+    - id: c
+      type: CrlEntry
+    content.vb: Public Sub New(c As CrlEntry)
+  overload: Org.BouncyCastle.X509.X509CrlEntry.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.X509.X509CrlEntry.#ctor(CrlEntry,System.Boolean,X509Name)
+  commentId: M:Org.BouncyCastle.X509.X509CrlEntry.#ctor(CrlEntry,System.Boolean,X509Name)
+  id: '#ctor(CrlEntry,System.Boolean,X509Name)'
+  parent: Org.BouncyCastle.X509.X509CrlEntry
+  langs:
+  - csharp
+  - vb
+  name: X509CrlEntry(CrlEntry, Boolean, X509Name)
+  nameWithType: X509CrlEntry.X509CrlEntry(CrlEntry, Boolean, X509Name)
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.X509CrlEntry(CrlEntry, System.Boolean, X509Name)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 50618
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.X509
+  example: []
+  syntax:
+    content: public X509CrlEntry(CrlEntry c, bool isIndirect, X509Name previousCertificateIssuer)
+    parameters:
+    - id: c
+      type: CrlEntry
+    - id: isIndirect
+      type: System.Boolean
+    - id: previousCertificateIssuer
+      type: X509Name
+    content.vb: Public Sub New(c As CrlEntry, isIndirect As Boolean, previousCertificateIssuer As X509Name)
+  overload: Org.BouncyCastle.X509.X509CrlEntry.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.X509.X509CrlEntry.GetCertificateIssuer
+  commentId: M:Org.BouncyCastle.X509.X509CrlEntry.GetCertificateIssuer
+  id: GetCertificateIssuer
+  parent: Org.BouncyCastle.X509.X509CrlEntry
+  langs:
+  - csharp
+  - vb
+  name: GetCertificateIssuer()
+  nameWithType: X509CrlEntry.GetCertificateIssuer()
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.GetCertificateIssuer()
+  type: Method
+  source:
+    id: GetCertificateIssuer
+    path: ''
+    startLine: 50662
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.X509
+  syntax:
+    content: public X509Name GetCertificateIssuer()
+    return:
+      type: X509Name
+    content.vb: Public Function GetCertificateIssuer As X509Name
+  overload: Org.BouncyCastle.X509.X509CrlEntry.GetCertificateIssuer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.X509.X509CrlEntry.GetX509Extensions
+  commentId: M:Org.BouncyCastle.X509.X509CrlEntry.GetX509Extensions
+  id: GetX509Extensions
+  parent: Org.BouncyCastle.X509.X509CrlEntry
+  langs:
+  - csharp
+  - vb
+  name: GetX509Extensions()
+  nameWithType: X509CrlEntry.GetX509Extensions()
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.GetX509Extensions()
+  type: Method
+  source:
+    id: GetX509Extensions
+    path: ''
+    startLine: 50667
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.X509
+  syntax:
+    content: protected override X509Extensions GetX509Extensions()
+    return:
+      type: X509Extensions
+    content.vb: Protected Overrides Function GetX509Extensions As X509Extensions
+  overridden: Org.BouncyCastle.X509.X509ExtensionBase.GetX509Extensions
+  overload: Org.BouncyCastle.X509.X509CrlEntry.GetX509Extensions*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Org.BouncyCastle.X509.X509CrlEntry.GetEncoded
+  commentId: M:Org.BouncyCastle.X509.X509CrlEntry.GetEncoded
+  id: GetEncoded
+  parent: Org.BouncyCastle.X509.X509CrlEntry
+  langs:
+  - csharp
+  - vb
+  name: GetEncoded()
+  nameWithType: X509CrlEntry.GetEncoded()
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.GetEncoded()
+  type: Method
+  source:
+    id: GetEncoded
+    path: ''
+    startLine: 50672
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.X509
+  syntax:
+    content: public byte[] GetEncoded()
+    return:
+      type: System.Byte[]
+    content.vb: Public Function GetEncoded As Byte()
+  overload: Org.BouncyCastle.X509.X509CrlEntry.GetEncoded*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.X509.X509CrlEntry.SerialNumber
+  commentId: P:Org.BouncyCastle.X509.X509CrlEntry.SerialNumber
+  id: SerialNumber
+  parent: Org.BouncyCastle.X509.X509CrlEntry
+  langs:
+  - csharp
+  - vb
+  name: SerialNumber
+  nameWithType: X509CrlEntry.SerialNumber
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.SerialNumber
+  type: Property
+  source:
+    id: SerialNumber
+    path: ''
+    startLine: 50684
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.X509
+  syntax:
+    content: public BigInteger SerialNumber { get; }
+    parameters: []
+    return:
+      type: BigInteger
+    content.vb: Public ReadOnly Property SerialNumber As BigInteger
+  overload: Org.BouncyCastle.X509.X509CrlEntry.SerialNumber*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.X509.X509CrlEntry.RevocationDate
+  commentId: P:Org.BouncyCastle.X509.X509CrlEntry.RevocationDate
+  id: RevocationDate
+  parent: Org.BouncyCastle.X509.X509CrlEntry
+  langs:
+  - csharp
+  - vb
+  name: RevocationDate
+  nameWithType: X509CrlEntry.RevocationDate
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.RevocationDate
+  type: Property
+  source:
+    id: RevocationDate
+    path: ''
+    startLine: 50689
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.X509
+  syntax:
+    content: public DateTime RevocationDate { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public ReadOnly Property RevocationDate As Date
+  overload: Org.BouncyCastle.X509.X509CrlEntry.RevocationDate*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.X509.X509CrlEntry.HasExtensions
+  commentId: P:Org.BouncyCastle.X509.X509CrlEntry.HasExtensions
+  id: HasExtensions
+  parent: Org.BouncyCastle.X509.X509CrlEntry
+  langs:
+  - csharp
+  - vb
+  name: HasExtensions
+  nameWithType: X509CrlEntry.HasExtensions
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.HasExtensions
+  type: Property
+  source:
+    id: HasExtensions
+    path: ''
+    startLine: 50694
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.X509
+  syntax:
+    content: public bool HasExtensions { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasExtensions As Boolean
+  overload: Org.BouncyCastle.X509.X509CrlEntry.HasExtensions*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.X509.X509CrlEntry.ToString
+  commentId: M:Org.BouncyCastle.X509.X509CrlEntry.ToString
+  id: ToString
+  parent: Org.BouncyCastle.X509.X509CrlEntry
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: X509CrlEntry.ToString()
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 50699
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.X509
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Org.BouncyCastle.X509.X509CrlEntry.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Org.BouncyCastle.X509
+  commentId: N:Org.BouncyCastle.X509
+  name: Org.BouncyCastle.X509
+  nameWithType: Org.BouncyCastle.X509
+  fullName: Org.BouncyCastle.X509
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.X509.X509ExtensionBase
+  commentId: T:Org.BouncyCastle.X509.X509ExtensionBase
+  parent: Org.BouncyCastle.X509
+  name: X509ExtensionBase
+  nameWithType: X509ExtensionBase
+  fullName: Org.BouncyCastle.X509.X509ExtensionBase
+- uid: Org.BouncyCastle.X509.IX509Extension
+  commentId: T:Org.BouncyCastle.X509.IX509Extension
+  parent: Org.BouncyCastle.X509
+  name: IX509Extension
+  nameWithType: IX509Extension
+  fullName: Org.BouncyCastle.X509.IX509Extension
+- uid: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionOids(System.Boolean)
+  commentId: M:Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionOids(System.Boolean)
+  parent: Org.BouncyCastle.X509.X509ExtensionBase
+  isExternal: true
+  name: GetExtensionOids(Boolean)
+  nameWithType: X509ExtensionBase.GetExtensionOids(Boolean)
+  fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionOids(System.Boolean)
+  spec.csharp:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionOids(System.Boolean)
+    name: GetExtensionOids
+    nameWithType: X509ExtensionBase.GetExtensionOids
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionOids
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionOids(System.Boolean)
+    name: GetExtensionOids
+    nameWithType: X509ExtensionBase.GetExtensionOids
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionOids
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.X509.X509ExtensionBase.GetNonCriticalExtensionOids
+  commentId: M:Org.BouncyCastle.X509.X509ExtensionBase.GetNonCriticalExtensionOids
+  parent: Org.BouncyCastle.X509.X509ExtensionBase
+  name: GetNonCriticalExtensionOids()
+  nameWithType: X509ExtensionBase.GetNonCriticalExtensionOids()
+  fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetNonCriticalExtensionOids()
+  spec.csharp:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetNonCriticalExtensionOids
+    name: GetNonCriticalExtensionOids
+    nameWithType: X509ExtensionBase.GetNonCriticalExtensionOids
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetNonCriticalExtensionOids
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetNonCriticalExtensionOids
+    name: GetNonCriticalExtensionOids
+    nameWithType: X509ExtensionBase.GetNonCriticalExtensionOids
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetNonCriticalExtensionOids
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.X509.X509ExtensionBase.GetCriticalExtensionOids
+  commentId: M:Org.BouncyCastle.X509.X509ExtensionBase.GetCriticalExtensionOids
+  parent: Org.BouncyCastle.X509.X509ExtensionBase
+  name: GetCriticalExtensionOids()
+  nameWithType: X509ExtensionBase.GetCriticalExtensionOids()
+  fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetCriticalExtensionOids()
+  spec.csharp:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetCriticalExtensionOids
+    name: GetCriticalExtensionOids
+    nameWithType: X509ExtensionBase.GetCriticalExtensionOids
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetCriticalExtensionOids
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetCriticalExtensionOids
+    name: GetCriticalExtensionOids
+    nameWithType: X509ExtensionBase.GetCriticalExtensionOids
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetCriticalExtensionOids
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(System.String)
+  commentId: M:Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(System.String)
+  parent: Org.BouncyCastle.X509.X509ExtensionBase
+  isExternal: true
+  name: GetExtensionValue(String)
+  nameWithType: X509ExtensionBase.GetExtensionValue(String)
+  fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(System.String)
+  spec.csharp:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(System.String)
+    name: GetExtensionValue
+    nameWithType: X509ExtensionBase.GetExtensionValue
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(System.String)
+    name: GetExtensionValue
+    nameWithType: X509ExtensionBase.GetExtensionValue
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(DerObjectIdentifier)
+  commentId: M:Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(DerObjectIdentifier)
+  parent: Org.BouncyCastle.X509.X509ExtensionBase
+  isExternal: true
+  name: GetExtensionValue(DerObjectIdentifier)
+  nameWithType: X509ExtensionBase.GetExtensionValue(DerObjectIdentifier)
+  fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(DerObjectIdentifier)
+  spec.csharp:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(DerObjectIdentifier)
+    name: GetExtensionValue
+    nameWithType: X509ExtensionBase.GetExtensionValue
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: DerObjectIdentifier
+    name: DerObjectIdentifier
+    nameWithType: DerObjectIdentifier
+    fullName: DerObjectIdentifier
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue(DerObjectIdentifier)
+    name: GetExtensionValue
+    nameWithType: X509ExtensionBase.GetExtensionValue
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetExtensionValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: DerObjectIdentifier
+    name: DerObjectIdentifier
+    nameWithType: DerObjectIdentifier
+    fullName: DerObjectIdentifier
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.X509.X509CrlEntry.#ctor*
+  commentId: Overload:Org.BouncyCastle.X509.X509CrlEntry.#ctor
+  name: X509CrlEntry
+  nameWithType: X509CrlEntry.X509CrlEntry
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.X509CrlEntry
+- uid: CrlEntry
+  isExternal: true
+  name: CrlEntry
+  nameWithType: CrlEntry
+  fullName: CrlEntry
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: X509Name
+  isExternal: true
+  name: X509Name
+  nameWithType: X509Name
+  fullName: X509Name
+- uid: Org.BouncyCastle.X509.X509CrlEntry.GetCertificateIssuer*
+  commentId: Overload:Org.BouncyCastle.X509.X509CrlEntry.GetCertificateIssuer
+  name: GetCertificateIssuer
+  nameWithType: X509CrlEntry.GetCertificateIssuer
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.GetCertificateIssuer
+- uid: Org.BouncyCastle.X509.X509ExtensionBase.GetX509Extensions
+  commentId: M:Org.BouncyCastle.X509.X509ExtensionBase.GetX509Extensions
+  parent: Org.BouncyCastle.X509.X509ExtensionBase
+  name: GetX509Extensions()
+  nameWithType: X509ExtensionBase.GetX509Extensions()
+  fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetX509Extensions()
+  spec.csharp:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetX509Extensions
+    name: GetX509Extensions
+    nameWithType: X509ExtensionBase.GetX509Extensions
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetX509Extensions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.X509.X509ExtensionBase.GetX509Extensions
+    name: GetX509Extensions
+    nameWithType: X509ExtensionBase.GetX509Extensions
+    fullName: Org.BouncyCastle.X509.X509ExtensionBase.GetX509Extensions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.X509.X509CrlEntry.GetX509Extensions*
+  commentId: Overload:Org.BouncyCastle.X509.X509CrlEntry.GetX509Extensions
+  name: GetX509Extensions
+  nameWithType: X509CrlEntry.GetX509Extensions
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.GetX509Extensions
+- uid: X509Extensions
+  isExternal: true
+  name: X509Extensions
+  nameWithType: X509Extensions
+  fullName: X509Extensions
+- uid: Org.BouncyCastle.X509.X509CrlEntry.GetEncoded*
+  commentId: Overload:Org.BouncyCastle.X509.X509CrlEntry.GetEncoded
+  name: GetEncoded
+  nameWithType: X509CrlEntry.GetEncoded
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.GetEncoded
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.X509.X509CrlEntry.SerialNumber*
+  commentId: Overload:Org.BouncyCastle.X509.X509CrlEntry.SerialNumber
+  name: SerialNumber
+  nameWithType: X509CrlEntry.SerialNumber
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.SerialNumber
+- uid: BigInteger
+  isExternal: true
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: BigInteger
+- uid: Org.BouncyCastle.X509.X509CrlEntry.RevocationDate*
+  commentId: Overload:Org.BouncyCastle.X509.X509CrlEntry.RevocationDate
+  name: RevocationDate
+  nameWithType: X509CrlEntry.RevocationDate
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.RevocationDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: Org.BouncyCastle.X509.X509CrlEntry.HasExtensions*
+  commentId: Overload:Org.BouncyCastle.X509.X509CrlEntry.HasExtensions
+  name: HasExtensions
+  nameWithType: X509CrlEntry.HasExtensions
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.HasExtensions
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.X509.X509CrlEntry.ToString*
+  commentId: Overload:Org.BouncyCastle.X509.X509CrlEntry.ToString
+  name: ToString
+  nameWithType: X509CrlEntry.ToString
+  fullName: Org.BouncyCastle.X509.X509CrlEntry.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

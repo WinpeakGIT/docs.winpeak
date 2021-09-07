@@ -1,0 +1,472 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities
+  id: TlsRsaUtilities
+  parent: Org.BouncyCastle.Crypto.Tls
+  children:
+  - Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.GenerateEncryptedPreMasterSecret(Org.BouncyCastle.Crypto.Tls.TlsContext,RsaKeyParameters,Stream)
+  - Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.SafeDecryptPreMasterSecret(Org.BouncyCastle.Crypto.Tls.TlsContext,RsaKeyParameters,System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: TlsRsaUtilities
+  nameWithType: TlsRsaUtilities
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities
+  type: Class
+  source:
+    id: TlsRsaUtilities
+    path: ''
+    startLine: 113490
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public abstract class TlsRsaUtilities
+    content.vb: Public MustInherit Class TlsRsaUtilities
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.GenerateEncryptedPreMasterSecret(Org.BouncyCastle.Crypto.Tls.TlsContext,RsaKeyParameters,Stream)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.GenerateEncryptedPreMasterSecret(Org.BouncyCastle.Crypto.Tls.TlsContext,RsaKeyParameters,Stream)
+  id: GenerateEncryptedPreMasterSecret(Org.BouncyCastle.Crypto.Tls.TlsContext,RsaKeyParameters,Stream)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities
+  langs:
+  - csharp
+  - vb
+  name: GenerateEncryptedPreMasterSecret(TlsContext, RsaKeyParameters, Stream)
+  nameWithType: TlsRsaUtilities.GenerateEncryptedPreMasterSecret(TlsContext, RsaKeyParameters, Stream)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.GenerateEncryptedPreMasterSecret(Org.BouncyCastle.Crypto.Tls.TlsContext, RsaKeyParameters, Stream)
+  type: Method
+  source:
+    id: GenerateEncryptedPreMasterSecret
+    path: ''
+    startLine: 113493
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  example: []
+  syntax:
+    content: public static byte[] GenerateEncryptedPreMasterSecret(TlsContext context, RsaKeyParameters rsaServerPublicKey, Stream output)
+    parameters:
+    - id: context
+      type: Org.BouncyCastle.Crypto.Tls.TlsContext
+    - id: rsaServerPublicKey
+      type: RsaKeyParameters
+    - id: output
+      type: Stream
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function GenerateEncryptedPreMasterSecret(context As TlsContext, rsaServerPublicKey As RsaKeyParameters, output As Stream) As Byte()
+  overload: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.GenerateEncryptedPreMasterSecret*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.SafeDecryptPreMasterSecret(Org.BouncyCastle.Crypto.Tls.TlsContext,RsaKeyParameters,System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.SafeDecryptPreMasterSecret(Org.BouncyCastle.Crypto.Tls.TlsContext,RsaKeyParameters,System.Byte[])
+  id: SafeDecryptPreMasterSecret(Org.BouncyCastle.Crypto.Tls.TlsContext,RsaKeyParameters,System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities
+  langs:
+  - csharp
+  - vb
+  name: SafeDecryptPreMasterSecret(TlsContext, RsaKeyParameters, Byte[])
+  nameWithType: TlsRsaUtilities.SafeDecryptPreMasterSecret(TlsContext, RsaKeyParameters, Byte[])
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.SafeDecryptPreMasterSecret(Org.BouncyCastle.Crypto.Tls.TlsContext, RsaKeyParameters, System.Byte[])
+  type: Method
+  source:
+    id: SafeDecryptPreMasterSecret
+    path: ''
+    startLine: 113531
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public static byte[] SafeDecryptPreMasterSecret(TlsContext context, RsaKeyParameters rsaServerPrivateKey, byte[] encryptedPreMasterSecret)
+    parameters:
+    - id: context
+      type: Org.BouncyCastle.Crypto.Tls.TlsContext
+    - id: rsaServerPrivateKey
+      type: RsaKeyParameters
+    - id: encryptedPreMasterSecret
+      type: System.Byte[]
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function SafeDecryptPreMasterSecret(context As TlsContext, rsaServerPrivateKey As RsaKeyParameters, encryptedPreMasterSecret As Byte()) As Byte()
+  overload: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.SafeDecryptPreMasterSecret*
+  nameWithType.vb: TlsRsaUtilities.SafeDecryptPreMasterSecret(TlsContext, RsaKeyParameters, Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.SafeDecryptPreMasterSecret(Org.BouncyCastle.Crypto.Tls.TlsContext, RsaKeyParameters, System.Byte())
+  name.vb: SafeDecryptPreMasterSecret(TlsContext, RsaKeyParameters, Byte())
+references:
+- uid: Org.BouncyCastle.Crypto.Tls
+  commentId: N:Org.BouncyCastle.Crypto.Tls
+  name: Org.BouncyCastle.Crypto.Tls
+  nameWithType: Org.BouncyCastle.Crypto.Tls
+  fullName: Org.BouncyCastle.Crypto.Tls
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.GenerateEncryptedPreMasterSecret*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.GenerateEncryptedPreMasterSecret
+  name: GenerateEncryptedPreMasterSecret
+  nameWithType: TlsRsaUtilities.GenerateEncryptedPreMasterSecret
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.GenerateEncryptedPreMasterSecret
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsContext
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsContext
+  nameWithType: TlsContext
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext
+- uid: RsaKeyParameters
+  isExternal: true
+  name: RsaKeyParameters
+  nameWithType: RsaKeyParameters
+  fullName: RsaKeyParameters
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.SafeDecryptPreMasterSecret*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.SafeDecryptPreMasterSecret
+  name: SafeDecryptPreMasterSecret
+  nameWithType: TlsRsaUtilities.SafeDecryptPreMasterSecret
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsRsaUtilities.SafeDecryptPreMasterSecret

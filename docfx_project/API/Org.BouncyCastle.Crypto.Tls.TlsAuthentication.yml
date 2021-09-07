@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Tls.TlsAuthentication
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsAuthentication
+  id: TlsAuthentication
+  parent: Org.BouncyCastle.Crypto.Tls
+  children:
+  - Org.BouncyCastle.Crypto.Tls.TlsAuthentication.GetClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsContext,Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  - Org.BouncyCastle.Crypto.Tls.TlsAuthentication.NotifyServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  langs:
+  - csharp
+  - vb
+  name: TlsAuthentication
+  nameWithType: TlsAuthentication
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsAuthentication
+  type: Interface
+  source:
+    id: TlsAuthentication
+    path: ''
+    startLine: 115525
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  syntax:
+    content: public interface TlsAuthentication
+    content.vb: Public Interface TlsAuthentication
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Org.BouncyCastle.Crypto.Tls.TlsAuthentication.NotifyServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsAuthentication.NotifyServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  id: NotifyServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsAuthentication
+  langs:
+  - csharp
+  - vb
+  name: NotifyServerCertificate(Certificate)
+  nameWithType: TlsAuthentication.NotifyServerCertificate(Certificate)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsAuthentication.NotifyServerCertificate(Org.BouncyCastle.Crypto.Tls.Certificate)
+  type: Method
+  source:
+    id: NotifyServerCertificate
+    path: ''
+    startLine: 115535
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  summary: "\nCalled by the protocol handler to report the server certificate.\n"
+  remarks: "\nThis method is responsible for certificate verification and validation\n"
+  example: []
+  syntax:
+    content: void NotifyServerCertificate(Certificate serverCertificate)
+    parameters:
+    - id: serverCertificate
+      type: Org.BouncyCastle.Crypto.Tls.Certificate
+      description: The server <xref href="Org.BouncyCastle.Crypto.Tls.Certificate" data-throw-if-not-resolved="false"></xref> received
+    content.vb: Sub NotifyServerCertificate(serverCertificate As Certificate)
+  overload: Org.BouncyCastle.Crypto.Tls.TlsAuthentication.NotifyServerCertificate*
+- uid: Org.BouncyCastle.Crypto.Tls.TlsAuthentication.GetClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsContext,Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  commentId: M:Org.BouncyCastle.Crypto.Tls.TlsAuthentication.GetClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsContext,Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  id: GetClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsContext,Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  parent: Org.BouncyCastle.Crypto.Tls.TlsAuthentication
+  langs:
+  - csharp
+  - vb
+  name: GetClientCredentials(TlsContext, CertificateRequest)
+  nameWithType: TlsAuthentication.GetClientCredentials(TlsContext, CertificateRequest)
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsAuthentication.GetClientCredentials(Org.BouncyCastle.Crypto.Tls.TlsContext, Org.BouncyCastle.Crypto.Tls.CertificateRequest)
+  type: Method
+  source:
+    id: GetClientCredentials
+    path: ''
+    startLine: 115548
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Tls
+  summary: "\nReturn client credentials in response to server&apos;s certificate request\n"
+  example: []
+  syntax:
+    content: TlsCredentials GetClientCredentials(TlsContext context, CertificateRequest certificateRequest)
+    parameters:
+    - id: context
+      type: Org.BouncyCastle.Crypto.Tls.TlsContext
+    - id: certificateRequest
+      type: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+      description: "\nA <xref href=\"Org.BouncyCastle.Crypto.Tls.CertificateRequest\" data-throw-if-not-resolved=\"false\"></xref> containing server certificate request details\n"
+    return:
+      type: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+      description: "\nA <xref href=\"Org.BouncyCastle.Crypto.Tls.TlsCredentials\" data-throw-if-not-resolved=\"false\"></xref> to be used for client authentication\n(or <code>null</code> for no client authentication)\n"
+    content.vb: Function GetClientCredentials(context As TlsContext, certificateRequest As CertificateRequest) As TlsCredentials
+  overload: Org.BouncyCastle.Crypto.Tls.TlsAuthentication.GetClientCredentials*
+references:
+- uid: Org.BouncyCastle.Crypto.Tls
+  commentId: N:Org.BouncyCastle.Crypto.Tls
+  name: Org.BouncyCastle.Crypto.Tls
+  nameWithType: Org.BouncyCastle.Crypto.Tls
+  fullName: Org.BouncyCastle.Crypto.Tls
+- uid: Org.BouncyCastle.Crypto.Tls.Certificate
+  commentId: T:Org.BouncyCastle.Crypto.Tls.Certificate
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: Certificate
+  nameWithType: Certificate
+  fullName: Org.BouncyCastle.Crypto.Tls.Certificate
+- uid: Org.BouncyCastle.Crypto.Tls.TlsAuthentication.NotifyServerCertificate*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsAuthentication.NotifyServerCertificate
+  name: NotifyServerCertificate
+  nameWithType: TlsAuthentication.NotifyServerCertificate
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsAuthentication.NotifyServerCertificate
+- uid: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+  commentId: T:Org.BouncyCastle.Crypto.Tls.CertificateRequest
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: CertificateRequest
+  nameWithType: CertificateRequest
+  fullName: Org.BouncyCastle.Crypto.Tls.CertificateRequest
+- uid: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsCredentials
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsCredentials
+  nameWithType: TlsCredentials
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsCredentials
+- uid: Org.BouncyCastle.Crypto.Tls.TlsAuthentication.GetClientCredentials*
+  commentId: Overload:Org.BouncyCastle.Crypto.Tls.TlsAuthentication.GetClientCredentials
+  name: GetClientCredentials
+  nameWithType: TlsAuthentication.GetClientCredentials
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsAuthentication.GetClientCredentials
+- uid: Org.BouncyCastle.Crypto.Tls.TlsContext
+  commentId: T:Org.BouncyCastle.Crypto.Tls.TlsContext
+  parent: Org.BouncyCastle.Crypto.Tls
+  name: TlsContext
+  nameWithType: TlsContext
+  fullName: Org.BouncyCastle.Crypto.Tls.TlsContext

@@ -1,0 +1,567 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier
+  commentId: T:Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier
+  id: FixedPointCombMultiplier
+  parent: Org.BouncyCastle.Math.EC.Multiplier
+  children:
+  - Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.GetWidthForCombSize(System.Int32)
+  - Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  langs:
+  - csharp
+  - vb
+  name: FixedPointCombMultiplier
+  nameWithType: FixedPointCombMultiplier
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier
+  type: Class
+  source:
+    id: FixedPointCombMultiplier
+    path: ''
+    startLine: 95531
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: 'public class FixedPointCombMultiplier : AbstractECMultiplier, ECMultiplier'
+    content.vb: >-
+      Public Class FixedPointCombMultiplier
+          Inherits AbstractECMultiplier
+          Implements ECMultiplier
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+  implements:
+  - Org.BouncyCastle.Math.EC.Multiplier.ECMultiplier
+  inheritedMembers:
+  - Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  id: MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier
+  langs:
+  - csharp
+  - vb
+  name: MultiplyPositive(ECPoint, BigInteger)
+  nameWithType: FixedPointCombMultiplier.MultiplyPositive(ECPoint, BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint, Org.BouncyCastle.Math.BigInteger)
+  type: Method
+  source:
+    id: MultiplyPositive
+    path: ''
+    startLine: 95534
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: protected override ECPoint MultiplyPositive(ECPoint p, BigInteger k)
+    parameters:
+    - id: p
+      type: Org.BouncyCastle.Math.EC.ECPoint
+    - id: k
+      type: Org.BouncyCastle.Math.BigInteger
+    return:
+      type: Org.BouncyCastle.Math.EC.ECPoint
+    content.vb: Protected Overrides Function MultiplyPositive(p As ECPoint, k As BigInteger) As ECPoint
+  overridden: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  overload: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.MultiplyPositive*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.GetWidthForCombSize(System.Int32)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.GetWidthForCombSize(System.Int32)
+  id: GetWidthForCombSize(System.Int32)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier
+  langs:
+  - csharp
+  - vb
+  name: GetWidthForCombSize(Int32)
+  nameWithType: FixedPointCombMultiplier.GetWidthForCombSize(Int32)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.GetWidthForCombSize(System.Int32)
+  type: Method
+  source:
+    id: GetWidthForCombSize
+    path: ''
+    startLine: 95580
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Math.EC.Multiplier
+  syntax:
+    content: protected virtual int GetWidthForCombSize(int combSize)
+    parameters:
+    - id: combSize
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Protected Overridable Function GetWidthForCombSize(combSize As Integer) As Integer
+  overload: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.GetWidthForCombSize*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Org.BouncyCastle.Math.EC.Multiplier
+  commentId: N:Org.BouncyCastle.Math.EC.Multiplier
+  name: Org.BouncyCastle.Math.EC.Multiplier
+  nameWithType: Org.BouncyCastle.Math.EC.Multiplier
+  fullName: Org.BouncyCastle.Math.EC.Multiplier
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+  commentId: T:Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+  parent: Org.BouncyCastle.Math.EC.Multiplier
+  name: AbstractECMultiplier
+  nameWithType: AbstractECMultiplier
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+- uid: Org.BouncyCastle.Math.EC.Multiplier.ECMultiplier
+  commentId: T:Org.BouncyCastle.Math.EC.Multiplier.ECMultiplier
+  parent: Org.BouncyCastle.Math.EC.Multiplier
+  name: ECMultiplier
+  nameWithType: ECMultiplier
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.ECMultiplier
+- uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+  name: Multiply(ECPoint, BigInteger)
+  nameWithType: AbstractECMultiplier.Multiply(ECPoint, BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint, Org.BouncyCastle.Math.BigInteger)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+    name: Multiply
+    nameWithType: AbstractECMultiplier.Multiply
+    fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Math.EC.ECPoint
+    name: ECPoint
+    nameWithType: ECPoint
+    fullName: Org.BouncyCastle.Math.EC.ECPoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Math.BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: Org.BouncyCastle.Math.BigInteger
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+    name: Multiply
+    nameWithType: AbstractECMultiplier.Multiply
+    fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.Multiply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Math.EC.ECPoint
+    name: ECPoint
+    nameWithType: ECPoint
+    fullName: Org.BouncyCastle.Math.EC.ECPoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Math.BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: Org.BouncyCastle.Math.BigInteger
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  commentId: M:Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+  parent: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier
+  name: MultiplyPositive(ECPoint, BigInteger)
+  nameWithType: AbstractECMultiplier.MultiplyPositive(ECPoint, BigInteger)
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint, Org.BouncyCastle.Math.BigInteger)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+    name: MultiplyPositive
+    nameWithType: AbstractECMultiplier.MultiplyPositive
+    fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Math.EC.ECPoint
+    name: ECPoint
+    nameWithType: ECPoint
+    fullName: Org.BouncyCastle.Math.EC.ECPoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Math.BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: Org.BouncyCastle.Math.BigInteger
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive(Org.BouncyCastle.Math.EC.ECPoint,Org.BouncyCastle.Math.BigInteger)
+    name: MultiplyPositive
+    nameWithType: AbstractECMultiplier.MultiplyPositive
+    fullName: Org.BouncyCastle.Math.EC.Multiplier.AbstractECMultiplier.MultiplyPositive
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Math.EC.ECPoint
+    name: ECPoint
+    nameWithType: ECPoint
+    fullName: Org.BouncyCastle.Math.EC.ECPoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Org.BouncyCastle.Math.BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: Org.BouncyCastle.Math.BigInteger
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.MultiplyPositive*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.MultiplyPositive
+  name: MultiplyPositive
+  nameWithType: FixedPointCombMultiplier.MultiplyPositive
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.MultiplyPositive
+- uid: Org.BouncyCastle.Math.EC.ECPoint
+  commentId: T:Org.BouncyCastle.Math.EC.ECPoint
+  parent: Org.BouncyCastle.Math.EC
+  name: ECPoint
+  nameWithType: ECPoint
+  fullName: Org.BouncyCastle.Math.EC.ECPoint
+- uid: Org.BouncyCastle.Math.BigInteger
+  commentId: T:Org.BouncyCastle.Math.BigInteger
+  parent: Org.BouncyCastle.Math
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: Org.BouncyCastle.Math.BigInteger
+- uid: Org.BouncyCastle.Math.EC
+  commentId: N:Org.BouncyCastle.Math.EC
+  name: Org.BouncyCastle.Math.EC
+  nameWithType: Org.BouncyCastle.Math.EC
+  fullName: Org.BouncyCastle.Math.EC
+- uid: Org.BouncyCastle.Math
+  commentId: N:Org.BouncyCastle.Math
+  name: Org.BouncyCastle.Math
+  nameWithType: Org.BouncyCastle.Math
+  fullName: Org.BouncyCastle.Math
+- uid: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.GetWidthForCombSize*
+  commentId: Overload:Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.GetWidthForCombSize
+  name: GetWidthForCombSize
+  nameWithType: FixedPointCombMultiplier.GetWidthForCombSize
+  fullName: Org.BouncyCastle.Math.EC.Multiplier.FixedPointCombMultiplier.GetWidthForCombSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

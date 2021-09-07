@@ -1,0 +1,714 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Security.DigestUtilities
+  commentId: T:Org.BouncyCastle.Security.DigestUtilities
+  id: DigestUtilities
+  parent: Org.BouncyCastle.Security
+  children:
+  - Org.BouncyCastle.Security.DigestUtilities.Algorithms
+  - Org.BouncyCastle.Security.DigestUtilities.CalculateDigest(System.String,System.Byte[])
+  - Org.BouncyCastle.Security.DigestUtilities.DoFinal(IDigest)
+  - Org.BouncyCastle.Security.DigestUtilities.DoFinal(IDigest,System.Byte[])
+  - Org.BouncyCastle.Security.DigestUtilities.GetAlgorithmName(DerObjectIdentifier)
+  - Org.BouncyCastle.Security.DigestUtilities.GetDigest(DerObjectIdentifier)
+  - Org.BouncyCastle.Security.DigestUtilities.GetDigest(System.String)
+  - Org.BouncyCastle.Security.DigestUtilities.GetObjectIdentifier(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DigestUtilities
+  nameWithType: DigestUtilities
+  fullName: Org.BouncyCastle.Security.DigestUtilities
+  type: Class
+  source:
+    id: DigestUtilities
+    path: ''
+    startLine: 53419
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  remarks: "\nUtility class for creating IDigest objects from their names/Oids\n"
+  example: []
+  syntax:
+    content: public sealed class DigestUtilities
+    content.vb: Public NotInheritable Class DigestUtilities
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Org.BouncyCastle.Security.DigestUtilities.GetObjectIdentifier(System.String)
+  commentId: M:Org.BouncyCastle.Security.DigestUtilities.GetObjectIdentifier(System.String)
+  id: GetObjectIdentifier(System.String)
+  parent: Org.BouncyCastle.Security.DigestUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetObjectIdentifier(String)
+  nameWithType: DigestUtilities.GetObjectIdentifier(String)
+  fullName: Org.BouncyCastle.Security.DigestUtilities.GetObjectIdentifier(System.String)
+  type: Method
+  source:
+    id: GetObjectIdentifier
+    path: ''
+    startLine: 53511
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  summary: "\nReturns a ObjectIdentifier for a given digest mechanism.\n"
+  example: []
+  syntax:
+    content: public static DerObjectIdentifier GetObjectIdentifier(string mechanism)
+    parameters:
+    - id: mechanism
+      type: System.String
+      description: A string representation of the digest meanism.
+    return:
+      type: DerObjectIdentifier
+      description: A DerObjectIdentifier, null if the Oid is not available.
+    content.vb: Public Shared Function GetObjectIdentifier(mechanism As String) As DerObjectIdentifier
+  overload: Org.BouncyCastle.Security.DigestUtilities.GetObjectIdentifier*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Security.DigestUtilities.Algorithms
+  commentId: P:Org.BouncyCastle.Security.DigestUtilities.Algorithms
+  id: Algorithms
+  parent: Org.BouncyCastle.Security.DigestUtilities
+  langs:
+  - csharp
+  - vb
+  name: Algorithms
+  nameWithType: DigestUtilities.Algorithms
+  fullName: Org.BouncyCastle.Security.DigestUtilities.Algorithms
+  type: Property
+  source:
+    id: Algorithms
+    path: ''
+    startLine: 53526
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static ICollection Algorithms { get; }
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+    content.vb: Public Shared ReadOnly Property Algorithms As ICollection
+  overload: Org.BouncyCastle.Security.DigestUtilities.Algorithms*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Org.BouncyCastle.Security.DigestUtilities.GetDigest(DerObjectIdentifier)
+  commentId: M:Org.BouncyCastle.Security.DigestUtilities.GetDigest(DerObjectIdentifier)
+  id: GetDigest(DerObjectIdentifier)
+  parent: Org.BouncyCastle.Security.DigestUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetDigest(DerObjectIdentifier)
+  nameWithType: DigestUtilities.GetDigest(DerObjectIdentifier)
+  fullName: Org.BouncyCastle.Security.DigestUtilities.GetDigest(DerObjectIdentifier)
+  type: Method
+  source:
+    id: GetDigest
+    path: ''
+    startLine: 53531
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static IDigest GetDigest(DerObjectIdentifier id)
+    parameters:
+    - id: id
+      type: DerObjectIdentifier
+    return:
+      type: IDigest
+    content.vb: Public Shared Function GetDigest(id As DerObjectIdentifier) As IDigest
+  overload: Org.BouncyCastle.Security.DigestUtilities.GetDigest*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Security.DigestUtilities.GetDigest(System.String)
+  commentId: M:Org.BouncyCastle.Security.DigestUtilities.GetDigest(System.String)
+  id: GetDigest(System.String)
+  parent: Org.BouncyCastle.Security.DigestUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetDigest(String)
+  nameWithType: DigestUtilities.GetDigest(String)
+  fullName: Org.BouncyCastle.Security.DigestUtilities.GetDigest(System.String)
+  type: Method
+  source:
+    id: GetDigest
+    path: ''
+    startLine: 53537
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static IDigest GetDigest(string algorithm)
+    parameters:
+    - id: algorithm
+      type: System.String
+    return:
+      type: IDigest
+    content.vb: Public Shared Function GetDigest(algorithm As String) As IDigest
+  overload: Org.BouncyCastle.Security.DigestUtilities.GetDigest*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Security.DigestUtilities.GetAlgorithmName(DerObjectIdentifier)
+  commentId: M:Org.BouncyCastle.Security.DigestUtilities.GetAlgorithmName(DerObjectIdentifier)
+  id: GetAlgorithmName(DerObjectIdentifier)
+  parent: Org.BouncyCastle.Security.DigestUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetAlgorithmName(DerObjectIdentifier)
+  nameWithType: DigestUtilities.GetAlgorithmName(DerObjectIdentifier)
+  fullName: Org.BouncyCastle.Security.DigestUtilities.GetAlgorithmName(DerObjectIdentifier)
+  type: Method
+  source:
+    id: GetAlgorithmName
+    path: ''
+    startLine: 53592
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static string GetAlgorithmName(DerObjectIdentifier oid)
+    parameters:
+    - id: oid
+      type: DerObjectIdentifier
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetAlgorithmName(oid As DerObjectIdentifier) As String
+  overload: Org.BouncyCastle.Security.DigestUtilities.GetAlgorithmName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Security.DigestUtilities.CalculateDigest(System.String,System.Byte[])
+  commentId: M:Org.BouncyCastle.Security.DigestUtilities.CalculateDigest(System.String,System.Byte[])
+  id: CalculateDigest(System.String,System.Byte[])
+  parent: Org.BouncyCastle.Security.DigestUtilities
+  langs:
+  - csharp
+  - vb
+  name: CalculateDigest(String, Byte[])
+  nameWithType: DigestUtilities.CalculateDigest(String, Byte[])
+  fullName: Org.BouncyCastle.Security.DigestUtilities.CalculateDigest(System.String, System.Byte[])
+  type: Method
+  source:
+    id: CalculateDigest
+    path: ''
+    startLine: 53598
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static byte[] CalculateDigest(string algorithm, byte[] input)
+    parameters:
+    - id: algorithm
+      type: System.String
+    - id: input
+      type: System.Byte[]
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function CalculateDigest(algorithm As String, input As Byte()) As Byte()
+  overload: Org.BouncyCastle.Security.DigestUtilities.CalculateDigest*
+  nameWithType.vb: DigestUtilities.CalculateDigest(String, Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Security.DigestUtilities.CalculateDigest(System.String, System.Byte())
+  name.vb: CalculateDigest(String, Byte())
+- uid: Org.BouncyCastle.Security.DigestUtilities.DoFinal(IDigest)
+  commentId: M:Org.BouncyCastle.Security.DigestUtilities.DoFinal(IDigest)
+  id: DoFinal(IDigest)
+  parent: Org.BouncyCastle.Security.DigestUtilities
+  langs:
+  - csharp
+  - vb
+  name: DoFinal(IDigest)
+  nameWithType: DigestUtilities.DoFinal(IDigest)
+  fullName: Org.BouncyCastle.Security.DigestUtilities.DoFinal(IDigest)
+  type: Method
+  source:
+    id: DoFinal
+    path: ''
+    startLine: 53605
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static byte[] DoFinal(IDigest digest)
+    parameters:
+    - id: digest
+      type: IDigest
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function DoFinal(digest As IDigest) As Byte()
+  overload: Org.BouncyCastle.Security.DigestUtilities.DoFinal*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Security.DigestUtilities.DoFinal(IDigest,System.Byte[])
+  commentId: M:Org.BouncyCastle.Security.DigestUtilities.DoFinal(IDigest,System.Byte[])
+  id: DoFinal(IDigest,System.Byte[])
+  parent: Org.BouncyCastle.Security.DigestUtilities
+  langs:
+  - csharp
+  - vb
+  name: DoFinal(IDigest, Byte[])
+  nameWithType: DigestUtilities.DoFinal(IDigest, Byte[])
+  fullName: Org.BouncyCastle.Security.DigestUtilities.DoFinal(IDigest, System.Byte[])
+  type: Method
+  source:
+    id: DoFinal
+    path: ''
+    startLine: 53613
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static byte[] DoFinal(IDigest digest, byte[] input)
+    parameters:
+    - id: digest
+      type: IDigest
+    - id: input
+      type: System.Byte[]
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function DoFinal(digest As IDigest, input As Byte()) As Byte()
+  overload: Org.BouncyCastle.Security.DigestUtilities.DoFinal*
+  nameWithType.vb: DigestUtilities.DoFinal(IDigest, Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Security.DigestUtilities.DoFinal(IDigest, System.Byte())
+  name.vb: DoFinal(IDigest, Byte())
+references:
+- uid: Org.BouncyCastle.Security
+  commentId: N:Org.BouncyCastle.Security
+  name: Org.BouncyCastle.Security
+  nameWithType: Org.BouncyCastle.Security
+  fullName: Org.BouncyCastle.Security
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Security.DigestUtilities.GetObjectIdentifier*
+  commentId: Overload:Org.BouncyCastle.Security.DigestUtilities.GetObjectIdentifier
+  name: GetObjectIdentifier
+  nameWithType: DigestUtilities.GetObjectIdentifier
+  fullName: Org.BouncyCastle.Security.DigestUtilities.GetObjectIdentifier
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DerObjectIdentifier
+  isExternal: true
+  name: DerObjectIdentifier
+  nameWithType: DerObjectIdentifier
+  fullName: DerObjectIdentifier
+- uid: Org.BouncyCastle.Security.DigestUtilities.Algorithms*
+  commentId: Overload:Org.BouncyCastle.Security.DigestUtilities.Algorithms
+  name: Algorithms
+  nameWithType: DigestUtilities.Algorithms
+  fullName: Org.BouncyCastle.Security.DigestUtilities.Algorithms
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Org.BouncyCastle.Security.DigestUtilities.GetDigest*
+  commentId: Overload:Org.BouncyCastle.Security.DigestUtilities.GetDigest
+  name: GetDigest
+  nameWithType: DigestUtilities.GetDigest
+  fullName: Org.BouncyCastle.Security.DigestUtilities.GetDigest
+- uid: IDigest
+  isExternal: true
+  name: IDigest
+  nameWithType: IDigest
+  fullName: IDigest
+- uid: Org.BouncyCastle.Security.DigestUtilities.GetAlgorithmName*
+  commentId: Overload:Org.BouncyCastle.Security.DigestUtilities.GetAlgorithmName
+  name: GetAlgorithmName
+  nameWithType: DigestUtilities.GetAlgorithmName
+  fullName: Org.BouncyCastle.Security.DigestUtilities.GetAlgorithmName
+- uid: Org.BouncyCastle.Security.DigestUtilities.CalculateDigest*
+  commentId: Overload:Org.BouncyCastle.Security.DigestUtilities.CalculateDigest
+  name: CalculateDigest
+  nameWithType: DigestUtilities.CalculateDigest
+  fullName: Org.BouncyCastle.Security.DigestUtilities.CalculateDigest
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Security.DigestUtilities.DoFinal*
+  commentId: Overload:Org.BouncyCastle.Security.DigestUtilities.DoFinal
+  name: DoFinal
+  nameWithType: DigestUtilities.DoFinal
+  fullName: Org.BouncyCastle.Security.DigestUtilities.DoFinal

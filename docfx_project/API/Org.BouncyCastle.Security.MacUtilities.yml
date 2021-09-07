@@ -1,0 +1,627 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Security.MacUtilities
+  commentId: T:Org.BouncyCastle.Security.MacUtilities
+  id: MacUtilities
+  parent: Org.BouncyCastle.Security
+  children:
+  - Org.BouncyCastle.Security.MacUtilities.CalculateMac(System.String,ICipherParameters,System.Byte[])
+  - Org.BouncyCastle.Security.MacUtilities.DoFinal(IMac)
+  - Org.BouncyCastle.Security.MacUtilities.DoFinal(IMac,System.Byte[])
+  - Org.BouncyCastle.Security.MacUtilities.GetAlgorithmName(DerObjectIdentifier)
+  - Org.BouncyCastle.Security.MacUtilities.GetMac(DerObjectIdentifier)
+  - Org.BouncyCastle.Security.MacUtilities.GetMac(System.String)
+  langs:
+  - csharp
+  - vb
+  name: MacUtilities
+  nameWithType: MacUtilities
+  fullName: Org.BouncyCastle.Security.MacUtilities
+  type: Class
+  source:
+    id: MacUtilities
+    path: ''
+    startLine: 53157
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  remarks: "\nUtility class for creating HMac object from their names/Oids\n"
+  example: []
+  syntax:
+    content: public sealed class MacUtilities
+    content.vb: Public NotInheritable Class MacUtilities
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Org.BouncyCastle.Security.MacUtilities.GetMac(DerObjectIdentifier)
+  commentId: M:Org.BouncyCastle.Security.MacUtilities.GetMac(DerObjectIdentifier)
+  id: GetMac(DerObjectIdentifier)
+  parent: Org.BouncyCastle.Security.MacUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetMac(DerObjectIdentifier)
+  nameWithType: MacUtilities.GetMac(DerObjectIdentifier)
+  fullName: Org.BouncyCastle.Security.MacUtilities.GetMac(DerObjectIdentifier)
+  type: Method
+  source:
+    id: GetMac
+    path: ''
+    startLine: 53237
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static IMac GetMac(DerObjectIdentifier id)
+    parameters:
+    - id: id
+      type: DerObjectIdentifier
+    return:
+      type: IMac
+    content.vb: Public Shared Function GetMac(id As DerObjectIdentifier) As IMac
+  overload: Org.BouncyCastle.Security.MacUtilities.GetMac*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Security.MacUtilities.GetMac(System.String)
+  commentId: M:Org.BouncyCastle.Security.MacUtilities.GetMac(System.String)
+  id: GetMac(System.String)
+  parent: Org.BouncyCastle.Security.MacUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetMac(String)
+  nameWithType: MacUtilities.GetMac(String)
+  fullName: Org.BouncyCastle.Security.MacUtilities.GetMac(System.String)
+  type: Method
+  source:
+    id: GetMac
+    path: ''
+    startLine: 53243
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static IMac GetMac(string algorithm)
+    parameters:
+    - id: algorithm
+      type: System.String
+    return:
+      type: IMac
+    content.vb: Public Shared Function GetMac(algorithm As String) As IMac
+  overload: Org.BouncyCastle.Security.MacUtilities.GetMac*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Security.MacUtilities.GetAlgorithmName(DerObjectIdentifier)
+  commentId: M:Org.BouncyCastle.Security.MacUtilities.GetAlgorithmName(DerObjectIdentifier)
+  id: GetAlgorithmName(DerObjectIdentifier)
+  parent: Org.BouncyCastle.Security.MacUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetAlgorithmName(DerObjectIdentifier)
+  nameWithType: MacUtilities.GetAlgorithmName(DerObjectIdentifier)
+  fullName: Org.BouncyCastle.Security.MacUtilities.GetAlgorithmName(DerObjectIdentifier)
+  type: Method
+  source:
+    id: GetAlgorithmName
+    path: ''
+    startLine: 53367
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static string GetAlgorithmName(DerObjectIdentifier oid)
+    parameters:
+    - id: oid
+      type: DerObjectIdentifier
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetAlgorithmName(oid As DerObjectIdentifier) As String
+  overload: Org.BouncyCastle.Security.MacUtilities.GetAlgorithmName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Security.MacUtilities.CalculateMac(System.String,ICipherParameters,System.Byte[])
+  commentId: M:Org.BouncyCastle.Security.MacUtilities.CalculateMac(System.String,ICipherParameters,System.Byte[])
+  id: CalculateMac(System.String,ICipherParameters,System.Byte[])
+  parent: Org.BouncyCastle.Security.MacUtilities
+  langs:
+  - csharp
+  - vb
+  name: CalculateMac(String, ICipherParameters, Byte[])
+  nameWithType: MacUtilities.CalculateMac(String, ICipherParameters, Byte[])
+  fullName: Org.BouncyCastle.Security.MacUtilities.CalculateMac(System.String, ICipherParameters, System.Byte[])
+  type: Method
+  source:
+    id: CalculateMac
+    path: ''
+    startLine: 53373
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static byte[] CalculateMac(string algorithm, ICipherParameters cp, byte[] input)
+    parameters:
+    - id: algorithm
+      type: System.String
+    - id: cp
+      type: ICipherParameters
+    - id: input
+      type: System.Byte[]
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function CalculateMac(algorithm As String, cp As ICipherParameters, input As Byte()) As Byte()
+  overload: Org.BouncyCastle.Security.MacUtilities.CalculateMac*
+  nameWithType.vb: MacUtilities.CalculateMac(String, ICipherParameters, Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Security.MacUtilities.CalculateMac(System.String, ICipherParameters, System.Byte())
+  name.vb: CalculateMac(String, ICipherParameters, Byte())
+- uid: Org.BouncyCastle.Security.MacUtilities.DoFinal(IMac)
+  commentId: M:Org.BouncyCastle.Security.MacUtilities.DoFinal(IMac)
+  id: DoFinal(IMac)
+  parent: Org.BouncyCastle.Security.MacUtilities
+  langs:
+  - csharp
+  - vb
+  name: DoFinal(IMac)
+  nameWithType: MacUtilities.DoFinal(IMac)
+  fullName: Org.BouncyCastle.Security.MacUtilities.DoFinal(IMac)
+  type: Method
+  source:
+    id: DoFinal
+    path: ''
+    startLine: 53381
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static byte[] DoFinal(IMac mac)
+    parameters:
+    - id: mac
+      type: IMac
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function DoFinal(mac As IMac) As Byte()
+  overload: Org.BouncyCastle.Security.MacUtilities.DoFinal*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Security.MacUtilities.DoFinal(IMac,System.Byte[])
+  commentId: M:Org.BouncyCastle.Security.MacUtilities.DoFinal(IMac,System.Byte[])
+  id: DoFinal(IMac,System.Byte[])
+  parent: Org.BouncyCastle.Security.MacUtilities
+  langs:
+  - csharp
+  - vb
+  name: DoFinal(IMac, Byte[])
+  nameWithType: MacUtilities.DoFinal(IMac, Byte[])
+  fullName: Org.BouncyCastle.Security.MacUtilities.DoFinal(IMac, System.Byte[])
+  type: Method
+  source:
+    id: DoFinal
+    path: ''
+    startLine: 53388
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Security
+  syntax:
+    content: public static byte[] DoFinal(IMac mac, byte[] input)
+    parameters:
+    - id: mac
+      type: IMac
+    - id: input
+      type: System.Byte[]
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function DoFinal(mac As IMac, input As Byte()) As Byte()
+  overload: Org.BouncyCastle.Security.MacUtilities.DoFinal*
+  nameWithType.vb: MacUtilities.DoFinal(IMac, Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Org.BouncyCastle.Security.MacUtilities.DoFinal(IMac, System.Byte())
+  name.vb: DoFinal(IMac, Byte())
+references:
+- uid: Org.BouncyCastle.Security
+  commentId: N:Org.BouncyCastle.Security
+  name: Org.BouncyCastle.Security
+  nameWithType: Org.BouncyCastle.Security
+  fullName: Org.BouncyCastle.Security
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Security.MacUtilities.GetMac*
+  commentId: Overload:Org.BouncyCastle.Security.MacUtilities.GetMac
+  name: GetMac
+  nameWithType: MacUtilities.GetMac
+  fullName: Org.BouncyCastle.Security.MacUtilities.GetMac
+- uid: DerObjectIdentifier
+  isExternal: true
+  name: DerObjectIdentifier
+  nameWithType: DerObjectIdentifier
+  fullName: DerObjectIdentifier
+- uid: IMac
+  isExternal: true
+  name: IMac
+  nameWithType: IMac
+  fullName: IMac
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Org.BouncyCastle.Security.MacUtilities.GetAlgorithmName*
+  commentId: Overload:Org.BouncyCastle.Security.MacUtilities.GetAlgorithmName
+  name: GetAlgorithmName
+  nameWithType: MacUtilities.GetAlgorithmName
+  fullName: Org.BouncyCastle.Security.MacUtilities.GetAlgorithmName
+- uid: Org.BouncyCastle.Security.MacUtilities.CalculateMac*
+  commentId: Overload:Org.BouncyCastle.Security.MacUtilities.CalculateMac
+  name: CalculateMac
+  nameWithType: MacUtilities.CalculateMac
+  fullName: Org.BouncyCastle.Security.MacUtilities.CalculateMac
+- uid: ICipherParameters
+  commentId: '!:ICipherParameters'
+  isExternal: true
+  name: ICipherParameters
+  nameWithType: ICipherParameters
+  fullName: ICipherParameters
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Security.MacUtilities.DoFinal*
+  commentId: Overload:Org.BouncyCastle.Security.MacUtilities.DoFinal
+  name: DoFinal
+  nameWithType: MacUtilities.DoFinal
+  fullName: Org.BouncyCastle.Security.MacUtilities.DoFinal

@@ -1,0 +1,1312 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Sequence
+  id: Asn1Sequence
+  parent: Org.BouncyCastle.Asn1
+  children:
+  - Org.BouncyCastle.Asn1.Asn1Sequence.#ctor(System.Int32)
+  - Org.BouncyCastle.Asn1.Asn1Sequence.AddObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  - Org.BouncyCastle.Asn1.Asn1Sequence.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)
+  - Org.BouncyCastle.Asn1.Asn1Sequence.Asn1GetHashCode
+  - Org.BouncyCastle.Asn1.Asn1Sequence.Count
+  - Org.BouncyCastle.Asn1.Asn1Sequence.GetEnumerator
+  - Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  - Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance(System.Object)
+  - Org.BouncyCastle.Asn1.Asn1Sequence.GetObjectAt(System.Int32)
+  - Org.BouncyCastle.Asn1.Asn1Sequence.GetObjects
+  - Org.BouncyCastle.Asn1.Asn1Sequence.Item(System.Int32)
+  - Org.BouncyCastle.Asn1.Asn1Sequence.Parser
+  - Org.BouncyCastle.Asn1.Asn1Sequence.Size
+  - Org.BouncyCastle.Asn1.Asn1Sequence.ToString
+  langs:
+  - csharp
+  - vb
+  name: Asn1Sequence
+  nameWithType: Asn1Sequence
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence
+  type: Class
+  source:
+    id: Asn1Sequence
+    path: ''
+    startLine: 157430
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: 'public abstract class Asn1Sequence : Asn1Object, IAsn1Convertible, IEnumerable'
+    content.vb: >-
+      Public MustInherit Class Asn1Sequence
+          Inherits Asn1Object
+          Implements IAsn1Convertible, IEnumerable
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Asn1.Asn1Encodable
+  - Org.BouncyCastle.Asn1.Asn1Object
+  derivedClasses:
+  - Org.BouncyCastle.Asn1.DerSequence
+  implements:
+  - Org.BouncyCastle.Asn1.IAsn1Convertible
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - Org.BouncyCastle.Asn1.Asn1Object.FromByteArray(System.Byte[])
+  - Org.BouncyCastle.Asn1.Asn1Object.FromStream(Stream)
+  - Org.BouncyCastle.Asn1.Asn1Object.ToAsn1Object
+  - Org.BouncyCastle.Asn1.Asn1Encodable.Der
+  - Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  - Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance(System.Object)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance(System.Object)
+  id: GetInstance(System.Object)
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: GetInstance(Object)
+  nameWithType: Asn1Sequence.GetInstance(Object)
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance(System.Object)
+  type: Method
+  source:
+    id: GetInstance
+    path: ''
+    startLine: 157441
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  example: []
+  syntax:
+    content: public static Asn1Sequence GetInstance(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: Org.BouncyCastle.Asn1.Asn1Sequence
+    content.vb: Public Shared Function GetInstance(obj As Object) As Asn1Sequence
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  id: GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: GetInstance(Asn1TaggedObject, Boolean)
+  nameWithType: Asn1Sequence.GetInstance(Asn1TaggedObject, Boolean)
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject, System.Boolean)
+  type: Method
+  source:
+    id: GetInstance
+    path: ''
+    startLine: 157492
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  example: []
+  syntax:
+    content: public static Asn1Sequence GetInstance(Asn1TaggedObject obj, bool explicitly)
+    parameters:
+    - id: obj
+      type: Org.BouncyCastle.Asn1.Asn1TaggedObject
+    - id: explicitly
+      type: System.Boolean
+    return:
+      type: Org.BouncyCastle.Asn1.Asn1Sequence
+    content.vb: Public Shared Function GetInstance(obj As Asn1TaggedObject, explicitly As Boolean) As Asn1Sequence
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.#ctor(System.Int32)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Sequence.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: Asn1Sequence(Int32)
+  nameWithType: Asn1Sequence.Asn1Sequence(Int32)
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1Sequence(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 157529
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: protected Asn1Sequence(int capacity)
+    parameters:
+    - id: capacity
+      type: System.Int32
+    content.vb: Protected Sub New(capacity As Integer)
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.GetEnumerator
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Sequence.GetEnumerator
+  id: GetEnumerator
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: Asn1Sequence.GetEnumerator()
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.GetEnumerator()
+  type: Method
+  source:
+    id: GetEnumerator
+    path: ''
+    startLine: 157535
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public virtual IEnumerator GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Overridable Function GetEnumerator As IEnumerator
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.GetObjects
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Sequence.GetObjects
+  id: GetObjects
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: GetObjects()
+  nameWithType: Asn1Sequence.GetObjects()
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.GetObjects()
+  type: Method
+  source:
+    id: GetObjects
+    path: ''
+    startLine: 157540
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: >-
+      [Obsolete("Use GetEnumerator() instead")]
+
+      public IEnumerator GetObjects()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: >-
+      <Obsolete("Use GetEnumerator() instead")>
+
+      Public Function GetObjects As IEnumerator
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.GetObjects*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use GetEnumerator() instead
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Parser
+  commentId: P:Org.BouncyCastle.Asn1.Asn1Sequence.Parser
+  id: Parser
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: Parser
+  nameWithType: Asn1Sequence.Parser
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Parser
+  type: Property
+  source:
+    id: Parser
+    path: ''
+    startLine: 157586
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public virtual Asn1SequenceParser Parser { get; }
+    parameters: []
+    return:
+      type: Org.BouncyCastle.Asn1.Asn1SequenceParser
+    content.vb: Public Overridable ReadOnly Property Parser As Asn1SequenceParser
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.Parser*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Item(System.Int32)
+  commentId: P:Org.BouncyCastle.Asn1.Asn1Sequence.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: Asn1Sequence.Item[Int32]
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Item[System.Int32]
+  type: Property
+  source:
+    id: this[]
+    path: ''
+    startLine: 157597
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  example: []
+  syntax:
+    content: public virtual Asn1Encodable this[int index] { get; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: Org.BouncyCastle.Asn1.Asn1Encodable
+    content.vb: Public Overridable ReadOnly Property Item(index As Integer) As Asn1Encodable
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.Item*
+  nameWithType.vb: Asn1Sequence.Item(Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  fullName.vb: Org.BouncyCastle.Asn1.Asn1Sequence.Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.GetObjectAt(System.Int32)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Sequence.GetObjectAt(System.Int32)
+  id: GetObjectAt(System.Int32)
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: GetObjectAt(Int32)
+  nameWithType: Asn1Sequence.GetObjectAt(Int32)
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.GetObjectAt(System.Int32)
+  type: Method
+  source:
+    id: GetObjectAt
+    path: ''
+    startLine: 157602
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: >-
+      [Obsolete("Use 'object[index]' syntax instead")]
+
+      public Asn1Encodable GetObjectAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: Org.BouncyCastle.Asn1.Asn1Encodable
+    content.vb: >-
+      <Obsolete("Use 'object[index]' syntax instead")>
+
+      Public Function GetObjectAt(index As Integer) As Asn1Encodable
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.GetObjectAt*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use 'object[index]' syntax instead
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Size
+  commentId: P:Org.BouncyCastle.Asn1.Asn1Sequence.Size
+  id: Size
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Asn1Sequence.Size
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Size
+  type: Property
+  source:
+    id: Size
+    path: ''
+    startLine: 157609
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: >-
+      [Obsolete("Use 'Count' property instead")]
+
+      public int Size { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Obsolete("Use 'Count' property instead")>
+
+      Public ReadOnly Property Size As Integer
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.Size*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use 'Count' property instead
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Count
+  commentId: P:Org.BouncyCastle.Asn1.Asn1Sequence.Count
+  id: Count
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: Asn1Sequence.Count
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Count
+  type: Property
+  source:
+    id: Count
+    path: ''
+    startLine: 157615
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public virtual int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.Count*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1GetHashCode
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Sequence.Asn1GetHashCode
+  id: Asn1GetHashCode
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: Asn1GetHashCode()
+  nameWithType: Asn1Sequence.Asn1GetHashCode()
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1GetHashCode()
+  type: Method
+  source:
+    id: Asn1GetHashCode
+    path: ''
+    startLine: 157620
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: protected override int Asn1GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Protected Overrides Function Asn1GetHashCode As Integer
+  overridden: Org.BouncyCastle.Asn1.Asn1Object.Asn1GetHashCode
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1GetHashCode*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Sequence.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)
+  id: Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: Asn1Equals(Asn1Object)
+  nameWithType: Asn1Sequence.Asn1Equals(Asn1Object)
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)
+  type: Method
+  source:
+    id: Asn1Equals
+    path: ''
+    startLine: 157640
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: protected override bool Asn1Equals(Asn1Object asn1Object)
+    parameters:
+    - id: asn1Object
+      type: Org.BouncyCastle.Asn1.Asn1Object
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function Asn1Equals(asn1Object As Asn1Object) As Boolean
+  overridden: Org.BouncyCastle.Asn1.Asn1Object.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1Equals*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.AddObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Sequence.AddObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  id: AddObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: AddObject(Asn1Encodable)
+  nameWithType: Asn1Sequence.AddObject(Asn1Encodable)
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.AddObject(Org.BouncyCastle.Asn1.Asn1Encodable)
+  type: Method
+  source:
+    id: AddObject
+    path: ''
+    startLine: 157677
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: protected void AddObject(Asn1Encodable obj)
+    parameters:
+    - id: obj
+      type: Org.BouncyCastle.Asn1.Asn1Encodable
+    content.vb: Protected Sub AddObject(obj As Asn1Encodable)
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.AddObject*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.ToString
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Sequence.ToString
+  id: ToString
+  parent: Org.BouncyCastle.Asn1.Asn1Sequence
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Asn1Sequence.ToString()
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 157683
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Org.BouncyCastle.Asn1.Asn1Sequence.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Org.BouncyCastle.Asn1
+  commentId: N:Org.BouncyCastle.Asn1
+  name: Org.BouncyCastle.Asn1
+  nameWithType: Org.BouncyCastle.Asn1
+  fullName: Org.BouncyCastle.Asn1
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Encodable
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1Encodable
+  nameWithType: Asn1Encodable
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable
+- uid: Org.BouncyCastle.Asn1.Asn1Object
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Object
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1Object
+  nameWithType: Asn1Object
+  fullName: Org.BouncyCastle.Asn1.Asn1Object
+- uid: Org.BouncyCastle.Asn1.IAsn1Convertible
+  commentId: T:Org.BouncyCastle.Asn1.IAsn1Convertible
+  parent: Org.BouncyCastle.Asn1
+  name: IAsn1Convertible
+  nameWithType: IAsn1Convertible
+  fullName: Org.BouncyCastle.Asn1.IAsn1Convertible
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: Org.BouncyCastle.Asn1.Asn1Object.FromByteArray(System.Byte[])
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Object.FromByteArray(System.Byte[])
+  parent: Org.BouncyCastle.Asn1.Asn1Object
+  isExternal: true
+  name: FromByteArray(Byte[])
+  nameWithType: Asn1Object.FromByteArray(Byte[])
+  fullName: Org.BouncyCastle.Asn1.Asn1Object.FromByteArray(System.Byte[])
+  nameWithType.vb: Asn1Object.FromByteArray(Byte())
+  fullName.vb: Org.BouncyCastle.Asn1.Asn1Object.FromByteArray(System.Byte())
+  name.vb: FromByteArray(Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Object.FromByteArray(System.Byte[])
+    name: FromByteArray
+    nameWithType: Asn1Object.FromByteArray
+    fullName: Org.BouncyCastle.Asn1.Asn1Object.FromByteArray
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Object.FromByteArray(System.Byte[])
+    name: FromByteArray
+    nameWithType: Asn1Object.FromByteArray
+    fullName: Org.BouncyCastle.Asn1.Asn1Object.FromByteArray
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Object.FromStream(Stream)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Object.FromStream(Stream)
+  parent: Org.BouncyCastle.Asn1.Asn1Object
+  isExternal: true
+  name: FromStream(Stream)
+  nameWithType: Asn1Object.FromStream(Stream)
+  fullName: Org.BouncyCastle.Asn1.Asn1Object.FromStream(Stream)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Object.FromStream(Stream)
+    name: FromStream
+    nameWithType: Asn1Object.FromStream
+    fullName: Org.BouncyCastle.Asn1.Asn1Object.FromStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Object.FromStream(Stream)
+    name: FromStream
+    nameWithType: Asn1Object.FromStream
+    fullName: Org.BouncyCastle.Asn1.Asn1Object.FromStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Object.ToAsn1Object
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Object.ToAsn1Object
+  parent: Org.BouncyCastle.Asn1.Asn1Object
+  name: ToAsn1Object()
+  nameWithType: Asn1Object.ToAsn1Object()
+  fullName: Org.BouncyCastle.Asn1.Asn1Object.ToAsn1Object()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Object.ToAsn1Object
+    name: ToAsn1Object
+    nameWithType: Asn1Object.ToAsn1Object
+    fullName: Org.BouncyCastle.Asn1.Asn1Object.ToAsn1Object
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Object.ToAsn1Object
+    name: ToAsn1Object
+    nameWithType: Asn1Object.ToAsn1Object
+    fullName: Org.BouncyCastle.Asn1.Asn1Object.ToAsn1Object
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.Der
+  commentId: F:Org.BouncyCastle.Asn1.Asn1Encodable.Der
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: Der
+  nameWithType: Asn1Encodable.Der
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Der
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+  commentId: F:Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: Ber
+  nameWithType: Asn1Encodable.Ber
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: GetEncoded()
+  nameWithType: Asn1Encodable.GetEncoded()
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  isExternal: true
+  name: GetEncoded(String)
+  nameWithType: Asn1Encodable.GetEncoded(String)
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: GetDerEncoded()
+  nameWithType: Asn1Encodable.GetDerEncoded()
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+    name: GetDerEncoded
+    nameWithType: Asn1Encodable.GetDerEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+    name: GetDerEncoded
+    nameWithType: Asn1Encodable.GetDerEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: GetHashCode()
+  nameWithType: Asn1Encodable.GetHashCode()
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+    name: GetHashCode
+    nameWithType: Asn1Encodable.GetHashCode
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+    name: GetHashCode
+    nameWithType: Asn1Encodable.GetHashCode
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Asn1Encodable.Equals(Object)
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+    name: Equals
+    nameWithType: Asn1Encodable.Equals
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+    name: Equals
+    nameWithType: Asn1Encodable.Equals
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance
+  name: GetInstance
+  nameWithType: Asn1Sequence.GetInstance
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.GetInstance
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Sequence
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1Sequence
+  nameWithType: Asn1Sequence
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence
+- uid: Org.BouncyCastle.Asn1.Asn1TaggedObject
+  commentId: T:Org.BouncyCastle.Asn1.Asn1TaggedObject
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1TaggedObject
+  nameWithType: Asn1TaggedObject
+  fullName: Org.BouncyCastle.Asn1.Asn1TaggedObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.#ctor*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.#ctor
+  name: Asn1Sequence
+  nameWithType: Asn1Sequence.Asn1Sequence
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1Sequence
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.GetEnumerator*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.GetEnumerator
+  name: GetEnumerator
+  nameWithType: Asn1Sequence.GetEnumerator
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.GetObjects*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.GetObjects
+  name: GetObjects
+  nameWithType: Asn1Sequence.GetObjects
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.GetObjects
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Parser*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.Parser
+  name: Parser
+  nameWithType: Asn1Sequence.Parser
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Parser
+- uid: Org.BouncyCastle.Asn1.Asn1SequenceParser
+  commentId: T:Org.BouncyCastle.Asn1.Asn1SequenceParser
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1SequenceParser
+  nameWithType: Asn1SequenceParser
+  fullName: Org.BouncyCastle.Asn1.Asn1SequenceParser
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Item*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.Item
+  name: Item
+  nameWithType: Asn1Sequence.Item
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Item
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.GetObjectAt*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.GetObjectAt
+  name: GetObjectAt
+  nameWithType: Asn1Sequence.GetObjectAt
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.GetObjectAt
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Size*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.Size
+  name: Size
+  nameWithType: Asn1Sequence.Size
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Size
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Count*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.Count
+  name: Count
+  nameWithType: Asn1Sequence.Count
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Count
+- uid: Org.BouncyCastle.Asn1.Asn1Object.Asn1GetHashCode
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Object.Asn1GetHashCode
+  parent: Org.BouncyCastle.Asn1.Asn1Object
+  name: Asn1GetHashCode()
+  nameWithType: Asn1Object.Asn1GetHashCode()
+  fullName: Org.BouncyCastle.Asn1.Asn1Object.Asn1GetHashCode()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Object.Asn1GetHashCode
+    name: Asn1GetHashCode
+    nameWithType: Asn1Object.Asn1GetHashCode
+    fullName: Org.BouncyCastle.Asn1.Asn1Object.Asn1GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Object.Asn1GetHashCode
+    name: Asn1GetHashCode
+    nameWithType: Asn1Object.Asn1GetHashCode
+    fullName: Org.BouncyCastle.Asn1.Asn1Object.Asn1GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1GetHashCode*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.Asn1GetHashCode
+  name: Asn1GetHashCode
+  nameWithType: Asn1Sequence.Asn1GetHashCode
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1GetHashCode
+- uid: Org.BouncyCastle.Asn1.Asn1Object.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Object.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)
+  parent: Org.BouncyCastle.Asn1.Asn1Object
+  name: Asn1Equals(Asn1Object)
+  nameWithType: Asn1Object.Asn1Equals(Asn1Object)
+  fullName: Org.BouncyCastle.Asn1.Asn1Object.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Object.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)
+    name: Asn1Equals
+    nameWithType: Asn1Object.Asn1Equals
+    fullName: Org.BouncyCastle.Asn1.Asn1Object.Asn1Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Asn1.Asn1Object
+    name: Asn1Object
+    nameWithType: Asn1Object
+    fullName: Org.BouncyCastle.Asn1.Asn1Object
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Object.Asn1Equals(Org.BouncyCastle.Asn1.Asn1Object)
+    name: Asn1Equals
+    nameWithType: Asn1Object.Asn1Equals
+    fullName: Org.BouncyCastle.Asn1.Asn1Object.Asn1Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Org.BouncyCastle.Asn1.Asn1Object
+    name: Asn1Object
+    nameWithType: Asn1Object
+    fullName: Org.BouncyCastle.Asn1.Asn1Object
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1Equals*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.Asn1Equals
+  name: Asn1Equals
+  nameWithType: Asn1Sequence.Asn1Equals
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.Asn1Equals
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.AddObject*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.AddObject
+  name: AddObject
+  nameWithType: Asn1Sequence.AddObject
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.AddObject
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Sequence.ToString*
+  commentId: Overload:Org.BouncyCastle.Asn1.Asn1Sequence.ToString
+  name: ToString
+  nameWithType: Asn1Sequence.ToString
+  fullName: Org.BouncyCastle.Asn1.Asn1Sequence.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,292 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.HTTPRequestStates
+  commentId: T:BestHTTP.HTTPRequestStates
+  id: HTTPRequestStates
+  parent: BestHTTP
+  children:
+  - BestHTTP.HTTPRequestStates.Aborted
+  - BestHTTP.HTTPRequestStates.ConnectionTimedOut
+  - BestHTTP.HTTPRequestStates.Error
+  - BestHTTP.HTTPRequestStates.Finished
+  - BestHTTP.HTTPRequestStates.Initial
+  - BestHTTP.HTTPRequestStates.Processing
+  - BestHTTP.HTTPRequestStates.Queued
+  - BestHTTP.HTTPRequestStates.TimedOut
+  langs:
+  - csharp
+  - vb
+  name: HTTPRequestStates
+  nameWithType: HTTPRequestStates
+  fullName: BestHTTP.HTTPRequestStates
+  type: Enum
+  source:
+    id: HTTPRequestStates
+    path: ''
+    startLine: 9690
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nPossible logical states of a HTTTPRequest object.\n"
+  example: []
+  syntax:
+    content: public enum HTTPRequestStates
+    content.vb: Public Enum HTTPRequestStates
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: BestHTTP.HTTPRequestStates.Initial
+  commentId: F:BestHTTP.HTTPRequestStates.Initial
+  id: Initial
+  parent: BestHTTP.HTTPRequestStates
+  langs:
+  - csharp
+  - vb
+  name: Initial
+  nameWithType: HTTPRequestStates.Initial
+  fullName: BestHTTP.HTTPRequestStates.Initial
+  type: Field
+  source:
+    id: Initial
+    path: ''
+    startLine: 9695
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nInitial status of a request. No callback will be called with this status.\n"
+  example: []
+  syntax:
+    content: Initial = 0
+    return:
+      type: BestHTTP.HTTPRequestStates
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.HTTPRequestStates.Queued
+  commentId: F:BestHTTP.HTTPRequestStates.Queued
+  id: Queued
+  parent: BestHTTP.HTTPRequestStates
+  langs:
+  - csharp
+  - vb
+  name: Queued
+  nameWithType: HTTPRequestStates.Queued
+  fullName: BestHTTP.HTTPRequestStates.Queued
+  type: Field
+  source:
+    id: Queued
+    path: ''
+    startLine: 9700
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nWaiting in a queue to be processed. No callback will be called with this status.\n"
+  example: []
+  syntax:
+    content: Queued = 1
+    return:
+      type: BestHTTP.HTTPRequestStates
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.HTTPRequestStates.Processing
+  commentId: F:BestHTTP.HTTPRequestStates.Processing
+  id: Processing
+  parent: BestHTTP.HTTPRequestStates
+  langs:
+  - csharp
+  - vb
+  name: Processing
+  nameWithType: HTTPRequestStates.Processing
+  fullName: BestHTTP.HTTPRequestStates.Processing
+  type: Field
+  source:
+    id: Processing
+    path: ''
+    startLine: 9705
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nProcessing of the request started. In this state the client will send the request, and parse the response. No callback will be called with this status.\n"
+  example: []
+  syntax:
+    content: Processing = 2
+    return:
+      type: BestHTTP.HTTPRequestStates
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.HTTPRequestStates.Finished
+  commentId: F:BestHTTP.HTTPRequestStates.Finished
+  id: Finished
+  parent: BestHTTP.HTTPRequestStates
+  langs:
+  - csharp
+  - vb
+  name: Finished
+  nameWithType: HTTPRequestStates.Finished
+  fullName: BestHTTP.HTTPRequestStates.Finished
+  type: Field
+  source:
+    id: Finished
+    path: ''
+    startLine: 9710
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe request finished without problem. Parsing the response done, the result can be used. The user defined callback will be called with a valid response object. The request’s Exception property will be null.\n"
+  example: []
+  syntax:
+    content: Finished = 3
+    return:
+      type: BestHTTP.HTTPRequestStates
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.HTTPRequestStates.Error
+  commentId: F:BestHTTP.HTTPRequestStates.Error
+  id: Error
+  parent: BestHTTP.HTTPRequestStates
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: HTTPRequestStates.Error
+  fullName: BestHTTP.HTTPRequestStates.Error
+  type: Field
+  source:
+    id: Error
+    path: ''
+    startLine: 9715
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe request finished with an unexpected error. The user defined callback will be called with a null response object. The request&apos;s Exception property may contain more info about the error, but it can be null.\n"
+  example: []
+  syntax:
+    content: Error = 4
+    return:
+      type: BestHTTP.HTTPRequestStates
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.HTTPRequestStates.Aborted
+  commentId: F:BestHTTP.HTTPRequestStates.Aborted
+  id: Aborted
+  parent: BestHTTP.HTTPRequestStates
+  langs:
+  - csharp
+  - vb
+  name: Aborted
+  nameWithType: HTTPRequestStates.Aborted
+  fullName: BestHTTP.HTTPRequestStates.Aborted
+  type: Field
+  source:
+    id: Aborted
+    path: ''
+    startLine: 9720
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe request aborted by the client(HTTPRequest’s Abort() function). The user defined callback will be called with a null response. The request’s Exception property will be null.\n"
+  example: []
+  syntax:
+    content: Aborted = 5
+    return:
+      type: BestHTTP.HTTPRequestStates
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.HTTPRequestStates.ConnectionTimedOut
+  commentId: F:BestHTTP.HTTPRequestStates.ConnectionTimedOut
+  id: ConnectionTimedOut
+  parent: BestHTTP.HTTPRequestStates
+  langs:
+  - csharp
+  - vb
+  name: ConnectionTimedOut
+  nameWithType: HTTPRequestStates.ConnectionTimedOut
+  fullName: BestHTTP.HTTPRequestStates.ConnectionTimedOut
+  type: Field
+  source:
+    id: ConnectionTimedOut
+    path: ''
+    startLine: 9725
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nConnecting to the server timed out. The user defined callback will be called with a null response. The request’s Exception property will be null.\n"
+  example: []
+  syntax:
+    content: ConnectionTimedOut = 6
+    return:
+      type: BestHTTP.HTTPRequestStates
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BestHTTP.HTTPRequestStates.TimedOut
+  commentId: F:BestHTTP.HTTPRequestStates.TimedOut
+  id: TimedOut
+  parent: BestHTTP.HTTPRequestStates
+  langs:
+  - csharp
+  - vb
+  name: TimedOut
+  nameWithType: HTTPRequestStates.TimedOut
+  fullName: BestHTTP.HTTPRequestStates.TimedOut
+  type: Field
+  source:
+    id: TimedOut
+    path: ''
+    startLine: 9730
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP
+  summary: "\nThe request didn&apos;t finished in the given time. The user defined callback will be called with a null response. The request’s Exception property will be null.\n"
+  example: []
+  syntax:
+    content: TimedOut = 7
+    return:
+      type: BestHTTP.HTTPRequestStates
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: BestHTTP
+  commentId: N:BestHTTP
+  name: BestHTTP
+  nameWithType: BestHTTP
+  fullName: BestHTTP
+- uid: BestHTTP.HTTPRequestStates
+  commentId: T:BestHTTP.HTTPRequestStates
+  parent: BestHTTP
+  name: HTTPRequestStates
+  nameWithType: HTTPRequestStates
+  fullName: BestHTTP.HTTPRequestStates

@@ -1,0 +1,684 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.ServerSentEvents.EventSource
+  commentId: T:BestHTTP.ServerSentEvents.EventSource
+  id: EventSource
+  parent: BestHTTP.ServerSentEvents
+  children:
+  - BestHTTP.ServerSentEvents.EventSource.#ctor(System.Uri)
+  - BestHTTP.ServerSentEvents.EventSource.Close
+  - BestHTTP.ServerSentEvents.EventSource.InternalRequest
+  - BestHTTP.ServerSentEvents.EventSource.LastEventId
+  - BestHTTP.ServerSentEvents.EventSource.Off(System.String)
+  - BestHTTP.ServerSentEvents.EventSource.On(System.String,BestHTTP.ServerSentEvents.OnEventDelegate)
+  - BestHTTP.ServerSentEvents.EventSource.OnClosed
+  - BestHTTP.ServerSentEvents.EventSource.OnError
+  - BestHTTP.ServerSentEvents.EventSource.OnMessage
+  - BestHTTP.ServerSentEvents.EventSource.OnOpen
+  - BestHTTP.ServerSentEvents.EventSource.OnRetry
+  - BestHTTP.ServerSentEvents.EventSource.OnStateChanged
+  - BestHTTP.ServerSentEvents.EventSource.Open
+  - BestHTTP.ServerSentEvents.EventSource.ReconnectionTime
+  - BestHTTP.ServerSentEvents.EventSource.State
+  - BestHTTP.ServerSentEvents.EventSource.Uri
+  langs:
+  - csharp
+  - vb
+  name: EventSource
+  nameWithType: EventSource
+  fullName: BestHTTP.ServerSentEvents.EventSource
+  type: Class
+  source:
+    id: EventSource
+    path: ''
+    startLine: 28362
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nhttp://www.w3.org/TR/eventsource/\n"
+  example: []
+  syntax:
+    content: 'public class EventSource : IHeartbeat'
+    content.vb: >-
+      Public Class EventSource
+          Inherits IHeartbeat
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BestHTTP.ServerSentEvents.EventSource.Uri
+  commentId: P:BestHTTP.ServerSentEvents.EventSource.Uri
+  id: Uri
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: Uri
+  nameWithType: EventSource.Uri
+  fullName: BestHTTP.ServerSentEvents.EventSource.Uri
+  type: Property
+  source:
+    id: Uri
+    path: ''
+    startLine: 28372
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nUri of the remote endpoint.\n"
+  example: []
+  syntax:
+    content: public Uri Uri { get; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public ReadOnly Property Uri As Uri
+  overload: BestHTTP.ServerSentEvents.EventSource.Uri*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.ServerSentEvents.EventSource.State
+  commentId: P:BestHTTP.ServerSentEvents.EventSource.State
+  id: State
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: EventSource.State
+  fullName: BestHTTP.ServerSentEvents.EventSource.State
+  type: Property
+  source:
+    id: State
+    path: ''
+    startLine: 28377
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nCurrent state of the EventSource object.\n"
+  example: []
+  syntax:
+    content: public States State { get; }
+    parameters: []
+    return:
+      type: BestHTTP.ServerSentEvents.States
+    content.vb: Public ReadOnly Property State As States
+  overload: BestHTTP.ServerSentEvents.EventSource.State*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.ServerSentEvents.EventSource.ReconnectionTime
+  commentId: P:BestHTTP.ServerSentEvents.EventSource.ReconnectionTime
+  id: ReconnectionTime
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: ReconnectionTime
+  nameWithType: EventSource.ReconnectionTime
+  fullName: BestHTTP.ServerSentEvents.EventSource.ReconnectionTime
+  type: Property
+  source:
+    id: ReconnectionTime
+    path: ''
+    startLine: 28406
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nTime to wait to do a reconnect attempt. Default to 2 sec. The server can overwrite this setting.\n"
+  example: []
+  syntax:
+    content: public TimeSpan ReconnectionTime { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property ReconnectionTime As TimeSpan
+  overload: BestHTTP.ServerSentEvents.EventSource.ReconnectionTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.ServerSentEvents.EventSource.LastEventId
+  commentId: P:BestHTTP.ServerSentEvents.EventSource.LastEventId
+  id: LastEventId
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: LastEventId
+  nameWithType: EventSource.LastEventId
+  fullName: BestHTTP.ServerSentEvents.EventSource.LastEventId
+  type: Property
+  source:
+    id: LastEventId
+    path: ''
+    startLine: 28411
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nThe last successfully received event&apos;s id.\n"
+  example: []
+  syntax:
+    content: public string LastEventId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property LastEventId As String
+  overload: BestHTTP.ServerSentEvents.EventSource.LastEventId*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.ServerSentEvents.EventSource.InternalRequest
+  commentId: P:BestHTTP.ServerSentEvents.EventSource.InternalRequest
+  id: InternalRequest
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: InternalRequest
+  nameWithType: EventSource.InternalRequest
+  fullName: BestHTTP.ServerSentEvents.EventSource.InternalRequest
+  type: Property
+  source:
+    id: InternalRequest
+    path: ''
+    startLine: 28417
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nThe internal request object of the EventSource.\n"
+  example: []
+  syntax:
+    content: public HTTPRequest InternalRequest { get; }
+    parameters: []
+    return:
+      type: BestHTTP.HTTPRequest
+    content.vb: Public ReadOnly Property InternalRequest As HTTPRequest
+  overload: BestHTTP.ServerSentEvents.EventSource.InternalRequest*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.ServerSentEvents.EventSource.OnOpen
+  commentId: E:BestHTTP.ServerSentEvents.EventSource.OnOpen
+  id: OnOpen
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: OnOpen
+  nameWithType: EventSource.OnOpen
+  fullName: BestHTTP.ServerSentEvents.EventSource.OnOpen
+  type: Event
+  source:
+    id: OnOpen
+    path: ''
+    startLine: 28427
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nCalled when successfully connected to the server.\n"
+  example: []
+  syntax:
+    content: public event OnGeneralEventDelegate OnOpen
+    return:
+      type: BestHTTP.ServerSentEvents.OnGeneralEventDelegate
+    content.vb: Public Event OnOpen As OnGeneralEventDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.ServerSentEvents.EventSource.OnMessage
+  commentId: E:BestHTTP.ServerSentEvents.EventSource.OnMessage
+  id: OnMessage
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: OnMessage
+  nameWithType: EventSource.OnMessage
+  fullName: BestHTTP.ServerSentEvents.EventSource.OnMessage
+  type: Event
+  source:
+    id: OnMessage
+    path: ''
+    startLine: 28432
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nCalled on every message received from the server.\n"
+  example: []
+  syntax:
+    content: public event OnMessageDelegate OnMessage
+    return:
+      type: BestHTTP.ServerSentEvents.OnMessageDelegate
+    content.vb: Public Event OnMessage As OnMessageDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.ServerSentEvents.EventSource.OnError
+  commentId: E:BestHTTP.ServerSentEvents.EventSource.OnError
+  id: OnError
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: OnError
+  nameWithType: EventSource.OnError
+  fullName: BestHTTP.ServerSentEvents.EventSource.OnError
+  type: Event
+  source:
+    id: OnError
+    path: ''
+    startLine: 28437
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nCalled when an error occures.\n"
+  example: []
+  syntax:
+    content: public event OnErrorDelegate OnError
+    return:
+      type: BestHTTP.ServerSentEvents.OnErrorDelegate
+    content.vb: Public Event OnError As OnErrorDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.ServerSentEvents.EventSource.OnRetry
+  commentId: E:BestHTTP.ServerSentEvents.EventSource.OnRetry
+  id: OnRetry
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: OnRetry
+  nameWithType: EventSource.OnRetry
+  fullName: BestHTTP.ServerSentEvents.EventSource.OnRetry
+  type: Event
+  source:
+    id: OnRetry
+    path: ''
+    startLine: 28443
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nCalled when the EventSource will try to do a retry attempt. If this function returns with false, it will cancel the attempt.\n"
+  example: []
+  syntax:
+    content: public event OnRetryDelegate OnRetry
+    return:
+      type: BestHTTP.ServerSentEvents.OnRetryDelegate
+    content.vb: Public Event OnRetry As OnRetryDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.ServerSentEvents.EventSource.OnClosed
+  commentId: E:BestHTTP.ServerSentEvents.EventSource.OnClosed
+  id: OnClosed
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: OnClosed
+  nameWithType: EventSource.OnClosed
+  fullName: BestHTTP.ServerSentEvents.EventSource.OnClosed
+  type: Event
+  source:
+    id: OnClosed
+    path: ''
+    startLine: 28449
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nCalled when the EventSource object closed.\n"
+  example: []
+  syntax:
+    content: public event OnGeneralEventDelegate OnClosed
+    return:
+      type: BestHTTP.ServerSentEvents.OnGeneralEventDelegate
+    content.vb: Public Event OnClosed As OnGeneralEventDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.ServerSentEvents.EventSource.OnStateChanged
+  commentId: E:BestHTTP.ServerSentEvents.EventSource.OnStateChanged
+  id: OnStateChanged
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: OnStateChanged
+  nameWithType: EventSource.OnStateChanged
+  fullName: BestHTTP.ServerSentEvents.EventSource.OnStateChanged
+  type: Event
+  source:
+    id: OnStateChanged
+    path: ''
+    startLine: 28454
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nCalled every time when the State property changed.\n"
+  example: []
+  syntax:
+    content: public event OnStateChangedDelegate OnStateChanged
+    return:
+      type: BestHTTP.ServerSentEvents.OnStateChangedDelegate
+    content.vb: Public Event OnStateChanged As OnStateChangedDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.ServerSentEvents.EventSource.#ctor(System.Uri)
+  commentId: M:BestHTTP.ServerSentEvents.EventSource.#ctor(System.Uri)
+  id: '#ctor(System.Uri)'
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: EventSource(Uri)
+  nameWithType: EventSource.EventSource(Uri)
+  fullName: BestHTTP.ServerSentEvents.EventSource.EventSource(System.Uri)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 28482
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  syntax:
+    content: public EventSource(Uri uri)
+    parameters:
+    - id: uri
+      type: System.Uri
+    content.vb: Public Sub New(uri As Uri)
+  overload: BestHTTP.ServerSentEvents.EventSource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.ServerSentEvents.EventSource.Open
+  commentId: M:BestHTTP.ServerSentEvents.EventSource.Open
+  id: Open
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: Open()
+  nameWithType: EventSource.Open()
+  fullName: BestHTTP.ServerSentEvents.EventSource.Open()
+  type: Method
+  source:
+    id: Open
+    path: ''
+    startLine: 28509
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nStart to connect to the remote servr.\n"
+  example: []
+  syntax:
+    content: public void Open()
+    content.vb: Public Sub Open
+  overload: BestHTTP.ServerSentEvents.EventSource.Open*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.ServerSentEvents.EventSource.Close
+  commentId: M:BestHTTP.ServerSentEvents.EventSource.Close
+  id: Close
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: EventSource.Close()
+  fullName: BestHTTP.ServerSentEvents.EventSource.Close()
+  type: Method
+  source:
+    id: Close
+    path: ''
+    startLine: 28533
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nStart to close the connection.\n"
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close
+  overload: BestHTTP.ServerSentEvents.EventSource.Close*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.ServerSentEvents.EventSource.On(System.String,BestHTTP.ServerSentEvents.OnEventDelegate)
+  commentId: M:BestHTTP.ServerSentEvents.EventSource.On(System.String,BestHTTP.ServerSentEvents.OnEventDelegate)
+  id: On(System.String,BestHTTP.ServerSentEvents.OnEventDelegate)
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: On(String, OnEventDelegate)
+  nameWithType: EventSource.On(String, OnEventDelegate)
+  fullName: BestHTTP.ServerSentEvents.EventSource.On(System.String, BestHTTP.ServerSentEvents.OnEventDelegate)
+  type: Method
+  source:
+    id: On
+    path: ''
+    startLine: 28559
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nWith this function an event handler can be subscribed for an event name.\n"
+  example: []
+  syntax:
+    content: public void On(string eventName, OnEventDelegate action)
+    parameters:
+    - id: eventName
+      type: System.String
+    - id: action
+      type: BestHTTP.ServerSentEvents.OnEventDelegate
+    content.vb: Public Sub On(eventName As String, action As OnEventDelegate)
+  overload: BestHTTP.ServerSentEvents.EventSource.On*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BestHTTP.ServerSentEvents.EventSource.Off(System.String)
+  commentId: M:BestHTTP.ServerSentEvents.EventSource.Off(System.String)
+  id: Off(System.String)
+  parent: BestHTTP.ServerSentEvents.EventSource
+  langs:
+  - csharp
+  - vb
+  name: Off(String)
+  nameWithType: EventSource.Off(String)
+  fullName: BestHTTP.ServerSentEvents.EventSource.Off(System.String)
+  type: Method
+  source:
+    id: Off
+    path: ''
+    startLine: 28571
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.ServerSentEvents
+  summary: "\nWith this function the event handler can be removed for the given event name.\n"
+  example: []
+  syntax:
+    content: public void Off(string eventName)
+    parameters:
+    - id: eventName
+      type: System.String
+      description: ''
+    content.vb: Public Sub Off(eventName As String)
+  overload: BestHTTP.ServerSentEvents.EventSource.Off*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BestHTTP.ServerSentEvents
+  commentId: N:BestHTTP.ServerSentEvents
+  name: BestHTTP.ServerSentEvents
+  nameWithType: BestHTTP.ServerSentEvents
+  fullName: BestHTTP.ServerSentEvents
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.ServerSentEvents.EventSource.Uri*
+  commentId: Overload:BestHTTP.ServerSentEvents.EventSource.Uri
+  name: Uri
+  nameWithType: EventSource.Uri
+  fullName: BestHTTP.ServerSentEvents.EventSource.Uri
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: BestHTTP.ServerSentEvents.EventSource.State*
+  commentId: Overload:BestHTTP.ServerSentEvents.EventSource.State
+  name: State
+  nameWithType: EventSource.State
+  fullName: BestHTTP.ServerSentEvents.EventSource.State
+- uid: BestHTTP.ServerSentEvents.States
+  commentId: T:BestHTTP.ServerSentEvents.States
+  parent: BestHTTP.ServerSentEvents
+  name: States
+  nameWithType: States
+  fullName: BestHTTP.ServerSentEvents.States
+- uid: BestHTTP.ServerSentEvents.EventSource.ReconnectionTime*
+  commentId: Overload:BestHTTP.ServerSentEvents.EventSource.ReconnectionTime
+  name: ReconnectionTime
+  nameWithType: EventSource.ReconnectionTime
+  fullName: BestHTTP.ServerSentEvents.EventSource.ReconnectionTime
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: BestHTTP.ServerSentEvents.EventSource.LastEventId*
+  commentId: Overload:BestHTTP.ServerSentEvents.EventSource.LastEventId
+  name: LastEventId
+  nameWithType: EventSource.LastEventId
+  fullName: BestHTTP.ServerSentEvents.EventSource.LastEventId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BestHTTP.ServerSentEvents.EventSource.InternalRequest*
+  commentId: Overload:BestHTTP.ServerSentEvents.EventSource.InternalRequest
+  name: InternalRequest
+  nameWithType: EventSource.InternalRequest
+  fullName: BestHTTP.ServerSentEvents.EventSource.InternalRequest
+- uid: BestHTTP.HTTPRequest
+  commentId: T:BestHTTP.HTTPRequest
+  parent: BestHTTP
+  name: HTTPRequest
+  nameWithType: HTTPRequest
+  fullName: BestHTTP.HTTPRequest
+- uid: BestHTTP
+  commentId: N:BestHTTP
+  name: BestHTTP
+  nameWithType: BestHTTP
+  fullName: BestHTTP
+- uid: BestHTTP.ServerSentEvents.OnGeneralEventDelegate
+  commentId: T:BestHTTP.ServerSentEvents.OnGeneralEventDelegate
+  parent: BestHTTP.ServerSentEvents
+  name: OnGeneralEventDelegate
+  nameWithType: OnGeneralEventDelegate
+  fullName: BestHTTP.ServerSentEvents.OnGeneralEventDelegate
+- uid: BestHTTP.ServerSentEvents.OnMessageDelegate
+  commentId: T:BestHTTP.ServerSentEvents.OnMessageDelegate
+  parent: BestHTTP.ServerSentEvents
+  name: OnMessageDelegate
+  nameWithType: OnMessageDelegate
+  fullName: BestHTTP.ServerSentEvents.OnMessageDelegate
+- uid: BestHTTP.ServerSentEvents.OnErrorDelegate
+  commentId: T:BestHTTP.ServerSentEvents.OnErrorDelegate
+  parent: BestHTTP.ServerSentEvents
+  name: OnErrorDelegate
+  nameWithType: OnErrorDelegate
+  fullName: BestHTTP.ServerSentEvents.OnErrorDelegate
+- uid: BestHTTP.ServerSentEvents.OnRetryDelegate
+  commentId: T:BestHTTP.ServerSentEvents.OnRetryDelegate
+  parent: BestHTTP.ServerSentEvents
+  name: OnRetryDelegate
+  nameWithType: OnRetryDelegate
+  fullName: BestHTTP.ServerSentEvents.OnRetryDelegate
+- uid: BestHTTP.ServerSentEvents.OnStateChangedDelegate
+  commentId: T:BestHTTP.ServerSentEvents.OnStateChangedDelegate
+  parent: BestHTTP.ServerSentEvents
+  name: OnStateChangedDelegate
+  nameWithType: OnStateChangedDelegate
+  fullName: BestHTTP.ServerSentEvents.OnStateChangedDelegate
+- uid: BestHTTP.ServerSentEvents.EventSource.#ctor*
+  commentId: Overload:BestHTTP.ServerSentEvents.EventSource.#ctor
+  name: EventSource
+  nameWithType: EventSource.EventSource
+  fullName: BestHTTP.ServerSentEvents.EventSource.EventSource
+- uid: BestHTTP.ServerSentEvents.EventSource.Open*
+  commentId: Overload:BestHTTP.ServerSentEvents.EventSource.Open
+  name: Open
+  nameWithType: EventSource.Open
+  fullName: BestHTTP.ServerSentEvents.EventSource.Open
+- uid: BestHTTP.ServerSentEvents.EventSource.Close*
+  commentId: Overload:BestHTTP.ServerSentEvents.EventSource.Close
+  name: Close
+  nameWithType: EventSource.Close
+  fullName: BestHTTP.ServerSentEvents.EventSource.Close
+- uid: BestHTTP.ServerSentEvents.EventSource.On*
+  commentId: Overload:BestHTTP.ServerSentEvents.EventSource.On
+  name: On
+  nameWithType: EventSource.On
+  fullName: BestHTTP.ServerSentEvents.EventSource.On
+- uid: BestHTTP.ServerSentEvents.OnEventDelegate
+  commentId: T:BestHTTP.ServerSentEvents.OnEventDelegate
+  parent: BestHTTP.ServerSentEvents
+  name: OnEventDelegate
+  nameWithType: OnEventDelegate
+  fullName: BestHTTP.ServerSentEvents.OnEventDelegate
+- uid: BestHTTP.ServerSentEvents.EventSource.Off*
+  commentId: Overload:BestHTTP.ServerSentEvents.EventSource.Off
+  name: Off
+  nameWithType: EventSource.Off
+  fullName: BestHTTP.ServerSentEvents.EventSource.Off

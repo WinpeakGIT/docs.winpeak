@@ -1,0 +1,828 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Asn1.X509.Time
+  commentId: T:Org.BouncyCastle.Asn1.X509.Time
+  id: Time
+  parent: Org.BouncyCastle.Asn1.X509
+  children:
+  - Org.BouncyCastle.Asn1.X509.Time.#ctor(Org.BouncyCastle.Asn1.Asn1Object)
+  - Org.BouncyCastle.Asn1.X509.Time.#ctor(System.DateTime)
+  - Org.BouncyCastle.Asn1.X509.Time.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  - Org.BouncyCastle.Asn1.X509.Time.GetInstance(System.Object)
+  - Org.BouncyCastle.Asn1.X509.Time.GetTime
+  - Org.BouncyCastle.Asn1.X509.Time.ToAsn1Object
+  - Org.BouncyCastle.Asn1.X509.Time.ToDateTime
+  - Org.BouncyCastle.Asn1.X509.Time.ToString
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: Time
+  fullName: Org.BouncyCastle.Asn1.X509.Time
+  type: Class
+  source:
+    id: Time
+    path: ''
+    startLine: 162317
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: 'public class Time : Asn1Encodable, IAsn1Convertible, IAsn1Choice'
+    content.vb: >-
+      Public Class Time
+          Inherits Asn1Encodable
+          Implements IAsn1Convertible, IAsn1Choice
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Asn1.Asn1Encodable
+  implements:
+  - Org.BouncyCastle.Asn1.IAsn1Convertible
+  - Org.BouncyCastle.Asn1.IAsn1Choice
+  inheritedMembers:
+  - Org.BouncyCastle.Asn1.Asn1Encodable.Der
+  - Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  - Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  - Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Asn1.X509.Time.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  commentId: M:Org.BouncyCastle.Asn1.X509.Time.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  id: GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject,System.Boolean)
+  parent: Org.BouncyCastle.Asn1.X509.Time
+  langs:
+  - csharp
+  - vb
+  name: GetInstance(Asn1TaggedObject, Boolean)
+  nameWithType: Time.GetInstance(Asn1TaggedObject, Boolean)
+  fullName: Org.BouncyCastle.Asn1.X509.Time.GetInstance(Org.BouncyCastle.Asn1.Asn1TaggedObject, System.Boolean)
+  type: Method
+  source:
+    id: GetInstance
+    path: ''
+    startLine: 162322
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public static Time GetInstance(Asn1TaggedObject obj, bool explicitly)
+    parameters:
+    - id: obj
+      type: Org.BouncyCastle.Asn1.Asn1TaggedObject
+    - id: explicitly
+      type: System.Boolean
+    return:
+      type: Org.BouncyCastle.Asn1.X509.Time
+    content.vb: Public Shared Function GetInstance(obj As Asn1TaggedObject, explicitly As Boolean) As Time
+  overload: Org.BouncyCastle.Asn1.X509.Time.GetInstance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Asn1.X509.Time.#ctor(Org.BouncyCastle.Asn1.Asn1Object)
+  commentId: M:Org.BouncyCastle.Asn1.X509.Time.#ctor(Org.BouncyCastle.Asn1.Asn1Object)
+  id: '#ctor(Org.BouncyCastle.Asn1.Asn1Object)'
+  parent: Org.BouncyCastle.Asn1.X509.Time
+  langs:
+  - csharp
+  - vb
+  name: Time(Asn1Object)
+  nameWithType: Time.Time(Asn1Object)
+  fullName: Org.BouncyCastle.Asn1.X509.Time.Time(Org.BouncyCastle.Asn1.Asn1Object)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 162329
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public Time(Asn1Object time)
+    parameters:
+    - id: time
+      type: Org.BouncyCastle.Asn1.Asn1Object
+    content.vb: Public Sub New(time As Asn1Object)
+  overload: Org.BouncyCastle.Asn1.X509.Time.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Asn1.X509.Time.#ctor(System.DateTime)
+  commentId: M:Org.BouncyCastle.Asn1.X509.Time.#ctor(System.DateTime)
+  id: '#ctor(System.DateTime)'
+  parent: Org.BouncyCastle.Asn1.X509.Time
+  langs:
+  - csharp
+  - vb
+  name: Time(DateTime)
+  nameWithType: Time.Time(DateTime)
+  fullName: Org.BouncyCastle.Asn1.X509.Time.Time(System.DateTime)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 162345
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  example: []
+  syntax:
+    content: public Time(DateTime date)
+    parameters:
+    - id: date
+      type: System.DateTime
+    content.vb: Public Sub New(date As Date)
+  overload: Org.BouncyCastle.Asn1.X509.Time.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Asn1.X509.Time.GetInstance(System.Object)
+  commentId: M:Org.BouncyCastle.Asn1.X509.Time.GetInstance(System.Object)
+  id: GetInstance(System.Object)
+  parent: Org.BouncyCastle.Asn1.X509.Time
+  langs:
+  - csharp
+  - vb
+  name: GetInstance(Object)
+  nameWithType: Time.GetInstance(Object)
+  fullName: Org.BouncyCastle.Asn1.X509.Time.GetInstance(System.Object)
+  type: Method
+  source:
+    id: GetInstance
+    path: ''
+    startLine: 162366
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public static Time GetInstance(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: Org.BouncyCastle.Asn1.X509.Time
+    content.vb: Public Shared Function GetInstance(obj As Object) As Time
+  overload: Org.BouncyCastle.Asn1.X509.Time.GetInstance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Org.BouncyCastle.Asn1.X509.Time.GetTime
+  commentId: M:Org.BouncyCastle.Asn1.X509.Time.GetTime
+  id: GetTime
+  parent: Org.BouncyCastle.Asn1.X509.Time
+  langs:
+  - csharp
+  - vb
+  name: GetTime()
+  nameWithType: Time.GetTime()
+  fullName: Org.BouncyCastle.Asn1.X509.Time.GetTime()
+  type: Method
+  source:
+    id: GetTime
+    path: ''
+    startLine: 162379
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public string GetTime()
+    return:
+      type: System.String
+    content.vb: Public Function GetTime As String
+  overload: Org.BouncyCastle.Asn1.X509.Time.GetTime*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Asn1.X509.Time.ToDateTime
+  commentId: M:Org.BouncyCastle.Asn1.X509.Time.ToDateTime
+  id: ToDateTime
+  parent: Org.BouncyCastle.Asn1.X509.Time
+  langs:
+  - csharp
+  - vb
+  name: ToDateTime()
+  nameWithType: Time.ToDateTime()
+  fullName: Org.BouncyCastle.Asn1.X509.Time.ToDateTime()
+  type: Method
+  source:
+    id: ToDateTime
+    path: ''
+    startLine: 162393
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  summary: "\nReturn our time as DateTime.\n"
+  example: []
+  syntax:
+    content: public DateTime ToDateTime()
+    return:
+      type: System.DateTime
+      description: A date time.
+    content.vb: Public Function ToDateTime As Date
+  overload: Org.BouncyCastle.Asn1.X509.Time.ToDateTime*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Asn1.X509.Time.ToAsn1Object
+  commentId: M:Org.BouncyCastle.Asn1.X509.Time.ToAsn1Object
+  id: ToAsn1Object
+  parent: Org.BouncyCastle.Asn1.X509.Time
+  langs:
+  - csharp
+  - vb
+  name: ToAsn1Object()
+  nameWithType: Time.ToAsn1Object()
+  fullName: Org.BouncyCastle.Asn1.X509.Time.ToAsn1Object()
+  type: Method
+  source:
+    id: ToAsn1Object
+    path: ''
+    startLine: 162421
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  example: []
+  syntax:
+    content: public override Asn1Object ToAsn1Object()
+    return:
+      type: Org.BouncyCastle.Asn1.Asn1Object
+    content.vb: Public Overrides Function ToAsn1Object As Asn1Object
+  overridden: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+  overload: Org.BouncyCastle.Asn1.X509.Time.ToAsn1Object*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Asn1.X509.Time.ToString
+  commentId: M:Org.BouncyCastle.Asn1.X509.Time.ToString
+  id: ToString
+  parent: Org.BouncyCastle.Asn1.X509.Time
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Time.ToString()
+  fullName: Org.BouncyCastle.Asn1.X509.Time.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 162426
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Asn1.X509
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Org.BouncyCastle.Asn1.X509.Time.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Org.BouncyCastle.Asn1.X509
+  commentId: N:Org.BouncyCastle.Asn1.X509
+  name: Org.BouncyCastle.Asn1.X509
+  nameWithType: Org.BouncyCastle.Asn1.X509
+  fullName: Org.BouncyCastle.Asn1.X509
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Encodable
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1Encodable
+  nameWithType: Asn1Encodable
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable
+- uid: Org.BouncyCastle.Asn1.IAsn1Convertible
+  commentId: T:Org.BouncyCastle.Asn1.IAsn1Convertible
+  parent: Org.BouncyCastle.Asn1
+  name: IAsn1Convertible
+  nameWithType: IAsn1Convertible
+  fullName: Org.BouncyCastle.Asn1.IAsn1Convertible
+- uid: Org.BouncyCastle.Asn1.IAsn1Choice
+  commentId: T:Org.BouncyCastle.Asn1.IAsn1Choice
+  parent: Org.BouncyCastle.Asn1
+  name: IAsn1Choice
+  nameWithType: IAsn1Choice
+  fullName: Org.BouncyCastle.Asn1.IAsn1Choice
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.Der
+  commentId: F:Org.BouncyCastle.Asn1.Asn1Encodable.Der
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: Der
+  nameWithType: Asn1Encodable.Der
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Der
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+  commentId: F:Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: Ber
+  nameWithType: Asn1Encodable.Ber
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Ber
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: GetEncoded()
+  nameWithType: Asn1Encodable.GetEncoded()
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  isExternal: true
+  name: GetEncoded(String)
+  nameWithType: Asn1Encodable.GetEncoded(String)
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded(System.String)
+    name: GetEncoded
+    nameWithType: Asn1Encodable.GetEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: GetDerEncoded()
+  nameWithType: Asn1Encodable.GetDerEncoded()
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+    name: GetDerEncoded
+    nameWithType: Asn1Encodable.GetDerEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+    name: GetDerEncoded
+    nameWithType: Asn1Encodable.GetDerEncoded
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetDerEncoded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: GetHashCode()
+  nameWithType: Asn1Encodable.GetHashCode()
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+    name: GetHashCode
+    nameWithType: Asn1Encodable.GetHashCode
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+    name: GetHashCode
+    nameWithType: Asn1Encodable.GetHashCode
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Asn1Encodable.Equals(Object)
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+    name: Equals
+    nameWithType: Asn1Encodable.Equals
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.Equals(System.Object)
+    name: Equals
+    nameWithType: Asn1Encodable.Equals
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Asn1
+  commentId: N:Org.BouncyCastle.Asn1
+  name: Org.BouncyCastle.Asn1
+  nameWithType: Org.BouncyCastle.Asn1
+  fullName: Org.BouncyCastle.Asn1
+- uid: Org.BouncyCastle.Asn1.X509.Time.GetInstance*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.Time.GetInstance
+  name: GetInstance
+  nameWithType: Time.GetInstance
+  fullName: Org.BouncyCastle.Asn1.X509.Time.GetInstance
+- uid: Org.BouncyCastle.Asn1.Asn1TaggedObject
+  commentId: T:Org.BouncyCastle.Asn1.Asn1TaggedObject
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1TaggedObject
+  nameWithType: Asn1TaggedObject
+  fullName: Org.BouncyCastle.Asn1.Asn1TaggedObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Asn1.X509.Time
+  commentId: T:Org.BouncyCastle.Asn1.X509.Time
+  parent: Org.BouncyCastle.Asn1.X509
+  name: Time
+  nameWithType: Time
+  fullName: Org.BouncyCastle.Asn1.X509.Time
+- uid: Org.BouncyCastle.Asn1.X509.Time.#ctor*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.Time.#ctor
+  name: Time
+  nameWithType: Time.Time
+  fullName: Org.BouncyCastle.Asn1.X509.Time.Time
+- uid: Org.BouncyCastle.Asn1.Asn1Object
+  commentId: T:Org.BouncyCastle.Asn1.Asn1Object
+  parent: Org.BouncyCastle.Asn1
+  name: Asn1Object
+  nameWithType: Asn1Object
+  fullName: Org.BouncyCastle.Asn1.Asn1Object
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: Org.BouncyCastle.Asn1.X509.Time.GetTime*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.Time.GetTime
+  name: GetTime
+  nameWithType: Time.GetTime
+  fullName: Org.BouncyCastle.Asn1.X509.Time.GetTime
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Org.BouncyCastle.Asn1.X509.Time.ToDateTime*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.Time.ToDateTime
+  name: ToDateTime
+  nameWithType: Time.ToDateTime
+  fullName: Org.BouncyCastle.Asn1.X509.Time.ToDateTime
+- uid: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+  commentId: M:Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+  parent: Org.BouncyCastle.Asn1.Asn1Encodable
+  name: ToAsn1Object()
+  nameWithType: Asn1Encodable.ToAsn1Object()
+  fullName: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+    name: ToAsn1Object
+    nameWithType: Asn1Encodable.ToAsn1Object
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+    name: ToAsn1Object
+    nameWithType: Asn1Encodable.ToAsn1Object
+    fullName: Org.BouncyCastle.Asn1.Asn1Encodable.ToAsn1Object
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.X509.Time.ToAsn1Object*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.Time.ToAsn1Object
+  name: ToAsn1Object
+  nameWithType: Time.ToAsn1Object
+  fullName: Org.BouncyCastle.Asn1.X509.Time.ToAsn1Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Asn1.X509.Time.ToString*
+  commentId: Overload:Org.BouncyCastle.Asn1.X509.Time.ToString
+  name: ToString
+  nameWithType: Time.ToString
+  fullName: Org.BouncyCastle.Asn1.X509.Time.ToString

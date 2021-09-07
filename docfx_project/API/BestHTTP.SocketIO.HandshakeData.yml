@@ -1,0 +1,645 @@
+### YamlMime:ManagedReference
+items:
+- uid: BestHTTP.SocketIO.HandshakeData
+  commentId: T:BestHTTP.SocketIO.HandshakeData
+  id: HandshakeData
+  parent: BestHTTP.SocketIO
+  children:
+  - BestHTTP.SocketIO.HandshakeData.Parse(System.String)
+  - BestHTTP.SocketIO.HandshakeData.PingInterval
+  - BestHTTP.SocketIO.HandshakeData.PingTimeout
+  - BestHTTP.SocketIO.HandshakeData.Sid
+  - BestHTTP.SocketIO.HandshakeData.Upgrades
+  langs:
+  - csharp
+  - vb
+  name: HandshakeData
+  nameWithType: HandshakeData
+  fullName: BestHTTP.SocketIO.HandshakeData
+  type: Class
+  source:
+    id: HandshakeData
+    path: ''
+    startLine: 36783
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nHelper class to parse and hold handshake information.\n"
+  example: []
+  syntax:
+    content: public sealed class HandshakeData
+    content.vb: Public NotInheritable Class HandshakeData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: BestHTTP.SocketIO.HandshakeData.Sid
+  commentId: P:BestHTTP.SocketIO.HandshakeData.Sid
+  id: Sid
+  parent: BestHTTP.SocketIO.HandshakeData
+  langs:
+  - csharp
+  - vb
+  name: Sid
+  nameWithType: HandshakeData.Sid
+  fullName: BestHTTP.SocketIO.HandshakeData.Sid
+  type: Property
+  source:
+    id: Sid
+    path: ''
+    startLine: 36790
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nSession ID of this connection.\n"
+  example: []
+  syntax:
+    content: public string Sid { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Sid As String
+  overload: BestHTTP.SocketIO.HandshakeData.Sid*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.HandshakeData.Upgrades
+  commentId: P:BestHTTP.SocketIO.HandshakeData.Upgrades
+  id: Upgrades
+  parent: BestHTTP.SocketIO.HandshakeData
+  langs:
+  - csharp
+  - vb
+  name: Upgrades
+  nameWithType: HandshakeData.Upgrades
+  fullName: BestHTTP.SocketIO.HandshakeData.Upgrades
+  type: Property
+  source:
+    id: Upgrades
+    path: ''
+    startLine: 36795
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nList of possible upgrades.\n"
+  example: []
+  syntax:
+    content: public List<string> Upgrades { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property Upgrades As List(Of String)
+  overload: BestHTTP.SocketIO.HandshakeData.Upgrades*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.HandshakeData.PingInterval
+  commentId: P:BestHTTP.SocketIO.HandshakeData.PingInterval
+  id: PingInterval
+  parent: BestHTTP.SocketIO.HandshakeData
+  langs:
+  - csharp
+  - vb
+  name: PingInterval
+  nameWithType: HandshakeData.PingInterval
+  fullName: BestHTTP.SocketIO.HandshakeData.PingInterval
+  type: Property
+  source:
+    id: PingInterval
+    path: ''
+    startLine: 36800
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nWhat interval we have to set a ping message.\n"
+  example: []
+  syntax:
+    content: public TimeSpan PingInterval { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public ReadOnly Property PingInterval As TimeSpan
+  overload: BestHTTP.SocketIO.HandshakeData.PingInterval*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.HandshakeData.PingTimeout
+  commentId: P:BestHTTP.SocketIO.HandshakeData.PingTimeout
+  id: PingTimeout
+  parent: BestHTTP.SocketIO.HandshakeData
+  langs:
+  - csharp
+  - vb
+  name: PingTimeout
+  nameWithType: HandshakeData.PingTimeout
+  fullName: BestHTTP.SocketIO.HandshakeData.PingTimeout
+  type: Property
+  source:
+    id: PingTimeout
+    path: ''
+    startLine: 36805
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  summary: "\nWhat time have to pass without an answer to our ping request when we can consider the connection disconnected.\n"
+  example: []
+  syntax:
+    content: public TimeSpan PingTimeout { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public ReadOnly Property PingTimeout As TimeSpan
+  overload: BestHTTP.SocketIO.HandshakeData.PingTimeout*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BestHTTP.SocketIO.HandshakeData.Parse(System.String)
+  commentId: M:BestHTTP.SocketIO.HandshakeData.Parse(System.String)
+  id: Parse(System.String)
+  parent: BestHTTP.SocketIO.HandshakeData
+  langs:
+  - csharp
+  - vb
+  name: Parse(String)
+  nameWithType: HandshakeData.Parse(String)
+  fullName: BestHTTP.SocketIO.HandshakeData.Parse(System.String)
+  type: Method
+  source:
+    id: Parse
+    path: ''
+    startLine: 36811
+  assemblies:
+  - cs.temp.dll
+  namespace: BestHTTP.SocketIO
+  syntax:
+    content: public bool Parse(string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function Parse(str As String) As Boolean
+  overload: BestHTTP.SocketIO.HandshakeData.Parse*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BestHTTP.SocketIO
+  commentId: N:BestHTTP.SocketIO
+  name: BestHTTP.SocketIO
+  nameWithType: BestHTTP.SocketIO
+  fullName: BestHTTP.SocketIO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BestHTTP.SocketIO.HandshakeData.Sid*
+  commentId: Overload:BestHTTP.SocketIO.HandshakeData.Sid
+  name: Sid
+  nameWithType: HandshakeData.Sid
+  fullName: BestHTTP.SocketIO.HandshakeData.Sid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BestHTTP.SocketIO.HandshakeData.Upgrades*
+  commentId: Overload:BestHTTP.SocketIO.HandshakeData.Upgrades
+  name: Upgrades
+  nameWithType: HandshakeData.Upgrades
+  fullName: BestHTTP.SocketIO.HandshakeData.Upgrades
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: BestHTTP.SocketIO.HandshakeData.PingInterval*
+  commentId: Overload:BestHTTP.SocketIO.HandshakeData.PingInterval
+  name: PingInterval
+  nameWithType: HandshakeData.PingInterval
+  fullName: BestHTTP.SocketIO.HandshakeData.PingInterval
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: BestHTTP.SocketIO.HandshakeData.PingTimeout*
+  commentId: Overload:BestHTTP.SocketIO.HandshakeData.PingTimeout
+  name: PingTimeout
+  nameWithType: HandshakeData.PingTimeout
+  fullName: BestHTTP.SocketIO.HandshakeData.PingTimeout
+- uid: BestHTTP.SocketIO.HandshakeData.Parse*
+  commentId: Overload:BestHTTP.SocketIO.HandshakeData.Parse
+  name: Parse
+  nameWithType: HandshakeData.Parse
+  fullName: BestHTTP.SocketIO.HandshakeData.Parse
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

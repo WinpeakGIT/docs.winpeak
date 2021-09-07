@@ -1,0 +1,658 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Utilities.IO.TeeOutputStream
+  commentId: T:Org.BouncyCastle.Utilities.IO.TeeOutputStream
+  id: TeeOutputStream
+  parent: Org.BouncyCastle.Utilities.IO
+  children:
+  - Org.BouncyCastle.Utilities.IO.TeeOutputStream.#ctor(Stream,Stream)
+  - Org.BouncyCastle.Utilities.IO.TeeOutputStream.Close
+  - Org.BouncyCastle.Utilities.IO.TeeOutputStream.Write(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Utilities.IO.TeeOutputStream.WriteByte(System.Byte)
+  langs:
+  - csharp
+  - vb
+  name: TeeOutputStream
+  nameWithType: TeeOutputStream
+  fullName: Org.BouncyCastle.Utilities.IO.TeeOutputStream
+  type: Class
+  source:
+    id: TeeOutputStream
+    path: ''
+    startLine: 48312
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: 'public class TeeOutputStream : BaseOutputStream'
+    content.vb: >-
+      Public Class TeeOutputStream
+          Inherits BaseOutputStream
+  inheritance:
+  - System.Object
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  inheritedMembers:
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte[],System.Int32,System.Int32)
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek(System.Int64,SeekOrigin)
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength(System.Int64)
+  - Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[])
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Utilities.IO.TeeOutputStream.#ctor(Stream,Stream)
+  commentId: M:Org.BouncyCastle.Utilities.IO.TeeOutputStream.#ctor(Stream,Stream)
+  id: '#ctor(Stream,Stream)'
+  parent: Org.BouncyCastle.Utilities.IO.TeeOutputStream
+  langs:
+  - csharp
+  - vb
+  name: TeeOutputStream(Stream, Stream)
+  nameWithType: TeeOutputStream.TeeOutputStream(Stream, Stream)
+  fullName: Org.BouncyCastle.Utilities.IO.TeeOutputStream.TeeOutputStream(Stream, Stream)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 48317
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public TeeOutputStream(Stream output, Stream tee)
+    parameters:
+    - id: output
+      type: Stream
+    - id: tee
+      type: Stream
+    content.vb: Public Sub New(output As Stream, tee As Stream)
+  overload: Org.BouncyCastle.Utilities.IO.TeeOutputStream.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Utilities.IO.TeeOutputStream.Close
+  commentId: M:Org.BouncyCastle.Utilities.IO.TeeOutputStream.Close
+  id: Close
+  parent: Org.BouncyCastle.Utilities.IO.TeeOutputStream
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: TeeOutputStream.Close()
+  fullName: Org.BouncyCastle.Utilities.IO.TeeOutputStream.Close()
+  type: Method
+  source:
+    id: Close
+    path: ''
+    startLine: 48337
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public override void Close()
+    content.vb: Public Overrides Sub Close
+  overridden: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+  overload: Org.BouncyCastle.Utilities.IO.TeeOutputStream.Close*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Org.BouncyCastle.Utilities.IO.TeeOutputStream.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Utilities.IO.TeeOutputStream.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Utilities.IO.TeeOutputStream
+  langs:
+  - csharp
+  - vb
+  name: Write(Byte[], Int32, Int32)
+  nameWithType: TeeOutputStream.Write(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Utilities.IO.TeeOutputStream.Write(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Write
+    path: ''
+    startLine: 48345
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public override void Write(byte[] buffer, int offset, int count)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    content.vb: Public Overrides Sub Write(buffer As Byte(), offset As Integer, count As Integer)
+  overridden: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[],System.Int32,System.Int32)
+  overload: Org.BouncyCastle.Utilities.IO.TeeOutputStream.Write*
+  nameWithType.vb: TeeOutputStream.Write(Byte(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Org.BouncyCastle.Utilities.IO.TeeOutputStream.Write(System.Byte(), System.Int32, System.Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+- uid: Org.BouncyCastle.Utilities.IO.TeeOutputStream.WriteByte(System.Byte)
+  commentId: M:Org.BouncyCastle.Utilities.IO.TeeOutputStream.WriteByte(System.Byte)
+  id: WriteByte(System.Byte)
+  parent: Org.BouncyCastle.Utilities.IO.TeeOutputStream
+  langs:
+  - csharp
+  - vb
+  name: WriteByte(Byte)
+  nameWithType: TeeOutputStream.WriteByte(Byte)
+  fullName: Org.BouncyCastle.Utilities.IO.TeeOutputStream.WriteByte(System.Byte)
+  type: Method
+  source:
+    id: WriteByte
+    path: ''
+    startLine: 48351
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Utilities.IO
+  syntax:
+    content: public override void WriteByte(byte b)
+    parameters:
+    - id: b
+      type: System.Byte
+    content.vb: Public Overrides Sub WriteByte(b As Byte)
+  overload: Org.BouncyCastle.Utilities.IO.TeeOutputStream.WriteByte*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Org.BouncyCastle.Utilities.IO
+  commentId: N:Org.BouncyCastle.Utilities.IO
+  name: Org.BouncyCastle.Utilities.IO
+  nameWithType: Org.BouncyCastle.Utilities.IO
+  fullName: Org.BouncyCastle.Utilities.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  commentId: T:Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  parent: Org.BouncyCastle.Utilities.IO
+  name: BaseOutputStream
+  nameWithType: BaseOutputStream
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead
+  commentId: P:Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  name: CanRead
+  nameWithType: BaseOutputStream.CanRead
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanRead
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek
+  commentId: P:Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  name: CanSeek
+  nameWithType: BaseOutputStream.CanSeek
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanSeek
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite
+  commentId: P:Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  name: CanWrite
+  nameWithType: BaseOutputStream.CanWrite
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.CanWrite
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  name: Flush()
+  nameWithType: BaseOutputStream.Flush()
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+    name: Flush
+    nameWithType: BaseOutputStream.Flush
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+    name: Flush
+    nameWithType: BaseOutputStream.Flush
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Flush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length
+  commentId: P:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  name: Length
+  nameWithType: BaseOutputStream.Length
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Length
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position
+  commentId: P:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  name: Position
+  nameWithType: BaseOutputStream.Position
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Position
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  isExternal: true
+  name: Read(Byte[], Int32, Int32)
+  nameWithType: BaseOutputStream.Read(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: BaseOutputStream.Read(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte(), System.Int32, System.Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte[],System.Int32,System.Int32)
+    name: Read
+    nameWithType: BaseOutputStream.Read
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read(System.Byte[],System.Int32,System.Int32)
+    name: Read
+    nameWithType: BaseOutputStream.Read
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Read
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek(System.Int64,SeekOrigin)
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek(System.Int64,SeekOrigin)
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  isExternal: true
+  name: Seek(Int64, SeekOrigin)
+  nameWithType: BaseOutputStream.Seek(Int64, SeekOrigin)
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek(System.Int64, SeekOrigin)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek(System.Int64,SeekOrigin)
+    name: Seek
+    nameWithType: BaseOutputStream.Seek
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SeekOrigin
+    name: SeekOrigin
+    nameWithType: SeekOrigin
+    fullName: SeekOrigin
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek(System.Int64,SeekOrigin)
+    name: Seek
+    nameWithType: BaseOutputStream.Seek
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Seek
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SeekOrigin
+    name: SeekOrigin
+    nameWithType: SeekOrigin
+    fullName: SeekOrigin
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength(System.Int64)
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength(System.Int64)
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  isExternal: true
+  name: SetLength(Int64)
+  nameWithType: BaseOutputStream.SetLength(Int64)
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength(System.Int64)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength(System.Int64)
+    name: SetLength
+    nameWithType: BaseOutputStream.SetLength
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength(System.Int64)
+    name: SetLength
+    nameWithType: BaseOutputStream.SetLength
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.SetLength
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[])
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[])
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  isExternal: true
+  name: Write(Byte[])
+  nameWithType: BaseOutputStream.Write(Byte[])
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[])
+  nameWithType.vb: BaseOutputStream.Write(Byte())
+  fullName.vb: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte())
+  name.vb: Write(Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[])
+    name: Write
+    nameWithType: BaseOutputStream.Write
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[])
+    name: Write
+    nameWithType: BaseOutputStream.Write
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Utilities.IO.TeeOutputStream.#ctor*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.TeeOutputStream.#ctor
+  name: TeeOutputStream
+  nameWithType: TeeOutputStream.TeeOutputStream
+  fullName: Org.BouncyCastle.Utilities.IO.TeeOutputStream.TeeOutputStream
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  name: Close()
+  nameWithType: BaseOutputStream.Close()
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+    name: Close
+    nameWithType: BaseOutputStream.Close
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+    name: Close
+    nameWithType: BaseOutputStream.Close
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Close
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Utilities.IO.TeeOutputStream.Close*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.TeeOutputStream.Close
+  name: Close
+  nameWithType: TeeOutputStream.Close
+  fullName: Org.BouncyCastle.Utilities.IO.TeeOutputStream.Close
+- uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[],System.Int32,System.Int32)
+  parent: Org.BouncyCastle.Utilities.IO.BaseOutputStream
+  isExternal: true
+  name: Write(Byte[], Int32, Int32)
+  nameWithType: BaseOutputStream.Write(Byte[], Int32, Int32)
+  fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[], System.Int32, System.Int32)
+  nameWithType.vb: BaseOutputStream.Write(Byte(), Int32, Int32)
+  fullName.vb: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte(), System.Int32, System.Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[],System.Int32,System.Int32)
+    name: Write
+    nameWithType: BaseOutputStream.Write
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write(System.Byte[],System.Int32,System.Int32)
+    name: Write
+    nameWithType: BaseOutputStream.Write
+    fullName: Org.BouncyCastle.Utilities.IO.BaseOutputStream.Write
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Org.BouncyCastle.Utilities.IO.TeeOutputStream.Write*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.TeeOutputStream.Write
+  name: Write
+  nameWithType: TeeOutputStream.Write
+  fullName: Org.BouncyCastle.Utilities.IO.TeeOutputStream.Write
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Org.BouncyCastle.Utilities.IO.TeeOutputStream.WriteByte*
+  commentId: Overload:Org.BouncyCastle.Utilities.IO.TeeOutputStream.WriteByte
+  name: WriteByte
+  nameWithType: TeeOutputStream.WriteByte
+  fullName: Org.BouncyCastle.Utilities.IO.TeeOutputStream.WriteByte
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte

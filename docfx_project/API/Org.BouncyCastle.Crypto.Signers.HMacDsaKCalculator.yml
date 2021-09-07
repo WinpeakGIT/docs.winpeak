@@ -1,0 +1,767 @@
+### YamlMime:ManagedReference
+items:
+- uid: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator
+  commentId: T:Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator
+  id: HMacDsaKCalculator
+  parent: Org.BouncyCastle.Crypto.Signers
+  children:
+  - Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.#ctor(Org.BouncyCastle.Crypto.IDigest)
+  - Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init(BigInteger,BigInteger,System.Byte[])
+  - Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init(BigInteger,SecureRandom)
+  - Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.IsDeterministic
+  - Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.NextK
+  langs:
+  - csharp
+  - vb
+  name: HMacDsaKCalculator
+  nameWithType: HMacDsaKCalculator
+  fullName: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator
+  type: Class
+  source:
+    id: HMacDsaKCalculator
+    path: ''
+    startLine: 130214
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  example: []
+  syntax:
+    content: 'public class HMacDsaKCalculator : IDsaKCalculator'
+    content.vb: >-
+      Public Class HMacDsaKCalculator
+          Implements IDsaKCalculator
+  inheritance:
+  - System.Object
+  implements:
+  - Org.BouncyCastle.Crypto.Signers.IDsaKCalculator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.#ctor(Org.BouncyCastle.Crypto.IDigest)
+  commentId: M:Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.#ctor(Org.BouncyCastle.Crypto.IDigest)
+  id: '#ctor(Org.BouncyCastle.Crypto.IDigest)'
+  parent: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator
+  langs:
+  - csharp
+  - vb
+  name: HMacDsaKCalculator(IDigest)
+  nameWithType: HMacDsaKCalculator.HMacDsaKCalculator(IDigest)
+  fullName: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.HMacDsaKCalculator(Org.BouncyCastle.Crypto.IDigest)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 130228
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  example: []
+  syntax:
+    content: public HMacDsaKCalculator(IDigest digest)
+    parameters:
+    - id: digest
+      type: Org.BouncyCastle.Crypto.IDigest
+    content.vb: Public Sub New(digest As IDigest)
+  overload: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.IsDeterministic
+  commentId: P:Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.IsDeterministic
+  id: IsDeterministic
+  parent: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator
+  langs:
+  - csharp
+  - vb
+  name: IsDeterministic
+  nameWithType: HMacDsaKCalculator.IsDeterministic
+  fullName: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.IsDeterministic
+  type: Property
+  source:
+    id: IsDeterministic
+    path: ''
+    startLine: 130235
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  syntax:
+    content: public virtual bool IsDeterministic { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsDeterministic As Boolean
+  overload: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.IsDeterministic*
+  implements:
+  - Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.IsDeterministic
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init(BigInteger,SecureRandom)
+  commentId: M:Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init(BigInteger,SecureRandom)
+  id: Init(BigInteger,SecureRandom)
+  parent: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator
+  langs:
+  - csharp
+  - vb
+  name: Init(BigInteger, SecureRandom)
+  nameWithType: HMacDsaKCalculator.Init(BigInteger, SecureRandom)
+  fullName: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init(BigInteger, SecureRandom)
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 130240
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  syntax:
+    content: public virtual void Init(BigInteger n, SecureRandom random)
+    parameters:
+    - id: n
+      type: BigInteger
+    - id: random
+      type: SecureRandom
+    content.vb: Public Overridable Sub Init(n As BigInteger, random As SecureRandom)
+  overload: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init*
+  implements:
+  - Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger,SecureRandom)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init(BigInteger,BigInteger,System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init(BigInteger,BigInteger,System.Byte[])
+  id: Init(BigInteger,BigInteger,System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator
+  langs:
+  - csharp
+  - vb
+  name: Init(BigInteger, BigInteger, Byte[])
+  nameWithType: HMacDsaKCalculator.Init(BigInteger, BigInteger, Byte[])
+  fullName: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init(BigInteger, BigInteger, System.Byte[])
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 130245
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  syntax:
+    content: public void Init(BigInteger n, BigInteger d, byte[] message)
+    parameters:
+    - id: n
+      type: BigInteger
+    - id: d
+      type: BigInteger
+    - id: message
+      type: System.Byte[]
+    content.vb: Public Sub Init(n As BigInteger, d As BigInteger, message As Byte())
+  overload: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init*
+  implements:
+  - Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger,BigInteger,System.Byte[])
+  nameWithType.vb: HMacDsaKCalculator.Init(BigInteger, BigInteger, Byte())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init(BigInteger, BigInteger, System.Byte())
+  name.vb: Init(BigInteger, BigInteger, Byte())
+- uid: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.NextK
+  commentId: M:Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.NextK
+  id: NextK
+  parent: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator
+  langs:
+  - csharp
+  - vb
+  name: NextK()
+  nameWithType: HMacDsaKCalculator.NextK()
+  fullName: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.NextK()
+  type: Method
+  source:
+    id: NextK
+    path: ''
+    startLine: 130299
+  assemblies:
+  - cs.temp.dll
+  namespace: Org.BouncyCastle.Crypto.Signers
+  syntax:
+    content: public virtual BigInteger NextK()
+    return:
+      type: BigInteger
+    content.vb: Public Overridable Function NextK As BigInteger
+  overload: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.NextK*
+  implements:
+  - Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.NextK
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Org.BouncyCastle.Crypto.Signers
+  commentId: N:Org.BouncyCastle.Crypto.Signers
+  name: Org.BouncyCastle.Crypto.Signers
+  nameWithType: Org.BouncyCastle.Crypto.Signers
+  fullName: Org.BouncyCastle.Crypto.Signers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator
+  commentId: T:Org.BouncyCastle.Crypto.Signers.IDsaKCalculator
+  parent: Org.BouncyCastle.Crypto.Signers
+  name: IDsaKCalculator
+  nameWithType: IDsaKCalculator
+  fullName: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.#ctor*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.#ctor
+  name: HMacDsaKCalculator
+  nameWithType: HMacDsaKCalculator.HMacDsaKCalculator
+  fullName: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.HMacDsaKCalculator
+- uid: Org.BouncyCastle.Crypto.IDigest
+  commentId: T:Org.BouncyCastle.Crypto.IDigest
+  parent: Org.BouncyCastle.Crypto
+  name: IDigest
+  nameWithType: IDigest
+  fullName: Org.BouncyCastle.Crypto.IDigest
+- uid: Org.BouncyCastle.Crypto
+  commentId: N:Org.BouncyCastle.Crypto
+  name: Org.BouncyCastle.Crypto
+  nameWithType: Org.BouncyCastle.Crypto
+  fullName: Org.BouncyCastle.Crypto
+- uid: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.IsDeterministic*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.IsDeterministic
+  name: IsDeterministic
+  nameWithType: HMacDsaKCalculator.IsDeterministic
+  fullName: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.IsDeterministic
+- uid: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.IsDeterministic
+  commentId: P:Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.IsDeterministic
+  parent: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator
+  name: IsDeterministic
+  nameWithType: IDsaKCalculator.IsDeterministic
+  fullName: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.IsDeterministic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init
+  name: Init
+  nameWithType: HMacDsaKCalculator.Init
+  fullName: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.Init
+- uid: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger,SecureRandom)
+  commentId: M:Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger,SecureRandom)
+  parent: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator
+  isExternal: true
+  name: Init(BigInteger, SecureRandom)
+  nameWithType: IDsaKCalculator.Init(BigInteger, SecureRandom)
+  fullName: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger, SecureRandom)
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger,SecureRandom)
+    name: Init
+    nameWithType: IDsaKCalculator.Init
+    fullName: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: BigInteger
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SecureRandom
+    name: SecureRandom
+    nameWithType: SecureRandom
+    fullName: SecureRandom
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger,SecureRandom)
+    name: Init
+    nameWithType: IDsaKCalculator.Init
+    fullName: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: BigInteger
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SecureRandom
+    name: SecureRandom
+    nameWithType: SecureRandom
+    fullName: SecureRandom
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BigInteger
+  isExternal: true
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: BigInteger
+- uid: SecureRandom
+  isExternal: true
+  name: SecureRandom
+  nameWithType: SecureRandom
+  fullName: SecureRandom
+- uid: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger,BigInteger,System.Byte[])
+  commentId: M:Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger,BigInteger,System.Byte[])
+  parent: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator
+  isExternal: true
+  name: Init(BigInteger, BigInteger, Byte[])
+  nameWithType: IDsaKCalculator.Init(BigInteger, BigInteger, Byte[])
+  fullName: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger, BigInteger, System.Byte[])
+  nameWithType.vb: IDsaKCalculator.Init(BigInteger, BigInteger, Byte())
+  fullName.vb: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger, BigInteger, System.Byte())
+  name.vb: Init(BigInteger, BigInteger, Byte())
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger,BigInteger,System.Byte[])
+    name: Init
+    nameWithType: IDsaKCalculator.Init
+    fullName: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: BigInteger
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: BigInteger
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init(BigInteger,BigInteger,System.Byte[])
+    name: Init
+    nameWithType: IDsaKCalculator.Init
+    fullName: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: BigInteger
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: BigInteger
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.NextK*
+  commentId: Overload:Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.NextK
+  name: NextK
+  nameWithType: HMacDsaKCalculator.NextK
+  fullName: Org.BouncyCastle.Crypto.Signers.HMacDsaKCalculator.NextK
+- uid: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.NextK
+  commentId: M:Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.NextK
+  parent: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator
+  name: NextK()
+  nameWithType: IDsaKCalculator.NextK()
+  fullName: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.NextK()
+  spec.csharp:
+  - uid: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.NextK
+    name: NextK
+    nameWithType: IDsaKCalculator.NextK
+    fullName: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.NextK
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.NextK
+    name: NextK
+    nameWithType: IDsaKCalculator.NextK
+    fullName: Org.BouncyCastle.Crypto.Signers.IDsaKCalculator.NextK
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
