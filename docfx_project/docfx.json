@@ -6,7 +6,12 @@
                "files":[
                   "Runtime/**.cs"
                ],
-               "src":"../../WinpeakClient/com.winpeak.unity/"
+               "src":"../../WinpeakClient/com.winpeak.unity/",
+                "exclude": [
+                    "**/Org.BounceCastle/**",
+                    "**/BestHTTP/**",
+                    "**/SimpleJSON/**"
+                ]
             }
          ],
          "dest":"API"
@@ -19,10 +24,7 @@
           "API/**.yml"
         ],
         "exclude": [
-            "**/bin/**",
-            "**/Org.BounceCastle/**",
-            "**/BestHTTP/**",
-            "**/SimpleJSON/**"
+            "**/bin/**"
         ]
       },
       {
