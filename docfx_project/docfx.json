@@ -10,11 +10,12 @@
                 "exclude": [
                     "**/Org.BounceCastle/**",
                     "**/BestHTTP/**",
-                    "**/SimpleJSON/**"
+                    "**/SimpleJSON/**",
                 ]
             }
          ],
-         "dest":"API"
+         "dest":"API",
+         "filter": "filterConfig.yml"
       }
   ],
   "build": {
@@ -24,7 +25,8 @@
           "API/**.yml"
         ],
         "exclude": [
-            "**/bin/**"
+            "**/bin/**",
+            "**/SimpleJSON/**"
         ]
       },
       {
