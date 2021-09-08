@@ -1,1 +1,1 @@
-# WinPeak API Scripting Reference!
+# Main page of WinPeak API Scripting Reference!
