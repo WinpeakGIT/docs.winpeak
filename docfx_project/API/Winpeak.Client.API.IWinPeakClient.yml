@@ -22,6 +22,7 @@ items:
   - Winpeak.Client.API.IWinPeakClient.Move(System.Int64,System.String,System.Single,System.Single,System.Single,System.Single)
   - Winpeak.Client.API.IWinPeakClient.OnClientDisconnected
   - Winpeak.Client.API.IWinPeakClient.OnCollisionEvent
+  - Winpeak.Client.API.IWinPeakClient.OnDamageEvent
   - Winpeak.Client.API.IWinPeakClient.OnDrawLine
   - Winpeak.Client.API.IWinPeakClient.OnDrawPoint
   - Winpeak.Client.API.IWinPeakClient.OnGameObjectsReady
@@ -48,7 +49,7 @@ items:
   source:
     id: IWinPeakClient
     path: ''
-    startLine: 4161
+    startLine: 4218
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -105,7 +106,7 @@ items:
   source:
     id: OnClientDisconnected
     path: ''
-    startLine: 4166
+    startLine: 4223
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -130,7 +131,7 @@ items:
   source:
     id: OnRoundScoreUpdated
     path: ''
-    startLine: 4171
+    startLine: 4228
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -155,7 +156,7 @@ items:
   source:
     id: OnGameOver
     path: ''
-    startLine: 4176
+    startLine: 4233
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -180,7 +181,7 @@ items:
   source:
     id: OnStartGameCountdown
     path: ''
-    startLine: 4181
+    startLine: 4238
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -205,7 +206,7 @@ items:
   source:
     id: OnUserInfoUpdated
     path: ''
-    startLine: 4186
+    startLine: 4243
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -230,7 +231,7 @@ items:
   source:
     id: OnGameObjectsReady
     path: ''
-    startLine: 4191
+    startLine: 4248
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -255,7 +256,7 @@ items:
   source:
     id: OnOccurConnectionProblem
     path: ''
-    startLine: 4196
+    startLine: 4253
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -280,7 +281,7 @@ items:
   source:
     id: OnPingUpdated
     path: ''
-    startLine: 4201
+    startLine: 4258
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -305,7 +306,7 @@ items:
   source:
     id: OnPlayWallHitSound
     path: ''
-    startLine: 4206
+    startLine: 4263
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -330,7 +331,7 @@ items:
   source:
     id: OnCollisionEvent
     path: ''
-    startLine: 4211
+    startLine: 4268
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -341,6 +342,31 @@ items:
     return:
       type: System.Action{System.String,System.String}
     content.vb: Event OnCollisionEvent As Action(Of String, String)
+- uid: Winpeak.Client.API.IWinPeakClient.OnDamageEvent
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnDamageEvent
+  id: OnDamageEvent
+  parent: Winpeak.Client.API.IWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: OnDamageEvent
+  nameWithType: IWinPeakClient.OnDamageEvent
+  fullName: Winpeak.Client.API.IWinPeakClient.OnDamageEvent
+  type: Event
+  source:
+    id: OnDamageEvent
+    path: ''
+    startLine: 4273
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nFires when damage occured\n"
+  example: []
+  syntax:
+    content: event Action<DamageData> OnDamageEvent
+    return:
+      type: System.Action{DamageData}
+    content.vb: Event OnDamageEvent As Action(Of DamageData)
 - uid: Winpeak.Client.API.IWinPeakClient.OnGameStateChanged
   commentId: E:Winpeak.Client.API.IWinPeakClient.OnGameStateChanged
   id: OnGameStateChanged
@@ -355,7 +381,7 @@ items:
   source:
     id: OnGameStateChanged
     path: ''
-    startLine: 4216
+    startLine: 4278
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -380,7 +406,7 @@ items:
   source:
     id: IsConnected
     path: ''
-    startLine: 4221
+    startLine: 4283
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -411,7 +437,7 @@ items:
   source:
     id: IsActiveNetwork
     path: ''
-    startLine: 4226
+    startLine: 4288
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -442,7 +468,7 @@ items:
   source:
     id: SubscribeRigidbody
     path: ''
-    startLine: 4231
+    startLine: 4293
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -469,7 +495,7 @@ items:
   source:
     id: SubscribeResponseHandler
     path: ''
-    startLine: 4238
+    startLine: 4300
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -505,7 +531,7 @@ items:
   source:
     id: Init
     path: ''
-    startLine: 4243
+    startLine: 4305
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -532,7 +558,7 @@ items:
   source:
     id: Connect
     path: ''
-    startLine: 4248
+    startLine: 4310
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -563,7 +589,7 @@ items:
   source:
     id: Auth
     path: ''
-    startLine: 4253
+    startLine: 4315
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -592,7 +618,7 @@ items:
   source:
     id: Die
     path: ''
-    startLine: 4258
+    startLine: 4320
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -619,7 +645,7 @@ items:
   source:
     id: MassPacket
     path: ''
-    startLine: 4260
+    startLine: 4322
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -646,7 +672,7 @@ items:
   source:
     id: Move
     path: ''
-    startLine: 4271
+    startLine: 4333
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -689,7 +715,7 @@ items:
   source:
     id: Utilize
     path: ''
-    startLine: 4276
+    startLine: 4338
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -713,7 +739,7 @@ items:
   source:
     id: BlockInGameInput
     path: ''
-    startLine: 4282
+    startLine: 4344
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -741,7 +767,7 @@ items:
   source:
     id: OnGamePlayersListLoaded
     path: ''
-    startLine: 4287
+    startLine: 4349
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -766,7 +792,7 @@ items:
   source:
     id: GetGamePlayersList
     path: ''
-    startLine: 4292
+    startLine: 4354
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -790,7 +816,7 @@ items:
   source:
     id: DrawLines
     path: ''
-    startLine: 4297
+    startLine: 4359
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -814,7 +840,7 @@ items:
   source:
     id: DrawSingleLine
     path: ''
-    startLine: 4303
+    startLine: 4365
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -838,7 +864,7 @@ items:
   source:
     id: DrawPoint
     path: ''
-    startLine: 4308
+    startLine: 4370
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -862,7 +888,7 @@ items:
   source:
     id: ResetMoveCount
     path: ''
-    startLine: 4313
+    startLine: 4375
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -886,7 +912,7 @@ items:
   source:
     id: OnDrawPoint
     path: ''
-    startLine: 4316
+    startLine: 4378
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -909,7 +935,7 @@ items:
   source:
     id: OnDrawLine
     path: ''
-    startLine: 4317
+    startLine: 4379
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -932,7 +958,7 @@ items:
   source:
     id: InvokeDrawPoint
     path: ''
-    startLine: 4318
+    startLine: 4380
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -963,7 +989,7 @@ items:
   source:
     id: InvokeDrawLine
     path: ''
-    startLine: 4319
+    startLine: 4381
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -4517,6 +4543,50 @@ references:
     name: String
     nameWithType: String
     fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{DamageData}
+  commentId: T:System.Action{DamageData}
+  parent: System
+  definition: System.Action`1
+  name: Action<DamageData>
+  nameWithType: Action<DamageData>
+  fullName: System.Action<DamageData>
+  nameWithType.vb: Action(Of DamageData)
+  fullName.vb: System.Action(Of DamageData)
+  name.vb: Action(Of DamageData)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DamageData
+    name: DamageData
+    nameWithType: DamageData
+    fullName: DamageData
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: DamageData
+    name: DamageData
+    nameWithType: DamageData
+    fullName: DamageData
     isExternal: true
   - name: )
     nameWithType: )

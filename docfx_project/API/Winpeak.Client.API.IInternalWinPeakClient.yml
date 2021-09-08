@@ -17,6 +17,7 @@ items:
   - Winpeak.Client.API.IInternalWinPeakClient.OccurConnectionProblem
   - Winpeak.Client.API.IInternalWinPeakClient.OnBlockInGameInput
   - Winpeak.Client.API.IInternalWinPeakClient.OnCollision(System.String,System.String)
+  - Winpeak.Client.API.IInternalWinPeakClient.OnDamage(DamageData)
   - Winpeak.Client.API.IInternalWinPeakClient.PlayWallHitSound
   - Winpeak.Client.API.IInternalWinPeakClient.RoundScoreUpdate(RoundResult)
   - Winpeak.Client.API.IInternalWinPeakClient.Sync(System.Int64)
@@ -31,7 +32,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 4646
+    startLine: 4715
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -51,6 +52,7 @@ items:
   - Winpeak.Client.API.IWinPeakClient.OnPingUpdated
   - Winpeak.Client.API.IWinPeakClient.OnPlayWallHitSound
   - Winpeak.Client.API.IWinPeakClient.OnCollisionEvent
+  - Winpeak.Client.API.IWinPeakClient.OnDamageEvent
   - Winpeak.Client.API.IWinPeakClient.OnGameStateChanged
   - Winpeak.Client.API.IWinPeakClient.IsConnected
   - Winpeak.Client.API.IWinPeakClient.IsActiveNetwork
@@ -121,7 +123,7 @@ items:
   source:
     id: OnBlockInGameInput
     path: ''
-    startLine: 4652
+    startLine: 4721
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -146,7 +148,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 4658
+    startLine: 4727
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -174,7 +176,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 4663
+    startLine: 4732
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -198,7 +200,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 4669
+    startLine: 4738
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -226,7 +228,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 4674
+    startLine: 4743
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -256,7 +258,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 4682
+    startLine: 4751
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -290,7 +292,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 4688
+    startLine: 4757
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -318,7 +320,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 4694
+    startLine: 4763
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -346,7 +348,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 4700
+    startLine: 4769
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -374,7 +376,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 4705
+    startLine: 4774
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -401,7 +403,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 4710
+    startLine: 4779
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -425,7 +427,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 4716
+    startLine: 4785
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -453,7 +455,7 @@ items:
   source:
     id: PlayWallHitSound
     path: ''
-    startLine: 4721
+    startLine: 4790
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -477,11 +479,11 @@ items:
   source:
     id: OnCollision
     path: ''
-    startLine: 4726
+    startLine: 4795
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
-  summary: "\nFires collision event between objectFrom and objectTo\n"
+  summary: "\nFires collision event between &apos;objectFrom&apos; and &apos;objectTo&apos;\n"
   example: []
   syntax:
     content: void OnCollision(string objectFrom, string objectTo)
@@ -492,6 +494,33 @@ items:
       type: System.String
     content.vb: Sub OnCollision(objectFrom As String, objectTo As String)
   overload: Winpeak.Client.API.IInternalWinPeakClient.OnCollision*
+- uid: Winpeak.Client.API.IInternalWinPeakClient.OnDamage(DamageData)
+  commentId: M:Winpeak.Client.API.IInternalWinPeakClient.OnDamage(DamageData)
+  id: OnDamage(DamageData)
+  parent: Winpeak.Client.API.IInternalWinPeakClient
+  langs:
+  - csharp
+  - vb
+  name: OnDamage(DamageData)
+  nameWithType: IInternalWinPeakClient.OnDamage(DamageData)
+  fullName: Winpeak.Client.API.IInternalWinPeakClient.OnDamage(DamageData)
+  type: Method
+  source:
+    id: OnDamage
+    path: ''
+    startLine: 4800
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.API
+  summary: "\nFires damage event from &apos;objectFrom&apos; to &apos;objectTo&apos; with amount &apos;value&apos;\n"
+  example: []
+  syntax:
+    content: void OnDamage(DamageData damage)
+    parameters:
+    - id: damage
+      type: DamageData
+    content.vb: Sub OnDamage(damage As DamageData)
+  overload: Winpeak.Client.API.IInternalWinPeakClient.OnDamage*
 - uid: Winpeak.Client.API.IInternalWinPeakClient.GetServerConnectionStatusController
   commentId: P:Winpeak.Client.API.IInternalWinPeakClient.GetServerConnectionStatusController
   id: GetServerConnectionStatusController
@@ -506,7 +535,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 4731
+    startLine: 4805
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -537,7 +566,7 @@ items:
   source:
     id: InvokeGamePlayersList
     path: ''
-    startLine: 4737
+    startLine: 4811
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -620,6 +649,12 @@ references:
   name: OnCollisionEvent
   nameWithType: IWinPeakClient.OnCollisionEvent
   fullName: Winpeak.Client.API.IWinPeakClient.OnCollisionEvent
+- uid: Winpeak.Client.API.IWinPeakClient.OnDamageEvent
+  commentId: E:Winpeak.Client.API.IWinPeakClient.OnDamageEvent
+  parent: Winpeak.Client.API.IWinPeakClient
+  name: OnDamageEvent
+  nameWithType: IWinPeakClient.OnDamageEvent
+  fullName: Winpeak.Client.API.IWinPeakClient.OnDamageEvent
 - uid: Winpeak.Client.API.IWinPeakClient.OnGameStateChanged
   commentId: E:Winpeak.Client.API.IWinPeakClient.OnGameStateChanged
   parent: Winpeak.Client.API.IWinPeakClient
@@ -4955,6 +4990,17 @@ references:
   name: OnCollision
   nameWithType: IInternalWinPeakClient.OnCollision
   fullName: Winpeak.Client.API.IInternalWinPeakClient.OnCollision
+- uid: Winpeak.Client.API.IInternalWinPeakClient.OnDamage*
+  commentId: Overload:Winpeak.Client.API.IInternalWinPeakClient.OnDamage
+  name: OnDamage
+  nameWithType: IInternalWinPeakClient.OnDamage
+  fullName: Winpeak.Client.API.IInternalWinPeakClient.OnDamage
+- uid: DamageData
+  commentId: '!:DamageData'
+  isExternal: true
+  name: DamageData
+  nameWithType: DamageData
+  fullName: DamageData
 - uid: Winpeak.Client.API.IInternalWinPeakClient.GetServerConnectionStatusController*
   commentId: Overload:Winpeak.Client.API.IInternalWinPeakClient.GetServerConnectionStatusController
   name: GetServerConnectionStatusController
