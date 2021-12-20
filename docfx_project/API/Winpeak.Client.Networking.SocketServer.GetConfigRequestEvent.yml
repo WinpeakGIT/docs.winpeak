@@ -1,0 +1,759 @@
+### YamlMime:ManagedReference
+items:
+- uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  commentId: T:Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  id: GetConfigRequestEvent
+  parent: Winpeak.Client.Networking.SocketServer
+  children:
+  - Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.Data
+  - Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ParseData(JToken)
+  - Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.RawData
+  langs:
+  - csharp
+  - vb
+  name: GetConfigRequestEvent
+  nameWithType: GetConfigRequestEvent
+  fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  type: Class
+  source:
+    id: GetConfigRequestEvent
+    path: ''
+    startLine: 1491
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: 'public class GetConfigRequestEvent : SocketEventHandler<GetConfigRequestEvent>'
+    content.vb: >-
+      Public Class GetConfigRequestEvent
+          Inherits SocketEventHandler(Of GetConfigRequestEvent)
+  inheritance:
+  - System.Object
+  - Winpeak.Client.Networking.SocketServer.WpSocketResponse
+  - Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  - Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}
+  inheritedMembers:
+  - Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}.HandleResponse(JToken,ResponseMeta)
+  - Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}.OnSocketEvent
+  - Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.Data
+  commentId: F:Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.Data
+  id: Data
+  parent: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: GetConfigRequestEvent.Data
+  fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.Data
+  type: Field
+  source:
+    id: Data
+    path: ''
+    startLine: 1494
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public GetConfigRequestEvent.ConfigData Data
+    return:
+      type: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ConfigData
+    content.vb: Public Data As GetConfigRequestEvent.ConfigData
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.RawData
+  commentId: F:Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.RawData
+  id: RawData
+  parent: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  langs:
+  - csharp
+  - vb
+  name: RawData
+  nameWithType: GetConfigRequestEvent.RawData
+  fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.RawData
+  type: Field
+  source:
+    id: RawData
+    path: ''
+    startLine: 1495
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public JToken RawData
+    return:
+      type: JToken
+    content.vb: Public RawData As JToken
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ParseData(JToken)
+  commentId: M:Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ParseData(JToken)
+  id: ParseData(JToken)
+  parent: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  langs:
+  - csharp
+  - vb
+  name: ParseData(JToken)
+  nameWithType: GetConfigRequestEvent.ParseData(JToken)
+  fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ParseData(JToken)
+  type: Method
+  source:
+    id: ParseData
+    path: ''
+    startLine: 1497
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: protected override GetConfigRequestEvent ParseData(JToken data)
+    parameters:
+    - id: data
+      type: JToken
+    return:
+      type: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+    content.vb: Protected Overrides Function ParseData(data As JToken) As GetConfigRequestEvent
+  overridden: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}.ParseData(JToken)
+  overload: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ParseData*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Winpeak.Client.Networking.SocketServer
+  commentId: N:Winpeak.Client.Networking.SocketServer
+  name: Winpeak.Client.Networking.SocketServer
+  nameWithType: Winpeak.Client.Networking.SocketServer
+  fullName: Winpeak.Client.Networking.SocketServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketResponse
+  commentId: T:Winpeak.Client.Networking.SocketServer.WpSocketResponse
+  parent: Winpeak.Client.Networking.SocketServer
+  name: WpSocketResponse
+  nameWithType: WpSocketResponse
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketResponse
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  commentId: T:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  parent: Winpeak.Client.Networking.SocketServer
+  name: WpSocketEventResponse
+  nameWithType: WpSocketEventResponse
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}
+  commentId: T:Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}
+  parent: Winpeak.Client.Networking.SocketServer
+  definition: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+  name: SocketEventHandler<GetConfigRequestEvent>
+  nameWithType: SocketEventHandler<GetConfigRequestEvent>
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent>
+  nameWithType.vb: SocketEventHandler(Of GetConfigRequestEvent)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent)
+  name.vb: SocketEventHandler(Of GetConfigRequestEvent)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+    name: SocketEventHandler
+    nameWithType: SocketEventHandler
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+    name: GetConfigRequestEvent
+    nameWithType: GetConfigRequestEvent
+    fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+    name: SocketEventHandler
+    nameWithType: SocketEventHandler
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+    name: GetConfigRequestEvent
+    nameWithType: GetConfigRequestEvent
+    fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}.HandleResponse(JToken,ResponseMeta)
+  commentId: M:Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}.HandleResponse(JToken,ResponseMeta)
+  parent: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}
+  definition: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+  name: HandleResponse(JToken, ResponseMeta)
+  nameWithType: SocketEventHandler<GetConfigRequestEvent>.HandleResponse(JToken, ResponseMeta)
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent>.HandleResponse(JToken, ResponseMeta)
+  nameWithType.vb: SocketEventHandler(Of GetConfigRequestEvent).HandleResponse(JToken, ResponseMeta)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent).HandleResponse(JToken, ResponseMeta)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+    name: HandleResponse
+    nameWithType: SocketEventHandler<GetConfigRequestEvent>.HandleResponse
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent>.HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ResponseMeta
+    name: ResponseMeta
+    nameWithType: ResponseMeta
+    fullName: ResponseMeta
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+    name: HandleResponse
+    nameWithType: SocketEventHandler(Of GetConfigRequestEvent).HandleResponse
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent).HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ResponseMeta
+    name: ResponseMeta
+    nameWithType: ResponseMeta
+    fullName: ResponseMeta
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}.OnSocketEvent
+  commentId: P:Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}.OnSocketEvent
+  parent: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}
+  definition: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.OnSocketEvent
+  name: OnSocketEvent
+  nameWithType: SocketEventHandler<GetConfigRequestEvent>.OnSocketEvent
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent>.OnSocketEvent
+  nameWithType.vb: SocketEventHandler(Of GetConfigRequestEvent).OnSocketEvent
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent).OnSocketEvent
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+  commentId: F:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+  parent: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  name: MetaData
+  nameWithType: WpSocketEventResponse.MetaData
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+  commentId: T:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+  name: SocketEventHandler<T>
+  nameWithType: SocketEventHandler<T>
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>
+  nameWithType.vb: SocketEventHandler(Of T)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T)
+  name.vb: SocketEventHandler(Of T)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+    name: SocketEventHandler
+    nameWithType: SocketEventHandler
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+    name: SocketEventHandler
+    nameWithType: SocketEventHandler
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+  commentId: M:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+  isExternal: true
+  name: HandleResponse(JToken, ResponseMeta)
+  nameWithType: SocketEventHandler<T>.HandleResponse(JToken, ResponseMeta)
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.HandleResponse(JToken, ResponseMeta)
+  nameWithType.vb: SocketEventHandler(Of T).HandleResponse(JToken, ResponseMeta)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).HandleResponse(JToken, ResponseMeta)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+    name: HandleResponse
+    nameWithType: SocketEventHandler<T>.HandleResponse
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ResponseMeta
+    name: ResponseMeta
+    nameWithType: ResponseMeta
+    fullName: ResponseMeta
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+    name: HandleResponse
+    nameWithType: SocketEventHandler(Of T).HandleResponse
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ResponseMeta
+    name: ResponseMeta
+    nameWithType: ResponseMeta
+    fullName: ResponseMeta
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.OnSocketEvent
+  commentId: P:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.OnSocketEvent
+  name: OnSocketEvent
+  nameWithType: SocketEventHandler<T>.OnSocketEvent
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.OnSocketEvent
+  nameWithType.vb: SocketEventHandler(Of T).OnSocketEvent
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).OnSocketEvent
+- uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ConfigData
+  commentId: T:Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ConfigData
+  parent: Winpeak.Client.Networking.SocketServer
+  name: GetConfigRequestEvent.ConfigData
+  nameWithType: GetConfigRequestEvent.ConfigData
+  fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ConfigData
+- uid: JToken
+  isExternal: true
+  name: JToken
+  nameWithType: JToken
+  fullName: JToken
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}.ParseData(JToken)
+  commentId: M:Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}.ParseData(JToken)
+  parent: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent}
+  definition: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+  name: ParseData(JToken)
+  nameWithType: SocketEventHandler<GetConfigRequestEvent>.ParseData(JToken)
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent>.ParseData(JToken)
+  nameWithType.vb: SocketEventHandler(Of GetConfigRequestEvent).ParseData(JToken)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent).ParseData(JToken)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+    name: ParseData
+    nameWithType: SocketEventHandler<GetConfigRequestEvent>.ParseData
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent>.ParseData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+    name: ParseData
+    nameWithType: SocketEventHandler(Of GetConfigRequestEvent).ParseData
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent).ParseData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ParseData*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ParseData
+  name: ParseData
+  nameWithType: GetConfigRequestEvent.ParseData
+  fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ParseData
+- uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  commentId: T:Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  parent: Winpeak.Client.Networking.SocketServer
+  name: GetConfigRequestEvent
+  nameWithType: GetConfigRequestEvent
+  fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+  commentId: M:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+  isExternal: true
+  name: ParseData(JToken)
+  nameWithType: SocketEventHandler<T>.ParseData(JToken)
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.ParseData(JToken)
+  nameWithType.vb: SocketEventHandler(Of T).ParseData(JToken)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).ParseData(JToken)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+    name: ParseData
+    nameWithType: SocketEventHandler<T>.ParseData
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.ParseData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+    name: ParseData
+    nameWithType: SocketEventHandler(Of T).ParseData
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).ParseData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

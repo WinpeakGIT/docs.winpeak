@@ -33,28 +33,14 @@
 - uid: Winpeak.Client.API
   name: Winpeak.Client.API
   items:
-  - uid: Winpeak.Client.API.IInternalWinPeakClient
-    name: IInternalWinPeakClient
-  - uid: Winpeak.Client.API.IWinPeakClient
-    name: IWinPeakClient
   - uid: Winpeak.Client.API.IWinPeakNetworkClient
     name: IWinPeakNetworkClient
-  - uid: Winpeak.Client.API.WinPeakAPI
-    name: WinPeakAPI
 - uid: Winpeak.Client.Models
   name: Winpeak.Client.Models
   items:
-  - uid: Winpeak.Client.Models.DamageData
-    name: DamageData
   - uid: Winpeak.Client.Models.ListQueue`1
     name: ListQueue<T>
     name.vb: ListQueue(Of T)
-  - uid: Winpeak.Client.Models.Waypoint
-    name: Waypoint
-  - uid: Winpeak.Client.Models.WaypointExtension
-    name: WaypointExtension
-  - uid: Winpeak.Client.Models.WpCompare
-    name: WpCompare
   - uid: Winpeak.Client.Models.WpPointData
     name: WpPointData
 - uid: Winpeak.Client.Modules
@@ -71,18 +57,41 @@
 - uid: Winpeak.Client.Networking.SocketServer
   name: Winpeak.Client.Networking.SocketServer
   items:
+  - uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+    name: AwaitableDeniableEvent<T>
+    name.vb: AwaitableDeniableEvent(Of T)
+  - uid: Winpeak.Client.Networking.SocketServer.CollisionData
+    name: CollisionData
+  - uid: Winpeak.Client.Networking.SocketServer.CollisionResponseEvent
+    name: CollisionResponseEvent
+  - uid: Winpeak.Client.Networking.SocketServer.DamageData
+    name: DamageData
+  - uid: Winpeak.Client.Networking.SocketServer.DamageResponseEvent
+    name: DamageResponseEvent
+  - uid: Winpeak.Client.Networking.SocketServer.DeniableData
+    name: DeniableData
+  - uid: Winpeak.Client.Networking.SocketServer.EnableData
+    name: EnableData
+  - uid: Winpeak.Client.Networking.SocketServer.EnableStateResponseEvent
+    name: EnableStateResponseEvent
   - uid: Winpeak.Client.Networking.SocketServer.GamePlayer
     name: GamePlayer
+  - uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+    name: GetConfigRequestEvent
+  - uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ConfigData
+    name: GetConfigRequestEvent.ConfigData
+  - uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ObjectsData
+    name: GetConfigRequestEvent.ObjectsData
+  - uid: Winpeak.Client.Networking.SocketServer.IAwaitableEvent
+    name: IAwaitableEvent
+  - uid: Winpeak.Client.Networking.SocketServer.IWpSocketRequest
+    name: IWpSocketRequest
   - uid: Winpeak.Client.Networking.SocketServer.MatchResult
     name: MatchResult
   - uid: Winpeak.Client.Networking.SocketServer.PlayersStats
     name: PlayersStats
   - uid: Winpeak.Client.Networking.SocketServer.RoundResult
     name: RoundResult
-  - uid: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
-    name: ServerConnectionImportantWrapper
-  - uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
-    name: ServerConnectionStatusController
   - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
     name: SocketEventHandler<T>
     name.vb: SocketEventHandler(Of T)
@@ -321,12 +330,8 @@
     name: DrawPointData
   - uid: Winpeak.Client.Scene.ObjPhysType
     name: ObjPhysType
-  - uid: Winpeak.Client.Scene.WinPeakRigidbody
-    name: WinPeakRigidbody
   - uid: Winpeak.Client.Scene.WpGameState
     name: WpGameState
-  - uid: Winpeak.Client.Scene.WpSceneObjectController
-    name: WpSceneObjectController
 - uid: Winpeak.Client.Utils
   name: Winpeak.Client.Utils
   items:
@@ -336,8 +341,6 @@
     name: ConnectionWatcher
   - uid: Winpeak.Client.Utils.DateTimeHelper
     name: DateTimeHelper
-  - uid: Winpeak.Client.Utils.DebugPointRenderer
-    name: DebugPointRenderer
   - uid: Winpeak.Client.Utils.FileWriterService
     name: FileWriterService
   - uid: Winpeak.Client.Utils.GlobalConsts

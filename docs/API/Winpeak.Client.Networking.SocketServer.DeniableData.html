@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DebugPointRenderer
+    <title>Class DeniableData
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DebugPointRenderer
+    <meta name="title" content="Class DeniableData
    ">
-    <meta name="generator" content="docfx 2.58.3.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -66,35 +66,61 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Winpeak.Client.Utils.DebugPointRenderer">
+            <article class="content wrap" id="_content" data-uid="Winpeak.Client.Networking.SocketServer.DeniableData">
   
   
-  <h1 id="Winpeak_Client_Utils_DebugPointRenderer" data-uid="Winpeak.Client.Utils.DebugPointRenderer" class="text-break">Class DebugPointRenderer
+  <h1 id="Winpeak_Client_Networking_SocketServer_DeniableData" data-uid="Winpeak.Client.Networking.SocketServer.DeniableData" class="text-break">Class DeniableData
   </h1>
-  <div class="markdown level0 summary"><p>Debug script</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">DebugPointRenderer</span></div>
+    <div class="level1"><span class="xref">DeniableData</span></div>
+      <div class="level2"><a class="xref" href="Winpeak.Client.Networking.SocketServer.CollisionData.html">CollisionData</a></div>
+      <div class="level2"><a class="xref" href="Winpeak.Client.Networking.SocketServer.DamageData.html">DamageData</a></div>
+      <div class="level2"><a class="xref" href="Winpeak.Client.Networking.SocketServer.EnableData.html">EnableData</a></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Winpeak.Client.Utils.html">Winpeak.Client.Utils</a></h6>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Winpeak.Client.Networking.SocketServer.html">Winpeak.Client.Networking.SocketServer</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Winpeak_Client_Utils_DebugPointRenderer_syntax">Syntax</h5>
+  <h5 id="Winpeak_Client_Networking_SocketServer_DeniableData_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DebugPointRenderer : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class DeniableData</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="Winpeak_Client_Utils_DebugPointRenderer_Container" data-uid="Winpeak.Client.Utils.DebugPointRenderer.Container">Container</h4>
+  <h4 id="Winpeak_Client_Networking_SocketServer_DeniableData_Action" data-uid="Winpeak.Client.Networking.SocketServer.DeniableData.Action">Action</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameObject Container</code></pre>
+    <pre><code class="lang-csharp hljs">public Action Action</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -106,45 +132,110 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">GameObject</span></td>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Winpeak_Client_Networking_SocketServer_DeniableData_RelativeTime_" data-uid="Winpeak.Client.Networking.SocketServer.DeniableData.RelativeTime*"></a>
+  <h4 id="Winpeak_Client_Networking_SocketServer_DeniableData_RelativeTime" data-uid="Winpeak.Client.Networking.SocketServer.DeniableData.RelativeTime">RelativeTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long RelativeTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Winpeak_Client_Networking_SocketServer_DeniableData_IsSimilar_" data-uid="Winpeak.Client.Networking.SocketServer.DeniableData.IsSimilar*"></a>
+  <h4 id="Winpeak_Client_Networking_SocketServer_DeniableData_IsSimilar_Winpeak_Client_Networking_SocketServer_DeniableData_" data-uid="Winpeak.Client.Networking.SocketServer.DeniableData.IsSimilar(Winpeak.Client.Networking.SocketServer.DeniableData)">IsSimilar(DeniableData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsSimilar(DeniableData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Winpeak.Client.Networking.SocketServer.DeniableData.html">DeniableData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Winpeak_Client_Utils_DebugPointRenderer_PointWidth" data-uid="Winpeak.Client.Utils.DebugPointRenderer.PointWidth">PointWidth</h4>
+  <a id="Winpeak_Client_Networking_SocketServer_DeniableData_IsTimeSimilar_" data-uid="Winpeak.Client.Networking.SocketServer.DeniableData.IsTimeSimilar*"></a>
+  <h4 id="Winpeak_Client_Networking_SocketServer_DeniableData_IsTimeSimilar_System_Int64_" data-uid="Winpeak.Client.Networking.SocketServer.DeniableData.IsTimeSimilar(System.Int64)">IsTimeSimilar(Int64)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int PointWidth</code></pre>
+    <pre><code class="lang-csharp hljs">protected bool IsTimeSimilar(long time)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">time</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <h4 id="Winpeak_Client_Utils_DebugPointRenderer_PrimitiveForDebug" data-uid="Winpeak.Client.Utils.DebugPointRenderer.PrimitiveForDebug">PrimitiveForDebug</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameObject PrimitiveForDebug</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -154,7 +245,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">GameObject</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

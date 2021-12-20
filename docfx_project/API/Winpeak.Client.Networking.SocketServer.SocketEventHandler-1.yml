@@ -5,7 +5,7 @@ items:
   id: SocketEventHandler`1
   parent: Winpeak.Client.Networking.SocketServer
   children:
-  - Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,System.Int64,System.Int64)
+  - Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
   - Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.OnSocketEvent
   - Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
   langs:
@@ -18,7 +18,7 @@ items:
   source:
     id: SocketEventHandler
     path: ''
-    startLine: 6080
+    startLine: 1610
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -33,7 +33,11 @@ items:
   - System.Object
   - Winpeak.Client.Networking.SocketServer.WpSocketResponse
   - Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  derivedClasses:
+  - Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  - Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
   inheritedMembers:
+  - Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -50,44 +54,42 @@ items:
   - Class
   fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T)
   name.vb: SocketEventHandler(Of T)
-- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,System.Int64,System.Int64)
-  commentId: M:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,System.Int64,System.Int64)
-  id: HandleResponse(JToken,System.Int64,System.Int64)
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+  commentId: M:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+  id: HandleResponse(JToken,ResponseMeta)
   parent: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
   langs:
   - csharp
   - vb
-  name: HandleResponse(JToken, Int64, Int64)
-  nameWithType: SocketEventHandler<T>.HandleResponse(JToken, Int64, Int64)
-  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.HandleResponse(JToken, System.Int64, System.Int64)
+  name: HandleResponse(JToken, ResponseMeta)
+  nameWithType: SocketEventHandler<T>.HandleResponse(JToken, ResponseMeta)
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.HandleResponse(JToken, ResponseMeta)
   type: Method
   source:
     id: HandleResponse
     path: ''
-    startLine: 6082
+    startLine: 1612
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
   syntax:
-    content: public override void HandleResponse(JToken data, long serverPId, long serverTime)
+    content: public override void HandleResponse(JToken data, ResponseMeta meta)
     parameters:
     - id: data
       type: JToken
-    - id: serverPId
-      type: System.Int64
-    - id: serverTime
-      type: System.Int64
-    content.vb: Public Overrides Sub HandleResponse(data As JToken, serverPId As Long, serverTime As Long)
-  overridden: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,System.Int64,System.Int64)
+    - id: meta
+      type: ResponseMeta
+    content.vb: Public Overrides Sub HandleResponse(data As JToken, meta As ResponseMeta)
+  overridden: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,ResponseMeta)
   overload: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse*
-  nameWithType.vb: SocketEventHandler(Of T).HandleResponse(JToken, Int64, Int64)
+  nameWithType.vb: SocketEventHandler(Of T).HandleResponse(JToken, ResponseMeta)
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).HandleResponse(JToken, System.Int64, System.Int64)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).HandleResponse(JToken, ResponseMeta)
 - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
   commentId: M:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
   id: ParseData(JToken)
@@ -102,7 +104,7 @@ items:
   source:
     id: ParseData
     path: ''
-    startLine: 6087
+    startLine: 1618
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -137,7 +139,7 @@ items:
   source:
     id: OnSocketEvent
     path: ''
-    startLine: 6089
+    startLine: 1620
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -183,6 +185,12 @@ references:
   name: WpSocketEventResponse
   nameWithType: WpSocketEventResponse
   fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+  commentId: F:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+  parent: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  name: MetaData
+  nameWithType: WpSocketEventResponse.MetaData
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -468,15 +476,15 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,System.Int64,System.Int64)
-  commentId: M:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,System.Int64,System.Int64)
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,ResponseMeta)
+  commentId: M:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,ResponseMeta)
   parent: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
   isExternal: true
-  name: HandleResponse(JToken, Int64, Int64)
-  nameWithType: WpSocketEventResponse.HandleResponse(JToken, Int64, Int64)
-  fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken, System.Int64, System.Int64)
+  name: HandleResponse(JToken, ResponseMeta)
+  nameWithType: WpSocketEventResponse.HandleResponse(JToken, ResponseMeta)
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken, ResponseMeta)
   spec.csharp:
-  - uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,System.Int64,System.Int64)
+  - uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,ResponseMeta)
     name: HandleResponse
     nameWithType: WpSocketEventResponse.HandleResponse
     fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse
@@ -491,24 +499,15 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
-    isExternal: true
+  - uid: ResponseMeta
+    name: ResponseMeta
+    nameWithType: ResponseMeta
+    fullName: ResponseMeta
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,System.Int64,System.Int64)
+  - uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,ResponseMeta)
     name: HandleResponse
     nameWithType: WpSocketEventResponse.HandleResponse
     fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse
@@ -523,19 +522,10 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Int64
-    name: Int64
-    nameWithType: Int64
-    fullName: System.Int64
-    isExternal: true
+  - uid: ResponseMeta
+    name: ResponseMeta
+    nameWithType: ResponseMeta
+    fullName: ResponseMeta
   - name: )
     nameWithType: )
     fullName: )
@@ -551,13 +541,11 @@ references:
   name: JToken
   nameWithType: JToken
   fullName: JToken
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
-  isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64
+- uid: ResponseMeta
+  commentId: T:ResponseMeta
+  name: ResponseMeta
+  nameWithType: ResponseMeta
+  fullName: ResponseMeta
 - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData*
   commentId: Overload:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData
   name: ParseData

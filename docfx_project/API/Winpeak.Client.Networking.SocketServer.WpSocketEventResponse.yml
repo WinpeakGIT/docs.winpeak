@@ -5,7 +5,8 @@ items:
   id: WpSocketEventResponse
   parent: Winpeak.Client.Networking.SocketServer
   children:
-  - Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,System.Int64,System.Int64)
+  - Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,ResponseMeta)
+  - Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
   langs:
   - csharp
   - vb
@@ -16,7 +17,7 @@ items:
   source:
     id: WpSocketEventResponse
     path: ''
-    startLine: 6100
+    startLine: 1627
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
@@ -44,34 +45,59 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,System.Int64,System.Int64)
-  commentId: M:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,System.Int64,System.Int64)
-  id: HandleResponse(JToken,System.Int64,System.Int64)
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+  commentId: F:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+  id: MetaData
   parent: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
   langs:
   - csharp
   - vb
-  name: HandleResponse(JToken, Int64, Int64)
-  nameWithType: WpSocketEventResponse.HandleResponse(JToken, Int64, Int64)
-  fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken, System.Int64, System.Int64)
-  type: Method
+  name: MetaData
+  nameWithType: WpSocketEventResponse.MetaData
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+  type: Field
   source:
-    id: HandleResponse
+    id: MetaData
     path: ''
-    startLine: 6102
+    startLine: 1628
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.SocketServer
   syntax:
-    content: public virtual void HandleResponse(JToken data, long serverPId, long serverTime)
+    content: public ResponseMeta MetaData
+    return:
+      type: ResponseMeta
+    content.vb: Public MetaData As ResponseMeta
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,ResponseMeta)
+  commentId: M:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,ResponseMeta)
+  id: HandleResponse(JToken,ResponseMeta)
+  parent: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  langs:
+  - csharp
+  - vb
+  name: HandleResponse(JToken, ResponseMeta)
+  nameWithType: WpSocketEventResponse.HandleResponse(JToken, ResponseMeta)
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken, ResponseMeta)
+  type: Method
+  source:
+    id: HandleResponse
+    path: ''
+    startLine: 1629
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public virtual void HandleResponse(JToken data, ResponseMeta meta)
     parameters:
     - id: data
       type: JToken
-    - id: serverPId
-      type: System.Int64
-    - id: serverTime
-      type: System.Int64
-    content.vb: Public Overridable Sub HandleResponse(data As JToken, serverPId As Long, serverTime As Long)
+    - id: meta
+      type: ResponseMeta
+    content.vb: Public Overridable Sub HandleResponse(data As JToken, meta As ResponseMeta)
   overload: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse*
   modifiers.csharp:
   - public
@@ -383,6 +409,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: ResponseMeta
+  commentId: T:ResponseMeta
+  name: ResponseMeta
+  nameWithType: ResponseMeta
+  fullName: ResponseMeta
 - uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse*
   commentId: Overload:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse
   name: HandleResponse
@@ -393,10 +424,3 @@ references:
   name: JToken
   nameWithType: JToken
   fullName: JToken
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
-  isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64

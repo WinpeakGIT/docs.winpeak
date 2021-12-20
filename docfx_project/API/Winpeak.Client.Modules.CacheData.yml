@@ -15,9 +15,11 @@ items:
   - Winpeak.Client.Modules.CacheData.GetLatestActiveSessionData
   - Winpeak.Client.Modules.CacheData.GetNotificationsDisableFlag
   - Winpeak.Client.Modules.CacheData.GetNotificationsPauseFlag
+  - Winpeak.Client.Modules.CacheData.GetNotifyPanelStatus
   - Winpeak.Client.Modules.CacheData.GetSoundsFlag
   - Winpeak.Client.Modules.CacheData.GetVolumeValue
   - Winpeak.Client.Modules.CacheData.HasActiveSessionData
+  - Winpeak.Client.Modules.CacheData.HideNotifyPanel(System.Boolean)
   - Winpeak.Client.Modules.CacheData.SetActiveSessionData(System.String,System.String,System.String)
   - Winpeak.Client.Modules.CacheData.SetControlsMode(System.Int32)
   - Winpeak.Client.Modules.CacheData.SetNotificationsDisableFlag(System.Boolean)
@@ -34,7 +36,7 @@ items:
   source:
     id: CacheData
     path: ''
-    startLine: 294
+    startLine: 5424
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -75,7 +77,7 @@ items:
   source:
     id: .ctor
     path: ''
-    startLine: 304
+    startLine: 5435
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -101,7 +103,7 @@ items:
   source:
     id: SetActiveSessionData
     path: ''
-    startLine: 308
+    startLine: 5439
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -136,7 +138,7 @@ items:
   source:
     id: SetVolumeValue
     path: ''
-    startLine: 313
+    startLine: 5444
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -167,7 +169,7 @@ items:
   source:
     id: GetVolumeValue
     path: ''
-    startLine: 317
+    startLine: 5448
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -197,7 +199,7 @@ items:
   source:
     id: SetSoundsFlag
     path: ''
-    startLine: 325
+    startLine: 5456
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -228,7 +230,7 @@ items:
   source:
     id: GetSoundsFlag
     path: ''
-    startLine: 329
+    startLine: 5460
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -258,7 +260,7 @@ items:
   source:
     id: SetNotificationsPauseFlag
     path: ''
-    startLine: 337
+    startLine: 5468
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -289,7 +291,7 @@ items:
   source:
     id: GetNotificationsPauseFlag
     path: ''
-    startLine: 341
+    startLine: 5472
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -319,7 +321,7 @@ items:
   source:
     id: SetNotificationsDisableFlag
     path: ''
-    startLine: 349
+    startLine: 5480
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -350,7 +352,7 @@ items:
   source:
     id: GetNotificationsDisableFlag
     path: ''
-    startLine: 353
+    startLine: 5484
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -380,7 +382,7 @@ items:
   source:
     id: SetControlsMode
     path: ''
-    startLine: 361
+    startLine: 5492
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -411,7 +413,7 @@ items:
   source:
     id: GetControlsMode
     path: ''
-    startLine: 365
+    startLine: 5496
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -441,7 +443,7 @@ items:
   source:
     id: GetLatestActiveSessionData
     path: ''
-    startLine: 373
+    startLine: 5504
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -471,7 +473,7 @@ items:
   source:
     id: ClearActiveSessionData
     path: ''
-    startLine: 378
+    startLine: 5509
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -499,7 +501,7 @@ items:
   source:
     id: HasActiveSessionData
     path: ''
-    startLine: 382
+    startLine: 5513
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -529,7 +531,7 @@ items:
   source:
     id: GetActiveSessionLogin
     path: ''
-    startLine: 391
+    startLine: 5522
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -559,7 +561,7 @@ items:
   source:
     id: GetActiveSessionPassword
     path: ''
-    startLine: 397
+    startLine: 5528
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -589,7 +591,7 @@ items:
   source:
     id: GetActiveSession
     path: ''
-    startLine: 403
+    startLine: 5534
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -619,7 +621,7 @@ items:
   source:
     id: Clear
     path: ''
-    startLine: 409
+    startLine: 5540
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Modules
@@ -629,6 +631,67 @@ items:
   overload: Winpeak.Client.Modules.CacheData.Clear*
   implements:
   - Winpeak.Client.Modules.ICacheData.Clear
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.HideNotifyPanel(System.Boolean)
+  commentId: M:Winpeak.Client.Modules.CacheData.HideNotifyPanel(System.Boolean)
+  id: HideNotifyPanel(System.Boolean)
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: HideNotifyPanel(Boolean)
+  nameWithType: CacheData.HideNotifyPanel(Boolean)
+  fullName: Winpeak.Client.Modules.CacheData.HideNotifyPanel(System.Boolean)
+  type: Method
+  source:
+    id: HideNotifyPanel
+    path: ''
+    startLine: 5544
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public void HideNotifyPanel(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub HideNotifyPanel(value As Boolean)
+  overload: Winpeak.Client.Modules.CacheData.HideNotifyPanel*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.HideNotifyPanel(System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Modules.CacheData.GetNotifyPanelStatus
+  commentId: M:Winpeak.Client.Modules.CacheData.GetNotifyPanelStatus
+  id: GetNotifyPanelStatus
+  parent: Winpeak.Client.Modules.CacheData
+  langs:
+  - csharp
+  - vb
+  name: GetNotifyPanelStatus()
+  nameWithType: CacheData.GetNotifyPanelStatus()
+  fullName: Winpeak.Client.Modules.CacheData.GetNotifyPanelStatus()
+  type: Method
+  source:
+    id: GetNotifyPanelStatus
+    path: ''
+    startLine: 5548
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Modules
+  syntax:
+    content: public bool GetNotifyPanelStatus()
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetNotifyPanelStatus As Boolean
+  overload: Winpeak.Client.Modules.CacheData.GetNotifyPanelStatus*
+  implements:
+  - Winpeak.Client.Modules.ICacheData.GetNotifyPanelStatus
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -1682,6 +1745,83 @@ references:
     name: Clear
     nameWithType: ICacheData.Clear
     fullName: Winpeak.Client.Modules.ICacheData.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.HideNotifyPanel*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.HideNotifyPanel
+  name: HideNotifyPanel
+  nameWithType: CacheData.HideNotifyPanel
+  fullName: Winpeak.Client.Modules.CacheData.HideNotifyPanel
+- uid: Winpeak.Client.Modules.ICacheData.HideNotifyPanel(System.Boolean)
+  commentId: M:Winpeak.Client.Modules.ICacheData.HideNotifyPanel(System.Boolean)
+  parent: Winpeak.Client.Modules.ICacheData
+  isExternal: true
+  name: HideNotifyPanel(Boolean)
+  nameWithType: ICacheData.HideNotifyPanel(Boolean)
+  fullName: Winpeak.Client.Modules.ICacheData.HideNotifyPanel(System.Boolean)
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.HideNotifyPanel(System.Boolean)
+    name: HideNotifyPanel
+    nameWithType: ICacheData.HideNotifyPanel
+    fullName: Winpeak.Client.Modules.ICacheData.HideNotifyPanel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.HideNotifyPanel(System.Boolean)
+    name: HideNotifyPanel
+    nameWithType: ICacheData.HideNotifyPanel
+    fullName: Winpeak.Client.Modules.ICacheData.HideNotifyPanel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Modules.CacheData.GetNotifyPanelStatus*
+  commentId: Overload:Winpeak.Client.Modules.CacheData.GetNotifyPanelStatus
+  name: GetNotifyPanelStatus
+  nameWithType: CacheData.GetNotifyPanelStatus
+  fullName: Winpeak.Client.Modules.CacheData.GetNotifyPanelStatus
+- uid: Winpeak.Client.Modules.ICacheData.GetNotifyPanelStatus
+  commentId: M:Winpeak.Client.Modules.ICacheData.GetNotifyPanelStatus
+  parent: Winpeak.Client.Modules.ICacheData
+  name: GetNotifyPanelStatus()
+  nameWithType: ICacheData.GetNotifyPanelStatus()
+  fullName: Winpeak.Client.Modules.ICacheData.GetNotifyPanelStatus()
+  spec.csharp:
+  - uid: Winpeak.Client.Modules.ICacheData.GetNotifyPanelStatus
+    name: GetNotifyPanelStatus
+    nameWithType: ICacheData.GetNotifyPanelStatus
+    fullName: Winpeak.Client.Modules.ICacheData.GetNotifyPanelStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Modules.ICacheData.GetNotifyPanelStatus
+    name: GetNotifyPanelStatus
+    nameWithType: ICacheData.GetNotifyPanelStatus
+    fullName: Winpeak.Client.Modules.ICacheData.GetNotifyPanelStatus
   - name: (
     nameWithType: (
     fullName: (
