@@ -61,7 +61,7 @@ items:
   syntax:
     content: public readonly WpPointData PointData
     return:
-      type: Global.WpPointData
+      type: WpPointData
     content.vb: Public ReadOnly PointData As WpPointData
   modifiers.csharp:
   - public
@@ -151,7 +151,7 @@ items:
     - id: timeMs
       type: System.Int64
     - id: serverCoordinate
-      type: Global.Vector3
+      type: Vector3
     - id: width
       type: System.Single
     content.vb: Public Sub New(timeMs As Long, serverCoordinate As Vector3, width As Single)
@@ -471,7 +471,7 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Global.WpPointData
+- uid: WpPointData
   isExternal: true
   name: WpPointData
   nameWithType: WpPointData
@@ -495,7 +495,7 @@ references:
   name: DrawPointData
   nameWithType: DrawPointData.DrawPointData
   fullName: Winpeak.Client.Scene.DrawPointData.DrawPointData
-- uid: Global.Vector3
+- uid: Vector3
   isExternal: true
   name: Vector3
   nameWithType: Vector3

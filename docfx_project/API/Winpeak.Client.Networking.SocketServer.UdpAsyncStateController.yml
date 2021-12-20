@@ -68,7 +68,7 @@ items:
   syntax:
     content: protected readonly UdpClient m_udpClient
     return:
-      type: Global.UdpClient
+      type: UdpClient
     content.vb: Protected ReadOnly m_udpClient As UdpClient
   modifiers.csharp:
   - protected
@@ -97,7 +97,7 @@ items:
   syntax:
     content: protected IPEndPoint m_controlIpEndPoint
     return:
-      type: Global.IPEndPoint
+      type: IPEndPoint
     content.vb: Protected m_controlIpEndPoint As IPEndPoint
   modifiers.csharp:
   - protected
@@ -183,9 +183,9 @@ items:
     content: protected UdpAsyncStateController(UdpClient udpClient, IPEndPoint controlIpEndPoint)
     parameters:
     - id: udpClient
-      type: Global.UdpClient
+      type: UdpClient
     - id: controlIpEndPoint
-      type: Global.IPEndPoint
+      type: IPEndPoint
     content.vb: Protected Sub New(udpClient As UdpClient, controlIpEndPoint As IPEndPoint)
   overload: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController.#ctor*
   modifiers.csharp:
@@ -490,12 +490,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Global.UdpClient
+- uid: UdpClient
   isExternal: true
   name: UdpClient
   nameWithType: UdpClient
   fullName: UdpClient
-- uid: Global.IPEndPoint
+- uid: IPEndPoint
   isExternal: true
   name: IPEndPoint
   nameWithType: IPEndPoint

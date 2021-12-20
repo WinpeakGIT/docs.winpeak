@@ -68,9 +68,9 @@ items:
     content: public UdpAsyncSendState(UdpClient sender, IPEndPoint controlEndPoint)
     parameters:
     - id: sender
-      type: Global.UdpClient
+      type: UdpClient
     - id: controlEndPoint
-      type: Global.IPEndPoint
+      type: IPEndPoint
     content.vb: Public Sub New(sender As UdpClient, controlEndPoint As IPEndPoint)
   overload: Winpeak.Client.Networking.SocketServer.UdpAsyncSendState.#ctor*
   modifiers.csharp:
@@ -410,12 +410,12 @@ references:
   name: UdpAsyncSendState
   nameWithType: UdpAsyncSendState.UdpAsyncSendState
   fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncSendState.UdpAsyncSendState
-- uid: Global.UdpClient
+- uid: UdpClient
   isExternal: true
   name: UdpClient
   nameWithType: UdpClient
   fullName: UdpClient
-- uid: Global.IPEndPoint
+- uid: IPEndPoint
   isExternal: true
   name: IPEndPoint
   nameWithType: IPEndPoint
