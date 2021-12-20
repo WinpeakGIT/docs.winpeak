@@ -87,7 +87,7 @@ items:
     content: HTTPMethods Method { get; }
     parameters: []
     return:
-      type: HTTPMethods
+      type: Global.HTTPMethods
     content.vb: ReadOnly Property Method As HTTPMethods
   overload: Winpeak.Client.Networking.WebServer.IWebRequest.Method*
   modifiers.csharp:
@@ -145,7 +145,7 @@ items:
     content: Texture2D Texture { get; }
     parameters: []
     return:
-      type: Texture2D
+      type: Global.Texture2D
     content.vb: ReadOnly Property Texture As Texture2D
   overload: Winpeak.Client.Networking.WebServer.IWebRequest.Texture*
   modifiers.csharp:
@@ -198,9 +198,9 @@ items:
     content: void OnRequestFinished(HTTPRequest originalRequest, HTTPResponse response)
     parameters:
     - id: originalRequest
-      type: HTTPRequest
+      type: Global.HTTPRequest
     - id: response
-      type: HTTPResponse
+      type: Global.HTTPResponse
     content.vb: Sub OnRequestFinished(originalRequest As HTTPRequest, response As HTTPResponse)
   overload: Winpeak.Client.Networking.WebServer.IWebRequest.OnRequestFinished*
 - uid: Winpeak.Client.Networking.WebServer.IWebRequest.Act
@@ -290,7 +290,7 @@ references:
   name: Method
   nameWithType: IWebRequest.Method
   fullName: Winpeak.Client.Networking.WebServer.IWebRequest.Method
-- uid: HTTPMethods
+- uid: Global.HTTPMethods
   isExternal: true
   name: HTTPMethods
   nameWithType: HTTPMethods
@@ -312,7 +312,7 @@ references:
   name: Texture
   nameWithType: IWebRequest.Texture
   fullName: Winpeak.Client.Networking.WebServer.IWebRequest.Texture
-- uid: Texture2D
+- uid: Global.Texture2D
   isExternal: true
   name: Texture2D
   nameWithType: Texture2D
@@ -444,12 +444,12 @@ references:
   name: OnRequestFinished
   nameWithType: IWebRequest.OnRequestFinished
   fullName: Winpeak.Client.Networking.WebServer.IWebRequest.OnRequestFinished
-- uid: HTTPRequest
+- uid: Global.HTTPRequest
   isExternal: true
   name: HTTPRequest
   nameWithType: HTTPRequest
   fullName: HTTPRequest
-- uid: HTTPResponse
+- uid: Global.HTTPResponse
   isExternal: true
   name: HTTPResponse
   nameWithType: HTTPResponse

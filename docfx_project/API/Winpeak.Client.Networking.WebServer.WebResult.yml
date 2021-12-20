@@ -148,7 +148,7 @@ items:
     content: public void SetResponse(HTTPResponse response)
     parameters:
     - id: response
-      type: HTTPResponse
+      type: Global.HTTPResponse
     content.vb: Public Sub SetResponse(response As HTTPResponse)
   overload: Winpeak.Client.Networking.WebServer.WebResult.SetResponse*
   modifiers.csharp:
@@ -177,7 +177,7 @@ items:
     content: protected virtual void HandleResponse(HTTPResponse response)
     parameters:
     - id: response
-      type: HTTPResponse
+      type: Global.HTTPResponse
     content.vb: Protected Overridable Sub HandleResponse(response As HTTPResponse)
   overload: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse*
   modifiers.csharp:
@@ -564,7 +564,7 @@ references:
   name: SetResponse
   nameWithType: WebResult.SetResponse
   fullName: Winpeak.Client.Networking.WebServer.WebResult.SetResponse
-- uid: HTTPResponse
+- uid: Global.HTTPResponse
   isExternal: true
   name: HTTPResponse
   nameWithType: HTTPResponse

@@ -1,40 +1,35 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
-  commentId: T:Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
-  id: PasswordRecoveryResult
-  parent: Winpeak.Client.Networking.WebServer
+- uid: Global.ResponseMeta
+  commentId: T:Global.ResponseMeta
+  id: ResponseMeta
+  parent: Global
   children:
-  - Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.HandleResponse(HTTPResponse)
-  - Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Result
+  - Global.ResponseMeta.#ctor(System.Int64,System.Int64,System.String,System.Collections.Generic.List{System.String})
+  - Global.ResponseMeta.ActionsList
+  - Global.ResponseMeta.PacketType
+  - Global.ResponseMeta.ServerPId
+  - Global.ResponseMeta.ServerRelativeTime
   langs:
   - csharp
   - vb
-  name: PasswordRecoveryResult
-  nameWithType: PasswordRecoveryResult
-  fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
+  name: ResponseMeta
+  nameWithType: ResponseMeta
+  fullName: ResponseMeta
   type: Class
   source:
-    id: PasswordRecoveryResult
+    id: ResponseMeta
     path: ''
-    startLine: 2717
+    startLine: 1586
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
+  namespace: Global
   syntax:
-    content: 'public class PasswordRecoveryResult : WebResult'
-    content.vb: >-
-      Public Class PasswordRecoveryResult
-          Inherits WebResult
+    content: public class ResponseMeta
+    content.vb: Public Class ResponseMeta
   inheritance:
   - System.Object
-  - Winpeak.Client.Networking.WebServer.WebResult
   inheritedMembers:
-  - Winpeak.Client.Networking.WebServer.WebResult.Error
-  - Winpeak.Client.Networking.WebServer.WebResult.m_state
-  - Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-  - Winpeak.Client.Networking.WebServer.WebResult.HasError
-  - Winpeak.Client.Networking.WebServer.WebResult.State
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -48,75 +43,176 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Result
-  commentId: P:Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Result
-  id: Result
-  parent: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
+- uid: Global.ResponseMeta.ServerPId
+  commentId: P:Global.ResponseMeta.ServerPId
+  id: ServerPId
+  parent: Global.ResponseMeta
   langs:
   - csharp
   - vb
-  name: Result
-  nameWithType: PasswordRecoveryResult.Result
-  fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Result
+  name: ServerPId
+  nameWithType: ResponseMeta.ServerPId
+  fullName: ResponseMeta.ServerPId
   type: Property
   source:
-    id: Result
+    id: ServerPId
     path: ''
-    startLine: 2724
+    startLine: 1587
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
+  namespace: Global
   syntax:
-    content: public PasswordRecoveryResult.Data Result { get; }
+    content: public long ServerPId { get; }
     parameters: []
     return:
-      type: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Data
-    content.vb: Public ReadOnly Property Result As PasswordRecoveryResult.Data
-  overload: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Result*
+      type: System.Int64
+    content.vb: Public ReadOnly Property ServerPId As Long
+  overload: Global.ResponseMeta.ServerPId*
   modifiers.csharp:
   - public
   - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.HandleResponse(HTTPResponse)
-  commentId: M:Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.HandleResponse(HTTPResponse)
-  id: HandleResponse(HTTPResponse)
-  parent: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult
+- uid: Global.ResponseMeta.ServerRelativeTime
+  commentId: P:Global.ResponseMeta.ServerRelativeTime
+  id: ServerRelativeTime
+  parent: Global.ResponseMeta
   langs:
   - csharp
   - vb
-  name: HandleResponse(HTTPResponse)
-  nameWithType: PasswordRecoveryResult.HandleResponse(HTTPResponse)
-  fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.HandleResponse(HTTPResponse)
-  type: Method
+  name: ServerRelativeTime
+  nameWithType: ResponseMeta.ServerRelativeTime
+  fullName: ResponseMeta.ServerRelativeTime
+  type: Property
   source:
-    id: HandleResponse
+    id: ServerRelativeTime
     path: ''
-    startLine: 2726
+    startLine: 1588
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
+  namespace: Global
   syntax:
-    content: protected override void HandleResponse(HTTPResponse response)
-    parameters:
-    - id: response
-      type: Global.HTTPResponse
-    content.vb: Protected Overrides Sub HandleResponse(response As HTTPResponse)
-  overridden: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
-  overload: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.HandleResponse*
+    content: public long ServerRelativeTime { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property ServerRelativeTime As Long
+  overload: Global.ResponseMeta.ServerRelativeTime*
   modifiers.csharp:
-  - protected
-  - override
+  - public
+  - get
   modifiers.vb:
-  - Protected
-  - Overrides
+  - Public
+  - ReadOnly
+- uid: Global.ResponseMeta.PacketType
+  commentId: P:Global.ResponseMeta.PacketType
+  id: PacketType
+  parent: Global.ResponseMeta
+  langs:
+  - csharp
+  - vb
+  name: PacketType
+  nameWithType: ResponseMeta.PacketType
+  fullName: ResponseMeta.PacketType
+  type: Property
+  source:
+    id: PacketType
+    path: ''
+    startLine: 1589
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public string PacketType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PacketType As String
+  overload: Global.ResponseMeta.PacketType*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Global.ResponseMeta.ActionsList
+  commentId: P:Global.ResponseMeta.ActionsList
+  id: ActionsList
+  parent: Global.ResponseMeta
+  langs:
+  - csharp
+  - vb
+  name: ActionsList
+  nameWithType: ResponseMeta.ActionsList
+  fullName: ResponseMeta.ActionsList
+  type: Property
+  source:
+    id: ActionsList
+    path: ''
+    startLine: 1590
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public List<string> ActionsList { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property ActionsList As List(Of String)
+  overload: Global.ResponseMeta.ActionsList*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Global.ResponseMeta.#ctor(System.Int64,System.Int64,System.String,System.Collections.Generic.List{System.String})
+  commentId: M:Global.ResponseMeta.#ctor(System.Int64,System.Int64,System.String,System.Collections.Generic.List{System.String})
+  id: '#ctor(System.Int64,System.Int64,System.String,System.Collections.Generic.List{System.String})'
+  parent: Global.ResponseMeta
+  langs:
+  - csharp
+  - vb
+  name: ResponseMeta(Int64, Int64, String, List<String>)
+  nameWithType: ResponseMeta.ResponseMeta(Int64, Int64, String, List<String>)
+  fullName: ResponseMeta.ResponseMeta(System.Int64, System.Int64, System.String, System.Collections.Generic.List<System.String>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1592
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public ResponseMeta(long pid, long relativeTime, string packetType, List<string> actions)
+    parameters:
+    - id: pid
+      type: System.Int64
+    - id: relativeTime
+      type: System.Int64
+    - id: packetType
+      type: System.String
+    - id: actions
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Sub New(pid As Long, relativeTime As Long, packetType As String, actions As List(Of String))
+  overload: Global.ResponseMeta.#ctor*
+  nameWithType.vb: ResponseMeta.ResponseMeta(Int64, Int64, String, List(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: ResponseMeta.ResponseMeta(System.Int64, System.Int64, System.String, System.Collections.Generic.List(Of System.String))
+  name.vb: ResponseMeta(Int64, Int64, String, List(Of String))
 references:
-- uid: Winpeak.Client.Networking.WebServer
-  commentId: N:Winpeak.Client.Networking.WebServer
-  name: Winpeak.Client.Networking.WebServer
-  nameWithType: Winpeak.Client.Networking.WebServer
-  fullName: Winpeak.Client.Networking.WebServer
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -124,75 +220,6 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: Winpeak.Client.Networking.WebServer.WebResult
-  commentId: T:Winpeak.Client.Networking.WebServer.WebResult
-  parent: Winpeak.Client.Networking.WebServer
-  name: WebResult
-  nameWithType: WebResult
-  fullName: Winpeak.Client.Networking.WebServer.WebResult
-- uid: Winpeak.Client.Networking.WebServer.WebResult.Error
-  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.Error
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: Error
-  nameWithType: WebResult.Error
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.Error
-- uid: Winpeak.Client.Networking.WebServer.WebResult.m_state
-  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_state
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: m_state
-  nameWithType: WebResult.m_state
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_state
-- uid: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  isExternal: true
-  name: SetResponse(HTTPResponse)
-  nameWithType: WebResult.SetResponse(HTTPResponse)
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-  spec.csharp:
-  - uid: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-    name: SetResponse
-    nameWithType: WebResult.SetResponse
-    fullName: Winpeak.Client.Networking.WebServer.WebResult.SetResponse
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Global.HTTPResponse
-    name: HTTPResponse
-    nameWithType: HTTPResponse
-    fullName: HTTPResponse
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
-    name: SetResponse
-    nameWithType: WebResult.SetResponse
-    fullName: Winpeak.Client.Networking.WebServer.WebResult.SetResponse
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Global.HTTPResponse
-    name: HTTPResponse
-    nameWithType: HTTPResponse
-    fullName: HTTPResponse
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Winpeak.Client.Networking.WebServer.WebResult.HasError
-  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.HasError
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: HasError
-  nameWithType: WebResult.HasError
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.HasError
-- uid: Winpeak.Client.Networking.WebServer.WebResult.State
-  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.State
-  parent: Winpeak.Client.Networking.WebServer.WebResult
-  name: State
-  nameWithType: WebResult.State
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.State
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -478,63 +505,131 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Result*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Result
-  name: Result
-  nameWithType: PasswordRecoveryResult.Result
-  fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Result
-- uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Data
-  commentId: T:Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Data
-  parent: Winpeak.Client.Networking.WebServer
-  name: PasswordRecoveryResult.Data
-  nameWithType: PasswordRecoveryResult.Data
-  fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.Data
-- uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
-  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
-  parent: Winpeak.Client.Networking.WebServer.WebResult
+- uid: Global.ResponseMeta.ServerPId*
+  commentId: Overload:Global.ResponseMeta.ServerPId
+  name: ServerPId
+  nameWithType: ResponseMeta.ServerPId
+  fullName: ResponseMeta.ServerPId
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
   isExternal: true
-  name: HandleResponse(HTTPResponse)
-  nameWithType: WebResult.HandleResponse(HTTPResponse)
-  fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Global.ResponseMeta.ServerRelativeTime*
+  commentId: Overload:Global.ResponseMeta.ServerRelativeTime
+  name: ServerRelativeTime
+  nameWithType: ResponseMeta.ServerRelativeTime
+  fullName: ResponseMeta.ServerRelativeTime
+- uid: Global.ResponseMeta.PacketType*
+  commentId: Overload:Global.ResponseMeta.PacketType
+  name: PacketType
+  nameWithType: ResponseMeta.PacketType
+  fullName: ResponseMeta.PacketType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Global.ResponseMeta.ActionsList*
+  commentId: Overload:Global.ResponseMeta.ActionsList
+  name: ActionsList
+  nameWithType: ResponseMeta.ActionsList
+  fullName: ResponseMeta.ActionsList
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
   spec.csharp:
-  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
-    name: HandleResponse
-    nameWithType: WebResult.HandleResponse
-    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Global.HTTPResponse
-    name: HTTPResponse
-    nameWithType: HTTPResponse
-    fullName: HTTPResponse
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
   spec.vb:
-  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
-    name: HandleResponse
-    nameWithType: WebResult.HandleResponse
-    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Global.HTTPResponse
-    name: HTTPResponse
-    nameWithType: HTTPResponse
-    fullName: HTTPResponse
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
     isExternal: true
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.HandleResponse*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.HandleResponse
-  name: HandleResponse
-  nameWithType: PasswordRecoveryResult.HandleResponse
-  fullName: Winpeak.Client.Networking.WebServer.PasswordRecoveryResult.HandleResponse
-- uid: Global.HTTPResponse
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
   isExternal: true
-  name: HTTPResponse
-  nameWithType: HTTPResponse
-  fullName: HTTPResponse
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Global.ResponseMeta.#ctor*
+  commentId: Overload:Global.ResponseMeta.#ctor
+  name: ResponseMeta
+  nameWithType: ResponseMeta.ResponseMeta
+  fullName: ResponseMeta.ResponseMeta

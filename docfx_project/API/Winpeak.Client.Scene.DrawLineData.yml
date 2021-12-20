@@ -61,7 +61,7 @@ items:
   syntax:
     content: public readonly WpPointData StartPoint
     return:
-      type: WpPointData
+      type: Global.WpPointData
     content.vb: Public ReadOnly StartPoint As WpPointData
   modifiers.csharp:
   - public
@@ -90,7 +90,7 @@ items:
   syntax:
     content: public readonly WpPointData EndPoint
     return:
-      type: WpPointData
+      type: Global.WpPointData
     content.vb: Public ReadOnly EndPoint As WpPointData
   modifiers.csharp:
   - public
@@ -182,9 +182,9 @@ items:
     - id: width
       type: System.Single
     - id: endPoint
-      type: WpPointData
+      type: Global.WpPointData
     - id: startPoint
-      type: WpPointData
+      type: Global.WpPointData
     content.vb: Public Sub New(timeMs As Long, width As Single, endPoint As WpPointData, startPoint As WpPointData)
   overload: Winpeak.Client.Scene.DrawLineData.#ctor*
   modifiers.csharp:
@@ -465,7 +465,7 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: WpPointData
+- uid: Global.WpPointData
   isExternal: true
   name: WpPointData
   nameWithType: WpPointData
