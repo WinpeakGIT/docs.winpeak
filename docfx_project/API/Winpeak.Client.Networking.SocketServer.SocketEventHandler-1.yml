@@ -76,9 +76,9 @@ items:
     content: public override void HandleResponse(JToken data, ResponseMeta meta)
     parameters:
     - id: data
-      type: JToken
+      type: Global.JToken
     - id: meta
-      type: ResponseMeta
+      type: Global.ResponseMeta
     content.vb: Public Overrides Sub HandleResponse(data As JToken, meta As ResponseMeta)
   overridden: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,ResponseMeta)
   overload: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse*
@@ -112,7 +112,7 @@ items:
     content: protected virtual T ParseData(JToken data)
     parameters:
     - id: data
-      type: JToken
+      type: Global.JToken
     return:
       type: '{T}'
     content.vb: Protected Overridable Function ParseData(data As JToken) As T
@@ -491,7 +491,7 @@ references:
   - name: (
     nameWithType: (
     fullName: (
-  - uid: JToken
+  - uid: Global.JToken
     name: JToken
     nameWithType: JToken
     fullName: JToken
@@ -499,7 +499,7 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: ResponseMeta
+  - uid: Global.ResponseMeta
     name: ResponseMeta
     nameWithType: ResponseMeta
     fullName: ResponseMeta
@@ -514,7 +514,7 @@ references:
   - name: (
     nameWithType: (
     fullName: (
-  - uid: JToken
+  - uid: Global.JToken
     name: JToken
     nameWithType: JToken
     fullName: JToken
@@ -522,7 +522,7 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: ResponseMeta
+  - uid: Global.ResponseMeta
     name: ResponseMeta
     nameWithType: ResponseMeta
     fullName: ResponseMeta
@@ -536,13 +536,13 @@ references:
   fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.HandleResponse
   nameWithType.vb: SocketEventHandler(Of T).HandleResponse
   fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).HandleResponse
-- uid: JToken
+- uid: Global.JToken
   isExternal: true
   name: JToken
   nameWithType: JToken
   fullName: JToken
-- uid: ResponseMeta
-  commentId: T:ResponseMeta
+- uid: Global.ResponseMeta
+  commentId: T:Global.ResponseMeta
   name: ResponseMeta
   nameWithType: ResponseMeta
   fullName: ResponseMeta

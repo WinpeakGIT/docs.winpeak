@@ -177,9 +177,9 @@ items:
     content: public abstract void OnRequestFinished(HTTPRequest originalRequest, HTTPResponse response)
     parameters:
     - id: originalRequest
-      type: HTTPRequest
+      type: Global.HTTPRequest
     - id: response
-      type: HTTPResponse
+      type: Global.HTTPResponse
     content.vb: Public MustOverride Sub OnRequestFinished(originalRequest As HTTPRequest, response As HTTPResponse)
   overload: Winpeak.Client.Networking.WebServer.WebRequest.OnRequestFinished*
   implements:
@@ -333,7 +333,7 @@ items:
     content: public virtual HTTPMethods Method { get; }
     parameters: []
     return:
-      type: HTTPMethods
+      type: Global.HTTPMethods
     content.vb: Public Overridable ReadOnly Property Method As HTTPMethods
   overload: Winpeak.Client.Networking.WebServer.WebRequest.Method*
   implements:
@@ -401,7 +401,7 @@ items:
     content: public Texture2D Texture { get; protected set; }
     parameters: []
     return:
-      type: Texture2D
+      type: Global.Texture2D
     content.vb: Public Property Texture As Texture2D
   overload: Winpeak.Client.Networking.WebServer.WebRequest.Texture*
   implements:
@@ -917,7 +917,7 @@ references:
   - name: (
     nameWithType: (
     fullName: (
-  - uid: HTTPRequest
+  - uid: Global.HTTPRequest
     name: HTTPRequest
     nameWithType: HTTPRequest
     fullName: HTTPRequest
@@ -925,7 +925,7 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: HTTPResponse
+  - uid: Global.HTTPResponse
     name: HTTPResponse
     nameWithType: HTTPResponse
     fullName: HTTPResponse
@@ -941,7 +941,7 @@ references:
   - name: (
     nameWithType: (
     fullName: (
-  - uid: HTTPRequest
+  - uid: Global.HTTPRequest
     name: HTTPRequest
     nameWithType: HTTPRequest
     fullName: HTTPRequest
@@ -949,7 +949,7 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: HTTPResponse
+  - uid: Global.HTTPResponse
     name: HTTPResponse
     nameWithType: HTTPResponse
     fullName: HTTPResponse
@@ -957,12 +957,12 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: HTTPRequest
+- uid: Global.HTTPRequest
   isExternal: true
   name: HTTPRequest
   nameWithType: HTTPRequest
   fullName: HTTPRequest
-- uid: HTTPResponse
+- uid: Global.HTTPResponse
   isExternal: true
   name: HTTPResponse
   nameWithType: HTTPResponse
@@ -1011,7 +1011,7 @@ references:
   name: Method
   nameWithType: IWebRequest.Method
   fullName: Winpeak.Client.Networking.WebServer.IWebRequest.Method
-- uid: HTTPMethods
+- uid: Global.HTTPMethods
   isExternal: true
   name: HTTPMethods
   nameWithType: HTTPMethods
@@ -1045,7 +1045,7 @@ references:
   name: Texture
   nameWithType: IWebRequest.Texture
   fullName: Winpeak.Client.Networking.WebServer.IWebRequest.Texture
-- uid: Texture2D
+- uid: Global.Texture2D
   isExternal: true
   name: Texture2D
   nameWithType: Texture2D

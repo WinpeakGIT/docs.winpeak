@@ -63,7 +63,7 @@ items:
   syntax:
     content: public readonly Vector3 ServerCoordinate
     return:
-      type: Vector3
+      type: Global.Vector3
     content.vb: Public ReadOnly ServerCoordinate As Vector3
   modifiers.csharp:
   - public
@@ -92,7 +92,7 @@ items:
   syntax:
     content: public readonly Vector3 UnityCoordinate
     return:
-      type: Vector3
+      type: Global.Vector3
     content.vb: Public ReadOnly UnityCoordinate As Vector3
   modifiers.csharp:
   - public
@@ -122,7 +122,7 @@ items:
     content: public WpPointData(Vector3 serverCoordinate)
     parameters:
     - id: serverCoordinate
-      type: Vector3
+      type: Global.Vector3
     content.vb: Public Sub New(serverCoordinate As Vector3)
   overload: Winpeak.Client.Models.WpPointData.#ctor*
   modifiers.csharp:
@@ -460,7 +460,7 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Vector3
+- uid: Global.Vector3
   isExternal: true
   name: Vector3
   nameWithType: Vector3

@@ -116,7 +116,7 @@ items:
     - id: timeMs
       type: System.Int64
     - id: c
-      type: Color
+      type: Global.Color
     content.vb: Public Sub Init(x1 As Single, x2 As Single, y1 As Single, y2 As Single, width As Single, timeMs As Long, c As Color)
   overload: Winpeak.Client.Utils.SelfDestroyingLineRender.Init*
   modifiers.csharp:
@@ -145,7 +145,7 @@ items:
     content: public void Init(DrawLineData data)
     parameters:
     - id: data
-      type: DrawLineData
+      type: Global.DrawLineData
     content.vb: Public Sub Init(data As DrawLineData)
   overload: Winpeak.Client.Utils.SelfDestroyingLineRender.Init*
   modifiers.csharp:
@@ -279,7 +279,7 @@ references:
   - name: (
     nameWithType: (
     fullName: (
-  - uid: DrawPointData
+  - uid: Global.DrawPointData
     name: DrawPointData
     nameWithType: DrawPointData
     fullName: DrawPointData
@@ -295,7 +295,7 @@ references:
   - name: (
     nameWithType: (
     fullName: (
-  - uid: DrawPointData
+  - uid: Global.DrawPointData
     name: DrawPointData
     nameWithType: DrawPointData
     fullName: DrawPointData
@@ -367,14 +367,13 @@ references:
   name: Int64
   nameWithType: Int64
   fullName: System.Int64
-- uid: Color
-  commentId: '!:Color'
+- uid: Global.Color
   isExternal: true
   name: Color
   nameWithType: Color
   fullName: Color
-- uid: DrawLineData
-  commentId: '!:DrawLineData'
+- uid: Global.DrawLineData
+  commentId: '!:Global.DrawLineData'
   isExternal: true
   name: DrawLineData
   nameWithType: DrawLineData

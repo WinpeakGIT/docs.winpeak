@@ -64,11 +64,11 @@ items:
     - id: url
       type: System.String
     - id: method
-      type: HTTPMethods
+      type: Global.HTTPMethods
     - id: callback
-      type: OnRequestFinishedDelegate
+      type: Global.OnRequestFinishedDelegate
     return:
-      type: HTTPRequest
+      type: Global.HTTPRequest
     content.vb: Public Shared Function CreateHttpRequest(url As String, method As HTTPMethods, callback As OnRequestFinishedDelegate) As HTTPRequest
   overload: Winpeak.Client.Networking.WebServer.HttpRequestFactory.CreateHttpRequest*
   modifiers.csharp:
@@ -387,18 +387,18 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: HTTPMethods
+- uid: Global.HTTPMethods
   isExternal: true
   name: HTTPMethods
   nameWithType: HTTPMethods
   fullName: HTTPMethods
-- uid: OnRequestFinishedDelegate
-  commentId: '!:OnRequestFinishedDelegate'
+- uid: Global.OnRequestFinishedDelegate
+  commentId: '!:Global.OnRequestFinishedDelegate'
   isExternal: true
   name: OnRequestFinishedDelegate
   nameWithType: OnRequestFinishedDelegate
   fullName: OnRequestFinishedDelegate
-- uid: HTTPRequest
+- uid: Global.HTTPRequest
   isExternal: true
   name: HTTPRequest
   nameWithType: HTTPRequest

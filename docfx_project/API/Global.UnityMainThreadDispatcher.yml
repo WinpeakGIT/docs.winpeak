@@ -1,0 +1,173 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.UnityMainThreadDispatcher
+  commentId: T:Global.UnityMainThreadDispatcher
+  id: UnityMainThreadDispatcher
+  parent: Global
+  children:
+  - Global.UnityMainThreadDispatcher.Enqueue(System.Action)
+  - Global.UnityMainThreadDispatcher.Instance
+  - Global.UnityMainThreadDispatcher.Update
+  langs:
+  - csharp
+  - vb
+  name: UnityMainThreadDispatcher
+  nameWithType: UnityMainThreadDispatcher
+  fullName: UnityMainThreadDispatcher
+  type: Class
+  source:
+    id: UnityMainThreadDispatcher
+    path: ''
+    startLine: 5
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class UnityMainThreadDispatcher : MonoBehaviour'
+    content.vb: >-
+      Public Class UnityMainThreadDispatcher
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Global.UnityMainThreadDispatcher.Update
+  commentId: M:Global.UnityMainThreadDispatcher.Update
+  id: Update
+  parent: Global.UnityMainThreadDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: UnityMainThreadDispatcher.Update()
+  fullName: UnityMainThreadDispatcher.Update()
+  type: Method
+  source:
+    id: Update
+    path: ''
+    startLine: 23
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update
+  overload: Global.UnityMainThreadDispatcher.Update*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.UnityMainThreadDispatcher.Enqueue(System.Action)
+  commentId: M:Global.UnityMainThreadDispatcher.Enqueue(System.Action)
+  id: Enqueue(System.Action)
+  parent: Global.UnityMainThreadDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Enqueue(Action)
+  nameWithType: UnityMainThreadDispatcher.Enqueue(Action)
+  fullName: UnityMainThreadDispatcher.Enqueue(System.Action)
+  type: Method
+  source:
+    id: Enqueue
+    path: ''
+    startLine: 47
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  summary: "\nLocks the queue and adds the Action to the queue\n"
+  example: []
+  syntax:
+    content: public void Enqueue(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+      description: function that will be executed from the main thread.
+    content.vb: Public Sub Enqueue(action As Action)
+  overload: Global.UnityMainThreadDispatcher.Enqueue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.UnityMainThreadDispatcher.Instance
+  commentId: M:Global.UnityMainThreadDispatcher.Instance
+  id: Instance
+  parent: Global.UnityMainThreadDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Instance()
+  nameWithType: UnityMainThreadDispatcher.Instance()
+  fullName: UnityMainThreadDispatcher.Instance()
+  type: Method
+  source:
+    id: Instance
+    path: ''
+    startLine: 60
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public static UnityMainThreadDispatcher Instance()
+    return:
+      type: Global.UnityMainThreadDispatcher
+    content.vb: Public Shared Function Instance As UnityMainThreadDispatcher
+  overload: Global.UnityMainThreadDispatcher.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.UnityMainThreadDispatcher.Update*
+  commentId: Overload:Global.UnityMainThreadDispatcher.Update
+  name: Update
+  nameWithType: UnityMainThreadDispatcher.Update
+  fullName: UnityMainThreadDispatcher.Update
+- uid: Global.UnityMainThreadDispatcher.Enqueue*
+  commentId: Overload:Global.UnityMainThreadDispatcher.Enqueue
+  name: Enqueue
+  nameWithType: UnityMainThreadDispatcher.Enqueue
+  fullName: UnityMainThreadDispatcher.Enqueue
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Global.UnityMainThreadDispatcher.Instance*
+  commentId: Overload:Global.UnityMainThreadDispatcher.Instance
+  name: Instance
+  nameWithType: UnityMainThreadDispatcher.Instance
+  fullName: UnityMainThreadDispatcher.Instance
+- uid: Global.UnityMainThreadDispatcher
+  commentId: T:Global.UnityMainThreadDispatcher
+  name: UnityMainThreadDispatcher
+  nameWithType: UnityMainThreadDispatcher
+  fullName: UnityMainThreadDispatcher

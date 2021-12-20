@@ -66,7 +66,7 @@ items:
   syntax:
     content: public ResponseMeta MetaData
     return:
-      type: ResponseMeta
+      type: Global.ResponseMeta
     content.vb: Public MetaData As ResponseMeta
   modifiers.csharp:
   - public
@@ -94,9 +94,9 @@ items:
     content: public virtual void HandleResponse(JToken data, ResponseMeta meta)
     parameters:
     - id: data
-      type: JToken
+      type: Global.JToken
     - id: meta
-      type: ResponseMeta
+      type: Global.ResponseMeta
     content.vb: Public Overridable Sub HandleResponse(data As JToken, meta As ResponseMeta)
   overload: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse*
   modifiers.csharp:
@@ -409,8 +409,8 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: ResponseMeta
-  commentId: T:ResponseMeta
+- uid: Global.ResponseMeta
+  commentId: T:Global.ResponseMeta
   name: ResponseMeta
   nameWithType: ResponseMeta
   fullName: ResponseMeta
@@ -419,7 +419,7 @@ references:
   name: HandleResponse
   nameWithType: WpSocketEventResponse.HandleResponse
   fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse
-- uid: JToken
+- uid: Global.JToken
   isExternal: true
   name: JToken
   nameWithType: JToken
