@@ -1,30 +1,37 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Models.WaypointExtension
-  commentId: T:Winpeak.Client.Models.WaypointExtension
-  id: WaypointExtension
-  parent: Winpeak.Client.Models
+- uid: Winpeak.Client.Networking.SocketServer.DeniableData
+  commentId: T:Winpeak.Client.Networking.SocketServer.DeniableData
+  id: DeniableData
+  parent: Winpeak.Client.Networking.SocketServer
   children:
-  - Winpeak.Client.Models.WaypointExtension.Position(Winpeak.Client.Models.Waypoint,System.Single)
+  - Winpeak.Client.Networking.SocketServer.DeniableData.Action
+  - Winpeak.Client.Networking.SocketServer.DeniableData.IsSimilar(Winpeak.Client.Networking.SocketServer.DeniableData)
+  - Winpeak.Client.Networking.SocketServer.DeniableData.IsTimeSimilar(System.Int64)
+  - Winpeak.Client.Networking.SocketServer.DeniableData.RelativeTime
   langs:
   - csharp
   - vb
-  name: WaypointExtension
-  nameWithType: WaypointExtension
-  fullName: Winpeak.Client.Models.WaypointExtension
+  name: DeniableData
+  nameWithType: DeniableData
+  fullName: Winpeak.Client.Networking.SocketServer.DeniableData
   type: Class
   source:
-    id: WaypointExtension
+    id: DeniableData
     path: ''
-    startLine: 703
+    startLine: 1572
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Models
+  namespace: Winpeak.Client.Networking.SocketServer
   syntax:
-    content: public static class WaypointExtension
-    content.vb: Public Module WaypointExtension
+    content: public abstract class DeniableData
+    content.vb: Public MustInherit Class DeniableData
   inheritance:
   - System.Object
+  derivedClasses:
+  - Winpeak.Client.Networking.SocketServer.CollisionData
+  - Winpeak.Client.Networking.SocketServer.DamageData
+  - Winpeak.Client.Networking.SocketServer.EnableData
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -35,56 +42,140 @@ items:
   - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
-  - static
+  - abstract
   - class
   modifiers.vb:
   - Public
-  - Module
-- uid: Winpeak.Client.Models.WaypointExtension.Position(Winpeak.Client.Models.Waypoint,System.Single)
-  commentId: M:Winpeak.Client.Models.WaypointExtension.Position(Winpeak.Client.Models.Waypoint,System.Single)
-  id: Position(Winpeak.Client.Models.Waypoint,System.Single)
-  isExtensionMethod: true
-  parent: Winpeak.Client.Models.WaypointExtension
+  - MustInherit
+  - Class
+- uid: Winpeak.Client.Networking.SocketServer.DeniableData.RelativeTime
+  commentId: P:Winpeak.Client.Networking.SocketServer.DeniableData.RelativeTime
+  id: RelativeTime
+  parent: Winpeak.Client.Networking.SocketServer.DeniableData
   langs:
   - csharp
   - vb
-  name: Position(Waypoint, Single)
-  nameWithType: WaypointExtension.Position(Waypoint, Single)
-  fullName: Winpeak.Client.Models.WaypointExtension.Position(Winpeak.Client.Models.Waypoint, System.Single)
-  type: Method
+  name: RelativeTime
+  nameWithType: DeniableData.RelativeTime
+  fullName: Winpeak.Client.Networking.SocketServer.DeniableData.RelativeTime
+  type: Property
   source:
-    id: Position
+    id: RelativeTime
     path: ''
-    startLine: 705
+    startLine: 1574
   assemblies:
   - cs.temp.dll
-  namespace: Winpeak.Client.Models
+  namespace: Winpeak.Client.Networking.SocketServer
   syntax:
-    content: public static Vector3 Position(this Waypoint waypoint, float yPosition)
-    parameters:
-    - id: waypoint
-      type: Winpeak.Client.Models.Waypoint
-    - id: yPosition
-      type: System.Single
+    content: public long RelativeTime { get; }
+    parameters: []
     return:
-      type: Vector3
-    content.vb: >-
-      <ExtensionAttribute>
-
-      Public Shared Function Position(waypoint As Waypoint, yPosition As Single) As Vector3
-  overload: Winpeak.Client.Models.WaypointExtension.Position*
+      type: System.Int64
+    content.vb: Public ReadOnly Property RelativeTime As Long
+  overload: Winpeak.Client.Networking.SocketServer.DeniableData.RelativeTime*
   modifiers.csharp:
   - public
-  - static
+  - get
   modifiers.vb:
   - Public
-  - Shared
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.DeniableData.Action
+  commentId: F:Winpeak.Client.Networking.SocketServer.DeniableData.Action
+  id: Action
+  parent: Winpeak.Client.Networking.SocketServer.DeniableData
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: DeniableData.Action
+  fullName: Winpeak.Client.Networking.SocketServer.DeniableData.Action
+  type: Field
+  source:
+    id: Action
+    path: ''
+    startLine: 1575
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public Action Action
+    return:
+      type: System.Action
+    content.vb: Public Action As Action
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.SocketServer.DeniableData.IsSimilar(Winpeak.Client.Networking.SocketServer.DeniableData)
+  commentId: M:Winpeak.Client.Networking.SocketServer.DeniableData.IsSimilar(Winpeak.Client.Networking.SocketServer.DeniableData)
+  id: IsSimilar(Winpeak.Client.Networking.SocketServer.DeniableData)
+  parent: Winpeak.Client.Networking.SocketServer.DeniableData
+  langs:
+  - csharp
+  - vb
+  name: IsSimilar(DeniableData)
+  nameWithType: DeniableData.IsSimilar(DeniableData)
+  fullName: Winpeak.Client.Networking.SocketServer.DeniableData.IsSimilar(Winpeak.Client.Networking.SocketServer.DeniableData)
+  type: Method
+  source:
+    id: IsSimilar
+    path: ''
+    startLine: 1577
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public abstract bool IsSimilar(DeniableData data)
+    parameters:
+    - id: data
+      type: Winpeak.Client.Networking.SocketServer.DeniableData
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride Function IsSimilar(data As DeniableData) As Boolean
+  overload: Winpeak.Client.Networking.SocketServer.DeniableData.IsSimilar*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Winpeak.Client.Networking.SocketServer.DeniableData.IsTimeSimilar(System.Int64)
+  commentId: M:Winpeak.Client.Networking.SocketServer.DeniableData.IsTimeSimilar(System.Int64)
+  id: IsTimeSimilar(System.Int64)
+  parent: Winpeak.Client.Networking.SocketServer.DeniableData
+  langs:
+  - csharp
+  - vb
+  name: IsTimeSimilar(Int64)
+  nameWithType: DeniableData.IsTimeSimilar(Int64)
+  fullName: Winpeak.Client.Networking.SocketServer.DeniableData.IsTimeSimilar(System.Int64)
+  type: Method
+  source:
+    id: IsTimeSimilar
+    path: ''
+    startLine: 1579
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: protected bool IsTimeSimilar(long time)
+    parameters:
+    - id: time
+      type: System.Int64
+    return:
+      type: System.Boolean
+    content.vb: Protected Function IsTimeSimilar(time As Long) As Boolean
+  overload: Winpeak.Client.Networking.SocketServer.DeniableData.IsTimeSimilar*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 references:
-- uid: Winpeak.Client.Models
-  commentId: N:Winpeak.Client.Models
-  name: Winpeak.Client.Models
-  nameWithType: Winpeak.Client.Models
-  fullName: Winpeak.Client.Models
+- uid: Winpeak.Client.Networking.SocketServer
+  commentId: N:Winpeak.Client.Networking.SocketServer
+  name: Winpeak.Client.Networking.SocketServer
+  nameWithType: Winpeak.Client.Networking.SocketServer
+  fullName: Winpeak.Client.Networking.SocketServer
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -377,26 +468,45 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Models.WaypointExtension.Position*
-  commentId: Overload:Winpeak.Client.Models.WaypointExtension.Position
-  name: Position
-  nameWithType: WaypointExtension.Position
-  fullName: Winpeak.Client.Models.WaypointExtension.Position
-- uid: Winpeak.Client.Models.Waypoint
-  commentId: T:Winpeak.Client.Models.Waypoint
-  parent: Winpeak.Client.Models
-  name: Waypoint
-  nameWithType: Waypoint
-  fullName: Winpeak.Client.Models.Waypoint
-- uid: System.Single
-  commentId: T:System.Single
+- uid: Winpeak.Client.Networking.SocketServer.DeniableData.RelativeTime*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.DeniableData.RelativeTime
+  name: RelativeTime
+  nameWithType: DeniableData.RelativeTime
+  fullName: Winpeak.Client.Networking.SocketServer.DeniableData.RelativeTime
+- uid: System.Int64
+  commentId: T:System.Int64
   parent: System
   isExternal: true
-  name: Single
-  nameWithType: Single
-  fullName: System.Single
-- uid: Vector3
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
   isExternal: true
-  name: Vector3
-  nameWithType: Vector3
-  fullName: Vector3
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Winpeak.Client.Networking.SocketServer.DeniableData.IsSimilar*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.DeniableData.IsSimilar
+  name: IsSimilar
+  nameWithType: DeniableData.IsSimilar
+  fullName: Winpeak.Client.Networking.SocketServer.DeniableData.IsSimilar
+- uid: Winpeak.Client.Networking.SocketServer.DeniableData
+  commentId: T:Winpeak.Client.Networking.SocketServer.DeniableData
+  parent: Winpeak.Client.Networking.SocketServer
+  name: DeniableData
+  nameWithType: DeniableData
+  fullName: Winpeak.Client.Networking.SocketServer.DeniableData
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Winpeak.Client.Networking.SocketServer.DeniableData.IsTimeSimilar*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.DeniableData.IsTimeSimilar
+  name: IsTimeSimilar
+  nameWithType: DeniableData.IsTimeSimilar
+  fullName: Winpeak.Client.Networking.SocketServer.DeniableData.IsTimeSimilar

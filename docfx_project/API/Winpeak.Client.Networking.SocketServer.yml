@@ -4,12 +4,23 @@ items:
   commentId: N:Winpeak.Client.Networking.SocketServer
   id: Winpeak.Client.Networking.SocketServer
   children:
+  - Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  - Winpeak.Client.Networking.SocketServer.CollisionData
+  - Winpeak.Client.Networking.SocketServer.CollisionResponseEvent
+  - Winpeak.Client.Networking.SocketServer.DamageData
+  - Winpeak.Client.Networking.SocketServer.DamageResponseEvent
+  - Winpeak.Client.Networking.SocketServer.DeniableData
+  - Winpeak.Client.Networking.SocketServer.EnableData
+  - Winpeak.Client.Networking.SocketServer.EnableStateResponseEvent
   - Winpeak.Client.Networking.SocketServer.GamePlayer
+  - Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  - Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ConfigData
+  - Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ObjectsData
+  - Winpeak.Client.Networking.SocketServer.IAwaitableEvent
+  - Winpeak.Client.Networking.SocketServer.IWpSocketRequest
   - Winpeak.Client.Networking.SocketServer.MatchResult
   - Winpeak.Client.Networking.SocketServer.PlayersStats
   - Winpeak.Client.Networking.SocketServer.RoundResult
-  - Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
-  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
   - Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
   - Winpeak.Client.Networking.SocketServer.UdpAsyncSendState
   - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
@@ -25,38 +36,129 @@ items:
   assemblies:
   - cs.temp.dll
 references:
-- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
-  commentId: T:Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
-  name: ServerConnectionImportantWrapper
-  nameWithType: ServerConnectionImportantWrapper
-  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
-- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
-  commentId: T:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  commentId: T:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
   parent: Winpeak.Client.Networking.SocketServer
-  name: ServerConnectionStatusController
-  nameWithType: ServerConnectionStatusController
-  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
-- uid: Winpeak.Client.Networking.SocketServer.PlayersStats
-  commentId: T:Winpeak.Client.Networking.SocketServer.PlayersStats
-  parent: Winpeak.Client.Networking.SocketServer
-  name: PlayersStats
-  nameWithType: PlayersStats
-  fullName: Winpeak.Client.Networking.SocketServer.PlayersStats
-- uid: Winpeak.Client.Networking.SocketServer.MatchResult
-  commentId: T:Winpeak.Client.Networking.SocketServer.MatchResult
-  name: MatchResult
-  nameWithType: MatchResult
-  fullName: Winpeak.Client.Networking.SocketServer.MatchResult
-- uid: Winpeak.Client.Networking.SocketServer.RoundResult
-  commentId: T:Winpeak.Client.Networking.SocketServer.RoundResult
-  name: RoundResult
-  nameWithType: RoundResult
-  fullName: Winpeak.Client.Networking.SocketServer.RoundResult
+  name: UdpAsyncStateController
+  nameWithType: UdpAsyncStateController
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncSendState
+  commentId: T:Winpeak.Client.Networking.SocketServer.UdpAsyncSendState
+  name: UdpAsyncSendState
+  nameWithType: UdpAsyncSendState
+  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncSendState
+- uid: Winpeak.Client.Networking.SocketServer.IWpSocketRequest
+  commentId: T:Winpeak.Client.Networking.SocketServer.IWpSocketRequest
+  name: IWpSocketRequest
+  nameWithType: IWpSocketRequest
+  fullName: Winpeak.Client.Networking.SocketServer.IWpSocketRequest
+- uid: Winpeak.Client.Networking.SocketServer.DamageResponseEvent
+  commentId: T:Winpeak.Client.Networking.SocketServer.DamageResponseEvent
+  name: DamageResponseEvent
+  nameWithType: DamageResponseEvent
+  fullName: Winpeak.Client.Networking.SocketServer.DamageResponseEvent
+- uid: Winpeak.Client.Networking.SocketServer.DamageData
+  commentId: T:Winpeak.Client.Networking.SocketServer.DamageData
+  name: DamageData
+  nameWithType: DamageData
+  fullName: Winpeak.Client.Networking.SocketServer.DamageData
+- uid: Winpeak.Client.Networking.SocketServer.CollisionResponseEvent
+  commentId: T:Winpeak.Client.Networking.SocketServer.CollisionResponseEvent
+  name: CollisionResponseEvent
+  nameWithType: CollisionResponseEvent
+  fullName: Winpeak.Client.Networking.SocketServer.CollisionResponseEvent
+- uid: Winpeak.Client.Networking.SocketServer.CollisionData
+  commentId: T:Winpeak.Client.Networking.SocketServer.CollisionData
+  name: CollisionData
+  nameWithType: CollisionData
+  fullName: Winpeak.Client.Networking.SocketServer.CollisionData
+- uid: Winpeak.Client.Networking.SocketServer.EnableStateResponseEvent
+  commentId: T:Winpeak.Client.Networking.SocketServer.EnableStateResponseEvent
+  name: EnableStateResponseEvent
+  nameWithType: EnableStateResponseEvent
+  fullName: Winpeak.Client.Networking.SocketServer.EnableStateResponseEvent
+- uid: Winpeak.Client.Networking.SocketServer.EnableData
+  commentId: T:Winpeak.Client.Networking.SocketServer.EnableData
+  name: EnableData
+  nameWithType: EnableData
+  fullName: Winpeak.Client.Networking.SocketServer.EnableData
 - uid: Winpeak.Client.Networking.SocketServer.GamePlayer
   commentId: T:Winpeak.Client.Networking.SocketServer.GamePlayer
   name: GamePlayer
   nameWithType: GamePlayer
   fullName: Winpeak.Client.Networking.SocketServer.GamePlayer
+- uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  commentId: T:Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+  parent: Winpeak.Client.Networking.SocketServer
+  name: GetConfigRequestEvent
+  nameWithType: GetConfigRequestEvent
+  fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent
+- uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ConfigData
+  commentId: T:Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ConfigData
+  parent: Winpeak.Client.Networking.SocketServer
+  name: GetConfigRequestEvent.ConfigData
+  nameWithType: GetConfigRequestEvent.ConfigData
+  fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ConfigData
+- uid: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ObjectsData
+  commentId: T:Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ObjectsData
+  name: GetConfigRequestEvent.ObjectsData
+  nameWithType: GetConfigRequestEvent.ObjectsData
+  fullName: Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.ObjectsData
+- uid: Winpeak.Client.Networking.SocketServer.IAwaitableEvent
+  commentId: T:Winpeak.Client.Networking.SocketServer.IAwaitableEvent
+  parent: Winpeak.Client.Networking.SocketServer
+  name: IAwaitableEvent
+  nameWithType: IAwaitableEvent
+  fullName: Winpeak.Client.Networking.SocketServer.IAwaitableEvent
+- uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  commentId: T:Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  parent: Winpeak.Client.Networking.SocketServer
+  name: AwaitableDeniableEvent<T>
+  nameWithType: AwaitableDeniableEvent<T>
+  fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>
+  nameWithType.vb: AwaitableDeniableEvent(Of T)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T)
+  name.vb: AwaitableDeniableEvent(Of T)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+    name: AwaitableDeniableEvent
+    nameWithType: AwaitableDeniableEvent
+    fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+    name: AwaitableDeniableEvent
+    nameWithType: AwaitableDeniableEvent
+    fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.DeniableData
+  commentId: T:Winpeak.Client.Networking.SocketServer.DeniableData
+  parent: Winpeak.Client.Networking.SocketServer
+  name: DeniableData
+  nameWithType: DeniableData
+  fullName: Winpeak.Client.Networking.SocketServer.DeniableData
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketResponse
+  commentId: T:Winpeak.Client.Networking.SocketServer.WpSocketResponse
+  parent: Winpeak.Client.Networking.SocketServer
+  name: WpSocketResponse
+  nameWithType: WpSocketResponse
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketResponse
 - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
   commentId: T:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
   name: SocketEventHandler<T>
@@ -93,29 +195,28 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.SocketServer.WpSocketResponse
-  commentId: T:Winpeak.Client.Networking.SocketServer.WpSocketResponse
-  parent: Winpeak.Client.Networking.SocketServer
-  name: WpSocketResponse
-  nameWithType: WpSocketResponse
-  fullName: Winpeak.Client.Networking.SocketServer.WpSocketResponse
 - uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
   commentId: T:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
   parent: Winpeak.Client.Networking.SocketServer
   name: WpSocketEventResponse
   nameWithType: WpSocketEventResponse
   fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
-  commentId: T:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+- uid: Winpeak.Client.Networking.SocketServer.RoundResult
+  commentId: T:Winpeak.Client.Networking.SocketServer.RoundResult
+  name: RoundResult
+  nameWithType: RoundResult
+  fullName: Winpeak.Client.Networking.SocketServer.RoundResult
+- uid: Winpeak.Client.Networking.SocketServer.PlayersStats
+  commentId: T:Winpeak.Client.Networking.SocketServer.PlayersStats
   parent: Winpeak.Client.Networking.SocketServer
-  name: UdpAsyncStateController
-  nameWithType: UdpAsyncStateController
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
-- uid: Winpeak.Client.Networking.SocketServer.UdpAsyncSendState
-  commentId: T:Winpeak.Client.Networking.SocketServer.UdpAsyncSendState
-  name: UdpAsyncSendState
-  nameWithType: UdpAsyncSendState
-  fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncSendState
+  name: PlayersStats
+  nameWithType: PlayersStats
+  fullName: Winpeak.Client.Networking.SocketServer.PlayersStats
+- uid: Winpeak.Client.Networking.SocketServer.MatchResult
+  commentId: T:Winpeak.Client.Networking.SocketServer.MatchResult
+  name: MatchResult
+  nameWithType: MatchResult
+  fullName: Winpeak.Client.Networking.SocketServer.MatchResult
 - uid: Winpeak.Client.Networking.SocketServer
   commentId: N:Winpeak.Client.Networking.SocketServer
   name: Winpeak.Client.Networking.SocketServer

@@ -1,0 +1,1102 @@
+### YamlMime:ManagedReference
+items:
+- uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  commentId: T:Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  id: AwaitableDeniableEvent`1
+  parent: Winpeak.Client.Networking.SocketServer
+  children:
+  - Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Action
+  - Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Data
+  - Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ObjectId
+  - Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ParseData(JToken)
+  langs:
+  - csharp
+  - vb
+  name: AwaitableDeniableEvent<T>
+  nameWithType: AwaitableDeniableEvent<T>
+  fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>
+  type: Class
+  source:
+    id: AwaitableDeniableEvent
+    path: ''
+    startLine: 1552
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: 'public abstract class AwaitableDeniableEvent<T> : SocketEventHandler<AwaitableDeniableEvent<T>>, IAwaitableEvent where T : DeniableData'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public MustInherit Class AwaitableDeniableEvent(Of T As DeniableData)
+          Inherits SocketEventHandler(Of AwaitableDeniableEvent(Of T))
+          Implements IAwaitableEvent
+  inheritance:
+  - System.Object
+  - Winpeak.Client.Networking.SocketServer.WpSocketResponse
+  - Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  - Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}
+  derivedClasses:
+  - Winpeak.Client.Networking.SocketServer.CollisionResponseEvent
+  - Winpeak.Client.Networking.SocketServer.DamageResponseEvent
+  - Winpeak.Client.Networking.SocketServer.EnableStateResponseEvent
+  implements:
+  - Winpeak.Client.Networking.SocketServer.IAwaitableEvent
+  inheritedMembers:
+  - Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}.HandleResponse(JToken,ResponseMeta)
+  - Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}.OnSocketEvent
+  - Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: AwaitableDeniableEvent(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T)
+  name.vb: AwaitableDeniableEvent(Of T)
+- uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Action
+  commentId: P:Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Action
+  id: Action
+  parent: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: AwaitableDeniableEvent<T>.Action
+  fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>.Action
+  type: Property
+  source:
+    id: Action
+    path: ''
+    startLine: 1554
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public static Action<T, string> Action { get; set; }
+    parameters: []
+    return:
+      type: System.Action{{T},System.String}
+    content.vb: Public Shared Property Action As Action(Of T, String)
+  overload: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Action*
+  nameWithType.vb: AwaitableDeniableEvent(Of T).Action
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T).Action
+- uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ObjectId
+  commentId: P:Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ObjectId
+  id: ObjectId
+  parent: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  langs:
+  - csharp
+  - vb
+  name: ObjectId
+  nameWithType: AwaitableDeniableEvent<T>.ObjectId
+  fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>.ObjectId
+  type: Property
+  source:
+    id: ObjectId
+    path: ''
+    startLine: 1556
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public abstract string ObjectId { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public MustOverride Property ObjectId As String
+  overload: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ObjectId*
+  nameWithType.vb: AwaitableDeniableEvent(Of T).ObjectId
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - Get
+  - Protected Set
+  fullName.vb: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T).ObjectId
+- uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Data
+  commentId: P:Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Data
+  id: Data
+  parent: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: AwaitableDeniableEvent<T>.Data
+  fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>.Data
+  type: Property
+  source:
+    id: Data
+    path: ''
+    startLine: 1557
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public abstract List<T> Data { get; protected set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public MustOverride Property Data As List(Of T)
+  overload: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Data*
+  nameWithType.vb: AwaitableDeniableEvent(Of T).Data
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - Get
+  - Protected Set
+  fullName.vb: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T).Data
+- uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ParseData(JToken)
+  commentId: M:Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ParseData(JToken)
+  id: ParseData(JToken)
+  parent: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  langs:
+  - csharp
+  - vb
+  name: ParseData(JToken)
+  nameWithType: AwaitableDeniableEvent<T>.ParseData(JToken)
+  fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>.ParseData(JToken)
+  type: Method
+  source:
+    id: ParseData
+    path: ''
+    startLine: 1559
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: protected override AwaitableDeniableEvent<T> ParseData(JToken data)
+    parameters:
+    - id: data
+      type: JToken
+    return:
+      type: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+    content.vb: Protected Overrides Function ParseData(data As JToken) As AwaitableDeniableEvent(Of T)
+  overridden: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}.ParseData(JToken)
+  overload: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ParseData*
+  nameWithType.vb: AwaitableDeniableEvent(Of T).ParseData(JToken)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T).ParseData(JToken)
+references:
+- uid: Winpeak.Client.Networking.SocketServer
+  commentId: N:Winpeak.Client.Networking.SocketServer
+  name: Winpeak.Client.Networking.SocketServer
+  nameWithType: Winpeak.Client.Networking.SocketServer
+  fullName: Winpeak.Client.Networking.SocketServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketResponse
+  commentId: T:Winpeak.Client.Networking.SocketServer.WpSocketResponse
+  parent: Winpeak.Client.Networking.SocketServer
+  name: WpSocketResponse
+  nameWithType: WpSocketResponse
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketResponse
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  commentId: T:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  parent: Winpeak.Client.Networking.SocketServer
+  name: WpSocketEventResponse
+  nameWithType: WpSocketEventResponse
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}
+  commentId: T:Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}
+  parent: Winpeak.Client.Networking.SocketServer
+  definition: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+  name: SocketEventHandler<AwaitableDeniableEvent<T>>
+  nameWithType: SocketEventHandler<AwaitableDeniableEvent<T>>
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>>
+  nameWithType.vb: SocketEventHandler(Of AwaitableDeniableEvent(Of T))
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T))
+  name.vb: SocketEventHandler(Of AwaitableDeniableEvent(Of T))
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+    name: SocketEventHandler
+    nameWithType: SocketEventHandler
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+    name: AwaitableDeniableEvent
+    nameWithType: AwaitableDeniableEvent
+    fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+    name: SocketEventHandler
+    nameWithType: SocketEventHandler
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+    name: AwaitableDeniableEvent
+    nameWithType: AwaitableDeniableEvent
+    fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.IAwaitableEvent
+  commentId: T:Winpeak.Client.Networking.SocketServer.IAwaitableEvent
+  parent: Winpeak.Client.Networking.SocketServer
+  name: IAwaitableEvent
+  nameWithType: IAwaitableEvent
+  fullName: Winpeak.Client.Networking.SocketServer.IAwaitableEvent
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}.HandleResponse(JToken,ResponseMeta)
+  commentId: M:Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}.HandleResponse(JToken,ResponseMeta)
+  parent: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}
+  definition: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+  name: HandleResponse(JToken, ResponseMeta)
+  nameWithType: SocketEventHandler<AwaitableDeniableEvent<T>>.HandleResponse(JToken, ResponseMeta)
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>>.HandleResponse(JToken, ResponseMeta)
+  nameWithType.vb: SocketEventHandler(Of AwaitableDeniableEvent(Of T)).HandleResponse(JToken, ResponseMeta)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T)).HandleResponse(JToken, ResponseMeta)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+    name: HandleResponse
+    nameWithType: SocketEventHandler<AwaitableDeniableEvent<T>>.HandleResponse
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>>.HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ResponseMeta
+    name: ResponseMeta
+    nameWithType: ResponseMeta
+    fullName: ResponseMeta
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+    name: HandleResponse
+    nameWithType: SocketEventHandler(Of AwaitableDeniableEvent(Of T)).HandleResponse
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T)).HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ResponseMeta
+    name: ResponseMeta
+    nameWithType: ResponseMeta
+    fullName: ResponseMeta
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}.OnSocketEvent
+  commentId: P:Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}.OnSocketEvent
+  parent: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}
+  definition: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.OnSocketEvent
+  name: OnSocketEvent
+  nameWithType: SocketEventHandler<AwaitableDeniableEvent<T>>.OnSocketEvent
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>>.OnSocketEvent
+  nameWithType.vb: SocketEventHandler(Of AwaitableDeniableEvent(Of T)).OnSocketEvent
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T)).OnSocketEvent
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+  commentId: F:Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+  parent: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  name: MetaData
+  nameWithType: WpSocketEventResponse.MetaData
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+  commentId: T:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+  name: SocketEventHandler<T>
+  nameWithType: SocketEventHandler<T>
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>
+  nameWithType.vb: SocketEventHandler(Of T)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T)
+  name.vb: SocketEventHandler(Of T)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+    name: SocketEventHandler
+    nameWithType: SocketEventHandler
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
+    name: SocketEventHandler
+    nameWithType: SocketEventHandler
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+  commentId: M:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+  isExternal: true
+  name: HandleResponse(JToken, ResponseMeta)
+  nameWithType: SocketEventHandler<T>.HandleResponse(JToken, ResponseMeta)
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.HandleResponse(JToken, ResponseMeta)
+  nameWithType.vb: SocketEventHandler(Of T).HandleResponse(JToken, ResponseMeta)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).HandleResponse(JToken, ResponseMeta)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+    name: HandleResponse
+    nameWithType: SocketEventHandler<T>.HandleResponse
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ResponseMeta
+    name: ResponseMeta
+    nameWithType: ResponseMeta
+    fullName: ResponseMeta
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)
+    name: HandleResponse
+    nameWithType: SocketEventHandler(Of T).HandleResponse
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: ResponseMeta
+    name: ResponseMeta
+    nameWithType: ResponseMeta
+    fullName: ResponseMeta
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.OnSocketEvent
+  commentId: P:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.OnSocketEvent
+  name: OnSocketEvent
+  nameWithType: SocketEventHandler<T>.OnSocketEvent
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.OnSocketEvent
+  nameWithType.vb: SocketEventHandler(Of T).OnSocketEvent
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).OnSocketEvent
+- uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Action*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Action
+  name: Action
+  nameWithType: AwaitableDeniableEvent<T>.Action
+  fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>.Action
+  nameWithType.vb: AwaitableDeniableEvent(Of T).Action
+  fullName.vb: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T).Action
+- uid: System.Action{{T},System.String}
+  commentId: T:System.Action{`0,System.String}
+  parent: System
+  definition: System.Action`2
+  name: Action<T, String>
+  nameWithType: Action<T, String>
+  fullName: System.Action<T, System.String>
+  nameWithType.vb: Action(Of T, String)
+  fullName.vb: System.Action(Of T, System.String)
+  name.vb: Action(Of T, String)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ObjectId*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ObjectId
+  name: ObjectId
+  nameWithType: AwaitableDeniableEvent<T>.ObjectId
+  fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>.ObjectId
+  nameWithType.vb: AwaitableDeniableEvent(Of T).ObjectId
+  fullName.vb: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T).ObjectId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Data*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.Data
+  name: Data
+  nameWithType: AwaitableDeniableEvent<T>.Data
+  fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>.Data
+  nameWithType.vb: AwaitableDeniableEvent(Of T).Data
+  fullName.vb: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T).Data
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}.ParseData(JToken)
+  commentId: M:Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}.ParseData(JToken)
+  parent: Winpeak.Client.Networking.SocketServer.SocketEventHandler{Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1}
+  definition: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+  name: ParseData(JToken)
+  nameWithType: SocketEventHandler<AwaitableDeniableEvent<T>>.ParseData(JToken)
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>>.ParseData(JToken)
+  nameWithType.vb: SocketEventHandler(Of AwaitableDeniableEvent(Of T)).ParseData(JToken)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T)).ParseData(JToken)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+    name: ParseData
+    nameWithType: SocketEventHandler<AwaitableDeniableEvent<T>>.ParseData
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>>.ParseData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+    name: ParseData
+    nameWithType: SocketEventHandler(Of AwaitableDeniableEvent(Of T)).ParseData
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T)).ParseData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ParseData*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1.ParseData
+  name: ParseData
+  nameWithType: AwaitableDeniableEvent<T>.ParseData
+  fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>.ParseData
+  nameWithType.vb: AwaitableDeniableEvent(Of T).ParseData
+  fullName.vb: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T).ParseData
+- uid: JToken
+  isExternal: true
+  name: JToken
+  nameWithType: JToken
+  fullName: JToken
+- uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  commentId: T:Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+  parent: Winpeak.Client.Networking.SocketServer
+  name: AwaitableDeniableEvent<T>
+  nameWithType: AwaitableDeniableEvent<T>
+  fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent<T>
+  nameWithType.vb: AwaitableDeniableEvent(Of T)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent(Of T)
+  name.vb: AwaitableDeniableEvent(Of T)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+    name: AwaitableDeniableEvent
+    nameWithType: AwaitableDeniableEvent
+    fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent`1
+    name: AwaitableDeniableEvent
+    nameWithType: AwaitableDeniableEvent
+    fullName: Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+  commentId: M:Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+  isExternal: true
+  name: ParseData(JToken)
+  nameWithType: SocketEventHandler<T>.ParseData(JToken)
+  fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.ParseData(JToken)
+  nameWithType.vb: SocketEventHandler(Of T).ParseData(JToken)
+  fullName.vb: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).ParseData(JToken)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+    name: ParseData
+    nameWithType: SocketEventHandler<T>.ParseData
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler<T>.ParseData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData(JToken)
+    name: ParseData
+    nameWithType: SocketEventHandler(Of T).ParseData
+    fullName: Winpeak.Client.Networking.SocketServer.SocketEventHandler(Of T).ParseData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: JToken
+    name: JToken
+    nameWithType: JToken
+    fullName: JToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

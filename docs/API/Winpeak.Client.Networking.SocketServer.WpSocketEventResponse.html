@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class WpSocketEventResponse
    ">
-    <meta name="generator" content="docfx 2.58.3.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -110,17 +110,43 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class WpSocketEventResponse : WpSocketResponse</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Winpeak_Client_Networking_SocketServer_WpSocketEventResponse_MetaData" data-uid="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.MetaData">MetaData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResponseMeta MetaData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ResponseMeta</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Winpeak_Client_Networking_SocketServer_WpSocketEventResponse_HandleResponse_" data-uid="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse*"></a>
-  <h4 id="Winpeak_Client_Networking_SocketServer_WpSocketEventResponse_HandleResponse_JToken_System_Int64_System_Int64_" data-uid="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,System.Int64,System.Int64)">HandleResponse(JToken, Int64, Int64)</h4>
+  <h4 id="Winpeak_Client_Networking_SocketServer_WpSocketEventResponse_HandleResponse_JToken_ResponseMeta_" data-uid="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.HandleResponse(JToken,ResponseMeta)">HandleResponse(JToken, ResponseMeta)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void HandleResponse(JToken data, long serverPId, long serverTime)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void HandleResponse(JToken data, ResponseMeta meta)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -138,13 +164,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">serverPId</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">serverTime</span></td>
+        <td><span class="xref">ResponseMeta</span></td>
+        <td><span class="parametername">meta</span></td>
         <td></td>
       </tr>
     </tbody>

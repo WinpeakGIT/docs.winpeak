@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SocketEventHandler&lt;T&gt;
    ">
-    <meta name="generator" content="docfx 2.58.3.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -79,9 +79,14 @@
     <div class="level1"><a class="xref" href="Winpeak.Client.Networking.SocketServer.WpSocketResponse.html">WpSocketResponse</a></div>
     <div class="level2"><a class="xref" href="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.html">WpSocketEventResponse</a></div>
     <div class="level3"><span class="xref">SocketEventHandler&lt;T&gt;</span></div>
+      <div class="level4"><a class="xref" href="Winpeak.Client.Networking.SocketServer.AwaitableDeniableEvent-1.html">AwaitableDeniableEvent&lt;T&gt;</a></div>
+      <div class="level4"><a class="xref" href="Winpeak.Client.Networking.SocketServer.GetConfigRequestEvent.html">GetConfigRequestEvent</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.html#Winpeak_Client_Networking_SocketServer_WpSocketEventResponse_MetaData">WpSocketEventResponse.MetaData</a>
+    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -157,12 +162,12 @@
   
   
   <a id="Winpeak_Client_Networking_SocketServer_SocketEventHandler_1_HandleResponse_" data-uid="Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse*"></a>
-  <h4 id="Winpeak_Client_Networking_SocketServer_SocketEventHandler_1_HandleResponse_JToken_System_Int64_System_Int64_" data-uid="Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,System.Int64,System.Int64)">HandleResponse(JToken, Int64, Int64)</h4>
+  <h4 id="Winpeak_Client_Networking_SocketServer_SocketEventHandler_1_HandleResponse_JToken_ResponseMeta_" data-uid="Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.HandleResponse(JToken,ResponseMeta)">HandleResponse(JToken, ResponseMeta)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void HandleResponse(JToken data, long serverPId, long serverTime)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void HandleResponse(JToken data, ResponseMeta meta)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -180,19 +185,14 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">serverPId</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">serverTime</span></td>
+        <td><span class="xref">ResponseMeta</span></td>
+        <td><span class="parametername">meta</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.html#Winpeak_Client_Networking_SocketServer_WpSocketEventResponse_HandleResponse_JToken_System_Int64_System_Int64_">WpSocketEventResponse.HandleResponse(JToken, Int64, Int64)</a></div>
+  <div><a class="xref" href="Winpeak.Client.Networking.SocketServer.WpSocketEventResponse.html#Winpeak_Client_Networking_SocketServer_WpSocketEventResponse_HandleResponse_JToken_ResponseMeta_">WpSocketEventResponse.HandleResponse(JToken, ResponseMeta)</a></div>
   
   
   <a id="Winpeak_Client_Networking_SocketServer_SocketEventHandler_1_ParseData_" data-uid="Winpeak.Client.Networking.SocketServer.SocketEventHandler`1.ParseData*"></a>
