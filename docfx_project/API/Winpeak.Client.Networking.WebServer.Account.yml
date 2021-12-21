@@ -291,11 +291,11 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public int GetCash { get; }
+    content: public float GetCash { get; }
     parameters: []
     return:
-      type: System.Int32
-    content.vb: Public ReadOnly Property GetCash As Integer
+      type: System.Single
+    content.vb: Public ReadOnly Property GetCash As Single
   overload: Winpeak.Client.Networking.WebServer.Account.GetCash*
   implements:
   - Winpeak.Client.Networking.WebServer.IAccount.GetCash
@@ -324,11 +324,11 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public int GetSoftCash { get; }
+    content: public float GetSoftCash { get; }
     parameters: []
     return:
-      type: System.Int32
-    content.vb: Public ReadOnly Property GetSoftCash As Integer
+      type: System.Single
+    content.vb: Public ReadOnly Property GetSoftCash As Single
   overload: Winpeak.Client.Networking.WebServer.Account.GetSoftCash*
   implements:
   - Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
@@ -1033,13 +1033,13 @@ references:
   name: GetCash
   nameWithType: IAccount.GetCash
   fullName: Winpeak.Client.Networking.WebServer.IAccount.GetCash
-- uid: System.Int32
-  commentId: T:System.Int32
+- uid: System.Single
+  commentId: T:System.Single
   parent: System
   isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: Winpeak.Client.Networking.WebServer.Account.GetSoftCash*
   commentId: Overload:Winpeak.Client.Networking.WebServer.Account.GetSoftCash
   name: GetSoftCash
@@ -1062,6 +1062,13 @@ references:
   name: GetRating
   nameWithType: IAccount.GetRating
   fullName: Winpeak.Client.Networking.WebServer.IAccount.GetRating
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Winpeak.Client.Networking.WebServer.Account.GetTotalSessions*
   commentId: Overload:Winpeak.Client.Networking.WebServer.Account.GetTotalSessions
   name: GetTotalSessions

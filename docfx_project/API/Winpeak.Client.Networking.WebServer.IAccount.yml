@@ -235,11 +235,11 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: int GetCash { get; }
+    content: float GetCash { get; }
     parameters: []
     return:
-      type: System.Int32
-    content.vb: ReadOnly Property GetCash As Integer
+      type: System.Single
+    content.vb: ReadOnly Property GetCash As Single
   overload: Winpeak.Client.Networking.WebServer.IAccount.GetCash*
   modifiers.csharp:
   - get
@@ -264,11 +264,11 @@ items:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: int GetSoftCash { get; }
+    content: float GetSoftCash { get; }
     parameters: []
     return:
-      type: System.Int32
-    content.vb: ReadOnly Property GetSoftCash As Integer
+      type: System.Single
+    content.vb: ReadOnly Property GetSoftCash As Single
   overload: Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash*
   modifiers.csharp:
   - get
@@ -509,13 +509,13 @@ references:
   name: GetCash
   nameWithType: IAccount.GetCash
   fullName: Winpeak.Client.Networking.WebServer.IAccount.GetCash
-- uid: System.Int32
-  commentId: T:System.Int32
+- uid: System.Single
+  commentId: T:System.Single
   parent: System
   isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash*
   commentId: Overload:Winpeak.Client.Networking.WebServer.IAccount.GetSoftCash
   name: GetSoftCash
@@ -526,6 +526,13 @@ references:
   name: GetRating
   nameWithType: IAccount.GetRating
   fullName: Winpeak.Client.Networking.WebServer.IAccount.GetRating
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions*
   commentId: Overload:Winpeak.Client.Networking.WebServer.IAccount.GetTotalSessions
   name: GetTotalSessions
