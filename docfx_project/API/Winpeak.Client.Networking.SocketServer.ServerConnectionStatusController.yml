@@ -1,0 +1,825 @@
+### YamlMime:ManagedReference
+items:
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  commentId: T:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  id: ServerConnectionStatusController
+  parent: Winpeak.Client.Networking.SocketServer
+  children:
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.#ctor
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.DeltaMinPing
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.GetEstimatedServerTime
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastPing
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MaxPing
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MinPing
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.ServerTimeDelta
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.SetStatus(System.Int64)
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.StartTimeReal
+  langs:
+  - csharp
+  - vb
+  name: ServerConnectionStatusController
+  nameWithType: ServerConnectionStatusController
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  type: Class
+  source:
+    id: ServerConnectionStatusController
+    path: ''
+    startLine: 1024
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  summary: "\nЯ видел много ошибок в вычислении этих величин, в будущем здесь можно будет\nнаписать логику расчёта этих величин, пока оставил это, как есть\n"
+  example: []
+  syntax:
+    content: public class ServerConnectionStatusController
+    content.vb: Public Class ServerConnectionStatusController
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.ServerTimeDelta
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.ServerTimeDelta
+  id: ServerTimeDelta
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: ServerTimeDelta
+  nameWithType: ServerConnectionStatusController.ServerTimeDelta
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.ServerTimeDelta
+  type: Property
+  source:
+    id: ServerTimeDelta
+    path: ''
+    startLine: 1027
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public long ServerTimeDelta { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property ServerTimeDelta As Long
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.ServerTimeDelta*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.StartTimeReal
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.StartTimeReal
+  id: StartTimeReal
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: StartTimeReal
+  nameWithType: ServerConnectionStatusController.StartTimeReal
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.StartTimeReal
+  type: Property
+  source:
+    id: StartTimeReal
+    path: ''
+    startLine: 1028
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public long StartTimeReal { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property StartTimeReal As Long
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.StartTimeReal*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MinPing
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MinPing
+  id: MinPing
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: MinPing
+  nameWithType: ServerConnectionStatusController.MinPing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MinPing
+  type: Property
+  source:
+    id: MinPing
+    path: ''
+    startLine: 1029
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public float MinPing { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property MinPing As Single
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MinPing*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MaxPing
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MaxPing
+  id: MaxPing
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: MaxPing
+  nameWithType: ServerConnectionStatusController.MaxPing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MaxPing
+  type: Property
+  source:
+    id: MaxPing
+    path: ''
+    startLine: 1030
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public float MaxPing { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property MaxPing As Single
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MaxPing*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastPing
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastPing
+  id: LastPing
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: LastPing
+  nameWithType: ServerConnectionStatusController.LastPing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastPing
+  type: Property
+  source:
+    id: LastPing
+    path: ''
+    startLine: 1031
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public float LastPing { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property LastPing As Single
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastPing*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
+  id: AverageServerDeltaTime
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: AverageServerDeltaTime
+  nameWithType: ServerConnectionStatusController.AverageServerDeltaTime
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
+  type: Property
+  source:
+    id: AverageServerDeltaTime
+    path: ''
+    startLine: 1032
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public float AverageServerDeltaTime { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property AverageServerDeltaTime As Single
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime
+  id: LastDiffWithServerTime
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: LastDiffWithServerTime
+  nameWithType: ServerConnectionStatusController.LastDiffWithServerTime
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime
+  type: Property
+  source:
+    id: LastDiffWithServerTime
+    path: ''
+    startLine: 1033
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public float LastDiffWithServerTime { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property LastDiffWithServerTime As Single
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+  id: AveragePing
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: AveragePing
+  nameWithType: ServerConnectionStatusController.AveragePing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+  type: Property
+  source:
+    id: AveragePing
+    path: ''
+    startLine: 1034
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public float AveragePing { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property AveragePing As Single
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
+  id: PingCount
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: PingCount
+  nameWithType: ServerConnectionStatusController.PingCount
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
+  type: Property
+  source:
+    id: PingCount
+    path: ''
+    startLine: 1035
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public long PingCount { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property PingCount As Long
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.#ctor
+  commentId: M:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.#ctor
+  id: '#ctor'
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: ServerConnectionStatusController()
+  nameWithType: ServerConnectionStatusController.ServerConnectionStatusController()
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.ServerConnectionStatusController()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1038
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public ServerConnectionStatusController()
+    content.vb: Public Sub New
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.DeltaMinPing
+  commentId: P:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.DeltaMinPing
+  id: DeltaMinPing
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: DeltaMinPing
+  nameWithType: ServerConnectionStatusController.DeltaMinPing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.DeltaMinPing
+  type: Property
+  source:
+    id: DeltaMinPing
+    path: ''
+    startLine: 1045
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public float DeltaMinPing { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property DeltaMinPing As Single
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.DeltaMinPing*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.GetEstimatedServerTime
+  commentId: M:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.GetEstimatedServerTime
+  id: GetEstimatedServerTime
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: GetEstimatedServerTime()
+  nameWithType: ServerConnectionStatusController.GetEstimatedServerTime()
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.GetEstimatedServerTime()
+  type: Method
+  source:
+    id: GetEstimatedServerTime
+    path: ''
+    startLine: 1047
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public long GetEstimatedServerTime()
+    return:
+      type: System.Int64
+    content.vb: Public Function GetEstimatedServerTime As Long
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.GetEstimatedServerTime*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.SetStatus(System.Int64)
+  commentId: M:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.SetStatus(System.Int64)
+  id: SetStatus(System.Int64)
+  parent: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  langs:
+  - csharp
+  - vb
+  name: SetStatus(Int64)
+  nameWithType: ServerConnectionStatusController.SetStatus(Int64)
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.SetStatus(System.Int64)
+  type: Method
+  source:
+    id: SetStatus
+    path: ''
+    startLine: 1051
+  assemblies:
+  - cs.temp.dll
+  namespace: Winpeak.Client.Networking.SocketServer
+  syntax:
+    content: public void SetStatus(long serverTime)
+    parameters:
+    - id: serverTime
+      type: System.Int64
+    content.vb: Public Sub SetStatus(serverTime As Long)
+  overload: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.SetStatus*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Winpeak.Client.Networking.SocketServer
+  commentId: N:Winpeak.Client.Networking.SocketServer
+  name: Winpeak.Client.Networking.SocketServer
+  nameWithType: Winpeak.Client.Networking.SocketServer
+  fullName: Winpeak.Client.Networking.SocketServer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.ServerTimeDelta*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.ServerTimeDelta
+  name: ServerTimeDelta
+  nameWithType: ServerConnectionStatusController.ServerTimeDelta
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.ServerTimeDelta
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.StartTimeReal*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.StartTimeReal
+  name: StartTimeReal
+  nameWithType: ServerConnectionStatusController.StartTimeReal
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.StartTimeReal
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MinPing*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MinPing
+  name: MinPing
+  nameWithType: ServerConnectionStatusController.MinPing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MinPing
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MaxPing*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MaxPing
+  name: MaxPing
+  nameWithType: ServerConnectionStatusController.MaxPing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.MaxPing
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastPing*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastPing
+  name: LastPing
+  nameWithType: ServerConnectionStatusController.LastPing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastPing
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
+  name: AverageServerDeltaTime
+  nameWithType: ServerConnectionStatusController.AverageServerDeltaTime
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AverageServerDeltaTime
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime
+  name: LastDiffWithServerTime
+  nameWithType: ServerConnectionStatusController.LastDiffWithServerTime
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.LastDiffWithServerTime
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+  name: AveragePing
+  nameWithType: ServerConnectionStatusController.AveragePing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.AveragePing
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
+  name: PingCount
+  nameWithType: ServerConnectionStatusController.PingCount
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.PingCount
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.#ctor*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.#ctor
+  name: ServerConnectionStatusController
+  nameWithType: ServerConnectionStatusController.ServerConnectionStatusController
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.ServerConnectionStatusController
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.DeltaMinPing*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.DeltaMinPing
+  name: DeltaMinPing
+  nameWithType: ServerConnectionStatusController.DeltaMinPing
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.DeltaMinPing
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.GetEstimatedServerTime*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.GetEstimatedServerTime
+  name: GetEstimatedServerTime
+  nameWithType: ServerConnectionStatusController.GetEstimatedServerTime
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.GetEstimatedServerTime
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.SetStatus*
+  commentId: Overload:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.SetStatus
+  name: SetStatus
+  nameWithType: ServerConnectionStatusController.SetStatus
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController.SetStatus

@@ -33,14 +33,26 @@
 - uid: Winpeak.Client.API
   name: Winpeak.Client.API
   items:
+  - uid: Winpeak.Client.API.IInternalWinPeakClient
+    name: IInternalWinPeakClient
+  - uid: Winpeak.Client.API.IWinPeakClient
+    name: IWinPeakClient
   - uid: Winpeak.Client.API.IWinPeakNetworkClient
     name: IWinPeakNetworkClient
+  - uid: Winpeak.Client.API.WinPeakAPI
+    name: WinPeakAPI
 - uid: Winpeak.Client.Models
   name: Winpeak.Client.Models
   items:
   - uid: Winpeak.Client.Models.ListQueue`1
     name: ListQueue<T>
     name.vb: ListQueue(Of T)
+  - uid: Winpeak.Client.Models.Waypoint
+    name: Waypoint
+  - uid: Winpeak.Client.Models.WaypointExtension
+    name: WaypointExtension
+  - uid: Winpeak.Client.Models.WpCompare
+    name: WpCompare
   - uid: Winpeak.Client.Models.WpPointData
     name: WpPointData
 - uid: Winpeak.Client.Modules
@@ -92,6 +104,10 @@
     name: PlayersStats
   - uid: Winpeak.Client.Networking.SocketServer.RoundResult
     name: RoundResult
+  - uid: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
+    name: ServerConnectionImportantWrapper
+  - uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+    name: ServerConnectionStatusController
   - uid: Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
     name: SocketEventHandler<T>
     name.vb: SocketEventHandler(Of T)
@@ -99,8 +115,12 @@
     name: UdpAsyncSendState
   - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
     name: UdpAsyncStateController
+  - uid: Winpeak.Client.Networking.SocketServer.WpNetworkService
+    name: WpNetworkService
   - uid: Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
     name: WpSocketEventResponse
+  - uid: Winpeak.Client.Networking.SocketServer.WpSocketRequest
+    name: WpSocketRequest
   - uid: Winpeak.Client.Networking.SocketServer.WpSocketResponse
     name: WpSocketResponse
 - uid: Winpeak.Client.Networking.WebServer
@@ -330,12 +350,20 @@
     name: DrawPointData
   - uid: Winpeak.Client.Scene.IWinPeakRigidbody
     name: IWinPeakRigidbody
-  - uid: Winpeak.Client.Scene.MyTesssssst
-    name: MyTesssssst
   - uid: Winpeak.Client.Scene.ObjPhysType
     name: ObjPhysType
+  - uid: Winpeak.Client.Scene.WinPeakRigidbody
+    name: WinPeakRigidbody
+  - uid: Winpeak.Client.Scene.WinPeakRigidbodyExtension
+    name: WinPeakRigidbodyExtension
+  - uid: Winpeak.Client.Scene.WpGamePlayService
+    name: WpGamePlayService
   - uid: Winpeak.Client.Scene.WpGameState
     name: WpGameState
+  - uid: Winpeak.Client.Scene.WpSceneObjectController
+    name: WpSceneObjectController
+  - uid: Winpeak.Client.Scene.WpSceneObjectService
+    name: WpSceneObjectService
 - uid: Winpeak.Client.Utils
   name: Winpeak.Client.Utils
   items:
@@ -345,6 +373,8 @@
     name: ConnectionWatcher
   - uid: Winpeak.Client.Utils.DateTimeHelper
     name: DateTimeHelper
+  - uid: Winpeak.Client.Utils.DebugPointRenderer
+    name: DebugPointRenderer
   - uid: Winpeak.Client.Utils.FileWriterService
     name: FileWriterService
   - uid: Winpeak.Client.Utils.GlobalConsts

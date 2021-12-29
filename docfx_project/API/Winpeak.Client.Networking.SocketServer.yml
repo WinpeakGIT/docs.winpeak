@@ -21,10 +21,14 @@ items:
   - Winpeak.Client.Networking.SocketServer.MatchResult
   - Winpeak.Client.Networking.SocketServer.PlayersStats
   - Winpeak.Client.Networking.SocketServer.RoundResult
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
+  - Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
   - Winpeak.Client.Networking.SocketServer.SocketEventHandler`1
   - Winpeak.Client.Networking.SocketServer.UdpAsyncSendState
   - Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
+  - Winpeak.Client.Networking.SocketServer.WpNetworkService
   - Winpeak.Client.Networking.SocketServer.WpSocketEventResponse
+  - Winpeak.Client.Networking.SocketServer.WpSocketRequest
   - Winpeak.Client.Networking.SocketServer.WpSocketResponse
   langs:
   - csharp
@@ -36,6 +40,11 @@ items:
   assemblies:
   - cs.temp.dll
 references:
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
+  commentId: T:Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
+  name: ServerConnectionImportantWrapper
+  nameWithType: ServerConnectionImportantWrapper
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionImportantWrapper
 - uid: Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
   commentId: T:Winpeak.Client.Networking.SocketServer.UdpAsyncStateController
   parent: Winpeak.Client.Networking.SocketServer
@@ -47,8 +56,20 @@ references:
   name: UdpAsyncSendState
   nameWithType: UdpAsyncSendState
   fullName: Winpeak.Client.Networking.SocketServer.UdpAsyncSendState
+- uid: Winpeak.Client.Networking.SocketServer.WpNetworkService
+  commentId: T:Winpeak.Client.Networking.SocketServer.WpNetworkService
+  name: WpNetworkService
+  nameWithType: WpNetworkService
+  fullName: Winpeak.Client.Networking.SocketServer.WpNetworkService
+- uid: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  commentId: T:Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
+  parent: Winpeak.Client.Networking.SocketServer
+  name: ServerConnectionStatusController
+  nameWithType: ServerConnectionStatusController
+  fullName: Winpeak.Client.Networking.SocketServer.ServerConnectionStatusController
 - uid: Winpeak.Client.Networking.SocketServer.IWpSocketRequest
   commentId: T:Winpeak.Client.Networking.SocketServer.IWpSocketRequest
+  parent: Winpeak.Client.Networking.SocketServer
   name: IWpSocketRequest
   nameWithType: IWpSocketRequest
   fullName: Winpeak.Client.Networking.SocketServer.IWpSocketRequest
@@ -217,6 +238,11 @@ references:
   name: MatchResult
   nameWithType: MatchResult
   fullName: Winpeak.Client.Networking.SocketServer.MatchResult
+- uid: Winpeak.Client.Networking.SocketServer.WpSocketRequest
+  commentId: T:Winpeak.Client.Networking.SocketServer.WpSocketRequest
+  name: WpSocketRequest
+  nameWithType: WpSocketRequest
+  fullName: Winpeak.Client.Networking.SocketServer.WpSocketRequest
 - uid: Winpeak.Client.Networking.SocketServer
   commentId: N:Winpeak.Client.Networking.SocketServer
   name: Winpeak.Client.Networking.SocketServer
