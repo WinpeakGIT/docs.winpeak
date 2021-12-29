@@ -49,7 +49,7 @@ jobs:
         unzip -d .docfx docfx.zip
     
     - name: Fix Docfx
-      run: echo "#define WIN_PEAK_SDK_INSTALLED" > com.winpeak.unity/Runtime/DocfxFix.cs
+      run: echo "#define WIN_PEAK_SDK_INSTALLED" > WinpeakClient/com.winpeak.unity/Runtime/DocfxFix.cs
       
     # Build docs
     - name: Build docs
