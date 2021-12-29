@@ -48,6 +48,9 @@ jobs:
         curl -L https://github.com/dotnet/docfx/releases/latest/download/docfx.zip -o docfx.zip
         unzip -d .docfx docfx.zip
     
+    - name: Fix Docfx
+      run: echo "#define WIN_PEAK_SDK_INSTALLED" > com.winpeak.unity/Runtime/DocfxFix.cs
+      
     # Build docs
     - name: Build docs
       run:  mono .docfx/docfx.exe docs.winpeak/docfx_project/docfx.json
