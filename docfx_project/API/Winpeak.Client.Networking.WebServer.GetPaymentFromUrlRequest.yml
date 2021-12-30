@@ -1,41 +1,41 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest
-  commentId: T:Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest
-  id: RejectFriendGameSessionRequest
+- uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest
+  commentId: T:Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest
+  id: GetPaymentFromUrlRequest
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor(System.Int64,System.Int64)
-  - Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.GenerateData
+  - Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.#ctor(System.Int64)
+  - Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.GenerateData
   langs:
   - csharp
   - vb
-  name: RejectFriendGameSessionRequest
-  nameWithType: RejectFriendGameSessionRequest
-  fullName: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest
+  name: GetPaymentFromUrlRequest
+  nameWithType: GetPaymentFromUrlRequest
+  fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest
   type: Class
   source:
-    id: RejectFriendGameSessionRequest
+    id: GetPaymentFromUrlRequest
     path: ''
-    startLine: 3369
+    startLine: 3664
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: 'public class RejectFriendGameSessionRequest : BaseWebPackage<RejectFriendGameSessionRequestResult>, IWebRequest'
+    content: 'public class GetPaymentFromUrlRequest : BaseWebPackage<GetPaymentFromUrlResult>, IWebRequest'
     content.vb: >-
-      Public Class RejectFriendGameSessionRequest
-          Inherits BaseWebPackage(Of RejectFriendGameSessionRequestResult)
+      Public Class GetPaymentFromUrlRequest
+          Inherits BaseWebPackage(Of GetPaymentFromUrlResult)
           Implements IWebRequest
   inheritance:
   - System.Object
   - Winpeak.Client.Networking.WebServer.WebRequest
-  - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult}
+  - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult}
   implements:
   - Winpeak.Client.Networking.WebServer.IWebRequest
   inheritedMembers:
-  - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult}.Send(System.Action{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult})
-  - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult}.OnRequestFinished(HTTPRequest,HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult}.Send(System.Action{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult})
+  - Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult}.OnRequestFinished(HTTPRequest,HTTPResponse)
   - Winpeak.Client.Networking.WebServer.WebRequest.Mod
   - Winpeak.Client.Networking.WebServer.WebRequest.Act
   - Winpeak.Client.Networking.WebServer.WebRequest.Send
@@ -57,52 +57,50 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor(System.Int64,System.Int64)
-  commentId: M:Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor(System.Int64,System.Int64)
-  id: '#ctor(System.Int64,System.Int64)'
-  parent: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest
+- uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.#ctor(System.Int64)
+  commentId: M:Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.#ctor(System.Int64)
+  id: '#ctor(System.Int64)'
+  parent: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest
   langs:
   - csharp
   - vb
-  name: RejectFriendGameSessionRequest(Int64, Int64)
-  nameWithType: RejectFriendGameSessionRequest.RejectFriendGameSessionRequest(Int64, Int64)
-  fullName: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.RejectFriendGameSessionRequest(System.Int64, System.Int64)
+  name: GetPaymentFromUrlRequest(Int64)
+  nameWithType: GetPaymentFromUrlRequest.GetPaymentFromUrlRequest(Int64)
+  fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.GetPaymentFromUrlRequest(System.Int64)
   type: Constructor
   source:
     id: .ctor
     path: ''
-    startLine: 3376
+    startLine: 3670
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public RejectFriendGameSessionRequest(long gameSessionId, long rejectUserId)
+    content: public GetPaymentFromUrlRequest(long gameSessionId)
     parameters:
     - id: gameSessionId
       type: System.Int64
-    - id: rejectUserId
-      type: System.Int64
-    content.vb: Public Sub New(gameSessionId As Long, rejectUserId As Long)
-  overload: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor*
+    content.vb: Public Sub New(gameSessionId As Long)
+  overload: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.GenerateData
-  commentId: M:Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.GenerateData
+- uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.GenerateData
+  commentId: M:Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.GenerateData
   id: GenerateData
-  parent: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest
+  parent: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest
   langs:
   - csharp
   - vb
   name: GenerateData()
-  nameWithType: RejectFriendGameSessionRequest.GenerateData()
-  fullName: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.GenerateData()
+  nameWithType: GetPaymentFromUrlRequest.GenerateData()
+  fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.GenerateData()
   type: Method
   source:
     id: GenerateData
     path: ''
-    startLine: 3381
+    startLine: 3674
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
@@ -112,7 +110,7 @@ items:
       type: System.Collections.Generic.Dictionary{System.String,System.Object}
     content.vb: Public Overrides Function GenerateData As Dictionary(Of String, Object)
   overridden: Winpeak.Client.Networking.WebServer.WebRequest.GenerateData
-  overload: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.GenerateData*
+  overload: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.GenerateData*
   modifiers.csharp:
   - public
   - override
@@ -138,16 +136,16 @@ references:
   name: WebRequest
   nameWithType: WebRequest
   fullName: Winpeak.Client.Networking.WebServer.WebRequest
-- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult}
-  commentId: T:Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult}
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult}
+  commentId: T:Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult}
   parent: Winpeak.Client.Networking.WebServer
   definition: Winpeak.Client.Networking.WebServer.BaseWebPackage`1
-  name: BaseWebPackage<RejectFriendGameSessionRequestResult>
-  nameWithType: BaseWebPackage<RejectFriendGameSessionRequestResult>
-  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult>
-  nameWithType.vb: BaseWebPackage(Of RejectFriendGameSessionRequestResult)
-  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult)
-  name.vb: BaseWebPackage(Of RejectFriendGameSessionRequestResult)
+  name: BaseWebPackage<GetPaymentFromUrlResult>
+  nameWithType: BaseWebPackage<GetPaymentFromUrlResult>
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult>
+  nameWithType.vb: BaseWebPackage(Of GetPaymentFromUrlResult)
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult)
+  name.vb: BaseWebPackage(Of GetPaymentFromUrlResult)
   spec.csharp:
   - uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1
     name: BaseWebPackage
@@ -156,10 +154,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult
-    name: RejectFriendGameSessionRequestResult
-    nameWithType: RejectFriendGameSessionRequestResult
-    fullName: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult
+  - uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
+    name: GetPaymentFromUrlResult
+    nameWithType: GetPaymentFromUrlResult
+    fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
   - name: '>'
     nameWithType: '>'
     fullName: '>'
@@ -171,10 +169,10 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult
-    name: RejectFriendGameSessionRequestResult
-    nameWithType: RejectFriendGameSessionRequestResult
-    fullName: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult
+  - uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
+    name: GetPaymentFromUrlResult
+    nameWithType: GetPaymentFromUrlResult
+    fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
   - name: )
     nameWithType: )
     fullName: )
@@ -184,21 +182,21 @@ references:
   name: IWebRequest
   nameWithType: IWebRequest
   fullName: Winpeak.Client.Networking.WebServer.IWebRequest
-- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult}.Send(System.Action{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult})
-  commentId: M:Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult}.Send(System.Action{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult})
-  parent: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult}
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult}.Send(System.Action{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult})
+  commentId: M:Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult}.Send(System.Action{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult})
+  parent: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult}
   definition: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send(System.Action{`0})
-  name: Send(Action<RejectFriendGameSessionRequestResult>)
-  nameWithType: BaseWebPackage<RejectFriendGameSessionRequestResult>.Send(Action<RejectFriendGameSessionRequestResult>)
-  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult>.Send(System.Action<Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult>)
-  nameWithType.vb: BaseWebPackage(Of RejectFriendGameSessionRequestResult).Send(Action(Of RejectFriendGameSessionRequestResult))
-  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult).Send(System.Action(Of Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult))
-  name.vb: Send(Action(Of RejectFriendGameSessionRequestResult))
+  name: Send(Action<GetPaymentFromUrlResult>)
+  nameWithType: BaseWebPackage<GetPaymentFromUrlResult>.Send(Action<GetPaymentFromUrlResult>)
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult>.Send(System.Action<Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult>)
+  nameWithType.vb: BaseWebPackage(Of GetPaymentFromUrlResult).Send(Action(Of GetPaymentFromUrlResult))
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult).Send(System.Action(Of Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult))
+  name.vb: Send(Action(Of GetPaymentFromUrlResult))
   spec.csharp:
   - uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send(System.Action{`0})
     name: Send
-    nameWithType: BaseWebPackage<RejectFriendGameSessionRequestResult>.Send
-    fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult>.Send
+    nameWithType: BaseWebPackage<GetPaymentFromUrlResult>.Send
+    fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult>.Send
   - name: (
     nameWithType: (
     fullName: (
@@ -210,10 +208,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult
-    name: RejectFriendGameSessionRequestResult
-    nameWithType: RejectFriendGameSessionRequestResult
-    fullName: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult
+  - uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
+    name: GetPaymentFromUrlResult
+    nameWithType: GetPaymentFromUrlResult
+    fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
   - name: '>'
     nameWithType: '>'
     fullName: '>'
@@ -223,8 +221,8 @@ references:
   spec.vb:
   - uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.Send(System.Action{`0})
     name: Send
-    nameWithType: BaseWebPackage(Of RejectFriendGameSessionRequestResult).Send
-    fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult).Send
+    nameWithType: BaseWebPackage(Of GetPaymentFromUrlResult).Send
+    fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult).Send
   - name: (
     nameWithType: (
     fullName: (
@@ -236,30 +234,30 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult
-    name: RejectFriendGameSessionRequestResult
-    nameWithType: RejectFriendGameSessionRequestResult
-    fullName: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult
+  - uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
+    name: GetPaymentFromUrlResult
+    nameWithType: GetPaymentFromUrlResult
+    fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
   - name: )
     nameWithType: )
     fullName: )
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult}.OnRequestFinished(HTTPRequest,HTTPResponse)
-  commentId: M:Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult}.OnRequestFinished(HTTPRequest,HTTPResponse)
-  parent: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult}
+- uid: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult}.OnRequestFinished(HTTPRequest,HTTPResponse)
+  commentId: M:Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult}.OnRequestFinished(HTTPRequest,HTTPResponse)
+  parent: Winpeak.Client.Networking.WebServer.BaseWebPackage{Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult}
   definition: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.OnRequestFinished(HTTPRequest,HTTPResponse)
   name: OnRequestFinished(HTTPRequest, HTTPResponse)
-  nameWithType: BaseWebPackage<RejectFriendGameSessionRequestResult>.OnRequestFinished(HTTPRequest, HTTPResponse)
-  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult>.OnRequestFinished(HTTPRequest, HTTPResponse)
-  nameWithType.vb: BaseWebPackage(Of RejectFriendGameSessionRequestResult).OnRequestFinished(HTTPRequest, HTTPResponse)
-  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult).OnRequestFinished(HTTPRequest, HTTPResponse)
+  nameWithType: BaseWebPackage<GetPaymentFromUrlResult>.OnRequestFinished(HTTPRequest, HTTPResponse)
+  fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult>.OnRequestFinished(HTTPRequest, HTTPResponse)
+  nameWithType.vb: BaseWebPackage(Of GetPaymentFromUrlResult).OnRequestFinished(HTTPRequest, HTTPResponse)
+  fullName.vb: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult).OnRequestFinished(HTTPRequest, HTTPResponse)
   spec.csharp:
   - uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.OnRequestFinished(HTTPRequest,HTTPResponse)
     name: OnRequestFinished
-    nameWithType: BaseWebPackage<RejectFriendGameSessionRequestResult>.OnRequestFinished
-    fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult>.OnRequestFinished
+    nameWithType: BaseWebPackage<GetPaymentFromUrlResult>.OnRequestFinished
+    fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage<Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult>.OnRequestFinished
   - name: (
     nameWithType: (
     fullName: (
@@ -282,8 +280,8 @@ references:
   spec.vb:
   - uid: Winpeak.Client.Networking.WebServer.BaseWebPackage`1.OnRequestFinished(HTTPRequest,HTTPResponse)
     name: OnRequestFinished
-    nameWithType: BaseWebPackage(Of RejectFriendGameSessionRequestResult).OnRequestFinished
-    fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequestResult).OnRequestFinished
+    nameWithType: BaseWebPackage(Of GetPaymentFromUrlResult).OnRequestFinished
+    fullName: Winpeak.Client.Networking.WebServer.BaseWebPackage(Of Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult).OnRequestFinished
   - name: (
     nameWithType: (
     fullName: (
@@ -809,11 +807,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.#ctor
-  name: RejectFriendGameSessionRequest
-  nameWithType: RejectFriendGameSessionRequest.RejectFriendGameSessionRequest
-  fullName: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.RejectFriendGameSessionRequest
+- uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.#ctor*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.#ctor
+  name: GetPaymentFromUrlRequest
+  nameWithType: GetPaymentFromUrlRequest.GetPaymentFromUrlRequest
+  fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.GetPaymentFromUrlRequest
 - uid: System.Int64
   commentId: T:System.Int64
   parent: System
@@ -849,11 +847,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.GenerateData*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.GenerateData
+- uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.GenerateData*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.GenerateData
   name: GenerateData
-  nameWithType: RejectFriendGameSessionRequest.GenerateData
-  fullName: Winpeak.Client.Networking.WebServer.RejectFriendGameSessionRequest.GenerateData
+  nameWithType: GetPaymentFromUrlRequest.GenerateData
+  fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlRequest.GenerateData
 - uid: System.Collections.Generic.Dictionary{System.String,System.Object}
   commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
   parent: System.Collections.Generic

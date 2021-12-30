@@ -1,42 +1,40 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Networking.WebServer.GameServerInfo
-  commentId: T:Winpeak.Client.Networking.WebServer.GameServerInfo
-  id: GameServerInfo
+- uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
+  commentId: T:Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
+  id: GetPaymentFromUrlResult
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.GameServerInfo.GetGameNetwork
-  - Winpeak.Client.Networking.WebServer.GameServerInfo.GetLogin
-  - Winpeak.Client.Networking.WebServer.GameServerInfo.GetPassword
+  - Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.HandleResponse(HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.PaymentInfo
   langs:
   - csharp
   - vb
-  name: GameServerInfo
-  nameWithType: GameServerInfo
-  fullName: Winpeak.Client.Networking.WebServer.GameServerInfo
+  name: GetPaymentFromUrlResult
+  nameWithType: GetPaymentFromUrlResult
+  fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
   type: Class
   source:
-    id: GameServerInfo
+    id: GetPaymentFromUrlResult
     path: ''
-    startLine: 2834
+    startLine: 2720
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: 'public class GameServerInfo : InternalGameServerInfo, ITemplate'
+    content: 'public class GetPaymentFromUrlResult : WebResult'
     content.vb: >-
-      Public Class GameServerInfo
-          Inherits InternalGameServerInfo
-          Implements ITemplate
+      Public Class GetPaymentFromUrlResult
+          Inherits WebResult
   inheritance:
   - System.Object
-  - Winpeak.Client.Networking.WebServer.InternalGameServerInfo
-  implements:
-  - Winpeak.Client.Networking.WebServer.ITemplate
+  - Winpeak.Client.Networking.WebServer.WebResult
   inheritedMembers:
-  - Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GameLogin
-  - Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GamePassword
-  - Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GameNetwork
+  - Winpeak.Client.Networking.WebServer.WebResult.Error
+  - Winpeak.Client.Networking.WebServer.WebResult.m_state
+  - Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.WebResult.HasError
+  - Winpeak.Client.Networking.WebServer.WebResult.State
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -50,99 +48,69 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.GameServerInfo.GetLogin
-  commentId: P:Winpeak.Client.Networking.WebServer.GameServerInfo.GetLogin
-  id: GetLogin
-  parent: Winpeak.Client.Networking.WebServer.GameServerInfo
+- uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.PaymentInfo
+  commentId: P:Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.PaymentInfo
+  id: PaymentInfo
+  parent: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
   langs:
   - csharp
   - vb
-  name: GetLogin
-  nameWithType: GameServerInfo.GetLogin
-  fullName: Winpeak.Client.Networking.WebServer.GameServerInfo.GetLogin
+  name: PaymentInfo
+  nameWithType: GetPaymentFromUrlResult.PaymentInfo
+  fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.PaymentInfo
   type: Property
   source:
-    id: GetLogin
+    id: PaymentInfo
     path: ''
-    startLine: 2836
+    startLine: 2728
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public long GetLogin { get; }
+    content: public GetPaymentFromUrlResult.Data PaymentInfo { get; }
     parameters: []
     return:
-      type: System.Int64
-    content.vb: Public ReadOnly Property GetLogin As Long
-  overload: Winpeak.Client.Networking.WebServer.GameServerInfo.GetLogin*
+      type: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.Data
+    content.vb: Public ReadOnly Property PaymentInfo As GetPaymentFromUrlResult.Data
+  overload: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.PaymentInfo*
   modifiers.csharp:
   - public
   - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.GameServerInfo.GetPassword
-  commentId: P:Winpeak.Client.Networking.WebServer.GameServerInfo.GetPassword
-  id: GetPassword
-  parent: Winpeak.Client.Networking.WebServer.GameServerInfo
+- uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.HandleResponse(HTTPResponse)
+  commentId: M:Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.HandleResponse(HTTPResponse)
+  id: HandleResponse(HTTPResponse)
+  parent: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult
   langs:
   - csharp
   - vb
-  name: GetPassword
-  nameWithType: GameServerInfo.GetPassword
-  fullName: Winpeak.Client.Networking.WebServer.GameServerInfo.GetPassword
-  type: Property
+  name: HandleResponse(HTTPResponse)
+  nameWithType: GetPaymentFromUrlResult.HandleResponse(HTTPResponse)
+  fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.HandleResponse(HTTPResponse)
+  type: Method
   source:
-    id: GetPassword
+    id: HandleResponse
     path: ''
-    startLine: 2837
+    startLine: 2730
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public string GetPassword { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public ReadOnly Property GetPassword As String
-  overload: Winpeak.Client.Networking.WebServer.GameServerInfo.GetPassword*
+    content: protected override void HandleResponse(HTTPResponse response)
+    parameters:
+    - id: response
+      type: HTTPResponse
+    content.vb: Protected Overrides Sub HandleResponse(response As HTTPResponse)
+  overridden: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+  overload: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.HandleResponse*
   modifiers.csharp:
-  - public
-  - get
+  - protected
+  - override
   modifiers.vb:
-  - Public
-  - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.GameServerInfo.GetGameNetwork
-  commentId: P:Winpeak.Client.Networking.WebServer.GameServerInfo.GetGameNetwork
-  id: GetGameNetwork
-  parent: Winpeak.Client.Networking.WebServer.GameServerInfo
-  langs:
-  - csharp
-  - vb
-  name: GetGameNetwork
-  nameWithType: GameServerInfo.GetGameNetwork
-  fullName: Winpeak.Client.Networking.WebServer.GameServerInfo.GetGameNetwork
-  type: Property
-  source:
-    id: GetGameNetwork
-    path: ''
-    startLine: 2838
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: public List<GameServerNetwork> GetGameNetwork { get; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameServerNetwork}
-    content.vb: Public ReadOnly Property GetGameNetwork As List(Of GameServerNetwork)
-  overload: Winpeak.Client.Networking.WebServer.GameServerInfo.GetGameNetwork*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
+  - Protected
+  - Overrides
 references:
 - uid: Winpeak.Client.Networking.WebServer
   commentId: N:Winpeak.Client.Networking.WebServer
@@ -156,36 +124,75 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: Winpeak.Client.Networking.WebServer.InternalGameServerInfo
-  commentId: T:Winpeak.Client.Networking.WebServer.InternalGameServerInfo
+- uid: Winpeak.Client.Networking.WebServer.WebResult
+  commentId: T:Winpeak.Client.Networking.WebServer.WebResult
   parent: Winpeak.Client.Networking.WebServer
-  name: InternalGameServerInfo
-  nameWithType: InternalGameServerInfo
-  fullName: Winpeak.Client.Networking.WebServer.InternalGameServerInfo
-- uid: Winpeak.Client.Networking.WebServer.ITemplate
-  commentId: T:Winpeak.Client.Networking.WebServer.ITemplate
-  parent: Winpeak.Client.Networking.WebServer
-  name: ITemplate
-  nameWithType: ITemplate
-  fullName: Winpeak.Client.Networking.WebServer.ITemplate
-- uid: Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GameLogin
-  commentId: F:Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GameLogin
-  parent: Winpeak.Client.Networking.WebServer.InternalGameServerInfo
-  name: GameLogin
-  nameWithType: InternalGameServerInfo.GameLogin
-  fullName: Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GameLogin
-- uid: Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GamePassword
-  commentId: F:Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GamePassword
-  parent: Winpeak.Client.Networking.WebServer.InternalGameServerInfo
-  name: GamePassword
-  nameWithType: InternalGameServerInfo.GamePassword
-  fullName: Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GamePassword
-- uid: Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GameNetwork
-  commentId: F:Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GameNetwork
-  parent: Winpeak.Client.Networking.WebServer.InternalGameServerInfo
-  name: GameNetwork
-  nameWithType: InternalGameServerInfo.GameNetwork
-  fullName: Winpeak.Client.Networking.WebServer.InternalGameServerInfo.GameNetwork
+  name: WebResult
+  nameWithType: WebResult
+  fullName: Winpeak.Client.Networking.WebServer.WebResult
+- uid: Winpeak.Client.Networking.WebServer.WebResult.Error
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.Error
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: Error
+  nameWithType: WebResult.Error
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.Error
+- uid: Winpeak.Client.Networking.WebServer.WebResult.m_state
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_state
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: m_state
+  nameWithType: WebResult.m_state
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_state
+- uid: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  isExternal: true
+  name: SetResponse(HTTPResponse)
+  nameWithType: WebResult.SetResponse(HTTPResponse)
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+    name: SetResponse
+    nameWithType: WebResult.SetResponse
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.SetResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HTTPResponse
+    name: HTTPResponse
+    nameWithType: HTTPResponse
+    fullName: HTTPResponse
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+    name: SetResponse
+    nameWithType: WebResult.SetResponse
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.SetResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HTTPResponse
+    name: HTTPResponse
+    nameWithType: HTTPResponse
+    fullName: HTTPResponse
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebResult.HasError
+  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.HasError
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: HasError
+  nameWithType: WebResult.HasError
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.HasError
+- uid: Winpeak.Client.Networking.WebServer.WebResult.State
+  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.State
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: State
+  nameWithType: WebResult.State
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.State
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -471,119 +478,63 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Networking.WebServer.GameServerInfo.GetLogin*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.GameServerInfo.GetLogin
-  name: GetLogin
-  nameWithType: GameServerInfo.GetLogin
-  fullName: Winpeak.Client.Networking.WebServer.GameServerInfo.GetLogin
-- uid: System.Int64
-  commentId: T:System.Int64
-  parent: System
+- uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.PaymentInfo*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.PaymentInfo
+  name: PaymentInfo
+  nameWithType: GetPaymentFromUrlResult.PaymentInfo
+  fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.PaymentInfo
+- uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.Data
+  parent: Winpeak.Client.Networking.WebServer
+  name: GetPaymentFromUrlResult.Data
+  nameWithType: GetPaymentFromUrlResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.Data
+- uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+  parent: Winpeak.Client.Networking.WebServer.WebResult
   isExternal: true
-  name: Int64
-  nameWithType: Int64
-  fullName: System.Int64
-- uid: Winpeak.Client.Networking.WebServer.GameServerInfo.GetPassword*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.GameServerInfo.GetPassword
-  name: GetPassword
-  nameWithType: GameServerInfo.GetPassword
-  fullName: Winpeak.Client.Networking.WebServer.GameServerInfo.GetPassword
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: Winpeak.Client.Networking.WebServer.GameServerInfo.GetGameNetwork*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.GameServerInfo.GetGameNetwork
-  name: GetGameNetwork
-  nameWithType: GameServerInfo.GetGameNetwork
-  fullName: Winpeak.Client.Networking.WebServer.GameServerInfo.GetGameNetwork
-- uid: System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameServerNetwork}
-  commentId: T:System.Collections.Generic.List{Winpeak.Client.Networking.WebServer.GameServerNetwork}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  name: List<GameServerNetwork>
-  nameWithType: List<GameServerNetwork>
-  fullName: System.Collections.Generic.List<Winpeak.Client.Networking.WebServer.GameServerNetwork>
-  nameWithType.vb: List(Of GameServerNetwork)
-  fullName.vb: System.Collections.Generic.List(Of Winpeak.Client.Networking.WebServer.GameServerNetwork)
-  name.vb: List(Of GameServerNetwork)
+  name: HandleResponse(HTTPResponse)
+  nameWithType: WebResult.HandleResponse(HTTPResponse)
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
   spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+    name: HandleResponse
+    nameWithType: WebResult.HandleResponse
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HTTPResponse
+    name: HTTPResponse
+    nameWithType: HTTPResponse
+    fullName: HTTPResponse
     isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: Winpeak.Client.Networking.WebServer.GameServerNetwork
-    name: GameServerNetwork
-    nameWithType: GameServerNetwork
-    fullName: Winpeak.Client.Networking.WebServer.GameServerNetwork
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: Winpeak.Client.Networking.WebServer.GameServerNetwork
-    name: GameServerNetwork
-    nameWithType: GameServerNetwork
-    fullName: Winpeak.Client.Networking.WebServer.GameServerNetwork
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+    name: HandleResponse
+    nameWithType: WebResult.HandleResponse
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HTTPResponse
+    name: HTTPResponse
+    nameWithType: HTTPResponse
+    fullName: HTTPResponse
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
+- uid: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.HandleResponse*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.HandleResponse
+  name: HandleResponse
+  nameWithType: GetPaymentFromUrlResult.HandleResponse
+  fullName: Winpeak.Client.Networking.WebServer.GetPaymentFromUrlResult.HandleResponse
+- uid: HTTPResponse
   isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
+  name: HTTPResponse
+  nameWithType: HTTPResponse
+  fullName: HTTPResponse
