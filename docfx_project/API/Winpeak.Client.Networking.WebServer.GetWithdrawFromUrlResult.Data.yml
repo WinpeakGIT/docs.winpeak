@@ -1,40 +1,31 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Networking.WebServer.Avatar
-  commentId: T:Winpeak.Client.Networking.WebServer.Avatar
-  id: Avatar
+- uid: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data
+  id: GetWithdrawFromUrlResult.Data
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.Avatar.GetBig
-  - Winpeak.Client.Networking.WebServer.Avatar.GetSmall
+  - Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data.Url
   langs:
   - csharp
   - vb
-  name: Avatar
-  nameWithType: Avatar
-  fullName: Winpeak.Client.Networking.WebServer.Avatar
+  name: GetWithdrawFromUrlResult.Data
+  nameWithType: GetWithdrawFromUrlResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data
   type: Class
   source:
-    id: Avatar
+    id: Data
     path: ''
-    startLine: 2900
+    startLine: 2737
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: 'public class Avatar : InternalAvatar, IAvatar'
-    content.vb: >-
-      Public Class Avatar
-          Inherits InternalAvatar
-          Implements IAvatar
+    content: public class Data
+    content.vb: Public Class Data
   inheritance:
   - System.Object
-  - Winpeak.Client.Networking.WebServer.InternalAvatar
-  implements:
-  - Winpeak.Client.Networking.WebServer.IAvatar
   inheritedMembers:
-  - Winpeak.Client.Networking.WebServer.InternalAvatar.Big
-  - Winpeak.Client.Networking.WebServer.InternalAvatar.Small
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -48,72 +39,33 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.Avatar.GetBig
-  commentId: P:Winpeak.Client.Networking.WebServer.Avatar.GetBig
-  id: GetBig
-  parent: Winpeak.Client.Networking.WebServer.Avatar
+- uid: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data.Url
+  commentId: F:Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data.Url
+  id: Url
+  parent: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data
   langs:
   - csharp
   - vb
-  name: GetBig
-  nameWithType: Avatar.GetBig
-  fullName: Winpeak.Client.Networking.WebServer.Avatar.GetBig
-  type: Property
+  name: Url
+  nameWithType: GetWithdrawFromUrlResult.Data.Url
+  fullName: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data.Url
+  type: Field
   source:
-    id: GetBig
+    id: Url
     path: ''
-    startLine: 2903
+    startLine: 2739
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public string GetBig { get; }
-    parameters: []
+    content: public string Url
     return:
       type: System.String
-    content.vb: Public ReadOnly Property GetBig As String
-  overload: Winpeak.Client.Networking.WebServer.Avatar.GetBig*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IAvatar.GetBig
+    content.vb: Public Url As String
   modifiers.csharp:
   - public
-  - get
   modifiers.vb:
   - Public
-  - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.Avatar.GetSmall
-  commentId: P:Winpeak.Client.Networking.WebServer.Avatar.GetSmall
-  id: GetSmall
-  parent: Winpeak.Client.Networking.WebServer.Avatar
-  langs:
-  - csharp
-  - vb
-  name: GetSmall
-  nameWithType: Avatar.GetSmall
-  fullName: Winpeak.Client.Networking.WebServer.Avatar.GetSmall
-  type: Property
-  source:
-    id: GetSmall
-    path: ''
-    startLine: 2905
-  assemblies:
-  - cs.temp.dll
-  namespace: Winpeak.Client.Networking.WebServer
-  syntax:
-    content: public string GetSmall { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public ReadOnly Property GetSmall As String
-  overload: Winpeak.Client.Networking.WebServer.Avatar.GetSmall*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IAvatar.GetSmall
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
 references:
 - uid: Winpeak.Client.Networking.WebServer
   commentId: N:Winpeak.Client.Networking.WebServer
@@ -127,30 +79,6 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: Winpeak.Client.Networking.WebServer.InternalAvatar
-  commentId: T:Winpeak.Client.Networking.WebServer.InternalAvatar
-  parent: Winpeak.Client.Networking.WebServer
-  name: InternalAvatar
-  nameWithType: InternalAvatar
-  fullName: Winpeak.Client.Networking.WebServer.InternalAvatar
-- uid: Winpeak.Client.Networking.WebServer.IAvatar
-  commentId: T:Winpeak.Client.Networking.WebServer.IAvatar
-  parent: Winpeak.Client.Networking.WebServer
-  name: IAvatar
-  nameWithType: IAvatar
-  fullName: Winpeak.Client.Networking.WebServer.IAvatar
-- uid: Winpeak.Client.Networking.WebServer.InternalAvatar.Big
-  commentId: F:Winpeak.Client.Networking.WebServer.InternalAvatar.Big
-  parent: Winpeak.Client.Networking.WebServer.InternalAvatar
-  name: Big
-  nameWithType: InternalAvatar.Big
-  fullName: Winpeak.Client.Networking.WebServer.InternalAvatar.Big
-- uid: Winpeak.Client.Networking.WebServer.InternalAvatar.Small
-  commentId: F:Winpeak.Client.Networking.WebServer.InternalAvatar.Small
-  parent: Winpeak.Client.Networking.WebServer.InternalAvatar
-  name: Small
-  nameWithType: InternalAvatar.Small
-  fullName: Winpeak.Client.Networking.WebServer.InternalAvatar.Small
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -436,17 +364,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Networking.WebServer.Avatar.GetBig*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.Avatar.GetBig
-  name: GetBig
-  nameWithType: Avatar.GetBig
-  fullName: Winpeak.Client.Networking.WebServer.Avatar.GetBig
-- uid: Winpeak.Client.Networking.WebServer.IAvatar.GetBig
-  commentId: P:Winpeak.Client.Networking.WebServer.IAvatar.GetBig
-  parent: Winpeak.Client.Networking.WebServer.IAvatar
-  name: GetBig
-  nameWithType: IAvatar.GetBig
-  fullName: Winpeak.Client.Networking.WebServer.IAvatar.GetBig
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -454,14 +371,3 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: Winpeak.Client.Networking.WebServer.Avatar.GetSmall*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.Avatar.GetSmall
-  name: GetSmall
-  nameWithType: Avatar.GetSmall
-  fullName: Winpeak.Client.Networking.WebServer.Avatar.GetSmall
-- uid: Winpeak.Client.Networking.WebServer.IAvatar.GetSmall
-  commentId: P:Winpeak.Client.Networking.WebServer.IAvatar.GetSmall
-  parent: Winpeak.Client.Networking.WebServer.IAvatar
-  name: GetSmall
-  nameWithType: IAvatar.GetSmall
-  fullName: Winpeak.Client.Networking.WebServer.IAvatar.GetSmall

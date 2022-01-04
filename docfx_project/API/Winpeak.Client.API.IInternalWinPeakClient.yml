@@ -37,7 +37,7 @@ items:
   source:
     id: IInternalWinPeakClient
     path: ''
-    startLine: 4491
+    startLine: 4544
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -121,6 +121,7 @@ items:
   - Winpeak.Client.API.IWinPeakNetworkClient.GetStaticPages(System.Collections.Generic.List{System.String},System.Int32,System.Action{GetStaticPagesResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetPlatformLanguages(System.String,System.Collections.Generic.List{System.Int32},System.Action{GetPlatformLanguagesResult})
   - Winpeak.Client.API.IWinPeakNetworkClient.GetPaymentFromUrlRequest(System.Int64,System.Action{GetPaymentFromUrlResult})
+  - Winpeak.Client.API.IWinPeakNetworkClient.GetWithdrawFromUrlRequest(System.Int64,System.Action{GetWithdrawFromUrlResult})
   modifiers.csharp:
   - public
   - interface
@@ -141,7 +142,7 @@ items:
   source:
     id: Sync
     path: ''
-    startLine: 4497
+    startLine: 4550
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -169,7 +170,7 @@ items:
   source:
     id: Disconnect
     path: ''
-    startLine: 4502
+    startLine: 4555
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -193,7 +194,7 @@ items:
   source:
     id: Confirm
     path: ''
-    startLine: 4508
+    startLine: 4561
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -221,7 +222,7 @@ items:
   source:
     id: InvokeGameObjectsReady
     path: ''
-    startLine: 4513
+    startLine: 4566
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -251,7 +252,7 @@ items:
   source:
     id: UserInfoUpdated
     path: ''
-    startLine: 4521
+    startLine: 4574
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -285,7 +286,7 @@ items:
   source:
     id: RoundScoreUpdate
     path: ''
-    startLine: 4527
+    startLine: 4580
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -313,7 +314,7 @@ items:
   source:
     id: GameOver
     path: ''
-    startLine: 4533
+    startLine: 4586
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -341,7 +342,7 @@ items:
   source:
     id: InitStartGameCountdown
     path: ''
-    startLine: 4539
+    startLine: 4592
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -369,7 +370,7 @@ items:
   source:
     id: EndGameTimeChanged
     path: ''
-    startLine: 4541
+    startLine: 4594
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -394,7 +395,7 @@ items:
   source:
     id: ChangeGameState
     path: ''
-    startLine: 4546
+    startLine: 4599
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -421,7 +422,7 @@ items:
   source:
     id: OccurConnectionProblem
     path: ''
-    startLine: 4551
+    startLine: 4604
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -445,7 +446,7 @@ items:
   source:
     id: DisplayPing
     path: ''
-    startLine: 4557
+    startLine: 4610
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -473,7 +474,7 @@ items:
   source:
     id: OnCollision
     path: ''
-    startLine: 4562
+    startLine: 4615
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -502,7 +503,7 @@ items:
   source:
     id: OnDamage
     path: ''
-    startLine: 4567
+    startLine: 4620
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -531,7 +532,7 @@ items:
   source:
     id: OnEnable
     path: ''
-    startLine: 4572
+    startLine: 4625
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -560,7 +561,7 @@ items:
   source:
     id: GetServerConnectionStatusController
     path: ''
-    startLine: 4577
+    startLine: 4630
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -591,7 +592,7 @@ items:
   source:
     id: InvokeGamePlayersList
     path: ''
-    startLine: 4583
+    startLine: 4636
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -622,7 +623,7 @@ items:
   source:
     id: GetServerStartTime
     path: ''
-    startLine: 4588
+    startLine: 4641
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -653,7 +654,7 @@ items:
   source:
     id: GetSceneObjectService
     path: ''
-    startLine: 4593
+    startLine: 4646
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -684,7 +685,7 @@ items:
   source:
     id: GetGamePlayService
     path: ''
-    startLine: 4598
+    startLine: 4651
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -715,7 +716,7 @@ items:
   source:
     id: Send
     path: ''
-    startLine: 4603
+    startLine: 4656
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -742,7 +743,7 @@ items:
   source:
     id: FireConfigLoaded
     path: ''
-    startLine: 4608
+    startLine: 4661
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.API
@@ -5051,6 +5052,86 @@ references:
     name: GetPaymentFromUrlResult
     nameWithType: GetPaymentFromUrlResult
     fullName: GetPaymentFromUrlResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.API.IWinPeakNetworkClient.GetWithdrawFromUrlRequest(System.Int64,System.Action{GetWithdrawFromUrlResult})
+  commentId: M:Winpeak.Client.API.IWinPeakNetworkClient.GetWithdrawFromUrlRequest(System.Int64,System.Action{GetWithdrawFromUrlResult})
+  parent: Winpeak.Client.API.IWinPeakNetworkClient
+  isExternal: true
+  name: GetWithdrawFromUrlRequest(Int64, Action<GetWithdrawFromUrlResult>)
+  nameWithType: IWinPeakNetworkClient.GetWithdrawFromUrlRequest(Int64, Action<GetWithdrawFromUrlResult>)
+  fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetWithdrawFromUrlRequest(System.Int64, System.Action<GetWithdrawFromUrlResult>)
+  nameWithType.vb: IWinPeakNetworkClient.GetWithdrawFromUrlRequest(Int64, Action(Of GetWithdrawFromUrlResult))
+  fullName.vb: Winpeak.Client.API.IWinPeakNetworkClient.GetWithdrawFromUrlRequest(System.Int64, System.Action(Of GetWithdrawFromUrlResult))
+  name.vb: GetWithdrawFromUrlRequest(Int64, Action(Of GetWithdrawFromUrlResult))
+  spec.csharp:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetWithdrawFromUrlRequest(System.Int64,System.Action{GetWithdrawFromUrlResult})
+    name: GetWithdrawFromUrlRequest
+    nameWithType: IWinPeakNetworkClient.GetWithdrawFromUrlRequest
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetWithdrawFromUrlRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: GetWithdrawFromUrlResult
+    name: GetWithdrawFromUrlResult
+    nameWithType: GetWithdrawFromUrlResult
+    fullName: GetWithdrawFromUrlResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.API.IWinPeakNetworkClient.GetWithdrawFromUrlRequest(System.Int64,System.Action{GetWithdrawFromUrlResult})
+    name: GetWithdrawFromUrlRequest
+    nameWithType: IWinPeakNetworkClient.GetWithdrawFromUrlRequest
+    fullName: Winpeak.Client.API.IWinPeakNetworkClient.GetWithdrawFromUrlRequest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: GetWithdrawFromUrlResult
+    name: GetWithdrawFromUrlResult
+    nameWithType: GetWithdrawFromUrlResult
+    fullName: GetWithdrawFromUrlResult
     isExternal: true
   - name: )
     nameWithType: )

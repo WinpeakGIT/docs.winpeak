@@ -1,40 +1,40 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Winpeak.Client.Networking.WebServer.Avatar
-  commentId: T:Winpeak.Client.Networking.WebServer.Avatar
-  id: Avatar
+- uid: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult
+  commentId: T:Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult
+  id: GetWithdrawFromUrlResult
   parent: Winpeak.Client.Networking.WebServer
   children:
-  - Winpeak.Client.Networking.WebServer.Avatar.GetBig
-  - Winpeak.Client.Networking.WebServer.Avatar.GetSmall
+  - Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.HandleResponse(HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.WithdrawInfo
   langs:
   - csharp
   - vb
-  name: Avatar
-  nameWithType: Avatar
-  fullName: Winpeak.Client.Networking.WebServer.Avatar
+  name: GetWithdrawFromUrlResult
+  nameWithType: GetWithdrawFromUrlResult
+  fullName: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult
   type: Class
   source:
-    id: Avatar
+    id: GetWithdrawFromUrlResult
     path: ''
-    startLine: 2900
+    startLine: 2720
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: 'public class Avatar : InternalAvatar, IAvatar'
+    content: 'public class GetWithdrawFromUrlResult : WebResult'
     content.vb: >-
-      Public Class Avatar
-          Inherits InternalAvatar
-          Implements IAvatar
+      Public Class GetWithdrawFromUrlResult
+          Inherits WebResult
   inheritance:
   - System.Object
-  - Winpeak.Client.Networking.WebServer.InternalAvatar
-  implements:
-  - Winpeak.Client.Networking.WebServer.IAvatar
+  - Winpeak.Client.Networking.WebServer.WebResult
   inheritedMembers:
-  - Winpeak.Client.Networking.WebServer.InternalAvatar.Big
-  - Winpeak.Client.Networking.WebServer.InternalAvatar.Small
+  - Winpeak.Client.Networking.WebServer.WebResult.Error
+  - Winpeak.Client.Networking.WebServer.WebResult.m_state
+  - Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+  - Winpeak.Client.Networking.WebServer.WebResult.HasError
+  - Winpeak.Client.Networking.WebServer.WebResult.State
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -48,72 +48,69 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Winpeak.Client.Networking.WebServer.Avatar.GetBig
-  commentId: P:Winpeak.Client.Networking.WebServer.Avatar.GetBig
-  id: GetBig
-  parent: Winpeak.Client.Networking.WebServer.Avatar
+- uid: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.WithdrawInfo
+  commentId: P:Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.WithdrawInfo
+  id: WithdrawInfo
+  parent: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult
   langs:
   - csharp
   - vb
-  name: GetBig
-  nameWithType: Avatar.GetBig
-  fullName: Winpeak.Client.Networking.WebServer.Avatar.GetBig
+  name: WithdrawInfo
+  nameWithType: GetWithdrawFromUrlResult.WithdrawInfo
+  fullName: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.WithdrawInfo
   type: Property
   source:
-    id: GetBig
+    id: WithdrawInfo
     path: ''
-    startLine: 2903
+    startLine: 2728
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public string GetBig { get; }
+    content: public GetWithdrawFromUrlResult.Data WithdrawInfo { get; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public ReadOnly Property GetBig As String
-  overload: Winpeak.Client.Networking.WebServer.Avatar.GetBig*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IAvatar.GetBig
+      type: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data
+    content.vb: Public ReadOnly Property WithdrawInfo As GetWithdrawFromUrlResult.Data
+  overload: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.WithdrawInfo*
   modifiers.csharp:
   - public
   - get
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Winpeak.Client.Networking.WebServer.Avatar.GetSmall
-  commentId: P:Winpeak.Client.Networking.WebServer.Avatar.GetSmall
-  id: GetSmall
-  parent: Winpeak.Client.Networking.WebServer.Avatar
+- uid: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.HandleResponse(HTTPResponse)
+  commentId: M:Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.HandleResponse(HTTPResponse)
+  id: HandleResponse(HTTPResponse)
+  parent: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult
   langs:
   - csharp
   - vb
-  name: GetSmall
-  nameWithType: Avatar.GetSmall
-  fullName: Winpeak.Client.Networking.WebServer.Avatar.GetSmall
-  type: Property
+  name: HandleResponse(HTTPResponse)
+  nameWithType: GetWithdrawFromUrlResult.HandleResponse(HTTPResponse)
+  fullName: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.HandleResponse(HTTPResponse)
+  type: Method
   source:
-    id: GetSmall
+    id: HandleResponse
     path: ''
-    startLine: 2905
+    startLine: 2730
   assemblies:
   - cs.temp.dll
   namespace: Winpeak.Client.Networking.WebServer
   syntax:
-    content: public string GetSmall { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public ReadOnly Property GetSmall As String
-  overload: Winpeak.Client.Networking.WebServer.Avatar.GetSmall*
-  implements:
-  - Winpeak.Client.Networking.WebServer.IAvatar.GetSmall
+    content: protected override void HandleResponse(HTTPResponse response)
+    parameters:
+    - id: response
+      type: HTTPResponse
+    content.vb: Protected Overrides Sub HandleResponse(response As HTTPResponse)
+  overridden: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+  overload: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.HandleResponse*
   modifiers.csharp:
-  - public
-  - get
+  - protected
+  - override
   modifiers.vb:
-  - Public
-  - ReadOnly
+  - Protected
+  - Overrides
 references:
 - uid: Winpeak.Client.Networking.WebServer
   commentId: N:Winpeak.Client.Networking.WebServer
@@ -127,30 +124,75 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: Winpeak.Client.Networking.WebServer.InternalAvatar
-  commentId: T:Winpeak.Client.Networking.WebServer.InternalAvatar
+- uid: Winpeak.Client.Networking.WebServer.WebResult
+  commentId: T:Winpeak.Client.Networking.WebServer.WebResult
   parent: Winpeak.Client.Networking.WebServer
-  name: InternalAvatar
-  nameWithType: InternalAvatar
-  fullName: Winpeak.Client.Networking.WebServer.InternalAvatar
-- uid: Winpeak.Client.Networking.WebServer.IAvatar
-  commentId: T:Winpeak.Client.Networking.WebServer.IAvatar
-  parent: Winpeak.Client.Networking.WebServer
-  name: IAvatar
-  nameWithType: IAvatar
-  fullName: Winpeak.Client.Networking.WebServer.IAvatar
-- uid: Winpeak.Client.Networking.WebServer.InternalAvatar.Big
-  commentId: F:Winpeak.Client.Networking.WebServer.InternalAvatar.Big
-  parent: Winpeak.Client.Networking.WebServer.InternalAvatar
-  name: Big
-  nameWithType: InternalAvatar.Big
-  fullName: Winpeak.Client.Networking.WebServer.InternalAvatar.Big
-- uid: Winpeak.Client.Networking.WebServer.InternalAvatar.Small
-  commentId: F:Winpeak.Client.Networking.WebServer.InternalAvatar.Small
-  parent: Winpeak.Client.Networking.WebServer.InternalAvatar
-  name: Small
-  nameWithType: InternalAvatar.Small
-  fullName: Winpeak.Client.Networking.WebServer.InternalAvatar.Small
+  name: WebResult
+  nameWithType: WebResult
+  fullName: Winpeak.Client.Networking.WebServer.WebResult
+- uid: Winpeak.Client.Networking.WebServer.WebResult.Error
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.Error
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: Error
+  nameWithType: WebResult.Error
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.Error
+- uid: Winpeak.Client.Networking.WebServer.WebResult.m_state
+  commentId: F:Winpeak.Client.Networking.WebServer.WebResult.m_state
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: m_state
+  nameWithType: WebResult.m_state
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.m_state
+- uid: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  isExternal: true
+  name: SetResponse(HTTPResponse)
+  nameWithType: WebResult.SetResponse(HTTPResponse)
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+    name: SetResponse
+    nameWithType: WebResult.SetResponse
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.SetResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HTTPResponse
+    name: HTTPResponse
+    nameWithType: HTTPResponse
+    fullName: HTTPResponse
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.SetResponse(HTTPResponse)
+    name: SetResponse
+    nameWithType: WebResult.SetResponse
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.SetResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HTTPResponse
+    name: HTTPResponse
+    nameWithType: HTTPResponse
+    fullName: HTTPResponse
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.WebResult.HasError
+  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.HasError
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: HasError
+  nameWithType: WebResult.HasError
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.HasError
+- uid: Winpeak.Client.Networking.WebServer.WebResult.State
+  commentId: P:Winpeak.Client.Networking.WebServer.WebResult.State
+  parent: Winpeak.Client.Networking.WebServer.WebResult
+  name: State
+  nameWithType: WebResult.State
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.State
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -436,32 +478,63 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Winpeak.Client.Networking.WebServer.Avatar.GetBig*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.Avatar.GetBig
-  name: GetBig
-  nameWithType: Avatar.GetBig
-  fullName: Winpeak.Client.Networking.WebServer.Avatar.GetBig
-- uid: Winpeak.Client.Networking.WebServer.IAvatar.GetBig
-  commentId: P:Winpeak.Client.Networking.WebServer.IAvatar.GetBig
-  parent: Winpeak.Client.Networking.WebServer.IAvatar
-  name: GetBig
-  nameWithType: IAvatar.GetBig
-  fullName: Winpeak.Client.Networking.WebServer.IAvatar.GetBig
-- uid: System.String
-  commentId: T:System.String
-  parent: System
+- uid: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.WithdrawInfo*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.WithdrawInfo
+  name: WithdrawInfo
+  nameWithType: GetWithdrawFromUrlResult.WithdrawInfo
+  fullName: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.WithdrawInfo
+- uid: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data
+  commentId: T:Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data
+  parent: Winpeak.Client.Networking.WebServer
+  name: GetWithdrawFromUrlResult.Data
+  nameWithType: GetWithdrawFromUrlResult.Data
+  fullName: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.Data
+- uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+  commentId: M:Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+  parent: Winpeak.Client.Networking.WebServer.WebResult
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: Winpeak.Client.Networking.WebServer.Avatar.GetSmall*
-  commentId: Overload:Winpeak.Client.Networking.WebServer.Avatar.GetSmall
-  name: GetSmall
-  nameWithType: Avatar.GetSmall
-  fullName: Winpeak.Client.Networking.WebServer.Avatar.GetSmall
-- uid: Winpeak.Client.Networking.WebServer.IAvatar.GetSmall
-  commentId: P:Winpeak.Client.Networking.WebServer.IAvatar.GetSmall
-  parent: Winpeak.Client.Networking.WebServer.IAvatar
-  name: GetSmall
-  nameWithType: IAvatar.GetSmall
-  fullName: Winpeak.Client.Networking.WebServer.IAvatar.GetSmall
+  name: HandleResponse(HTTPResponse)
+  nameWithType: WebResult.HandleResponse(HTTPResponse)
+  fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+  spec.csharp:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+    name: HandleResponse
+    nameWithType: WebResult.HandleResponse
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HTTPResponse
+    name: HTTPResponse
+    nameWithType: HTTPResponse
+    fullName: HTTPResponse
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse(HTTPResponse)
+    name: HandleResponse
+    nameWithType: WebResult.HandleResponse
+    fullName: Winpeak.Client.Networking.WebServer.WebResult.HandleResponse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: HTTPResponse
+    name: HTTPResponse
+    nameWithType: HTTPResponse
+    fullName: HTTPResponse
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.HandleResponse*
+  commentId: Overload:Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.HandleResponse
+  name: HandleResponse
+  nameWithType: GetWithdrawFromUrlResult.HandleResponse
+  fullName: Winpeak.Client.Networking.WebServer.GetWithdrawFromUrlResult.HandleResponse
+- uid: HTTPResponse
+  isExternal: true
+  name: HTTPResponse
+  nameWithType: HTTPResponse
+  fullName: HTTPResponse
